@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ProjectConfiguration>
+<!-- Written by CDPStudio 2.5.3, 2024-09-13T14:39:20. -->
+<qtcreator>
+ <data>
+  <variable>Block Diagram</variable>
+  <valuelist type="QVariantList">
+   <valuemap type="QVariantMap">
+    <valuemap type="QVariantMap" key="data">
+     <valuelist type="QVariantList" key="names"/>
+    </valuemap>
+    <value type="QString" key="id">PinnedNodes</value>
+   </valuemap>
+   <valuemap type="QVariantMap">
+    <valuemap type="QVariantMap" key="data">
+     <value type="bool" key="isDependenciesFilterActive">false</value>
+     <value type="bool" key="isGuiConnectionsFilterActive">false</value>
+     <value type="bool" key="isInheritedFilterActive">false</value>
+     <value type="bool" key="isInternalFilterActive">true</value>
+     <value type="bool" key="isParametersHiddenFilterActive">false</value>
+     <value type="bool" key="isPassThroughConnectionsHiddenFilterActive">true</value>
+     <value type="bool" key="isPropertiesHiddenFilterActive">true</value>
+     <value type="bool" key="isRoutingFilterActive">false</value>
+     <value type="bool" key="isValueNodesHiddenFilterActive">false</value>
+    </valuemap>
+    <value type="QString" key="id">FilterState</value>
+   </valuemap>
+  </valuelist>
+ </data>
+ <data>
+  <variable>Configurator.WatchWindow</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>RemoteNetworks</variable>
+  <valuemap type="QVariantMap">
+   <valuemap type="QVariantMap" key="NetworkList"/>
+  </valuemap>
+ </data>
+ <data>
+  <variable>Table Editor</variable>
+  <valuemap type="QVariantMap">
+   <valuelist type="QVariantList" key="HiddenEditors"/>
+  </valuemap>
+ </data>
+</qtcreator>
