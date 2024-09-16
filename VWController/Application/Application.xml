@@ -6,13 +6,17 @@
   <ClockSync>None</ClockSync>
   <IsTimeServer>0</IsTimeServer>
   <OSTimeInterval>120</OSTimeInterval>
-  <CDPVersion>4.13</CDPVersion>
+  <CDPVersion>4.11</CDPVersion>
   <Domain>VideoWall</Domain>
 
   <NetworkInterface Name="ETH0" MAC="" IPAddress="127.0.0.1" SubnetMask="255.255.255.255"></NetworkInterface>
 
   <Subcomponents>
     <Subcomponent Name="CDP"        Model="CDP"        src="Components\CDP.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Layout" Name="Layout" src="Components/Layout.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Layout" Name="Layout1" src="Components/Layout1.xml"></Subcomponent>
+    <Subcomponent Model="PortMUX" Name="PortMUX" src="Components/PortMUX.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.SourceOrchestrator" Name="SourceOrchestrator" src="Components/SourceOrchestrator.xml"></Subcomponent>
   </Subcomponents>
 
   <Signals>
@@ -23,6 +27,7 @@
     <Signal Name="MemUsedRelative"  Model="CDPSignal&lt;double&gt;" Type="double" Unit="0..1"   Description="Memory used relative [used/total, 0..1]."></Signal>
     <Signal Name="MemTotal"         Model="CDPSignal&lt;double&gt;" Type="double" Unit="KiB"    Description="Memory total [KiB]."></Signal>
     <Signal Name="MemBuffCache"     Model="CDPSignal&lt;double&gt;" Type="double" Unit="KiB"    Description="Memory in buffers and cache [KiB] (only relevant if Linux)."></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;int&gt;" Name="LayoutSelector" Type="int" Description="" DisableOperators="0" InternalValue="0" RolePermissions="" RoutedProperties="Value" Routing="" RoutingStatus="" Unit="" Value="0"></Signal>
   </Signals>
 
   <Alarms>
@@ -39,6 +44,9 @@
   <Parameters>
     <Parameter Description="The maximum amount of time that DelayConfigurationSave can block the configuration saving. If DelayConfigurationSave
     is active for longer than this time, configuration saving will be allowed again, and the DelayConfigurationSaveAborted alarm will trigger." Name="MaxConfigurationSaveDelay" PreviousValue="600" Unit="s" Value="600"></Parameter></Parameters>
+
+  <Ports></Ports>
+  
   
 
 </Application>

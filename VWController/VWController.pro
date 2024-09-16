@@ -1,7 +1,7 @@
 TYPE = application
 PROJECTNAME = VWController
 
-DEPS += \
+DEPS += videowalllib
 
 HEADERS += Libraries.h
 SOURCES += CDPMain.cpp
@@ -15,4 +15,4 @@ DISTFILES += \
 
 load(cdp)
 
-ID = 103168646700992 # do not change
+ID = 106385972147399 # do not change
