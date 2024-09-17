@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE ProjectConfiguration>
-<!-- Written by CDPStudio 2.6.0, 2024-09-16T15:00:07. -->
+<!-- Written by CDPStudio 2.6.0, 2024-09-17T09:05:19. -->
 <qtcreator>
  <data>
   <variable>Block Diagram</variable>
@@ -1248,7 +1248,24 @@
  </data>
  <data>
   <variable>Configurator.WatchWindow</variable>
-  <valuelist type="QVariantList"/>
+  <valuelist type="QVariantList">
+   <valuemap type="QVariantMap">
+    <value type="QString" key="alias"></value>
+    <value type="QString" key="uri">VWController.Layout.Source01</value>
+   </valuemap>
+   <valuemap type="QVariantMap">
+    <value type="QString" key="alias"></value>
+    <value type="QString" key="uri">VWController.LayoutSelector</value>
+   </valuemap>
+   <valuemap type="QVariantMap">
+    <value type="QString" key="alias"></value>
+    <value type="QString" key="uri">VWController.Layout1.Source01</value>
+   </valuemap>
+   <valuemap type="QVariantMap">
+    <value type="QString" key="alias"></value>
+    <value type="QString" key="uri">VWController.SourceOrchestrator.S01</value>
+   </valuemap>
+  </valuelist>
  </data>
  <data>
   <variable>RemoteNetworks</variable>

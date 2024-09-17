@@ -1,0 +1,47 @@
+<Component Model="PortMUX" Name="PortMUX" src="Components/PortMUX.xml" Description="A multiplexer component that forwards one input port to one output port selected by Index where Index=0 selects the first input port.">
+  <SchedulingOrder>TopDown</SchedulingOrder>
+  <SchedulingGroup>Default</SchedulingGroup>
+  <fs>100</fs>
+  <Status>0</Status>
+
+  <Signals>
+    <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
+    <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+    <Signal Description="Selects which input port is currently active in the multiplexer." Input="1" Model="CDPSignal&lt;unsigned short&gt;" Name="Index" Type="unsigned short" Routing="..LayoutSelector"></Signal>
+  </Signals>
+
+  <Alarms>
+    <Alarm Description="A component was suspended!" Name="Component Suspended" Text="Component was suspended!"></Alarm>
+    <Alarm Description="Alarm is triggered (with Text containing the list of errors) when some node of the component (like operator) has configuration fault." Level="Error" Name="ConfigurationFaults"></Alarm>
+  </Alarms>
+
+  <Ports>
+    <Port Input="1" Model="VideoWallLib.LayoutPort" Name="LayoutPort" Routing="..Layout.pLayout">
+
+      <Connections>
+        <Connection Input="1" LocalName=".Source01" Model="CDPPortConnection" Name="MapSource01"></Connection>
+        <Connection Input="1" LocalName=".Source02" Model="CDPPortConnection" Name="MapSource02"></Connection>
+        <Connection Input="1" LocalName=".Source03" Model="CDPPortConnection" Name="MapSource03"></Connection>
+        <Connection Input="1" LocalName=".Source04" Model="CDPPortConnection" Name="MapSource04"></Connection>
+        <Connection Input="1" LocalName=".Source05" Model="CDPPortConnection" Name="MapSource05"></Connection>
+      </Connections></Port>
+    <Port Input="1" Model="VideoWallLib.LayoutPort" Name="LayoutPort1" Routing="..Layout1.pLayout">
+
+      <Connections>
+        <Connection Input="1" LocalName=".Source01" Model="CDPPortConnection" Name="MapSource01"></Connection>
+        <Connection Input="1" LocalName=".Source02" Model="CDPPortConnection" Name="MapSource02"></Connection>
+        <Connection Input="1" LocalName=".Source03" Model="CDPPortConnection" Name="MapSource03"></Connection>
+        <Connection Input="1" LocalName=".Source04" Model="CDPPortConnection" Name="MapSource04"></Connection>
+        <Connection Input="1" LocalName=".Source05" Model="CDPPortConnection" Name="MapSource05"></Connection>
+      </Connections></Port>
+    <Port Input="0" Model="VideoWallLib.LayoutPort" Name="LayoutPort2">
+
+      <Connections>
+        <Connection Input="1" LocalName=".Source01" Model="CDPPortConnection" Name="MapSource01"></Connection>
+        <Connection Input="1" LocalName=".Source02" Model="CDPPortConnection" Name="MapSource02"></Connection>
+        <Connection Input="1" LocalName=".Source03" Model="CDPPortConnection" Name="MapSource03"></Connection>
+        <Connection Input="1" LocalName=".Source04" Model="CDPPortConnection" Name="MapSource04"></Connection>
+        <Connection Input="1" LocalName=".Source05" Model="CDPPortConnection" Name="MapSource05"></Connection>
+      </Connections></Port>
+  </Ports>
+</Component>
