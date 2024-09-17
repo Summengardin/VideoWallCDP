@@ -8,10 +8,7 @@
 **/Debug_Dynamic
 **/Release
 
-**/
-**//vc90.pdb
-**/
+**/vc90.pdb
 **/*pro.user*
-**/
 **/*.idb
 **/config.xml
