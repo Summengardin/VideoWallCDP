@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by CDPStudio 2.6.0, 2024-09-17T08:57:03. -->
+<!-- Written by CDPStudio 2.6.0, 2024-09-17T09:38:40. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -119,7 +119,7 @@
      </valuemap>
      <valuemap type="QVariantMap" key="vEthernet (Default Switch)">
       <value type="QString" key="Id">VideoWallethernet_32776</value>
-      <value type="QString" key="Ip">172.20.32.1</value>
+      <value type="QString" key="Ip">172.18.96.1</value>
       <value type="QString" key="Name">vEthernet (Default Switch)</value>
       <value type="QString" key="Type">Local interface</value>
      </valuemap>
@@ -137,8 +137,8 @@
   <variable>ProjectExplorer.Project.Target.0</variable>
   <valuemap type="QVariantMap">
    <value type="QString" key="DeviceType">Desktop</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clone of CDP 4.11 Windows x86 64-bit for VideoWall</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clone of CDP 4.11 Windows x86 64-bit for VideoWall</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clone of CDP 4.13 Windows x86 64-bit for VideoWall</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clone of CDP 4.13 Windows x86 64-bit for VideoWall</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">C:/dev/Seaonics/VideoWall/VideoWall.pro</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
@@ -306,8 +306,8 @@
   <variable>ProjectExplorer.Project.Target.1</variable>
   <valuemap type="QVariantMap">
    <value type="QString" key="DeviceType">Desktop</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clone of CDP 4.11 Windows x86 64-bit for VWController</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clone of CDP 4.11 Windows x86 64-bit for VWController</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Clone of CDP 4.13 Windows x86 64-bit for VWController</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Clone of CDP 4.13 Windows x86 64-bit for VWController</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">C:/dev/Seaonics/VideoWall/VWController/VWController.pro</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
@@ -484,7 +484,7 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes">
-     <value type="QString">CDPBASE=C:/CDPStudio/toolkits/win64_13/CDP-4.11</value>
+     <value type="QString">CDPBASE=C:/CDPStudio/toolkits/win64_13/CDP-4.13</value>
      <value type="QString">DISPLAY=:0.0</value>
      <value type="QString">SystemRoot=C:\windows</value>
     </valuelist>

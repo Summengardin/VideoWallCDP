@@ -6,7 +6,7 @@
   <ClockSync>None</ClockSync>
   <IsTimeServer>0</IsTimeServer>
   <OSTimeInterval>120</OSTimeInterval>
-  <CDPVersion>4.11</CDPVersion>
+  <CDPVersion>4.13</CDPVersion>
   <Domain>VideoWall</Domain>
 
   <NetworkInterface Name="ETH0" MAC="" IPAddress="127.0.0.2" SubnetMask="255.255.255.255"></NetworkInterface>

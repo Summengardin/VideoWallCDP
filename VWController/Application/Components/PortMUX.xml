@@ -44,4 +44,8 @@
         <Connection Input="1" LocalName=".Source05" Model="CDPPortConnection" Name="MapSource05"></Connection>
       </Connections></Port>
   </Ports>
+
+  <Parameters>
+    <Parameter Description="When local values are used (i.e. NoSwitchDelay detects true), then this parameter can be used to specify the time to interpolate output port output scalar values from the last selected input port input values to the newly selected input port input values. Defaults to zero which means no interpolation will be done (i.e. immediate switchover will be used). Time can be configured in seconds or in component processing cycles (depending on the Unit property of the parameter). Note that InterpolationTime has no effect on string values." Name="InterpolationTime"></Parameter>
+  </Parameters>
 </Component>
