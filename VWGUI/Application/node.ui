@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="RoutingContainer" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>395</width>
+    <height>383</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>395</width>
+    <height>290</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="cdpTargetRouting">
+   <string>DynamicSineGUI.Groups.Group1.Sine3</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="CDPBaseLineEdit" name="lineEdit">
+     <property name="svgFile">
+      <string notr="true">:/themes/flat_gray_light/backgrounds/bgLineEdit.svg</string>
+     </property>
+     <property name="cdpRouting" stdset="0">
+      <string>.DisplayName</string>
+     </property>
+     <property name="pushRoutables" stdset="0">
+      <stringlist notr="true">
+       <string>cdpRouting</string>
+      </stringlist>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="CDPBaseMeter" name="meter">
+        <property name="meterType">
+         <enum>CDPBaseMeter::Custom</enum>
+        </property>
+        <property name="minValue">
+         <double>-100.000000000000000</double>
+        </property>
+        <property name="textPrefix">
+         <string>-</string>
+        </property>
+        <property name="textSuffix">
+         <string>Output</string>
+        </property>
+        <property name="numPrecision" stdset="0">
+         <number>0</number>
+        </property>
+        <property name="numFont">
+         <font>
+          <pointsize>6</pointsize>
+          <stylestrategy>PreferAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="fillStartValue">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="cdpRouting" stdset="0">
+         <string>.Output.Value</string>
+        </property>
+        <property name="textSuffixRouting" stdset="0">
+         <string/>
+        </property>
+        <property name="textPrefixRouting" stdset="0">
+         <string>.ShortName</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="sliderContainer" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>6</number>
+         </property>
+         <item>
+          <widget class="CDPBaseSlider" name="sliderAmplitude">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>96</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>100</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string>Slider (Input Widgets)
+By changing speed here, the Meter to the right below will be updated with the value </string>
+           </property>
+           <property name="tickShow">
+            <bool>true</bool>
+           </property>
+           <property name="tickPos">
+            <enum>CDPBaseTickMarks::TicksAbove</enum>
+           </property>
+           <property name="majorTicks">
+            <double>6.000000000000000</double>
+           </property>
+           <property name="minorTicks">
+            <number>1</number>
+           </property>
+           <property name="majorTickLength">
+            <number>6</number>
+           </property>
+           <property name="minorTickLength">
+            <number>4</number>
+           </property>
+           <property name="numPos">
+            <enum>CDPBaseTickMarks::NumbersAutoLeft</enum>
+           </property>
+           <property name="numTickOffset" stdset="0">
+            <number>8</number>
+           </property>
+           <property name="numFont">
+            <font>
+             <family>Ubuntu</family>
+             <stylestrategy>PreferAntialias</stylestrategy>
+            </font>
+           </property>
+           <property name="svgFile">
+            <string>:/themes/flat_gray_light/sliders/sliderAmplitude.svg</string>
+           </property>
+           <property name="type">
+            <enum>CDPBaseSlider::Custom</enum>
+           </property>
+           <property name="knobPos" stdset="0">
+            <enum>CDPBaseSlider::KnobPosFromSVG</enum>
+           </property>
+           <property name="endMargins">
+            <number>7</number>
+           </property>
+           <property name="tickRailSpacing">
+            <number>-1</number>
+           </property>
+           <property name="tickRailEndAlignment">
+            <bool>true</bool>
+           </property>
+           <property name="value">
+            <double>60.000000000000000</double>
+           </property>
+           <property name="cdpRouting" stdset="0">
+            <string>.Amplitude</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CDPBaseLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>CDPBaseWidgets/CDPBaseLineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseSlider</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBaseSlider.h</header>
+  </customwidget>
+  <customwidget>
+   <class>RoutingContainer</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/RoutingReplacementWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseMeter</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBaseMeter.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="CDPBaseMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1114</width>
+    <height>639</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Main Window</string>
+  </property>
+  <property name="msgBoxBgSvg">
+   <string>:/themes/openbridge5_bright/backgrounds/bgMsgBox.svg</string>
+  </property>
+  <property name="msgBoxBtnSvg">
+   <string>:/themes/openbridge5_bright/buttons/buttonPlain.svg</string>
+  </property>
+  <property name="themeNight">
+   <string>openbridge5_dusk</string>
+  </property>
+  <property name="themeDay">
+   <string>openbridge5_bright</string>
+  </property>
+  <property name="numPadName" stdset="0">
+   <string>CDPBaseNumPad</string>
+  </property>
+  <property name="keyPadName" stdset="0">
+   <string>CDPBaseKeyPad</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="CDPBaseContainer" name="container">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>10</y>
+      <width>741</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="CDPBaseLabel" name="label">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Cameras</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>723</width>
+          <height>397</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="NodeContainer" name="nodeContainer">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <property name="forceNodes">
+            <stringlist>
+             <string>Camera</string>
+             <string>Camera1</string>
+            </stringlist>
+           </property>
+           <property name="modelFilter">
+            <stringlist>
+             <string>CDPComponent</string>
+            </stringlist>
+           </property>
+           <property name="cdpTargetRouting">
+            <string>VWController.Cameras</string>
+           </property>
+           <property name="uiFileName">
+            <string>camera.ui</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="CDPBaseContainer" name="container_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>351</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="CDPBaseLabel" name="label_2">
+       <property name="text">
+        <string>Overview</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="CDPBaseLineEdit" name="lineEdit">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit{
+color:#000000;
+border-image:url(C:/Users/martin.simengard/AppData/Local/Temp/cdp/themes/openbridge5_bright/backgrounds/bgLineEdit_cdpBackground.png) 4 4 4 4;
+border-width: 4px 4px 4px 4px;
+}
+</string>
+       </property>
+       <property name="placeholderText">
+        <string>search camera</string>
+       </property>
+       <property name="svgFile">
+        <string notr="true">:/themes/openbridge5_bright/backgrounds/bgLineEdit.svg</string>
+       </property>
+       <property name="pushRoutables" stdset="0">
+        <stringlist notr="true">
+         <string>cdpRouting</string>
+        </stringlist>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="NodeTable" name="nodeTable">
+       <property name="modelFilter">
+        <stringlist>
+         <string>VideoWallLib.Camera</string>
+        </stringlist>
+       </property>
+       <property name="columns">
+        <stringlist>
+         <string>DisplayName</string>
+         <string>Description</string>
+         <string></string>
+        </stringlist>
+       </property>
+       <property name="cdpTargetRouting">
+        <string>VWController.Cameras</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="WebEngineView" name="webEngineView">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>1031</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="url">
+     <url>
+      <string>http://127.0.0.1:7690/www/wasm/index.html</string>
+     </url>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CDPBaseLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>CDPBaseWidgets/CDPBaseLineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseContainer</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBaseContainer.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>NodeContainer</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/NodeContainer.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>NodeTable</class>
+   <extends>QTableView</extends>
+   <header>CDPBaseWidgets/NodeTable.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseLabel</class>
+   <extends>QLabel</extends>
+   <header>CDPBaseWidgets/CDPBaseLabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseMainWindow</class>
+   <extends>QMainWindow</extends>
+   <header>CDPBaseWidgets/CDPBaseMainWindow.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>WebEngineView</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/WebEngineView.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

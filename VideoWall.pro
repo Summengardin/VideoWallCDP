@@ -4,4 +4,6 @@ load(cdp)
 
 DISTFILES += $$files(*.xml, false)
 
-SUBDIRS +=     VWController
+SUBDIRS +=     VWController \
+    VWGUI \
+    VWWebGUI

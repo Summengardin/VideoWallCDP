@@ -42,13 +42,4 @@
     <Alarm Description="Audit log failure experienced" Name="AuditLogFailure" Text="Audit log failure experienced" Trig="1" />
   </Alarms>
 
-  <AuthMethods>
-    <AuthMethod Name="Password" Model="PasswordAuthentication" Timestamp="0">
-      <Prompt>Log in using username and password</Prompt>
-      <Disabled>0</Disabled>
-      <DisabledForUsers></DisabledForUsers>
-      <WhitelistedForUsers></WhitelistedForUsers>
-
-    </AuthMethod>
-  </AuthMethods>
 </Component>

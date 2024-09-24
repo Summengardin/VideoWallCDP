@@ -1,44 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE ProjectConfiguration>
-<!-- Written by CDPStudio 2.6.0, 2024-09-17T09:37:54. -->
+<!-- Written by CDPStudio 2.6.0, 2024-09-24T21:07:20. -->
 <qtcreator>
  <data>
   <variable>Block Diagram</variable>
   <valuelist type="QVariantList">
-   <valuemap type="QVariantMap">
-    <valuemap type="QVariantMap" key="data">
-     <valuelist type="QVariantList" key="nodes">
-      <valuemap type="QVariantMap">
-       <value type="QString" key="id">VWControllerNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
-       <valuemap type="QVariantMap" key="position">
-        <value type="qlonglong" key="x">200</value>
-        <value type="qlonglong" key="y">100</value>
-       </valuemap>
-      </valuemap>
-     </valuelist>
-     <valuemap type="QVariantMap" key="settings">
-      <valuelist type="QVariantList" key="BlockDiagram/ViewMatrix">
-       <value type="double">0.7145383230452677</value>
-       <value type="qlonglong">0</value>
-       <value type="qlonglong">0</value>
-       <value type="qlonglong">0</value>
-       <value type="double">0.7145383230452677</value>
-       <value type="qlonglong">0</value>
-       <value type="qlonglong">0</value>
-       <value type="qlonglong">0</value>
-       <value type="qlonglong">1</value>
-      </valuelist>
-      <valuelist type="QVariantList" key="BlockDiagram/ViewRect">
-       <value type="qlonglong">-1080</value>
-       <value type="qlonglong">-81</value>
-       <value type="qlonglong">2420</value>
-       <value type="qlonglong">900</value>
-      </valuelist>
-      <value type="bool" key="autoLayoutEnabled">true</value>
-     </valuemap>
-    </valuemap>
-    <value type="QString" key="id">VideoWall</value>
-   </valuemap>
    <valuemap type="QVariantMap">
     <valuemap type="QVariantMap" key="data">
      <valuelist type="QVariantList" key="names"/>
@@ -63,6 +29,116 @@
     <valuemap type="QVariantMap" key="data">
      <valuelist type="QVariantList" key="nodes">
       <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWGUI.CPULoadNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-146</value>
+        <value type="qlonglong" key="y">50</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWGUI.MemUsedRelativeNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-215</value>
+        <value type="qlonglong" key="y">89</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWGUI.MaxConfigurationSaveDelayNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-296</value>
+        <value type="qlonglong" key="y">128</value>
+       </valuemap>
+      </valuemap>
+     </valuelist>
+     <valuemap type="QVariantMap" key="settings">
+      <valuelist type="QVariantList" key="BlockDiagram/ViewMatrix">
+       <value type="double">2.1083333333333334</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="double">2.1083333333333334</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">1</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="BlockDiagram/ViewRect">
+       <value type="qlonglong">-826</value>
+       <value type="qlonglong">-102</value>
+       <value type="qlonglong">1293</value>
+       <value type="qlonglong">419</value>
+      </valuelist>
+      <value type="bool" key="autoLayoutEnabled">true</value>
+     </valuemap>
+    </valuemap>
+    <value type="QString" key="id">VWGUI</value>
+   </valuemap>
+   <valuemap type="QVariantMap">
+    <valuemap type="QVariantMap" key="data">
+     <valuelist type="QVariantList" key="nodes">
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWControllerNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">198.60049493813278</value>
+        <value type="qlonglong" key="y">100</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWWebGUINodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">-836.9040269966254</value>
+        <value type="double" key="y">368.06983127109106</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWGUINodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">-1045.4302812148478</value>
+        <value type="double" key="y">291.09705286839136</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWWebGUI.mainwidget.nodeContainer.cdpTargetRoutingNodeType.LabelDataType.ExternalDataDirection.Sink</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">-1044.0307761529805</value>
+        <value type="double" key="y">291.09705286839136</value>
+       </valuemap>
+      </valuemap>
+     </valuelist>
+     <valuemap type="QVariantMap" key="settings">
+      <valuelist type="QVariantList" key="BlockDiagram/ViewMatrix">
+       <value type="double">0.7145383230452677</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="double">0.7145383230452677</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">1</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="BlockDiagram/ViewRect">
+       <value type="qlonglong">-1509</value>
+       <value type="qlonglong">-223</value>
+       <value type="qlonglong">3048</value>
+       <value type="qlonglong">1323</value>
+      </valuelist>
+      <value type="bool" key="autoLayoutEnabled">false</value>
+     </valuemap>
+    </valuemap>
+    <value type="QString" key="id">VideoWall</value>
+   </valuemap>
+   <valuemap type="QVariantMap">
+    <valuemap type="QVariantMap" key="data">
+     <valuelist type="QVariantList" key="nodes">
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWWebGUI.mainwidget.nodeContainer.cdpTargetRoutingNodeType.LabelDataType.ExternalDataDirection.Sink</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">278.7401574803149</value>
+        <value type="double" key="y">867.9415073115861</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.CPULoadNodeType.ComponentDataType.InternalDataDirection.Source</value>
        <valuemap type="QVariantMap" key="position">
         <value type="qlonglong" key="x">-147</value>
@@ -86,8 +162,8 @@
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.LayoutNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
        <valuemap type="QVariantMap" key="position">
-        <value type="double" key="x">-70.63742632170977</value>
-        <value type="double" key="y">422.4510866141731</value>
+        <value type="double" key="x">-32.85078965129357</value>
+        <value type="double" key="y">234.91740832395942</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
@@ -100,22 +176,22 @@
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.Layout1NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
        <valuemap type="QVariantMap" key="position">
-        <value type="double" key="x">-66.77194150731155</value>
-        <value type="double" key="y">770.1087604049492</value>
+        <value type="double" key="x">-37.23331383577052</value>
+        <value type="double" key="y">583.8838785151855</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.PortMUXNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
        <valuemap type="QVariantMap" key="position">
-        <value type="double" key="x">760.1834290393691</value>
-        <value type="double" key="y">490.07849596400376</value>
+        <value type="double" key="x">758.7839239775017</value>
+        <value type="double" key="y">490.0784959640039</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.SourceOrchestratorNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
        <valuemap type="QVariantMap" key="position">
-        <value type="double" key="x">1426.8632295523055</value>
-        <value type="double" key="y">326.0540872710911</value>
+        <value type="double" key="x">1299.508268922384</value>
+        <value type="double" key="y">591.9600490258715</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
@@ -149,8 +225,8 @@
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.LayoutSelectorNodeType.ComponentDataType.InternalDataDirection.Source</value>
        <valuemap type="QVariantMap" key="position">
-        <value type="double" key="x">214.1372328458942</value>
-        <value type="double" key="y">435.38213723284576</value>
+        <value type="double" key="x">305.10506186726644</value>
+        <value type="double" key="y">252.04697412823396</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
@@ -174,6 +250,69 @@
         <value type="double" key="y">635.7705286839144</value>
        </valuemap>
       </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.OSDTextNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">508.0203374578176</value>
+        <value type="double" key="y">-99.3648593925759</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.CameraNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">-20.65669471316079</value>
+        <value type="double" key="y">912.197399325084</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Camera1NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">-21.764636220472426</value>
+        <value type="double" key="y">1174.1186591676046</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.CamerasNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">-557.8315216197972</value>
+        <value type="double" key="y">723.4881367829016</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWWebGUI.mainwidget.nodeList.cdpTargetRoutingNodeType.LabelDataType.ExternalDataDirection.Sink</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">-663.029518110236</value>
+        <value type="double" key="y">278.10964589426317</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWGUI.mainwidget.nodeList.cdpTargetRoutingNodeType.LabelDataType.ExternalDataDirection.Sink</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">-331.1695478065241</value>
+        <value type="double" key="y">-58.126110236220434</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWGUI.mainwidget.nodeContainer.cdpTargetRoutingNodeType.LabelDataType.ExternalDataDirection.Sink</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">-378.1929178852643</value>
+        <value type="double" key="y">-93.39363779527554</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWGUI.mainwidget.nodeTable.cdpTargetRoutingNodeType.LabelDataType.ExternalDataDirection.Sink</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">-1231.0046524184474</value>
+        <value type="double" key="y">-226.71982002249715</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWWebGUI.mainwidget.nodeTable.cdpTargetRoutingNodeType.LabelDataType.ExternalDataDirection.Sink</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">-1968.2639190101233</value>
+        <value type="double" key="y">-226.71982002249715</value>
+       </valuemap>
+      </valuemap>
      </valuelist>
      <valuemap type="QVariantMap" key="settings">
       <valuelist type="QVariantList" key="BlockDiagram/ViewMatrix">
@@ -188,10 +327,10 @@
        <value type="qlonglong">1</value>
       </valuelist>
       <valuelist type="QVariantList" key="BlockDiagram/ViewRect">
-       <value type="qlonglong">-447</value>
-       <value type="qlonglong">101</value>
-       <value type="qlonglong">2904</value>
-       <value type="qlonglong">1080</value>
+       <value type="qlonglong">-1535</value>
+       <value type="qlonglong">-322</value>
+       <value type="qlonglong">4486</value>
+       <value type="qlonglong">1587</value>
       </valuelist>
       <value type="bool" key="autoLayoutEnabled">false</value>
      </valuemap>
@@ -278,6 +417,13 @@
         <value type="double" key="y">163.33333333333334</value>
        </valuemap>
       </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.SourceOrchestrator.pLayoutNodeType.LabelDataType.ExternalDataDirection.Sink</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">629.6962879640045</value>
+        <value type="double" key="y">370.5286839145107</value>
+       </valuemap>
+      </valuemap>
      </valuelist>
      <valuemap type="QVariantMap" key="settings">
       <valuelist type="QVariantList" key="BlockDiagram/ViewMatrix">
@@ -292,10 +438,10 @@
        <value type="qlonglong">1</value>
       </valuelist>
       <valuelist type="QVariantList" key="BlockDiagram/ViewRect">
-       <value type="qlonglong">-323</value>
-       <value type="qlonglong">-61</value>
-       <value type="qlonglong">1656</value>
-       <value type="qlonglong">722</value>
+       <value type="qlonglong">57</value>
+       <value type="qlonglong">194</value>
+       <value type="qlonglong">1276</value>
+       <value type="qlonglong">467</value>
       </valuelist>
       <value type="bool" key="autoLayoutEnabled">false</value>
      </valuemap>
@@ -455,7 +601,7 @@
        <value type="QString" key="id">VWController.SourceOrchestrator.S01NodeType.ComponentDataType.InternalDataDirection.Sink</value>
        <valuemap type="QVariantMap" key="position">
         <value type="qlonglong" key="x">800</value>
-        <value type="qlonglong" key="y">284</value>
+        <value type="qlonglong" key="y">89</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
@@ -469,42 +615,42 @@
        <value type="QString" key="id">VWController.SourceOrchestrator.S03NodeType.ComponentDataType.InternalDataDirection.Sink</value>
        <valuemap type="QVariantMap" key="position">
         <value type="qlonglong" key="x">800</value>
-        <value type="qlonglong" key="y">323</value>
+        <value type="qlonglong" key="y">206</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.SourceOrchestrator.S04NodeType.ComponentDataType.InternalDataDirection.Sink</value>
        <valuemap type="QVariantMap" key="position">
         <value type="qlonglong" key="x">800</value>
-        <value type="qlonglong" key="y">128</value>
+        <value type="qlonglong" key="y">50</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.SourceOrchestrator.S11NodeType.ComponentDataType.InternalDataDirection.Sink</value>
        <valuemap type="QVariantMap" key="position">
         <value type="qlonglong" key="x">800</value>
-        <value type="qlonglong" key="y">206</value>
+        <value type="qlonglong" key="y">284</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.SourceOrchestrator.S12NodeType.ComponentDataType.InternalDataDirection.Sink</value>
        <valuemap type="QVariantMap" key="position">
         <value type="qlonglong" key="x">800</value>
-        <value type="qlonglong" key="y">245</value>
+        <value type="qlonglong" key="y">323</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.SourceOrchestrator.S13NodeType.ComponentDataType.InternalDataDirection.Sink</value>
        <valuemap type="QVariantMap" key="position">
         <value type="qlonglong" key="x">800</value>
-        <value type="qlonglong" key="y">50</value>
+        <value type="qlonglong" key="y">245</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.SourceOrchestrator.S14NodeType.ComponentDataType.InternalDataDirection.Sink</value>
        <valuemap type="QVariantMap" key="position">
         <value type="qlonglong" key="x">800</value>
-        <value type="qlonglong" key="y">89</value>
+        <value type="qlonglong" key="y">128</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
@@ -737,57 +883,57 @@
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.Layout1.Source01NodeType.ComponentDataType.InternalDataDirection.Source</value>
        <valuemap type="QVariantMap" key="position">
-        <value type="qlonglong" key="x">-144</value>
-        <value type="qlonglong" key="y">90</value>
+        <value type="qlonglong" key="x">-143</value>
+        <value type="qlonglong" key="y">128</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.Layout1.Source02NodeType.ComponentDataType.InternalDataDirection.Source</value>
        <valuemap type="QVariantMap" key="position">
-        <value type="qlonglong" key="x">-146</value>
-        <value type="qlonglong" key="y">50</value>
+        <value type="qlonglong" key="x">-145</value>
+        <value type="qlonglong" key="y">89</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.Layout1.Source03NodeType.ComponentDataType.InternalDataDirection.Source</value>
        <valuemap type="QVariantMap" key="position">
-        <value type="qlonglong" key="x">-146</value>
-        <value type="qlonglong" key="y">210</value>
+        <value type="qlonglong" key="x">-145</value>
+        <value type="qlonglong" key="y">245</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.Layout1.Source04NodeType.ComponentDataType.InternalDataDirection.Source</value>
        <valuemap type="QVariantMap" key="position">
-        <value type="qlonglong" key="x">-146</value>
-        <value type="qlonglong" key="y">250</value>
+        <value type="qlonglong" key="x">-145</value>
+        <value type="qlonglong" key="y">284</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.Layout1.Source11NodeType.ComponentDataType.InternalDataDirection.Source</value>
        <valuemap type="QVariantMap" key="position">
-        <value type="qlonglong" key="x">-143</value>
-        <value type="qlonglong" key="y">170</value>
+        <value type="qlonglong" key="x">-142</value>
+        <value type="qlonglong" key="y">206</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.Layout1.Source12NodeType.ComponentDataType.InternalDataDirection.Source</value>
        <valuemap type="QVariantMap" key="position">
-        <value type="qlonglong" key="x">-146</value>
-        <value type="qlonglong" key="y">130</value>
+        <value type="qlonglong" key="x">-145</value>
+        <value type="qlonglong" key="y">167</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.Layout1.Source13NodeType.ComponentDataType.InternalDataDirection.Source</value>
        <valuemap type="QVariantMap" key="position">
-        <value type="qlonglong" key="x">-146</value>
-        <value type="qlonglong" key="y">290</value>
+        <value type="qlonglong" key="x">-145</value>
+        <value type="qlonglong" key="y">50</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.Layout1.Source14NodeType.ComponentDataType.InternalDataDirection.Source</value>
        <valuemap type="QVariantMap" key="position">
-        <value type="qlonglong" key="x">-146</value>
-        <value type="qlonglong" key="y">330</value>
+        <value type="qlonglong" key="x">-145</value>
+        <value type="qlonglong" key="y">323</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
@@ -797,8 +943,32 @@
         <value type="double" key="y">83.33333333333334</value>
        </valuemap>
       </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.PortMUX.LayoutPort1NodeType.LabelDataType.ExternalDataDirection.Sink</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">800</value>
+        <value type="double" key="y">83.33333333333334</value>
+       </valuemap>
+      </valuemap>
      </valuelist>
      <valuemap type="QVariantMap" key="settings">
+      <valuelist type="QVariantList" key="BlockDiagram/ViewMatrix">
+       <value type="double">1.2773109243697478</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="double">1.2773109243697478</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">1</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="BlockDiagram/ViewRect">
+       <value type="qlonglong">-181</value>
+       <value type="qlonglong">-74</value>
+       <value type="qlonglong">1193</value>
+       <value type="qlonglong">541</value>
+      </valuelist>
       <value type="bool" key="autoLayoutEnabled">true</value>
      </valuemap>
     </valuemap>
@@ -1194,26 +1364,132 @@
    </valuemap>
    <valuemap type="QVariantMap">
     <valuemap type="QVariantMap" key="data">
-     <valuelist type="QVariantList" key="nodes"/>
+     <valuelist type="QVariantList" key="nodes">
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Layout.pLayout.MapSource01NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">200</value>
+        <value type="qlonglong" key="y">100</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Layout.pLayout.MapSource02NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">200</value>
+        <value type="qlonglong" key="y">294</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Layout.pLayout.MapSource03NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">200</value>
+        <value type="qlonglong" key="y">488</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Layout.pLayout.MapSource04NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">200</value>
+        <value type="qlonglong" key="y">682</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Layout.pLayout.MapSource05NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">62.46707447941885</value>
+        <value type="double" key="y">1707.45310062954</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Layout.pLayout.MapSource12NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">200</value>
+        <value type="qlonglong" key="y">876</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Layout.pLayout.MapSource13NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">200</value>
+        <value type="qlonglong" key="y">1070</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Layout.pLayout.MapSource14NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">200</value>
+        <value type="qlonglong" key="y">1264</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Layout.pLayout.Source02NodeType.LabelDataType.ExternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-145</value>
+        <value type="double" key="y">122.33333333333334</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Layout.pLayout.Source14NodeType.LabelDataType.ExternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-145</value>
+        <value type="double" key="y">317.33333333333337</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Layout.pLayout.Source03NodeType.LabelDataType.ExternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-145</value>
+        <value type="double" key="y">161.33333333333334</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Layout.pLayout.Source04NodeType.LabelDataType.ExternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-145</value>
+        <value type="double" key="y">200.33333333333334</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Layout.pLayout.Source13NodeType.LabelDataType.ExternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-145</value>
+        <value type="double" key="y">278.33333333333337</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Layout.pLayout.Source01NodeType.LabelDataType.ExternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-143</value>
+        <value type="double" key="y">83.33333333333334</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Layout.pLayout.Source12NodeType.LabelDataType.ExternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-145</value>
+        <value type="double" key="y">239.33333333333334</value>
+       </valuemap>
+      </valuemap>
+     </valuelist>
      <valuemap type="QVariantMap" key="settings">
       <valuelist type="QVariantList" key="BlockDiagram/ViewMatrix">
-       <value type="double">1.3766666666666667</value>
+       <value type="double">0.7966820987654323</value>
        <value type="qlonglong">0</value>
        <value type="qlonglong">0</value>
        <value type="qlonglong">0</value>
-       <value type="double">1.3766666666666667</value>
+       <value type="double">0.7966820987654323</value>
        <value type="qlonglong">0</value>
        <value type="qlonglong">0</value>
        <value type="qlonglong">0</value>
        <value type="qlonglong">1</value>
       </valuelist>
       <valuelist type="QVariantList" key="BlockDiagram/ViewRect">
-       <value type="qlonglong">-628</value>
-       <value type="qlonglong">-301</value>
-       <value type="qlonglong">1256</value>
-       <value type="qlonglong">603</value>
+       <value type="qlonglong">-1372</value>
+       <value type="qlonglong">728</value>
+       <value type="qlonglong">3353</value>
+       <value type="qlonglong">1186</value>
       </valuelist>
-      <value type="bool" key="autoLayoutEnabled">true</value>
+      <value type="bool" key="autoLayoutEnabled">false</value>
      </valuemap>
     </valuemap>
     <value type="QString" key="id">VWController.Layout.pLayout</value>
@@ -1244,28 +1520,255 @@
     </valuemap>
     <value type="QString" key="id">VWController.SourceOrchestrator.S01</value>
    </valuemap>
+   <valuemap type="QVariantMap">
+    <valuemap type="QVariantMap" key="data">
+     <valuelist type="QVariantList" key="nodes">
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWWebGUI.CPULoadNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-146</value>
+        <value type="qlonglong" key="y">50</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWWebGUI.MemUsedRelativeNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-214</value>
+        <value type="qlonglong" key="y">89</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWWebGUI.MaxConfigurationSaveDelayNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-296</value>
+        <value type="qlonglong" key="y">128</value>
+       </valuemap>
+      </valuemap>
+     </valuelist>
+     <valuemap type="QVariantMap" key="settings">
+      <valuelist type="QVariantList" key="BlockDiagram/ViewMatrix">
+       <value type="double">1.1716666666666666</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="double">1.1716666666666666</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">1</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="BlockDiagram/ViewRect">
+       <value type="qlonglong">-1340</value>
+       <value type="qlonglong">-127</value>
+       <value type="qlonglong">2327</value>
+       <value type="qlonglong">754</value>
+      </valuelist>
+      <value type="bool" key="autoLayoutEnabled">true</value>
+     </valuemap>
+    </valuemap>
+    <value type="QString" key="id">VWWebGUI</value>
+   </valuemap>
+   <valuemap type="QVariantMap">
+    <valuemap type="QVariantMap" key="data">
+     <valuelist type="QVariantList" key="nodes"/>
+     <valuemap type="QVariantMap" key="settings">
+      <valuelist type="QVariantList" key="BlockDiagram/ViewMatrix">
+       <value type="double">1.1433333333333333</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="double">1.1433333333333333</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">1</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="BlockDiagram/ViewRect">
+       <value type="qlonglong">-755</value>
+       <value type="qlonglong">-302</value>
+       <value type="qlonglong">1509</value>
+       <value type="qlonglong">604</value>
+      </valuelist>
+      <value type="bool" key="autoLayoutEnabled">true</value>
+     </valuemap>
+    </valuemap>
+    <value type="QString" key="id">VWController.LayoutSelector</value>
+   </valuemap>
+   <valuemap type="QVariantMap">
+    <valuemap type="QVariantMap" key="data">
+     <valuelist type="QVariantList" key="nodes">
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.CameraNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">200</value>
+        <value type="qlonglong" key="y">100</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera1NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">207.35300291545184</value>
+        <value type="double" key="y">416.867755102041</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWWebGUI.cameraweb.Form.cdpTargetRoutingNodeType.LabelDataType.ExternalDataDirection.Sink</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">800</value>
+        <value type="double" key="y">122.33333333333334</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWGUI.camera.Form.cdpTargetRoutingNodeType.LabelDataType.ExternalDataDirection.Sink</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">800</value>
+        <value type="double" key="y">83.33333333333334</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera2NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">211.48777453838682</value>
+        <value type="double" key="y">739.5173177842568</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera3NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">211.79335276967936</value>
+        <value type="double" key="y">1076.599416909621</value>
+       </valuemap>
+      </valuemap>
+     </valuelist>
+     <valuemap type="QVariantMap" key="settings">
+      <valuelist type="QVariantList" key="BlockDiagram/ViewMatrix">
+       <value type="double">0.6616512345679013</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="double">0.6616512345679013</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">1</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="BlockDiagram/ViewRect">
+       <value type="qlonglong">-1066</value>
+       <value type="qlonglong">-45</value>
+       <value type="qlonglong">3292</value>
+       <value type="qlonglong">1428</value>
+      </valuelist>
+      <value type="bool" key="autoLayoutEnabled">false</value>
+     </valuemap>
+    </valuemap>
+    <value type="QString" key="id">VWController.Cameras</value>
+   </valuemap>
+   <valuemap type="QVariantMap">
+    <valuemap type="QVariantMap" key="data">
+     <valuelist type="QVariantList" key="nodes">
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera.pCameraNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">200</value>
+        <value type="qlonglong" key="y">100</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera.HeightNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-120</value>
+        <value type="qlonglong" key="y">167</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera.DisplayNameNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-175</value>
+        <value type="qlonglong" key="y">89</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera.IPNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-85</value>
+        <value type="qlonglong" key="y">206</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera.FormatNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-125</value>
+        <value type="qlonglong" key="y">284</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera.FramerateNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-151</value>
+        <value type="qlonglong" key="y">50</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera.WidthNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-115</value>
+        <value type="qlonglong" key="y">128</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera.TypeNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-108</value>
+        <value type="qlonglong" key="y">245</value>
+       </valuemap>
+      </valuemap>
+     </valuelist>
+     <valuemap type="QVariantMap" key="settings">
+      <value type="bool" key="autoLayoutEnabled">true</value>
+     </valuemap>
+    </valuemap>
+    <value type="QString" key="id">VWController.Cameras.Camera</value>
+   </valuemap>
+   <valuemap type="QVariantMap">
+    <valuemap type="QVariantMap" key="data">
+     <valuelist type="QVariantList" key="nodes"/>
+     <valuemap type="QVariantMap" key="settings">
+      <valuelist type="QVariantList" key="BlockDiagram/ViewMatrix">
+       <value type="double">1.2216666666666667</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="double">1.2216666666666667</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">1</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="BlockDiagram/ViewRect">
+       <value type="qlonglong">-733</value>
+       <value type="qlonglong">-301</value>
+       <value type="qlonglong">1466</value>
+       <value type="qlonglong">603</value>
+      </valuelist>
+      <value type="bool" key="autoLayoutEnabled">true</value>
+     </valuemap>
+    </valuemap>
+    <value type="QString" key="id">VWController.Layout1.pLayout</value>
+   </valuemap>
+   <valuemap type="QVariantMap">
+    <valuemap type="QVariantMap" key="data">
+     <valuelist type="QVariantList" key="nodes"/>
+     <valuemap type="QVariantMap" key="settings">
+      <value type="bool" key="autoLayoutEnabled">true</value>
+     </valuemap>
+    </valuemap>
+    <value type="QString" key="id">VWController.PortMUX.LayoutPort1</value>
+   </valuemap>
   </valuelist>
  </data>
  <data>
   <variable>Configurator.WatchWindow</variable>
-  <valuelist type="QVariantList">
-   <valuemap type="QVariantMap">
-    <value type="QString" key="alias"></value>
-    <value type="QString" key="uri">VWController.Layout.Source01</value>
-   </valuemap>
-   <valuemap type="QVariantMap">
-    <value type="QString" key="alias"></value>
-    <value type="QString" key="uri">VWController.LayoutSelector</value>
-   </valuemap>
-   <valuemap type="QVariantMap">
-    <value type="QString" key="alias"></value>
-    <value type="QString" key="uri">VWController.Layout1.Source01</value>
-   </valuemap>
-   <valuemap type="QVariantMap">
-    <value type="QString" key="alias"></value>
-    <value type="QString" key="uri">VWController.SourceOrchestrator.S01</value>
-   </valuemap>
-  </valuelist>
+  <valuelist type="QVariantList"/>
  </data>
  <data>
   <variable>RemoteNetworks</variable>
@@ -1280,29 +1783,29 @@
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">false</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff0000000000000001000000010000000000000000000000000000000033010000000000000000000100000000000000640000170c0000003301010001000000000000000000000000640000001a000000810000000000000033000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000003e8000000006400000000</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff0000000000000001000000010000000000000000000000000000000021010000000000000001000000000000006400000c800000002101010001000000000000000000000000640000001a000000810000000000000021000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000003e8000000006400000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ApplicationsApplication">
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">false</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff0000000000000001000000010000000000000000000000000000000009010000000001000000000000006400000b8a0000000901010001000000000000000000000000640000001a000000810000000000000009000000000000000100000000000000640000000100000000000000640000000100000000000001390000000100000000000000640000000100000000000001ed00000001000000000000006400000001000000000000030d0000000100000000000003c70000000100000000000003e8000000006400000000</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff0000000000000001000000010000000000000000000000000000000009010000000001000000000000006400000a900000000901010001000000000000000000000000640000001a000000810000000000000009000000000000000100000000000000640000000100000000000000640000000100000000000001390000000100000000000000640000000100000000000001ed00000001000000000000006400000001000000000000030d0000000100000000000002cd0000000100000000000003e8000000006400000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ArgumentMessagesMessageArgument">
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">false</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000001a01000000000000010000000000000064000015750000001a01010001000000000000000000000000640000001a00000081000000000000001a000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000008c30000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000003e8000000024a00000000</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff0000000000000001000000010000000000000000000000000000000009010000000001000000000000006400000b7f0000000901010001000000000000000000000000640000001a000000810000000000000009000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000008c30000000100000000000003e800000008c300000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="AttributesAttribute">
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">true</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000001a0100000000000001000000000000006400000b8a0000001a01010001000000000000000000000000640000001a00000081000000000000001a0000000000000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000022a0000000100000000000003e8000000006400000000</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000001e01000000000000010000000000000064000010dc0000001e01010001000000000000000000000000640000001a00000081000000000000001e0000000000000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000042600000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000022a0000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000003e8000000006400000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ConnectionsCDPPortConnection">
     <value type="bool" key="Collapsed">false</value>
-    <value type="bool" key="FullyExpanded">false</value>
+    <value type="bool" key="FullyExpanded">true</value>
     <valuemap type="QVariantMap" key="Heights"/>
     <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000001d0100000000000001000000000000006400000af00000001d01010001000000000000000000000000640000001a00000081000000000000001d000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000003e8000000006400000000</value>
    </valuemap>
@@ -1310,116 +1813,122 @@
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">false</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000001601000000000001000000000000006400000b860000001601010001000000000000000000000000640000001a000000810000000000000016000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000640000000100000000000003e8000000006400000000</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff0000000000000001000000010000000000000000000000000000000004010000000100000000000000640000012c0000000401010001000000000000000000000000640000001a000000810000000000000004000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000003e8000000006400000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="DocumentsDocument">
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">false</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000001501000000000001000000000000006400000f920000001501010001000000000000000000000000640000001a000000810000000000000015000000000000000100000000000000640000000100000000000004a20000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000003e800000004a200000000</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff00000000000000010000000100000000000000000000000000000000030100000001000000000000006400000a900000000301010001000000000000000000000000640000001a00000081000000000000000300000000000000010000000000000064000000010000000000000a2c0000000100000000000003e80000000a2c00000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ElementElement">
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">false</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000001d0100000000000001000000000000006400000b8a0000001d01010001000000000000000000000000640000001a00000081000000000000001d000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000fe0000000100000000000003e8000000006400000000</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff0000000000000001000000010000000000000000000000000000000021010000000000000001000000000000006400000d1a0000002101010001000000000000000000000000640000001a000000810000000000000021000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000fe0000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000003e8000000006400000000</value>
    </valuemap>
    <valuelist type="QVariantList" key="HiddenEditors"/>
    <valuemap type="QVariantMap" key="MessagesCDPMessage">
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">false</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff00000000000000010000000100000000000000000000000000000000170100000000000100000000000000640000160b0000001701010001000000000000000000000000640000001a00000081000000000000001700000000000000010000000000000064000000010000000000000064000000010000000000000064000000010000000000000a530000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000003e8000000006400000000</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff00000000000000010000000100000000000000000000000000000000050100000001000000000000006400000b7f0000000501010001000000000000000000000000640000001a00000081000000000000000500000000000000010000000000000064000000010000000000000064000000010000000000000064000000010000000000000a530000000100000000000003e80000000a5300000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ModelsModel">
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">false</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000000401000000010000000000000064000005650000000401010001000000000000000000000000640000001a0000008100000000000000040000000000000001000000000000006400000001000000000000006400000001000000000000049d0000000100000000000003e80000000064</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff00000000000000010000000100000000000000000000000000000000040100000001000000000000006400000a9b0000000401010001000000000000000000000000640000001a000000810000000000000004000000000000000100000000000000640000000100000000000000640000000100000000000009d30000000100000000000003e8000000006400000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="NetworkInterfaceNetworkInterface">
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">false</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff00000000000000010000000100000000000000000000000000000000070100000001000000000000006400000b7f0000000701010001000000000000000000000000640000001a0000008100000000000000070000000000000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000098b0000000100000000000003e8000000006400000000</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff00000000000000010000000100000000000000000000000000000000070100000001000000000000006400000a900000000701010001000000000000000000000000640000001a0000008100000000000000070000000000000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000089c0000000100000000000003e8000000006400000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ParametersCDPParameter">
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">false</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000001e01000000000000010000000000000064000015750000001e01010001000000000000000000000000640000001a00000081000000000000001e000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000007330000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000003e800000000ba00000000</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000000d010000000001000000000000006400000b7f0000000d01010001000000000000000000000000640000001a00000081000000000000000d000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000007330000000100000000000003e8000000073300000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="PortsCDPPortBase">
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">false</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff0000000000000001000000000000000300000000000000000000000018010000000000010000000000000064000015800000001801010001000000000000000000000000640000001a000000810000000000000018000000000000000100000000000000640000000100000000000000a100000001000000000000004f00000001000000000000006400000001000000000000006400000001000000000000096e0000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000003e800000002ea00000000</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff00000000000000010000000000000003000000000000000000000000070100000001000000000000006400000b8a0000000701010001000000000000000000000000640000001a000000810000000000000007000000000000000100000000000000640000000100000000000000a100000001000000000000004f00000001000000000000006400000001000000000000006400000001000000000000096e0000000100000000000003e8000000096e00000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="PropertiesCDPProperty">
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">false</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff0000000000000001000000010000000000000000000000000000000009010000000001000000000000006400000b7f0000000901010001000000000000000000000000640000001a000000810000000000000009000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000008c30000000100000000000003e800000008c300000000</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000000c010000000001000000000000006400000d2e0000000c01010001000000000000000000000000640000001a00000081000000000000000c000000000000000100000000000000640000000100000000000000e70000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000008c30000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000003e800000008c300000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="SettingsCDPSetting">
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">false</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff0000000000000001000000010000000000000000000000000000000003010000000100000000000000640000011e0000000301010001000000000000000000000000640000001a000000810000000000000003000000000000000100000000000000640000000100000000000000ba0000000100000000000003e800000000ba00000000</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff00000000000000010000000100000000000000000000000000000000030100000001000000000000006400000a9b0000000301010001000000000000000000000000640000001a00000081000000000000000300000000000000010000000000000064000000010000000000000a370000000100000000000003e80000000a3700000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="SignalsCDPSignal">
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">true</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000000000000010000000000000000000000001e01000000000000010000000000000064000015750000001e01010001000000000000000000000000640000001a00000081000000000000001e000000000000000100000000000002110000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000005860000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000003e800000000ba00000000</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000000000000010000000000000000000000000d010000000001000000000000006400000b7f0000000d01010001000000000000000000000000640000001a00000081000000000000000d000000000000000100000000000002110000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000005860000000100000000000003e8000000058600000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="StateTransitionsCDPStateTransition">
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">false</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000001601000000000001000000000000006400000bb80000001601010001000000000000000000000000640000001a000000810000000000000016000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000003e8000000006400000000</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff00000000000000010000000100000000000000000000000000000000040100000001000000000000006400000a900000000401010001000000000000000000000000640000001a000000810000000000000004000000000000000100000000000000640000000100000000000000640000000100000000000009c80000000100000000000003e800000009c800000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="StatesCDPState">
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">false</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000001401000000000001000000000000006400000baa0000001401010001000000000000000000000000640000001a0000008100000000000000140000000000000001000000000000011e0000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000003e8000000011e00000000</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff00000000000000010000000100000000000000000000000000000000020100000001000000000000006400000a900000000201010001000000000000000000000000640000001a00000081000000000000000200000000000000010000000000000a900000000100000000000003e80000000a9000000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="Subcomponents">
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">false</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000000101000000010000000000000064000000000000000101010001000000000000000000000000640000001a000000810000000000000001000000000000000100000000000003e800ffffffff</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000000101000000010000000000000064000000000000000101010001000000000000000000000000640000001a000000810000000000000001000000000000000100000000000003e800ffffffff00000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="SubcomponentsCDPComponent">
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">false</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff00000000000000010000000100000000000000000000000000000000170100000000000100000000000000640000160b0000001701010001000000000000000000000000640000001a00000081000000000000001700000000000000010000000000000064000000010000000000000064000000010000000000000064000000010000000000000a530000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000003e800000003da00000000</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff00000000000000010000000100000000000000000000000000000000050100000001000000000000006400000b7f0000000501010001000000000000000000000000640000001a00000081000000000000000500000000000000010000000000000064000000010000000000000064000000010000000000000064000000010000000000000a530000000100000000000003e80000000a5300000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="TagsCDPTag">
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">false</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000001a0100000000000001000000000000006400000d1a0000001a01010001000000000000000000000000640000001a00000081000000000000001a000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000003ba0000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000003e80000000064</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff00000000000000010000000100000000000000000000000000000000050100000001000000000000006400000a900000000501010001000000000000000000000000640000001a000000810000000000000005000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000009640000000100000000000003e8000000096400000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="TemplateTemplate">
     <value type="bool" key="Collapsed">false</value>
-    <value type="bool" key="FullyExpanded">false</value>
+    <value type="bool" key="FullyExpanded">true</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff0000000000000001000000010000000000000000000000000000000003010000000100000000000000640000011e0000000301010001000000000000000000000000640000001a000000810000000000000003000000000000000100000000000000640000000100000000000000ba0000000100000000000003e8000000006400000000</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000000301000000010000000000000064000007930000000301010001000000000000000000000000640000001a000000810000000000000003000000000000000100000000000002bd0000000100000000000004d60000000100000000000003e8000000006400000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="TimersCDPBaseTimer">
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">false</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff00000000000000010000000100000000000000000000000000000000250100000000000000010000000000000064000011940000002501010001000000000000000000000000640000001a000000810000000000000025000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000000960000000100000000000003e8000000006400000000</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000001301000000000001000000000000006400000a900000001301010001000000000000000000000000640000001a000000810000000000000013000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000003ec0000000100000000000003e800000003ec00000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="Unknown">
     <value type="bool" key="Collapsed">false</value>
     <value type="bool" key="FullyExpanded">false</value>
     <valuemap type="QVariantMap" key="Heights"/>
-    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000000501000000010000000000000064000001900000000501010001000000000000000000000000640000001a000000810000000000000005000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000003e8000000006400000000</value>
+    <value type="QByteArray" key="HorizontalHeader">000000ff0000000000000001000000010000000000000000000000000000000005010000000100000000000000640000079e0000000501010001000000000000000000000000640000001a000000810000000000000005000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000006720000000100000000000003e8000000006400000000</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="UserNodeAUserDefinedStructureLib.UserNodeA">
+    <value type="bool" key="Collapsed">false</value>
+    <value type="bool" key="FullyExpanded">false</value>
+    <valuemap type="QVariantMap" key="Heights"/>
+    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000000401000000010000000000000064000007930000000401010001000000000000000000000000640000001a000000810000000000000004000000000000000100000000000000640000000100000000000000640000000100000000000006cb0000000100000000000003e8000000006400000000</value>
    </valuemap>
   </valuemap>
  </data>
