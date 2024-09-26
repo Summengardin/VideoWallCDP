@@ -1,4 +1,4 @@
-<Component Model="CDPComponent" Name="Cameras" src="Components/Cameras.xml" Description="CDPComponent is an instance of a CDP component model, instantiated using the specification in the component configuration xml file. Components communicate by exchanging Messages, Signal- and Property-values, both inside applications and between applications.">
+<Component Model="CDPComponent" Name="VisionController0" src="Components/VisionController0.xml" Description="CDPComponent is an instance of a CDP component model, instantiated using the specification in the component configuration xml file. Components communicate by exchanging Messages, Signal- and Property-values, both inside applications and between applications.">
   <SchedulingOrder>TopDown</SchedulingOrder>
   <SchedulingGroup>Default</SchedulingGroup>
   <fs>10</fs>
@@ -15,19 +15,14 @@
   </Alarms>
 
   <Subcomponents>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera" src="Components/Cameras/Camera.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera1" src="Components/Cameras/Camera1.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera2" src="Components/Cameras/Camera2.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera3" src="Components/Cameras/Camera3.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera4" src="Components/Cameras/Camera4.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera5" src="Components/Cameras/Camera5.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera6" src="Components/Cameras/Camera6.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera7" src="Components/Cameras/Camera7.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera8" src="Components/Cameras/Camera8.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile" Name="Tile01" src="Components/VisionController0/Tile01.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile" Name="Tile02" src="Components/VisionController0/Tile02.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile" Name="Tile03" src="Components/VisionController0/Tile03.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile" Name="Tile04" src="Components/VisionController0/Tile04.xml"></Subcomponent>
     <Operator Description="MQTT Publisher Sequencer block to publish data to the MQTT network via Publish events. Has to be connected to a MQTTClient, via the MQTTClient connector." Model="MQTTIO.Publisher" Name="Publisher">
       <ArgumentMessage Command="131328" Description="Will be emitted when MQTTClient has established the connection with the configured broker" Input="0" Model="Sequencer.DefaultEvent" Name="Connected"></ArgumentMessage>
       <ArgumentMessage Command="131328" Description="Will be emitted when MQTTClient has lost the connection with the configured broker" Input="0" Model="Sequencer.DefaultEvent" Name="Disconnected"></ArgumentMessage>
-      <ArgumentMessage Command="131328" Data="Topic;Payload;QoS;Retain;AutoAlias;ResponseTopic;CorrelationData" Description="Invokes publishing of Payload data to the Topic. Can contain other Arguments that modify the MQTT publishing behavior." Input="1" Model="Sequencer.DefaultEvent" Name="Publish" RoutingList=""></ArgumentMessage>
+      <ArgumentMessage Command="131328" Data="Topic;Payload;QoS;Retain;AutoAlias;ResponseTopic;CorrelationData" Description="Invokes publishing of Payload data to the Topic. Can contain other Arguments that modify the MQTT publishing behavior." Input="1" Model="Sequencer.DefaultEvent" Name="Publish"></ArgumentMessage>
       <ArgumentMessage Command="131328" Data="Topic;Payload;QoS;Retain;AutoAlias;ResponseTopic;CorrelationData;MessageID" Description="Will be emitted when MQTTClient has successfully published the data from Publish event. Will contain all the arguments of the original Publish event plus a MessageID argument." Input="0" Model="Sequencer.DefaultEvent" Name="Published"></ArgumentMessage>
       <ArgumentMessage Command="131328" Data="Topic;Payload;QoS;Retain;AutoAlias;ResponseTopic;CorrelationData;Error" Description="Will be emitted when MQTTClient was not able to publish the data from Publish event. Will contain all the arguments of the original Publish event plus an Error argument." Input="0" Model="Sequencer.DefaultEvent" Name="PublishFailed"></ArgumentMessage>
       <Argument BinaryEncodedLength="0" CppName="" Description="MQTT topic string for the message to be published" Input="1" Model="Sequencer.Argument&lt;string&gt;" Name="Topic" Routing="" Type="string" Value=""></Argument>
@@ -39,10 +34,10 @@
       <Argument BinaryEncodedLength="0" CppName="" Description="When filled, identifies the specific request and should be echoed back by repsonder when it responds to ResponseTopic. Can be used only when MQTTClient ProtocolVersion is set to v5 (or higher) and the broker also supports  MQTT v5 (or higher)." Input="1" Model="Sequencer.Argument&lt;string&gt;" Name="CorrelationData" Routing="" Type="string" Value=""></Argument>
       <Argument CppName="" Description="On successful publish (Published event), contains MQTT message ID of the outgoing message. Message ID is available when QoS &gt; 0." Input="0" Model="Sequencer.Argument&lt;unsigned short&gt;" Name="MessageID" Routing="" Type="unsigned short" Value="0"></Argument>
       <Argument BinaryEncodedLength="0" CppName="" Description="On failure (PublishFailed event), contains the error message describing the failure reason" Input="0" Model="Sequencer.Argument&lt;string&gt;" Name="Error" Routing="" Type="string" Value=""></Argument>
-      <Client Description="Connector to the MQTTClient object, which will provide the MQTT functionality for the block (via RPC messaging). Can be connected also via the MQTTClientRPC router block(s)." Model="MQTTIO.MQTTClientConnector" Name="MQTTClient" Object="..MQTTClientRPC"></Client></Operator>
-  </Subcomponents>
+      <Client Description="Connector to the MQTTClient object, which will provide the MQTT functionality for the block (via RPC messaging). Can be connected also via the MQTTClientRPC router block(s)." Model="MQTTIO.MQTTClientConnector" Name="MQTTClient" Object="..MQTTClientRPC"></Client></Operator></Subcomponents>
 
   <ArgumentMessages>
-    <ArgumentMessage Command="0" Input="0" Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC" RoutingList="..MQTTClient"></ArgumentMessage></ArgumentMessages>
+    <ArgumentMessage Command="0" Input="0" Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC" RoutingList="..MQTTClient"></ArgumentMessage>
+  </ArgumentMessages>
   
 </Component>

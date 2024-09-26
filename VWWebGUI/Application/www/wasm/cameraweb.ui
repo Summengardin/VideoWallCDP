@@ -6,42 +6,56 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>318</width>
-    <height>318</height>
+    <width>276</width>
+    <height>296</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <property name="autoFillBackground">
-   <bool>true</bool>
+   <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">CDPBaseContainer{
-border-radius: 100px;
-}</string>
+   <string notr="true">QFrame{border-radius:10px; border: 2px solid rgb(200, 200, 200)}</string>
   </property>
   <property name="cdpTargetRouting">
    <string>VWController.Cameras.Camera</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
    <item>
-    <widget class="CDPBaseContainer" name="container">
-     <property name="styleSheet">
-      <string notr="true"/>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
      </property>
-     <property name="type" stdset="0">
-      <enum>CDPBaseContainer::Container</enum>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
      </property>
-     <property name="svgBorderMargins" stdset="0">
-      <bool>true</bool>
-     </property>
-     <property name="borderPixmap">
-      <string>:/themes/openbridge5_dusk/backgrounds/bgPanel.svg</string>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_3">
+     <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
        <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="CDPBaseLabel" name="label_8">
+          <property name="text">
+           <string>Name</string>
+          </property>
+          <property name="cdpRouting" stdset="0">
+           <string>.ShortName</string>
+          </property>
+         </widget>
+        </item>
         <item>
          <widget class="CDPBaseLineEdit" name="lineEdit">
           <property name="alignment">
@@ -51,12 +65,31 @@ border-radius: 100px;
            <string notr="true">:/themes/openbridge5_bright/backgrounds/bgLineEdit.svg</string>
           </property>
           <property name="cdpRouting" stdset="0">
-           <string>.DisplayName.Value</string>
+           <string>.i_DisplayName.Value</string>
           </property>
           <property name="pushRoutables" stdset="0">
            <stringlist notr="true">
             <string>cdpRouting</string>
            </stringlist>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="CDPBaseLine" name="horizontalLine">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="svgFile">
+           <string notr="true">:/themes/openbridge5_day/backgrounds/bgBorder.svg</string>
           </property>
          </widget>
         </item>
@@ -78,7 +111,7 @@ border-radius: 100px;
              <string notr="true">:/themes/openbridge5_bright/backgrounds/bgLineEdit.svg</string>
             </property>
             <property name="cdpRouting" stdset="0">
-             <string>.IP.Value</string>
+             <string>.i_IP.Value</string>
             </property>
             <property name="pushRoutables" stdset="0">
              <stringlist notr="true">
@@ -99,11 +132,14 @@ border-radius: 100px;
             <property name="placeholderText">
              <string>ex. 1920</string>
             </property>
+            <property name="precision">
+             <number>0</number>
+            </property>
             <property name="svgFile">
              <string notr="true">:/themes/openbridge5_bright/backgrounds/bgLineEdit.svg</string>
             </property>
             <property name="cdpRouting" stdset="0">
-             <string>.Width.Value</string>
+             <string>.i_Width.Value</string>
             </property>
             <property name="pushRoutables" stdset="0">
              <stringlist notr="true">
@@ -124,11 +160,14 @@ border-radius: 100px;
             <property name="placeholderText">
              <string>ex. 1080</string>
             </property>
+            <property name="precision">
+             <number>0</number>
+            </property>
             <property name="svgFile">
              <string notr="true">:/themes/openbridge5_bright/backgrounds/bgLineEdit.svg</string>
             </property>
             <property name="cdpRouting" stdset="0">
-             <string>.Height.Value</string>
+             <string>.i_Height.Value</string>
             </property>
             <property name="pushRoutables" stdset="0">
              <stringlist notr="true">
@@ -144,6 +183,53 @@ border-radius: 100px;
             </property>
            </widget>
           </item>
+          <item row="3" column="1">
+           <widget class="CDPBaseComboBox" name="comboBox_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>26</height>
+             </size>
+            </property>
+            <property name="svgFile">
+             <string notr="true">:/themes/openbridge5_bright/buttons/spinBox.svg</string>
+            </property>
+            <property name="cdpRouting" stdset="0">
+             <string>.i_Format.Value</string>
+            </property>
+            <property name="pushRoutables" stdset="0">
+             <stringlist notr="true">
+              <string>cdpRouting</string>
+             </stringlist>
+            </property>
+            <item>
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>BayerRG8</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>RGB</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>GREY</string>
+             </property>
+            </item>
+           </widget>
+          </item>
           <item row="4" column="0">
            <widget class="CDPBaseLabel" name="label_5">
             <property name="text">
@@ -154,7 +240,7 @@ border-radius: 100px;
           <item row="4" column="1">
            <widget class="CDPBaseLineEdit" name="lineEdit_6">
             <property name="text">
-             <string>--</string>
+             <string>Not connected</string>
             </property>
             <property name="placeholderText">
              <string>ex. 60</string>
@@ -163,7 +249,7 @@ border-radius: 100px;
              <string notr="true">:/themes/openbridge5_bright/backgrounds/bgLineEdit.svg</string>
             </property>
             <property name="cdpRouting" stdset="0">
-             <string>.Framerate.Value</string>
+             <string>.i_Framerate.Value</string>
             </property>
             <property name="pushRoutables" stdset="0">
              <stringlist notr="true">
@@ -179,31 +265,6 @@ border-radius: 100px;
             </property>
            </widget>
           </item>
-          <item row="7" column="0">
-           <widget class="CDPBaseLabel" name="label_7">
-            <property name="text">
-             <string>URI</string>
-            </property>
-           </widget>
-          </item>
-          <item row="7" column="1">
-           <widget class="CDPBaseLineEdit" name="lineEdit_5">
-            <property name="text">
-             <string/>
-            </property>
-            <property name="placeholderText">
-             <string>ex. rtsp://&lt;ip&gt;:&lt;port&gt;/&lt;mount&gt;</string>
-            </property>
-            <property name="svgFile">
-             <string notr="true">:/themes/openbridge5_bright/backgrounds/bgLineEdit.svg</string>
-            </property>
-            <property name="pushRoutables" stdset="0">
-             <stringlist notr="true">
-              <string>cdpRouting</string>
-             </stringlist>
-            </property>
-           </widget>
-          </item>
           <item row="6" column="1">
            <widget class="CDPBaseComboBox" name="comboBox">
             <property name="maximumSize">
@@ -216,7 +277,7 @@ border-radius: 100px;
              <string notr="true">:/themes/openbridge5_bright/buttons/spinBox.svg</string>
             </property>
             <property name="cdpRouting" stdset="0">
-             <string/>
+             <string>.i_Type.Value</string>
             </property>
             <property name="pushRoutables" stdset="0">
              <stringlist notr="true">
@@ -250,51 +311,32 @@ border-radius: 100px;
             </item>
            </widget>
           </item>
-          <item row="3" column="1">
-           <widget class="CDPBaseComboBox" name="comboBox_2">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
+          <item row="7" column="0">
+           <widget class="CDPBaseLabel" name="label_7">
+            <property name="text">
+             <string>URI</string>
             </property>
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>26</height>
-             </size>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="CDPBaseLineEdit" name="lineEdit_5">
+            <property name="text">
+             <string>Not connected</string>
+            </property>
+            <property name="placeholderText">
+             <string>ex. rtsp://&lt;ip&gt;:&lt;port&gt;/&lt;mount&gt;</string>
             </property>
             <property name="svgFile">
-             <string notr="true">:/themes/openbridge5_bright/buttons/spinBox.svg</string>
+             <string notr="true">:/themes/openbridge5_bright/backgrounds/bgLineEdit.svg</string>
             </property>
             <property name="cdpRouting" stdset="0">
-             <string>.Format.Value</string>
+             <string>.i_URI.Value</string>
             </property>
             <property name="pushRoutables" stdset="0">
              <stringlist notr="true">
               <string>cdpRouting</string>
              </stringlist>
             </property>
-            <item>
-             <property name="text">
-              <string/>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>BayerRG8</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>RGB</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>GREY</string>
-             </property>
-            </item>
            </widget>
           </item>
          </layout>
@@ -318,12 +360,6 @@ border-radius: 100px;
    <header>CDPBaseWidgets/CDPBaseComboBox.h</header>
   </customwidget>
   <customwidget>
-   <class>CDPBaseContainer</class>
-   <extends>QWidget</extends>
-   <header>CDPBaseWidgets/CDPBaseContainer.h</header>
-   <container>1</container>
-  </customwidget>
-  <customwidget>
    <class>RoutingContainer</class>
    <extends>QWidget</extends>
    <header>CDPBaseWidgets/RoutingReplacementWidget.h</header>
@@ -333,6 +369,16 @@ border-radius: 100px;
    <class>CDPBaseLabel</class>
    <extends>QLabel</extends>
    <header>CDPBaseWidgets/CDPBaseLabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBasePicture</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBasePicture.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseLine</class>
+   <extends>CDPBasePicture</extends>
+   <header>CDPBaseWidgets/CDPBaseLine.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

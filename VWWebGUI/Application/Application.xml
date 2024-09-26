@@ -18,6 +18,7 @@
       <Argument CppName="m_input" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;int&gt;" Name="In0" Routing="" Type="int" Value="0"></Argument>
       <Argument CppName="" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;int&gt;" Name="In1" Routing="" Type="int" Value="0"></Argument></Operator>
     <Subcomponent Model="CDPComponent" Name="CDPComponent" src="Components/CDPComponent.xml"></Subcomponent>
+    <Subcomponent Model="CDPComponent" Name="GUIConnections" src="Components/GUIConnections.xml"></Subcomponent>
   </Subcomponents>
 
   <Signals>

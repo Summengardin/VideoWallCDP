@@ -30,7 +30,7 @@
         <Connection Input="1" LocalName=".Source02" Model="CDPPortConnection" Name="MapSource02"></Connection>
         <Connection Input="1" LocalName=".Source03" Model="CDPPortConnection" Name="MapSource03"></Connection>
         <Connection Input="1" LocalName=".Source04" Model="CDPPortConnection" Name="MapSource04"></Connection>
-        <Connection Input="1" LocalName=".Source05" Model="CDPPortConnection" Name="MapSource05"></Connection>
+        <Connection Input="1" LocalName="" Model="CDPPortConnection" Name="MapSource05"></Connection>
         <Connection Input="1" LocalName=".Source12" Model="CDPPortConnection" Name="MapSource12"></Connection>
         <Connection Input="1" LocalName=".Source13" Model="CDPPortConnection" Name="MapSource13"></Connection>
         <Connection Input="1" LocalName=".Source14" Model="CDPPortConnection" Name="MapSource14"></Connection>

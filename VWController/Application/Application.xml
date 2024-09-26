@@ -17,7 +17,10 @@
     <Subcomponent Model="VideoWallLib.Layout" Name="Layout1" src="Components/Layout1.xml"></Subcomponent>
     <Subcomponent Model="PortMUX" Name="PortMUX" src="Components/PortMUX.xml"></Subcomponent>
     <Subcomponent Model="VideoWallLib.SourceOrchestrator" Name="SourceOrchestrator" src="Components/SourceOrchestrator.xml"></Subcomponent>
+    <Subcomponent Model="CDPComponent" Name="VisionController0" src="Components/VisionController0.xml"></Subcomponent>
     <Subcomponent Model="CDPComponent" Name="Cameras" src="Components/Cameras.xml"></Subcomponent>
+    <Subcomponent Encryption="Unencrypted" ListenAddress="127.0.0.1" ListenPort="1883" Model="MQTTIO.MQTTBroker" Name="MQTTBroker" src="Components/MQTTBroker.xml"></Subcomponent>
+    <Subcomponent BrokerHost="127.0.0.1" BrokerPort="1883" Encryption="Unencrypted" Model="MQTTIO.MQTTClient" Name="MQTTClient" src="Components/MQTTClient.xml"></Subcomponent>
   </Subcomponents>
 
   <Signals>
@@ -47,6 +50,9 @@
     is active for longer than this time, configuration saving will be allowed again, and the DelayConfigurationSaveAborted alarm will trigger." Name="MaxConfigurationSaveDelay" PreviousValue="600" Unit="s" Value="600"></Parameter></Parameters>
 
   <Ports></Ports>
+
+  <ArgumentMessages></ArgumentMessages>
+  
   
   
 
