@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg" width="200px" height="100px" enable-background="new 0 0 200 100" version="1.1" viewBox="0 0 200 100" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><metadata><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/><dc:title/></cc:Work></rdf:RDF></metadata>
+<g id="Styles">
+	<g style="opacity:0">
+		<rect x="235" width="200" height="100" fill="none"/>
+		<g id="outer_background_3_">
+			<linearGradient id="SVGID_1_" x1="334.5" x2="334.5" y1="100" y2="1.0005" gradientUnits="userSpaceOnUse">
+				<stop style="stop-color:#434648" offset="0"/>
+				<stop style="stop-color:#45484A" offset=".5639"/>
+				<stop style="stop-color:#4C4E4F" offset=".767"/>
+				<stop style="stop-color:#575959" offset=".9112"/>
+				<stop style="stop-color:#636363" offset="1"/>
+			</linearGradient>
+			<rect x="235" y="1" width="199" height="99" fill="url(#SVGID_1_)"/>
+			<rect x="235.5" y=".5" width="199" height="99" fill="none" stroke="#191919" stroke-miterlimit="10"/>
+		</g>
+		<g id="title_2_">
+			<linearGradient id="SVGID_2_" x1="335" x2="335" y1="41" gradientUnits="userSpaceOnUse">
+				<stop style="stop-color:#161A1A" offset=".5132"/>
+				<stop style="stop-color:#181C1C" offset=".6611"/>
+				<stop style="stop-color:#1E2223" offset=".7144"/>
+				<stop style="stop-color:#212526" offset=".7281"/>
+			</linearGradient>
+			<rect x="235" width="200" height="41" fill="url(#SVGID_2_)"/>
+			<linearGradient id="SVGID_3_" x1="406.16" x2="406.16" y1=".7002" y2="35.511" gradientUnits="userSpaceOnUse">
+				<stop style="stop-color:#53595E" offset=".1667"/>
+				<stop style="stop-color:#3B4045" offset=".2998"/>
+				<stop style="stop-color:#2B3035" offset=".4222"/>
+				<stop style="stop-color:#262A30" offset=".5175"/>
+			</linearGradient>
+			<polygon points="420.47 11.37 411.6 20.239 420.48 29.117 415.02 34.556 406.15 25.687 397.28 34.556 391.84 29.117 400.71 20.239 391.84 11.37 397.28 5.921 406.15 14.79 415.02 5.931" fill="url(#SVGID_3_)" stroke="#0d0d0d" stroke-miterlimit="10"/>
+		</g>
+	</g>
+	<g style="opacity:0">
+		<text transform="translate(289.03 25.998)" fill="#ffffff" font-family="ArialMT" font-size="17.955px">A window</text>
+	</g>
+</g>
+<g>
+	<rect id="cdpBorderMarginTopLeft" x="-.5" width="1" height="42" fill="none"/>
+	<rect id="cdpBorderMarginBottomRight" x="148" y="99" width="51.976" height="1" fill="none"/>
+	<rect id="cdpExitRect" x="152.98" y="3.921" width="34.524" height="32.579" fill="none" style="opacity:0"/>
+	<g id="cdpBackground" style="opacity:0">
+		<rect width="200" height="100" fill="none"/>
+		<g id="outer">
+			<linearGradient id="SVGID_4_" x1="100" x2="100" y1="100" y2=".00048828" gradientUnits="userSpaceOnUse">
+				<stop style="stop-color:#434648" offset="0"/>
+				<stop style="stop-color:#45484A" offset=".5654"/>
+				<stop style="stop-color:#4C4E4F" offset=".7691"/>
+				<stop style="stop-color:#575959" offset=".9137"/>
+				<stop style="stop-color:#636363" offset="1"/>
+			</linearGradient>
+			<rect width="200" height="100" fill="url(#SVGID_4_)"/>
+			<rect x="-.5" y=".5" width="200" height="100" fill="none" stroke="#19191a" stroke-miterlimit="10"/>
+		</g>
+		<g>
+			<linearGradient id="SVGID_5_" x1="99.501" x2="99.501" y1="42" y2="1" gradientUnits="userSpaceOnUse">
+				<stop style="stop-color:#161A1A" offset=".5132"/>
+				<stop style="stop-color:#181C1C" offset=".6611"/>
+				<stop style="stop-color:#1E2223" offset=".7144"/>
+				<stop style="stop-color:#212526" offset=".7281"/>
+			</linearGradient>
+			<rect y="1" width="199" height="41" fill="url(#SVGID_5_)"/>
+			<g>
+				<g>
+					<g>
+						<linearGradient id="SVGID_6_" x1="171.14" x2="171.14" y1=".6392" y2="35.537" gradientUnits="userSpaceOnUse">
+							<stop style="stop-color:#53595E" offset=".1667"/>
+							<stop style="stop-color:#3B4045" offset=".2998"/>
+							<stop style="stop-color:#2B3035" offset=".4222"/>
+							<stop style="stop-color:#262A30" offset=".5175"/>
+						</linearGradient>
+						<polygon points="156.79 11.336 162.24 5.873 171.14 14.764 180.03 5.883 185.5 11.336 176.6 20.227 185.5 29.127 180.04 34.58 171.14 25.688 162.24 34.58 156.79 29.127 165.68 20.227" fill="url(#SVGID_6_)" stroke="#0d0d0d" stroke-miterlimit="10"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+	<g id="cdpTitleText" style="opacity:0">
+		<text transform="translate(54,26)" fill="#ffffff" font-family="ArialMT" font-size="18px">A window</text>
+	</g>
+</g>
+</svg>

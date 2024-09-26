@@ -1,0 +1,16 @@
+QGraphicsView{
+  background: transparent;
+  border: none;
+  qproperty-graphBackgroundColorStart: rgb(0,0,0);
+  qproperty-graphBackgroundColorEnd: rgb(48,48,48);
+  qproperty-gridPenColorX: rgb(102,102,102);
+  qproperty-gridPenColorY: rgb(102,102,102);
+  qproperty-xAxisPenColor: rgb(255,255,255);
+  qproperty-xAxisTextColor: rgb(255,255,255);
+  qproperty-xAxisTextSelectedColor: rgb(0,158,214);
+  qproperty-yAxisPenColor: rgb(255,255,255);
+  qproperty-yAxisTextColor: rgb(255,255,255);
+  qproperty-yAxisTextSelectedColor: rgb(0,158,214);
+  qproperty-legendTextColor: rgb(255,255,255);
+}
+

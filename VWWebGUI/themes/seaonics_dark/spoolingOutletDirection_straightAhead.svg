@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 678 624.3" style="enable-background:new 0 0 678 624.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:#5A5B5B;stroke:#000000;stroke-miterlimit:10;}
+	.st2{fill:url(#rect4850_1_);stroke:#A7A7A7;stroke-width:0.245;stroke-opacity:0.7514;}
+	.st3{fill:url(#rect4846_1_);stroke:#A7A7A7;stroke-width:0.245;stroke-opacity:0.7514;}
+	.st4{opacity:0.519;fill:url(#ellipse6788_1_);enable-background:new    ;}
+	.st5{fill:url(#path4487_1_);stroke:url(#path4487_3_);stroke-width:0.345;stroke-opacity:0.7514;}
+	.st6{opacity:0.519;fill:url(#ellipse4428_1_);enable-background:new    ;}
+	.st7{fill:url(#rect74439_1_);stroke:url(#rect74439_3_);stroke-width:0.345;stroke-opacity:0.7514;}
+	.st8{fill:url(#wire_1_);stroke:#3E3F3F;stroke-width:0.5;}
+	.st9{fill:url(#shineLeft_1_);}
+	.st10{fill:url(#shineRight_1_);}
+	.st11{fill:none;stroke:#BE2626;stroke-width:3;stroke-miterlimit:10;}
+	.st12{fill:none;stroke:#BE2626;stroke-width:3;stroke-miterlimit:10;stroke-dasharray:13.9396,13.9396;}
+	.st13{fill:none;stroke:#BE2626;stroke-width:3;stroke-miterlimit:10;stroke-dasharray:3.9,3.9;}
+	.st14{fill:none;stroke:#0000C8;stroke-width:2;stroke-miterlimit:10;}
+	.st15{fill:#0000C8;}
+	.st16{fill:#FFFFFF;}
+	.st17{font-family:'ArialMT';}
+	.st18{font-size:24px;}
+</style>
+<g id="Layer1">
+	<g id="Layer_2" class="st0">
+		<rect class="st1" width="678" height="624.8"/>
+	</g>
+	
+		<g id="svg4295" inkscape:version="0.91 r13725" sodipodi:docname="winch2D_fulldrum.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg">
+		<g id="layer1" transform="translate(-0.06735803,-96.282858)" inkscape:groupmode="layer" inkscape:label="Winch">
+			
+				<linearGradient id="rect4850_1_" gradientUnits="userSpaceOnUse" x1="335.2612" y1="5.2494" x2="335.0722" y2="-37.273" gradientTransform="matrix(2.8346 0 0 2.8346 -598.9749 609.856)">
+				<stop  offset="0" style="stop-color:#6A6A58"/>
+				<stop  offset="0.2293" style="stop-color:#BFBFA3"/>
+				<stop  offset="0.4927" style="stop-color:#CECEC3"/>
+				<stop  offset="1" style="stop-color:#FEFFFA"/>
+			</linearGradient>
+			<path id="rect4850" inkscape:connector-curvature="0" class="st2" d="M133.6,428.6c0,64.2,0,128.4,0,192.6
+				c144.9,0,289.7,0,434.6,0c0-66.1,0-132.2,0-198.3c-144.9,0-289.7,0-434.6,0v2.8V428.6z"/>
+			
+				<linearGradient id="rect4846_1_" gradientUnits="userSpaceOnUse" x1="254.8093" y1="-112.7619" x2="255.6212" y2="-41.1355" gradientTransform="matrix(2.8346 0 0 2.8346 -598.9749 613.0696)">
+				<stop  offset="0" style="stop-color:#6A6A58"/>
+				<stop  offset="0.2293" style="stop-color:#BFBFA3"/>
+				<stop  offset="0.4927" style="stop-color:#CECEC3"/>
+				<stop  offset="1" style="stop-color:#FEFFFA"/>
+			</linearGradient>
+			<rect id="rect4846" x="113.6" y="331.7" class="st3" width="24.6" height="380.9"/>
+			
+				<radialGradient id="ellipse6788_1_" cx="364.1382" cy="-80.9975" r="5.0995" gradientTransform="matrix(-4.4614 0 0 19.4435 2191.0645 2096.1746)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#030302"/>
+				<stop  offset="1" style="stop-color:#9D9D9D;stop-opacity:0"/>
+			</radialGradient>
+			
+				<path id="ellipse6788" sodipodi:cx="32.298656" sodipodi:cy="142.19363" sodipodi:end="6.2806597" sodipodi:rx="6.7119484" sodipodi:ry="37.246052" sodipodi:start="0" sodipodi:type="arc" class="st4" d="
+				M529.2,521.3c0,57.5,13.4,104.1,29.9,104.1s29.9-46.5,30-104s-13.4-104.1-29.9-104.2s-30,46.4-30,103.8l29.9,0.3L529.2,521.3z"/>
+			
+				<linearGradient id="path4487_1_" gradientUnits="userSpaceOnUse" x1="254.8092" y1="-112.7619" x2="255.6212" y2="-41.1355" gradientTransform="matrix(2.8346 0 0 2.8346 -148.9749 613.0696)">
+				<stop  offset="0" style="stop-color:#6A6A58"/>
+				<stop  offset="0.2293" style="stop-color:#BFBFA3"/>
+				<stop  offset="0.4927" style="stop-color:#CECEC3"/>
+				<stop  offset="1" style="stop-color:#FEFFFA"/>
+			</linearGradient>
+			
+				<linearGradient id="path4487_3_" gradientUnits="userSpaceOnUse" x1="229.8022" y1="-32.0645" x2="246.5201" y2="58.5755" gradientTransform="matrix(2.8346 0 0 2.8346 -88.0476 545.0242)">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="1" style="stop-color:#727272"/>
+			</linearGradient>
+			<path id="path4487" inkscape:connector-curvature="0" sodipodi:nodetypes="czcczcc" class="st5" d="M563.6,331.7
+				c0,0,0.5-5.3,12.3-4.9s12.3,4.9,12.3,4.9v380.9c0,0-1,7.9-12.4,8c-11.5,0.1-12.2-8-12.2-8L563.6,331.7L563.6,331.7z"/>
+			
+				<radialGradient id="ellipse4428_1_" cx="291.6205" cy="-85.0524" r="5.159" gradientTransform="matrix(5.6627 -6.704215e-02 0.439 36.8357 -1479.5748 3673.9011)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#030302"/>
+				<stop  offset="1" style="stop-color:#9D9D9D;stop-opacity:0"/>
+			</radialGradient>
+			<ellipse id="ellipse4428" class="st6" cx="141.6" cy="521.3" rx="29.1" ry="104.1"/>
+			
+				<linearGradient id="rect74439_1_" gradientUnits="userSpaceOnUse" x1="254.8093" y1="-112.7619" x2="255.6212" y2="-41.1355" gradientTransform="matrix(2.8346 0 0 2.8346 -598.9749 613.0696)">
+				<stop  offset="0" style="stop-color:#6A6A58"/>
+				<stop  offset="0.2293" style="stop-color:#BFBFA3"/>
+				<stop  offset="0.4927" style="stop-color:#CECEC3"/>
+				<stop  offset="1" style="stop-color:#FEFFFA"/>
+			</linearGradient>
+			
+				<linearGradient id="rect74439_3_" gradientUnits="userSpaceOnUse" x1="229.8022" y1="-32.0645" x2="246.5201" y2="58.5755" gradientTransform="matrix(2.8346 0 0 2.8346 -538.0477 545.0242)">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="1" style="stop-color:#727272"/>
+			</linearGradient>
+			<path id="rect74439" inkscape:connector-curvature="0" sodipodi:nodetypes="czcczcc" class="st7" d="M113.6,331.7
+				c0,0,0.5-5.3,12.3-4.9s12.3,4.9,12.3,4.9v380.9c0,0-1,7.9-12.4,8c-11.5,0.1-12.2-8-12.2-8V331.7z"/>
+		</g>
+		
+			<linearGradient id="wire_1_" gradientUnits="userSpaceOnUse" x1="377.0598" y1="-134.7141" x2="378.7332" y2="-134.7141" gradientTransform="matrix(2.8346 0 0 4.4283 -919.8806 816.9037)">
+			<stop  offset="0" style="stop-color:#BEBEB1"/>
+			<stop  offset="0.6145" style="stop-color:#949484"/>
+			<stop  offset="1" style="stop-color:#191915"/>
+		</linearGradient>
+		<path id="wire" class="st8" d="M146.2,426.8h7.4V18.9c0,0,0-4.9-3.7-5s-3.7,4.9-3.7,4.9V426.8z"/>
+		<g id="shine" inkscape:groupmode="layer" inkscape:label="Flanges">
+			
+				<radialGradient id="shineLeft_1_" cx="78.445" cy="-166.4362" r="7.4618" gradientTransform="matrix(0.8 0 0 7.96 57 1617.6321)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			</radialGradient>
+			<ellipse id="shineLeft" class="st9" cx="119.8" cy="292.8" rx="6" ry="59.4"/>
+			
+				<radialGradient id="shineRight_1_" cx="78.445" cy="-166.4362" r="7.4618" gradientTransform="matrix(0.8 0 0 7.96 506.5998 1617.6321)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			</radialGradient>
+			<ellipse id="shineRight" class="st10" cx="569.4" cy="292.8" rx="6" ry="59.4"/>
+		</g>
+		<g id="lineCenter">
+			<g>
+				<line class="st11" x1="85.8" y1="427.4" x2="92.8" y2="427.4"/>
+				<line class="st12" x1="106.8" y1="427.4" x2="601.6" y2="427.4"/>
+				<line class="st11" x1="608.6" y1="427.4" x2="615.6" y2="427.4"/>
+			</g>
+		</g>
+		<g id="lineOutletPos">
+			<g>
+				<line class="st11" x1="118" y1="45.3" x2="120" y2="45.3"/>
+				<line class="st13" x1="123.9" y1="45.3" x2="176.6" y2="45.3"/>
+				<line class="st11" x1="178.5" y1="45.3" x2="180.5" y2="45.3"/>
+			</g>
+		</g>
+		<g id="arrowDistanceToOutlet">
+			<line id="distanceToOutlet" class="st14" x1="176.1" y1="426.8" x2="176.1" y2="58.5"/>
+			<line class="st14" x1="170.6" y1="427.4" x2="181.3" y2="427.4"/>
+			<polygon class="st15" points="184,63.9 176.2,45.2 168.5,63.9 			"/>
+		</g>
+		<g id="arrowOutletPos">
+			<line class="st14" x1="84.5" y1="116.7" x2="138.3" y2="55.2"/>
+			<polygon class="st15" points="137.9,67.7 144.4,48.5 126.3,57.6 			"/>
+		</g>
+		<g id="arrowWireAnchor">
+			<line class="st14" x1="231.8" y1="543.2" x2="156" y2="438.1"/>
+			<polygon class="st15" points="168,441.2 150.8,430.7 155.5,450.3 			"/>
+		</g>
+		<text transform="matrix(1 0 0 1 180.6667 575.6667)" class="st16 st17 st18">WIRE END ANCHOR POINT</text>
+		<text transform="matrix(0 -1 1 0 212.1655 311.8008)" class="st16 st17 st18">DISTANCE TO OUTLET</text>
+		<text transform="matrix(0 -1 1 0 75.1198 293.4297)" class="st16 st17 st18">OUTLET POSITION</text>
+	</g>
+</g>
+</svg>

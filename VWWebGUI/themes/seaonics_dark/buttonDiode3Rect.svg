@@ -1,0 +1,1211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg" inkscape:version="0.91 r13725" sodipodi:docname="buttonDiode3.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 119 64"
+	 enable-background="new 0 0 119 64" xml:space="preserve">
+<sodipodi:namedview  bordercolor="#666666" borderopacity="1" gridtolerance="10" guidetolerance="10" id="namedview230" inkscape:current-layer="svg" inkscape:cx="136.74444" inkscape:cy="-30.808032" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-height="1058" inkscape:window-maximized="1" inkscape:window-width="1858" inkscape:window-x="54" inkscape:window-y="-8" inkscape:zoom="1.5301741" objecttolerance="10" pagecolor="#ffffff" showgrid="false">
+	</sodipodi:namedview>
+<text id="textStyle1" transform="matrix(1 0 0 1 195.4569 -36.6399)" fill="#C6C6C6" font-family="'ArialMT'" font-size="16px">Style1</text>
+<text id="textPressed" transform="matrix(1 0 0 1 -90.9219 109.7091)" fill="#C6C6C6" font-family="'ArialMT'" font-size="16px">Pressed</text>
+<text id="textStyle0" transform="matrix(1 0 0 1 31.0277 -38.6333)" fill="#C6C6C6" font-family="'ArialMT'" font-size="16px">Style0</text>
+<g id="Layer1">
+	<g id="cdpButton">
+		<rect id="rect47" fill="none" width="119" height="64"/>
+		<g>
+			<rect id="rect47_1_" fill="none" width="119" height="64"/>
+			<g>
+				<g id="outer_2_">
+					
+						<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="43.6055" y1="75.6699" x2="75.3945" y2="-11.6699" gradientTransform="matrix(1 0 0 -1 0 64)">
+						<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+						<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+					</linearGradient>
+					<path fill="url(#SVGID_1_)" d="M119,50c0,7.7-6.3,14-14,14H14C6.3,64,0,57.7,0,50V14C0,6.3,6.3,0,14,0h91c7.7,0,14,6.3,14,14
+						V50z"/>
+				</g>
+				<g id="black_2_">
+					<path fill="#1E1E1E" d="M117,48c0,7.7-6.3,14-14,14H16C8.3,62,2,55.7,2,48V16C2,8.3,8.3,2,16,2h87c7.7,0,14,6.3,14,14V48z"/>
+				</g>
+				<g id="button_corner_9_1_">
+					<g>
+						<g id="buttonTop_11_">
+							
+								<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="59.5" y1="56.5" x2="59.5" y2="8.4" gradientTransform="matrix(1 0 0 -1 0 64)">
+								<stop  offset="0" style="stop-color:#919191"/>
+								<stop  offset="2.299604e-02" style="stop-color:#888888"/>
+								<stop  offset="9.317544e-02" style="stop-color:#727272"/>
+								<stop  offset="0.1761" style="stop-color:#616161"/>
+								<stop  offset="0.2786" style="stop-color:#565656"/>
+								<stop  offset="0.4224" style="stop-color:#4F4F4F"/>
+								<stop  offset="0.8218" style="stop-color:#4D4D4D"/>
+							</linearGradient>
+							<path fill="url(#SVGID_2_)" d="M111.5,44.6c0,6.1-4.9,11-11,11h-82c-6.1,0-11-4.9-11-11V18.5c0-6.1,4.9-11,11-11h82
+								c6.1,0,11,4.9,11,11V44.6z"/>
+						</g>
+						<g id="buttonBottom_11_">
+							
+								<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="59.5" y1="7.5" x2="59.5" y2="55" gradientTransform="matrix(1 0 0 -1 0 64)">
+								<stop  offset="0" style="stop-color:#2C2C2C"/>
+								<stop  offset="1" style="stop-color:#515151"/>
+							</linearGradient>
+							<path fill="url(#SVGID_3_)" d="M111.5,45.5c0,6-4.9,11-11,11h-82c-6.1,0-11-5-11-11V20c0-6,4.9-11,11-11h82
+								c6.1,0,11,4.9,11,11V45.5z"/>
+						</g>
+					</g>
+				</g>
+			</g>
+			<path id="path81_1_" fill="#333333" d="M29.5,19C36.4,19,42,24.6,42,31.5S36.4,44,29.5,44S17,38.4,17,31.5S22.6,19,29.5,19"/>
+			
+				<linearGradient id="path88_5_" gradientUnits="userSpaceOnUse" x1="22.2558" y1="65.7441" x2="36.7406" y2="51.2594" gradientTransform="matrix(1 0 0 -1 0 90)">
+				<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+				<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+			</linearGradient>
+			<path id="path88_1_" fill="url(#path88_5_)" d="M44,31.5c0-8-6.5-14.5-14.5-14.5S15,23.5,15,31.5S21.5,46,29.5,46
+				S44,39.5,44,31.5z M17,31.5C17,24.6,22.6,19,29.5,19S42,24.6,42,31.5S36.4,44,29.5,44S17,38.4,17,31.5z"/>
+		</g>
+		<g id="diodeOff">
+			<g id="g77">
+				<path id="path79" display="none" fill="#A5A5A5" d="M29.5,19C36.4,19,42,24.6,42,31.5S36.4,44,29.5,44S17,38.4,17,31.5
+					S22.6,19,29.5,19"/>
+				<path id="path81" fill="#333333" d="M29.5,19C36.4,19,42,24.6,42,31.5S36.4,44,29.5,44S17,38.4,17,31.5S22.6,19,29.5,19"/>
+			</g>
+			
+				<linearGradient id="path88_6_" gradientUnits="userSpaceOnUse" x1="22.253" y1="39.7413" x2="36.7377" y2="25.2566" gradientTransform="matrix(1 0 0 -1 0 64)">
+				<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+				<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+			</linearGradient>
+			<path id="path88" fill="url(#path88_6_)" d="M44,31.5c0-8-6.5-14.5-14.5-14.5c-8,0-14.5,6.5-14.5,14.5S21.5,46,29.5,46
+				C37.5,46,44,39.5,44,31.5z M17,31.5C17,24.6,22.6,19,29.5,19C36.4,19,42,24.6,42,31.5C42,38.4,36.4,44,29.5,44
+				C22.6,44,17,38.4,17,31.5z"/>
+			
+				<radialGradient id="circle95_1_" cx="29.494" cy="32.5" r="6.25" gradientTransform="matrix(1 0 0 -1 0 64)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#D6D6D6"/>
+				<stop  offset="0.9975" style="stop-color:#858585"/>
+			</radialGradient>
+			<circle id="circle95" fill="url(#circle95_1_)" cx="29.5" cy="31.5" r="6.3"/>
+		</g>
+	</g>
+	<g id="cdpButtonPressed">
+		<rect id="rect5" y="70" fill="none" width="119" height="64"/>
+		<g>
+			<rect id="rect5_1_" y="69.8" fill="none" width="119" height="64"/>
+			<g>
+				<g id="outer_4_">
+					
+						<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="43.6055" y1="5.9198" x2="75.3945" y2="-81.4198" gradientTransform="matrix(1 0 0 -1 0 64)">
+						<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+						<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+					</linearGradient>
+					<path fill="url(#SVGID_4_)" d="M119,119.8c0,7.7-6.3,14-14,14H14c-7.7,0-14-6.3-14-14v-36c0-7.7,6.3-14,14-14h91
+						c7.7,0,14,6.3,14,14V119.8z"/>
+				</g>
+				<g id="black_4_">
+					<path fill="#1E1E1E" d="M117,117.8c0,7.7-6.3,14-14,14H16c-7.7,0-14-6.3-14-14v-32c0-7.7,6.3-14,14-14h87c7.7,0,14,6.3,14,14
+						V117.8z"/>
+				</g>
+				<g id="button_corner_9_3_">
+					<g>
+						<g id="buttonBottom_14_">
+							
+								<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="59.5" y1="-13.25" x2="59.5" y2="-62.25" gradientTransform="matrix(1 0 0 -1 0 64)">
+								<stop  offset="0" style="stop-color:#2C2C2C"/>
+								<stop  offset="1" style="stop-color:#515151"/>
+							</linearGradient>
+							<path fill="url(#SVGID_5_)" d="M111.5,115.3c0,6.1-4.9,11-11,11h-82c-6.1,0-11-4.9-11-11v-27c0-6.1,4.9-11,11-11h82
+								c6.1,0,11,4.9,11,11V115.3z"/>
+						</g>
+					</g>
+				</g>
+			</g>
+			<path id="path30_1_" fill="#333333" d="M29.5,88.8c6.9,0,12.5,5.6,12.5,12.5s-5.6,12.5-12.5,12.5S17,108.2,17,101.3
+				S22.6,88.8,29.5,88.8"/>
+			
+				<linearGradient id="path37_5_" gradientUnits="userSpaceOnUse" x1="22.2558" y1="-4.0059" x2="36.7406" y2="-18.4906" gradientTransform="matrix(1 0 0 -1 0 90)">
+				<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+				<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+			</linearGradient>
+			<path id="path37_1_" fill="url(#path37_5_)" d="M44,101.3c0-8-6.5-14.5-14.5-14.5S15,93.3,15,101.3s6.5,14.5,14.5,14.5
+				S44,109.3,44,101.3z M17,101.3c0-6.9,5.6-12.5,12.5-12.5S42,94.3,42,101.3s-5.6,12.5-12.5,12.5S17,108.2,17,101.3z"/>
+		</g>
+		<g id="diodeOff_1_">
+			<g id="g26">
+				<path id="path28" display="none" fill="#A5A5A5" d="M29.5,89c6.9,0,12.5,5.6,12.5,12.5S36.4,114,29.5,114S17,108.4,17,101.5
+					S22.6,89,29.5,89"/>
+				<path id="path30" fill="#333333" d="M29.5,89c6.9,0,12.5,5.6,12.5,12.5S36.4,114,29.5,114S17,108.4,17,101.5S22.6,89,29.5,89"/>
+			</g>
+			
+				<linearGradient id="path37_6_" gradientUnits="userSpaceOnUse" x1="22.253" y1="-30.2587" x2="36.7377" y2="-44.7434" gradientTransform="matrix(1 0 0 -1 0 64)">
+				<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+				<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+			</linearGradient>
+			<path id="path37" fill="url(#path37_6_)" d="M44,101.5c0-8-6.5-14.5-14.5-14.5c-8,0-14.5,6.5-14.5,14.5S21.5,116,29.5,116
+				C37.5,116,44,109.5,44,101.5z M17,101.5C17,94.6,22.6,89,29.5,89c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5
+				C22.6,114,17,108.4,17,101.5z"/>
+			
+				<radialGradient id="circle44_1_" cx="29.494" cy="-37.5" r="6.25" gradientTransform="matrix(1 0 0 -1 0 64)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#D6D6D6"/>
+				<stop  offset="0.9975" style="stop-color:#858585"/>
+			</radialGradient>
+			<circle id="circle44" fill="url(#circle44_1_)" cx="29.5" cy="101.5" r="6.3"/>
+		</g>
+	</g>
+	<g id="cdpButtonDisabled" transform="translate(0,72.25)">
+		<rect id="rect5-2" y="70" fill="none" width="119" height="64"/>
+		<g>
+			<rect id="rect5-2_1_" y="69.8" fill="none" width="119" height="64"/>
+			<g>
+				<g id="outer_1_">
+					
+						<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="43.6055" y1="-66.3301" x2="75.3945" y2="-153.6698" gradientTransform="matrix(1 0 0 -1 0 -8.25)">
+						<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+						<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+					</linearGradient>
+					<path fill="url(#SVGID_6_)" d="M119,119.8c0,7.7-6.3,14-14,14H14c-7.7,0-14-6.3-14-14v-36c0-7.7,6.3-14,14-14h91
+						c7.7,0,14,6.3,14,14V119.8z"/>
+				</g>
+				<g id="black_1_">
+					<path fill="#1E1E1E" d="M117,117.8c0,7.7-6.3,14-14,14H16c-7.7,0-14-6.3-14-14v-32c0-7.7,6.3-14,14-14h87c7.7,0,14,6.3,14,14
+						V117.8z"/>
+				</g>
+				<g id="button_corner_9_2_" opacity="0.5">
+					<g>
+						<g id="buttonBottom_13_">
+							
+								<linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="59.5" y1="-134.5" x2="59.5" y2="-85.5" gradientTransform="matrix(1 0 0 -1 0 -8.25)">
+								<stop  offset="0" style="stop-color:#2C2C2C"/>
+								<stop  offset="1" style="stop-color:#515151"/>
+							</linearGradient>
+							<path fill="url(#SVGID_7_)" d="M111.5,115.3c0,6.1-4.9,11-11,11h-82c-6.1,0-11-4.9-11-11v-27c0-6.1,4.9-11,11-11h82
+								c6.1,0,11,4.9,11,11V115.3z"/>
+						</g>
+					</g>
+				</g>
+			</g>
+			<path id="path30-2_1_" inkscape:connector-curvature="0" opacity="0.5" fill="#333333" enable-background="new    " d="
+				M29.5,88.8c6.9,0,12.5,5.6,12.5,12.5s-5.6,12.5-12.5,12.5S17,108.2,17,101.3S22.6,88.8,29.5,88.8"/>
+			
+				<linearGradient id="path37-1_5_" gradientUnits="userSpaceOnUse" x1="22.2558" y1="-76.2559" x2="36.7406" y2="-90.7406" gradientTransform="matrix(1 0 0 -1 0 17.75)">
+				<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+				<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+			</linearGradient>
+			
+				<path id="path37-1_1_" inkscape:connector-curvature="0" opacity="0.5" fill="url(#path37-1_5_)" enable-background="new    " d="
+				M44,101.3c0-8-6.5-14.5-14.5-14.5S15,93.3,15,101.3s6.5,14.5,14.5,14.5S44,109.3,44,101.3z M17,101.3c0-6.9,5.6-12.5,12.5-12.5
+				S42,94.3,42,101.3s-5.6,12.5-12.5,12.5S17,108.2,17,101.3z"/>
+		</g>
+		<g id="diodeOff_1_-2">
+			<g id="g26-3">
+				<path id="path28-2" inkscape:connector-curvature="0" display="none" fill="#A5A5A5" d="M29.5,89c6.9,0,12.5,5.6,12.5,12.5
+					S36.4,114,29.5,114S17,108.4,17,101.5S22.6,89,29.5,89"/>
+				<path id="path30-2" inkscape:connector-curvature="0" fill="#333333" d="M29.5,89c6.9,0,12.5,5.6,12.5,12.5S36.4,114,29.5,114
+					S17,108.4,17,101.5S22.6,89,29.5,89"/>
+			</g>
+			
+				<linearGradient id="path37-1_6_" gradientUnits="userSpaceOnUse" x1="22.253" y1="-102.5087" x2="36.7377" y2="-116.9934" gradientTransform="matrix(1 0 0 -1 0 -8.25)">
+				<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+				<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+			</linearGradient>
+			<path id="path37-1" inkscape:connector-curvature="0" fill="url(#path37-1_6_)" d="M44,101.5c0-8-6.5-14.5-14.5-14.5
+				c-8,0-14.5,6.5-14.5,14.5S21.5,116,29.5,116C37.5,116,44,109.5,44,101.5z M17,101.5C17,94.6,22.6,89,29.5,89
+				c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C22.6,114,17,108.4,17,101.5z"/>
+			
+				<radialGradient id="circle44-6_1_" cx="29.494" cy="-109.75" r="6.25" gradientTransform="matrix(1 0 0 -1 0 -8.25)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#D6D6D6"/>
+				<stop  offset="0.9975" style="stop-color:#858585"/>
+			</radialGradient>
+			
+				<circle id="circle44-6" sodipodi:cx="29.493999" sodipodi:cy="101.5" sodipodi:rx="6.25" sodipodi:ry="6.25" fill="url(#circle44-6_1_)" cx="29.5" cy="101.5" r="6.3">
+			</circle>
+		</g>
+	</g>
+	<rect id="cdpBorderMarginBottomRight" x="86" y="33.5" fill="none" width="32" height="31"/>
+	<rect id="cdpBorderMarginTopLeft" x="-1" y="0.5" fill="none" width="45" height="31"/>
+	<text id="cdpText" transform="matrix(1 0 0 1 52.5107 36.4385)" fill="#C6C6C6" font-family="'ArialMT'" font-size="16px">STICK</text>
+</g>
+<g id="Styles" transform="translate(-12.451613,3.1290323)">
+	<g id="cdpButtonStyle1">
+		<rect id="rect166" x="177.3" y="-2.9" fill="none" width="119" height="64"/>
+		<g>
+			<rect id="rect47_4_" x="177.3" y="-3.1" fill="none" width="119" height="64"/>
+			<g>
+				<g id="outer_6_">
+					
+						<linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="220.8971" y1="72.5408" x2="252.6861" y2="-14.7989" gradientTransform="matrix(1 0 0 -1 0 57.7419)">
+						<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+						<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+					</linearGradient>
+					<path fill="url(#SVGID_8_)" d="M296.3,46.9c0,7.7-6.3,14-14,14h-91c-7.7,0-14-6.3-14-14v-36c0-7.7,6.3-14,14-14h91
+						c7.7,0,14,6.3,14,14V46.9z"/>
+				</g>
+				<g id="black_6_">
+					<path fill="#1E1E1E" d="M294.3,44.9c0,7.7-6.3,14-14,14h-87c-7.7,0-14-6.3-14-14v-32c0-7.7,6.3-14,14-14h87c7.7,0,14,6.3,14,14
+						V44.9z"/>
+				</g>
+				<g id="button_corner_9_6_">
+					<g>
+						<g id="buttonTop_3_">
+							
+								<linearGradient id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="236.7916" y1="53.371" x2="236.7916" y2="5.271" gradientTransform="matrix(1 0 0 -1 0 57.7419)">
+								<stop  offset="0" style="stop-color:#919191"/>
+								<stop  offset="2.299604e-02" style="stop-color:#888888"/>
+								<stop  offset="9.317544e-02" style="stop-color:#727272"/>
+								<stop  offset="0.1761" style="stop-color:#616161"/>
+								<stop  offset="0.2786" style="stop-color:#565656"/>
+								<stop  offset="0.4224" style="stop-color:#4F4F4F"/>
+								<stop  offset="0.8218" style="stop-color:#4D4D4D"/>
+							</linearGradient>
+							<path fill="url(#SVGID_9_)" d="M288.8,41.5c0,6.1-4.9,11-11,11h-82c-6.1,0-11-4.9-11-11V15.4c0-6.1,4.9-11,11-11h82
+								c6.1,0,11,4.9,11,11V41.5z"/>
+						</g>
+						<g id="buttonBottom_3_">
+							
+								<linearGradient id="SVGID_10_" gradientUnits="userSpaceOnUse" x1="236.7916" y1="4.371" x2="236.7916" y2="51.871" gradientTransform="matrix(1 0 0 -1 0 57.7419)">
+								<stop  offset="0" style="stop-color:#2C2C2C"/>
+								<stop  offset="1" style="stop-color:#515151"/>
+							</linearGradient>
+							<path fill="url(#SVGID_10_)" d="M288.8,42.4c0,6-4.9,11-11,11h-82c-6.1,0-11-5-11-11V16.9c0-6,4.9-11,11-11h82
+								c6.1,0,11,4.9,11,11V42.4z"/>
+						</g>
+					</g>
+				</g>
+			</g>
+			<path id="path81_4_" fill="#333333" d="M206.8,15.9c6.9,0,12.5,5.6,12.5,12.5s-5.6,12.5-12.5,12.5c-6.9,0-12.5-5.6-12.5-12.5
+				S199.9,15.9,206.8,15.9"/>
+			
+				<linearGradient id="path88_7_" gradientUnits="userSpaceOnUse" x1="199.5474" y1="62.6151" x2="214.0322" y2="48.1304" gradientTransform="matrix(1 0 0 -1 0 83.7419)">
+				<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+				<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+			</linearGradient>
+			<path id="path88_4_" fill="url(#path88_7_)" d="M221.3,28.4c0-8-6.5-14.5-14.5-14.5s-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5
+				S221.3,36.4,221.3,28.4z M194.3,28.4c0-6.9,5.6-12.5,12.5-12.5c6.9,0,12.5,5.6,12.5,12.5s-5.6,12.5-12.5,12.5
+				C199.9,40.9,194.3,35.3,194.3,28.4z"/>
+		</g>
+		<g id="g4996">
+			<g id="g196">
+				<path id="path198" inkscape:connector-curvature="0" display="none" fill="#A5A5A5" d="M206.8,19c6.9,0,12.5,5.6,12.5,12.5
+					S213.7,44,206.8,44s-12.5-5.6-12.5-12.5S199.9,19,206.8,19"/>
+				<path id="path200" inkscape:connector-curvature="0" fill="#333333" d="M206.8,16.1c6.9,0,12.5,5.6,12.5,12.5
+					s-5.6,12.5-12.5,12.5s-12.5-5.6-12.5-12.5S199.9,16.1,206.8,16.1"/>
+			</g>
+			
+				<linearGradient id="path211_1_" gradientUnits="userSpaceOnUse" x1="211.9956" y1="39.4913" x2="226.4804" y2="25.0066" gradientTransform="matrix(1 0 0 -1 -12.4516 60.871)">
+				<stop  offset="0" style="stop-color:#5E6F56"/>
+				<stop  offset="0.4337" style="stop-color:#5E6F56"/>
+				<stop  offset="0.6684" style="stop-color:#9CB392"/>
+				<stop  offset="1" style="stop-color:#9CB392"/>
+			</linearGradient>
+			<path id="path211" inkscape:connector-curvature="0" opacity="0.5" fill="url(#path211_1_)" enable-background="new    " d="
+				M221.3,28.6c0-8-6.5-14.5-14.5-14.5c-8,0-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5C214.8,43.1,221.3,36.6,221.3,28.6z M194.3,28.6
+				c0-6.9,5.6-12.5,12.5-12.5c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C199.9,41.1,194.3,35.5,194.3,28.6z"/>
+			
+				<linearGradient id="path218_1_" gradientUnits="userSpaceOnUse" x1="211.9956" y1="39.4913" x2="226.4804" y2="25.0066" gradientTransform="matrix(1 0 0 -1 -12.4516 60.871)">
+				<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+				<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:0.24"/>
+			</linearGradient>
+			<path id="path218" inkscape:connector-curvature="0" fill="url(#path218_1_)" d="M221.3,28.6c0-8-6.5-14.5-14.5-14.5
+				c-8,0-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5C214.8,43.1,221.3,36.6,221.3,28.6z M194.3,28.6c0-6.9,5.6-12.5,12.5-12.5
+				c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C199.9,41.1,194.3,35.5,194.3,28.6z"/>
+			
+				<image overflow="visible" enable-background="new    " width="32" height="31" id="image220" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
+GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABS5JREFUeNrMV81uHEUQrurumdlf
+O+vFRJGIhFBuOebGiRfgyPvwPrwEL8AxtwghgRSFYG+8/zPdXcVXvevEsb1LhATx2qXp7en6/6qq
+l+gzf/hfc+otXsbOf2bADWU/gOf5gWMvQT/RDUM+wSj+FMWmdAL6HTT6A2tPdPLkMY/oi3JsSX/R
+/PUbnWWsvyJ9Cs4Z6L0xRwzhY8qvFfdAZ6BLOnMrGrqKOieU3Xajhb/XZ3XkJVItQ1rJGV3KJSRs
+bxpywAg+ptzeQ4h7QhPvqPay9YHZhcTRE2fPe361f/U5aJVVJbleTkJdfk2zDOOFjhjBx5T36LGv
+qfK8WVfOc811VeNFDYk1jgVH4oxFyAlkJ3zp1KiLnWTttD+IHcW8pTf5kBF8TPkJhbAlqTW6XuDc
+Z5a+MvdxrMfiYAT5vZCsTjrI3rLqRtVtkvoNV7LtkevmlNIhI8LtALwFnSPsmbZ+QcOqMVtYRqI6
+ZvIgHkHhEIYguhr2diegANkCAFSXSMPCs3gzbUGqkGUKFbLzbX3htvcoMV7T1K3XHDpNvRT8kJ2c
+AAQTKJ6o0iNA7wRJ7+N7tWPViMeGleaO6R3eV1mEtXXaS1lrhGIwmMpzupBzK1X9UBnhtvdzeN9S
+9NtBU3nSJuQ8JHWnUDZV1nMwTkn5EY6OoLreZ7Ir1ej0HYxpWBmQATRCTtRo3BBHBSgT4HI7Ch8Z
+sCi1fs6T9cA3IVXic08UiphPoXyqyl/iGEjPYBBSwXsDtBiA6PQhAhWiUoxS11ouQ/ZtTIP456BJ
+C3rLRPdg4EfQxSvidgowT6JLlC28DYA+IOETrNES4D0gomYA8xhS9gYA+WopYQNlRoRa0IocLcVJ
+Iz5VqBs3mSX37QXJ9892+u6C8JnBWrhro2ePmneMcFIfXQZpYAv5KZSf8i4FY+ZdCuB5hz2PKGUY
+sQGc5lA+LLziGhUNmqOvJ6jWyccgdNcARB/nKX2NjRGDhTmo23nkKgS0gbcIL6EUuY9DZY30DIxs
+bXvlHdZ21niM12SYLJNpsk3Hyx0E+d4yjAulCHdrVDxA5SDMgdPBzWKQ1T64988ScvPAuiL2uDzx
+3RmXFh5QUu7Qtgvwx4fKcP+pxsU4NWLBH5qACPxBF4JgQ3DWHZLxLN93jajsaXmCV1AD4goPIQGs
+kKvVPY3XXU8r1L9e0G/gW6q0MCCx7BRIRARasG6s1uHVBofKGu6tjWxte+Wd9QMj8BivyTBZJtNk
+m47nN7rhxxF4BfOnTv2kgmIrW23hxwZ+rBCQJTiuEBEkByFnNk93VcDo+6QLvLuickaXwLJVAQyB
+akeJQpXzLGm42IH93jJ88Yz0GwoyWVcSAkf0gRatdQ1r51AyAzQArJJ7lFrxtN5PQ8wBXmJ5adVc
+zlpPE107lKTLPqYUZDaJ8uuE9JdDGAA+cJl4q+3gBBOswcylLWUIVtcUZTb2oRwNCaX2oRMiEjCA
+lijLd5ZJlN8F0nEFKCzF6zb6HHv1Ij+luc0DPQhC69PoOLJGK+e1xg6dDLNghTAGuO2gHwFBk2Fa
+ltIjrq6LZ4cDnrPNApIZ8nOl2a/CNrd9ljgYVBn1WmbB0XH8HfZwyFd0GgIN68YUJR1hwqHxOJA1
+JExD+jANyaZhuQDRSvfTEGcXFHgJJG4SrbpIV8nmwM//NI73FmKW9vIYQwT3AZSEgyx0Oc4tqnl1
+9z6g7+8DaBhIj90HAF6S7ZhcnEMWDLjj/QO8ET2IO+GDuBU/iN8FD+KX0f/w2/Czf/4WYABy2VcK
+pnu9zQAAAABJRU5ErkJggg==" transform="matrix(0.9688 0 0 1 191.4639 13.121)">
+			</image>
+			
+				<linearGradient id="circle227_1_" gradientUnits="userSpaceOnUse" x1="212.9866" y1="32.25" x2="225.4866" y2="32.25" gradientTransform="matrix(1 0 0 -1 -12.4516 60.871)">
+				<stop  offset="0" style="stop-color:#FFFA7A"/>
+				<stop  offset="1" style="stop-color:#FFF9B2"/>
+			</linearGradient>
+			<circle id="circle227" fill="url(#circle227_1_)" cx="206.8" cy="28.6" r="6.3"/>
+		</g>
+	</g>
+	<g id="cdpButtonPressedStyle1">
+		<rect id="rect102" x="177.3" y="70" fill="none" width="119" height="64"/>
+		<g id="g104">
+			<g>
+				<rect id="rect5_4_" x="177.3" y="69.7" fill="none" width="119" height="64"/>
+				<g>
+					<g id="outer_9_">
+						
+							<linearGradient id="SVGID_11_" gradientUnits="userSpaceOnUse" x1="220.8971" y1="-0.3382" x2="252.6861" y2="-87.6779" gradientTransform="matrix(1 0 0 -1 0 57.7419)">
+							<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+							<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+						</linearGradient>
+						<path fill="url(#SVGID_11_)" d="M296.3,119.7c0,7.7-6.3,14-14,14h-91c-7.7,0-14-6.3-14-14v-36c0-7.7,6.3-14,14-14h91
+							c7.7,0,14,6.3,14,14V119.7z"/>
+					</g>
+					<g id="black_9_">
+						<path fill="#1E1E1E" d="M294.3,117.7c0,7.7-6.3,14-14,14h-87c-7.7,0-14-6.3-14-14v-32c0-7.7,6.3-14,14-14h87
+							c7.7,0,14,6.3,14,14V117.7z"/>
+					</g>
+					<g id="button_corner_9_9_">
+						<g>
+							<g id="buttonBottom_6_">
+								
+									<linearGradient id="SVGID_12_" gradientUnits="userSpaceOnUse" x1="236.7916" y1="-19.508" x2="236.7916" y2="-68.508" gradientTransform="matrix(1 0 0 -1 0 57.7419)">
+									<stop  offset="0" style="stop-color:#2C2C2C"/>
+									<stop  offset="1" style="stop-color:#515151"/>
+								</linearGradient>
+								<path fill="url(#SVGID_12_)" d="M288.8,115.2c0,6.1-4.9,11-11,11h-82c-6.1,0-11-4.9-11-11v-27c0-6.1,4.9-11,11-11h82
+									c6.1,0,11,4.9,11,11V115.2z"/>
+							</g>
+						</g>
+					</g>
+				</g>
+				<path id="path30_4_" fill="#333333" d="M206.8,88.7c6.9,0,12.5,5.6,12.5,12.5s-5.6,12.5-12.5,12.5c-6.9,0-12.5-5.6-12.5-12.5
+					S199.9,88.7,206.8,88.7"/>
+				
+					<linearGradient id="path37_7_" gradientUnits="userSpaceOnUse" x1="199.5474" y1="-10.2639" x2="214.0322" y2="-24.7486" gradientTransform="matrix(1 0 0 -1 0 83.7419)">
+					<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+					<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+				</linearGradient>
+				<path id="path37_4_" fill="url(#path37_7_)" d="M221.3,101.2c0-8-6.5-14.5-14.5-14.5s-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5
+					S221.3,109.2,221.3,101.2z M194.3,101.2c0-6.9,5.6-12.5,12.5-12.5c6.9,0,12.5,5.6,12.5,12.5s-5.6,12.5-12.5,12.5
+					C199.9,113.7,194.3,108.1,194.3,101.2z"/>
+			</g>
+			<g id="diodeOn_2_">
+				<g id="g132">
+					<path id="path134" inkscape:connector-curvature="0" display="none" fill="#A5A5A5" d="M202.5,89.5c6.9,0,12.5,5.6,12.5,12.5
+						s-5.6,12.5-12.5,12.5S190,108.9,190,102S195.5,89.5,202.5,89.5"/>
+					<path id="path136" inkscape:connector-curvature="0" fill="#333333" d="M206.6,89c6.9,0,12.5,5.6,12.5,12.5
+						s-5.6,12.5-12.5,12.5s-12.5-5.6-12.5-12.5S199.7,89,206.6,89"/>
+				</g>
+				
+					<linearGradient id="path147_1_" gradientUnits="userSpaceOnUse" x1="211.8163" y1="-33.3873" x2="226.301" y2="-47.872" gradientTransform="matrix(1 0 0 -1 -12.4516 60.871)">
+					<stop  offset="0" style="stop-color:#5E6F56"/>
+					<stop  offset="0.4337" style="stop-color:#5E6F56"/>
+					<stop  offset="0.6684" style="stop-color:#9CB392"/>
+					<stop  offset="1" style="stop-color:#9CB392"/>
+				</linearGradient>
+				<path id="path147" inkscape:connector-curvature="0" opacity="0.5" fill="url(#path147_1_)" enable-background="new    " d="
+					M221.1,101.5c0-8-6.5-14.5-14.5-14.5c-8,0-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5C214.6,116,221.1,109.5,221.1,101.5z
+					 M194.1,101.5c0-6.9,5.6-12.5,12.5-12.5c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C199.7,114,194.1,108.4,194.1,101.5z
+					"/>
+				
+					<linearGradient id="path154_1_" gradientUnits="userSpaceOnUse" x1="211.8163" y1="-33.3873" x2="226.301" y2="-47.872" gradientTransform="matrix(1 0 0 -1 -12.4516 60.871)">
+					<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+					<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:0.24"/>
+				</linearGradient>
+				<path id="path154" inkscape:connector-curvature="0" fill="url(#path154_1_)" d="M221.1,101.5c0-8-6.5-14.5-14.5-14.5
+					c-8,0-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5C214.6,116,221.1,109.5,221.1,101.5z M194.1,101.5c0-6.9,5.6-12.5,12.5-12.5
+					c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C199.7,114,194.1,108.4,194.1,101.5z"/>
+				
+					<image overflow="visible" enable-background="new    " width="32" height="31" id="image156" xlink:href="data:image/png;base64,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" transform="matrix(0.9688 0 0 1 191.2852 86)">
+				</image>
+				<circle id="circle163" fill="#FFF99F" cx="206.6" cy="101.5" r="6.3"/>
+			</g>
+		</g>
+	</g>
+	<g id="cdpButtonDisabledStyle1" transform="translate(-3.4015425,0)">
+		<rect id="rect5-2-8" x="180.7" y="140" fill="none" width="119" height="64"/>
+		<g>
+			<rect id="rect5-2_2_" x="180.7" y="139.7" fill="none" width="119" height="64"/>
+			<g>
+				<g id="outer_10_">
+					
+						<linearGradient id="SVGID_13_" gradientUnits="userSpaceOnUse" x1="224.2987" y1="1.9198" x2="256.0876" y2="-85.4199" gradientTransform="matrix(1 0 0 -1 0 129.9919)">
+						<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+						<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+					</linearGradient>
+					<path fill="url(#SVGID_13_)" d="M299.7,189.7c0,7.7-6.3,14-14,14h-91c-7.7,0-14-6.3-14-14v-36c0-7.7,6.3-14,14-14h91
+						c7.7,0,14,6.3,14,14V189.7z"/>
+				</g>
+				<g id="black_10_">
+					<path fill="#1E1E1E" d="M297.7,187.7c0,7.7-6.3,14-14,14h-87c-7.7,0-14-6.3-14-14v-32c0-7.7,6.3-14,14-14h87
+						c7.7,0,14,6.3,14,14V187.7z"/>
+				</g>
+				<g id="button_corner_9_10_" opacity="0.5">
+					<g>
+						<g id="buttonBottom_7_">
+							
+								<linearGradient id="SVGID_14_" gradientUnits="userSpaceOnUse" x1="240.1932" y1="-66.25" x2="240.1932" y2="-17.25" gradientTransform="matrix(1 0 0 -1 0 129.9919)">
+								<stop  offset="0" style="stop-color:#2C2C2C"/>
+								<stop  offset="1" style="stop-color:#515151"/>
+							</linearGradient>
+							<path fill="url(#SVGID_14_)" d="M292.2,185.2c0,6.1-4.9,11-11,11h-82c-6.1,0-11-4.9-11-11v-27c0-6.1,4.9-11,11-11h82
+								c6.1,0,11,4.9,11,11V185.2z"/>
+						</g>
+					</g>
+				</g>
+			</g>
+			<path id="path30-2_2_" inkscape:connector-curvature="0" opacity="0.5" fill="#333333" enable-background="new    " d="
+				M210.2,158.7c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5c-6.9,0-12.5-5.6-12.5-12.5C197.7,164.3,203.3,158.7,210.2,158.7
+				"/>
+			
+				<linearGradient id="path37-1_7_" gradientUnits="userSpaceOnUse" x1="202.949" y1="-8.0059" x2="217.4338" y2="-22.4906" gradientTransform="matrix(1 0 0 -1 0 155.9919)">
+				<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+				<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+			</linearGradient>
+			
+				<path id="path37-1_2_" inkscape:connector-curvature="0" opacity="0.5" fill="url(#path37-1_7_)" enable-background="new    " d="
+				M224.7,171.2c0-8-6.5-14.5-14.5-14.5s-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5S224.7,179.2,224.7,171.2z M197.7,171.2
+				c0-6.9,5.6-12.5,12.5-12.5c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C203.3,183.7,197.7,178.1,197.7,171.2z"/>
+		</g>
+		<g id="diodeOn" transform="translate(3.95161,69.991931)">
+			<g id="g4960">
+				<path id="path4962" inkscape:connector-curvature="0" display="none" fill="#A5A5A5" d="M202.5,89.5c6.9,0,12.5,5.6,12.5,12.5
+					s-5.6,12.5-12.5,12.5S190,108.9,190,102S195.5,89.5,202.5,89.5"/>
+				<path id="path4964" inkscape:connector-curvature="0" fill="#333333" d="M206.6,89c6.9,0,12.5,5.6,12.5,12.5
+					s-5.6,12.5-12.5,12.5s-12.5-5.6-12.5-12.5S199.7,89,206.6,89"/>
+			</g>
+			
+				<linearGradient id="path4976_1_" gradientUnits="userSpaceOnUse" x1="211.2662" y1="-103.3793" x2="225.7509" y2="-117.864" gradientTransform="matrix(1 0 0 -1 -11.9015 -9.121)">
+				<stop  offset="0" style="stop-color:#5E6F56"/>
+				<stop  offset="0.4337" style="stop-color:#5E6F56"/>
+				<stop  offset="0.6684" style="stop-color:#9CB392"/>
+				<stop  offset="1" style="stop-color:#9CB392"/>
+			</linearGradient>
+			<path id="path4976" inkscape:connector-curvature="0" opacity="0.5" fill="url(#path4976_1_)" enable-background="new    " d="
+				M221.1,101.5c0-8-6.5-14.5-14.5-14.5c-8,0-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5C214.6,116,221.1,109.5,221.1,101.5z
+				 M194.1,101.5c0-6.9,5.6-12.5,12.5-12.5c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C199.7,114,194.1,108.4,194.1,101.5z"
+				/>
+			
+				<linearGradient id="path4984_1_" gradientUnits="userSpaceOnUse" x1="211.2662" y1="-103.3793" x2="225.7509" y2="-117.864" gradientTransform="matrix(1 0 0 -1 -11.9015 -9.121)">
+				<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+				<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:0.24"/>
+			</linearGradient>
+			<path id="path4984" inkscape:connector-curvature="0" fill="url(#path4984_1_)" d="M221.1,101.5c0-8-6.5-14.5-14.5-14.5
+				c-8,0-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5C214.6,116,221.1,109.5,221.1,101.5z M194.1,101.5c0-6.9,5.6-12.5,12.5-12.5
+				c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C199.7,114,194.1,108.4,194.1,101.5z"/>
+			
+				<image overflow="visible" enable-background="new    " width="32" height="31" id="image4986" xlink:href="data:image/png;base64,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" transform="matrix(0.9688 0 0 1 191.2852 86)">
+			</image>
+			<circle id="circle4994" fill="#FFF99F" cx="206.6" cy="101.5" r="6.3"/>
+		</g>
+	</g>
+	<text id="cdpTextDisabledStyle1" transform="matrix(1 0 0 1 228.3077 176.9848)" font-family="'ArialMT'" font-size="16px">STICK</text>
+	
+		<text id="cdpTextDisabled" transform="matrix(1 0 0 1 228.3077 176.9848)" fill="#FF0000" font-family="'ArialMT'" font-size="16px">STICK</text>
+	<g id="cdpButtonStyle2" transform="translate(160,0)">
+		<rect id="rect4400" x="177.3" y="-2.9" fill="none" width="119" height="64"/>
+		<g>
+			<rect id="rect47_3_" x="177.3" y="-3.1" fill="none" width="119" height="64"/>
+			<g>
+				<g id="outer_5_">
+					
+						<linearGradient id="SVGID_15_" gradientUnits="userSpaceOnUse" x1="220.8971" y1="72.5408" x2="252.6861" y2="-14.7989" gradientTransform="matrix(1 0 0 -1 0 57.7419)">
+						<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+						<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+					</linearGradient>
+					<path fill="url(#SVGID_15_)" d="M296.3,46.9c0,7.7-6.3,14-14,14h-91c-7.7,0-14-6.3-14-14v-36c0-7.7,6.3-14,14-14h91
+						c7.7,0,14,6.3,14,14V46.9z"/>
+				</g>
+				<g id="black_5_">
+					<path fill="#1E1E1E" d="M294.3,44.9c0,7.7-6.3,14-14,14h-87c-7.7,0-14-6.3-14-14v-32c0-7.7,6.3-14,14-14h87c7.7,0,14,6.3,14,14
+						V44.9z"/>
+				</g>
+				<g id="button_corner_9_5_">
+					<g>
+						<g id="buttonTop_2_">
+							
+								<linearGradient id="SVGID_16_" gradientUnits="userSpaceOnUse" x1="236.7916" y1="53.371" x2="236.7916" y2="5.271" gradientTransform="matrix(1 0 0 -1 0 57.7419)">
+								<stop  offset="0" style="stop-color:#919191"/>
+								<stop  offset="2.299604e-02" style="stop-color:#888888"/>
+								<stop  offset="9.317544e-02" style="stop-color:#727272"/>
+								<stop  offset="0.1761" style="stop-color:#616161"/>
+								<stop  offset="0.2786" style="stop-color:#565656"/>
+								<stop  offset="0.4224" style="stop-color:#4F4F4F"/>
+								<stop  offset="0.8218" style="stop-color:#4D4D4D"/>
+							</linearGradient>
+							<path fill="url(#SVGID_16_)" d="M288.8,41.5c0,6.1-4.9,11-11,11h-82c-6.1,0-11-4.9-11-11V15.4c0-6.1,4.9-11,11-11h82
+								c6.1,0,11,4.9,11,11V41.5z"/>
+						</g>
+						<g id="buttonBottom_2_">
+							
+								<linearGradient id="SVGID_17_" gradientUnits="userSpaceOnUse" x1="236.7916" y1="4.371" x2="236.7916" y2="51.871" gradientTransform="matrix(1 0 0 -1 0 57.7419)">
+								<stop  offset="0" style="stop-color:#2C2C2C"/>
+								<stop  offset="1" style="stop-color:#515151"/>
+							</linearGradient>
+							<path fill="url(#SVGID_17_)" d="M288.8,42.4c0,6-4.9,11-11,11h-82c-6.1,0-11-5-11-11V16.9c0-6,4.9-11,11-11h82
+								c6.1,0,11,4.9,11,11V42.4z"/>
+						</g>
+					</g>
+				</g>
+			</g>
+			<path id="path81_3_" fill="#333333" d="M206.8,15.9c6.9,0,12.5,5.6,12.5,12.5s-5.6,12.5-12.5,12.5c-6.9,0-12.5-5.6-12.5-12.5
+				S199.9,15.9,206.8,15.9"/>
+			
+				<linearGradient id="path88_8_" gradientUnits="userSpaceOnUse" x1="199.5474" y1="62.6151" x2="214.0322" y2="48.1304" gradientTransform="matrix(1 0 0 -1 0 83.7419)">
+				<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+				<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+			</linearGradient>
+			<path id="path88_3_" fill="url(#path88_8_)" d="M221.3,28.4c0-8-6.5-14.5-14.5-14.5s-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5
+				S221.3,36.4,221.3,28.4z M194.3,28.4c0-6.9,5.6-12.5,12.5-12.5c6.9,0,12.5,5.6,12.5,12.5s-5.6,12.5-12.5,12.5
+				C199.9,40.9,194.3,35.3,194.3,28.4z"/>
+		</g>
+		<g id="g4432">
+			<g id="g4434">
+				<path id="path4436" inkscape:connector-curvature="0" display="none" fill="#A5A5A5" d="M206.8,19c6.9,0,12.5,5.6,12.5,12.5
+					S213.7,44,206.8,44s-12.5-5.6-12.5-12.5S199.9,19,206.8,19"/>
+				<path id="path4438" inkscape:connector-curvature="0" fill="#333333" d="M206.8,16.1c6.9,0,12.5,5.6,12.5,12.5
+					s-5.6,12.5-12.5,12.5s-12.5-5.6-12.5-12.5S199.9,16.1,206.8,16.1"/>
+			</g>
+			
+				<linearGradient id="path4450_1_" gradientUnits="userSpaceOnUse" x1="51.9956" y1="39.4913" x2="66.4804" y2="25.0066" gradientTransform="matrix(1 0 0 -1 147.5484 60.871)">
+				<stop  offset="0" style="stop-color:#5E6F56"/>
+				<stop  offset="0.4337" style="stop-color:#5E6F56"/>
+				<stop  offset="0.6684" style="stop-color:#9CB392"/>
+				<stop  offset="1" style="stop-color:#9CB392"/>
+			</linearGradient>
+			<path id="path4450" inkscape:connector-curvature="0" opacity="0.5" fill="url(#path4450_1_)" enable-background="new    " d="
+				M221.3,28.6c0-8-6.5-14.5-14.5-14.5c-8,0-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5C214.8,43.1,221.3,36.6,221.3,28.6z M194.3,28.6
+				c0-6.9,5.6-12.5,12.5-12.5c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C199.9,41.1,194.3,35.5,194.3,28.6z"/>
+			
+				<linearGradient id="path4458_1_" gradientUnits="userSpaceOnUse" x1="51.9956" y1="39.4913" x2="66.4804" y2="25.0066" gradientTransform="matrix(1 0 0 -1 147.5484 60.871)">
+				<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+				<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:0.24"/>
+			</linearGradient>
+			<path id="path4458" inkscape:connector-curvature="0" fill="url(#path4458_1_)" d="M221.3,28.6c0-8-6.5-14.5-14.5-14.5
+				c-8,0-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5C214.8,43.1,221.3,36.6,221.3,28.6z M194.3,28.6c0-6.9,5.6-12.5,12.5-12.5
+				c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C199.9,41.1,194.3,35.5,194.3,28.6z"/>
+			
+				<image overflow="visible" enable-background="new    " width="32" height="31" id="image4460" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
+GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABS5JREFUeNrMV81uHEUQrurumdlf
+O+vFRJGIhFBuOebGiRfgyPvwPrwEL8AxtwghgRSFYG+8/zPdXcVXvevEsb1LhATx2qXp7en6/6qq
+l+gzf/hfc+otXsbOf2bADWU/gOf5gWMvQT/RDUM+wSj+FMWmdAL6HTT6A2tPdPLkMY/oi3JsSX/R
+/PUbnWWsvyJ9Cs4Z6L0xRwzhY8qvFfdAZ6BLOnMrGrqKOieU3Xajhb/XZ3XkJVItQ1rJGV3KJSRs
+bxpywAg+ptzeQ4h7QhPvqPay9YHZhcTRE2fPe361f/U5aJVVJbleTkJdfk2zDOOFjhjBx5T36LGv
+qfK8WVfOc811VeNFDYk1jgVH4oxFyAlkJ3zp1KiLnWTttD+IHcW8pTf5kBF8TPkJhbAlqTW6XuDc
+Z5a+MvdxrMfiYAT5vZCsTjrI3rLqRtVtkvoNV7LtkevmlNIhI8LtALwFnSPsmbZ+QcOqMVtYRqI6
+ZvIgHkHhEIYguhr2diegANkCAFSXSMPCs3gzbUGqkGUKFbLzbX3htvcoMV7T1K3XHDpNvRT8kJ2c
+AAQTKJ6o0iNA7wRJ7+N7tWPViMeGleaO6R3eV1mEtXXaS1lrhGIwmMpzupBzK1X9UBnhtvdzeN9S
+9NtBU3nSJuQ8JHWnUDZV1nMwTkn5EY6OoLreZ7Ir1ej0HYxpWBmQATRCTtRo3BBHBSgT4HI7Ch8Z
+sCi1fs6T9cA3IVXic08UiphPoXyqyl/iGEjPYBBSwXsDtBiA6PQhAhWiUoxS11ouQ/ZtTIP456BJ
+C3rLRPdg4EfQxSvidgowT6JLlC28DYA+IOETrNES4D0gomYA8xhS9gYA+WopYQNlRoRa0IocLcVJ
+Iz5VqBs3mSX37QXJ9892+u6C8JnBWrhro2ePmneMcFIfXQZpYAv5KZSf8i4FY+ZdCuB5hz2PKGUY
+sQGc5lA+LLziGhUNmqOvJ6jWyccgdNcARB/nKX2NjRGDhTmo23nkKgS0gbcIL6EUuY9DZY30DIxs
+bXvlHdZ21niM12SYLJNpsk3Hyx0E+d4yjAulCHdrVDxA5SDMgdPBzWKQ1T64988ScvPAuiL2uDzx
+3RmXFh5QUu7Qtgvwx4fKcP+pxsU4NWLBH5qACPxBF4JgQ3DWHZLxLN93jajsaXmCV1AD4goPIQGs
+kKvVPY3XXU8r1L9e0G/gW6q0MCCx7BRIRARasG6s1uHVBofKGu6tjWxte+Wd9QMj8BivyTBZJtNk
+m47nN7rhxxF4BfOnTv2kgmIrW23hxwZ+rBCQJTiuEBEkByFnNk93VcDo+6QLvLuickaXwLJVAQyB
+akeJQpXzLGm42IH93jJ88Yz0GwoyWVcSAkf0gRatdQ1r51AyAzQArJJ7lFrxtN5PQ8wBXmJ5adVc
+zlpPE107lKTLPqYUZDaJ8uuE9JdDGAA+cJl4q+3gBBOswcylLWUIVtcUZTb2oRwNCaX2oRMiEjCA
+lijLd5ZJlN8F0nEFKCzF6zb6HHv1Ij+luc0DPQhC69PoOLJGK+e1xg6dDLNghTAGuO2gHwFBk2Fa
+ltIjrq6LZ4cDnrPNApIZ8nOl2a/CNrd9ljgYVBn1WmbB0XH8HfZwyFd0GgIN68YUJR1hwqHxOJA1
+JExD+jANyaZhuQDRSvfTEGcXFHgJJG4SrbpIV8nmwM//NI73FmKW9vIYQwT3AZSEgyx0Oc4tqnl1
+9z6g7+8DaBhIj90HAF6S7ZhcnEMWDLjj/QO8ET2IO+GDuBU/iN8FD+KX0f/w2/Czf/4WYABy2VcK
+pnu9zQAAAABJRU5ErkJggg==" transform="matrix(0.9688 0 0 1 191.4639 13.121)">
+			</image>
+			
+				<linearGradient id="circle4468_1_" gradientUnits="userSpaceOnUse" x1="52.9866" y1="32.25" x2="65.4866" y2="32.25" gradientTransform="matrix(1 0 0 -1 147.5484 60.871)">
+				<stop  offset="0" style="stop-color:#A6FF7A"/>
+				<stop  offset="1" style="stop-color:#CCFFB2"/>
+			</linearGradient>
+			<circle id="circle4468" fill="url(#circle4468_1_)" cx="206.8" cy="28.6" r="6.3"/>
+		</g>
+	</g>
+	<g id="cdpButtonPressedStyle2" transform="translate(160,0)">
+		<rect id="rect4472" x="177.3" y="70" fill="none" width="119" height="64"/>
+		<g id="g4474">
+			<g>
+				<rect id="rect5_3_" x="177.3" y="69.7" fill="none" width="119" height="64"/>
+				<g>
+					<g id="outer_8_">
+						
+							<linearGradient id="SVGID_18_" gradientUnits="userSpaceOnUse" x1="220.8971" y1="-0.3382" x2="252.6861" y2="-87.6779" gradientTransform="matrix(1 0 0 -1 0 57.7419)">
+							<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+							<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+						</linearGradient>
+						<path fill="url(#SVGID_18_)" d="M296.3,119.7c0,7.7-6.3,14-14,14h-91c-7.7,0-14-6.3-14-14v-36c0-7.7,6.3-14,14-14h91
+							c7.7,0,14,6.3,14,14V119.7z"/>
+					</g>
+					<g id="black_8_">
+						<path fill="#1E1E1E" d="M294.3,117.7c0,7.7-6.3,14-14,14h-87c-7.7,0-14-6.3-14-14v-32c0-7.7,6.3-14,14-14h87
+							c7.7,0,14,6.3,14,14V117.7z"/>
+					</g>
+					<g id="button_corner_9_8_">
+						<g>
+							<g id="buttonBottom_5_">
+								
+									<linearGradient id="SVGID_19_" gradientUnits="userSpaceOnUse" x1="236.7916" y1="-19.508" x2="236.7916" y2="-68.508" gradientTransform="matrix(1 0 0 -1 0 57.7419)">
+									<stop  offset="0" style="stop-color:#2C2C2C"/>
+									<stop  offset="1" style="stop-color:#515151"/>
+								</linearGradient>
+								<path fill="url(#SVGID_19_)" d="M288.8,115.2c0,6.1-4.9,11-11,11h-82c-6.1,0-11-4.9-11-11v-27c0-6.1,4.9-11,11-11h82
+									c6.1,0,11,4.9,11,11V115.2z"/>
+							</g>
+						</g>
+					</g>
+				</g>
+				<path id="path30_3_" fill="#333333" d="M206.8,88.7c6.9,0,12.5,5.6,12.5,12.5s-5.6,12.5-12.5,12.5c-6.9,0-12.5-5.6-12.5-12.5
+					S199.9,88.7,206.8,88.7"/>
+				
+					<linearGradient id="path37_8_" gradientUnits="userSpaceOnUse" x1="199.5474" y1="-10.2639" x2="214.0322" y2="-24.7486" gradientTransform="matrix(1 0 0 -1 0 83.7419)">
+					<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+					<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+				</linearGradient>
+				<path id="path37_3_" fill="url(#path37_8_)" d="M221.3,101.2c0-8-6.5-14.5-14.5-14.5s-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5
+					S221.3,109.2,221.3,101.2z M194.3,101.2c0-6.9,5.6-12.5,12.5-12.5c6.9,0,12.5,5.6,12.5,12.5s-5.6,12.5-12.5,12.5
+					C199.9,113.7,194.3,108.1,194.3,101.2z"/>
+			</g>
+			<g id="g4504">
+				<g id="g4506">
+					<path id="path4508" inkscape:connector-curvature="0" display="none" fill="#A5A5A5" d="M202.5,89.5c6.9,0,12.5,5.6,12.5,12.5
+						s-5.6,12.5-12.5,12.5S190,108.9,190,102S195.5,89.5,202.5,89.5"/>
+					<path id="path4510" inkscape:connector-curvature="0" fill="#333333" d="M206.6,89c6.9,0,12.5,5.6,12.5,12.5
+						s-5.6,12.5-12.5,12.5s-12.5-5.6-12.5-12.5S199.7,89,206.6,89"/>
+				</g>
+				
+					<linearGradient id="path4522_1_" gradientUnits="userSpaceOnUse" x1="51.8163" y1="-33.3873" x2="66.301" y2="-47.872" gradientTransform="matrix(1 0 0 -1 147.5484 60.871)">
+					<stop  offset="0" style="stop-color:#5E6F56"/>
+					<stop  offset="0.4337" style="stop-color:#5E6F56"/>
+					<stop  offset="0.6684" style="stop-color:#9CB392"/>
+					<stop  offset="1" style="stop-color:#9CB392"/>
+				</linearGradient>
+				<path id="path4522" inkscape:connector-curvature="0" opacity="0.5" fill="url(#path4522_1_)" enable-background="new    " d="
+					M221.1,101.5c0-8-6.5-14.5-14.5-14.5c-8,0-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5C214.6,116,221.1,109.5,221.1,101.5z
+					 M194.1,101.5c0-6.9,5.6-12.5,12.5-12.5c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C199.7,114,194.1,108.4,194.1,101.5z
+					"/>
+				
+					<linearGradient id="path4530_1_" gradientUnits="userSpaceOnUse" x1="51.8163" y1="-33.3873" x2="66.301" y2="-47.872" gradientTransform="matrix(1 0 0 -1 147.5484 60.871)">
+					<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+					<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:0.24"/>
+				</linearGradient>
+				<path id="path4530" inkscape:connector-curvature="0" fill="url(#path4530_1_)" d="M221.1,101.5c0-8-6.5-14.5-14.5-14.5
+					c-8,0-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5C214.6,116,221.1,109.5,221.1,101.5z M194.1,101.5c0-6.9,5.6-12.5,12.5-12.5
+					c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C199.7,114,194.1,108.4,194.1,101.5z"/>
+				
+					<image overflow="visible" enable-background="new    " width="32" height="31" id="image4532" xlink:href="data:image/png;base64,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" transform="matrix(0.9688 0 0 1 191.2852 86)">
+				</image>
+				
+					<linearGradient id="circle4540_1_" gradientUnits="userSpaceOnUse" x1="52.8076" y1="-40.629" x2="65.3076" y2="-40.629" gradientTransform="matrix(1 0 0 -1 147.5484 60.871)">
+					<stop  offset="0" style="stop-color:#A6FF7A"/>
+					<stop  offset="1" style="stop-color:#CCFFB2"/>
+				</linearGradient>
+				<circle id="circle4540" fill="url(#circle4540_1_)" cx="206.6" cy="101.5" r="6.3"/>
+			</g>
+		</g>
+	</g>
+	<g id="cdpButtonDisabledStyle2" transform="translate(156.59846,0)">
+		<rect id="rect4544" x="180.7" y="140" fill="none" width="119" height="64"/>
+		<g>
+			<rect id="rect5-2_3_" x="180.7" y="139.7" fill="none" width="119" height="64"/>
+			<g>
+				<g id="outer_11_">
+					
+						<linearGradient id="SVGID_20_" gradientUnits="userSpaceOnUse" x1="224.2987" y1="1.9198" x2="256.0876" y2="-85.4199" gradientTransform="matrix(1 0 0 -1 0 129.9919)">
+						<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+						<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+					</linearGradient>
+					<path fill="url(#SVGID_20_)" d="M299.7,189.7c0,7.7-6.3,14-14,14h-91c-7.7,0-14-6.3-14-14v-36c0-7.7,6.3-14,14-14h91
+						c7.7,0,14,6.3,14,14V189.7z"/>
+				</g>
+				<g id="black_11_">
+					<path fill="#1E1E1E" d="M297.7,187.7c0,7.7-6.3,14-14,14h-87c-7.7,0-14-6.3-14-14v-32c0-7.7,6.3-14,14-14h87
+						c7.7,0,14,6.3,14,14V187.7z"/>
+				</g>
+				<g id="button_corner_9_11_" opacity="0.5">
+					<g>
+						<g id="buttonBottom_8_">
+							
+								<linearGradient id="SVGID_21_" gradientUnits="userSpaceOnUse" x1="240.1931" y1="-66.25" x2="240.1931" y2="-17.25" gradientTransform="matrix(1 0 0 -1 0 129.9919)">
+								<stop  offset="0" style="stop-color:#2C2C2C"/>
+								<stop  offset="1" style="stop-color:#515151"/>
+							</linearGradient>
+							<path fill="url(#SVGID_21_)" d="M292.2,185.2c0,6.1-4.9,11-11,11h-82c-6.1,0-11-4.9-11-11v-27c0-6.1,4.9-11,11-11h82
+								c6.1,0,11,4.9,11,11V185.2z"/>
+						</g>
+					</g>
+				</g>
+			</g>
+			<path id="path30-2_3_" inkscape:connector-curvature="0" opacity="0.5" fill="#333333" enable-background="new    " d="
+				M210.2,158.7c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5c-6.9,0-12.5-5.6-12.5-12.5C197.7,164.3,203.3,158.7,210.2,158.7
+				"/>
+			
+				<linearGradient id="path37-1_8_" gradientUnits="userSpaceOnUse" x1="202.949" y1="-8.0059" x2="217.4338" y2="-22.4906" gradientTransform="matrix(1 0 0 -1 0 155.9919)">
+				<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+				<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+			</linearGradient>
+			
+				<path id="path37-1_3_" inkscape:connector-curvature="0" opacity="0.5" fill="url(#path37-1_8_)" enable-background="new    " d="
+				M224.7,171.2c0-8-6.5-14.5-14.5-14.5s-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5S224.7,179.2,224.7,171.2z M197.7,171.2
+				c0-6.9,5.6-12.5,12.5-12.5c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C203.3,183.7,197.7,178.1,197.7,171.2z"/>
+		</g>
+		<g id="g4560" transform="translate(3.95161,69.991931)">
+			<g id="g4562">
+				<path id="path4564" inkscape:connector-curvature="0" display="none" fill="#A5A5A5" d="M202.5,89.5c6.9,0,12.5,5.6,12.5,12.5
+					s-5.6,12.5-12.5,12.5S190,108.9,190,102S195.5,89.5,202.5,89.5"/>
+				<path id="path4566" inkscape:connector-curvature="0" fill="#333333" d="M206.6,89c6.9,0,12.5,5.6,12.5,12.5
+					s-5.6,12.5-12.5,12.5s-12.5-5.6-12.5-12.5S199.7,89,206.6,89"/>
+			</g>
+			
+				<linearGradient id="path4578_1_" gradientUnits="userSpaceOnUse" x1="51.2662" y1="-103.3793" x2="65.7509" y2="-117.864" gradientTransform="matrix(1 0 0 -1 148.0985 -9.121)">
+				<stop  offset="0" style="stop-color:#5E6F56"/>
+				<stop  offset="0.4337" style="stop-color:#5E6F56"/>
+				<stop  offset="0.6684" style="stop-color:#9CB392"/>
+				<stop  offset="1" style="stop-color:#9CB392"/>
+			</linearGradient>
+			<path id="path4578" inkscape:connector-curvature="0" opacity="0.5" fill="url(#path4578_1_)" enable-background="new    " d="
+				M221.1,101.5c0-8-6.5-14.5-14.5-14.5c-8,0-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5C214.6,116,221.1,109.5,221.1,101.5z
+				 M194.1,101.5c0-6.9,5.6-12.5,12.5-12.5c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C199.7,114,194.1,108.4,194.1,101.5z"
+				/>
+			
+				<linearGradient id="path4586_1_" gradientUnits="userSpaceOnUse" x1="51.2662" y1="-103.3793" x2="65.7509" y2="-117.864" gradientTransform="matrix(1 0 0 -1 148.0985 -9.121)">
+				<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+				<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:0.24"/>
+			</linearGradient>
+			<path id="path4586" inkscape:connector-curvature="0" fill="url(#path4586_1_)" d="M221.1,101.5c0-8-6.5-14.5-14.5-14.5
+				c-8,0-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5C214.6,116,221.1,109.5,221.1,101.5z M194.1,101.5c0-6.9,5.6-12.5,12.5-12.5
+				c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C199.7,114,194.1,108.4,194.1,101.5z"/>
+			
+				<image overflow="visible" enable-background="new    " width="32" height="31" id="image4588" xlink:href="data:image/png;base64,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" transform="matrix(0.9688 0 0 1 191.2852 86)">
+			</image>
+			
+				<linearGradient id="circle4596_1_" gradientUnits="userSpaceOnUse" x1="52.2575" y1="-110.621" x2="64.7575" y2="-110.621" gradientTransform="matrix(1 0 0 -1 148.0985 -9.121)">
+				<stop  offset="0" style="stop-color:#A6FF7A"/>
+				<stop  offset="1" style="stop-color:#CCFFB2"/>
+			</linearGradient>
+			<circle id="circle4596" fill="url(#circle4596_1_)" cx="206.6" cy="101.5" r="6.3"/>
+		</g>
+	</g>
+	<g id="cdpButtonStyle3" transform="translate(300,0)">
+		<rect id="rect4642" x="177.3" y="-2.9" fill="none" width="119" height="64"/>
+		<g>
+			<rect id="rect47_2_" x="177.3" y="-3.1" fill="none" width="119" height="64"/>
+			<g>
+				<g id="outer_3_">
+					
+						<linearGradient id="SVGID_22_" gradientUnits="userSpaceOnUse" x1="220.8971" y1="72.5408" x2="252.6861" y2="-14.7989" gradientTransform="matrix(1 0 0 -1 0 57.7419)">
+						<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+						<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+					</linearGradient>
+					<path fill="url(#SVGID_22_)" d="M296.3,46.9c0,7.7-6.3,14-14,14h-91c-7.7,0-14-6.3-14-14v-36c0-7.7,6.3-14,14-14h91
+						c7.7,0,14,6.3,14,14V46.9z"/>
+				</g>
+				<g id="black_3_">
+					<path fill="#1E1E1E" d="M294.3,44.9c0,7.7-6.3,14-14,14h-87c-7.7,0-14-6.3-14-14v-32c0-7.7,6.3-14,14-14h87c7.7,0,14,6.3,14,14
+						V44.9z"/>
+				</g>
+				<g id="button_corner_9_4_">
+					<g>
+						<g id="buttonTop_1_">
+							
+								<linearGradient id="SVGID_23_" gradientUnits="userSpaceOnUse" x1="236.7916" y1="53.371" x2="236.7916" y2="5.271" gradientTransform="matrix(1 0 0 -1 0 57.7419)">
+								<stop  offset="0" style="stop-color:#919191"/>
+								<stop  offset="2.299604e-02" style="stop-color:#888888"/>
+								<stop  offset="9.317544e-02" style="stop-color:#727272"/>
+								<stop  offset="0.1761" style="stop-color:#616161"/>
+								<stop  offset="0.2786" style="stop-color:#565656"/>
+								<stop  offset="0.4224" style="stop-color:#4F4F4F"/>
+								<stop  offset="0.8218" style="stop-color:#4D4D4D"/>
+							</linearGradient>
+							<path fill="url(#SVGID_23_)" d="M288.8,41.5c0,6.1-4.9,11-11,11h-82c-6.1,0-11-4.9-11-11V15.4c0-6.1,4.9-11,11-11h82
+								c6.1,0,11,4.9,11,11V41.5z"/>
+						</g>
+						<g id="buttonBottom_1_">
+							
+								<linearGradient id="SVGID_24_" gradientUnits="userSpaceOnUse" x1="236.7916" y1="4.371" x2="236.7916" y2="51.871" gradientTransform="matrix(1 0 0 -1 0 57.7419)">
+								<stop  offset="0" style="stop-color:#2C2C2C"/>
+								<stop  offset="1" style="stop-color:#515151"/>
+							</linearGradient>
+							<path fill="url(#SVGID_24_)" d="M288.8,42.4c0,6-4.9,11-11,11h-82c-6.1,0-11-5-11-11V16.9c0-6,4.9-11,11-11h82
+								c6.1,0,11,4.9,11,11V42.4z"/>
+						</g>
+					</g>
+				</g>
+			</g>
+			<path id="path81_2_" fill="#333333" d="M206.8,15.9c6.9,0,12.5,5.6,12.5,12.5s-5.6,12.5-12.5,12.5c-6.9,0-12.5-5.6-12.5-12.5
+				S199.9,15.9,206.8,15.9"/>
+			
+				<linearGradient id="path88_9_" gradientUnits="userSpaceOnUse" x1="199.5474" y1="62.6151" x2="214.0322" y2="48.1304" gradientTransform="matrix(1 0 0 -1 0 83.7419)">
+				<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+				<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+			</linearGradient>
+			<path id="path88_2_" fill="url(#path88_9_)" d="M221.3,28.4c0-8-6.5-14.5-14.5-14.5s-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5
+				S221.3,36.4,221.3,28.4z M194.3,28.4c0-6.9,5.6-12.5,12.5-12.5c6.9,0,12.5,5.6,12.5,12.5s-5.6,12.5-12.5,12.5
+				C199.9,40.9,194.3,35.3,194.3,28.4z"/>
+		</g>
+		<g id="g4674">
+			<g id="g4676">
+				<path id="path4678" inkscape:connector-curvature="0" display="none" fill="#A5A5A5" d="M206.8,19c6.9,0,12.5,5.6,12.5,12.5
+					S213.7,44,206.8,44s-12.5-5.6-12.5-12.5S199.9,19,206.8,19"/>
+				<path id="path4680" inkscape:connector-curvature="0" fill="#333333" d="M206.8,16.1c6.9,0,12.5,5.6,12.5,12.5
+					s-5.6,12.5-12.5,12.5s-12.5-5.6-12.5-12.5S199.9,16.1,206.8,16.1"/>
+			</g>
+			
+				<linearGradient id="path4692_1_" gradientUnits="userSpaceOnUse" x1="-88.0044" y1="39.4913" x2="-73.5196" y2="25.0066" gradientTransform="matrix(1 0 0 -1 287.5484 60.871)">
+				<stop  offset="0" style="stop-color:#5E6F56"/>
+				<stop  offset="0.4337" style="stop-color:#5E6F56"/>
+				<stop  offset="0.6684" style="stop-color:#9CB392"/>
+				<stop  offset="1" style="stop-color:#9CB392"/>
+			</linearGradient>
+			<path id="path4692" inkscape:connector-curvature="0" opacity="0.5" fill="url(#path4692_1_)" enable-background="new    " d="
+				M221.3,28.6c0-8-6.5-14.5-14.5-14.5c-8,0-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5C214.8,43.1,221.3,36.6,221.3,28.6z M194.3,28.6
+				c0-6.9,5.6-12.5,12.5-12.5c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C199.9,41.1,194.3,35.5,194.3,28.6z"/>
+			
+				<linearGradient id="path4700_1_" gradientUnits="userSpaceOnUse" x1="-88.0044" y1="39.4913" x2="-73.5196" y2="25.0066" gradientTransform="matrix(1 0 0 -1 287.5484 60.871)">
+				<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+				<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:0.24"/>
+			</linearGradient>
+			<path id="path4700" inkscape:connector-curvature="0" fill="url(#path4700_1_)" d="M221.3,28.6c0-8-6.5-14.5-14.5-14.5
+				c-8,0-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5C214.8,43.1,221.3,36.6,221.3,28.6z M194.3,28.6c0-6.9,5.6-12.5,12.5-12.5
+				c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C199.9,41.1,194.3,35.5,194.3,28.6z"/>
+			
+				<image overflow="visible" enable-background="new    " width="32" height="31" id="image4702" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAfCAYAAACGVs+MAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
+GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABS5JREFUeNrMV81uHEUQrurumdlf
+O+vFRJGIhFBuOebGiRfgyPvwPrwEL8AxtwghgRSFYG+8/zPdXcVXvevEsb1LhATx2qXp7en6/6qq
+l+gzf/hfc+otXsbOf2bADWU/gOf5gWMvQT/RDUM+wSj+FMWmdAL6HTT6A2tPdPLkMY/oi3JsSX/R
+/PUbnWWsvyJ9Cs4Z6L0xRwzhY8qvFfdAZ6BLOnMrGrqKOieU3Xajhb/XZ3XkJVItQ1rJGV3KJSRs
+bxpywAg+ptzeQ4h7QhPvqPay9YHZhcTRE2fPe361f/U5aJVVJbleTkJdfk2zDOOFjhjBx5T36LGv
+qfK8WVfOc811VeNFDYk1jgVH4oxFyAlkJ3zp1KiLnWTttD+IHcW8pTf5kBF8TPkJhbAlqTW6XuDc
+Z5a+MvdxrMfiYAT5vZCsTjrI3rLqRtVtkvoNV7LtkevmlNIhI8LtALwFnSPsmbZ+QcOqMVtYRqI6
+ZvIgHkHhEIYguhr2diegANkCAFSXSMPCs3gzbUGqkGUKFbLzbX3htvcoMV7T1K3XHDpNvRT8kJ2c
+AAQTKJ6o0iNA7wRJ7+N7tWPViMeGleaO6R3eV1mEtXXaS1lrhGIwmMpzupBzK1X9UBnhtvdzeN9S
+9NtBU3nSJuQ8JHWnUDZV1nMwTkn5EY6OoLreZ7Ir1ej0HYxpWBmQATRCTtRo3BBHBSgT4HI7Ch8Z
+sCi1fs6T9cA3IVXic08UiphPoXyqyl/iGEjPYBBSwXsDtBiA6PQhAhWiUoxS11ouQ/ZtTIP456BJ
+C3rLRPdg4EfQxSvidgowT6JLlC28DYA+IOETrNES4D0gomYA8xhS9gYA+WopYQNlRoRa0IocLcVJ
+Iz5VqBs3mSX37QXJ9892+u6C8JnBWrhro2ePmneMcFIfXQZpYAv5KZSf8i4FY+ZdCuB5hz2PKGUY
+sQGc5lA+LLziGhUNmqOvJ6jWyccgdNcARB/nKX2NjRGDhTmo23nkKgS0gbcIL6EUuY9DZY30DIxs
+bXvlHdZ21niM12SYLJNpsk3Hyx0E+d4yjAulCHdrVDxA5SDMgdPBzWKQ1T64988ScvPAuiL2uDzx
+3RmXFh5QUu7Qtgvwx4fKcP+pxsU4NWLBH5qACPxBF4JgQ3DWHZLxLN93jajsaXmCV1AD4goPIQGs
+kKvVPY3XXU8r1L9e0G/gW6q0MCCx7BRIRARasG6s1uHVBofKGu6tjWxte+Wd9QMj8BivyTBZJtNk
+m47nN7rhxxF4BfOnTv2kgmIrW23hxwZ+rBCQJTiuEBEkByFnNk93VcDo+6QLvLuickaXwLJVAQyB
+akeJQpXzLGm42IH93jJ88Yz0GwoyWVcSAkf0gRatdQ1r51AyAzQArJJ7lFrxtN5PQ8wBXmJ5adVc
+zlpPE107lKTLPqYUZDaJ8uuE9JdDGAA+cJl4q+3gBBOswcylLWUIVtcUZTb2oRwNCaX2oRMiEjCA
+lijLd5ZJlN8F0nEFKCzF6zb6HHv1Ij+luc0DPQhC69PoOLJGK+e1xg6dDLNghTAGuO2gHwFBk2Fa
+ltIjrq6LZ4cDnrPNApIZ8nOl2a/CNrd9ljgYVBn1WmbB0XH8HfZwyFd0GgIN68YUJR1hwqHxOJA1
+JExD+jANyaZhuQDRSvfTEGcXFHgJJG4SrbpIV8nmwM//NI73FmKW9vIYQwT3AZSEgyx0Oc4tqnl1
+9z6g7+8DaBhIj90HAF6S7ZhcnEMWDLjj/QO8ET2IO+GDuBU/iN8FD+KX0f/w2/Czf/4WYABy2VcK
+pnu9zQAAAABJRU5ErkJggg==" transform="matrix(0.9688 0 0 1 191.4639 13.121)">
+			</image>
+			<circle id="circle4710" fill="#FFF9A2" cx="206.8" cy="28.6" r="6.3"/>
+		</g>
+	</g>
+	<g id="cdpButtonPressedStyle3" transform="translate(300,0)">
+		<rect id="rect4714" x="177.3" y="70" fill="none" width="119" height="64"/>
+		<g id="g4716">
+			<g>
+				<rect id="rect5_2_" x="177.3" y="69.7" fill="none" width="119" height="64"/>
+				<g>
+					<g id="outer_7_">
+						
+							<linearGradient id="SVGID_25_" gradientUnits="userSpaceOnUse" x1="220.8971" y1="-0.3382" x2="252.6861" y2="-87.6779" gradientTransform="matrix(1 0 0 -1 0 57.7419)">
+							<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+							<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+						</linearGradient>
+						<path fill="url(#SVGID_25_)" d="M296.3,119.7c0,7.7-6.3,14-14,14h-91c-7.7,0-14-6.3-14-14v-36c0-7.7,6.3-14,14-14h91
+							c7.7,0,14,6.3,14,14V119.7z"/>
+					</g>
+					<g id="black_7_">
+						<path fill="#1E1E1E" d="M294.3,117.7c0,7.7-6.3,14-14,14h-87c-7.7,0-14-6.3-14-14v-32c0-7.7,6.3-14,14-14h87
+							c7.7,0,14,6.3,14,14V117.7z"/>
+					</g>
+					<g id="button_corner_9_7_">
+						<g>
+							<g id="buttonBottom_4_">
+								
+									<linearGradient id="SVGID_26_" gradientUnits="userSpaceOnUse" x1="236.7916" y1="-19.508" x2="236.7916" y2="-68.508" gradientTransform="matrix(1 0 0 -1 0 57.7419)">
+									<stop  offset="0" style="stop-color:#2C2C2C"/>
+									<stop  offset="1" style="stop-color:#515151"/>
+								</linearGradient>
+								<path fill="url(#SVGID_26_)" d="M288.8,115.2c0,6.1-4.9,11-11,11h-82c-6.1,0-11-4.9-11-11v-27c0-6.1,4.9-11,11-11h82
+									c6.1,0,11,4.9,11,11V115.2z"/>
+							</g>
+						</g>
+					</g>
+				</g>
+				<path id="path30_2_" fill="#333333" d="M206.8,88.7c6.9,0,12.5,5.6,12.5,12.5s-5.6,12.5-12.5,12.5c-6.9,0-12.5-5.6-12.5-12.5
+					S199.9,88.7,206.8,88.7"/>
+				
+					<linearGradient id="path37_9_" gradientUnits="userSpaceOnUse" x1="199.5474" y1="-10.2639" x2="214.0322" y2="-24.7486" gradientTransform="matrix(1 0 0 -1 0 83.7419)">
+					<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+					<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+				</linearGradient>
+				<path id="path37_2_" fill="url(#path37_9_)" d="M221.3,101.2c0-8-6.5-14.5-14.5-14.5s-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5
+					S221.3,109.2,221.3,101.2z M194.3,101.2c0-6.9,5.6-12.5,12.5-12.5c6.9,0,12.5,5.6,12.5,12.5s-5.6,12.5-12.5,12.5
+					C199.9,113.7,194.3,108.1,194.3,101.2z"/>
+			</g>
+			<g id="g4746">
+				<g id="g4748">
+					<path id="path4750" inkscape:connector-curvature="0" display="none" fill="#A5A5A5" d="M202.5,89.5c6.9,0,12.5,5.6,12.5,12.5
+						s-5.6,12.5-12.5,12.5S190,108.9,190,102S195.5,89.5,202.5,89.5"/>
+					<path id="path4752" inkscape:connector-curvature="0" fill="#333333" d="M206.6,89c6.9,0,12.5,5.6,12.5,12.5
+						s-5.6,12.5-12.5,12.5s-12.5-5.6-12.5-12.5S199.7,89,206.6,89"/>
+				</g>
+				
+					<linearGradient id="path4764_1_" gradientUnits="userSpaceOnUse" x1="-88.1837" y1="-33.3873" x2="-73.699" y2="-47.872" gradientTransform="matrix(1 0 0 -1 287.5484 60.871)">
+					<stop  offset="0" style="stop-color:#5E6F56"/>
+					<stop  offset="0.4337" style="stop-color:#5E6F56"/>
+					<stop  offset="0.6684" style="stop-color:#9CB392"/>
+					<stop  offset="1" style="stop-color:#9CB392"/>
+				</linearGradient>
+				<path id="path4764" inkscape:connector-curvature="0" opacity="0.5" fill="url(#path4764_1_)" enable-background="new    " d="
+					M221.1,101.5c0-8-6.5-14.5-14.5-14.5c-8,0-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5C214.6,116,221.1,109.5,221.1,101.5z
+					 M194.1,101.5c0-6.9,5.6-12.5,12.5-12.5c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C199.7,114,194.1,108.4,194.1,101.5z
+					"/>
+				
+					<linearGradient id="path4772_1_" gradientUnits="userSpaceOnUse" x1="-88.1837" y1="-33.3873" x2="-73.699" y2="-47.872" gradientTransform="matrix(1 0 0 -1 287.5484 60.871)">
+					<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+					<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:0.24"/>
+				</linearGradient>
+				<path id="path4772" inkscape:connector-curvature="0" fill="url(#path4772_1_)" d="M221.1,101.5c0-8-6.5-14.5-14.5-14.5
+					c-8,0-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5C214.6,116,221.1,109.5,221.1,101.5z M194.1,101.5c0-6.9,5.6-12.5,12.5-12.5
+					c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C199.7,114,194.1,108.4,194.1,101.5z"/>
+				
+					<image overflow="visible" enable-background="new    " width="32" height="31" id="image4774" xlink:href="data:image/png;base64,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" transform="matrix(0.9688 0 0 1 191.2852 86)">
+				</image>
+				<circle id="circle4783" fill="#FFF9A2" cx="206.6" cy="101.5" r="6.3"/>
+			</g>
+		</g>
+	</g>
+	<g id="cdpButtonDisabledStyle3" transform="translate(296.59846,0)">
+		<rect id="rect4787" x="180.7" y="140" fill="none" width="119" height="64"/>
+		<g>
+			<rect id="rect5-2_4_" x="180.7" y="139.7" fill="none" width="119" height="64"/>
+			<g>
+				<g id="outer_12_">
+					
+						<linearGradient id="SVGID_27_" gradientUnits="userSpaceOnUse" x1="224.2987" y1="1.9198" x2="256.0876" y2="-85.4199" gradientTransform="matrix(1 0 0 -1 0 129.9919)">
+						<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+						<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+					</linearGradient>
+					<path fill="url(#SVGID_27_)" d="M299.7,189.7c0,7.7-6.3,14-14,14h-91c-7.7,0-14-6.3-14-14v-36c0-7.7,6.3-14,14-14h91
+						c7.7,0,14,6.3,14,14V189.7z"/>
+				</g>
+				<g id="black_12_">
+					<path fill="#1E1E1E" d="M297.7,187.7c0,7.7-6.3,14-14,14h-87c-7.7,0-14-6.3-14-14v-32c0-7.7,6.3-14,14-14h87
+						c7.7,0,14,6.3,14,14V187.7z"/>
+				</g>
+				<g id="button_corner_9_12_" opacity="0.5">
+					<g>
+						<g id="buttonBottom_9_">
+							
+								<linearGradient id="SVGID_28_" gradientUnits="userSpaceOnUse" x1="240.1932" y1="-66.25" x2="240.1932" y2="-17.25" gradientTransform="matrix(1 0 0 -1 0 129.9919)">
+								<stop  offset="0" style="stop-color:#2C2C2C"/>
+								<stop  offset="1" style="stop-color:#515151"/>
+							</linearGradient>
+							<path fill="url(#SVGID_28_)" d="M292.2,185.2c0,6.1-4.9,11-11,11h-82c-6.1,0-11-4.9-11-11v-27c0-6.1,4.9-11,11-11h82
+								c6.1,0,11,4.9,11,11V185.2z"/>
+						</g>
+					</g>
+				</g>
+			</g>
+			<path id="path30-2_4_" inkscape:connector-curvature="0" opacity="0.5" fill="#333333" enable-background="new    " d="
+				M210.2,158.7c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5c-6.9,0-12.5-5.6-12.5-12.5C197.7,164.3,203.3,158.7,210.2,158.7
+				"/>
+			
+				<linearGradient id="path37-1_9_" gradientUnits="userSpaceOnUse" x1="202.949" y1="-8.0059" x2="217.4338" y2="-22.4906" gradientTransform="matrix(1 0 0 -1 0 155.9919)">
+				<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+				<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:4.000000e-02"/>
+			</linearGradient>
+			
+				<path id="path37-1_4_" inkscape:connector-curvature="0" opacity="0.5" fill="url(#path37-1_9_)" enable-background="new    " d="
+				M224.7,171.2c0-8-6.5-14.5-14.5-14.5s-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5S224.7,179.2,224.7,171.2z M197.7,171.2
+				c0-6.9,5.6-12.5,12.5-12.5c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C203.3,183.7,197.7,178.1,197.7,171.2z"/>
+		</g>
+		<g id="g4803" transform="translate(3.95161,69.991931)">
+			<g id="g4805">
+				<path id="path4807" inkscape:connector-curvature="0" display="none" fill="#A5A5A5" d="M202.5,89.5c6.9,0,12.5,5.6,12.5,12.5
+					s-5.6,12.5-12.5,12.5S190,108.9,190,102S195.5,89.5,202.5,89.5"/>
+				<path id="path4809" inkscape:connector-curvature="0" fill="#333333" d="M206.6,89c6.9,0,12.5,5.6,12.5,12.5
+					s-5.6,12.5-12.5,12.5s-12.5-5.6-12.5-12.5S199.7,89,206.6,89"/>
+			</g>
+			
+				<linearGradient id="path4821_1_" gradientUnits="userSpaceOnUse" x1="-88.7338" y1="-103.3793" x2="-74.2491" y2="-117.864" gradientTransform="matrix(1 0 0 -1 288.0984 -9.121)">
+				<stop  offset="0" style="stop-color:#5E6F56"/>
+				<stop  offset="0.4337" style="stop-color:#5E6F56"/>
+				<stop  offset="0.6684" style="stop-color:#9CB392"/>
+				<stop  offset="1" style="stop-color:#9CB392"/>
+			</linearGradient>
+			<path id="path4821" inkscape:connector-curvature="0" opacity="0.5" fill="url(#path4821_1_)" enable-background="new    " d="
+				M221.1,101.5c0-8-6.5-14.5-14.5-14.5c-8,0-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5C214.6,116,221.1,109.5,221.1,101.5z
+				 M194.1,101.5c0-6.9,5.6-12.5,12.5-12.5c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C199.7,114,194.1,108.4,194.1,101.5z"
+				/>
+			
+				<linearGradient id="path4829_1_" gradientUnits="userSpaceOnUse" x1="-88.7338" y1="-103.3793" x2="-74.2491" y2="-117.864" gradientTransform="matrix(1 0 0 -1 288.0984 -9.121)">
+				<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+				<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:0.24"/>
+			</linearGradient>
+			<path id="path4829" inkscape:connector-curvature="0" fill="url(#path4829_1_)" d="M221.1,101.5c0-8-6.5-14.5-14.5-14.5
+				c-8,0-14.5,6.5-14.5,14.5s6.5,14.5,14.5,14.5C214.6,116,221.1,109.5,221.1,101.5z M194.1,101.5c0-6.9,5.6-12.5,12.5-12.5
+				c6.9,0,12.5,5.6,12.5,12.5c0,6.9-5.6,12.5-12.5,12.5C199.7,114,194.1,108.4,194.1,101.5z"/>
+			
+				<image overflow="visible" enable-background="new    " width="32" height="31" id="image4831" xlink:href="data:image/png;base64,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" transform="matrix(0.9688 0 0 1 191.2852 86)">
+			</image>
+			<circle id="circle4839" fill="#FFF9A2" cx="206.6" cy="101.5" r="6.3"/>
+		</g>
+	</g>
+</g>
+<text id="textDisabled" transform="matrix(1 0 0 1 -89.3449 176.8102)" fill="#C6C6C6" font-family="'ArialMT'" font-size="16px">Disabled</text>
+<text id="text4636" transform="matrix(1 0 0 1 353.6089 -41.2145)" fill="#C6C6C6" font-family="'ArialMT'" font-size="16px">Style2</text>
+<text id="text5307" transform="matrix(1 0 0 1 493.6089 -41.2145)" fill="#C6C6C6" font-family="'ArialMT'" font-size="16px">Style3</text>
+</svg>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="334.708px" height="29.5px" viewBox="0 0 334.708 29.5" enable-background="new 0 0 334.708 29.5" xml:space="preserve">
+<g id="Styles">
+	<g id="cdpButtonPressedStyle2">
+		<rect x="724.354" y="94" fill="none" width="334.709" height="29"/>
+		<g>
+			<g>
+				
+					<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="809.7075" y1="-32.8438" x2="855.3895" y2="-158.3542" gradientTransform="matrix(1 0 0 -1 59.1602 12.9004)">
+					<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+					<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:0.04"/>
+				</linearGradient>
+				<path fill="url(#SVGID_1_)" d="M724.354,108.5c0,8.008,6.492,14.5,14.5,14.5h305.709c8.008,0,14.5-6.492,14.5-14.5
+					s-6.492-14.5-14.5-14.5H738.854C730.846,94,724.354,100.492,724.354,108.5C724.354,108.5,724.354,100.492,724.354,108.5z"/>
+			</g>
+			<g>
+				<path fill="#A92600" d="M725.708,108.5c0,7.18,5.819,13,13,13h306.001c7.18,0,13-5.82,13-13s-5.82-13-13-13H738.708
+					C731.53,95.5,725.708,101.32,725.708,108.5C725.708,108.5,725.708,101.32,725.708,108.5z"/>
+			</g>
+			<g>
+				
+					<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="668.5483" y1="-95.0996" x2="996.5493" y2="-95.0996" gradientTransform="matrix(1 0 0 -1 59.1602 12.9004)">
+					<stop  offset="0.7634" style="stop-color:#919191"/>
+					<stop  offset="1" style="stop-color:#4D4D4D"/>
+				</linearGradient>
+				<path fill="url(#SVGID_2_)" d="M727.708,108c0,5.799,4.701,10.5,10.5,10.5h307.001c5.799,0,10.5-4.701,10.5-10.5
+					s-4.701-10.5-10.5-10.5H738.208C732.411,97.5,727.708,102.201,727.708,108C727.708,108,727.708,102.201,727.708,108z"/>
+			</g>
+			<g>
+				
+					<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="832.9038" y1="-106.5991" x2="832.9038" y2="-85.5991" gradientTransform="matrix(1 0 0 -1 59.1602 12.9004)">
+					<stop  offset="0" style="stop-color:#2C2C2C"/>
+					<stop  offset="1" style="stop-color:#515151"/>
+				</linearGradient>
+				<path fill="url(#SVGID_3_)" d="M728.063,109c0,5.799,4.701,10.5,10.5,10.5h307c5.799,0,10.5-4.701,10.5-10.5
+					s-4.701-10.5-10.5-10.5h-307C732.764,98.5,728.063,103.201,728.063,109C728.063,109,728.063,103.201,728.063,109z"/>
+			</g>
+			<text id="Abort_Auto_Depth_3_" transform="matrix(1 0 0 1 825.5259 115.3438)" font-family="'ArialMT'" font-size="18">Abort Auto Depth</text>
+		</g>
+	</g>
+	<g id="cdpButtonStyle2">
+		<rect x="721" y="-1.5" fill="none" width="334.709" height="29"/>
+		<g>
+			<g>
+				
+					<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="806.353" y1="62.6563" x2="852.0352" y2="-62.8547" gradientTransform="matrix(1 0 0 -1 59.1602 12.9004)">
+					<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+					<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:0.04"/>
+				</linearGradient>
+				<path fill="url(#SVGID_4_)" d="M721,13c0,8.008,6.492,14.5,14.5,14.5h305.709c8.008,0,14.5-6.492,14.5-14.5
+					s-6.492-14.5-14.5-14.5H735.5C727.492-1.5,721,4.992,721,13C721,13,721,4.992,721,13z"/>
+			</g>
+			<g>
+				<path fill="#A92600" d="M722.354,13c0,7.18,5.819,13,13,13h306.001c7.18,0,13-5.82,13-13s-5.82-13-13-13H735.354
+					C728.175,0,722.354,5.82,722.354,13C722.354,13,722.354,5.82,722.354,13z"/>
+			</g>
+			<g>
+				
+					<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="665.1938" y1="0.4004" x2="993.1948" y2="0.4004" gradientTransform="matrix(1 0 0 -1 59.1602 12.9004)">
+					<stop  offset="0.7634" style="stop-color:#919191"/>
+					<stop  offset="1" style="stop-color:#4D4D4D"/>
+				</linearGradient>
+				<path fill="url(#SVGID_5_)" d="M724.354,12.5c0,5.799,4.701,10.5,10.5,10.5h307.001c5.799,0,10.5-4.701,10.5-10.5
+					s-4.701-10.5-10.5-10.5H734.854C729.056,2,724.354,6.701,724.354,12.5C724.354,12.5,724.354,6.701,724.354,12.5z"/>
+			</g>
+			<g>
+				
+					<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="829.5493" y1="-11.0991" x2="829.5493" y2="9.9004" gradientTransform="matrix(1 0 0 -1 59.1602 12.9004)">
+					<stop  offset="0" style="stop-color:#2C2C2C"/>
+					<stop  offset="1" style="stop-color:#515151"/>
+				</linearGradient>
+				<path fill="url(#SVGID_6_)" d="M724.708,13.5c0,5.799,4.701,10.5,10.5,10.5h307c5.799,0,10.5-4.701,10.5-10.5
+					s-4.701-10.5-10.5-10.5h-307C729.41,3,724.708,7.701,724.708,13.5C724.708,13.5,724.708,7.701,724.708,13.5z"/>
+			</g>
+			<text id="Abort_Auto_Depth_2_" transform="matrix(1 0 0 1 822.1704 19.8438)" font-family="'ArialMT'" font-size="18">Abort Auto Depth</text>
+		</g>
+	</g>
+	<g id="cdpButtonPressedStyle1_1_">
+		<rect x="363.354" y="94.5" fill="none" width="334.709" height="29"/>
+		<g>
+			<g>
+				
+					<linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="448.7065" y1="-33.3438" x2="494.3887" y2="-158.8547" gradientTransform="matrix(1 0 0 -1 59.1602 12.9004)">
+					<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+					<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:0.04"/>
+				</linearGradient>
+				<path fill="url(#SVGID_7_)" d="M363.354,109c0,8.008,6.492,14.5,14.5,14.5h305.709c8.008,0,14.5-6.492,14.5-14.5
+					s-6.492-14.5-14.5-14.5H377.854C369.846,94.5,363.354,100.992,363.354,109C363.354,109,363.354,100.992,363.354,109z"/>
+			</g>
+			<g>
+				<path fill="#1E1E1E" d="M364.708,109c0,7.18,5.819,13,13,13h306.001c7.18,0,13-5.82,13-13s-5.82-13-13-13H377.708
+					C370.53,96,364.708,101.82,364.708,109C364.708,109,364.708,101.82,364.708,109z"/>
+			</g>
+			<g>
+				
+					<linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="307.5483" y1="-95.5996" x2="635.5493" y2="-95.5996" gradientTransform="matrix(1 0 0 -1 59.1602 12.9004)">
+					<stop  offset="0.7634" style="stop-color:#919191"/>
+					<stop  offset="1" style="stop-color:#4D4D4D"/>
+				</linearGradient>
+				<path fill="url(#SVGID_8_)" d="M366.708,108.5c0,5.799,4.701,10.5,10.5,10.5h307.001c5.799,0,10.5-4.701,10.5-10.5
+					s-4.701-10.5-10.5-10.5H377.208C371.411,98,366.708,102.701,366.708,108.5C366.708,108.5,366.708,102.701,366.708,108.5z"/>
+			</g>
+			<g>
+				
+					<linearGradient id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="471.9038" y1="-107.0991" x2="471.9038" y2="-86.0991" gradientTransform="matrix(1 0 0 -1 59.1602 12.9004)">
+					<stop  offset="0" style="stop-color:#2C2C2C"/>
+					<stop  offset="1" style="stop-color:#515151"/>
+				</linearGradient>
+				<path fill="url(#SVGID_9_)" d="M367.063,109.5c0,5.799,4.701,10.5,10.5,10.5h307c5.799,0,10.5-4.701,10.5-10.5
+					s-4.701-10.5-10.5-10.5h-307C371.764,99,367.063,103.701,367.063,109.5C367.063,109.5,367.063,103.701,367.063,109.5z"/>
+			</g>
+			<text id="Abort_Auto_Depth_1_" transform="matrix(1 0 0 1 464.5259 115.8438)" font-family="'ArialMT'" font-size="18">Start Auto Depth</text>
+		</g>
+	</g>
+	<g id="cdpButtonStyle1">
+		<rect x="358" fill="none" width="334.709" height="29"/>
+		<g>
+			<g>
+				
+					<linearGradient id="SVGID_10_" gradientUnits="userSpaceOnUse" x1="443.3521" y1="61.1563" x2="489.0342" y2="-64.3547" gradientTransform="matrix(1 0 0 -1 59.1602 12.9004)">
+					<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+					<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:0.04"/>
+				</linearGradient>
+				<path fill="url(#SVGID_10_)" d="M358,14.5c0,8.008,6.492,14.5,14.5,14.5h305.709c8.008,0,14.5-6.492,14.5-14.5
+					S686.216,0,678.208,0H372.5C364.492,0,358,6.492,358,14.5C358,14.5,358,6.492,358,14.5z"/>
+			</g>
+			<g>
+				<path fill="#1E1E1E" d="M359.354,14.5c0,7.18,5.819,13,13,13h306.001c7.18,0,13-5.82,13-13c0-7.18-5.82-13-13-13H372.354
+					C365.175,1.5,359.354,7.32,359.354,14.5C359.354,14.5,359.354,7.32,359.354,14.5z"/>
+			</g>
+			<g>
+				
+					<linearGradient id="SVGID_11_" gradientUnits="userSpaceOnUse" x1="302.1938" y1="-1.0996" x2="630.1948" y2="-1.0996" gradientTransform="matrix(1 0 0 -1 59.1602 12.9004)">
+					<stop  offset="0.7634" style="stop-color:#919191"/>
+					<stop  offset="1" style="stop-color:#4D4D4D"/>
+				</linearGradient>
+				<path fill="url(#SVGID_11_)" d="M361.354,14c0,5.799,4.701,10.5,10.5,10.5h307.001c5.799,0,10.5-4.701,10.5-10.5
+					s-4.701-10.5-10.5-10.5H371.854C366.056,3.5,361.354,8.201,361.354,14C361.354,14,361.354,8.201,361.354,14z"/>
+			</g>
+			<g>
+				
+					<linearGradient id="SVGID_12_" gradientUnits="userSpaceOnUse" x1="466.5493" y1="-12.5991" x2="466.5493" y2="8.4004" gradientTransform="matrix(1 0 0 -1 59.1602 12.9004)">
+					<stop  offset="0" style="stop-color:#2C2C2C"/>
+					<stop  offset="1" style="stop-color:#515151"/>
+				</linearGradient>
+				<path fill="url(#SVGID_12_)" d="M361.708,15c0,5.799,4.701,10.5,10.5,10.5h307c5.799,0,10.5-4.701,10.5-10.5
+					s-4.701-10.5-10.5-10.5h-307C366.41,4.5,361.708,9.201,361.708,15C361.708,15,361.708,9.201,361.708,15z"/>
+			</g>
+			<text id="Abort_Auto_Depth" transform="matrix(1 0 0 1 459.1704 21.3438)" font-family="'ArialMT'" font-size="18">Start Auto Depth</text>
+		</g>
+	</g>
+</g>
+<g id="Layer1">
+	<g id="cdpButtonPressed_1_">
+		<rect y="92.5" fill="none" width="334.708" height="29"/>
+		<g>
+			<g>
+				
+					<linearGradient id="SVGID_13_" gradientUnits="userSpaceOnUse" x1="85.3521" y1="-31.3438" x2="131.0339" y2="-156.8537" gradientTransform="matrix(1 0 0 -1 59.1602 12.9004)">
+					<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+					<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:0.04"/>
+				</linearGradient>
+				<path fill="url(#SVGID_13_)" d="M0,107c0,8.008,6.492,14.5,14.5,14.5h305.708c8.008,0,14.5-6.492,14.5-14.5
+					s-6.492-14.5-14.5-14.5H14.5C6.492,92.5,0,98.992,0,107C0,107,0,98.992,0,107z"/>
+			</g>
+			<g>
+				<path fill="#1E1E1E" d="M1.354,107c0,7.18,5.82,13,13,13h306c7.18,0,13-5.82,13-13s-5.82-13-13-13h-306
+					C7.175,94,1.354,99.82,1.354,107C1.354,107,1.354,99.82,1.354,107z"/>
+			</g>
+			<g>
+				
+					<linearGradient id="SVGID_14_" gradientUnits="userSpaceOnUse" x1="-55.8062" y1="-93.5996" x2="272.1938" y2="-93.5996" gradientTransform="matrix(1 0 0 -1 59.1602 12.9004)">
+					<stop  offset="0.7634" style="stop-color:#919191"/>
+					<stop  offset="1" style="stop-color:#4D4D4D"/>
+				</linearGradient>
+				<path fill="url(#SVGID_14_)" d="M3.354,106.5c0,5.799,4.701,10.5,10.5,10.5h307c5.799,0,10.5-4.701,10.5-10.5
+					s-4.701-10.5-10.5-10.5h-307C8.056,96,3.354,100.701,3.354,106.5C3.354,106.5,3.354,100.701,3.354,106.5z"/>
+			</g>
+			<g>
+				
+					<linearGradient id="SVGID_15_" gradientUnits="userSpaceOnUse" x1="108.5479" y1="-105.0991" x2="108.5479" y2="-84.0991" gradientTransform="matrix(1 0 0 -1 59.1602 12.9004)">
+					<stop  offset="0" style="stop-color:#2C2C2C"/>
+					<stop  offset="1" style="stop-color:#515151"/>
+				</linearGradient>
+				<path fill="url(#SVGID_15_)" d="M3.708,107.5c0,5.799,4.701,10.5,10.5,10.5h307c5.799,0,10.5-4.701,10.5-10.5
+					s-4.701-10.5-10.5-10.5h-307C8.409,97,3.708,101.701,3.708,107.5C3.708,107.5,3.708,101.701,3.708,107.5z"/>
+			</g>
+			<text transform="matrix(1 0 0 1 102.1704 113.8438)" font-family="'ArialMT'" font-size="18">Start Auto Depth</text>
+		</g>
+	</g>
+	<g id="cdpButton_1_">
+		<rect y="0.5" fill="none" width="334.708" height="29"/>
+		<g>
+			<g>
+				
+					<linearGradient id="SVGID_16_" gradientUnits="userSpaceOnUse" x1="85.353" y1="60.6563" x2="131.0349" y2="-64.8537" gradientTransform="matrix(1 0 0 -1 59.1602 12.9004)">
+					<stop  offset="0.3208" style="stop-color:#0D0D0D;stop-opacity:0.28"/>
+					<stop  offset="0.8243" style="stop-color:#FFFFFF;stop-opacity:0.04"/>
+				</linearGradient>
+				<path fill="url(#SVGID_16_)" d="M0,15c0,8.008,6.492,14.5,14.5,14.5h305.708c8.008,0,14.5-6.492,14.5-14.5
+					s-6.492-14.5-14.5-14.5H14.5C6.492,0.5,0,6.992,0,15C0,15,0,6.992,0,15z"/>
+			</g>
+			<g>
+				<path fill="#1E1E1E" d="M1.354,15c0,7.18,5.82,13,13,13h306c7.18,0,13-5.82,13-13c0-7.18-5.82-13-13-13h-306
+					C7.175,2,1.354,7.82,1.354,15C1.354,15,1.354,7.82,1.354,15z"/>
+			</g>
+			<g>
+				
+					<linearGradient id="SVGID_17_" gradientUnits="userSpaceOnUse" x1="-55.8062" y1="-1.5996" x2="272.1938" y2="-1.5996" gradientTransform="matrix(1 0 0 -1 59.1602 12.9004)">
+					<stop  offset="0.7634" style="stop-color:#919191"/>
+					<stop  offset="1" style="stop-color:#4D4D4D"/>
+				</linearGradient>
+				<path fill="url(#SVGID_17_)" d="M3.354,14.5c0,5.799,4.701,10.5,10.5,10.5h307c5.799,0,10.5-4.701,10.5-10.5
+					S326.653,4,320.854,4h-307C8.056,4,3.354,8.701,3.354,14.5C3.354,14.5,3.354,8.701,3.354,14.5z"/>
+			</g>
+			<g>
+				
+					<linearGradient id="SVGID_18_" gradientUnits="userSpaceOnUse" x1="108.5479" y1="-13.0991" x2="108.5479" y2="7.9004" gradientTransform="matrix(1 0 0 -1 59.1602 12.9004)">
+					<stop  offset="0" style="stop-color:#2C2C2C"/>
+					<stop  offset="1" style="stop-color:#515151"/>
+				</linearGradient>
+				<path fill="url(#SVGID_18_)" d="M3.708,15.5c0,5.799,4.701,10.5,10.5,10.5h307c5.799,0,10.5-4.701,10.5-10.5
+					S327.006,5,321.208,5h-307C8.409,5,3.708,9.701,3.708,15.5C3.708,15.5,3.708,9.701,3.708,15.5z"/>
+			</g>
+			<text transform="matrix(1 0 0 1 101.1704 21.8438)" font-family="'ArialMT'" font-size="18">Start Auto Depth</text>
+		</g>
+	</g>
+	<text id="cdpText" transform="matrix(1 0 0 1 13.6646 21.8438)" fill="#232323" font-family="'ArialMT'" font-size="16">OVERRIDE</text>
+	<rect id="cdpBorderMarginBottomRight" x="324.538" y="19.5" fill="none" width="10.668" height="10"/>
+	<rect id="cdpBorderMarginTopLeft" fill="none" width="10.667" height="10"/>
+</g>
+</svg>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg"
+   x="0px"
+   y="0px"
+   width="62px"
+   height="466px"
+   viewBox="0 0 62 466"
+   enable-background="new 0 0 62 466"
+   xml:space="preserve"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="slideIndicatorWeigthSet.svg"><metadata
+   id="metadata66"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs64" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1920"
+   inkscape:window-height="1018"
+   id="namedview62"
+   showgrid="false"
+   inkscape:zoom="2.0257511"
+   inkscape:cx="30.85557"
+   inkscape:cy="154.34868"
+   inkscape:window-x="1592"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer1" />
+<linearGradient
+   id="grayBack_1_"
+   gradientUnits="userSpaceOnUse"
+   x1="-458.1831"
+   y1="719.7715"
+   x2="-457.85"
+   y2="720.1046"
+   gradientTransform="matrix(-1014.4101 0 0 1014.4101 -464538.2813 -730080.5625)">
+	<stop
+   offset="0"
+   style="stop-color:#363C3C"
+   id="stop4" />
+	<stop
+   offset="1"
+   style="stop-color:#2E3436"
+   id="stop6" />
+</linearGradient>
+<rect
+   id="grayBack"
+   x="-12.195"
+   y="-17.031"
+   fill="url(#grayBack_1_)"
+   width="180"
+   height="500" />
+<g
+   id="Layer1">
+	<g
+   id="cdpRail">
+		<rect
+   x="68"
+   width="2"
+   height="466"
+   id="rect11"
+   fill="none" />
+	</g>
+	<g
+   id="cdpKnob">
+		<rect
+   y="310.04099"
+   width="40.381351"
+   height="64"
+   id="rect14"
+   x="29.618641"
+   style="fill:none" />
+		<g
+   id="g16"
+   opacity="0.9">
+			
+				<linearGradient
+   id="SVGID_1_"
+   gradientUnits="userSpaceOnUse"
+   x1="691.4063"
+   y1="-975.0806"
+   x2="691.4063"
+   y2="-1045.0806"
+   gradientTransform="matrix(-8.979319e-011 1 -1 -8.979319e-011 -975.0801 -349.3652)">
+				<stop
+   offset="0"
+   style="stop-color:#1A1A1A"
+   id="stop19" />
+				<stop
+   offset="1"
+   style="stop-color:#030303"
+   id="stop21" />
+			</linearGradient>
+			<path
+   clip-rule="evenodd"
+   d="m 69.39,344.332 c 0.406,-0.626 0.61,-1.459 0.61,-2.29 0,-0.832 -0.204,-1.663 -0.61,-2.291 L 51.678,312.332 c -0.813,-1.257 -2.42,-2.291 -3.571,-2.291 H 2.094 C 0.941,310.041 0,311.5 0,313.282 v 57.517 c 0,1.786 0.941,3.242 2.094,3.242 h 46.013 c 1.151,0 2.758,-1.032 3.571,-2.291 L 69.39,344.332 z"
+   id="path23"
+   inkscape:connector-curvature="0"
+   style="fill-rule:evenodd"
+   fill="#FFFF1" />
+		</g>
+		<g
+   display="none"
+   id="g25">
+			<path
+   display="inline"
+   d="M48.346,352.979v2.902H47.3v-7.064h1.046v2.917h8.497v1.245H48.346z"
+   id="path27"
+   fill="#A5A5A5" />
+			<path
+   display="inline"
+   d="M51.972,339.879c3.285,0,5.028,1.996,5.028,4.432c0,2.521-1.955,4.29-4.844,4.29     c-3.031,0-5.014-1.883-5.014-4.432C47.143,341.563,49.139,339.879,51.972,339.879z M52.129,347.284     c2.039,0,3.864-1.104,3.864-3.044c0-1.954-1.798-3.059-3.965-3.059c-1.896,0-3.881,0.991-3.881,3.044     C48.147,346.266,50.032,347.284,52.129,347.284z"
+   id="path29"
+   fill="#A5A5A5" />
+			<path
+   display="inline"
+   d="M56.843,338.273H47.3v-1.344l4.829-3.059c1.116-0.709,2.123-1.261,3.099-1.713     l-0.014-0.029c-1.274,0.113-2.434,0.143-3.922,0.143H47.3v-1.162h9.543v1.246l-4.842,3.03c-1.062,0.665-2.153,1.303-3.186,1.784     l0.014,0.042c1.203-0.07,2.35-0.099,3.936-0.099h4.078V338.273z"
+   id="path31"
+   fill="#A5A5A5" />
+		</g>
+		
+	</g>
+	<text
+   id="cdpTicksNumber"
+   transform="matrix(1 0 0 1 154.7061 344)"
+   font-size="14"
+   font-family="'Arial-BoldMT'"
+   fill="#A5A5A5">2</text>
+
+
+
+
+	<text
+   id="cdpTicksColor"
+   transform="matrix(1 0 0 1 154.7061 365)"
+   font-size="14"
+   font-family="'Arial-BoldMT'"
+   fill="#FFFFFF">2</text>
+
+
+
+
+	
+</g>
+<g
+   id="Styles">
+</g>
+</svg>

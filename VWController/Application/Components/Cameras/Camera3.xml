@@ -33,4 +33,8 @@
         <Connection Input="1" LocalName=".Format" Model="CDPPortConnection" Name="MapFormat"></Connection>
       </Connections></Port>
   </Ports>
+
+  <Subcomponents>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera3" src="Components/Cameras/Camera3/Camera3.xml"></Subcomponent>
+  </Subcomponents>
 </Component>

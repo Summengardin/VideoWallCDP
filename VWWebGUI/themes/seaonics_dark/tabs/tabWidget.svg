@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="440px" height="240px" viewBox="0 0 440 240" enable-background="new 0 0 440 240" xml:space="preserve">
+<g id="Layer1">
+	<g id="cdpTabNormal">
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="189.6011" y1="44.9502" x2="189.6011" y2="15.771">
+			<stop  offset="0" style="stop-color:#515151"/>
+			<stop  offset="1" style="stop-color:#2C2C2C"/>
+		</linearGradient>
+		<path fill="url(#SVGID_1_)" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M131.65,44.95V20.634
+			c0-2.675,2.25-4.863,5-4.863h105.9c2.75,0,5,2.188,5,4.863V44.95"/>
+		<rect id="myRect" x="130.083" y="9.948" fill="none" width="119.083" height="35"/>
+	</g>
+	<text id="cdpTabNormalText" transform="matrix(1 0 0 1 169.1602 36.4355)" fill="#FFFFFF" font-family="'ArialMT'" font-size="14">Tab 2</text>
+	<g id="cdpTabSelected">
+		<path fill="#363C3C" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M4.55,44.801v-28c0-2.75,2.25-5,5-5h105.901
+			c2.75,0,5,2.25,5,5v28"/>
+		<rect id="aRect" x="3.016" y="10.146" fill="none" width="119.151" height="34.655"/>
+	</g>
+	<text id="cdpPaneBorderPixPath" transform="matrix(1 0 0 1 0 261.5)" font-family="'MyriadPro-Regular'" font-size="12">:/custom/themes/seaonics_dark/bgMainPanel.png</text>
+	
+		<text id="cdpTabSelectedText" transform="matrix(1 0 0 1 43.2598 36.6465)" fill="#FFFFFF" font-family="'Arial-BoldMT'" font-size="13.9993">Tab 1</text>
+	<rect id="cdpTabSpacing" x="121" y="11.167" fill="none" width="10" height="33.833"/>
+	<rect id="cdpTabBorderMargins" x="3.125" y="10.146" fill="none" width="8" height="8"/>
+	<rect id="cdpBorderWidth" x="3.008" y="57.531" fill="none" width="3" height="3"/>
+	<g id="pane_2_" display="none">
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="66.2148" y1="-13.2852" x2="369.786" y2="290.286">
+			<stop  offset="0" style="stop-color:#363C3C"/>
+			<stop  offset="1" style="stop-color:#2E3436"/>
+		</linearGradient>
+		<path display="inline" fill="url(#SVGID_2_)" d="M431,227c0,2.762-2.238,5-5,5H10c-2.761,0-5-2.238-5-5V50c0-2.761,2.239-5,5-5
+			h416c2.762,0,5,2.239,5,5V227z"/>
+		<path display="inline" fill="none" stroke="#0F0F0F" stroke-width="3" stroke-miterlimit="10" d="M430.5,226.5
+			c0,2.762-2.238,5-5,5H9.5c-2.761,0-5-2.238-5-5v-177c0-2.761,2.239-5,5-5h416c2.762,0,5,2.239,5,5V226.5z"/>
+	</g>
+	<g id="lineHider" display="none">
+		<rect id="hideLine" x="6" y="42" display="inline" fill="#363C3C" width="113" height="6"/>
+		
+			<line display="inline" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="4.5" y1="41" x2="4.5" y2="50"/>
+	</g>
+</g>
+<g id="Styles">
+	<g id="cdpTabNormal1">
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="646.6006" y1="43.9502" x2="646.6006" y2="13.9502">
+			<stop  offset="0" style="stop-color:#888888"/>
+			<stop  offset="1" style="stop-color:#BFBFBF"/>
+		</linearGradient>
+		<path fill="url(#SVGID_3_)" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M588.65,43.95v-25c0-2.75,2.25-5,5-5
+			h105.9c2.75,0,5,2.25,5,5v25"/>
+		<rect id="myRect_1_" x="586.833" y="9.167" fill="none" width="119.333" height="35.833"/>
+	</g>
+	
+		<text id="cdpTabNormalText1" transform="matrix(1 0 0 1 625.1602 36.4355)" fill="#FFFFFF" font-family="'ArialMT'" font-size="14">Tab 2</text>
+	<g id="cdpTabSelected1">
+		<path fill="#363C3C" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M461.551,43.801v-28c0-2.75,2.25-5,5-5h105.9
+			c2.75,0,5,2.25,5,5v28"/>
+		<rect id="aRect_2_" x="459.834" y="8.983" fill="none" width="119.332" height="35.833"/>
+	</g>
+	<text id="cdpPaneBorderPixPath1" transform="matrix(1 0 0 1 456 261.5)" font-family="'MyriadPro-Regular'" font-size="12">:/custom/themes/seaonics_dark/bgMainPanel.png</text>
+	
+		<text id="cdpTabSelectedText1" transform="matrix(1 0 0 1 499.2598 36.6465)" fill="#FFFFFF" font-family="'Arial-BoldMT'" font-size="13.9993">Tab 1</text>
+	<g id="pane_3_">
+		<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="523.2148" y1="-14.2852" x2="826.7867" y2="289.2867">
+			<stop  offset="0" style="stop-color:#363C3C"/>
+			<stop  offset="1" style="stop-color:#2E3436"/>
+		</linearGradient>
+		<path fill="url(#SVGID_4_)" d="M888,226c0,2.762-2.238,5-5,5H467c-2.762,0-5-2.238-5-5V49c0-2.761,2.238-5,5-5h416
+			c2.762,0,5,2.239,5,5V226z"/>
+		<path fill="none" stroke="#0F0F0F" stroke-width="3" stroke-miterlimit="10" d="M887.5,225.5c0,2.762-2.238,5-5,5h-416
+			c-2.762,0-5-2.238-5-5v-177c0-2.761,2.238-5,5-5h416c2.762,0,5,2.239,5,5V225.5z"/>
+	</g>
+	<g id="lineHider_2_">
+		<rect id="hideLine_2_" x="463" y="41" fill="#363C3C" width="113" height="6"/>
+		<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="461.5" y1="40" x2="461.5" y2="49"/>
+	</g>
+</g>
+</svg>

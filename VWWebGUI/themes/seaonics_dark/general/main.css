@@ -1,0 +1,46 @@
+QScrollBar:vertical {
+  border: 3px solid rgb(64,64,64);
+  background-color: rgb(64,64,64);
+  width: 40px;    
+  margin: 0px 0px 0px 0px;
+}
+QScrollBar::handle:vertical {
+  min-height: 0px;
+  border: 0px solid rgb(64,64,64);
+  border-radius: 6px;
+  background-color: rgb(105,105,105);
+}
+QScrollBar::add-line:vertical   { height: 0px; }
+QScrollBar::sub-line:vertical   { height: 0px; }
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical { background: none; }
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical { background: none; }
+
+QScrollBar:horizontal {
+  border: 3px solid rgb(64,64,64);
+  background-color: rgb(64,64,64);
+  height: 40px;    
+  margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:horizontal {
+  min-height: 0px;
+  border: 0px solid rgb(64,64,64);
+  border-radius: 6px;
+  background-color: rgb(105,105,105);
+}
+QScrollBar::add-line:horizontal { width:  0px; }
+QScrollBar::sub-line:horizontal { width:  0px; }
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal { background: none; }
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal { background: none; }
+
+
+
+QTabWidget::pane{
+  border-width: 8px 8px 8px 8px;
+  border-image: url(:/custom/themes/seaonics_dark/bgMainPanel.png) 8 8 8 8 stretch stretch;
+  top: -8px;
+}
+CDPBaseTabWidget > QWidget > QWidget{
+  background:transparent
+}
+

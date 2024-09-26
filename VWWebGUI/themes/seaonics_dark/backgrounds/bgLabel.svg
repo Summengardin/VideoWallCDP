@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="80px" height="30px" viewBox="0 0 80 30" enable-background="new 0 0 80 30" xml:space="preserve">
+<g id="Layer1">
+	<rect id="cdpBorderMarginBottomRight" x="74" y="24" fill="none" width="6" height="6"/>
+	<rect id="cdpBorderMarginTopLeft" fill="none" width="6" height="6"/>
+	<g id="cdpBackground">
+		<rect fill="none" width="80" height="30"/>
+		<g>
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="39.3081" y1="44.4258" x2="40.2735" y2="1.9499">
+				<stop  offset="0" style="stop-color:#3A4042"/>
+				<stop  offset="0.5522" style="stop-color:#3B4244"/>
+				<stop  offset="0.7511" style="stop-color:#40474B"/>
+				<stop  offset="0.8924" style="stop-color:#475256"/>
+				<stop  offset="1" style="stop-color:#515F66"/>
+			</linearGradient>
+			<path fill="url(#SVGID_1_)" d="M80,24c0,2.762-2.238,5-5,5H5c-2.761,0-5-2.238-5-5V4c0-2.761,2.239-5,5-5h70c2.762,0,5,2.239,5,5
+				V24z"/>
+			<path fill="none" stroke="#303030" stroke-miterlimit="10" d="M79.5,24.5c0,2.762-2.238,5-5,5h-70c-2.761,0-5-2.238-5-5v-20
+				c0-2.761,2.239-5,5-5h70c2.762,0,5,2.239,5,5V24.5z"/>
+		</g>
+	</g>
+	<text id="cdpTextTitle" transform="matrix(1 0 0 1 23.4448 15)" fill="#FFFFFF" font-family="'ArialMT'" font-size="14">TITLE</text>
+	<text id="cdpTextUnit" transform="matrix(1 0 0 1 33.5005 26.7373)" fill="#8A8A8A" font-family="'Arial-BoldMT'" font-size="10">kN</text>
+</g>
+<g id="Styles">
+	<g id="cdpBackgroundStyle1">
+		<rect x="90" fill="none" width="80" height="30"/>
+		<g>
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="129.3086" y1="44.4258" x2="130.274" y2="1.9499">
+				<stop  offset="0" style="stop-color:#3A4042"/>
+				<stop  offset="0.5531" style="stop-color:#3C4144"/>
+				<stop  offset="0.7524" style="stop-color:#40474B"/>
+				<stop  offset="0.8939" style="stop-color:#475257"/>
+				<stop  offset="1" style="stop-color:#515F66"/>
+			</linearGradient>
+			<path fill="url(#SVGID_2_)" d="M170,24c0,2.762-2.238,5-5,5H95c-2.762,0-5-2.238-5-5V4c0-2.761,2.238-5,5-5h70
+				c2.762,0,5,2.239,5,5V24z"/>
+			<path fill="none" stroke="#303030" stroke-miterlimit="10" d="M169.5,24.5c0,2.762-2.238,5-5,5h-70c-2.762,0-5-2.238-5-5v-20
+				c0-2.761,2.238-5,5-5h70c2.762,0,5,2.239,5,5V24.5z"/>
+		</g>
+	</g>
+	
+		<text id="cdpTextUnitStyle1" transform="matrix(1 0 0 1 123.5 26.7373)" fill="#8A8A8A" font-family="'Arial-BoldMT'" font-size="10">kN</text>
+	<text id="cdpTextTitleStyle1" transform="matrix(1 0 0 1 110.25 15)" fill="#FFFFFF" font-family="'ArialMT'" font-size="14">TITLE</text>
+</g>
+</svg>

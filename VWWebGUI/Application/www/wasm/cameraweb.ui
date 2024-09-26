@@ -16,12 +16,29 @@
   <property name="autoFillBackground">
    <bool>true</bool>
   </property>
+  <property name="styleSheet">
+   <string notr="true">CDPBaseContainer{
+border-radius: 100px;
+}</string>
+  </property>
   <property name="cdpTargetRouting">
    <string>VWController.Cameras.Camera</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
     <widget class="CDPBaseContainer" name="container">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="type" stdset="0">
+      <enum>CDPBaseContainer::Container</enum>
+     </property>
+     <property name="svgBorderMargins" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="borderPixmap">
+      <string>:/themes/openbridge5_dusk/backgrounds/bgPanel.svg</string>
+     </property>
      <layout class="QVBoxLayout" name="verticalLayout_3">
       <item>
        <layout class="QVBoxLayout" name="verticalLayout">
@@ -137,7 +154,7 @@
           <item row="4" column="1">
            <widget class="CDPBaseLineEdit" name="lineEdit_6">
             <property name="text">
-             <string>Not connected</string>
+             <string>--</string>
             </property>
             <property name="placeholderText">
              <string>ex. 60</string>

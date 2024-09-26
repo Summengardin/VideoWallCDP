@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="300px" height="200px" viewBox="0 0 300 200" enable-background="new 0 0 300 200" xml:space="preserve">
+<g id="Mockup__x28_not_parsed_x29_">
+	<text transform="matrix(1 0 0 1 310.5762 27.6572)" font-family="'MyriadPro-Regular'" font-size="12">Header view gradient:</text>
+	<text transform="matrix(1 0 0 1 310.5879 93.1997)" font-family="'MyriadPro-Regular'" font-size="12">Alternate row gradient:</text>
+	<text transform="matrix(1 0 0 1 310.5762 60.1572)" font-family="'MyriadPro-Regular'" font-size="12">Row gradient:</text>
+	<text transform="matrix(1 0 0 1 310.5938 200.8232)" font-family="'MyriadPro-Regular'" font-size="12">Table border:</text>
+	<text transform="matrix(1 0 0 1 310.5879 131.0327)" font-family="'MyriadPro-Regular'" font-size="12">Table background:</text>
+	<g id="table_1_">
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="13.4092" y1="101.6572" x2="289.4092" y2="101.6572">
+			<stop  offset="0" style="stop-color:#434648"/>
+			<stop  offset="0.5654" style="stop-color:#45484A"/>
+			<stop  offset="0.7691" style="stop-color:#4C4E4F"/>
+			<stop  offset="0.9137" style="stop-color:#575959"/>
+			<stop  offset="1" style="stop-color:#636363"/>
+		</linearGradient>
+		<rect x="13.409" y="18.157" fill="url(#SVGID_1_)" stroke="#19191A" stroke-miterlimit="10" width="276" height="167"/>
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="151.4097" y1="79.6572" x2="151.4097" y2="44.6572">
+			<stop  offset="0" style="stop-color:#4E4F52"/>
+			<stop  offset="0.5413" style="stop-color:#4B4C4F"/>
+			<stop  offset="0.9754" style="stop-color:#414548"/>
+			<stop  offset="1" style="stop-color:#404447"/>
+		</linearGradient>
+		<rect x="13.909" y="44.657" fill="url(#SVGID_2_)" width="275" height="35"/>
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="151.4087" y1="114.6572" x2="151.4087" y2="149.6572">
+			<stop  offset="0" style="stop-color:#4E4F52"/>
+			<stop  offset="0.5413" style="stop-color:#4B4C4F"/>
+			<stop  offset="0.9754" style="stop-color:#414548"/>
+			<stop  offset="1" style="stop-color:#404447"/>
+		</linearGradient>
+		<rect x="13.909" y="114.657" fill="url(#SVGID_3_)" width="275" height="35"/>
+		<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="151.4087" y1="79.6572" x2="151.4087" y2="114.6572">
+			<stop  offset="0" style="stop-color:#626466"/>
+			<stop  offset="0.5582" style="stop-color:#606163"/>
+			<stop  offset="1" style="stop-color:#595959"/>
+		</linearGradient>
+		<rect x="13.909" y="79.657" fill="url(#SVGID_4_)" width="275" height="35"/>
+		<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="151.4087" y1="149.6572" x2="151.4087" y2="184.6577">
+			<stop  offset="0" style="stop-color:#626466"/>
+			<stop  offset="1" style="stop-color:#595959"/>
+		</linearGradient>
+		<rect x="13.909" y="149.657" fill="url(#SVGID_5_)" width="275" height="35"/>
+		<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="151.4097" y1="44.6572" x2="151.4097" y2="18.6572">
+			<stop  offset="0.557" style="stop-color:#222426"/>
+			<stop  offset="0.6531" style="stop-color:#232628"/>
+			<stop  offset="0.6878" style="stop-color:#282B2F"/>
+			<stop  offset="0.7123" style="stop-color:#30353A"/>
+			<stop  offset="0.7281" style="stop-color:#383F47"/>
+		</linearGradient>
+		<rect x="13.909" y="18.657" fill="url(#SVGID_6_)" width="275" height="26"/>
+		<rect id="cdpHeaderView" x="13.909" y="18.657" fill="none" width="275" height="26"/>
+		<g>
+			<text transform="matrix(1 0 0 1 123.3896 35.5747)" fill="#FFFFFF" font-family="'ArialMT'" font-size="12">Alarm text</text>
+		</g>
+		<g>
+			<text transform="matrix(1 0 0 1 25.7227 35.5747)" fill="#FFFFFF" font-family="'ArialMT'" font-size="12">State</text>
+		</g>
+		<g>
+			
+				<image overflow="visible" opacity="0.6" width="34" height="31" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAfCAYAAACCox+xAAAACXBIWXMAAAsSAAALEgHS3X78AAAA
+GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAqtJREFUeNrsV2tv2kAQtPERIFCS
+OI8mpYnS///TqkS8jcH29U6alaYrv91860kjDNjnudnZ3bsg+D/+HuEXPGv7TGYGEPCfI/ruCRR9
+CUU9SAgBA4zxGQ5RuI8iQuLKYUJzZA6pwxnX+VcpwkpMHRYOtw43DnMoEyA8RdfQmB5E/AuvHe4c
+7kHIjz3ms1BDyNh/SUTiL2osHR4dfkAVP9Yg6sNyITJhGzKmA4kIasyhxrPDK1Tx4wMvPgFnkLFt
+ssh0NOjM4ZvDA4isoEwApVKEaA8yGcjlQxVhNSZQI3Z4cnhBaB5wr1crcdgCR1KlaFKlDREJyQx+
+eASJFxCKSbUjSGxIlQup0osIqzFFSO4REk/iO74v6X5RZI3PA9WVWuOaFul6RekqIXlGSJYIlwz/
+2w5E1rhOlHFtl4Kma0YMP7w7/EK2PIHIFAsa4dkcLz4hVAlMnKle1EiEa8aEasYriLxDlTuQHFPz
+k8Z3AYEDIOlcdFFE1wytxk8QW1CvGamuK31HyCTKK7aJCKsxgxrelG8g8gZ/3OJ/VoO3AxKeBDhS
+BuVlISojIp11gaxYUUhW+G2Oe/R+hPclGZEp80pRRUQMGmG1N1BDvMEGnVA4bAVyKCCmPaoQ2br0
+ZZPOEYIYxpRWb6lIjdTzXLi4L8WY6xOFLtVl31TsvqSSXpMXLPWStGJHZoloSoT0XOwrW6UIv6CA
+lDt01xTeiBo2z2LWPZ49kyfCskWYihVJ+vky/Rv/bVC8opKQBBUhOtEcWzKrrfOIVavZYYIc5Zpl
+bXOc4MK2hT92VeXelKwkw0o2uN5DibKaEdSQ4SormXNQ+5TKQxKn8JhgOpAoIyPbx4sqaraOiOwt
+GGHPc4tVhApVzGzTsTFUJ7ohR9NA+aF0K9D0gqEEWp+L/wgwAMHj+2Wj49NQAAAAAElFTkSuQmCC" transform="matrix(1 0 0 1 28.9092 48.6572)">
+			</image>
+			<g>
+				<radialGradient id="SVGID_7_" cx="46.686" cy="61.8013" r="17.5751" gradientUnits="userSpaceOnUse">
+					<stop  offset="0" style="stop-color:#FF0007"/>
+					<stop  offset="0.3628" style="stop-color:#B90004"/>
+					<stop  offset="0.7895" style="stop-color:#6B0000"/>
+				</radialGradient>
+				<polygon fill="url(#SVGID_7_)" points="43.909,54.583 48.623,63.12 53.338,71.657 43.909,71.657 34.48,71.657 39.194,63.12 				
+					"/>
+				<polygon fill="none" stroke="#000000" stroke-miterlimit="10" points="43.909,54.583 48.623,62.87 53.338,71.157 43.909,71.157 
+					34.48,71.157 39.194,62.87 				"/>
+			</g>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 310.5938 165.3242)" font-family="'MyriadPro-Regular'" font-size="12">Table background image:</text>
+</g>
+<g id="Layer1">
+	
+		<text id="cdpHeaderViewGradient3" transform="matrix(1 0 0 1 395.2432 41.2578)" fill="#222426" font-family="'MyriadPro-Regular'" font-size="12">1.0</text>
+	
+		<text id="cdpHeaderViewGradient2" transform="matrix(1 0 0 1 364.5762 41.2578)" fill="#222426" font-family="'MyriadPro-Regular'" font-size="12">0.4</text>
+	
+		<text id="cdpHeaderViewGradient1" transform="matrix(1 0 0 1 334.9102 41.2578)" fill="#383F47" font-family="'MyriadPro-Regular'" font-size="12">0.2</text>
+	
+		<text id="cdpHeaderViewGradient0" transform="matrix(1 0 0 1 310.5762 41.2578)" fill="#383F47" font-family="'MyriadPro-Regular'" font-size="12">0.0</text>
+	
+		<text id="cdpAlternateRowGradient1" transform="matrix(1 0 0 1 334.9219 106.8003)" fill="#4E4F52" font-family="'MyriadPro-Regular'" font-size="12">1.0</text>
+	
+		<text id="cdpAlternateRowGradient0" transform="matrix(1 0 0 1 310.5879 106.8003)" fill="#404447" font-family="'MyriadPro-Regular'" font-size="12">0.0</text>
+	
+		<text id="cdpRowGradient1" transform="matrix(1 0 0 1 334.9102 73.7578)" fill="#626466" font-family="'MyriadPro-Regular'" font-size="12">1.0</text>
+	
+		<text id="cdpRowGradient0" transform="matrix(1 0 0 1 310.5762 73.7578)" fill="#595959" font-family="'MyriadPro-Regular'" font-size="12">0.0</text>
+	
+		<text id="cdpBackgroundGradient1" transform="matrix(1 0 0 1 334.9219 144.6333)" fill="#404447" font-family="'MyriadPro-Regular'" font-size="12">1.0</text>
+	
+		<text id="cdpBackgroundGradient0" transform="matrix(1 0 0 1 310.5879 144.6333)" fill="#595959" font-family="'MyriadPro-Regular'" font-size="12">0.0</text>
+	<g id="cdpRowText">
+		<text transform="matrix(1 0 0 1 123.3896 66.9082)" fill="#FFFFFF" font-family="'ArialMT'" font-size="12">Network</text>
+	</g>
+	<g id="cdpRowSelectedText">
+		<text transform="matrix(1 0 0 1 123.3896 101.6572)" fill="#3EA2DA" font-family="'ArialMT'" font-size="12">Selected</text>
+	</g>
+	<g id="cdpHeaderText">
+		<text transform="matrix(1 0 0 1 237.8896 35.5747)" fill="#FFFFFF" font-family="'ArialMT'" font-size="12">Time</text>
+	</g>
+	
+		<text id="cdpBorder" transform="matrix(1 0 0 1 310.5938 214.4248)" fill="#303030" font-family="'MyriadPro-Regular'" font-size="12">1</text>
+	
+		<text id="BgPath__x28_add_cdp_prefix_to_use_x29__1_" transform="matrix(1 0 0 1 310.582 180.3242)" font-family="'MyriadPro-Regular'" font-size="12">:/themes/cdp_dark/tables/bg.png</text>
+</g>
+</svg>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg id="svg" width="192px" height="192px" enable-background="new 0 0 192 192" version="1.1" viewBox="0 0 192 192" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs id="defs424"><linearGradient id="sunkenCircle_1_" x1="48.051" x2="143.95" y1="7.0506" y2="102.95" gradientTransform="translate(0,41)" gradientUnits="userSpaceOnUse">
+			<stop id="stop1086" stop-color="#1D2021" offset="0"/>
+			<stop id="stop1088" stop-color="#1D2021" offset=".4337"/>
+			<stop id="stop1090" stop-color="#565B5D" offset=".6684"/>
+			<stop id="stop1092" stop-color="#565B5D" offset="1"/>
+		</linearGradient><linearGradient id="linearGradient2947" x1="235.92" x2="241.66" y1="60.604" y2="60.604" gradientUnits="userSpaceOnUse"><stop id="stop2943" stop-color="#ff5500" offset="0"/><stop id="stop4403" stop-color="#ff5500" offset=".29791"/><stop id="stop4401" stop-color="#fffffd" offset=".99"/><stop id="stop2941" stop-color="#ffffff" offset="1"/></linearGradient></defs>
+<g id="g11" display="none">
+	<linearGradient id="SVGID_1_" x1="133.33" x2="133.33" y1="202.33" y2="-8.9995" gradientUnits="userSpaceOnUse">
+		<stop id="stop2" stop-color="#242729" offset=".2117"/>
+		<stop id="stop4" stop-color="#3A3D3E" offset=".7932"/>
+	</linearGradient>
+	<path id="path7" d="m-7.667 193.33c0 4.971 4.029 9 9 9h264c4.971 0 9-4.029 9-9v-193.33c0-4.971-4.029-9-9-9h-264c-4.971 0-9 4.029-9 9z" fill="url(#SVGID_1_)"/>
+	<path id="path9" d="m-7.667 193.33c0 4.971 4.029 9 9 9h264c4.971 0 9-4.029 9-9v-193.33c0-4.971-4.029-9-9-9h-264c-4.971 0-9 4.029-9 9z" fill="none" stroke="#b3b3b3" stroke-miterlimit="10" stroke-width="2"/>
+</g>
+<g id="Layer1">
+	<g id="cdpBackground">
+		<rect id="outline" width="192" height="192" fill="none"/>
+		
+			
+		<path id="sunkenCircle" d="m192 96c0-53-43-96-96-96s-96 43-96 96 43 96 96 96 96-43 96-96zm-186 0c0-49.7 40.3-90 90-90s90 40.3 90 90-40.3 90-90 90-90-40.3-90-90z" fill="url(#sunkenCircle_1_)"/><circle id="inner_6_" cx="96" cy="96" r="93" fill="#0a0a0a" stroke-width="1.4028"/>
+	</g>
+	<g id="cdpMiddle" display="none">
+		<rect id="outline_2_" width="192" height="192" display="none" fill="none"/>
+		<circle id="circle_1_" cx="96" cy="96" r="93" display="none" fill="#0a0a0a" stroke="#ffffff" stroke-miterlimit="10"/>
+	</g>
+	<rect id="cdpTicksMinorSize" x="302.44" y="6.213" width="1" height="0" fill="none"/>
+	<rect id="cdpTicksMajorSize" x="301.44" y="11.213" width="3" height="0" fill="none"/>
+	<rect id="cdpTicksOffset" x="94.001" y="-9.22" width="3.999" height="32" fill="none"/>
+	<rect id="cdpTicksMajorNo13T" x="94.001" y="3.713" width="3.999" height="5.563" fill="none"/>
+	<rect id="cdpTicksMinorNo0T" x="94.001" y="3.713" width="3.999" height="5.563" fill="none"/>
+	<rect id="cdpTicksMinorNo0T_1_" x="94.001" y="3.713" width="3.999" height="5.563" fill="none"/>
+	<g id="cdpTicksColor" transform="translate(-206.33)" enable-background="new    ">
+		
+			<text id="text38" transform="translate(299 33.406)" fill="#ffffff" font-family="Arial-BoldMT" font-size="10px" stroke="#ffffff" stroke-miterlimit="10">1</text>
+	</g>
+	<g id="cdpTicksNumber" transform="translate(-205.66)" enable-background="new    ">
+		
+			<text id="text41" transform="translate(299 33.406)" fill="#ffffff" font-family="Arial-BoldMT" font-size="8px" stroke="#ffffff" stroke-miterlimit="10">1</text>
+	</g>
+	<g id="Needle1__x28_old_x29_" display="none">
+		<linearGradient id="SVGID_2_" x1="260.33" x2="248.33" y1="46.494" y2="46.494" gradientUnits="userSpaceOnUse">
+			<stop id="stop44" stop-color="#FFFFFF" offset="0"/>
+			<stop id="stop46" stop-color="#FAFBFB" offset=".1414"/>
+			<stop id="stop48" stop-color="#ECEDEE" offset=".3029"/>
+			<stop id="stop50" stop-color="#D6D8D9" offset=".4743"/>
+			<stop id="stop52" stop-color="#B6B9BC" offset=".6526"/>
+			<stop id="stop54" stop-color="#8D9396" offset=".8343"/>
+			<stop id="stop56" stop-color="#61696E" offset="1"/>
+		</linearGradient>
+		<path id="path59" d="m258.97 89.464c0.037 1.101-0.834 2.249-1.934 2.249h-6c-1.1 0-1.969-1.148-1.934-2.249l2.867-86.127c0.035-1.101 0.967-2.062 2.066-2.062 1.1 0 2.029 0.992 2.064 2.093l2.871 86.096z" display="inline" fill="url(#SVGID_2_)"/>
+		<g id="g95">
+			<linearGradient id="SVGID_3_" x1="111.83" x2="83.577" y1="76.823" y2="112.32" gradientUnits="userSpaceOnUse">
+				<stop id="stop61" stop-color="#FFFFFF" offset="0"/>
+				<stop id="stop63" stop-color="#FAFBFB" offset=".1414"/>
+				<stop id="stop65" stop-color="#ECEDEE" offset=".3029"/>
+				<stop id="stop67" stop-color="#D6D8D9" offset=".4743"/>
+				<stop id="stop69" stop-color="#B6B9BC" offset=".6526"/>
+				<stop id="stop71" stop-color="#8D9396" offset=".8343"/>
+				<stop id="stop73" stop-color="#61696E" offset="1"/>
+			</linearGradient>
+			<circle id="circle76" cx="96" cy="96.713" r="9" display="inline" fill="url(#SVGID_3_)"/>
+			<linearGradient id="SVGID_4_" x1="100.81" x2="89.975" y1="91.386" y2="103.39" gradientUnits="userSpaceOnUse">
+				<stop id="stop78" stop-color="#FFFFFF" offset="0"/>
+				<stop id="stop80" stop-color="#FAFBFB" offset=".1414"/>
+				<stop id="stop82" stop-color="#ECEDEE" offset=".3029"/>
+				<stop id="stop84" stop-color="#D6D8D9" offset=".4743"/>
+				<stop id="stop86" stop-color="#B6B9BC" offset=".6526"/>
+				<stop id="stop88" stop-color="#8D9396" offset=".8343"/>
+				<stop id="stop90" stop-color="#61696E" offset="1"/>
+			</linearGradient>
+			<circle id="circle93" cx="96" cy="96.713" r="7.152" display="inline" fill="url(#SVGID_4_)"/>
+		</g>
+		<rect id="cdpRectCenter_1_" x="252.5" y="74.213" width="3" height="3" display="inline" fill="none"/>
+		<rect id="cdpRectOutline_1_" x="245" y="1.275" width="18" height="90.438" display="inline" fill="none"/>
+	</g>
+	<g id="cdpNeedleGraphics">
+		<rect id="cdpRectOutline_2_" x="222.35" y="29.425" width="6.887" height="65.698" fill="none"/>
+		<rect id="cdpRectCenter_2_" x="224.79" y="90.783" width="2" height="2" fill="none"/>
+		<g id="needle_1_" fill="#ffffff">
+			<ellipse id="ellipse102" cx="225.79" cy="91.783" rx="3.443" ry="3.34"/>
+			<polygon id="polygon104" points="222.92 91.783 223.66 91.783 227.92 91.783 228.66 91.783 227.92 29.425 223.66 29.425"/>
+		</g>
+	</g>
+	<rect id="cdpNeedleMax" x="94.115" y="32.426" width="4" height="4" fill="none"/>
+	<rect id="cdpNeedleMin" x="94.115" y="32.426" width="4" height="4" fill="none"/>
+	<rect id="cdpNeedleCenterCW" x="94.5" y="94.973" width="3.231" height="3.331" fill="none"/>
+	<g id="cdpTop">
+		<rect id="outline_1_" width="192" height="192" display="none" fill="none"/>
+		<g id="g127" transform="matrix(1.0563 0 0 1.0563 -5.5289 -6.1225)">
+			<g id="cross" transform="matrix(1.2 0 0 1.2 -19.223 -19.335)" fill="none" opacity=".5" stroke="#ffffff" stroke-miterlimit="10" stroke-width=".44809">
+				<line id="line112" x1="25.114" x2="167.11" y1="96.677" y2="96.677"/>
+				<line id="line114" x1="96.115" x2="96.115" y1="25.676" y2="167.68"/>
+			</g>
+			<circle id="circle" cx="96.115" cy="96.677" r="66.563" display="none" fill="none" stroke="#ffffff" stroke-miterlimit="10"/>
+			<g id="needle" display="none">
+				
+					<line id="line118" x1="96.115" x2="158.47" y1="96.677" y2="96.677" display="inline" fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="4.252"/>
+				<ellipse id="ellipse120" cx="96.115" cy="96.677" rx="3.34" ry="3.443" display="inline" fill="#ffffff"/>
+				<rect id="rect122" x="113.93" y="94.38" width="31.18" height="4.592" display="inline" fill="#ffffff"/>
+				<rect id="rect124" x="96.115" y="93.807" width="31.178" height="5.739" display="inline" fill="#ffffff"/>
+			</g>
+		</g>
+		
+			<linearGradient id="glass_2_" x1="252.17" x2="252.17" y1="749.57" y2="778.62" gradientTransform="matrix(2.2068 0 0 2.2068 -460.26 -1640.7)" gradientUnits="userSpaceOnUse">
+			<stop id="stop129" stop-color="#FFFFFF" stop-opacity=".95" offset=".4164"/>
+			<stop id="stop131" stop-color="#FFFFFF" stop-opacity="0" offset="1"/>
+		</linearGradient>
+		<path id="glass_1_" d="m156.66 69.717c0 18.235-23.561-7.983-60.343-7.983-36.78 0-60.51 29.474-60.51 7.983 0-0.752 15.982-39.051 60.36-39.051 43.574 0 60.493 38.332 60.493 39.051z" display="none" enable-background="new    " fill="url(#glass_2_)" opacity=".25"/>
+	</g>
+</g>
+<g id="Layer2">
+	<rect id="cdpTicksOffset_1_" x="300.94" y="4.78" width="3.999" height="4" fill="none"/>
+	<g id="Needle1__x28_old_x29__1_">
+		
+		<path id="path153" d="m258.97 89.464c0.037 1.101-0.834 2.249-1.934 2.249h-6c-1.1 0-1.969-1.148-1.934-2.249l2.867-86.127c0.035-1.101 0.967-2.062 2.066-2.062 1.1 0 2.029 0.992 2.064 2.093l2.871 86.096z" fill="url(#SVGID_2_)"/>
+		<g id="g189" display="none">
+			
+			<circle id="circle170" cx="96" cy="96.713" r="9" display="inline" fill="url(#SVGID_3_)"/>
+			
+			<circle id="circle187" cx="96" cy="96.713" r="7.152" display="inline" fill="url(#SVGID_4_)"/>
+		</g>
+		<rect id="cdpRectCenter_4_" x="252.5" y="74.213" width="3" height="3" fill="none"/>
+		<rect id="cdpRectOutline_4_" x="245" y="1.275" width="18" height="90.438" fill="none"/>
+	</g>
+	<g id="cdpNeedleGraphics_1_">
+		<rect id="cdpRectOutline_3_" x="235.35" y="29.425" width="6.887" height="65.698" fill="none"/>
+		<rect id="cdpRectCenter_3_" x="237.79" y="90.783" width="2" height="2" fill="none"/>
+		<g id="needle_3_">
+			<polygon id="polygon196" points="240.83 29.425 236.75 29.425 235.92 91.783 241.66 91.783" fill="url(#linearGradient2947)"/>
+			<ellipse id="circle_2_" cx="238.79" cy="91.783" rx="3.443" ry="3.34" fill="#FFFFFF"/>
+		</g>
+	</g>
+	<rect id="cdpNeedleMax_1_" x="94.115" y="32.426" width="4" height="4" fill="none"/>
+	<rect id="cdpNeedleMin_1_" x="94.115" y="32.426" width="4" height="4" fill="none"/>
+	<rect id="cdpNeedleCenterCW_1_" x="94.5" y="94.973" width="3.231" height="3.331" fill="none"/>
+	<rect id="cdpTicksMinorSize_1_" x="302.34" y="40.699" width="0" height="66" fill="none"/>
+</g>
+<g id="Helper">
+	<g id="needle_2_">
+		
+			<line id="line206" x1="96.115" x2="158.24" y1="96.677" y2="96.677" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" stroke-width="4.252"/>
+		<circle id="circle208" cx="96.115" cy="96.677" r="3.328" fill="#FFFFFF"/>
+		<rect id="rect210" x="113.86" y="94.457" width="31.063" height="4.438" fill="#FFFFFF"/>
+		<rect id="rect212" x="96.115" y="93.902" width="31.062" height="5.548" fill="#FFFFFF"/>
+	</g>
+	<g id="rose">
+		<path id="path215" d="m128.29 152.4c4.762-2.753 9.25-6.153 13.324-10.229s7.477-8.563 10.229-13.323l-55.726-32.174 32.173 55.726z" fill="#EC1C24"/>
+		<path id="path217" d="m133.02 149.38c3.016-2.119 5.899-4.506 8.597-7.202 2.697-2.697 5.086-5.58 7.203-8.597l-52.701-36.901 36.901 52.7z" fill="#3EB44A"/>
+		<path id="path219" d="m128.29 152.4c4.762-2.753 9.25-6.153 13.324-10.229s7.477-8.563 10.229-13.323l-55.726-32.174 32.173 55.726z" fill="none" stroke="#FFFFFF" stroke-miterlimit="10"/>
+	</g>
+	<g id="numbers" fill="#ffffff" font-family="MyriadPro-Regular" font-size="9.7172px">
+		<text id="text222" transform="matrix(.9702 0 0 1 161.34 57.626)">60°</text>
+		<text id="text224" transform="matrix(.9702 0 0 1 131.43 26.535)">30°</text>
+		<text id="text226" transform="matrix(.9702 0 0 1 16.189 57.626)">300°</text>
+		<text id="text228" transform="matrix(.9702 0 0 1 46.763 26.535)">330°</text>
+		<text id="text230" transform="matrix(.9702 0 0 1 172.18 100.18)">90°</text>
+		<text id="text232" transform="matrix(.9702 0 0 1 158.12 142.4)">120°</text>
+		<text id="text234" transform="matrix(.9702 0 0 1 128.56 173.23)">150°</text>
+		<text id="text236" transform="matrix(.9702 0 0 1 16.322 142.4)">240°</text>
+		<text id="text238" transform="matrix(.9702 0 0 1 45.692 173.23)">210°</text>
+		<text id="text240" transform="matrix(.9702 0 0 1 4.8491 100.18)">270°</text>
+		<text id="text242" transform="matrix(.9702 0 0 1 87.363 184.84)">180°</text>
+		<text id="text244" transform="matrix(.9702 0 0 1 92.197 15.407)">0°</text>
+	</g>
+</g>
+<g id="Styles" display="none">
+	<g id="cdpBackgroundStyle1" display="inline">
+		<radialGradient id="outer_1_" cx="363.17" cy="55.15" r="156.73" gradientUnits="userSpaceOnUse">
+			<stop id="stop248" stop-color="#323B40" offset="0"/>
+			<stop id="stop250" stop-color="#212426" offset="1"/>
+		</radialGradient>
+		
+			<circle id="outer_4_" cx="300" cy="96" r="95" fill="url(#outer_1_)" stroke="#505152" stroke-miterlimit="10" stroke-width=".95"/>
+		<radialGradient id="middle_1_" cx="300" cy="96" r="87.5" gradientUnits="userSpaceOnUse">
+			<stop id="stop254" stop-color="#DCE0E6" offset="0"/>
+			<stop id="stop256" stop-color="#343536" offset="1"/>
+		</radialGradient>
+		<circle id="middle_3_" cx="300" cy="96" r="87.5" fill="url(#middle_1_)"/>
+		<radialGradient id="inner_3_" cx="189.5" cy="215.5" r="190" gradientUnits="userSpaceOnUse">
+			<stop id="stop260" stop-color="#171717" offset="0"/>
+			<stop id="stop262" stop-color="#191919" offset=".4171"/>
+			<stop id="stop264" stop-color="#212121" offset=".6397"/>
+			<stop id="stop266" stop-color="#2E2F2F" offset=".8162"/>
+			<stop id="stop268" stop-color="#414242" offset=".9678"/>
+			<stop id="stop270" stop-color="#464747" offset="1"/>
+		</radialGradient>
+		<circle id="inner_9_" cx="300" cy="96" r="86.5" fill="url(#inner_3_)"/>
+		<path id="inner_2_" d="m288.98 17.459c3.585-0.492 7.245-0.746 10.966-0.746 44.183 0 79.999 35.816 79.999 80 0 17.298-5.49 33.313-14.822 46.398" display="none" fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="1.5"/>
+		<rect id="rect_2_" x="204" width="192" height="192" fill="none"/>
+	</g>
+	<g id="cdpTextScaleStyle1" display="inline" enable-background="new    ">
+		<text id="text277" transform="translate(295.98 46.406)" fill="#ffffff" font-family="Arial-BoldMT" font-size="13.999px">1</text>
+	</g>
+	<g id="cdpTicksNumberStyle1" display="inline" enable-background="new    ">
+		<text id="text280" transform="translate(295.98 46.406)" display="inline" fill="#ffffff" font-family="Arial-BoldMT" font-size="13.999px">1</text>
+	</g>
+	<g id="scale" display="inline">
+		
+			<text id="text283" transform="matrix(.8662 .4996 -.4996 .8662 321.63 51.098)" fill="#ffffff" font-family="Arial-BoldMT" font-size="13.999px">2</text>
+		<path id="inner_5_" d="m375.88 81.094c1.033 5.045 1.574 10.27 1.574 15.619 0 16.788-5.338 32.33-14.41 45.02" fill="none" stroke="#ff0007" stroke-miterlimit="10" stroke-width="4"/>
+		<path id="inner_10_" d="m288.98 17.459c3.585-0.492 7.245-0.746 10.966-0.746 44.183 0 79.999 35.816 79.999 80 0 17.298-5.49 33.313-14.822 46.398" display="none" fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width=".9249"/>
+		<line id="line287" x1="299.95" x2="299.95" y1="31.713" y2="16.713" fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="4"/>
+		<line id="line289" x1="332.43" x2="339.92" y1="40.408" y2="27.415" fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="4"/>
+		<g id="g293" display="none" enable-background="new    ">
+			
+				<text id="text291" transform="translate(295.98 46.406)" display="inline" fill="#ffffff" font-family="Arial-BoldMT" font-size="13.999px">1</text>
+		</g>
+		<line id="line295" x1="356.26" x2="369.25" y1="64.245" y2="56.753" fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="4"/>
+		
+			<text id="text297" transform="matrix(.4995 .8663 -.8663 .4995 341.54 68.143)" fill="#ffffff" font-family="Arial-BoldMT" font-size="14px">3</text>
+		<line id="line299" x1="364.95" x2="379.95" y1="96.77" y2="96.781" fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="4"/>
+		
+			<text id="text301" transform="rotate(90.049 128.78 221.38)" fill="#ffffff" font-family="Arial-BoldMT" font-size="14px">4</text>
+		
+			<line id="line303" x1="356.26" x2="369.25" y1="129.19" y2="136.68" fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="4"/>
+		
+			<text id="text305" transform="matrix(-.4996 .8663 -.8663 -.4996 345.54 118.39)" fill="#ffffff" font-family="Arial-BoldMT" font-size="14px">5</text>
+	</g>
+	<g id="cdpTextSuffixStyle1" display="inline">
+		<rect id="rect308" x="257" y="156.17" width="86" height="17.666" fill="none"/>
+		<text id="text310" transform="translate(281.61 166.53)" fill="#8a8a8a" font-family="Arial-BoldMT" font-size="10px">pixel / s</text>
+	</g>
+	<g id="cdpTextPrefixStyle1" display="inline">
+		<rect id="rect313" x="257" y="118" width="86" height="38" fill="none"/>
+		<text id="text315" transform="translate(269.92 148.15)" fill="#ffffff" font-family="ArialMT" font-size="13px">QUALITY</text>
+		<text id="text317" transform="translate(287.43 131.35)" fill="#ffffff" font-family="ArialMT" font-size="13px">GUI</text>
+	</g>
+	<g id="cdpNeedle1Style1" display="inline">
+		<linearGradient id="SVGID_8_" x1="306.25" x2="294.25" y1="67.494" y2="67.494" gradientUnits="userSpaceOnUse">
+			<stop id="stop320" stop-color="#FFFFFF" offset="0"/>
+			<stop id="stop322" stop-color="#FAFBFB" offset=".1414"/>
+			<stop id="stop324" stop-color="#ECEDEE" offset=".3029"/>
+			<stop id="stop326" stop-color="#D6D8D9" offset=".4743"/>
+			<stop id="stop328" stop-color="#B6B9BC" offset=".6526"/>
+			<stop id="stop330" stop-color="#8D9396" offset=".8343"/>
+			<stop id="stop332" stop-color="#61696E" offset="1"/>
+		</linearGradient>
+		<path id="path335" d="m304.88 110.46c0.036 1.101-0.834 2.249-1.934 2.249h-6c-1.1 0-1.97-1.148-1.934-2.249l2.866-86.127c0.036-1.101 0.968-2.062 2.066-2.062 1.1 0 2.03 0.992 2.065 2.093z" fill="url(#SVGID_8_)"/>
+		<g id="g371" display="none">
+			<linearGradient id="SVGID_9_" x1="315.83" x2="287.58" y1="76.822" y2="112.32" gradientUnits="userSpaceOnUse">
+				<stop id="stop337" stop-color="#FFFFFF" offset="0"/>
+				<stop id="stop339" stop-color="#FAFBFB" offset=".1414"/>
+				<stop id="stop341" stop-color="#ECEDEE" offset=".3029"/>
+				<stop id="stop343" stop-color="#D6D8D9" offset=".4743"/>
+				<stop id="stop345" stop-color="#B6B9BC" offset=".6526"/>
+				<stop id="stop347" stop-color="#8D9396" offset=".8343"/>
+				<stop id="stop349" stop-color="#61696E" offset="1"/>
+			</linearGradient>
+			<circle id="circle352" cx="300" cy="96.713" r="9" display="inline" fill="url(#SVGID_9_)"/>
+			<linearGradient id="SVGID_10_" x1="304.81" x2="293.98" y1="91.387" y2="103.39" gradientUnits="userSpaceOnUse">
+				<stop id="stop354" stop-color="#FFFFFF" offset="0"/>
+				<stop id="stop356" stop-color="#FAFBFB" offset=".1414"/>
+				<stop id="stop358" stop-color="#ECEDEE" offset=".3029"/>
+				<stop id="stop360" stop-color="#D6D8D9" offset=".4743"/>
+				<stop id="stop362" stop-color="#B6B9BC" offset=".6526"/>
+				<stop id="stop364" stop-color="#8D9396" offset=".8343"/>
+				<stop id="stop366" stop-color="#61696E" offset="1"/>
+			</linearGradient>
+			<circle id="circle369" cx="300" cy="96.713" r="7.152" display="inline" fill="url(#SVGID_10_)"/>
+		</g>
+		<rect id="cdpRectCenter" x="298.42" y="95.213" width="3" height="3" fill="none"/>
+		<rect id="cdpRectOutline" x="290.92" y="22.275" width="18" height="90.438" fill="none"/>
+	</g>
+	<g id="cdpTopStyle1">
+		
+			<linearGradient id="glass_4_" x1="344.58" x2="344.58" y1="737.61" y2="775.51" gradientTransform="matrix(2.2068 0 0 2.2068 -460.26 -1640.7)" gradientUnits="userSpaceOnUse">
+			<stop id="stop376" stop-color="#FFFFFF" stop-opacity=".95" offset=".4164"/>
+			<stop id="stop378" stop-color="#FFFFFF" stop-opacity="0" offset="1"/>
+		</linearGradient>
+		<path id="glass_3_" d="m379 60.463c0 23.792-30.738-10.416-78.729-10.416-47.987 0-78.951 38.455-78.951 10.416 0-0.98 20.854-50.95 78.755-50.95 56.853 0 78.925 50.011 78.925 50.95z" display="inline" enable-background="new    " fill="url(#glass_4_)" opacity=".45"/>
+		<rect id="rect_1_" x="204" width="192" height="192" display="inline" fill="none"/>
+		<g id="g417" display="inline">
+			
+			<circle id="circle398" cx="300" cy="96.713" r="9" fill="url(#SVGID_9_)"/>
+			
+			<circle id="circle415" cx="300" cy="96.713" r="7.152" fill="url(#SVGID_10_)"/>
+		</g>
+	</g>
+</g>
+</svg>

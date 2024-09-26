@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="115px" height="30px" viewBox="0 0 115 30" enable-background="new 0 0 115 30" xml:space="preserve">
+<g id="Layer1">
+	<g id="cdpBackground">
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="57.5005" y1="30" x2="57.5005" y2="4.882813e-004">
+			<stop  offset="0" style="stop-color:#0A1624"/>
+			<stop  offset="0.6198" style="stop-color:#1F3C4D"/>
+			<stop  offset="0.6346" style="stop-color:#213F50"/>
+			<stop  offset="0.6445" style="stop-color:#2A4859"/>
+			<stop  offset="0.6529" style="stop-color:#375768"/>
+			<stop  offset="0.6563" style="stop-color:#3F5F70"/>
+		</linearGradient>
+		<rect fill="url(#SVGID_1_)" width="115" height="30"/>
+		<rect fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" width="115" height="30"/>
+	</g>
+	<rect id="cdpBackground__x28_disable_x29_" display="none" fill="#FFFFFF" width="115" height="30"/>
+	<text id="cdpText" transform="matrix(1 0 0 1 22.4004 20)" fill="#FFFFFF" font-family="'ArialMT'" font-size="14">5.4338</text>
+	<text id="cdpMenuColor" transform="matrix(1 0 0 1 8.4004 48.125)" fill="#1F3C4D" font-family="'ArialMT'" font-size="14">MenuColor</text>
+	<rect id="cdpBorderMarginBottomRight" x="110.5" y="10.75" fill="none" width="4" height="4"/>
+	<rect id="cdpBorderMarginTopLeft" x="88.25" y="-0.5" fill="none" width="4" height="5"/>
+	<g id="cdpButtonDown">
+		<rect x="87.792" y="15.5" fill="none" width="27.208" height="16"/>
+		<g>
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="101.375" y1="31" x2="101.375" y2="16">
+				<stop  offset="0" style="stop-color:#0A1624"/>
+				<stop  offset="0.6198" style="stop-color:#1F3C4D"/>
+				<stop  offset="0.6346" style="stop-color:#213F50"/>
+				<stop  offset="0.6445" style="stop-color:#2A4859"/>
+				<stop  offset="0.6529" style="stop-color:#375768"/>
+				<stop  offset="0.6563" style="stop-color:#3F5F70"/>
+			</linearGradient>
+			<rect x="88.25" y="16" fill="url(#SVGID_2_)" width="26.25" height="15"/>
+			
+				<rect x="88.25" y="16" fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" width="26.25" height="15"/>
+		</g>
+	</g>
+	<g id="cdpButtonUp">
+		<rect x="87.792" y="-0.75" fill="none" width="27.208" height="16"/>
+		<g>
+			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="101.375" y1="14.75" x2="101.375" y2="-0.25">
+				<stop  offset="0" style="stop-color:#0A1624"/>
+				<stop  offset="0.6198" style="stop-color:#1F3C4D"/>
+				<stop  offset="0.6346" style="stop-color:#213F50"/>
+				<stop  offset="0.6445" style="stop-color:#2A4859"/>
+				<stop  offset="0.6529" style="stop-color:#375768"/>
+				<stop  offset="0.6563" style="stop-color:#3F5F70"/>
+			</linearGradient>
+			<rect x="88.25" y="-0.25" fill="url(#SVGID_3_)" width="26.25" height="15"/>
+			
+				<rect x="88.25" y="-0.25" fill="none" stroke="#000000" stroke-linejoin="round" stroke-miterlimit="10" width="26.25" height="15"/>
+		</g>
+		<line fill="none" stroke="#0A1624" stroke-miterlimit="10" x1="88.766" y1="14.75" x2="114.031" y2="14.75"/>
+	</g>
+	<linearGradient id="cdpButtonUpPressed_1_" gradientUnits="userSpaceOnUse" x1="143.625" y1="0.125" x2="143.625" y2="14.97">
+		<stop  offset="0" style="stop-color:#969596"/>
+		<stop  offset="0.0113" style="stop-color:#9E9D9E"/>
+		<stop  offset="0.0294" style="stop-color:#B5B4B5"/>
+		<stop  offset="0.0517" style="stop-color:#DADADA"/>
+		<stop  offset="0.0708" style="stop-color:#FFFFFF"/>
+		<stop  offset="0.8123" style="stop-color:#A5B2BA"/>
+		<stop  offset="1" style="stop-color:#879298"/>
+	</linearGradient>
+	
+		<rect id="cdpButtonUpPressed" x="130.5" y="-0.125" fill="url(#cdpButtonUpPressed_1_)" stroke="#8C979F" stroke-miterlimit="10" width="26.25" height="15"/>
+	<linearGradient id="cdpButtonDownPressed_1_" gradientUnits="userSpaceOnUse" x1="143.625" y1="16.25" x2="143.625" y2="31.0954">
+		<stop  offset="0" style="stop-color:#969596"/>
+		<stop  offset="0.0113" style="stop-color:#9E9D9E"/>
+		<stop  offset="0.0294" style="stop-color:#B5B4B5"/>
+		<stop  offset="0.0517" style="stop-color:#DADADA"/>
+		<stop  offset="0.0708" style="stop-color:#FFFFFF"/>
+		<stop  offset="0.8123" style="stop-color:#A5B2BA"/>
+		<stop  offset="1" style="stop-color:#879298"/>
+	</linearGradient>
+	
+		<rect id="cdpButtonDownPressed" x="130.5" y="16" fill="url(#cdpButtonDownPressed_1_)" stroke="#8C979F" stroke-miterlimit="10" width="26.25" height="15"/>
+	<g id="cdpIconDown">
+		<rect x="97.354" y="21.625" fill="none" width="8" height="4"/>
+		<polygon fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" points="101.369,24.875 98.46,22.209 104.278,22.209 		"/>
+	</g>
+	<g id="cdpIconUp">
+		<rect x="97.354" y="5.25" fill="none" width="8" height="4"/>
+		<polygon fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" points="101.34,6 104.249,8.667 98.431,8.667 		"/>
+	</g>
+</g>
+</svg>

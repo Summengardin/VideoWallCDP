@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE ProjectConfiguration>
-<!-- Written by CDPStudio 2.6.0, 2024-09-24T21:07:20. -->
+<!-- Written by CDPStudio 2.6.0, 2024-09-26T07:01:55. -->
 <qtcreator>
  <data>
   <variable>Block Diagram</variable>
@@ -63,10 +63,10 @@
        <value type="qlonglong">1</value>
       </valuelist>
       <valuelist type="QVariantList" key="BlockDiagram/ViewRect">
-       <value type="qlonglong">-826</value>
-       <value type="qlonglong">-102</value>
-       <value type="qlonglong">1293</value>
-       <value type="qlonglong">419</value>
+       <value type="qlonglong">-601</value>
+       <value type="qlonglong">-200</value>
+       <value type="qlonglong">850</value>
+       <value type="qlonglong">616</value>
       </valuelist>
       <value type="bool" key="autoLayoutEnabled">true</value>
      </valuemap>
@@ -76,6 +76,13 @@
    <valuemap type="QVariantMap">
     <valuemap type="QVariantMap" key="data">
      <valuelist type="QVariantList" key="nodes">
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWWebGUI.mainwidget.nodeContainer.cdpTargetRoutingNodeType.LabelDataType.ExternalDataDirection.Sink</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">-1044.0307761529805</value>
+        <value type="double" key="y">291.09705286839136</value>
+       </valuemap>
+      </valuemap>
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWControllerNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
        <valuemap type="QVariantMap" key="position">
@@ -97,13 +104,6 @@
         <value type="double" key="y">291.09705286839136</value>
        </valuemap>
       </valuemap>
-      <valuemap type="QVariantMap">
-       <value type="QString" key="id">VWWebGUI.mainwidget.nodeContainer.cdpTargetRoutingNodeType.LabelDataType.ExternalDataDirection.Sink</value>
-       <valuemap type="QVariantMap" key="position">
-        <value type="double" key="x">-1044.0307761529805</value>
-        <value type="double" key="y">291.09705286839136</value>
-       </valuemap>
-      </valuemap>
      </valuelist>
      <valuemap type="QVariantMap" key="settings">
       <valuelist type="QVariantList" key="BlockDiagram/ViewMatrix">
@@ -118,10 +118,10 @@
        <value type="qlonglong">1</value>
       </valuelist>
       <valuelist type="QVariantList" key="BlockDiagram/ViewRect">
-       <value type="qlonglong">-1509</value>
-       <value type="qlonglong">-223</value>
-       <value type="qlonglong">3048</value>
-       <value type="qlonglong">1323</value>
+       <value type="qlonglong">-731</value>
+       <value type="qlonglong">-74</value>
+       <value type="qlonglong">1996</value>
+       <value type="qlonglong">959</value>
       </valuelist>
       <value type="bool" key="autoLayoutEnabled">false</value>
      </valuemap>
@@ -316,21 +316,21 @@
      </valuelist>
      <valuemap type="QVariantMap" key="settings">
       <valuelist type="QVariantList" key="BlockDiagram/ViewMatrix">
-       <value type="double">0.595448602537723</value>
+       <value type="double">0.2871569263781458</value>
        <value type="qlonglong">0</value>
        <value type="qlonglong">0</value>
        <value type="qlonglong">0</value>
-       <value type="double">0.595448602537723</value>
+       <value type="double">0.2871569263781458</value>
        <value type="qlonglong">0</value>
        <value type="qlonglong">0</value>
        <value type="qlonglong">0</value>
        <value type="qlonglong">1</value>
       </valuelist>
       <valuelist type="QVariantList" key="BlockDiagram/ViewRect">
-       <value type="qlonglong">-1535</value>
-       <value type="qlonglong">-322</value>
-       <value type="qlonglong">4486</value>
-       <value type="qlonglong">1587</value>
+       <value type="qlonglong">-2152</value>
+       <value type="qlonglong">-933</value>
+       <value type="qlonglong">4966</value>
+       <value type="qlonglong">2385</value>
       </valuelist>
       <value type="bool" key="autoLayoutEnabled">false</value>
      </valuemap>
@@ -860,10 +860,10 @@
        <value type="qlonglong">1</value>
       </valuelist>
       <valuelist type="QVariantList" key="BlockDiagram/ViewRect">
-       <value type="qlonglong">-299</value>
-       <value type="qlonglong">-105</value>
-       <value type="qlonglong">990</value>
-       <value type="qlonglong">475</value>
+       <value type="qlonglong">-351</value>
+       <value type="qlonglong">-22</value>
+       <value type="qlonglong">1095</value>
+       <value type="qlonglong">392</value>
       </valuelist>
       <value type="bool" key="autoLayoutEnabled">false</value>
      </valuemap>
@@ -1527,14 +1527,14 @@
        <value type="QString" key="id">VWWebGUI.CPULoadNodeType.ComponentDataType.InternalDataDirection.Source</value>
        <valuemap type="QVariantMap" key="position">
         <value type="qlonglong" key="x">-146</value>
-        <value type="qlonglong" key="y">50</value>
+        <value type="qlonglong" key="y">89</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWWebGUI.MemUsedRelativeNodeType.ComponentDataType.InternalDataDirection.Source</value>
        <valuemap type="QVariantMap" key="position">
-        <value type="qlonglong" key="x">-214</value>
-        <value type="qlonglong" key="y">89</value>
+        <value type="qlonglong" key="x">-215</value>
+        <value type="qlonglong" key="y">50</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
@@ -1544,24 +1544,73 @@
         <value type="qlonglong" key="y">128</value>
        </valuemap>
       </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWWebGUI.AddNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">200</value>
+        <value type="qlonglong" key="y">100</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWWebGUI.mainwidget.pages.cdpPageRoutingNodeType.LabelDataType.ExternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-351</value>
+        <value type="double" key="y">200.33333333333334</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWWebGUI.CDPComponentNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">200</value>
+        <value type="qlonglong" key="y">333</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWWebGUI.mainwidget.btnTileConfigurator.cdpCheckedRoutingNodeType.LabelDataType.ExternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-482</value>
+        <value type="double" key="y">239.33333333333334</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWWebGUI.mainwidget.btnCameras.cdpPressedRoutingNodeType.LabelDataType.ExternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-423</value>
+        <value type="double" key="y">356.33333333333337</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWWebGUI.mainwidget.btnTileConfigurator.cdpPressedRoutingNodeType.LabelDataType.ExternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-477</value>
+        <value type="double" key="y">317.33333333333337</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWWebGUI.mainwidget.btnCameras.cdpCheckedRoutingNodeType.LabelDataType.ExternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-428</value>
+        <value type="double" key="y">278.33333333333337</value>
+       </valuemap>
+      </valuemap>
      </valuelist>
      <valuemap type="QVariantMap" key="settings">
       <valuelist type="QVariantList" key="BlockDiagram/ViewMatrix">
-       <value type="double">1.1716666666666666</value>
+       <value type="double">0.8136574074074074</value>
        <value type="qlonglong">0</value>
        <value type="qlonglong">0</value>
        <value type="qlonglong">0</value>
-       <value type="double">1.1716666666666666</value>
+       <value type="double">0.8136574074074074</value>
        <value type="qlonglong">0</value>
        <value type="qlonglong">0</value>
        <value type="qlonglong">0</value>
        <value type="qlonglong">1</value>
       </valuelist>
       <valuelist type="QVariantList" key="BlockDiagram/ViewRect">
-       <value type="qlonglong">-1340</value>
-       <value type="qlonglong">-127</value>
-       <value type="qlonglong">2327</value>
-       <value type="qlonglong">754</value>
+       <value type="qlonglong">-1002</value>
+       <value type="qlonglong">36</value>
+       <value type="qlonglong">1753</value>
+       <value type="qlonglong">842</value>
       </valuelist>
       <value type="bool" key="autoLayoutEnabled">true</value>
      </valuemap>
@@ -1607,58 +1656,100 @@
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.Cameras.Camera1NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
        <valuemap type="QVariantMap" key="position">
-        <value type="double" key="x">207.35300291545184</value>
-        <value type="double" key="y">416.867755102041</value>
+        <value type="qlonglong" key="x">0</value>
+        <value type="qlonglong" key="y">663</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWWebGUI.cameraweb.Form.cdpTargetRoutingNodeType.LabelDataType.ExternalDataDirection.Sink</value>
        <valuemap type="QVariantMap" key="position">
         <value type="qlonglong" key="x">800</value>
-        <value type="double" key="y">122.33333333333334</value>
+        <value type="double" key="y">83.33333333333334</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWGUI.camera.Form.cdpTargetRoutingNodeType.LabelDataType.ExternalDataDirection.Sink</value>
        <valuemap type="QVariantMap" key="position">
         <value type="qlonglong" key="x">800</value>
-        <value type="double" key="y">83.33333333333334</value>
+        <value type="double" key="y">122.33333333333334</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.Cameras.Camera2NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
        <valuemap type="QVariantMap" key="position">
-        <value type="double" key="x">211.48777453838682</value>
-        <value type="double" key="y">739.5173177842568</value>
+        <value type="double" key="x">347.6666666666667</value>
+        <value type="qlonglong" key="y">663</value>
        </valuemap>
       </valuemap>
       <valuemap type="QVariantMap">
        <value type="QString" key="id">VWController.Cameras.Camera3NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
        <valuemap type="QVariantMap" key="position">
-        <value type="double" key="x">211.79335276967936</value>
-        <value type="double" key="y">1076.599416909621</value>
+        <value type="double" key="x">695.3333333333334</value>
+        <value type="qlonglong" key="y">663</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera4NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">0</value>
+        <value type="double" key="y">992.6666666666667</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera5NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">347.6666666666667</value>
+        <value type="double" key="y">992.6666666666667</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera6NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">695.3333333333334</value>
+        <value type="double" key="y">992.6666666666667</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera7NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">0</value>
+        <value type="double" key="y">1322.3333333333335</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera8NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">347.6666666666667</value>
+        <value type="double" key="y">1322.3333333333335</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera9NodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="double" key="x">695.3333333333334</value>
+        <value type="double" key="y">1322.3333333333335</value>
        </valuemap>
       </valuemap>
      </valuelist>
      <valuemap type="QVariantMap" key="settings">
       <valuelist type="QVariantList" key="BlockDiagram/ViewMatrix">
-       <value type="double">0.6616512345679013</value>
+       <value type="double">0.5513760288065844</value>
        <value type="qlonglong">0</value>
        <value type="qlonglong">0</value>
        <value type="qlonglong">0</value>
-       <value type="double">0.6616512345679013</value>
+       <value type="double">0.5513760288065844</value>
        <value type="qlonglong">0</value>
        <value type="qlonglong">0</value>
        <value type="qlonglong">0</value>
        <value type="qlonglong">1</value>
       </valuelist>
       <valuelist type="QVariantList" key="BlockDiagram/ViewRect">
-       <value type="qlonglong">-1066</value>
-       <value type="qlonglong">-45</value>
-       <value type="qlonglong">3292</value>
-       <value type="qlonglong">1428</value>
+       <value type="qlonglong">-809</value>
+       <value type="qlonglong">-112</value>
+       <value type="qlonglong">3248</value>
+       <value type="qlonglong">1746</value>
       </valuelist>
-      <value type="bool" key="autoLayoutEnabled">false</value>
+      <value type="bool" key="autoLayoutEnabled">true</value>
      </valuemap>
     </valuemap>
     <value type="QString" key="id">VWController.Cameras</value>
@@ -1764,6 +1855,153 @@
     </valuemap>
     <value type="QString" key="id">VWController.PortMUX.LayoutPort1</value>
    </valuemap>
+   <valuemap type="QVariantMap">
+    <valuemap type="QVariantMap" key="data">
+     <valuelist type="QVariantList" key="nodes">
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera1.pCameraNodeType.ComponentDataType.InternalDataDirection.TwoWay</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">200</value>
+        <value type="qlonglong" key="y">100</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera1.IPNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-84</value>
+        <value type="qlonglong" key="y">128</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera1.DisplayNameNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-174</value>
+        <value type="qlonglong" key="y">167</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera1.WidthNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-115</value>
+        <value type="qlonglong" key="y">206</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera1.HeightNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-120</value>
+        <value type="qlonglong" key="y">89</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera1.FramerateNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-150</value>
+        <value type="qlonglong" key="y">50</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera1.FormatNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-124</value>
+        <value type="qlonglong" key="y">284</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWController.Cameras.Camera1.TypeNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-108</value>
+        <value type="qlonglong" key="y">245</value>
+       </valuemap>
+      </valuemap>
+     </valuelist>
+     <valuemap type="QVariantMap" key="settings">
+      <value type="bool" key="autoLayoutEnabled">true</value>
+     </valuemap>
+    </valuemap>
+    <value type="QString" key="id">VWController.Cameras.Camera1</value>
+   </valuemap>
+   <valuemap type="QVariantMap">
+    <valuemap type="QVariantMap" key="data">
+     <valuelist type="QVariantList" key="nodes"/>
+     <valuemap type="QVariantMap" key="settings">
+      <valuelist type="QVariantList" key="BlockDiagram/ViewMatrix">
+       <value type="double">1.135</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="double">1.135</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">1</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="BlockDiagram/ViewRect">
+       <value type="qlonglong">-628</value>
+       <value type="qlonglong">-300</value>
+       <value type="qlonglong">1256</value>
+       <value type="qlonglong">603</value>
+      </valuelist>
+      <value type="bool" key="autoLayoutEnabled">true</value>
+     </valuemap>
+    </valuemap>
+    <value type="QString" key="id">VWWebGUI.CDPComponent.CDPSignal</value>
+   </valuemap>
+   <valuemap type="QVariantMap">
+    <valuemap type="QVariantMap" key="data">
+     <valuelist type="QVariantList" key="nodes">
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWWebGUI.CDPComponent.CDPSignalNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-156</value>
+        <value type="qlonglong" key="y">50</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWWebGUI.CDPComponent.CDPSignal1NodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-164</value>
+        <value type="qlonglong" key="y">89</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWWebGUI.CDPComponent.TileConfigNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-149</value>
+        <value type="qlonglong" key="y">50</value>
+       </valuemap>
+      </valuemap>
+      <valuemap type="QVariantMap">
+       <value type="QString" key="id">VWWebGUI.CDPComponent.CamerasNodeType.ComponentDataType.InternalDataDirection.Source</value>
+       <valuemap type="QVariantMap" key="position">
+        <value type="qlonglong" key="x">-141</value>
+        <value type="qlonglong" key="y">89</value>
+       </valuemap>
+      </valuemap>
+     </valuelist>
+     <valuemap type="QVariantMap" key="settings">
+      <valuelist type="QVariantList" key="BlockDiagram/ViewMatrix">
+       <value type="double">1.135</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="double">1.135</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">0</value>
+       <value type="qlonglong">1</value>
+      </valuelist>
+      <valuelist type="QVariantList" key="BlockDiagram/ViewRect">
+       <value type="qlonglong">-744</value>
+       <value type="qlonglong">-220</value>
+       <value type="qlonglong">1257</value>
+       <value type="qlonglong">603</value>
+      </valuelist>
+      <value type="bool" key="autoLayoutEnabled">true</value>
+     </valuemap>
+    </valuemap>
+    <value type="QString" key="id">VWWebGUI.CDPComponent</value>
+   </valuemap>
   </valuelist>
  </data>
  <data>
@@ -1845,6 +2083,12 @@
     <value type="bool" key="FullyExpanded">false</value>
     <valuemap type="QVariantMap" key="Heights"/>
     <value type="QByteArray" key="HorizontalHeader">000000ff00000000000000010000000100000000000000000000000000000000070100000001000000000000006400000a900000000701010001000000000000000000000000640000001a0000008100000000000000070000000000000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000006400000001000000000000089c0000000100000000000003e8000000006400000000</value>
+   </valuemap>
+   <valuemap type="QVariantMap" key="OperatorCDPOperatorBase&lt;int64_t&gt;">
+    <value type="bool" key="Collapsed">false</value>
+    <value type="bool" key="FullyExpanded">false</value>
+    <valuemap type="QVariantMap" key="Heights"/>
+    <value type="QByteArray" key="HorizontalHeader">000000ff000000000000000100000001000000000000000000000000000000000601000000010000000000000064000007b40000000601010001000000000000000000000000640000001a000000810000000000000006000000000000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000000640000000100000000000006240000000100000000000003e8000000006400000000</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ParametersCDPParameter">
     <value type="bool" key="Collapsed">false</value>

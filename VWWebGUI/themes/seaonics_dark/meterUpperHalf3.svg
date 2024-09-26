@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg id="svg2" enable-background="new 0 0 140 42.9" version="1.1" viewBox="0 0 140 42.9" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+
+<g id="Layer1">
+	<rect id="rect3" width="140" height="42.9" fill="none" stroke="#00ff00" stroke-miterlimit="10" stroke-width=".25"/>
+	<g id="cdpTextPrefix">
+		<text id="text5" transform="translate(58.334 32.166)" fill="#ffffff" font-family="Arial-BoldMT" font-size="8px" style="line-height:0%">Text</text>
+		<rect id="rect7" x="40" y="18.6" width="60" height="24.4" fill="none" stroke="#00ff00" stroke-miterlimit="10" stroke-width=".25"/>
+	</g>
+	<g id="cdpTextSuffix">
+		<text id="text10" transform="translate(58.334 32.166)" fill="#ffffff" font-family="Arial-BoldMT" font-size="8px" style="line-height:0%">Text</text>
+		<rect id="rect12" x="40" y="18.6" width="60" height="24.4" fill="none" stroke="#00ff00" stroke-miterlimit="10" stroke-width=".25"/>
+	</g>
+	<g id="cdpTop">
+		<rect id="rect15" width="140" height="42.9" fill="none"/>
+	</g>
+	<g id="cdpBackground">
+		<rect id="rect18" width="140" height="42.9" fill="none"/>
+	</g>
+	<g id="cdpNeedleType1T">
+		<g id="g37">
+			<g id="g25">
+				<g id="g23" opacity=".4">
+					<polygon id="polygon21" points="66.7 71.2 67.6 73.4 128.6 49.6 67.6 70.4" fill="#010202"/>
+				</g>
+			</g>
+			<g id="g35">
+				<g id="g29">
+					<polygon id="polygon27" points="68.6 74.3 66.8 72.8 127.8 48.6" fill="#446829"/>
+				</g>
+				<g id="g33">
+					<polygon id="polygon31" points="127.8 48.6 66.8 72.8 66.5 70.4" fill="#71ab27"/>
+				</g>
+			</g>
+		</g>
+		<g id="g53">
+			
+				<linearGradient id="SVGID_1_" x1="420.04" x2="420.04" y1="-761.63" y2="-741.94" gradientTransform="matrix(1 0 0 -1 -350.04 -680.77)" gradientUnits="userSpaceOnUse">
+				<stop id="stop39" stop-color="#676767" offset="0"/>
+				<stop id="stop41" stop-color="#B5B5B5" offset="1"/>
+			</linearGradient>
+			<circle id="circle44" cx="70" cy="71" r="9.8" fill="url(#SVGID_1_)"/>
+			
+				<linearGradient id="SVGID_2_" x1="420.04" x2="420.04" y1="-759.77" y2="-743.83" gradientTransform="matrix(1 0 0 -1 -350.04 -680.77)" gradientUnits="userSpaceOnUse">
+				<stop id="stop46" stop-color="#B5B5B5" offset="0"/>
+				<stop id="stop48" stop-color="#676767" offset="1"/>
+			</linearGradient>
+			<circle id="circle51" cx="70" cy="71" r="8" fill="url(#SVGID_2_)"/>
+		</g>
+	</g>
+	<text id="cdpTicksColor" transform="translate(64.9 25.641)" fill="#ffffff" font-family="Arial-BoldMT" font-size="7px" style="line-height:0%">16</text><g id="cdpNeedleGraphics">
+		<g id="g1228" display="none">
+			<g id="g1226" display="inline" opacity=".4">
+				<polygon id="polygon1224" points="154.7 66 155.2 67.1 157.5 67.1 157.7 1.5" fill="#010202"/>
+			</g>
+		</g>
+		<g id="g1238" display="none">
+			<g id="g1232" display="inline">
+				<polygon id="polygon1230" points="156.5 2 158.7 66.5 156.7 67.6" fill="#446829"/>
+			</g>
+			<g id="g1236" display="inline">
+				<polygon id="polygon1234" points="154.3 67.1 156.5 2 156.7 67.6" fill="#71ab27"/>
+			</g>
+		</g>
+		<rect id="cdpRectCenter" x="155.8" y="63.1" width="1.9" height="1.7" fill="none"/>
+		<rect id="cdpRectOutline" x="154.3" y="1.5" width="4.4" height="66" fill="none"/>
+		<g id="g1248">
+			<path id="path1244" d="m156.5 67.5c-.4 0-.8-.2-1.2-.5-.5-.5-.8-1.4-.8-2.3l.9-54c0-1.7.6-2.9 1.1-2.9s1.1 1.2 1.1 2.9l.9 54c0 .9-.3 1.8-.8 2.3-.3.3-.7.5-1.2.5z" fill="#aa1700"/>
+			<path id="path1246" d="m156.5 7.8c.4 0 1 1.1 1 2.8l.9 54c0 .9-.3 1.7-.8 2.2-.3.3-.7.5-1.1.5s-.8-.2-1.1-.5c-.5-.5-.8-1.4-.8-2.2l.9-54c.1-1.7.6-2.8 1-2.8m0-.2c-.7 0-1.2 1.3-1.2 3l-.9 54c0 1.6.9 3 2.1 3s2.2-1.3 2.1-3l-.9-54c0-1.7-.5-3-1.2-3z"/>
+		</g>
+	</g>
+	<text id="cdpTicksNumber" transform="translate(64.9 25.641)" fill="#ffffff" font-family="Arial-BoldMT" font-size="7px" style="line-height:0%">16</text>
+	<rect id="cdpNeedleCenterCW" x="68.7" y="69.7" width="2.6" height="2.6" fill="none"/>
+	<rect id="cdpNeedleMax" x="118.7" y="28.7" width="2.6" height="2.6" fill="none"/>
+	<rect id="cdpNeedleMin" x="18.7" y="28.7" width="2.6" height="2.6" fill="none"/>
+</g>
+<g id="Diverse" fill="#010202">
+	<text id="text62" transform="translate(15.088 73.756)" font-family="Tahoma" font-size="8.8245px" style="line-height:0%">0</text>
+	<text id="text64" transform="translate(114.08 73.756)" font-family="Tahoma" font-size="8.8245px" style="line-height:0%">32</text>
+	<text id="text66" transform="translate(64.9 25.641)" font-family="Tahoma" font-size="8.8245px" style="line-height:0%">16</text>
+	<g id="scale">
+		<polygon id="polygon68" points="116.7 25 110.1 31.6 109.5 30.9 116.1 24.3"/>
+		<polygon id="polygon70" points="126.3 70.6 126.3 71.5 135.6 71.5 135.6 70.6"/>
+		<polygon id="polygon72" points="4.4 71.5 13.8 71.5 13.8 70.6 4.4 70.6"/>
+		<polygon id="polygon74" points="23.3 25 29.9 31.6 30.6 30.9 23.9 24.3"/>
+		<polygon id="polygon76" points="69.5 14.8 70.5 14.8 70.5 5.4 69.5 5.4"/>
+		<polygon id="polygon78" points="5.9 65.2 10.6 65.6 10.6 65.1 5.9 64.7"/>
+		<polygon id="polygon80" points="6.8 58.9 11.4 59.8 11.5 59.3 6.9 58.4"/>
+		<polygon id="polygon82" points="8.3 52.8 12.8 54.1 12.9 53.7 8.4 52.3"/>
+		<polygon id="polygon84" points="10.4 46.8 14.7 48.5 14.9 48.1 10.5 46.3"/>
+		<polygon id="polygon86" points="13.1 41 17.2 43.2 17.4 42.8 13.3 40.6"/>
+		<polygon id="polygon88" points="16.3 35.5 20.2 38.1 20.5 37.7 16.6 35.1"/>
+		<polygon id="polygon90" points="20 30.5 23.6 33.5 23.9 33.1 20.3 30.2"/>
+		<polygon id="polygon92" points="28.8 21.5 31.8 25.1 32.2 24.8 29.2 21.2"/>
+		<polygon id="polygon94" points="33.9 17.7 36.5 21.6 36.9 21.3 34.3 17.5"/>
+		<polygon id="polygon96" points="39.3 14.4 41.5 18.6 41.9 18.3 39.7 14.2"/>
+		<polygon id="polygon98" points="45 11.7 46.8 16 47.3 15.8 45.5 11.5"/>
+		<polygon id="polygon100" points="51 9.5 52.4 14 52.8 13.8 51.5 9.4"/>
+		<polygon id="polygon102" points="57.2 7.9 58.1 12.5 58.6 12.4 57.6 7.8"/>
+		<polygon id="polygon104" points="63.3 7 63.8 11.6 64.2 11.6 63.8 6.9"/>
+		<polygon id="polygon106" points="75.9 6.9 75.5 11.6 76 11.6 76.4 6.9"/>
+		<polygon id="polygon108" points="82.2 7.8 81.3 12.4 81.7 12.5 82.6 7.9"/>
+		<polygon id="polygon110" points="88.3 9.3 87 13.8 87.4 13.9 88.7 9.4"/>
+		<polygon id="polygon112" points="94.3 11.4 92.5 15.7 93 15.9 94.7 11.6"/>
+		<polygon id="polygon114" points="100.1 14.1 97.9 18.2 98.3 18.4 100.5 14.3"/>
+		<polygon id="polygon116" points="105.6 17.3 103 21.2 103.3 21.5 105.9 17.6"/>
+		<polygon id="polygon118" points="110.6 21 107.6 24.6 108 24.9 110.9 21.3"/>
+		<polygon id="polygon120" points="119.5 29.9 115.9 32.8 116.2 33.2 119.8 30.2"/>
+		<polygon id="polygon122" points="123.3 34.9 119.4 37.5 119.7 37.9 123.6 35.3"/>
+		<polygon id="polygon124" points="126.6 40.3 122.5 42.5 122.7 42.9 126.8 40.7"/>
+		<polygon id="polygon126" points="129.4 46 125 47.9 125.2 48.3 129.5 46.5"/>
+		<polygon id="polygon128" points="131.5 52 127.1 53.4 127.2 53.8 131.7 52.5"/>
+		<polygon id="polygon130" points="133.1 58.2 128.5 59.1 128.6 59.6 133.2 58.6"/>
+		<polygon id="polygon132" points="134.1 64.3 129.4 64.8 129.4 65.3 134.1 64.8"/>
+	</g>
+</g>
+<g id="Styles">
+	<g id="cdpNeedle1Style2" display="none">
+		<g id="g140" display="inline">
+			<g id="g138" opacity=".4">
+				<polygon id="polygon136" points="154.7 66 155.2 67.1 157.5 67.1 157.7 1.5" fill="#010202"/>
+			</g>
+		</g>
+		<g id="g150" display="inline">
+			<g id="g144">
+				<polygon id="polygon142" points="158.7 66.5 156.7 67.6 156.5 2" fill="#446829"/>
+			</g>
+			<g id="g148">
+				<polygon id="polygon146" points="156.5 2 156.7 67.6 154.3 67.1" fill="#71ab27"/>
+			</g>
+		</g>
+		<rect id="rect1518" x="155.8" y="63.1" width="1.9" height="1.7" display="inline" fill="none"/>
+		<rect id="rect1520" x="154.3" y="1.5" width="4.4" height="66" display="inline" fill="none"/>
+	</g>
+	<g id="cdpNeedle1Style1">
+		<g id="g159" display="none">
+			<g id="g157" display="inline" opacity=".4">
+				<polygon id="polygon155" points="154.7 66 155.2 67.1 157.5 67.1 157.7 1.5" fill="#010202"/>
+			</g>
+		</g>
+		<g id="g169" display="none">
+			<g id="g163" display="inline">
+				<polygon id="polygon161" points="156.7 67.6 156.5 2 158.7 66.5" fill="#446829"/>
+			</g>
+			<g id="g167" display="inline">
+				<polygon id="polygon165" points="156.7 67.6 154.3 67.1 156.5 2" fill="#71ab27"/>
+			</g>
+		</g>
+		<rect id="cdpRectCenter_1_" x="155.8" y="63.1" width="1.9" height="1.7" fill="none"/>
+		<rect id="cdpRectOutline_1_" x="154.3" y="1.5" width="4.4" height="66" fill="none"/>
+		<g id="needle">
+			<path id="path173" d="m156.5 67.5c-.4 0-.8-.2-1.2-.5-.5-.5-.8-1.4-.8-2.3l.9-54c0-1.7.6-2.9 1.1-2.9s1.1 1.2 1.1 2.9l.9 54c0 .9-.3 1.8-.8 2.3-.3.3-.7.5-1.2.5z" fill="#aa1700"/>
+			<path id="path175" d="m156.5 7.8c.4 0 1 1.1 1 2.8l.9 54c0 .9-.3 1.7-.8 2.2-.3.3-.7.5-1.1.5s-.8-.2-1.1-.5c-.5-.5-.8-1.4-.8-2.2l.9-54c.1-1.7.6-2.8 1-2.8m0-.2c-.7 0-1.2 1.3-1.2 3l-.9 54c0 1.6.9 3 2.1 3s2.2-1.3 2.1-3l-.9-54c0-1.7-.5-3-1.2-3z"/>
+		</g>
+	</g>
+</g>
+<text id="text180" transform="translate(64.334 -55)" font-family="ArialMT" font-size="19px" style="line-height:0%">Lorem ipsum</text>
+</svg>

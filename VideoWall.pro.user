@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by CDPStudio 2.6.0, 2024-09-24T20:13:07. -->
+<!-- Written by CDPStudio 2.6.0, 2024-09-25T13:25:44. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -105,6 +105,12 @@
       <value type="QString" key="Name">Ethernet 3</value>
       <value type="QString" key="Type">Local interface</value>
      </valuemap>
+     <valuemap type="QVariantMap" key="Ethernet 4">
+      <value type="QString" key="Id">VideoWallethernet_32780</value>
+      <value type="QString" key="Ip">192.168.180.108</value>
+      <value type="QString" key="Name">Ethernet 4</value>
+      <value type="QString" key="Type">Local interface</value>
+     </valuemap>
      <valuemap type="QVariantMap" key="Tailscale">
       <value type="QString" key="Id">VideoWalliftype53_32769</value>
       <value type="QString" key="Ip">169.254.83.107</value>
@@ -113,7 +119,7 @@
      </valuemap>
      <valuemap type="QVariantMap" key="WiFi">
       <value type="QString" key="Id">VideoWallwireless_32768</value>
-      <value type="QString" key="Ip">192.168.1.50</value>
+      <value type="QString" key="Ip">192.168.180.50</value>
       <value type="QString" key="Name">WiFi</value>
       <value type="QString" key="Type">Local interface</value>
      </valuemap>

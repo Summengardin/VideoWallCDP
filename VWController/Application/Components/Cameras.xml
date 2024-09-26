@@ -19,5 +19,11 @@
     <Subcomponent Model="VideoWallLib.Camera" Name="Camera1" src="Components/Cameras/Camera1.xml"></Subcomponent>
     <Subcomponent Model="VideoWallLib.Camera" Name="Camera2" src="Components/Cameras/Camera2.xml"></Subcomponent>
     <Subcomponent Model="VideoWallLib.Camera" Name="Camera3" src="Components/Cameras/Camera3.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera4" src="Components/Cameras/Camera4.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera5" src="Components/Cameras/Camera5.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera6" src="Components/Cameras/Camera6.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera7" src="Components/Cameras/Camera7.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera8" src="Components/Cameras/Camera8.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera9" src="Components/Cameras/Camera9.xml"></Subcomponent>
   </Subcomponents>
 </Component>

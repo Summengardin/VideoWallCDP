@@ -1,0 +1,8 @@
+QTabWidget::pane{
+    border-width: 8px 8px 8px 8px;
+    border-image: url(:/custom/themes/seaonics_dark/bgMainPanel.png) 8 8 8 8 stretch stretch;
+    top: -8px;
+}
+CDPBaseTabWidget > QWidget > QWidget{
+    background:transparent
+}

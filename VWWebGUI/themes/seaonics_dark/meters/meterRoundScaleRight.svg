@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="192px" height="192px" viewBox="0 0 192 192" enable-background="new 0 0 192 192" xml:space="preserve">
+<g id="Styles">
+	<g id="cdpBackgroundStyle1">
+		<radialGradient id="outer_2_" cx="363.1748" cy="55.1499" r="156.7254" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#323B40"/>
+			<stop  offset="1" style="stop-color:#212426"/>
+		</radialGradient>
+		
+			<circle id="outer_4_" fill="url(#outer_2_)" stroke="#505152" stroke-width="0.95" stroke-miterlimit="10" cx="300" cy="96" r="95"/>
+		<radialGradient id="middle_2_" cx="300" cy="96" r="87.5" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#DCE0E6"/>
+			<stop  offset="1" style="stop-color:#343536"/>
+		</radialGradient>
+		<circle id="middle_3_" fill="url(#middle_2_)" cx="300" cy="96" r="87.5"/>
+		<radialGradient id="inner_7_" cx="189.5" cy="215.5" r="190.003" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#171717"/>
+			<stop  offset="0.4171" style="stop-color:#191919"/>
+			<stop  offset="0.6397" style="stop-color:#212121"/>
+			<stop  offset="0.8162" style="stop-color:#2E2F2F"/>
+			<stop  offset="0.9678" style="stop-color:#414242"/>
+			<stop  offset="1" style="stop-color:#464747"/>
+		</radialGradient>
+		<circle id="inner_9_" fill="url(#inner_7_)" cx="300" cy="96" r="86.5"/>
+		<path id="inner_2_" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" d="M288.984,17.459
+			c3.585-0.492,7.245-0.746,10.966-0.746c44.183,0,79.999,35.816,79.999,80c0,17.298-5.49,33.313-14.822,46.398"/>
+		<rect id="rect_2_" x="204" fill="none" width="192" height="192"/>
+	</g>
+	<g id="cdpTextScaleStyle1" enable-background="new    ">
+		<text transform="matrix(1 0 0 1 295.9805 46.4063)" fill="#FFFFFF" font-family="'Arial-BoldMT'" font-size="13.9993">1</text>
+	</g>
+	<g id="cdpTicksNumberStyle1" enable-background="new    ">
+		<text transform="matrix(1 0 0 1 295.9805 46.4063)" fill="#FFFFFF" font-family="'Arial-BoldMT'" font-size="13.9993">1</text>
+	</g>
+	<g id="scale">
+		
+			<text transform="matrix(0.8662 0.4996 -0.4996 0.8662 321.6299 51.0977)" fill="#FFFFFF" font-family="'Arial-BoldMT'" font-size="13.9993">2</text>
+		<path id="inner_5_" fill="none" stroke="#FF0007" stroke-width="4" stroke-miterlimit="10" d="M375.875,81.094
+			c1.033,5.045,1.574,10.27,1.574,15.619c0,16.788-5.338,32.33-14.41,45.02"/>
+		<path id="inner_10_" display="none" fill="none" stroke="#FFFFFF" stroke-width="0.9249" stroke-miterlimit="10" d="
+			M288.984,17.459c3.585-0.492,7.245-0.746,10.966-0.746c44.183,0,79.999,35.816,79.999,80c0,17.298-5.49,33.313-14.822,46.398"/>
+		<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" x1="299.95" y1="31.713" x2="299.95" y2="16.713"/>
+		<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" x1="332.427" y1="40.408" x2="339.922" y2="27.415"/>
+		<g display="none" enable-background="new    ">
+			
+				<text transform="matrix(1 0 0 1 295.9805 46.4063)" display="inline" fill="#FFFFFF" font-family="'Arial-BoldMT'" font-size="13.9993">1</text>
+		</g>
+		<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" x1="356.26" y1="64.245" x2="369.254" y2="56.753"/>
+		
+			<text transform="matrix(0.4995 0.8663 -0.8663 0.4995 341.5449 68.1431)" fill="#FFFFFF" font-family="'Arial-BoldMT'" font-size="14">3</text>
+		<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" x1="364.949" y1="96.77" x2="379.949" y2="96.781"/>
+		
+			<text transform="matrix(-8.600000e-004 1 -1 -8.600000e-004 350.2676 92.7969)" fill="#FFFFFF" font-family="'Arial-BoldMT'" font-size="14">4</text>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" x1="356.256" y1="129.186" x2="369.252" y2="136.679"/>
+		
+			<text transform="matrix(-0.4996 0.8663 -0.8663 -0.4996 345.5391 118.3945)" fill="#FFFFFF" font-family="'Arial-BoldMT'" font-size="14.0005">5</text>
+	</g>
+	<g id="cdpTextSuffixStyle1">
+		<rect x="257" y="156.166" fill="none" width="86" height="17.666"/>
+		<text transform="matrix(1 0 0 1 281.6055 166.5342)" fill="#8A8A8A" font-family="'Arial-BoldMT'" font-size="10">pixel / s</text>
+	</g>
+	<g id="cdpTextPrefixStyle1">
+		<rect x="257" y="118" fill="none" width="86" height="38"/>
+		<text transform="matrix(1 0 0 1 269.9199 148.1475)" fill="#FFFFFF" font-family="'ArialMT'" font-size="14">QUALITY</text>
+		<text transform="matrix(1 0 0 1 287.4258 131.3477)" fill="#FFFFFF" font-family="'ArialMT'" font-size="14">GUI</text>
+	</g>
+	<g id="cdpNeedle1Style1">
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="306.25" y1="67.4941" x2="294.25" y2="67.4941">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="0.1414" style="stop-color:#FAFBFB"/>
+			<stop  offset="0.3029" style="stop-color:#ECEDEE"/>
+			<stop  offset="0.4743" style="stop-color:#D6D8D9"/>
+			<stop  offset="0.6526" style="stop-color:#B6B9BC"/>
+			<stop  offset="0.8343" style="stop-color:#8D9396"/>
+			<stop  offset="1" style="stop-color:#61696E"/>
+		</linearGradient>
+		<path fill="url(#SVGID_1_)" d="M304.884,110.464c0.036,1.101-0.834,2.249-1.934,2.249h-6c-1.1,0-1.97-1.148-1.934-2.249
+			l2.866-86.127c0.036-1.101,0.968-2.062,2.066-2.062l0,0c1.1,0,2.03,0.992,2.065,2.093L304.884,110.464z"/>
+		<g display="none">
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="315.8281" y1="76.8232" x2="287.5779" y2="112.3235">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.1414" style="stop-color:#FAFBFB"/>
+				<stop  offset="0.3029" style="stop-color:#ECEDEE"/>
+				<stop  offset="0.4743" style="stop-color:#D6D8D9"/>
+				<stop  offset="0.6526" style="stop-color:#B6B9BC"/>
+				<stop  offset="0.8343" style="stop-color:#8D9396"/>
+				<stop  offset="1" style="stop-color:#61696E"/>
+			</linearGradient>
+			<circle display="inline" fill="url(#SVGID_2_)" cx="300" cy="96.713" r="9"/>
+			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="304.8096" y1="91.3862" x2="293.9761" y2="103.3863">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.1414" style="stop-color:#FAFBFB"/>
+				<stop  offset="0.3029" style="stop-color:#ECEDEE"/>
+				<stop  offset="0.4743" style="stop-color:#D6D8D9"/>
+				<stop  offset="0.6526" style="stop-color:#B6B9BC"/>
+				<stop  offset="0.8343" style="stop-color:#8D9396"/>
+				<stop  offset="1" style="stop-color:#61696E"/>
+			</linearGradient>
+			<circle display="inline" fill="url(#SVGID_3_)" cx="300" cy="96.713" r="7.152"/>
+		</g>
+		<rect id="cdpRectCenter" x="298.416" y="95.213" fill="none" width="3" height="3"/>
+		<rect id="cdpRectOutline" x="290.916" y="22.275" fill="none" width="18" height="90.438"/>
+	</g>
+	<g id="cdpTopStyle1">
+		
+			<linearGradient id="glass_2_" gradientUnits="userSpaceOnUse" x1="344.5791" y1="737.6143" x2="344.5791" y2="775.5098" gradientTransform="matrix(2.2068 0 0 2.2068 -460.2549 -1640.6885)">
+			<stop  offset="0.4164" style="stop-color:#FFFFFF;stop-opacity:0.95"/>
+			<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+		</linearGradient>
+		<path id="glass_3_" opacity="0.45" fill="url(#glass_2_)" enable-background="new    " d="M379,60.463
+			c0,23.792-30.738-10.416-78.729-10.416c-47.987,0-78.951,38.455-78.951,10.416c0-0.98,20.854-50.95,78.755-50.95
+			C356.928,9.513,379,59.524,379,60.463L379,60.463z"/>
+		<rect id="rect_1_" x="204" fill="none" width="192" height="192"/>
+		<g>
+			<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="315.8281" y1="76.8232" x2="287.5779" y2="112.3235">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.1414" style="stop-color:#FAFBFB"/>
+				<stop  offset="0.3029" style="stop-color:#ECEDEE"/>
+				<stop  offset="0.4743" style="stop-color:#D6D8D9"/>
+				<stop  offset="0.6526" style="stop-color:#B6B9BC"/>
+				<stop  offset="0.8343" style="stop-color:#8D9396"/>
+				<stop  offset="1" style="stop-color:#61696E"/>
+			</linearGradient>
+			<circle fill="url(#SVGID_4_)" cx="300" cy="96.713" r="9"/>
+			<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="304.8096" y1="91.3862" x2="293.9761" y2="103.3863">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.1414" style="stop-color:#FAFBFB"/>
+				<stop  offset="0.3029" style="stop-color:#ECEDEE"/>
+				<stop  offset="0.4743" style="stop-color:#D6D8D9"/>
+				<stop  offset="0.6526" style="stop-color:#B6B9BC"/>
+				<stop  offset="0.8343" style="stop-color:#8D9396"/>
+				<stop  offset="1" style="stop-color:#61696E"/>
+			</linearGradient>
+			<circle fill="url(#SVGID_5_)" cx="300" cy="96.713" r="7.152"/>
+		</g>
+	</g>
+</g>
+<g id="Layer1">
+	<g id="cdpBackground">
+		<radialGradient id="outer_3_" cx="159.1748" cy="55.1499" r="156.7254" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#323B40"/>
+			<stop  offset="1" style="stop-color:#212426"/>
+		</radialGradient>
+		
+			<circle id="outer_1_" fill="url(#outer_3_)" stroke="#505152" stroke-width="0.95" stroke-miterlimit="10" cx="96" cy="96" r="95"/>
+		<radialGradient id="middle_4_" cx="96" cy="96" r="87.5" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#DCE0E6"/>
+			<stop  offset="1" style="stop-color:#343536"/>
+		</radialGradient>
+		<circle id="middle_1_" fill="url(#middle_4_)" cx="96" cy="96" r="87.5"/>
+		<radialGradient id="inner_8_" cx="-14.5" cy="215.5" r="190.003" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#171717"/>
+			<stop  offset="0.4171" style="stop-color:#191919"/>
+			<stop  offset="0.6397" style="stop-color:#212121"/>
+			<stop  offset="0.8162" style="stop-color:#2E2F2F"/>
+			<stop  offset="0.9678" style="stop-color:#414242"/>
+			<stop  offset="1" style="stop-color:#464747"/>
+		</radialGradient>
+		<circle id="inner_6_" fill="url(#inner_8_)" cx="96" cy="96" r="86.5"/>
+		<path id="inner_4_" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" d="M84.984,17.459
+			c3.584-0.492,7.244-0.746,10.965-0.746c44.184,0,80,35.816,80,80c0,17.298-5.49,33.313-14.822,46.398"/>
+		<rect id="outline" fill="none" width="192" height="192"/>
+	</g>
+	<rect id="cdpTicksMinorSize" x="93.917" y="16.713" fill="none" width="3.999" height="5"/>
+	<rect id="cdpTicksMajorSize" x="93.916" y="16.713" fill="none" width="4" height="15"/>
+	<rect id="cdpTicksOffset" x="93.917" y="17.28" fill="none" width="3.999" height="5"/>
+	<rect id="cdpTicksMajorNo5T" x="93.917" y="16.713" fill="none" width="3.999" height="5.563"/>
+	<g id="cdpTicksColor" enable-background="new    ">
+		<text transform="matrix(1 0 0 1 91.981 46.4063)" fill="#FFFFFF" font-family="'Arial-BoldMT'" font-size="13.9993">1</text>
+	</g>
+	<g id="cdpTicksNumber" enable-background="new    ">
+		<text transform="matrix(1 0 0 1 91.981 46.4063)" fill="#FFFFFF" font-family="'Arial-BoldMT'" font-size="13.9993">1</text>
+	</g>
+	<g id="scale_2_">
+		
+			<text transform="matrix(0.8662 0.4996 -0.4996 0.8662 117.6299 51.0977)" fill="#FFFFFF" font-family="'Arial-BoldMT'" font-size="13.9993">2</text>
+		<path id="inner_3_" fill="none" stroke="#FF0007" stroke-width="4" stroke-miterlimit="10" d="M171.875,81.094
+			c1.033,5.045,1.574,10.27,1.574,15.619c0,16.788-5.338,32.33-14.41,45.02"/>
+		<path id="inner_1_" display="none" fill="none" stroke="#FFFFFF" stroke-width="0.9249" stroke-miterlimit="10" d="M84.984,17.459
+			c3.584-0.492,7.244-0.746,10.965-0.746c44.184,0,80,35.816,80,80c0,17.298-5.49,33.313-14.822,46.398"/>
+		<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" x1="95.949" y1="31.713" x2="95.949" y2="16.713"/>
+		<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" x1="128.426" y1="40.408" x2="135.922" y2="27.415"/>
+		<g enable-background="new    ">
+			<text transform="matrix(1 0 0 1 91.981 46.4063)" font-family="'Arial-BoldMT'" font-size="13.9993">1</text>
+		</g>
+		<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" x1="152.26" y1="64.245" x2="165.254" y2="56.753"/>
+		
+			<text transform="matrix(0.4995 0.8663 -0.8663 0.4995 137.5449 68.1431)" fill="#FFFFFF" font-family="'Arial-BoldMT'" font-size="14">3</text>
+		<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" x1="160.949" y1="96.77" x2="175.949" y2="96.781"/>
+		
+			<text transform="matrix(-8.600000e-004 1 -1 -8.600000e-004 146.2676 92.7969)" fill="#FFFFFF" font-family="'Arial-BoldMT'" font-size="14">4</text>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="4" stroke-miterlimit="10" x1="152.256" y1="129.186" x2="165.252" y2="136.678"/>
+		
+			<text transform="matrix(-0.4996 0.8663 -0.8663 -0.4996 141.5391 118.3945)" fill="#FFFFFF" font-family="'Arial-BoldMT'" font-size="14.0005">5</text>
+	</g>
+	<g id="cdpTextSuffix">
+		<rect x="53" y="156.166" fill="none" width="86" height="17.666"/>
+		<text transform="matrix(1 0 0 1 77.606 166.5342)" fill="#8A8A8A" font-family="'Arial-BoldMT'" font-size="10">pixel / s</text>
+	</g>
+	<g id="cdpTextPrefix">
+		<rect x="53" y="118" fill="none" width="86" height="38"/>
+		<text transform="matrix(1 0 0 1 65.9194 148.1475)" fill="#FFFFFF" font-family="'ArialMT'" font-size="14">QUALITY</text>
+		<text transform="matrix(1 0 0 1 83.4263 131.3477)" fill="#FFFFFF" font-family="'ArialMT'" font-size="14">GUI</text>
+	</g>
+	<g id="cdpNeedle1">
+		<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="102.249" y1="67.4946" x2="90.2496" y2="67.4946">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="0.1414" style="stop-color:#FAFBFB"/>
+			<stop  offset="0.3029" style="stop-color:#ECEDEE"/>
+			<stop  offset="0.4743" style="stop-color:#D6D8D9"/>
+			<stop  offset="0.6526" style="stop-color:#B6B9BC"/>
+			<stop  offset="0.8343" style="stop-color:#8D9396"/>
+			<stop  offset="1" style="stop-color:#61696E"/>
+		</linearGradient>
+		<path fill="url(#SVGID_6_)" d="M100.883,110.464c0.037,1.101-0.834,2.249-1.934,2.249h-6c-1.1,0-1.969-1.148-1.934-2.249
+			l2.867-86.127c0.035-1.101,0.967-2.062,2.066-2.062l0,0c1.1,0,2.029,0.992,2.064,2.093L100.883,110.464z"/>
+		<g display="none">
+			<linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="111.8271" y1="76.8223" x2="83.5769" y2="112.3225">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.1414" style="stop-color:#FAFBFB"/>
+				<stop  offset="0.3029" style="stop-color:#ECEDEE"/>
+				<stop  offset="0.4743" style="stop-color:#D6D8D9"/>
+				<stop  offset="0.6526" style="stop-color:#B6B9BC"/>
+				<stop  offset="0.8343" style="stop-color:#8D9396"/>
+				<stop  offset="1" style="stop-color:#61696E"/>
+			</linearGradient>
+			<circle display="inline" fill="url(#SVGID_7_)" cx="96" cy="96.713" r="9"/>
+			<linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="100.8086" y1="91.3862" x2="89.9751" y2="103.3863">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.1414" style="stop-color:#FAFBFB"/>
+				<stop  offset="0.3029" style="stop-color:#ECEDEE"/>
+				<stop  offset="0.4743" style="stop-color:#D6D8D9"/>
+				<stop  offset="0.6526" style="stop-color:#B6B9BC"/>
+				<stop  offset="0.8343" style="stop-color:#8D9396"/>
+				<stop  offset="1" style="stop-color:#61696E"/>
+			</linearGradient>
+			<circle display="inline" fill="url(#SVGID_8_)" cx="96" cy="96.713" r="7.152"/>
+		</g>
+		<rect id="cdpRectCenter_1_" x="94.416" y="95.213" fill="none" width="3" height="3"/>
+		<rect id="cdpRectOutline_1_" x="86.916" y="22.275" fill="none" width="18" height="90.438"/>
+	</g>
+	<g id="cdpNeedleType1T">
+		<linearGradient id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="102.249" y1="67.4946" x2="90.2496" y2="67.4946">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="0.1414" style="stop-color:#FAFBFB"/>
+			<stop  offset="0.3029" style="stop-color:#ECEDEE"/>
+			<stop  offset="0.4743" style="stop-color:#D6D8D9"/>
+			<stop  offset="0.6526" style="stop-color:#B6B9BC"/>
+			<stop  offset="0.8343" style="stop-color:#8D9396"/>
+			<stop  offset="1" style="stop-color:#61696E"/>
+		</linearGradient>
+		<path fill="url(#SVGID_9_)" d="M100.883,110.464c0.037,1.101-0.834,2.249-1.934,2.249h-6c-1.1,0-1.969-1.148-1.934-2.249
+			l2.867-86.127c0.035-1.101,0.967-2.062,2.066-2.062l0,0c1.1,0,2.029,0.992,2.064,2.093L100.883,110.464z"/>
+		<g display="none">
+			<linearGradient id="SVGID_10_" gradientUnits="userSpaceOnUse" x1="111.8271" y1="76.8223" x2="83.5769" y2="112.3225">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.1414" style="stop-color:#FAFBFB"/>
+				<stop  offset="0.3029" style="stop-color:#ECEDEE"/>
+				<stop  offset="0.4743" style="stop-color:#D6D8D9"/>
+				<stop  offset="0.6526" style="stop-color:#B6B9BC"/>
+				<stop  offset="0.8343" style="stop-color:#8D9396"/>
+				<stop  offset="1" style="stop-color:#61696E"/>
+			</linearGradient>
+			<circle display="inline" fill="url(#SVGID_10_)" cx="96" cy="96.713" r="9"/>
+			<linearGradient id="SVGID_11_" gradientUnits="userSpaceOnUse" x1="100.8086" y1="91.3862" x2="89.9751" y2="103.3863">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.1414" style="stop-color:#FAFBFB"/>
+				<stop  offset="0.3029" style="stop-color:#ECEDEE"/>
+				<stop  offset="0.4743" style="stop-color:#D6D8D9"/>
+				<stop  offset="0.6526" style="stop-color:#B6B9BC"/>
+				<stop  offset="0.8343" style="stop-color:#8D9396"/>
+				<stop  offset="1" style="stop-color:#61696E"/>
+			</linearGradient>
+			<circle display="inline" fill="url(#SVGID_11_)" cx="96" cy="96.713" r="7.152"/>
+		</g>
+		<rect id="cdpRectCenter_3_" x="94.416" y="95.213" fill="none" width="3" height="3"/>
+		<rect id="cdpRectOutline_3_" x="86.916" y="22.275" fill="none" width="18" height="90.438"/>
+	</g>
+	<rect id="cdpNeedleMax" x="159.316" y="132.396" fill="none" width="4.059" height="4.059"/>
+	<rect id="cdpNeedleMin" x="94.461" y="20.787" fill="none" width="2.977" height="2.977"/>
+	<rect id="cdpNeedleCenterCW" x="94.531" y="95.244" fill="none" width="2.938" height="2.938"/>
+	<g id="cdpTop">
+		
+			<linearGradient id="glass_4_" gradientUnits="userSpaceOnUse" x1="252.1377" y1="737.6143" x2="252.1377" y2="775.5098" gradientTransform="matrix(2.2068 0 0 2.2068 -460.2549 -1640.6885)">
+			<stop  offset="0.4164" style="stop-color:#FFFFFF;stop-opacity:0.95"/>
+			<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+		</linearGradient>
+		<path id="glass_1_" opacity="0.45" fill="url(#glass_4_)" enable-background="new    " d="M175,60.463
+			c0,23.792-30.738-10.416-78.729-10.416c-47.988,0-78.951,38.455-78.951,10.416c0-0.98,20.854-50.95,78.754-50.95
+			C152.928,9.513,175,59.524,175,60.463L175,60.463z"/>
+		<g>
+			<linearGradient id="SVGID_12_" gradientUnits="userSpaceOnUse" x1="111.8271" y1="76.8223" x2="83.5769" y2="112.3225">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.1414" style="stop-color:#FAFBFB"/>
+				<stop  offset="0.3029" style="stop-color:#ECEDEE"/>
+				<stop  offset="0.4743" style="stop-color:#D6D8D9"/>
+				<stop  offset="0.6526" style="stop-color:#B6B9BC"/>
+				<stop  offset="0.8343" style="stop-color:#8D9396"/>
+				<stop  offset="1" style="stop-color:#61696E"/>
+			</linearGradient>
+			<circle fill="url(#SVGID_12_)" cx="96" cy="96.713" r="9"/>
+			<linearGradient id="SVGID_13_" gradientUnits="userSpaceOnUse" x1="100.8086" y1="91.3862" x2="89.9751" y2="103.3863">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.1414" style="stop-color:#FAFBFB"/>
+				<stop  offset="0.3029" style="stop-color:#ECEDEE"/>
+				<stop  offset="0.4743" style="stop-color:#D6D8D9"/>
+				<stop  offset="0.6526" style="stop-color:#B6B9BC"/>
+				<stop  offset="0.8343" style="stop-color:#8D9396"/>
+				<stop  offset="1" style="stop-color:#61696E"/>
+			</linearGradient>
+			<circle fill="url(#SVGID_13_)" cx="96" cy="96.713" r="7.152"/>
+		</g>
+		<rect id="outline_1_" fill="none" width="192" height="192"/>
+	</g>
+</g>
+</svg>

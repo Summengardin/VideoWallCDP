@@ -21,3 +21,5 @@ ID = 608813418082871587539167 # do not change
 
 FORMS += \
     Application/camera.ui
+
+RESOURCES +=

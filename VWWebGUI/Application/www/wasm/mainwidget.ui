@@ -19,16 +19,19 @@
    <string>Main Window</string>
   </property>
   <property name="msgBoxBgSvg">
-   <string>:/themes/openbridge5_day/backgrounds/bgMsgBox.svg</string>
+   <string>:/themes/openbridge5_bright/backgrounds/bgMsgBox.svg</string>
   </property>
   <property name="msgBoxBtnSvg">
-   <string>:/themes/openbridge5_day/buttons/buttonPlain.svg</string>
+   <string>:/themes/openbridge5_bright/buttons/buttonPlain.svg</string>
   </property>
   <property name="themeNight">
    <string>openbridge5_dusk</string>
   </property>
   <property name="themeDay">
    <string>openbridge5_day</string>
+  </property>
+  <property name="themeDayActive" stdset="0">
+   <bool>true</bool>
   </property>
   <property name="numPadName" stdset="0">
    <string>CDPBaseNumPad</string>
@@ -38,8 +41,11 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
     <item>
-     <widget class="QWidget" name="horizontalWidget" native="true">
+     <widget class="QWidget" name="topBar" native="true">
       <property name="minimumSize">
        <size>
         <width>0</width>
@@ -50,6 +56,37 @@
        <property name="sizeConstraint">
         <enum>QLayout::SetMinimumSize</enum>
        </property>
+       <item>
+        <widget class="CDPBasePicture" name="picture">
+         <property name="maximumSize">
+          <size>
+           <width>150</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="svgFile">
+          <string>:/images/seaonics.svg</string>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="lockAspectRatio">
+          <bool>true</bool>
+         </property>
+         <property name="minimumSizeHint" stdset="0">
+          <bool>false</bool>
+         </property>
+         <property name="rotationVertical">
+          <bool>false</bool>
+         </property>
+         <property name="cdpPosRelative">
+          <bool>false</bool>
+         </property>
+         <property name="cdpPosCenter">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
        <item>
         <widget class="CDPBaseLabel" name="label_2">
          <property name="text">
@@ -63,177 +100,384 @@
     <item>
      <widget class="QWidget" name="content" native="true">
       <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
        <item>
-        <widget class="CDPBaseContainer" name="container_2">
-         <layout class="QVBoxLayout" name="verticalLayout_3">
+        <widget class="QWidget" name="NavigationBar" native="true">
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <layout class="QVBoxLayout" name="navigationBar">
           <item>
-           <widget class="CDPBaseLabel" name="label_3">
-            <property name="text">
-             <string>Overview</string>
-            </property>
-           </widget>
+           <layout class="QHBoxLayout" name="horizontalLayout_4"/>
           </item>
           <item>
-           <widget class="CDPBaseLineEdit" name="lineEdit">
-            <property name="styleSheet">
-             <string notr="true">QLineEdit{
-color:#000000;
-border-image:url(C:/Users/martin.simengard/AppData/Local/Temp/cdp/themes/openbridge5_day/backgrounds/bgLineEdit_cdpBackground.png) 4 4 4 4;
-border-width: 4px 4px 4px 4px;
-}
-</string>
+           <widget class="CDPBaseButton" name="btnTileConfigurator">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
             </property>
-            <property name="placeholderText">
-             <string>search camera</string>
+            <property name="text">
+             <string>Tile configurator</string>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
             </property>
             <property name="svgFile">
-             <string notr="true">:/themes/openbridge5_day/backgrounds/bgLineEdit.svg</string>
+             <string notr="true">:/themes/openbridge5_bright/buttons/buttonPlain.svg</string>
+            </property>
+            <property name="valueToEmit">
+             <number>0</number>
+            </property>
+            <property name="checkableByEmitValue">
+             <bool>true</bool>
+            </property>
+            <property name="cdpCheckedRouting" stdset="0">
+             <string>VWWebGUI.CDPComponent.TileConfig.Value</string>
+            </property>
+            <property name="cdpPressedRouting" stdset="0">
+             <string>VWWebGUI.CDPComponent.TileConfigPressed.Value</string>
             </property>
             <property name="pushRoutables" stdset="0">
              <stringlist notr="true">
-              <string>cdpRouting</string>
+              <string>cdpPressedRouting</string>
              </stringlist>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="NodeTable" name="nodeTable">
-            <property name="showGrid">
+           <widget class="CDPBaseButton" name="btnCameras">
+            <property name="text">
+             <string>Cameras</string>
+            </property>
+            <property name="svgFile">
+             <string notr="true">:/themes/openbridge5_bright/buttons/buttonPlain.svg</string>
+            </property>
+            <property name="valueToEmit">
+             <number>1</number>
+            </property>
+            <property name="checkableByEmitValue">
              <bool>true</bool>
             </property>
-            <property name="gridStyle">
-             <enum>Qt::DashLine</enum>
+            <property name="cdpCheckedRouting" stdset="0">
+             <string>VWWebGUI.CDPComponent.Cameras.Value</string>
             </property>
-            <property name="sortingEnabled">
-             <bool>true</bool>
+            <property name="cdpPressedRouting" stdset="0">
+             <string>VWWebGUI.CDPComponent.CamerasPressed.Value</string>
             </property>
-            <property name="modelFilter">
-             <stringlist>
-              <string>VideoWallLib.Camera</string>
+            <property name="pushRoutables" stdset="0">
+             <stringlist notr="true">
+              <string>cdpPressedRouting</string>
              </stringlist>
             </property>
-            <property name="columnsWidth">
-             <stringlist>
-              <string>DisplayName=150</string>
-              <string>IP=80</string>
-             </stringlist>
-            </property>
-            <property name="columns">
-             <stringlist>
-              <string>DisplayName</string>
-              <string>IP</string>
-              <string>Description</string>
-             </stringlist>
-            </property>
-            <property name="cdpTargetRouting">
-             <string>VWController.Cameras</string>
-            </property>
-            <attribute name="horizontalHeaderCascadingSectionResizes">
-             <bool>false</bool>
-            </attribute>
-            <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
-             <bool>true</bool>
-            </attribute>
-            <attribute name="verticalHeaderVisible">
-             <bool>false</bool>
-            </attribute>
-            <attribute name="verticalHeaderStretchLastSection">
-             <bool>false</bool>
-            </attribute>
            </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="ThemeSelectorGroup">
+            <item>
+             <widget class="CDPBaseLabel" name="label_4">
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Dark&lt;br/&gt;mode&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="CDPBaseToggleButton" name="darkModeToggler">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="pushRoutables" stdset="0">
+               <stringlist notr="true">
+                <string>cdpTextMsgRouting</string>
+                <string>cdpRouting</string>
+               </stringlist>
+              </property>
+              <property name="svgFile">
+               <string notr="true">:/themes/openbridge5_bright/buttons/toggleButtonDefault.svg</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </item>
          </layout>
         </widget>
        </item>
        <item>
-        <widget class="QWidget" name="mainWidget" native="true">
-         <layout class="QVBoxLayout" name="mainWiget">
-          <item>
-           <widget class="CDPBaseLabel" name="label">
-            <property name="maximumSize">
-             <size>
-              <width>16777215</width>
-              <height>30</height>
-             </size>
-            </property>
-            <property name="font">
-             <font>
-              <family>Arial</family>
-              <pointsize>11</pointsize>
-             </font>
-            </property>
-            <property name="autoFillBackground">
-             <bool>false</bool>
-            </property>
-            <property name="frameShape">
-             <enum>QFrame::NoFrame</enum>
-            </property>
-            <property name="text">
-             <string>Cameras</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-            </property>
-            <property name="margin">
-             <number>40</number>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QWidget" name="editorWidget" native="true">
-            <layout class="QVBoxLayout" name="editor">
-             <item>
-              <widget class="QScrollArea" name="scrollArea">
-               <property name="widgetResizable">
-                <bool>true</bool>
-               </property>
-               <widget class="QWidget" name="scrollAreaWidgetContents">
-                <property name="geometry">
-                 <rect>
-                  <x>0</x>
-                  <y>-188</y>
-                  <width>403</width>
-                  <height>610</height>
-                 </rect>
+        <widget class="CDPBaseStackedWidget" name="pages">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="cdpPageRouting" stdset="0">
+          <string>VWWebGUI.Add.In0</string>
+         </property>
+         <widget class="QWidget" name="orchestrator">
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <widget class="QWidget" name="gridWidget" native="true">
+             <property name="maximumSize">
+              <size>
+               <width>700</width>
+               <height>700</height>
+              </size>
+             </property>
+             <layout class="QGridLayout" name="sourceLayout">
+              <property name="sizeConstraint">
+               <enum>QLayout::SetMinimumSize</enum>
+              </property>
+              <item row="0" column="1">
+               <widget class="CDPBaseUiLoaderWidget" name="uiLoaderWidget_2">
+                <property name="uiFileName">
+                 <string>tile.ui</string>
                 </property>
-                <property name="minimumSize">
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="CDPBaseUiLoaderWidget" name="uiLoaderWidget">
+                <property name="uiFileName">
+                 <string>tile.ui</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="CDPBaseUiLoaderWidget" name="uiLoaderWidget_4">
+                <property name="uiFileName">
+                 <string>tile.ui</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="CDPBaseUiLoaderWidget" name="uiLoaderWidget_3">
+                <property name="uiFileName">
+                 <string>tile.ui</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="cameraEditor">
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="CDPBaseContainer" name="overview">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>600</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_3">
+              <item>
+               <widget class="CDPBaseLabel" name="label_3">
+                <property name="text">
+                 <string>Overview</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="NodeTable" name="nodeTable">
+                <property name="showGrid">
+                 <bool>true</bool>
+                </property>
+                <property name="gridStyle">
+                 <enum>Qt::DashLine</enum>
+                </property>
+                <property name="sortingEnabled">
+                 <bool>true</bool>
+                </property>
+                <property name="modelFilter">
+                 <stringlist>
+                  <string>VideoWallLib.Camera</string>
+                 </stringlist>
+                </property>
+                <property name="columnsWidth">
+                 <stringlist>
+                  <string>IP=100</string>
+                  <string>Name=150</string>
+                 </stringlist>
+                </property>
+                <property name="columns">
+                 <stringlist>
+                  <string>Name</string>
+                  <string>IP</string>
+                  <string>DisplayName</string>
+                 </stringlist>
+                </property>
+                <property name="cdpTargetRouting">
+                 <string>VWController.Cameras</string>
+                </property>
+                <attribute name="horizontalHeaderCascadingSectionResizes">
+                 <bool>false</bool>
+                </attribute>
+                <attribute name="horizontalHeaderDefaultSectionSize">
+                 <number>200</number>
+                </attribute>
+                <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+                 <bool>true</bool>
+                </attribute>
+                <attribute name="verticalHeaderVisible">
+                 <bool>false</bool>
+                </attribute>
+                <attribute name="verticalHeaderStretchLastSection">
+                 <bool>false</bool>
+                </attribute>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="editor_2" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <layout class="QVBoxLayout" name="mainWiget">
+              <item>
+               <widget class="CDPBaseLabel" name="label">
+                <property name="maximumSize">
                  <size>
-                  <width>0</width>
-                  <height>0</height>
+                  <width>16777215</width>
+                  <height>17</height>
                  </size>
                 </property>
-                <layout class="QVBoxLayout" name="verticalLayout_4">
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="autoFillBackground">
+                 <bool>false</bool>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="text">
+                 <string>Cameras</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="margin">
+                 <number>40</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="editorWidget" native="true">
+                <layout class="QVBoxLayout" name="editor">
                  <item>
-                  <widget class="NodeContainer" name="nodeContainer">
-                   <property name="autoFillBackground">
-                    <bool>false</bool>
+                  <widget class="QScrollArea" name="scrollArea">
+                   <property name="widgetResizable">
+                    <bool>true</bool>
                    </property>
-                   <property name="modelFilter">
-                    <stringlist>
-                     <string>VideoWallLib.Camera</string>
-                    </stringlist>
-                   </property>
-                   <property name="cdpTargetRouting">
-                    <string>VWController.Cameras</string>
-                   </property>
-                   <property name="uiFileName">
-                    <string>cameraweb.ui</string>
-                   </property>
+                   <widget class="QWidget" name="scrollAreaWidgetContents">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>360</width>
+                      <height>425</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_4">
+                     <item>
+                      <widget class="NodeContainer" name="nodeContainer">
+                       <property name="autoFillBackground">
+                        <bool>false</bool>
+                       </property>
+                       <property name="childContainerName">
+                        <string>flowWidget</string>
+                       </property>
+                       <property name="forceNodes">
+                        <stringlist/>
+                       </property>
+                       <property name="modelFilter">
+                        <stringlist>
+                         <string>VideoWallLib.Camera</string>
+                        </stringlist>
+                       </property>
+                       <property name="cdpTargetRouting">
+                        <string>VWController.Cameras</string>
+                       </property>
+                       <property name="uiFileName">
+                        <string>cameraweb.ui</string>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_3">
+                        <item>
+                         <widget class="FlowWidget" name="flowWidget">
+                          <property name="horizontalSpacing">
+                           <number>30</number>
+                          </property>
+                          <property name="verticalSpacing">
+                           <number>20</number>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
                   </widget>
                  </item>
                 </layout>
                </widget>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item>
-           <widget class="QWidget" name="bottomWidget" native="true">
-            <layout class="QHBoxLayout" name="horizontalLayout_2"/>
-           </widget>
-          </item>
-         </layout>
+              </item>
+              <item>
+               <widget class="QWidget" name="bottomWidget" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
         </widget>
        </item>
       </layout>
@@ -244,14 +488,21 @@ border-width: 4px 4px 4px 4px;
  </widget>
  <customwidgets>
   <customwidget>
-   <class>CDPBaseLineEdit</class>
-   <extends>QLineEdit</extends>
-   <header>CDPBaseWidgets/CDPBaseLineEdit.h</header>
-  </customwidget>
-  <customwidget>
    <class>CDPBaseContainer</class>
    <extends>QWidget</extends>
    <header>CDPBaseWidgets/CDPBaseContainer.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>FlowWidget</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/FlowWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseStackedWidget</class>
+   <extends>QStackedWidget</extends>
+   <header>CDPBaseWidgets/CDPBaseStackedWidget.h</header>
    <container>1</container>
   </customwidget>
   <customwidget>
@@ -266,9 +517,29 @@ border-width: 4px 4px 4px 4px;
    <header>CDPBaseWidgets/NodeTable.h</header>
   </customwidget>
   <customwidget>
+   <class>CDPBaseButton</class>
+   <extends>QPushButton</extends>
+   <header>CDPBaseWidgets/CDPBaseButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseToggleButton</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBaseToggleButton.h</header>
+  </customwidget>
+  <customwidget>
    <class>CDPBaseLabel</class>
    <extends>QLabel</extends>
    <header>CDPBaseWidgets/CDPBaseLabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBasePicture</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBasePicture.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseUiLoaderWidget</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBaseUiLoaderWidget.h</header>
   </customwidget>
   <customwidget>
    <class>CDPBaseMainWindow</class>
@@ -278,5 +549,54 @@ border-width: 4px 4px 4px 4px;
   </customwidget>
  </customwidgets>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>btnCameras</sender>
+   <signal>clicked(int)</signal>
+   <receiver>pages</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>83</x>
+     <y>182</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>573</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnTileConfigurator</sender>
+   <signal>clicked(int)</signal>
+   <receiver>pages</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>84</x>
+     <y>128</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>573</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>darkModeToggler</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>mainWindow</receiver>
+   <slot>setNightTheme(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>129</x>
+     <y>565</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>499</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="441.5px" height="321.5px" viewBox="0 0 441.5 321.5" enable-background="new 0 0 441.5 321.5" xml:space="preserve">
+<g id="Layer1">
+	<g id="cdpPicture0">
+		<rect id="docSize_8_" x="115.992" y="84.445" fill="none" width="30" height="30"/>
+		<g>
+			
+				<circle fill="#FFFFFF" stroke="#1D1D1B" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="130.992" cy="99.445" r="10"/>
+			
+				<radialGradient id="SVGID_1_" cx="122.5522" cy="643.5703" r="10" gradientTransform="matrix(1 0 0 1 8.4399 -544.125)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#3C3C3B;stop-opacity:0.6512"/>
+				<stop  offset="0.3084" style="stop-color:#383837;stop-opacity:0.7434"/>
+				<stop  offset="0.6279" style="stop-color:#2D2C2A;stop-opacity:0.8388"/>
+				<stop  offset="0.9515" style="stop-color:#191816;stop-opacity:0.9355"/>
+				<stop  offset="1" style="stop-color:#161412;stop-opacity:0.95"/>
+			</radialGradient>
+			
+				<circle fill="url(#SVGID_1_)" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="130.992" cy="99.445" r="10"/>
+			<g id="Unchecked_1_">
+				<path id="path135_1_" inkscape:connector-curvature="0" fill="#8F8F8F" d="M135.667,96.743h-9.352
+					c0-2.187,2.094-3.958,4.677-3.958C133.573,92.783,135.667,94.556,135.667,96.743z"/>
+				<rect id="rect137_1_" x="130.142" y="96.743" fill="#8F8F8F" width="1.7" height="2.349"/>
+				<rect id="rect139_1_" x="125.039" y="99.092" fill="#8F8F8F" width="11.907" height="3.613"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Styles">
+	<g id="cdpPicture0Style1">
+		<rect id="docSize_1_" x="180.094" y="83.758" fill="none" width="30" height="30"/>
+		<g>
+			
+				<circle fill="#FFFFFF" stroke="#1D1D1B" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="195.094" cy="98.744" r="10"/>
+			
+				<radialGradient id="SVGID_2_" cx="186.6538" cy="642.8691" r="10" gradientTransform="matrix(1 0 0 1 8.4399 -544.125)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#E30600;stop-opacity:0.6512"/>
+				<stop  offset="0.1348" style="stop-color:#DF0600;stop-opacity:0.6915"/>
+				<stop  offset="0.2745" style="stop-color:#D20701;stop-opacity:0.7332"/>
+				<stop  offset="0.4165" style="stop-color:#BE0903;stop-opacity:0.7757"/>
+				<stop  offset="0.5601" style="stop-color:#A10B06;stop-opacity:0.8186"/>
+				<stop  offset="0.705" style="stop-color:#7B0D09;stop-opacity:0.8619"/>
+				<stop  offset="0.851" style="stop-color:#4D100D;stop-opacity:0.9055"/>
+				<stop  offset="0.9953" style="stop-color:#181412;stop-opacity:0.9486"/>
+				<stop  offset="1" style="stop-color:#161412;stop-opacity:0.95"/>
+			</radialGradient>
+			
+				<circle fill="url(#SVGID_2_)" stroke="#1D1D1B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="195.094" cy="98.744" r="10"/>
+			<g id="Unchecked_11_">
+				<path id="path135" inkscape:connector-curvature="0" fill="#FFCFCF" d="M199.77,96.743h-9.352c0-2.187,2.094-3.958,4.677-3.958
+					C197.676,92.784,199.77,94.556,199.77,96.743z"/>
+				<rect id="rect137" x="194.244" y="96.743" fill="#FFCFCF" width="1.7" height="2.349"/>
+				<rect id="rect139" x="189.141" y="99.092" fill="#FFCFCF" width="11.907" height="3.613"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Text">
+	<text transform="matrix(1 0 0 1 180.0938 75.5645)" font-family="'ArialMT'" font-size="14">Style 1</text>
+	<text transform="matrix(1 0 0 1 114.1934 75.5645)" font-family="'ArialMT'" font-size="14">Style 0</text>
+	<text transform="matrix(1 0 0 1 47.1885 99.5293)" font-family="'ArialMT'" font-size="14">Picture 0</text>
+</g>
+</svg>

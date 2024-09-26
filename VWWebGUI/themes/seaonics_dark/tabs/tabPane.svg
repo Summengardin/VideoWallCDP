@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="116px" height="30px" viewBox="0 0 116 30" enable-background="new 0 0 116 30" xml:space="preserve">
+<g id="Normal" display="none">
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="460.5" y1="693.9023" x2="460.5" y2="663.9014" gradientTransform="matrix(1 0 0 1 -402.5 -663.5)">
+		<stop  offset="0" style="stop-color:#0B1623"/>
+		<stop  offset="0.6198" style="stop-color:#1F3C4C"/>
+		<stop  offset="0.633" style="stop-color:#203D4E"/>
+		<stop  offset="0.6417" style="stop-color:#264354"/>
+		<stop  offset="0.6491" style="stop-color:#304E5F"/>
+		<stop  offset="0.6558" style="stop-color:#3E5E6F"/>
+		<stop  offset="0.6563" style="stop-color:#406071"/>
+	</linearGradient>
+	<path display="inline" fill="url(#SVGID_1_)" stroke="#010202" stroke-miterlimit="10" d="M0.5,30.402v-25c0-2.75,2.232-5,4.961-5
+		h105.078c2.729,0,4.961,2.25,4.961,5v25"/>
+	
+		<text transform="matrix(1.0914 0 0 1 38.9087 22.168)" display="inline" fill="#FFFFFF" font-family="'Arial-BoldMT'" font-size="12.7267">Tab 1</text>
+</g>
+<g>
+	<path fill="#434648" stroke="#010202" stroke-miterlimit="10" d="M0,15V4.669C0,2.101,2.251,0,5.004,0h105.992
+		C113.748,0,116,2.101,116,4.669V15"/>
+</g>
+<g>
+	<path fill="#434648" stroke="#010202" stroke-miterlimit="10" d="M116,15v10.33c0,2.568-2.252,4.67-5.004,4.67H5.004
+		C2.251,30,0,27.898,0,25.33V15"/>
+	
+		<text transform="matrix(1.0715 0 0 1 38.7422 22.3643)" display="none" fill="#FFFFFF" enable-background="new    " font-family="'Arial-BoldMT'" font-size="13.0755">Tab 1</text>
+</g>
+</svg>

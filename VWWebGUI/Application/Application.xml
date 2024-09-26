@@ -13,6 +13,11 @@
 
   <Subcomponents>
     <Subcomponent Name="CDP"        Model="CDP"        src="Components\CDP.xml"></Subcomponent>
+    <Operator Model="Automation.AddOperator&lt;int&gt;" Name="Add" Type="int">
+      <Argument CppName="m_output" Description="Sum of inputs" Input="0" Model="DefaultArgument&lt;int&gt;" Name="Out" Routing="" Type="int" Value="0"></Argument>
+      <Argument CppName="m_input" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;int&gt;" Name="In0" Routing="" Type="int" Value="0"></Argument>
+      <Argument CppName="" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;int&gt;" Name="In1" Routing="" Type="int" Value="0"></Argument></Operator>
+    <Subcomponent Model="CDPComponent" Name="CDPComponent" src="Components/CDPComponent.xml"></Subcomponent>
   </Subcomponents>
 
   <Signals>

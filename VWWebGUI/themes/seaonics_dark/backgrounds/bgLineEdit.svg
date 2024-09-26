@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="85.04px" height="28.347px" viewBox="0 0 85.04 28.347" enable-background="new 0 0 85.04 28.347" xml:space="preserve">
+<g id="Helper" display="none">
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="48.3062" y1="66.1558" x2="48.3061" y2="-33.0566">
+		<stop  offset="0.2117" style="stop-color:#242729"/>
+		<stop  offset="0.7932" style="stop-color:#3A3D3E"/>
+	</linearGradient>
+	<path display="inline" fill="url(#SVGID_1_)" stroke="#B3B3B3" stroke-width="2" stroke-miterlimit="10" d="M140.431,57.239
+		c0,4.925-4.043,8.917-9.029,8.917H-34.79c-4.988,0-9.029-3.992-9.029-8.917v-81.379c0-4.925,4.041-8.917,9.029-8.917h166.191
+		c4.986,0,9.029,3.992,9.029,8.917V57.239z"/>
+</g>
+<g id="Layer1">
+	<g id="Background__x28_old_x29_" display="none">
+		<rect id="rect" x="0" y="0" display="inline" fill="none" width="85.039" height="28.347"/>
+		<path id="white" fill="#FFFFFF" d="M85.04,22.339c0,3.318-2.284,6.008-5.103,6.008H5.102C2.286,28.347,0,25.658,0,22.339V6.008
+			C0,2.69,2.286,0,5.102,0h74.835c2.818,0,5.103,2.689,5.103,6.008V22.339z"/>
+		<path id="middle__x28_show_to_use_x29_" fill="#444545" d="M85.04,22.339c0,3.318-2.285,6.008-5.104,6.008H5.102
+			C2.285,28.347,0,25.658,0,22.339V6.008C0,2.69,2.285,0,5.102,0h74.834c2.818,0,5.104,2.689,5.104,6.008V22.339z"/>
+		<g id="sunken__x28_show_to_use_x29_" display="inline">
+			<g id="toggleOuter_1_" opacity="0.3">
+				<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="42.52" y1="28.3472" x2="42.52" y2="9.765625e-004">
+					<stop  offset="0" style="stop-color:#FFFFFF"/>
+					<stop  offset="1" style="stop-color:#000000"/>
+				</linearGradient>
+				<path fill="url(#SVGID_2_)" d="M85.04,22.339c0,3.318-2.285,6.008-5.104,6.008H5.102C2.285,28.347,0,25.658,0,22.339V6.008
+					C0,2.69,2.285,0,5.102,0h74.834c2.818,0,5.104,2.689,5.104,6.008V22.339z"/>
+			</g>
+			<g id="toggleInner">
+				<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="42.5195" y1="1.0005" x2="42.5195" y2="27.3477">
+					<stop  offset="0" style="stop-color:#2D2D2E"/>
+					<stop  offset="0.1" style="stop-color:#363C40"/>
+					<stop  offset="0.9" style="stop-color:#363C40"/>
+					<stop  offset="1" style="stop-color:#585C5E"/>
+				</linearGradient>
+				<path fill="url(#SVGID_3_)" d="M85.04,21.763c0,3.084-2.285,5.584-5.104,5.584H5.102c-2.816,0-5.102-2.5-5.102-5.584V6.584
+					C0,3.5,2.285,1,5.102,1h74.834c2.818,0,5.104,2.5,5.104,5.584V21.763z"/>
+			</g>
+		</g>
+		<path id="dark__x28_show_to_use_x29_" fill="#303030" d="M85.04,22.339c0,3.318-2.285,6.008-5.104,6.008H5.102
+			C2.285,28.347,0,25.658,0,22.339V6.008C0,2.69,2.285,0,5.102,0h74.834c2.818,0,5.104,2.689,5.104,6.008V22.339z"/>
+	</g>
+	<g id="cdpBackground">
+		<rect id="rect_1_" x="0" y="0.001" fill="none" width="85.039" height="28.346"/>
+		<g id="sunken">
+			<g id="lower">
+				<path fill="#585C5E" d="M85.04,21.341c0-3.3-2.7-6-6-6H6c-3.3,0-6,2.7-6,6v1.006c0,3.3,2.7,6,6,6H79.04c3.3,0,6-2.7,6-6V21.341z
+					"/>
+			</g>
+			<g id="upper">
+				<path fill="#2D2D2E" d="M85.04,7.008c0,3.3-2.7,6-6,6H6c-3.3,0-6-2.7-6-6V6.001c0-3.3,2.7-6,6-6H79.04c3.3,0,6,2.7,6,6V7.008z"
+					/>
+			</g>
+			<path id="main" fill="#363C40" d="M85.04,21.476c0,2.967-2.285,5.371-5.104,5.371H5.102C2.286,26.847,0,24.443,0,21.476V6.873
+				c0-2.969,2.285-5.372,5.102-5.372h74.834c2.818,0,5.104,2.403,5.104,5.372V21.476z"/>
+		</g>
+	</g>
+	
+		<text id="Text__x28_rename_to_use_x29_" transform="matrix(1 0 0 1 55.2104 21.1743)" display="none" font-family="'MyriadPro-Bold'" font-size="21">15</text>
+	<text id="cdpText" transform="matrix(1 0 0 1 55.2095 21.1743)" fill="#FFFFFF" font-family="'MyriadPro-Bold'" font-size="21">15</text>
+	<rect id="cdpBorderMarginBottomRight" x="79.04" y="22.347" fill="none" width="6" height="6"/>
+	<rect id="cdpBorderMarginTopLeft" fill="none" width="6" height="6"/>
+</g>
+</svg>
