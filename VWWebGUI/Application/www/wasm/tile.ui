@@ -6,9 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>258</width>
-    <height>476</height>
+    <width>448</width>
+    <height>400</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="minimumSize">
    <size>
@@ -61,6 +67,12 @@
        <height>0</height>
       </size>
      </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>400</height>
+      </size>
+     </property>
      <property name="autoFillBackground">
       <bool>false</bool>
      </property>
@@ -79,7 +91,7 @@ border: 2px solid rgb(200,200,200)}
         <property name="minimumSize">
          <size>
           <width>0</width>
-          <height>20</height>
+          <height>30</height>
          </size>
         </property>
         <property name="font">
@@ -106,7 +118,7 @@ border: 2px solid rgb(200,200,200)}
          <string notr="true">:/themes/openbridge5_day/buttons/spinBox.svg</string>
         </property>
         <property name="cdpRouting" stdset="0">
-         <string>.i_Source.Value</string>
+         <string>.Source.Value</string>
         </property>
         <property name="pushRoutables" stdset="0">
          <stringlist notr="true">
@@ -152,7 +164,7 @@ border: 2px solid rgb(200,200,200)}
         <item row="2" column="0">
          <widget class="CDPBaseLabel" name="label_106">
           <property name="text">
-           <string>Brigthness</string>
+           <string>Brightness</string>
           </property>
          </widget>
         </item>
@@ -168,7 +180,7 @@ border: 2px solid rgb(200,200,200)}
            <double>100.000000000000000</double>
           </property>
           <property name="cdpRouting" stdset="0">
-           <string>.i_Zoom.Value</string>
+           <string>.Zoom.Value</string>
           </property>
           <property name="cdpPromptForChanges" stdset="0">
            <bool>false</bool>
@@ -192,7 +204,7 @@ border: 2px solid rgb(200,200,200)}
            <double>100.000000000000000</double>
           </property>
           <property name="cdpRouting" stdset="0">
-           <string>.i_Brightness.Value</string>
+           <string>.Brightness.Value</string>
           </property>
           <property name="cdpPromptForChanges" stdset="0">
            <bool>false</bool>
@@ -231,7 +243,7 @@ border: 2px solid rgb(200,200,200)}
            <string notr="true">:/themes/openbridge5_day/sliders/sliderRoundKnob.svg</string>
           </property>
           <property name="cdpRouting" stdset="0">
-           <string>.i_Zoom.Value</string>
+           <string>.Zoom.Value</string>
           </property>
           <property name="cdpSend" stdset="0">
            <enum>CDPBaseSlider::onSliderMoved</enum>
@@ -279,7 +291,7 @@ border: 2px solid rgb(200,200,200)}
            <double>0.500000000000000</double>
           </property>
           <property name="cdpRouting" stdset="0">
-           <string>.i_Brightness.Value</string>
+           <string>.Brightness.Value</string>
           </property>
           <property name="cdpSend" stdset="0">
            <enum>CDPBaseSlider::onSliderMoved</enum>

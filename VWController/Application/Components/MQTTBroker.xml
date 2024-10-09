@@ -1,4 +1,4 @@
-<Component Encryption="Unencrypted" ListenAddress="127.0.0.1" ListenPort="1883" Model="MQTTIO.MQTTBroker" Name="MQTTBroker" src="Components/MQTTBroker.xml" Description="The IntelligentEdge.Cloud.MQTTBroker is a IntelligentEdge.Cloud MQTT broker sub-component" MaxTopicAlias="1000" Persistence="1">
+<Component Encryption="Unencrypted" ListenAddress="0.0.0.0" ListenPort="1883" Model="MQTTIO.MQTTBroker" Name="MQTTBroker" src="Components/MQTTBroker.xml" Description="The IntelligentEdge.Cloud.MQTTBroker is a IntelligentEdge.Cloud MQTT broker sub-component" MaxTopicAlias="1000" Persistence="1">
   <Priority>high</Priority>
   <SchedulingOrder>TopDown</SchedulingOrder>
   <SchedulingGroup>Broker</SchedulingGroup>

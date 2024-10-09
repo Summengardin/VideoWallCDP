@@ -9,14 +9,10 @@
   <CDPVersion>4.13</CDPVersion>
   <Domain>VideoWall</Domain>
 
-  <NetworkInterface Name="ETH0" MAC="" IPAddress="127.0.0.1" SubnetMask="255.255.255.255"></NetworkInterface>
+  <NetworkInterface Name="ETH0" MAC="" IPAddress="10.1.3.180" SubnetMask="255.255.255.0"></NetworkInterface>
 
   <Subcomponents>
     <Subcomponent Name="CDP"        Model="CDP"        src="Components\CDP.xml"></Subcomponent>
-    <Operator Model="Automation.AddOperator&lt;int&gt;" Name="Add" Type="int">
-      <Argument CppName="m_output" Description="Sum of inputs" Input="0" Model="DefaultArgument&lt;int&gt;" Name="Out" Routing="" Type="int" Value="0"></Argument>
-      <Argument CppName="m_input" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;int&gt;" Name="In0" Routing="" Type="int" Value="0"></Argument>
-      <Argument CppName="" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;int&gt;" Name="In1" Routing="" Type="int" Value="0"></Argument></Operator>
     <Subcomponent Model="CDPComponent" Name="CDPComponent" src="Components/CDPComponent.xml"></Subcomponent>
     <Subcomponent Model="CDPComponent" Name="GUIConnections" src="Components/GUIConnections.xml"></Subcomponent>
   </Subcomponents>

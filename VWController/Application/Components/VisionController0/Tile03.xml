@@ -7,13 +7,13 @@
   <Signals>
     <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
     <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
-    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="i_Source" Type="string"></Signal>
-    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="i_Brightness" Type="double"></Signal>
-    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="i_Zoom" Type="double"></Signal>
-    <Signal Description="Upper left" Input="1" Model="CDPSignal&lt;string&gt;" Name="i_OSDText1" Type="string"></Signal>
-    <Signal Description="Upper mid" Input="1" Model="CDPSignal&lt;string&gt;" Name="i_OSDText2" Type="string"></Signal>
-    <Signal Description="Upper right" Input="1" Model="CDPSignal&lt;string&gt;" Name="i_OSDText3" Type="string"></Signal>
-    <Signal Description="Lower mid" Input="1" Model="CDPSignal&lt;string&gt;" Name="i_OSDText4" Type="string"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Source" Type="string"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="Brightness" Type="double"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="Zoom" Type="double"></Signal>
+    <Signal Description="Upper left" Input="1" Model="CDPSignal&lt;string&gt;" Name="OSDText1" Type="string"></Signal>
+    <Signal Description="Upper mid" Input="1" Model="CDPSignal&lt;string&gt;" Name="OSDText2" Type="string"></Signal>
+    <Signal Description="Upper right" Input="1" Model="CDPSignal&lt;string&gt;" Name="OSDText3" Type="string"></Signal>
+    <Signal Description="Lower mid" Input="1" Model="CDPSignal&lt;string&gt;" Name="OSDText4" Type="string"></Signal>
   </Signals>
 
   <Alarms>
@@ -22,18 +22,21 @@
   </Alarms>
 
   <Ports>
-    <Port Input="1" Model="VideoWallLib.TilePort" Name="pTile">
+    <Port Input="0" Model="CDPPort" Name="pTile">
 
       <Connections>
         <Connection Input="1" LocalName=".Source" Model="CDPPortConnection" Name="MapSource"></Connection>
+        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Source" Routing="..Source" Type="string" Value=""></Connection>
+        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Brightness" Routing="..Brightness" Type="string" Value=""></Connection>
+        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Zoom" Routing="..Zoom" Type="string" Value=""></Connection>
+        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="OSDText1" Routing="..OSDText1" Type="string" Value=""></Connection>
+        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="OSDText2" Routing="..OSDText2" Type="string" Value=""></Connection>
+        <Connection Input="0" Model="ValuedConnection&lt;float&gt;" Name="OSDText3" Routing="..OSDText3" Type="float" Value="0"></Connection>
+        <Connection Input="0" Model="ValuedConnection&lt;float&gt;" Name="OSDText4" Routing="..OSDText4" Type="float" Value="0"></Connection>
       </Connections></Port>
   </Ports>
 
   <Subcomponents>
-    <Subcomponent Model="VideoWallLib.Tile.OSDText" Name="OSDText" src="Components/VisionController0/Tile03/OSDText.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Tile.OSDText1" Name="OSDText1" src="Components/VisionController0/Tile03/OSDText1.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Tile.OSDText2" Name="OSDText2" src="Components/VisionController0/Tile03/OSDText2.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Tile.OSDText3" Name="OSDText3" src="Components/VisionController0/Tile03/OSDText3.xml"></Subcomponent>
     <Operator Model="Sequencer.JSONEncode" Name="JSONEncode1">
       <Argument BinaryEncodedLength="0" CppName="m_output" Description="JSON encoded output" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument>
       <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="OSD1" Routing="..OSDText.JSONOut" Type="string" Value=""></Argument>
@@ -42,9 +45,9 @@
       <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="OSD4" Routing="..OSDText3.JSONOut" Type="string" Value=""></Argument></Operator>
     <Operator Model="Sequencer.JSONEncode" Name="JSONEncode">
       <Argument BinaryEncodedLength="0" CppName="m_output" Description="JSON encoded output" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="Source" Routing="..i_Source" Type="string" Value=""></Argument>
-      <Argument CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;double&gt;" Name="Brightness" Routing="..i_Brightness" Type="double" Value="0"></Argument>
-      <Argument CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;double&gt;" Name="Zoom" Routing="..i_Zoom" Type="double" Value="0"></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="Source" Routing="..Source" Type="string" Value=""></Argument>
+      <Argument CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;double&gt;" Name="Brightness" Routing="..Brightness" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;double&gt;" Name="Zoom" Routing="..Zoom" Type="double" Value="0"></Argument>
       <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="OSD" Routing="..JSONEncode1.Out" Type="string" Value=""></Argument></Operator>
     <Operator Model="Automation.SearchReplace" Name="SearchReplace" Regex="0" Replace="/" Search="." Type="string">
       <Argument BinaryEncodedLength="0" CppName="m_input" Description="Default input argument" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In" Routing="..Name" Type="string" Value=""></Argument>
@@ -54,6 +57,9 @@
       <ArgumentMessage Command="131328" Description="Message out sending CM_TEXTCOMMAND_EVENT command with CM_TEXTCOMMAND by default." Input="0" Model="MessageArgument" Name="MessageOut" RoutingList="..MQTTPublish"></ArgumentMessage>
       <Argument BinaryEncodedLength="0" CppName="" Input="1" Model="Argument&lt;string&gt;" Name="Payload" Routing="..JSONEncode.Out" Type="string" Value=""></Argument>
       <Argument BinaryEncodedLength="0" CppName="" Input="1" Model="Argument&lt;string&gt;" Name="Topic" Routing="..SearchReplace.Out" Type="string" Value=""></Argument></Operator>
+    <Operator Model="Automation.SearchReplace" Name="TopicFromName" Regex="0" Replace="/" Search="." Type="string">
+      <Argument BinaryEncodedLength="0" CppName="m_input" Description="Default input argument" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In" Routing="..Name" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="m_output" Description="Default output argument" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument></Operator>
   </Subcomponents>
 
   <ArgumentMessages>

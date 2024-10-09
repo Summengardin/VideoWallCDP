@@ -22,7 +22,6 @@
    <string notr="true">QMainWindow &gt; QWidget { background-image: url(:/themes/openbridge5_day/backgrounds/bgMain.svg); }
 CDPBaseTabWidget &gt; QWidget &gt; QWidget { background:transparent; }
 CDPBaseStackedWidget &gt; QWidget { background: transparent; }
-CDPBaseContainer &gt; QWidget { border-radius: 10px; }
 
 QMessageBox {
  border-image: url(C:/Users/martin.simengard/AppData/Local/Temp/cdp/themes/openbridge5_day/backgrounds/bgMsgBox_cdpBackground.png) 6 30 6 6;
@@ -41,11 +40,7 @@ QMessageBox QLabel {
  color: #000000;
 }
 
-QFrame{
-border-radius: 10px;
-border: 2px solid rgb(200,200,200); }
-
-
+QFrame { border: 1px solid #14000000; }
 QTableView QFrame { border: 0px; }
 QTreeView QFrame { border: 0px; }
 QStackedWidget { border: 0px; }
@@ -180,7 +175,6 @@ QScrollArea[scrollBarSize=&quot;2&quot;] QScrollBar::handle:horizontal {
   min-width: 6px;
 }
 
-
 CDPBaseLabel[valueStyle=&quot;1&quot;]
 {
  color: #325B9A;
@@ -243,7 +237,6 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal { background: n
 
 QScrollArea { background: transparent; border: 0px; }
 QScrollArea &gt; QWidget &gt; QWidget { background: transparent; }
-QScrollArea QFrame {border: 0px;}
 
 QHeaderView { qproperty-defaultAlignment: AlignVCenter; }
 QHeaderView::section{ background-color: #F0F0F0; border: 0px solid #6c6c6c; color: #1A1A1A; border-bottom: 1px solid #14000000; }
@@ -358,8 +351,8 @@ QListView { background: #FFFFFF; alternate-background-color: #00000000; color: #
              <minute>59</minute>
              <second>59</second>
              <year>2024</year>
-             <month>9</month>
-             <day>26</day>
+             <month>10</month>
+             <day>9</day>
             </datetime>
            </property>
            <property name="minimumDateTime">
@@ -368,8 +361,8 @@ QListView { background: #FFFFFF; alternate-background-color: #00000000; color: #
              <minute>0</minute>
              <second>0</second>
              <year>2024</year>
-             <month>9</month>
-             <day>26</day>
+             <month>10</month>
+             <day>9</day>
             </datetime>
            </property>
           </widget>
@@ -477,7 +470,7 @@ QListView { background: #FFFFFF; alternate-background-color: #00000000; color: #
            </widget>
           </item>
           <item>
-           <widget class="CDPBaseButton" name="button">
+           <widget class="CDPBaseButton" name="btnDetails">
             <property name="text">
              <string>Details</string>
             </property>
@@ -514,32 +507,69 @@ QListView { background: #FFFFFF; alternate-background-color: #00000000; color: #
            </spacer>
           </item>
           <item>
-           <widget class="CDPBaseLabel" name="label_5">
-            <property name="font">
-             <font>
-              <family>Arial</family>
-              <pointsize>8</pointsize>
-             </font>
-            </property>
+           <widget class="CDPBaseButton" name="btnOneView">
             <property name="text">
-             <string>Page selector</string>
+             <string>OneView</string>
             </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="CDPBaseLineEdit" name="lineEdit">
             <property name="svgFile">
-             <string notr="true">:/themes/openbridge5_day/backgrounds/bgLineEdit.svg</string>
+             <string notr="true">:/themes/openbridge5_day/buttons/buttonPlain.svg</string>
             </property>
-            <property name="cdpRouting" stdset="0">
+            <property name="valueToEmit">
+             <number>3</number>
+            </property>
+            <property name="checkableByEmitValue">
+             <bool>true</bool>
+            </property>
+            <property name="cdpCheckedRouting" stdset="0">
              <string>VWWebGUI.GUIConnections.CurrentPage.Value</string>
             </property>
             <property name="pushRoutables" stdset="0">
              <stringlist notr="true">
-              <string>cdpRouting</string>
+              <string>cdpPressedRouting</string>
              </stringlist>
             </property>
            </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_11">
+            <item>
+             <widget class="CDPBaseLabel" name="label_5">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Arial</family>
+                <pointsize>8</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Page selector</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="CDPBaseLineEdit" name="lineEdit">
+              <property name="precision">
+               <number>0</number>
+              </property>
+              <property name="svgFile">
+               <string notr="true">:/themes/openbridge5_day/backgrounds/bgLineEdit.svg</string>
+              </property>
+              <property name="cdpRouting" stdset="0">
+               <string>VWWebGUI.GUIConnections.CurrentPage.Value</string>
+              </property>
+              <property name="pushRoutables" stdset="0">
+               <stringlist notr="true">
+                <string>cdpRouting</string>
+               </stringlist>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </item>
           <item>
            <widget class="QFrame" name="DarkModeFrame">
@@ -695,7 +725,7 @@ border: 2px solid rgb(200,200,200)}</string>
                         <x>0</x>
                         <y>0</y>
                         <width>596</width>
-                        <height>361</height>
+                        <height>682</height>
                        </rect>
                       </property>
                       <property name="minimumSize">
@@ -828,15 +858,15 @@ border: 2px solid rgb(200,200,200)}</string>
                   </property>
                   <property name="columnsWidth">
                    <stringlist>
-                    <string>Name=130</string>
-                    <string>i_IP=70</string>
+                    <string>IP=150</string>
+                    <string>Name=150</string>
                    </stringlist>
                   </property>
                   <property name="columns">
                    <stringlist>
                     <string>Name</string>
-                    <string>i_IP</string>
-                    <string>i_DisplayName</string>
+                    <string>IP</string>
+                    <string>DisplayName</string>
                    </stringlist>
                   </property>
                   <property name="cdpTargetRouting">
@@ -862,33 +892,7 @@ border: 2px solid rgb(200,200,200)}</string>
                </layout>
               </widget>
              </item>
-             <item>
-              <spacer name="horizontalSpacer">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>40</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
             </layout>
-           </item>
-           <item>
-            <spacer name="verticalSpacer_2">
-             <property name="orientation">
-              <enum>Qt::Vertical</enum>
-             </property>
-             <property name="sizeHint" stdset="0">
-              <size>
-               <width>20</width>
-               <height>40</height>
-              </size>
-             </property>
-            </spacer>
            </item>
           </layout>
          </widget>
@@ -966,15 +970,15 @@ border: 2px solid rgb(200,200,200)}</string>
                 </property>
                 <property name="columnsWidth">
                  <stringlist>
-                  <string>Name=130</string>
-                  <string>i_IP=70</string>
+                  <string>IP=150</string>
+                  <string>Name=150</string>
                  </stringlist>
                 </property>
                 <property name="columns">
                  <stringlist>
                   <string>Name</string>
-                  <string>i_IP</string>
-                  <string>i_DisplayName</string>
+                  <string>IP</string>
+                  <string>DisplayName</string>
                  </stringlist>
                 </property>
                 <property name="cdpTargetRouting">
@@ -1088,8 +1092,8 @@ border: 2px solid rgb(200,200,200)}</string>
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>558</width>
-                      <height>719</height>
+                      <width>548</width>
+                      <height>706</height>
                      </rect>
                     </property>
                     <property name="minimumSize">
@@ -1194,6 +1198,320 @@ border: 2px solid rgb(200,200,200)}</string>
              <property name="cdpTargetRouting">
               <string>VWController</string>
              </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="pageOneView">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QFrame" name="tiles_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>600</width>
+               <height>400</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame{
+border-radius: 10px;
+border: 2px solid rgb(200,200,200)}</string>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="mainWiget_3">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>9</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <widget class="CDPBaseLabel" name="label_8">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>17</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="autoFillBackground">
+                 <bool>false</bool>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="text">
+                 <string>Tiles</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="margin">
+                 <number>40</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="editorWidget_3" native="true">
+                <layout class="QVBoxLayout" name="editor_5">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QScrollArea" name="scrollArea_3">
+                   <property name="styleSheet">
+                    <string notr="true">QFrame{border: 0px;}</string>
+                   </property>
+                   <property name="widgetResizable">
+                    <bool>true</bool>
+                   </property>
+                   <widget class="QWidget" name="scrollAreaWidgetContents_3">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>596</width>
+                      <height>684</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Segoe UI</family>
+                     </font>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_9">
+                     <item>
+                      <widget class="NodeContainer" name="nodeContainer_3">
+                       <property name="autoFillBackground">
+                        <bool>false</bool>
+                       </property>
+                       <property name="childContainerName">
+                        <string>flowWidget_3</string>
+                       </property>
+                       <property name="forceNodes">
+                        <stringlist/>
+                       </property>
+                       <property name="modelFilter">
+                        <stringlist>
+                         <string>VideoWallLib.Tile</string>
+                        </stringlist>
+                       </property>
+                       <property name="cdpTargetRouting">
+                        <string>VWController.VisionController0</string>
+                       </property>
+                       <property name="uiFileName">
+                        <string>tile.ui</string>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_9">
+                        <item>
+                         <widget class="FlowWidget" name="flowWidget_3">
+                          <property name="sizePolicy">
+                           <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                           </sizepolicy>
+                          </property>
+                          <property name="horizontalSpacing">
+                           <number>30</number>
+                          </property>
+                          <property name="verticalSpacing">
+                           <number>20</number>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="editor_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame{
+border-radius: 10px;
+border: 2px solid rgb(200,200,200)}</string>
+             </property>
+             <layout class="QVBoxLayout" name="mainWiget_4">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>9</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <widget class="CDPBaseLabel" name="label_9">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>17</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Arial</family>
+                  <pointsize>11</pointsize>
+                 </font>
+                </property>
+                <property name="autoFillBackground">
+                 <bool>false</bool>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::NoFrame</enum>
+                </property>
+                <property name="text">
+                 <string>Cameras</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="margin">
+                 <number>40</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="editorWidget_4" native="true">
+                <layout class="QVBoxLayout" name="editor_6">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QScrollArea" name="scrollArea_4">
+                   <property name="styleSheet">
+                    <string notr="true">QFrame{border: 0px;}</string>
+                   </property>
+                   <property name="widgetResizable">
+                    <bool>true</bool>
+                   </property>
+                   <widget class="QWidget" name="scrollAreaWidgetContents_4">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>448</width>
+                      <height>684</height>
+                     </rect>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_10">
+                     <item>
+                      <widget class="NodeContainer" name="nodeContainer_4">
+                       <property name="autoFillBackground">
+                        <bool>false</bool>
+                       </property>
+                       <property name="childContainerName">
+                        <string>flowWidget_4</string>
+                       </property>
+                       <property name="forceNodes">
+                        <stringlist/>
+                       </property>
+                       <property name="modelFilter">
+                        <stringlist>
+                         <string>VideoWallLib.Camera</string>
+                        </stringlist>
+                       </property>
+                       <property name="cdpTargetRouting">
+                        <string>VWController.Cameras</string>
+                       </property>
+                       <property name="uiFileName">
+                        <string>cameraweb.ui</string>
+                       </property>
+                       <layout class="QHBoxLayout" name="horizontalLayout_10">
+                        <item>
+                         <widget class="FlowWidget" name="flowWidget_4">
+                          <property name="horizontalSpacing">
+                           <number>30</number>
+                          </property>
+                          <property name="verticalSpacing">
+                           <number>20</number>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
             </widget>
            </item>
           </layout>

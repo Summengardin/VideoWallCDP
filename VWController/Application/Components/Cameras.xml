@@ -15,15 +15,21 @@
   </Alarms>
 
   <Subcomponents>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera" src="Components/Cameras/Camera.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera1" src="Components/Cameras/Camera1.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera2" src="Components/Cameras/Camera2.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera3" src="Components/Cameras/Camera3.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera4" src="Components/Cameras/Camera4.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera5" src="Components/Cameras/Camera5.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera6" src="Components/Cameras/Camera6.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera7" src="Components/Cameras/Camera7.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera8" src="Components/Cameras/Camera8.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera00" src="Components/Cameras/Camera00.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera01" src="Components/Cameras/Camera01.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera02" src="Components/Cameras/Camera02.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera03" src="Components/Cameras/Camera03.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera04" src="Components/Cameras/Camera04.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera05" src="Components/Cameras/Camera05.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera06" src="Components/Cameras/Camera06.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera07" src="Components/Cameras/Camera07.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera08" src="Components/Cameras/Camera08.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera09" src="Components/Cameras/Camera09.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera10" src="Components/Cameras/Camera10.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera11" src="Components/Cameras/Camera11.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera12" src="Components/Cameras/Camera12.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera13" src="Components/Cameras/Camera13.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Camera14" src="Components/Cameras/Camera14.xml"></Subcomponent>
     <Operator Description="MQTT Publisher Sequencer block to publish data to the MQTT network via Publish events. Has to be connected to a MQTTClient, via the MQTTClient connector." Model="MQTTIO.Publisher" Name="Publisher">
       <ArgumentMessage Command="131328" Description="Will be emitted when MQTTClient has established the connection with the configured broker" Input="0" Model="Sequencer.DefaultEvent" Name="Connected"></ArgumentMessage>
       <ArgumentMessage Command="131328" Description="Will be emitted when MQTTClient has lost the connection with the configured broker" Input="0" Model="Sequencer.DefaultEvent" Name="Disconnected"></ArgumentMessage>

@@ -1,0 +1,66 @@
+<Component Model="VideoWallLib.Camera" Name="Camera08" src="Components/Cameras/Camera08.xml" Description="Simple component">
+  <SchedulingOrder>TopDown</SchedulingOrder>
+  <SchedulingGroup>Default</SchedulingGroup>
+  <fs>5</fs>
+  <Status>0</Status>
+
+
+  <Signals>
+    <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
+    <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="IP" Type="string"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="DisplayName" Type="string"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;int&gt;" Name="Width" Type="int" Value="1920"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;int&gt;" Name="Height" Type="int" Value="1080"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;float&gt;" Name="Framerate" Type="float" Value="54"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Format" Type="string"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Type" Type="string"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="URI" Type="string"></Signal>
+  </Signals>
+
+  <Alarms>
+    <Alarm Description="A component was suspended!" Name="Component Suspended" Text="Component was suspended!"></Alarm>
+    <Alarm Description="Alarm is triggered (with Text containing the list of errors) when some node of the component (like operator) has configuration fault." Level="Error" Name="ConfigurationFaults"></Alarm>
+  </Alarms>
+
+  <Ports>
+    <Port Input="0" Model="CDPPort" Name="pCamera">
+
+      <Connections>
+        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="IP" Routing="..IP" Type="string" Value=""></Connection>
+        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="DisplayName" Routing="..DisplayName" Type="string" Value=""></Connection>
+        <Connection Input="0" Model="ValuedConnection&lt;int&gt;" Name="Width" Routing="..Width" Type="int" Value="0"></Connection>
+        <Connection Input="0" Model="ValuedConnection&lt;int&gt;" Name="Height" Routing="..Height" Type="int" Value="0"></Connection>
+        <Connection Input="0" Model="ValuedConnection&lt;float&gt;" Name="Framerate" Routing="..Framerate" Type="float" Value="0"></Connection>
+        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Format" Routing="..Format" Type="string" Value=""></Connection>
+        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Type" Routing="..Type" Type="string" Value=""></Connection>
+        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="URI" Routing="..URI" Type="string" Value=""></Connection>
+      </Connections></Port>
+  </Ports>
+
+  <Subcomponents>
+    <Operator Model="Sequencer.JSONEncode" Name="JSONEncode">
+      <Argument BinaryEncodedLength="0" CppName="m_output" Description="JSON encoded output" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="IP" Routing="..IP" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="DisplayName" Routing="..DisplayName" Type="string" Value=""></Argument>
+      <Argument CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;int&gt;" Name="Width" Routing="..Width" Type="int" Value="0"></Argument>
+      <Argument CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;int&gt;" Name="Height" Routing="..Height" Type="int" Value="0"></Argument>
+      <Argument CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;float&gt;" Name="Framerate" Routing="..Framerate" Type="float" Value="0"></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="Format" Routing="..Format" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="Type" Routing="..Type" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="URI" Routing="..URI" Type="string" Value=""></Argument></Operator>
+    <Operator Model="Automation.SearchReplace" Name="TopicFromName" Regex="0" Replace="/" Search="." Type="string">
+      <Argument BinaryEncodedLength="0" CppName="m_input" Description="Default input argument" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In" Routing="..Name" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="m_output" Description="Default output argument" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument></Operator>
+    <Operator Model="SendMessage" Name="SendMessage" TriggerOn="96">
+      <Argument CppName="m_input" Description="Default input argument" Input="1" Model="DefaultArgument&lt;bool&gt;" Name="Trigger" Routing="" Type="bool" Value="0"></Argument>
+      <ArgumentMessage Command="131328" Description="Message out sending CM_TEXTCOMMAND_EVENT command with CM_TEXTCOMMAND by default." Input="0" Model="MessageArgument" Name="MessageOut" RoutingList="..MQTTPublish"></ArgumentMessage>
+      <Argument BinaryEncodedLength="0" CppName="" Input="1" Model="Argument&lt;string&gt;" Name="Payload" Routing="..JSONEncode.Out" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Input="1" Model="Argument&lt;string&gt;" Name="Topic" Routing="..TopicFromName.Out" Type="string" Value=""></Argument></Operator>
+  </Subcomponents>
+
+  <ArgumentMessages>
+    <ArgumentMessage Command="131328" Input="0" Model="MessageArgument" Name="MQTTPublish" RoutingList="..Publisher.Publish"></ArgumentMessage>
+  </ArgumentMessages>
+
+</Component>

@@ -9,7 +9,7 @@
   <CDPVersion>4.13</CDPVersion>
   <Domain>VideoWall</Domain>
 
-  <NetworkInterface Name="ETH0" MAC="" IPAddress="127.0.0.1" SubnetMask="255.255.255.255"></NetworkInterface>
+  <NetworkInterface Name="ETH0" MAC="" IPAddress="10.1.3.179" SubnetMask="255.255.255.0"></NetworkInterface>
 
   <Subcomponents>
     <Subcomponent Name="CDP"                Model="CDP"               src="Components\CDP.xml"></Subcomponent>
