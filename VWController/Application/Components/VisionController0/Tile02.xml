@@ -10,10 +10,10 @@
     <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Source" Type="string"></Signal>
     <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="Brightness" Type="double"></Signal>
     <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="Zoom" Type="double"></Signal>
-    <Signal Description="Upper left" Input="1" Model="CDPSignal&lt;string&gt;" Name="OSDText1" Type="string"></Signal>
-    <Signal Description="Upper mid" Input="1" Model="CDPSignal&lt;string&gt;" Name="OSDText2" Type="string"></Signal>
-    <Signal Description="Upper right" Input="1" Model="CDPSignal&lt;string&gt;" Name="OSDText3" Type="string"></Signal>
-    <Signal Description="Lower mid" Input="1" Model="CDPSignal&lt;string&gt;" Name="OSDText4" Type="string"></Signal>
+    <Signal Description="Top Left" Input="1" Model="CDPSignal&lt;string&gt;" Name="TextTL" Type="string"></Signal>
+    <Signal Description="Top Center" Input="1" Model="CDPSignal&lt;string&gt;" Name="TextTC" Type="string"></Signal>
+    <Signal Description="Top Right" Input="1" Model="CDPSignal&lt;string&gt;" Name="TextTR" Type="string"></Signal>
+    <Signal Description="Bottom Center" Input="1" Model="CDPSignal&lt;string&gt;" Name="TextBC" Type="string"></Signal>
   </Signals>
 
   <Alarms>
@@ -29,20 +29,20 @@
         <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Source" Routing="..Source" Type="string" Value=""></Connection>
         <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Brightness" Routing="..Brightness" Type="string" Value=""></Connection>
         <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Zoom" Routing="..Zoom" Type="string" Value=""></Connection>
-        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="OSDText1" Routing="..OSDText1" Type="string" Value=""></Connection>
-        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="OSDText2" Routing="..OSDText2" Type="string" Value=""></Connection>
-        <Connection Input="0" Model="ValuedConnection&lt;float&gt;" Name="OSDText3" Routing="..OSDText3" Type="float" Value="0"></Connection>
-        <Connection Input="0" Model="ValuedConnection&lt;float&gt;" Name="OSDText4" Routing="..OSDText4" Type="float" Value="0"></Connection>
+        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="TextTL" Routing="..TextTL" Type="string" Value=""></Connection>
+        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="TextTC" Routing="..TextTC" Type="string" Value=""></Connection>
+        <Connection Input="0" Model="ValuedConnection&lt;float&gt;" Name="TextTR" Routing="..TextTR" Type="float" Value="0"></Connection>
+        <Connection Input="0" Model="ValuedConnection&lt;float&gt;" Name="TextBC" Routing="..TextBC" Type="float" Value="0"></Connection>
       </Connections></Port>
   </Ports>
 
   <Subcomponents>
     <Operator Model="Sequencer.JSONEncode" Name="JSONEncode1">
       <Argument BinaryEncodedLength="0" CppName="m_output" Description="JSON encoded output" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="OSD1" Routing="..OSDText.JSONOut" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="OSD2" Routing="..OSDText1.JSONOut" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="OSD3" Routing="..OSDText2.JSONOut" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="OSD4" Routing="..OSDText3.JSONOut" Type="string" Value=""></Argument></Operator>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="OSD1" Routing="..OSDTextTL.JSONOut" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="OSD2" Routing="..OSDTextTC.JSONOut" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="OSD3" Routing="..OSDTextTR.JSONOut" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="OSD4" Routing="..OSDTextBC.JSONOut" Type="string" Value=""></Argument></Operator>
     <Operator Model="Sequencer.JSONEncode" Name="JSONEncode">
       <Argument BinaryEncodedLength="0" CppName="m_output" Description="JSON encoded output" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument>
       <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="Source" Routing="..Source" Type="string" Value=""></Argument>
@@ -60,6 +60,10 @@
     <Operator Model="Automation.SearchReplace" Name="TopicFromName" Regex="0" Replace="/" Search="." Type="string">
       <Argument BinaryEncodedLength="0" CppName="m_input" Description="Default input argument" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In" Routing="..Name" Type="string" Value=""></Argument>
       <Argument BinaryEncodedLength="0" CppName="m_output" Description="Default output argument" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument></Operator>
+    <Subcomponent Model="VideoWallLib.Tile.OSDTextTL" Name="OSDTextTL" src="Components/VisionController0/Tile02/OSDTextTL.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile.OSDTextTC" Name="OSDTextTC" src="Components/VisionController0/Tile02/OSDTextTC.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile.OSDTextTR" Name="OSDTextTR" src="Components/VisionController0/Tile02/OSDTextTR.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile.OSDTextBC" Name="OSDTextBC" src="Components/VisionController0/Tile02/OSDTextBC.xml"></Subcomponent>
   </Subcomponents>
 
   <ArgumentMessages>

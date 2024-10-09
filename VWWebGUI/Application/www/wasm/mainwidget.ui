@@ -725,7 +725,7 @@ border: 2px solid rgb(200,200,200)}</string>
                         <x>0</x>
                         <y>0</y>
                         <width>596</width>
-                        <height>682</height>
+                        <height>361</height>
                        </rect>
                       </property>
                       <property name="minimumSize">
@@ -1302,7 +1302,7 @@ border: 2px solid rgb(200,200,200)}</string>
                       <x>0</x>
                       <y>0</y>
                       <width>596</width>
-                      <height>684</height>
+                      <height>361</height>
                      </rect>
                     </property>
                     <property name="minimumSize">
@@ -1457,8 +1457,8 @@ border: 2px solid rgb(200,200,200)}</string>
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>448</width>
-                      <height>684</height>
+                      <width>65</width>
+                      <height>66</height>
                      </rect>
                     </property>
                     <property name="minimumSize">

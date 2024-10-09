@@ -1,0 +1,40 @@
+<Component Model="VideoWallLib.Tile.OSDTextTR" Name="OSDTextTR" src="Components/VisionController0/Tile02/OSDTextTR.xml" Description="Simple component">
+  <SchedulingOrder>TopDown</SchedulingOrder>
+  <SchedulingGroup>Default</SchedulingGroup>
+  <fs>5</fs>
+  <Status>0</Status>
+
+  <Signals>
+    <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
+    <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Text" Routing="..TextTR" Type="string"></Signal>
+    <Signal Description="Ex.: &quot;Noto Serif Bold&quot;, " Input="1" Model="CDPSignal&lt;string&gt;" Name="FontName" Type="string"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;float&gt;" Name="FontSize" Type="float"></Signal>
+    <Signal Description="R,G,B,A. ex.: &quot;0,0,0,1&quot; for black" Input="1" Model="CDPSignal&lt;string&gt;" Name="FontColor" Type="string"></Signal>
+    <Signal Description="R,G,B,A. ex.: &quot;0,0,0,1&quot; for black" Input="1" Model="CDPSignal&lt;string&gt;" Name="BGColor" Type="string"></Signal>
+    <Signal Description="Upper left of text" Input="1" Model="CDPSignal&lt;int&gt;" Name="PosX" Type="int" Unit="px"></Signal>
+    <Signal Description="Upper left of text" Input="1" Model="CDPSignal&lt;int&gt;" Name="PosY" Type="int" Unit="px"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;float&gt;" Name="Timeout" Type="float" Unit="s"></Signal>
+    <Signal Input="0" Model="CDPSignal&lt;string&gt;" Name="JSONOut" Routing=".JSONEncode.Out" Type="string"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;bool&gt;" Name="Visible" Type="bool"></Signal>
+  </Signals>
+
+  <Alarms>
+    <Alarm Description="A component was suspended!" Name="Component Suspended" Text="Component was suspended!"></Alarm>
+    <Alarm Description="Alarm is triggered (with Text containing the list of errors) when some node of the component (like operator) has configuration fault." Level="Error" Name="ConfigurationFaults"></Alarm>
+  </Alarms>
+
+  <Subcomponents>
+    <Operator Model="Sequencer.JSONEncode" Name="JSONEncode">
+      <Argument BinaryEncodedLength="0" CppName="m_output" Description="JSON encoded output" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="text" Routing="..Text" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="font_name" Routing="..FontName" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="font_size" Routing="..FontSize" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="font_color" Routing="..FontColor" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="bg_color" Routing="..BGColor" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="pos_x" Routing="..PosX" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="pos_y" Routing="..PosY" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="timeout" Routing="..Timeout" Type="string" Value=""></Argument>
+      <Argument CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;bool&gt;" Name="visible" Routing="..Visible" Type="bool" Value="0"></Argument></Operator>
+  </Subcomponents>
+</Component>
