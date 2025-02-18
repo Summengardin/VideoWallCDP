@@ -351,8 +351,8 @@ QListView { background: #FFFFFF; alternate-background-color: #00000000; color: #
              <minute>59</minute>
              <second>59</second>
              <year>2024</year>
-             <month>10</month>
-             <day>9</day>
+             <month>12</month>
+             <day>5</day>
             </datetime>
            </property>
            <property name="minimumDateTime">
@@ -361,8 +361,8 @@ QListView { background: #FFFFFF; alternate-background-color: #00000000; color: #
              <minute>0</minute>
              <second>0</second>
              <year>2024</year>
-             <month>10</month>
-             <day>9</day>
+             <month>12</month>
+             <day>5</day>
             </datetime>
            </property>
           </widget>
@@ -618,7 +618,7 @@ QListView { background: #FFFFFF; alternate-background-color: #00000000; color: #
        <item>
         <widget class="CDPBaseStackedWidget" name="pages">
          <property name="currentIndex">
-          <number>1</number>
+          <number>3</number>
          </property>
          <property name="cdpPageRouting" stdset="0">
           <string>VWWebGUI.GUIConnections.CurrentPage.Value</string>
@@ -1092,8 +1092,8 @@ border: 2px solid rgb(200,200,200)}</string>
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>548</width>
-                      <height>706</height>
+                      <width>65</width>
+                      <height>66</height>
                      </rect>
                     </property>
                     <property name="minimumSize">
@@ -1302,7 +1302,7 @@ border: 2px solid rgb(200,200,200)}</string>
                       <x>0</x>
                       <y>0</y>
                       <width>596</width>
-                      <height>361</height>
+                      <height>684</height>
                      </rect>
                     </property>
                     <property name="minimumSize">
@@ -1457,8 +1457,8 @@ border: 2px solid rgb(200,200,200)}</string>
                      <rect>
                       <x>0</x>
                       <y>0</y>
-                      <width>65</width>
-                      <height>66</height>
+                      <width>448</width>
+                      <height>684</height>
                      </rect>
                     </property>
                     <property name="minimumSize">

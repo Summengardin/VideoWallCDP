@@ -15,6 +15,7 @@
     <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Format" Type="string"></Signal>
     <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Type" Type="string"></Signal>
     <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="URI" Type="string"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;bool&gt;" Name="SaveTpoJson" Type="bool"></Signal>
   </Signals>
 
   <Alarms>
@@ -56,9 +57,29 @@
       <ArgumentMessage Command="131328" Description="Message out sending CM_TEXTCOMMAND_EVENT command with CM_TEXTCOMMAND by default." Input="0" Model="MessageArgument" Name="MessageOut" RoutingList="..MQTTPublish"></ArgumentMessage>
       <Argument BinaryEncodedLength="0" CppName="" Input="1" Model="Argument&lt;string&gt;" Name="Payload" Routing="..JSONEncode.Out" Type="string" Value=""></Argument>
       <Argument BinaryEncodedLength="0" CppName="" Input="1" Model="Argument&lt;string&gt;" Name="Topic" Routing="..TopicFromName.Out" Type="string" Value=""></Argument></Operator>
+    <Operator Model="SendMessage" Name="SendMessage1" TriggerOn="4">
+      <Argument CppName="m_input" Description="Default input argument" Input="1" Model="DefaultArgument&lt;bool&gt;" Name="Trigger" Routing="..SaveTpoJson" Type="bool" Value="0"></Argument>
+      <ArgumentMessage Command="131328" Description="Message out sending CM_TEXTCOMMAND_EVENT command with CM_TEXTCOMMAND by default." Input="0" Model="MessageArgument" Name="MessageOut" RoutingList="..TextFileWriter.Write"></ArgumentMessage></Operator>
+    <Operator Description="A service block implementation of a file writer" Model="Sequencer.TextFileWriter" Name="TextFileWriter">
+      <Argument BinaryEncodedLength="0" CppName="" Description="The file name to write to, with the optional path prefix, relative to the application folder" Input="1" Model="Sequencer.Argument&lt;string&gt;" Name="FileName" Routing="" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="An error-text as reported by the underlying operating system." Input="0" Model="Sequencer.Argument&lt;string&gt;" Name="ErrorText" Routing="" Type="string" Value=""></Argument>
+      <Argument CppName="" Description="Set to 0 if you want to overwrite the content of the file, or set to 1 if you want to grow the
+  file by appending to it for each Write event." Input="1" Model="Sequencer.Argument&lt;bool&gt;" Name="Append" Routing="" Type="bool" Value="0"></Argument>
+      <ArgumentMessage Command="131328" Description="Can be used to chain Init events / prepare the system" Input="1" Model="Sequencer.EventIn" Name="Init"></ArgumentMessage>
+      <ArgumentMessage Command="131328" Description="Can be used to chain Init events / prepare the system" Input="0" Model="Sequencer.EventOut" Name="Inited"></ArgumentMessage>
+      <ArgumentMessage Command="131328" Data="TextLine" Description="Writes the TextLine to the file. If Append is set, the TextLine is written at the end of the
+  file, else the file is truncated and then the TextLine is written." Input="1" Model="Sequencer.EventIn" Name="Write"></ArgumentMessage>
+      <ArgumentMessage Command="131328" Description="Emitted by the FileWriter when file writing is complete." Input="0" Model="Sequencer.EventOut" Name="Done"></ArgumentMessage>
+      <ArgumentMessage Command="131328" Data="ErrorText" Description="If an error occurs, this Error event is emitted, and the error text can be found in
+  ErrorText" Input="0" Model="Sequencer.EventOut" Name="Error"></ArgumentMessage>
+      <Argument BinaryEncodedLength="0" CppName="" Description="The text or data that should be written to the file" Input="1" Model="Sequencer.Argument&lt;string&gt;" Name="TextLine" Routing="..JSONEncode.Out" Type="string" Value=""></Argument></Operator>
   </Subcomponents>
 
   <ArgumentMessages>
     <ArgumentMessage Command="131328" Input="0" Model="MessageArgument" Name="MQTTPublish"></ArgumentMessage>
   </ArgumentMessages>
+
+  <Parameters>
+    <Parameter Name="timerTest" Value="5"></Parameter>
+  </Parameters>
 </Component>

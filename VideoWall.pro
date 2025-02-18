@@ -1,4 +1,4 @@
-CDPVERSION = 4.13
+CDPVERSION = 5.0
 TYPE = system
 load(cdp)
 

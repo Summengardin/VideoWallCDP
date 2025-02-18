@@ -1,4 +1,4 @@
-<Component Model="PortMUX" Name="PortMUX" src="Components/PortMUX.xml" Description="A multiplexer component that forwards one input port to one output port selected by Index where Index=0 selects the first input port.">
+<Component Model="PortMUX" Name="PortMUX" src="Components/PortMUX.xml" Description="A multiplexer component that forwards one input port to one output port selected by Index where Index=0 selects the first input port." NoSwitchDelay="0">
   <SchedulingOrder>TopDown</SchedulingOrder>
   <SchedulingGroup>Default</SchedulingGroup>
   <fs>100</fs>
