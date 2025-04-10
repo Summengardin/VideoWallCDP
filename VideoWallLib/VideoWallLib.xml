@@ -1,0 +1,21 @@
+<Library Name="VideoWallLib">
+ <Models>
+  <Model Name="VideoWallLib.Camera"/>
+  <Model Name="VideoWallLib.CameraPort"/>
+  <Model Name="VideoWallLib.Layout"/>
+  <Model Name="VideoWallLib.LayoutPort"/>
+  <Model Name="VideoWallLib.MQTTHandler.MQTTClient"/>
+  <Model Name="VideoWallLib.MQTTHandler"/>
+  <Model Name="VideoWallLib.OSD.OSDText"/>
+  <Model Name="VideoWallLib.OSD"/>
+  <Model Name="VideoWallLib.OSDPort"/>
+  <Model Name="VideoWallLib.OSDText"/>
+  <Model Name="VideoWallLib.SourceOrchestrator"/>
+  <Model Name="VideoWallLib.Tile.OSDTextBC"/>
+  <Model Name="VideoWallLib.Tile.OSDTextTC"/>
+  <Model Name="VideoWallLib.Tile.OSDTextTL"/>
+  <Model Name="VideoWallLib.Tile.OSDTextTR"/>
+  <Model Name="VideoWallLib.Tile"/>
+  <Model Name="VideoWallLib.TilePort"/>
+ </Models>
+</Library>

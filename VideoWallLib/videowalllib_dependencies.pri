@@ -1,0 +1,1 @@
+DEPS += cdpmodel mqttio sequencer

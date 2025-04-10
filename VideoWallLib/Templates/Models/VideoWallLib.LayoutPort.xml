@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Model Name="VideoWallLib.LayoutPort">
+
+  <ModelTypeClass>C++</ModelTypeClass>
+  <BaseModel>CDPPort</BaseModel>
+
+  <Attributes>
+    <Attribute Name="Description" Value="Simple port example" Type="string"></Attribute>
+    <Attribute Name="Model" Value="VideoWallLib.LayoutPort" Type="string" Description="Implementation model used." SaveOnChange="0" Required="1" ReadOnly="1"></Attribute>
+    <Attribute Name="Source01"></Attribute>
+    <Attribute Name="Source02"></Attribute>
+    <Attribute Name="Source03"></Attribute>
+    <Attribute Name="Source04"></Attribute>
+    <Attribute Name="Source11"></Attribute>
+    <Attribute Name="Source12"></Attribute>
+    <Attribute Name="Source13"></Attribute>
+    <Attribute Name="Source14"></Attribute>
+
+    
+  </Attributes>
+
+  <Connections>
+    <Connection Model="CDPPortConnection" Name="MapSource01" Input="1" LocalName=".Source01"></Connection>
+    <Connection Model="CDPPortConnection" Name="MapSource02" Input="1" LocalName=".Source02"></Connection>
+    <Connection Model="CDPPortConnection" Name="MapSource03" Input="1" LocalName=".Source03"></Connection>
+    <Connection Model="CDPPortConnection" Name="MapSource04" Input="1" LocalName=".Source04"></Connection>
+    <Connection Model="CDPPortConnection" Name="MapSource05" Input="1" LocalName=".Source11"></Connection>
+    <Connection Model="CDPPortConnection" Name="MapSource12" Input="1" LocalName=".Source12"></Connection>
+    <Connection Model="CDPPortConnection" Name="MapSource13" Input="1" LocalName=".Source13"></Connection>
+    <Connection Model="CDPPortConnection" Name="MapSource14" Input="1" LocalName=".Source14"></Connection></Connections>
+
+  
+</Model>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Model Name="VideoWallLib.OSD">
+
+  <ModelTypeClass>C++</ModelTypeClass>
+  <BaseModel>CDPComponent</BaseModel>
+  <Element Name="Priority" Value="normal"></Element>
+  <Element Name="fs" Value="5"></Element>
+
+  <Attributes>
+     <Attribute Name="Description" Value="Simple component" Type="string"></Attribute>
+     <Attribute Name="Model" Value="VideoWallLib.OSD" Type="string" Description="Implementation model used." SaveOnChange="0" Required="1" ReadOnly="1"></Attribute>
+  </Attributes>
+
+  <Subcomponents>
+    <Subcomponent Model="VideoWallLib.OSD.OSDText" Name="VideoWallLib.OSD.OSDText"></Subcomponent>
+  </Subcomponents>
+
+</Model>

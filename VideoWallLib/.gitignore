@@ -1,0 +1,14 @@
+**/Dist
+**/debug
+**/release
+**/Makefile*
+**/version.txt
+**/Release_Dynamic
+**/Debug
+**/Debug_Dynamic
+**/Release
+
+**/vc90.pdb
+**/*pro.user*
+**/*.idb
+**/config.xml

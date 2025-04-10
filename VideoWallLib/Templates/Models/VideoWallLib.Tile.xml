@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Model Name="VideoWallLib.Tile">
+
+  <ModelTypeClass>C++</ModelTypeClass>
+  <BaseModel>CDPComponent</BaseModel>
+  <Element Name="Priority" Value="normal"></Element>
+  <Element Name="fs" Value="5"></Element>
+
+  <Attributes>
+     <Attribute Name="Description" Value="Simple component" Type="string"></Attribute>
+     <Attribute Name="Model" Value="VideoWallLib.Tile" Type="string" Description="Implementation model used." SaveOnChange="0" Required="1" ReadOnly="1"></Attribute>
+  </Attributes>
+
+  <Signals>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="Source" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;double&gt;" Name="Brightness" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;double&gt;" Name="Zoom" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="TextTL" Description="Top Left" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="TextTC" Description="Top Center" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="TextTR" Description="Top Right" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="TextBC" Description="Bottom Center" Input="1"></Signal>
+  </Signals>
+
+  <Ports>
+    <Port Model="CDPPort" Name="pTile" Input="0">
+
+      <Connections>
+        <Connection Model="ValuedConnection&lt;string&gt;" Name="Source" Input="0" Routing="..Source"></Connection>
+        <Connection Model="ValuedConnection&lt;string&gt;" Name="Brightness" Input="0" Routing="..Brightness"></Connection>
+        <Connection Model="ValuedConnection&lt;string&gt;" Name="Zoom" Input="0" Routing="..Zoom"></Connection>
+        <Connection Model="ValuedConnection&lt;string&gt;" Name="TextTL" Input="0" Routing="..TextTL"></Connection>
+        <Connection Model="ValuedConnection&lt;string&gt;" Name="TextTC" Input="0" Routing="..TextTC"></Connection>
+        <Connection Model="ValuedConnection&lt;float&gt;" Name="TextTR" Input="0" Routing="..TextTR"></Connection>
+        <Connection Model="ValuedConnection&lt;float&gt;" Name="TextBC" Input="0" Routing="..TextBC"></Connection>
+      </Connections></Port></Ports>
+  
+
+  <Subcomponents>
+    <Subcomponent Model="VideoWallLib.Tile.OSDTextTL" Name="VideoWallLib.Tile.OSDTextTL"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile.OSDTextTC" Name="VideoWallLib.Tile.OSDTextTC"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile.OSDTextTR" Name="VideoWallLib.Tile.OSDTextTR"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile.OSDTextBC" Name="VideoWallLib.Tile.OSDTextBC"></Subcomponent>
+    <Operator Model="Sequencer.JSONEncode" Name="JSONEncode1">
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="OSD1" Routing="..OSDTextTL.JSONOut"></Argument>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="OSD2" TypeColorHint="#4697c3" Routing="..OSDTextTC.JSONOut"></Argument>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="OSD3" TypeColorHint="#4697c3" Routing="..OSDTextTR.JSONOut"></Argument>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="OSD4" TypeColorHint="#4697c3" Routing="..OSDTextBC.JSONOut"></Argument></Operator>
+    <Operator Model="Sequencer.JSONEncode" Name="JSONEncode">
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="Source" Routing="..Source"></Argument>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;double&gt;" Name="Brightness" TypeColorHint="#4697c3" Routing="..Brightness"></Argument>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;double&gt;" Name="Zoom" TypeColorHint="#4697c3" Routing="..Zoom"></Argument>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="OSD" Routing="..JSONEncode1.Out"></Argument></Operator>
+    <Operator Model="Automation.SearchReplace" Name="TopicFromName" Search="." Replace="/">
+
+      <Argument Name="In" Routing="..Name"></Argument>
+      </Operator>
+    <Operator Model="SendMessage" Name="SendMessage" Description="Value to Message conversion operator sending EventMessage CM_TEXTCOMMAND by default with name mapped input arguments added to the operator as parameters." TriggerOn="96">
+      <ArgumentMessage Description="Message out sending CM_TEXTCOMMAND_EVENT command with CM_TEXTCOMMAND by default." Model="MessageArgument" Name="MessageOut" Input="0" InputOutputHint="T" RoutingType="Push" RoutingList="..MQTTPublish"></ArgumentMessage>
+      <Argument Model="Argument&lt;string&gt;" Name="Payload" TypeColorHint="#4697c3" Routing="..JSONEncode.Out"></Argument>
+      <Argument Model="Argument&lt;string&gt;" Name="Topic" TypeColorHint="#4697c3" Routing="..TopicFromName.Out"></Argument></Operator>
+  </Subcomponents>
+
+  <ArgumentMessages>
+    <ArgumentMessage Model="MessageArgument" Name="MQTTPublish"></ArgumentMessage>
+  </ArgumentMessages>
+
+</Model>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Model Name="VideoWallLib.TilePort">
+
+  <ModelTypeClass>C++</ModelTypeClass>
+  <BaseModel>CDPPort</BaseModel>
+
+  <Attributes>
+    <Attribute Name="Description" Value="Simple port example" Type="string"></Attribute>
+    <Attribute Name="Model" Value="VideoWallLib.TilePort" Type="string" Description="Implementation model used." SaveOnChange="0" Required="1" ReadOnly="1"></Attribute>
+    <Attribute Name="Source" Value="Camera01"></Attribute>
+  </Attributes>
+
+  <Connections>
+    <Connection Model="CDPPortConnection" Name="MapSource" Input="1" LocalName=".Source"></Connection></Connections>
+  
+</Model>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Model Name="VideoWallLib.OSDPort">
+
+  <ModelTypeClass>C++</ModelTypeClass>
+  <BaseModel>CDPPort</BaseModel>
+
+  <Attributes>
+    <Attribute Name="Description" Value="Simple port example" Type="string"></Attribute>
+    <Attribute Name="Model" Value="VideoWallLib.OSDPort" Type="string" Description="Implementation model used." SaveOnChange="0" Required="1" ReadOnly="1"></Attribute>
+    <Attribute Name="Text"></Attribute>
+    <Attribute Name="FontName"></Attribute>
+    <Attribute Name="FontSize"></Attribute>
+    <Attribute Name="PosX"></Attribute>
+    <Attribute Name="PosY"></Attribute>
+    <Attribute Name="Timeout" Type="float" Description="Seconds"></Attribute>
+    <Attribute Name="FontColor" Description="4 comma separated values with range 0-1. In order: R,G,B,A. ex.: &quot;0,0,0,0&quot; for black"></Attribute>
+    <Attribute Name="BGColor" Description="4 comma separated values with range 0-1. In order: R,G,B,A. ex.: &quot;0,0,0,0&quot; for black"></Attribute>
+  </Attributes>
+
+  <Connections>
+    <Connection Model="CDPPortConnection" Name="MapText" Input="1" LocalName=".Text"></Connection>
+    <Connection Model="CDPPortConnection" Name="MapFontName" Input="1" LocalName=".FontName"></Connection>
+    <Connection Model="CDPPortConnection" Name="MapFontSize" Input="1" LocalName=".FontSize"></Connection>
+    <Connection Model="CDPPortConnection" Name="MapPosX" Input="1" LocalName=".PosX"></Connection>
+    <Connection Model="CDPPortConnection" Name="MapPosY" Input="1" LocalName=".PosY"></Connection>
+    <Connection Model="CDPPortConnection" Name="MapTimeout" Input="1" LocalName=".Timeout"></Connection>
+    <Connection Model="CDPPortConnection" Name="MapFontColor" Input="1" LocalName=".FontColor"></Connection>
+    <Connection Model="CDPPortConnection" Name="MapBGColor" Input="1" LocalName=".BGColor"></Connection>
+  </Connections>
+</Model>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Model Name="VideoWallLib.OSDText">
+
+  <ModelTypeClass>C++</ModelTypeClass>
+  <BaseModel>CDPComponent</BaseModel>
+  <Element Name="Priority" Value="normal"></Element>
+  <Element Name="fs" Value="5"></Element>
+
+  <Attributes>
+     <Attribute Name="Description" Value="Simple component" Type="string"></Attribute>
+    <Attribute Name="Model" Value="VideoWallLib.OSDText"></Attribute></Attributes>
+
+  <Signals>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="Text" Input="1" Routing=""></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="FontName" Description="Ex.: &quot;Noto Serif Bold&quot;, " Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;float&gt;" Name="FontSize" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="FontColor" Description="R,G,B,A. ex.: &quot;0,0,0,1&quot; for black" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="BGColor" Description="R,G,B,A. ex.: &quot;0,0,0,1&quot; for black" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;int&gt;" Name="PosX" Unit="px" Description="Upper left of text" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;int&gt;" Name="PosY" Unit="px" Description="Upper left of text" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;float&gt;" Name="Timeout" Unit="s" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="JSONOut" Routing=""></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;bool&gt;" Name="Visible"></Signal>
+  </Signals>
+
+  <Subcomponents>
+    <Operator Model="Sequencer.JSONEncode" Name="JSONEncode">
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="text" Routing=""></Argument>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="font_name" TypeColorHint="#4697c3" Routing=""></Argument>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="font_size" TypeColorHint="#4697c3" Routing=""></Argument>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="font_color" TypeColorHint="#4697c3" Routing=""></Argument>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="bg_color" TypeColorHint="#4697c3" Routing=""></Argument>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="pos_x" TypeColorHint="#4697c3" Routing=""></Argument>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="pos_y" TypeColorHint="#4697c3" Routing=""></Argument>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="timeout" TypeColorHint="#4697c3" Routing=""></Argument>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;bool&gt;" Name="visible" TypeColorHint="#4697c3" Routing=""></Argument></Operator>
+  </Subcomponents>
+
+</Model>

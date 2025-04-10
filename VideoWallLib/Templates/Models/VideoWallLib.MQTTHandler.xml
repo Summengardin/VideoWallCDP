@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Model Name="VideoWallLib.MQTTHandler">
+
+  <ModelTypeClass>C++</ModelTypeClass>
+  <BaseModel>CDPComponent</BaseModel>
+  <Element Name="Priority" Value="normal"></Element>
+  <Element Name="fs" Value="5"></Element>
+
+  <Attributes>
+     <Attribute Name="Description" Value="Simple component" Type="string"></Attribute>
+     <Attribute Name="Model" Value="VideoWallLib.MQTTHandler" Type="string" Description="Implementation model used." SaveOnChange="0" Required="1" ReadOnly="1"></Attribute>
+  </Attributes>
+
+  <Subcomponents>
+    <Operator Model="SendMessage" Name="SendMessage" Description="Value to Message conversion operator sending EventMessage CM_TEXTCOMMAND by default with name mapped input arguments added to the operator as parameters.">
+      <ArgumentMessage Description="Message out sending CM_TEXTCOMMAND_EVENT command with CM_TEXTCOMMAND by default." Model="MessageArgument" Name="MessageOut" Input="0" InputOutputHint="T" RoutingType="Push" RoutingList="..Publisher.Publish"></ArgumentMessage></Operator>
+    <Operator Model="MQTTIO.Publisher" Name="Publisher">
+
+      <Client Name="MQTTClient" Object="..MQTTClient"></Client>
+      </Operator>
+    <Subcomponent BrokerHost="127.0.0.1" BrokerPort="1883" Encryption="Unencrypted" Model="VideoWallLib.MQTTHandler.MQTTClient" Name="VideoWallLib.MQTTHandler.MQTTClient"></Subcomponent></Subcomponents>
+  
+
+  <ArgumentMessages></ArgumentMessages>
+  
+
+</Model>

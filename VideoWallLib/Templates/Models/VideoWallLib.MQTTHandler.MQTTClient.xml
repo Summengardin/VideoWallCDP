@@ -1,0 +1,9 @@
+<Model Name="VideoWallLib.MQTTHandler.MQTTClient">
+  <BaseModel>MQTTIO.MQTTClient</BaseModel>
+  <ModelTypeClass>XML</ModelTypeClass>
+
+  <Attributes>
+    <Attribute Name="Model" Value="VideoWallLib.MQTTHandler.MQTTClient"></Attribute>
+  </Attributes>
+
+</Model>

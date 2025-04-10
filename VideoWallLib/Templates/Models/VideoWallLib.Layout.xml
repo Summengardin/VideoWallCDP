@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Model Name="VideoWallLib.Layout">
+
+  <ModelTypeClass>C++</ModelTypeClass>
+  <BaseModel>CDPComponent</BaseModel>
+  <Element Name="Priority" Value="normal"></Element>
+  <Element Name="fs" Value="5"></Element>
+
+  <Attributes>
+     <Attribute Name="Description" Value="Simple component" Type="string"></Attribute>
+     <Attribute Name="Model" Value="VideoWallLib.Layout" Type="string" Description="Implementation model used." SaveOnChange="0" Required="1" ReadOnly="1"></Attribute>
+  </Attributes>
+
+  <Ports>
+    <Port Model="VideoWallLib.LayoutPort" Name="pLayout" Input="0"></Port>
+  </Ports>
+
+  <Signals>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Source01"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="Source02" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="Source03" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="Source04" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="Source11" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="Source12" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="Source13" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="Source14" Input="1"></Signal>
+  </Signals>
+
+</Model>

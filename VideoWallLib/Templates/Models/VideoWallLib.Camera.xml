@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Model Name="VideoWallLib.Camera">
+ <ModelTypeClass>C++</ModelTypeClass>
+ <BaseModel>CDPComponent</BaseModel>
+ <Element Name="Priority" Value="normal"/>
+ <Element Name="fs" Value="5"/>
+ <Attributes>
+  <Attribute Name="Description" Type="string" Value="Simple component"/>
+  <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.Camera"/>
+ </Attributes>
+ <Ports>
+  <Port Input="0" Model="CDPPort" Name="pCamera">
+   <Connections>
+    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="IP" Routing="..IP"/>
+    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="DisplayName" Routing="..DisplayName"/>
+    <Connection Input="0" Model="ValuedConnection&lt;int&gt;" Name="Width" Routing="..Width"/>
+    <Connection Input="0" Model="ValuedConnection&lt;int&gt;" Name="Height" Routing="..Height"/>
+    <Connection Input="0" Model="ValuedConnection&lt;float&gt;" Name="Framerate" Routing="..Framerate"/>
+    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Format" Routing="..Format"/>
+    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Type" Routing="..Type"/>
+    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="URI" Routing="..URI"/>
+   </Connections>
+  </Port>
+ </Ports>
+ <Signals>
+  <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="IP" Type="string"/>
+  <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="DisplayName" Type="string"/>
+  <Signal Input="1" Model="CDPSignal&lt;int&gt;" Name="Width" Value="1920"/>
+  <Signal Input="1" Model="CDPSignal&lt;int&gt;" Name="Height" Type="int" Value="1080"/>
+  <Signal Input="1" Model="CDPSignal&lt;float&gt;" Name="Framerate" Type="float" Value="54"/>
+  <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Format" Type="string"/>
+  <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Type"/>
+  <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="URI"/>
+  <Signal Input="1" Model="CDPSignal&lt;bool&gt;" Name="SaveTpoJson"/>
+ </Signals>
+ <Tags/>
+ <Subcomponents>
+  <Operator Model="Sequencer.JSONEncode" Name="JSONEncode">
+   <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="IP" Routing="..IP" TypeColorHint="#4697c3"/>
+   <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="DisplayName" Routing="..DisplayName" TypeColorHint="#4697c3"/>
+   <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;int&gt;" Name="Width" Routing="..Width" TypeColorHint="#4697c3"/>
+   <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;int&gt;" Name="Height" Routing="..Height" TypeColorHint="#4697c3"/>
+   <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;float&gt;" Name="Framerate" Routing="..Framerate" TypeColorHint="#4697c3"/>
+   <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="Format" Routing="..Format" TypeColorHint="#4697c3"/>
+   <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="Type" Routing="..Type" TypeColorHint="#4697c3"/>
+   <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="URI" Routing="..URI"/>
+  </Operator>
+  <Operator Model="Automation.SearchReplace" Name="TopicFromName" Replace="/" Search=".">
+   <Argument Name="In" Routing="..Name"/>
+  </Operator>
+  <Operator Description="Value to Message conversion operator sending EventMessage CM_TEXTCOMMAND by default with name mapped input arguments added to the operator as parameters." Model="SendMessage" Name="SendMessage" TriggerOn="96">
+   <ArgumentMessage Description="Message out sending CM_TEXTCOMMAND_EVENT command with CM_TEXTCOMMAND by default." Input="0" InputOutputHint="T" Model="MessageArgument" Name="MessageOut" RoutingList="..MQTTPublish" RoutingType="Push"/>
+   <Argument Model="Argument&lt;string&gt;" Name="Payload" Routing="..JSONEncode.Out" TypeColorHint="#4697c3"/>
+   <Argument Model="Argument&lt;string&gt;" Name="Topic" Routing="..TopicFromName.Out" TypeColorHint="#4697c3"/>
+  </Operator>
+  <Operator Description="Value to Message conversion operator sending EventMessage CM_TEXTCOMMAND by default with name mapped input arguments added to the operator as parameters." Model="SendMessage" Name="SendMessage1" TriggerOn="4">
+   <ArgumentMessage Description="Message out sending CM_TEXTCOMMAND_EVENT command with CM_TEXTCOMMAND by default." Input="0" InputOutputHint="T" Model="MessageArgument" Name="MessageOut" RoutingList="..TextFileWriter.Write" RoutingType="Push"/>
+   <Argument Name="Trigger" Routing="..SaveTpoJson"/>
+  </Operator>
+  <Operator File="./jsonOutput.json" Model="Sequencer.TextFileWriter" Name="TextFileWriter">
+   <Argument Name="TextLine" Routing="..JSONEncode.Out"/>
+  </Operator>
+ </Subcomponents>
+ <ArgumentMessages>
+  <ArgumentMessage Model="MessageArgument" Name="MQTTPublish"/>
+ </ArgumentMessages>
+ <Element LogEventOnChange="0" Name="propIP" RouteMethod="RouteEvent" SaveOnChange="0" Type="string"/>
+ <States>
+  <State Name="SaveToJson"/>
+ </States>
+ <Parameters>
+  <Parameter Name="timerTest" Value="5"/>
+ </Parameters>
+</Model>
