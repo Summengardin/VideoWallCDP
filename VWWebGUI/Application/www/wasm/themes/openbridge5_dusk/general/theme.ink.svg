@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg" enable-background="new 0 0 163.4 268.3" version="1.1" viewBox="0 0 163.4 268.3" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+ <defs id="defs1">
+  <linearGradient id="element-disabled-color">
+   <stop id="stop1" stop-color="#000001" stop-opacity=".2" offset="0"/>
+  </linearGradient>
+  <linearGradient id="element-active-color">
+   <stop id="stop2" stop-color="#1a1a1a" offset="0"/>
+  </linearGradient>
+  <linearGradient id="element-neutral-color">
+   <stop id="stop3" stop-color="#010000" stop-opacity=".6" offset="0"/>
+  </linearGradient>
+  <linearGradient id="instrument-enhanced-primary-color">
+   <stop id="stop4" stop-color="#166ce4" offset="0"/>
+  </linearGradient>
+  <linearGradient id="instrument-enhanced-secondary-color">
+   <stop id="stop51" stop-color="#325b9b" offset="0"/>
+  </linearGradient>
+  <linearGradient id="on-normal-active-color">
+   <stop id="stop5" stop-color="#1a1a1b" offset="0"/>
+  </linearGradient>  
+  <linearGradient id="on-normal-neutral-color">
+   <stop id="stop6" stop-color="#000100" stop-opacity=".55" offset="0"/>
+  </linearGradient>
+ </defs>
+<g id="Layer1">
+	<rect id="rect" y="40" width="163.4" height="228.3" fill="#edf0f3"/>
+	<rect id="cdpTitlePane" width="163.4" height="40" fill="#e3e6ea"/>
+	<text id="cdpBackPixPath" transform="translate(10.554,170.55)" font-family="Open Sans" font-size="12px">:/svg/bgDark.png</text>
+	<text id="cdpFontColorMainInv" transform="translate(10.554,132.22)" fill="#ffffff" font-family="Open Sans" font-size="10px">Main font color inverted</text>
+	<text id="cdpFontColorMain" transform="translate(10.554,112)" fill="url(#element-neutral-color)" font-family="Open Sans" font-size="16px">Main font color</text>
+	<text id="cdpTitleHeight" transform="translate(173.55,23.998)" fill="#929293" font-family="Arial" font-size="10px">40</text>
+	<text id="cdpTitle" transform="translate(10.554,23.998)" fill="url(#element-neutral-color)" font-family="'Open Sans'" font-size="18px">TITLE: AlignLeft,AlignVCenter</text>
+	<text id="cdpSubHeading" transform="translate(10.554,52.998)" fill="url(#element-neutral-color)" font-family="Open Sans" font-size="16px">SUB: AlignHCenter,AlignVCenter</text>
+	<text id="cdpValue" transform="translate(10.554,75.331)" fill="url(#instrument-enhanced-secondary-color)" font-family="Open Sans" font-size="18px">Value</text>
+	<text id="cdpValuePostfix" transform="translate(10.554,92.331)" fill="url(#element-neutral-color)" font-family="Open Sans" font-size="18px">ValuePostfix</text>
+	<text id="cdpFontColorUnit" transform="translate(10.554,151.55)" fill="url(#element-neutral-color)" font-family="Open Sans" font-size="12px">Unit font color</text>
+</g>
+</svg>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg id="svg" width="3072.5" height="683.03" enable-background="new 0 0 440 600" version="1.1" viewBox="0 0 3042.3 676.31" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <metadata id="metadata108">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+    
+  <g id="Text" transform="translate(17.017,35.593)">
+    <text id="text3462" x="114.68758" y="-62.75948" fill="#000000" font-family="Verdana" letter-spacing="0px" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:0%" xml:space="preserve">
+      <tspan id="tspan3464" x="114.68758" y="-62.75948" font-size="36px" style="line-height:1.25">cdpPicture0</tspan>
+    </text>
+    <text id="text3466" x="435.34018" y="-62.960556" fill="#000000" font-family="Verdana" letter-spacing="0px" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:0%" xml:space="preserve">
+      <tspan id="tspan3468" x="435.34018" y="-62.960556" font-size="36px" style="line-height:1.25">cdpPicture1</tspan>
+    </text>
+    <rect id="background" x="-17.017" y="-35.593" width="1132.2" height="670.41" display="true" fill="#3a3d3e"/>
+  </g>
+  <g id="Layer1" transform="translate(-96.938,3.0627)">
+    <g id="cdpPicture0" transform="matrix(.99017 0 0 .99017 19.231 3.852)">
+      <rect id="rect4098" x="158.99" y="27.143" width="240" height="75" fill="none" stroke-miterlimit="10"/>
+      <g id="g209377" transform="matrix(1.0083,0,0,1.0088,-25.867,-14.539)">
+        <text id="text4158" x="265.26761" y="83.456818" fill="#F2F2F2" font-family="MyriadPro-Regular" font-size="18px" stroke-width=".98307" style="line-height:0%">
+          <tspan id="tspan1862" fill="#F2F2F2" font-family="MyriadPro-Regular" font-size="31.729px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Winch</tspan>
+        </text>
+        <g id="g4170" fill="none" stroke="#F2F2F2" stroke-miterlimit="10" stroke-width="1.983">
+          <g id="g4172" display="none">
+            <line id="line4174" x1="198.79" x2="240.02" y1="78.319" y2="78.319"/>
+            <polygon id="polygon4176" points="198.54 82.828 189.52 78.319 198.54 73.81"/>
+            <polygon id="polygon4178" points="240.5 74.153 249.52 78.662 240.5 83.171"/>
+          </g>
+          <g id="g4180">
+            <line id="line4182" x1="219.69" x2="219.69" y1="57.767" y2="98.992"/>
+            <polygon id="polygon4184" points="215.18 57.509 219.69 48.491 224.2 57.509"/>
+            <polygon id="polygon4186" points="223.86 99.473 219.35 108.49 214.84 99.473"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="cdpPicture1" transform="matrix(.99017 0 0 .99017 316.41 3.852)">
+      <rect id="rect95630" x="158.99" y="27.143" width="240" height="75" fill="none" stroke-miterlimit="10"/>
+      <g id="g95652" transform="matrix(1.0083,0,0,1.0088,-25.867,-14.539)">
+        <text id="text95632" x="265.26761" y="83.456818" fill="#F2F2F2" font-family="MyriadPro-Regular" font-size="18px" stroke-width=".98307" style="line-height:0%">
+          <tspan id="tspan3190" fill="#F2F2F2" font-family="MyriadPro-Regular" font-size="31.729px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Winch</tspan>
+        </text>
+        <g id="g95650" fill="none" stroke="#F2F2F2" stroke-miterlimit="10" stroke-width="1.983">
+          <g id="g95640">
+            <line id="line95634" x1="198.79" x2="240.02" y1="78.319" y2="78.319"/>
+            <polygon id="polygon95636" points="198.54 82.828 189.52 78.319 198.54 73.81"/>
+            <polygon id="polygon95638" points="240.5 74.153 249.52 78.662 240.5 83.171"/>
+          </g>
+          <g id="g95648" display="none">
+            <line id="line95642" x1="219.69" x2="219.69" y1="57.767" y2="98.992"/>
+            <polygon id="polygon95644" points="224.2 57.509 215.18 57.509 219.69 48.491"/>
+            <polygon id="polygon95646" points="214.84 99.473 223.86 99.473 219.35 108.49"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

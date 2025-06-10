@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg" enable-background="new 0 0 40 60" version="1.1" viewBox="0 0 40 60" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+
+<g id="Layer1">
+ <g id="cdpBackground">
+  <rect id="rect" width="40" height="60" fill="#1F1F1F"/>
+  <rect id="rect865" width="40" height="40" fill="#1F1F1F"/>
+  <rect id="rect867" x="4" y="39" width="32" height="1" fill="#FFFFFF" fill-opacity=".078"/>
+ </g>
+ <rect id="cdpBorderMarginBottomRight" x="34" y="54" width="6" height="6" fill="none"/>
+ <rect id="cdpBorderMarginTopLeft" width="6" height="40" fill="none"/>
+</g>
+<g id="Styles">
+ <g id="cdpBackgroundStyle1">
+  <rect id="rect830" width="40" height="60" fill="#1F1F1F"/>
+ </g>
+  <g id="cdpBackgroundStyle2">
+	 <rect id="rect970" width="40" height="60" fill="#1A1A1A"/>
+ </g>
+</g>
+</svg>

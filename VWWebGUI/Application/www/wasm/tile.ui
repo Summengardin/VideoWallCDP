@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>448</width>
+    <width>475</width>
     <height>400</height>
    </rect>
   </property>
@@ -38,7 +38,7 @@
    <bool>false</bool>
   </property>
   <property name="cdpTargetRouting">
-   <string>VWController.VisionController0.Tile01</string>
+   <string>VWController.VisionControllers.VisionController0.Tile01</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="leftMargin">
@@ -69,7 +69,7 @@
      </property>
      <property name="maximumSize">
       <size>
-       <width>200</width>
+       <width>400</width>
        <height>400</height>
       </size>
      </property>
@@ -127,17 +127,87 @@ border: 2px solid rgb(200,200,200)}
         </property>
         <item>
          <property name="text">
-          <string>Camera</string>
+          <string>Camera01</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Camera1</string>
+          <string>Camera02</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Camera2</string>
+          <string>Camera03</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Camera04</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Camera05</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Camera06</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Camera07</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Camera08</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Camera09</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Camera10</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Camera11</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Camera12</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Camera13</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Camera14</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Camera15</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Camera16</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Camera17</string>
          </property>
         </item>
        </widget>
@@ -154,20 +224,6 @@ border: 2px solid rgb(200,200,200)}
         <property name="spacing">
          <number>3</number>
         </property>
-        <item row="2" column="1">
-         <widget class="CDPBaseLabel" name="label_105">
-          <property name="text">
-           <string>Zoom</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="0">
-         <widget class="CDPBaseLabel" name="label_106">
-          <property name="text">
-           <string>Brightness</string>
-          </property>
-         </widget>
-        </item>
         <item row="0" column="1">
          <widget class="CDPBaseLineEdit" name="lineEdit_86">
           <property name="precision">
@@ -180,7 +236,7 @@ border: 2px solid rgb(200,200,200)}
            <double>100.000000000000000</double>
           </property>
           <property name="cdpRouting" stdset="0">
-           <string>.Zoom.Value</string>
+           <string>.ZoomSpeed.Value</string>
           </property>
           <property name="cdpPromptForChanges" stdset="0">
            <bool>false</bool>
@@ -189,6 +245,37 @@ border: 2px solid rgb(200,200,200)}
            <stringlist notr="true">
             <string>cdpRouting</string>
            </stringlist>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="CDPBaseCheckBox" name="checkBox_14">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="pushRoutables" stdset="0">
+           <stringlist>
+            <string>cdpRouting</string>
+           </stringlist>
+          </property>
+          <property name="text">
+           <string>Auto</string>
+          </property>
+          <property name="cdpRouting" stdset="0">
+           <string>VideoWallMQTTApp.MQTTClient.VisionControllers.VisionController0.Tile02.ExposureAuto.Value</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="CDPBaseLabel" name="label_107">
+          <property name="text">
+           <string>Pan</string>
           </property>
          </widget>
         </item>
@@ -216,42 +303,34 @@ border: 2px solid rgb(200,200,200)}
           </property>
          </widget>
         </item>
-        <item row="1" column="1">
-         <widget class="CDPBaseSlider" name="slider_37">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="numPos">
-           <enum>CDPBaseTickMarks::NumbersAutoLeft</enum>
-          </property>
-          <property name="numFont">
-           <font>
-            <pointsize>5</pointsize>
-            <stylestrategy>PreferAntialias</stylestrategy>
-           </font>
-          </property>
-          <property name="numPrecision" stdset="0">
+        <item row="0" column="2">
+         <widget class="CDPBaseLineEdit" name="lineEdit_87">
+          <property name="precision">
            <number>2</number>
           </property>
-          <property name="maxValue">
-           <double>1.000000000000000</double>
-          </property>
           <property name="svgFile">
-           <string notr="true">:/themes/openbridge5_day/sliders/sliderRoundKnob.svg</string>
+           <string notr="true">:/themes/openbridge5_day/backgrounds/bgLineEdit.svg</string>
+          </property>
+          <property name="cdpScaling" stdset="0">
+           <double>100.000000000000000</double>
           </property>
           <property name="cdpRouting" stdset="0">
-           <string>.Zoom.Value</string>
+           <string>.PanSpeed.Value</string>
           </property>
-          <property name="cdpSend" stdset="0">
-           <enum>CDPBaseSlider::onSliderMoved</enum>
+          <property name="cdpPromptForChanges" stdset="0">
+           <bool>false</bool>
           </property>
           <property name="pushRoutables" stdset="0">
            <stringlist notr="true">
             <string>cdpRouting</string>
            </stringlist>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="CDPBaseLabel" name="label_105">
+          <property name="text">
+           <string>Zoom</string>
           </property>
          </widget>
         </item>
@@ -303,27 +382,185 @@ border: 2px solid rgb(200,200,200)}
           </property>
          </widget>
         </item>
-        <item row="3" column="0">
-         <widget class="CDPBaseCheckBox" name="checkBox_14">
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>16777215</height>
-           </size>
+        <item row="1" column="2">
+         <widget class="CDPBaseSlider" name="slider_38">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
           </property>
-          <property name="layoutDirection">
-           <enum>Qt::LeftToRight</enum>
+          <property name="numPos">
+           <enum>CDPBaseTickMarks::NumbersAutoLeft</enum>
+          </property>
+          <property name="numFont">
+           <font>
+            <pointsize>5</pointsize>
+            <stylestrategy>PreferAntialias</stylestrategy>
+           </font>
+          </property>
+          <property name="numPrecision" stdset="0">
+           <number>2</number>
+          </property>
+          <property name="minValue">
+           <double>-1.000000000000000</double>
+          </property>
+          <property name="maxValue">
+           <double>1.000000000000000</double>
+          </property>
+          <property name="svgFile">
+           <string notr="true">:/themes/openbridge5_day/sliders/sliderRoundKnob.svg</string>
+          </property>
+          <property name="joystick" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="fillStartValue">
+           <double>0.000000000000000</double>
+          </property>
+          <property name="cdpRouting" stdset="0">
+           <string>.PanSpeed.Value</string>
+          </property>
+          <property name="cdpSend" stdset="0">
+           <enum>CDPBaseSlider::onMoveAndRelease</enum>
           </property>
           <property name="pushRoutables" stdset="0">
-           <stringlist>
+           <stringlist notr="true">
             <string>cdpRouting</string>
            </stringlist>
           </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="CDPBaseLabel" name="label_106">
           <property name="text">
-           <string>Auto</string>
+           <string>Brightness</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="CDPBaseSlider" name="slider_37">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="numPos">
+           <enum>CDPBaseTickMarks::NumbersAutoLeft</enum>
+          </property>
+          <property name="numFont">
+           <font>
+            <pointsize>5</pointsize>
+            <stylestrategy>PreferAntialias</stylestrategy>
+           </font>
+          </property>
+          <property name="numPrecision" stdset="0">
+           <number>2</number>
+          </property>
+          <property name="minValue">
+           <double>-1.000000000000000</double>
+          </property>
+          <property name="maxValue">
+           <double>1.000000000000000</double>
+          </property>
+          <property name="svgFile">
+           <string notr="true">:/themes/openbridge5_day/sliders/sliderRoundKnob.svg</string>
+          </property>
+          <property name="joystick" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="fillStartValue">
+           <double>0.000000000000000</double>
           </property>
           <property name="cdpRouting" stdset="0">
-           <string>VideoWallMQTTApp.MQTTClient.VisionControllers.VisionController0.Tile02.ExposureAuto.Value</string>
+           <string>.ZoomSpeed.Value</string>
+          </property>
+          <property name="cdpSend" stdset="0">
+           <enum>CDPBaseSlider::onMoveAndRelease</enum>
+          </property>
+          <property name="pushRoutables" stdset="0">
+           <stringlist notr="true">
+            <string>cdpRouting</string>
+           </stringlist>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="CDPBaseSlider" name="slider_40">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="numPos">
+           <enum>CDPBaseTickMarks::NumbersAutoLeft</enum>
+          </property>
+          <property name="numFont">
+           <font>
+            <pointsize>5</pointsize>
+            <stylestrategy>PreferAntialias</stylestrategy>
+           </font>
+          </property>
+          <property name="numPrecision" stdset="0">
+           <number>2</number>
+          </property>
+          <property name="minValue">
+           <double>-1.000000000000000</double>
+          </property>
+          <property name="maxValue">
+           <double>1.000000000000000</double>
+          </property>
+          <property name="svgFile">
+           <string notr="true">:/themes/openbridge5_day/sliders/sliderRoundKnob.svg</string>
+          </property>
+          <property name="joystick" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="fillStartValue">
+           <double>0.000000000000000</double>
+          </property>
+          <property name="cdpRouting" stdset="0">
+           <string>.TiltSpeed.Value</string>
+          </property>
+          <property name="cdpSend" stdset="0">
+           <enum>CDPBaseSlider::onMoveAndRelease</enum>
+          </property>
+          <property name="pushRoutables" stdset="0">
+           <stringlist notr="true">
+            <string>cdpRouting</string>
+           </stringlist>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="CDPBaseLabel" name="label_108">
+          <property name="text">
+           <string>Tilt</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="CDPBaseLineEdit" name="lineEdit_88">
+          <property name="precision">
+           <number>2</number>
+          </property>
+          <property name="svgFile">
+           <string notr="true">:/themes/openbridge5_day/backgrounds/bgLineEdit.svg</string>
+          </property>
+          <property name="cdpScaling" stdset="0">
+           <double>100.000000000000000</double>
+          </property>
+          <property name="cdpRouting" stdset="0">
+           <string>.TiltSpeed.Value</string>
+          </property>
+          <property name="cdpPromptForChanges" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="pushRoutables" stdset="0">
+           <stringlist notr="true">
+            <string>cdpRouting</string>
+           </stringlist>
           </property>
          </widget>
         </item>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg" enable-background="new 0 0 40 60" inkscape:version="1.3 (1:1.3+202307231459+0e150ed6c4)" sodipodi:docname="bgPanel.ink.svg" version="1.1" viewBox="0 0 40 60" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"><sodipodi:namedview id="namedview1" bordercolor="#666666" borderopacity="1.0" inkscape:current-layer="svg" inkscape:cx="19.987594" inkscape:cy="30.000001" inkscape:deskcolor="#d1d1d1" inkscape:pagecheckerboard="0" inkscape:pageopacity="0.0" inkscape:showpageshadow="2" inkscape:window-height="1023" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-x="1920" inkscape:window-y="0" inkscape:zoom="13.433333" pagecolor="#ffffff"/>
+<defs id="defs1">
+  <linearGradient id="border-divider-color" inkscape:label="border-divider-color" inkscape:swatch="solid"><stop id="stop1" stop-color="#000000" stop-opacity=".08" offset="0"/></linearGradient>
+  <linearGradient id="container-background-color" inkscape:label="container-background-color" inkscape:swatch="solid"><stop id="stop2" stop-color="#f7f7f7" offset="0"/></linearGradient>
+  <linearGradient id="container-section-color" inkscape:label="container-section-color" inkscape:swatch="solid"><stop id="stop3" stop-color="#f0f0f0" offset="0"/></linearGradient>
+  <linearGradient id="element-neutral-color" inkscape:label="element-neutral-color" inkscape:swatch="solid"><stop id="stop4" stop-color="#000000" stop-opacity=".6" offset="0"/></linearGradient>
+</defs>
+<g id="Layer1">
+ <g id="cdpBackground">
+  <rect id="rect" width="40" height="60" fill="url(#container-background-color)"/>
+  <rect id="rect865" width="40" height="40" fill="url(#container-background-color)"/>
+  <rect id="rect867" x="4" y="39" width="32" height="1" fill="url(#border-divider-color)"/>
+ </g>
+ <rect id="cdpBorderMarginBottomRight" x="34" y="54" width="6" height="6" fill="none"/>
+ <rect id="cdpBorderMarginTopLeft" width="6" height="40" fill="none"/>
+</g>
+<g id="Styles">
+ <g id="cdpBackgroundStyle1">
+  <rect id="rect830" width="40" height="60" fill="url(#container-background-color)"/>
+ </g>
+  <g id="cdpBackgroundStyle2">
+	 <rect id="rect970" width="40" height="60" fill="url(#container-section-color)"/>
+ </g>
+</g>
+</svg>

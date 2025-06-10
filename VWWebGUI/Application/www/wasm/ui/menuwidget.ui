@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>196</width>
+    <height>1101</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="CDPBaseContainer" name="navigator">
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="borderPixmap">
+      <string>:/themes/openbridge5_dusk/backgrounds/bgMenu.svg</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget_14" native="true">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_30">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>6</number>
+         </property>
+         <property name="topMargin">
+          <number>10</number>
+         </property>
+         <property name="rightMargin">
+          <number>7</number>
+         </property>
+         <property name="bottomMargin">
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="CDPBasePicture" name="cdpBasePicture_8">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="svgFile">
+            <string>themes/openbridge5_dusk/pictures/seaonics-logo.svg</string>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+           <property name="lockAspectRatio">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSizeHint" stdset="0">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="CDPBaseClockDigi" name="digitalClock">
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>13</pointsize>
+            </font>
+           </property>
+           <property name="maximumDateTime">
+            <datetime>
+             <hour>23</hour>
+             <minute>59</minute>
+             <second>59</second>
+             <year>2025</year>
+             <month>6</month>
+             <day>6</day>
+            </datetime>
+           </property>
+           <property name="minimumDateTime">
+            <datetime>
+             <hour>0</hour>
+             <minute>0</minute>
+             <second>0</second>
+             <year>2025</year>
+             <month>6</month>
+             <day>6</day>
+            </datetime>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="CDPBaseLine" name="horizontalLine_28">
+        <property name="svgFile">
+         <string>:/themes/flat_gray_light/backgrounds/bgBorder.svg</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="CDPBaseButtonMenu" name="MenuMainButton_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>110</width>
+          <height>110</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+        <property name="widgetStyle" stdset="0">
+         <number>0</number>
+        </property>
+        <property name="stylingType" stdset="0">
+         <enum>CDPBaseButton::SVG</enum>
+        </property>
+        <property name="svgBorderPixmap">
+         <bool>false</bool>
+        </property>
+        <property name="checkableByEmitValue">
+         <bool>true</bool>
+        </property>
+        <property name="cdpCheckedRouting" stdset="0">
+         <string>VWWebGUI.GUIConnections.CurrentPage.Value</string>
+        </property>
+        <property name="markerShared">
+         <bool>false</bool>
+        </property>
+        <property name="markerFont">
+         <font>
+          <family>Bitstream Charter</family>
+          <pointsize>13</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="markerSize">
+         <number>25</number>
+        </property>
+        <property name="m1SvgFile" stdset="0">
+         <string>:/themes/openbridge5_day/markers/circleRed.svg</string>
+        </property>
+        <property name="m1Pos" stdset="0">
+         <enum>Qt::TopRightCorner</enum>
+        </property>
+        <property name="m1ShowNumber" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="m1OffsetX" stdset="0">
+         <number>5</number>
+        </property>
+        <property name="m1OffsetY" stdset="0">
+         <number>6</number>
+        </property>
+        <property name="m2SvgFile" stdset="0">
+         <string>:/themes/openbridge5_day/markers/circleYellow.svg</string>
+        </property>
+        <property name="m2Pos" stdset="0">
+         <enum>Qt::TopLeftCorner</enum>
+        </property>
+        <property name="m2ShowNumber" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="m2OffsetX" stdset="0">
+         <number>5</number>
+        </property>
+        <property name="m2OffsetY" stdset="0">
+         <number>6</number>
+        </property>
+        <property name="svgFile">
+         <string>:/themes/openbridge5_day/buttons/buttonMenu.svg</string>
+        </property>
+        <property name="iconDiameter">
+         <number>90</number>
+        </property>
+        <property name="icon">
+         <string>themes/openbridge5_dusk/buttons/btnGangwayMenuIcon.svg</string>
+        </property>
+        <property name="iconStyle">
+         <number>0</number>
+        </property>
+        <property name="text">
+         <string>Home</string>
+        </property>
+        <property name="showText">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="CDPBaseLine" name="horizontalLine_27">
+        <property name="svgFile">
+         <string>:/themes/flat_gray_light/backgrounds/bgBorder.svg</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="CDPBaseButtonMenu" name="MenuTilesButton_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>110</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+        <property name="widgetStyle" stdset="0">
+         <number>16</number>
+        </property>
+        <property name="svgBorderPixmap">
+         <bool>false</bool>
+        </property>
+        <property name="valueToEmit">
+         <number>1</number>
+        </property>
+        <property name="checkableByEmitValue">
+         <bool>true</bool>
+        </property>
+        <property name="cdpCheckedRouting" stdset="0">
+         <string>VWWebGUI.GUIConnections.CurrentPage.Value</string>
+        </property>
+        <property name="markerFont">
+         <font>
+          <family>Bitstream Charter</family>
+          <pointsize>13</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="markerSize">
+         <number>25</number>
+        </property>
+        <property name="m1SvgFile" stdset="0">
+         <string>:/themes/openbridge5_day/markers/circleRed.svg</string>
+        </property>
+        <property name="m1Pos" stdset="0">
+         <enum>Qt::TopRightCorner</enum>
+        </property>
+        <property name="m1ShowNumber" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="m1OffsetX" stdset="0">
+         <number>5</number>
+        </property>
+        <property name="m1OffsetY" stdset="0">
+         <number>6</number>
+        </property>
+        <property name="m2SvgFile" stdset="0">
+         <string>:/themes/openbridge5_day/markers/circleYellow.svg</string>
+        </property>
+        <property name="m2Pos" stdset="0">
+         <enum>Qt::TopLeftCorner</enum>
+        </property>
+        <property name="m2ShowNumber" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="m2OffsetX" stdset="0">
+         <number>5</number>
+        </property>
+        <property name="m2OffsetY" stdset="0">
+         <number>6</number>
+        </property>
+        <property name="svgFile">
+         <string>:/themes/openbridge5_day/buttons/buttonMenu.svg</string>
+        </property>
+        <property name="iconDiameter">
+         <number>90</number>
+        </property>
+        <property name="icon">
+         <string>themes/openbridge5_dusk/buttons/btnGangwayMenuIcon.svg</string>
+        </property>
+        <property name="iconStyle">
+         <number>16</number>
+        </property>
+        <property name="text">
+         <string>Tiles</string>
+        </property>
+        <property name="showText">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="CDPBaseLine" name="horizontalLine_26">
+        <property name="svgFile">
+         <string>:/themes/flat_gray_light/backgrounds/bgBorder.svg</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="CDPBaseButtonMenu" name="MenuCamerasButton_2">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>110</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+        <property name="widgetStyle" stdset="0">
+         <number>15</number>
+        </property>
+        <property name="stylingType" stdset="0">
+         <enum>CDPBaseButton::SVG</enum>
+        </property>
+        <property name="svgBorderPixmap">
+         <bool>false</bool>
+        </property>
+        <property name="valueToEmit">
+         <number>2</number>
+        </property>
+        <property name="checkableByEmitValue">
+         <bool>true</bool>
+        </property>
+        <property name="cdpCheckedRouting" stdset="0">
+         <string>VWWebGUI.GUIConnections.CurrentPage.Value</string>
+        </property>
+        <property name="markerShared">
+         <bool>false</bool>
+        </property>
+        <property name="markerFont">
+         <font>
+          <family>Bitstream Charter</family>
+          <pointsize>13</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="markerSize">
+         <number>35</number>
+        </property>
+        <property name="m1SvgFile" stdset="0">
+         <string>./themes/openbridge5_dusk/markers/alarmMarker.svg</string>
+        </property>
+        <property name="m1Pos" stdset="0">
+         <enum>Qt::TopRightCorner</enum>
+        </property>
+        <property name="m1ShowNumber" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="m1OffsetX" stdset="0">
+         <number>5</number>
+        </property>
+        <property name="m1OffsetY" stdset="0">
+         <number>6</number>
+        </property>
+        <property name="m2SvgFile" stdset="0">
+         <string>./themes/openbridge5_dusk/markers/alarmMarker.svg</string>
+        </property>
+        <property name="m2Pos" stdset="0">
+         <enum>Qt::TopLeftCorner</enum>
+        </property>
+        <property name="m2ShowNumber" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="m2OffsetX" stdset="0">
+         <number>5</number>
+        </property>
+        <property name="m2OffsetY" stdset="0">
+         <number>6</number>
+        </property>
+        <property name="m2CurrentPix" stdset="0">
+         <number>0</number>
+        </property>
+        <property name="svgFile">
+         <string>:/themes/openbridge5_day/buttons/buttonMenu.svg</string>
+        </property>
+        <property name="iconDiameter">
+         <number>90</number>
+        </property>
+        <property name="icon">
+         <string>themes/openbridge5_dusk/buttons/btnGangwayMenuIcon.svg</string>
+        </property>
+        <property name="iconStyle">
+         <number>15</number>
+        </property>
+        <property name="text">
+         <string>Cameras</string>
+        </property>
+        <property name="showText">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="CDPBaseLine" name="horizontalLine_25">
+        <property name="svgFile">
+         <string>:/themes/flat_gray_light/backgrounds/bgBorder.svg</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="CDPBaseButtonMenu" name="MenuCamerasButton_3">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>110</height>
+         </size>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+        <property name="checked">
+         <bool>false</bool>
+        </property>
+        <property name="autoExclusive">
+         <bool>true</bool>
+        </property>
+        <property name="widgetStyle" stdset="0">
+         <number>15</number>
+        </property>
+        <property name="stylingType" stdset="0">
+         <enum>CDPBaseButton::SVG</enum>
+        </property>
+        <property name="svgBorderPixmap">
+         <bool>false</bool>
+        </property>
+        <property name="valueToEmit">
+         <number>3</number>
+        </property>
+        <property name="checkableByEmitValue">
+         <bool>true</bool>
+        </property>
+        <property name="cdpCheckedRouting" stdset="0">
+         <string>VWWebGUI.GUIConnections.CurrentPage.Value</string>
+        </property>
+        <property name="markerShared">
+         <bool>false</bool>
+        </property>
+        <property name="markerFont">
+         <font>
+          <family>Bitstream Charter</family>
+          <pointsize>13</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="markerSize">
+         <number>35</number>
+        </property>
+        <property name="m1SvgFile" stdset="0">
+         <string>./themes/openbridge5_dusk/markers/alarmMarker.svg</string>
+        </property>
+        <property name="m1Pos" stdset="0">
+         <enum>Qt::TopRightCorner</enum>
+        </property>
+        <property name="m1ShowNumber" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="m1OffsetX" stdset="0">
+         <number>5</number>
+        </property>
+        <property name="m1OffsetY" stdset="0">
+         <number>6</number>
+        </property>
+        <property name="m2SvgFile" stdset="0">
+         <string>./themes/openbridge5_dusk/markers/alarmMarker.svg</string>
+        </property>
+        <property name="m2Pos" stdset="0">
+         <enum>Qt::TopLeftCorner</enum>
+        </property>
+        <property name="m2ShowNumber" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="m2OffsetX" stdset="0">
+         <number>5</number>
+        </property>
+        <property name="m2OffsetY" stdset="0">
+         <number>6</number>
+        </property>
+        <property name="m2CurrentPix" stdset="0">
+         <number>0</number>
+        </property>
+        <property name="svgFile">
+         <string>:/themes/openbridge5_day/buttons/buttonMenu.svg</string>
+        </property>
+        <property name="iconDiameter">
+         <number>90</number>
+        </property>
+        <property name="icon">
+         <string>themes/openbridge5_dusk/buttons/btnGangwayMenuIcon.svg</string>
+        </property>
+        <property name="iconStyle">
+         <number>15</number>
+        </property>
+        <property name="text">
+         <string>Tile
+Configurator</string>
+        </property>
+        <property name="showText">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="CDPBaseLine" name="horizontalLine_24">
+        <property name="cdpVisibleRouting">
+         <string>GangwayGUI.UI.UserFeedback.CursorPage.Visible.Value</string>
+        </property>
+        <property name="svgFile">
+         <string>:/themes/flat_gray_light/backgrounds/bgBorder.svg</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="CDPBaseLine" name="horizontalLine_23">
+        <property name="svgFile">
+         <string>:/themes/flat_gray_light/backgrounds/bgBorder.svg</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="CDPBaseLine" name="horizontalLine_22">
+        <property name="svgFile">
+         <string>:/themes/flat_gray_light/backgrounds/bgBorder.svg</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="CDPBaseLine" name="horizontalLine_21">
+        <property name="svgFile">
+         <string>:/themes/flat_gray_light/backgrounds/bgBorder.svg</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="CDPBaseLine" name="horizontalLine_29">
+        <property name="svgFile">
+         <string>:/themes/flat_gray_light/backgrounds/bgBorder.svg</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>10</width>
+          <height>10</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_60">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="CDPBaseTextSelector" name="MenuBarUserText">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox{ color:#48505a; background: transparent; border: 0; }
+QComboBox::drop-down{ border: 0; width: 0;}</string>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QComboBox::AdjustToContents</enum>
+        </property>
+        <property name="cssFile">
+         <string>:/themes/flat_gray_light/cdpBaseTextSelector.css</string>
+        </property>
+        <property name="stylingType">
+         <enum>CDPBaseComboBox::CSS</enum>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <property name="cdpRouting" stdset="0">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <item>
+         <property name="text">
+          <string>----------</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>None</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Operator</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>AutoGoto</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>AutoLand</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Crane</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>----</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>----</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>----</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>----</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>----</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>----</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>----</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Error</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="CDPBaseTextSelector" name="MenuBarModeText">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox{ color:#48505a; background: transparent; border: 0; }
+QComboBox::drop-down{ border: 0; width: 0;}</string>
+        </property>
+        <property name="sizeAdjustPolicy">
+         <enum>QComboBox::AdjustToContents</enum>
+        </property>
+        <property name="cssFile">
+         <string>:/themes/flat_gray_light/cdpBaseTextSelector.css</string>
+        </property>
+        <property name="stylingType">
+         <enum>CDPBaseComboBox::CSS</enum>
+        </property>
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <property name="cdpRouting" stdset="0">
+         <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <item>
+         <property name="text">
+          <string>----------</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Off</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Standby</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Manual</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>F. In AMC</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>AMC</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>F. Out AMC</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Free</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Auto Goto</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>F. In S2S</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Ship2Ship</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>F. Out S2S</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>EM Liftoff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Error</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>EMFadeOut</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>StartMan</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>TeleTC</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Auto Retr.</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>EM Retr.</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CDPBaseComboBox</class>
+   <extends>QComboBox</extends>
+   <header>CDPBaseWidgets/CDPBaseComboBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseContainer</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBaseContainer.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseButton</class>
+   <extends>QPushButton</extends>
+   <header>CDPBaseWidgets/CDPBaseButton.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseButtonPopDlg</class>
+   <extends>CDPBaseButtonMsg</extends>
+   <header>CDPBaseWidgets/CDPBaseButtonPopDlg.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseButtonMsg</class>
+   <extends>CDPBaseButton</extends>
+   <header>CDPBaseWidgets/CDPBaseButtonMsg.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseButtonMenu</class>
+   <extends>CDPBaseButtonPopDlg</extends>
+   <header>CDPBaseWidgets/CDPBaseButtonMenu.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseTextSelector</class>
+   <extends>CDPBaseComboBox</extends>
+   <header>CDPBaseWidgets/CDPBaseTextSelector.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseClockDigi</class>
+   <extends>QDateTimeEdit</extends>
+   <header>CDPBaseWidgets/CDPBaseClockDigi.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBasePicture</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBasePicture.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseLine</class>
+   <extends>CDPBasePicture</extends>
+   <header>CDPBaseWidgets/CDPBaseLine.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg" enable-background="new 0 0 300 180" version="1.1" viewBox="0 0 300 180" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+ 
+<rect id="rect1" x="315.87" y=".811" width="71.287" height="108.5" fill="#000000" stroke-width="0" style="paint-order:fill markers stroke"/><g id="table-dark" transform="translate(1770,991)">
+	<rect id="rect2" x="-1770" y="-991" width="300" height="180" fill="#1F1F1F"/>
+	<rect id="row5" x="-1770" y="-841" width="300" height="30" display="none" fill="#edf0f3"/>
+	
+	
+	
+	
+	<g id="g8"><rect id="rect5" x="-1770" y="-871" width="300" height="30" fill="#333333"/><text id="text18-7" x="-1535.2595" y="-851.55261" fill="#F2F2F2" font-family="Arial" font-size="12px">0.4</text><text id="cdpRowText-5" x="-1673.089" y="-850.83575" fill="#F2F2F2" font-size="10px">Network</text></g>
+
+	
+
+	<g id="g7"><rect id="row3" x="-1770" y="-901" width="300" height="30" fill="#FFFFFF" fill-opacity="0"/><text id="rowRext" transform="translate(-1672,-881.5)" fill="#F2F2F2" font-family="Arial" font-size="10px">Network</text><text id="text16" transform="translate(-1535,-882.5)" fill="#F2F2F2" font-family="Arial" font-size="12px">0.4</text></g>
+
+	<g id="g6"><rect id="rect4" x="-1770" y="-931" width="300" height="30" fill="#4A7BA5"/><g id="_x30_05-warning_1_" transform="translate(24,37)" fill="#d0021b">
+		<path id="Shape_1_" d="m-1754-950.8-5.7-10c-.4-.8-1.3-1.3-2.1-1.3s-1.6.5-2.1 1.3l-5.7 10c-.5.8-.5 1.7 0 2.5.4.8 1.3 1.3 2.1 1.3h11.4c1 0 1.7-.5 2.1-1.3.5-.7.5-1.7 0-2.5zm-.7 2.1c-.2.5-.7.8-1.3.8h-11.5c-.5 0-1-.3-1.3-.8s-.3-1.1 0-1.5l5.7-10c.2-.5.7-.8 1.3-.8s1.1.3 1.4.8l5.7 10c.2.5.2 1.1 0 1.5z"/>
+		<path id="Path_1_" d="m-1758.2-951.8-2.8-4.7c-.2-.4-.6-.6-1-.6s-.8.2-1 .6l-2.8 4.7c-.2.4-.2.8 0 1.2s.6.6 1 .6h5.6c.5 0 .8-.2 1-.6.3-.3.3-.8 0-1.2z"/>
+	</g><text id="text20" transform="translate(-1535,-913)" fill="#FFFFFF" font-family="Arial" font-size="12px">0.4</text></g><g id="g5"><rect id="row1" x="-1770" y="-961" width="300" height="30" fill="#FFFFFF" fill-opacity="0"/><g id="_x30_05-warning" transform="translate(24,37)" fill="#d0021b">
+		<path id="Shape" d="m-1754-979.8-5.7-10c-.4-.8-1.3-1.3-2.1-1.3s-1.6.5-2.1 1.3l-5.7 10c-.5.8-.5 1.7 0 2.5.4.8 1.3 1.3 2.1 1.3h11.4c1 0 1.7-.5 2.1-1.3.5-.7.5-1.7 0-2.5zm-.7 2.1c-.2.5-.7.8-1.3.8h-11.5c-.5 0-1-.3-1.3-.8s-.3-1.1 0-1.5l5.7-10c.2-.5.7-.8 1.3-.8s1.1.3 1.4.8l5.7 10c.2.5.2 1.1 0 1.5z"/>
+		<path id="Path" d="m-1758.2-980.8-2.8-4.7c-.2-.4-.6-.6-1-.6s-.8.2-1 .6l-2.8 4.7c-.2.4-.2.8 0 1.2s.6.6 1 .6h5.6c.5 0 .8-.2 1-.6.3-.3.3-.8 0-1.2z"/>
+	</g><text id="text18" transform="translate(-1535,-943)" fill="#F2F2F2" font-family="Arial" font-size="12px">0.4</text></g>
+
+	
+
+	<g id="g9"><rect id="rect3" x="-1770" y="-991" width="300" height="30" fill="#1A1A1A"/><text id="text13" transform="translate(-1672,-970)" fill="#F2F2F2" font-family="Arial" font-size="11px">Alarm text</text><text id="text22" transform="translate(-1746.3,-970)" fill="#F2F2F2" font-family="Arial" font-size="11px">State</text></g>
+
+</g>
+<g id="Layer1" font-family="Open Sans">
+	<text id="cdpHeaderText" transform="translate(235.34,21)" fill="#F2F2F2" font-size="18px">Time</text>
+	<text id="cdpHeaderBorder" transform="translate(338.12 126.21)" fill="#FFFFFF" fill-opacity=".078" font-family="'Arial'" font-size="12px">1</text>
+	<text id="cdpRowText" transform="translate(98,50)" fill="#F2F2F2" font-size="18px">Network</text>
+
+	<text id="cdpRowSelectedText" transform="translate(98,79)" fill="#FFFFFF" font-size="18px">Selected</text>
+	
+		<text id="cdpRowSelectedTextBg" x="322.42847" y="98.200294" fill="#4A7BA5" font-size="10px">SelectedBg</text><text id="cdpBorder" x="322.76331" y="82.302925" fill="#edf0f3" font-size="12px">0.0</text>
+
+		<text id="cdpBackgroundGradient1" x="346.80682" y="62.826988" fill="#1F1F1F" font-size="12px">1.0</text>
+		<text id="cdpBackgroundGradient0" x="322.80682" y="62.826988" fill="#1F1F1F" font-size="12px">0.0</text><text id="cdpAlternateRowGradient1" x="346.56256" y="43.812317" fill="#333333" font-size="12px">1.0</text><text id="cdpAlternateRowGradient0" x="322.23254" y="43.812317" fill="#333333" font-size="12px">0.0</text><text id="cdpRowGradient1" x="345.67548" y="30.049835" fill="#FFFFFF" fill-opacity="0" font-size="12px">1.0</text><text id="cdpRowGradient0" x="321.34546" y="30.049835" fill="#FFFFFF" fill-opacity="0" font-size="12px">0.0</text><text id="cdpHeaderViewGradient1" x="344.96774" y="13.5424" fill="#1A1A1A" font-size="12px">1.0</text><text id="cdpHeaderViewGradient0" x="322.79773" y="13.5424" fill="#1A1A1A" font-size="12px">0.0</text>
+
+</g>
+</svg>

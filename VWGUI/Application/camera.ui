@@ -14,7 +14,7 @@
    <string>Form</string>
   </property>
   <property name="cdpTargetRouting">
-   <string>VWController.Cameras.Camera</string>
+   <string>VWController.Cameras.Camera01</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
@@ -138,7 +138,7 @@
        <item row="4" column="1">
         <widget class="CDPBaseLineEdit" name="lineEdit_6">
          <property name="text">
-          <string>Not connected</string>
+          <string>--</string>
          </property>
          <property name="placeholderText">
           <string>ex. 60</string>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg1" width="200px" height="200px" version="1.1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+ <g id="Layer1">
+  <g id="cdpPicture1">
+   <rect id="rect1" width="200" height="200" fill="none"/>
+   <g id="g6">
+    <circle id="path1" cx="100" cy="100" r="100" fill="#0689ED"/>
+    <path id="text1" d="m93.941 139.57-5.8979-83.321v-34.851h23.913v34.851l-5.5762 83.321zm-5.04 39.033v-21.983h22.197v21.983z" fill="#F2F2F2" stroke-width="20.589" aria-label="!"/>
+   </g>
+  </g>
+  <g id="cdpPicture2" transform="translate(221.82)">
+   <rect id="rect2" width="200" height="200" fill="none"/>
+   <g id="g5">
+    <circle id="circle2" cx="100" cy="100" r="100" fill="#F69400"/>
+    <path id="path2" d="m93.941 139.57-5.8979-83.321v-34.851h23.913v34.851l-5.5762 83.321zm-5.04 39.033v-21.983h22.197v21.983z" fill="#F2F2F2" stroke-width="20.589" aria-label="!"/>
+   </g>
+  </g>
+  <g id="cdpPicture3" transform="translate(441.34)">
+   <rect id="rect3" width="200" height="200" fill="none"/>
+   <g id="g4">
+    <circle id="circle3" cx="100" cy="100" r="100" fill="#E52626"/>
+    <path id="path3" d="m93.941 139.57-5.8979-83.321v-34.851h23.913v34.851l-5.5762 83.321zm-5.04 39.033v-21.983h22.197v21.983z" fill="#F2F2F2" stroke-width="20.589" aria-label="!"/>
+   </g>
+  </g>
+ </g>
+</svg>

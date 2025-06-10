@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg" enable-background="new 0 0 300 180" inkscape:version="1.3 (1:1.3+202307231459+0e150ed6c4)" sodipodi:docname="table.ink.svg" version="1.1" viewBox="0 0 300 180" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"><sodipodi:namedview id="namedview40" bordercolor="#666666" borderopacity="1" gridtolerance="10" guidetolerance="10" inkscape:current-layer="svg" inkscape:cx="185.75" inkscape:cy="64.500001" inkscape:deskcolor="#d1d1d1" inkscape:pagecheckerboard="0" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:showpageshadow="2" inkscape:window-height="1023" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-x="1920" inkscape:window-y="0" inkscape:zoom="2" objecttolerance="10" pagecolor="#ffffff" showgrid="false"/>
+ <defs id="defs124">
+  <linearGradient id="amplified-enabled-background-color" inkscape:label="amplified-enabled-background-color" inkscape:swatch="solid">
+   <stop id="stop2181" stop-color="#305791" stop-opacity=".1" offset="0"/>
+  </linearGradient>
+  <linearGradient id="amplified-enabled-border-color" inkscape:label="amplified-enabled-border-color" inkscape:swatch="solid">
+   <stop id="stop2191" stop-color="#030302" stop-opacity="0" offset="0"/>
+  </linearGradient>
+  <linearGradient id="border-divider-color" inkscape:label="border-divider-color" inkscape:swatch="solid">
+   <stop id="stop1011" stop-color="#030301" stop-opacity=".08" offset="0"/>
+  </linearGradient>
+  <linearGradient id="border-outline-color" inkscape:label="border-outline-color" inkscape:swatch="solid">
+   <stop id="stop222" stop-color="#010303" stop-opacity=".08" offset="0"/>
+  </linearGradient>
+  <linearGradient id="container-background-color" gradientTransform="translate(669.61 125.65)" inkscape:label="container-background-color" inkscape:swatch="solid">
+   <stop id="stop233" stop-color="#f7f7f7" offset="0"/>
+  </linearGradient>
+  <linearGradient id="container-section-color" gradientTransform="translate(667.77 27.085)" inkscape:label="container-section-color" inkscape:swatch="solid">
+   <stop id="stop2332" stop-color="#f0f0f1" offset="0"/>
+  </linearGradient>
+  <linearGradient id="element-inactive-color" inkscape:label="element-inactive-color" inkscape:swatch="solid">
+   <stop id="stop01" stop-color="#0e0100" stop-opacity=".42" offset="0"/>
+  </linearGradient>
+  <linearGradient id="element-disabled-color" inkscape:label="element-disabled-color" inkscape:swatch="solid">
+   <stop id="stop1" stop-color="#010000" stop-opacity=".2" offset="0"/>
+  </linearGradient>
+  <linearGradient id="element-neutral-color" inkscape:label="element-neutral-color" inkscape:swatch="solid">
+   <stop id="stop101" stop-color="#010201" stop-opacity=".59" offset="0"/>
+  </linearGradient>
+  <linearGradient id="element-active-color" inkscape:label="element-active-color" inkscape:swatch="solid">
+   <stop id="stop2" stop-color="#1a1a1a" offset="0"/>
+  </linearGradient>
+  <linearGradient id="flat-enabled-background-color" gradientTransform="translate(667.02 60.1)" inkscape:label="flat-enabled-background-color" inkscape:swatch="solid">
+   <stop id="stop218" stop-color="#030101" stop-opacity="0" offset="0"/>
+  </linearGradient>
+  <linearGradient id="flat-enabled-border-color" inkscape:label="flat-enabled-border-color" inkscape:swatch="solid">
+   <stop id="stop219" stop-color="#030102" stop-opacity="0" offset="0"/>
+  </linearGradient>
+  <linearGradient id="indent-enabled-background-color" inkscape:label="indent-enabled-background-color" inkscape:swatch="solid">
+   <stop id="stop21" stop-color="#010e01" stop-opacity=".05" offset="0"/>
+  </linearGradient>
+  <linearGradient id="indent-enabled-border-color" inkscape:label="indent-enabled-border-color" inkscape:swatch="solid">
+   <stop id="stop214" stop-color="#010003" stop-opacity=".05" offset="0"/>
+  </linearGradient>
+  <linearGradient id="indent-disabled-background-color" inkscape:label="indent-disabled-background-color" inkscape:swatch="solid">
+   <stop id="stop211" stop-color="#010202" stop-opacity="0" offset="0"/>
+  </linearGradient>
+  <linearGradient id="indent-disabled-border-color" inkscape:label="indent-disabled-border-color" inkscape:swatch="solid">
+   <stop id="stop212" stop-color="#020101" stop-opacity=".1" offset="0"/>
+  </linearGradient>
+  <linearGradient id="thumb-disabled-background-color" inkscape:label="thumb-disabled-background-color" inkscape:swatch="solid">
+   <stop id="stop213" stop-color="#020201" stop-opacity=".1" offset="0"/>
+  </linearGradient>
+  <linearGradient id="instrument-tickmark-primary-color" inkscape:label="instrument-tickmark-primary-color" inkscape:swatch="solid">
+   <stop id="stop3" stop-color="#333333" offset="0"/>
+  </linearGradient>
+  <linearGradient id="instrument-tickmark-secondary-color" inkscape:label="instrument-tickmark-secondary-color" inkscape:swatch="solid">
+   <stop id="stop4" stop-color="#8c8c8c" offset="0"/>
+  </linearGradient>
+  <linearGradient id="instrument-enhanced-primary-color" inkscape:label="instrument-enhanced-primary-color" inkscape:swatch="solid">
+   <stop id="stop5" stop-color="#166ce4" offset="0"/>
+  </linearGradient>
+  <linearGradient id="instrument-enhanced-secondary-color" inkscape:label="instrument-enhanced-secondary-color" inkscape:swatch="solid">
+   <stop id="stop6" stop-color="#325b9a" offset="0"/>
+  </linearGradient>
+  <linearGradient id="instrument-enhanced-tertiary-color" gradientTransform="translate(108.72 -22.892)" inkscape:label="instrument-enhanced-tertiary-color" inkscape:swatch="solid">
+   <stop id="stop7" stop-color="#325b9b" stop-opacity=".2" offset="0"/>
+  </linearGradient>
+  <linearGradient id="instrument-frame-primary-color" inkscape:label="instrument-frame-primary-color" inkscape:swatch="solid">
+   <stop id="stop8" stop-color="#ffffff" offset="0"/>
+  </linearGradient>
+  <linearGradient id="instrument-frame-secondary-color" gradientTransform="matrix(1.01 0 0 1.01 -1.23 -1.0818)" inkscape:label="instrument-frame-secondary-color" inkscape:swatch="solid">
+   <stop id="stop9" stop-color="#f0f0f0" offset="0"/>
+  </linearGradient>
+  <linearGradient id="instrument-frame-tertiary-color" gradientTransform="matrix(1.01,0,0,1.01,-1.23,-1.0818)" inkscape:label="instrument-frame-tertiary-color" inkscape:swatch="solid">
+   <stop id="stop10" stop-color="#d9d9d9" offset="0"/>
+  </linearGradient>
+  <linearGradient id="normal-enabled-background-color" gradientTransform="translate(668.8 87.625)" inkscape:label="normal-enabled-background-color" inkscape:swatch="solid">
+   <stop id="stop11" stop-color="#fefefe" offset="0"/>
+  </linearGradient>
+  <linearGradient id="normal-enabled-border-color" inkscape:label="normal-enabled-border-color" inkscape:swatch="solid">
+   <stop id="stop12" stop-color="#000001" stop-opacity=".2" offset="0"/>
+  </linearGradient>
+  <linearGradient id="normal-focused-background-color" inkscape:label="normal-focused-background-color" inkscape:swatch="solid">
+   <stop id="stop13" stop-color="#fffeff" offset="0"/>
+  </linearGradient>
+  <linearGradient id="normal-focused-border-color" inkscape:label="normal-focused-border-color" inkscape:swatch="solid">
+   <stop id="stop14" stop-color="#006ee1" stop-opacity=".3" offset="0"/>
+  </linearGradient>
+  <linearGradient id="normal-pressed-background-color" inkscape:label="normal-pressed-background-color" inkscape:swatch="solid">
+   <stop id="stop15" stop-color="#e0e0e0" offset="0"/>
+  </linearGradient>
+  <linearGradient id="normal-pressed-border-color" inkscape:label="normal-pressed-border-color" inkscape:swatch="solid">
+   <stop id="stop16" stop-color="#000200" stop-opacity=".2" offset="0"/>
+  </linearGradient>
+  <linearGradient id="normal-disabled-background-color" inkscape:label="normal-disabled-background-color" inkscape:swatch="solid">
+   <stop id="stop17" stop-color="#fffffe" stop-opacity="0" offset="0"/>
+  </linearGradient>
+  <linearGradient id="normal-disabled-border-color" inkscape:label="normal-disabled-border-color" inkscape:swatch="solid">
+   <stop id="stop18" stop-color="#010100" stop-opacity=".1" offset="0"/>
+  </linearGradient>
+  <linearGradient id="on-flat-active-color" gradientTransform="translate(-3208.3 -1702.4)" inkscape:label="on-flat-active-color" inkscape:swatch="solid">
+   <stop id="stop191" stop-color="#000301" stop-opacity=".9" offset="0"/>
+  </linearGradient>
+  <linearGradient id="on-flat-neutral-color" inkscape:label="on-flat-neutral-color" inkscape:swatch="solid">
+   <stop id="stop201" stop-color="#000300" stop-opacity=".55" offset="0"/>
+  </linearGradient>
+  <linearGradient id="on-normal-neutral-color" inkscape:label="on-normal-neutral-color" inkscape:swatch="solid">
+   <stop id="stop19" stop-color="#000100" stop-opacity=".55" offset="0"/>
+  </linearGradient>
+  <linearGradient id="on-normal-active-color" inkscape:label="on-normal-active-color" inkscape:swatch="solid">
+   <stop id="stop20" stop-color="#1a1a1b" offset="0"/>
+  </linearGradient>
+  <linearGradient id="on-normal-disabled-color" inkscape:label="on-normal-disabled-color" inkscape:swatch="solid">
+   <stop id="stop22" stop-color="#010101" stop-opacity=".3" offset="0"/>
+  </linearGradient>
+  <linearGradient id="on-selected-active-color" inkscape:label="on-selected-active-color" inkscape:swatch="solid">
+   <stop id="stop25" stop-color="#fefffe" offset="0"/>
+  </linearGradient>
+  <linearGradient id="on-selected-disabled-color" inkscape:label="on-selected-disabled-color" inkscape:swatch="solid">
+   <stop id="stop251" stop-color="#020202" stop-opacity=".3" offset="0"/>offset="0"/&gt;
+  </linearGradient>
+  <linearGradient id="selected-enabled-background-color" gradientTransform="translate(322.43 98.2)" inkscape:label="selected-enabled-background-color" inkscape:swatch="solid">
+   <stop id="stop23" stop-color="#305792" offset="0"/>
+  </linearGradient>
+  <linearGradient id="selected-enabled-border-color" inkscape:label="selected-enabled-border-color" inkscape:swatch="solid">
+   <stop id="stop24" stop-color="#010102" stop-opacity="0" offset="0"/>offset="0"/
+  </linearGradient>
+  <linearGradient id="selected-focused-background-color" inkscape:label="selected-focused-background-color" inkscape:swatch="solid">
+   <stop id="stop2311" stop-color="#305790" offset="0"/>
+  </linearGradient>
+  <linearGradient id="selected-disabled-background-color" inkscape:label="selected-disabled-background-color" inkscape:swatch="solid">
+   <stop id="stop231" stop-color="#030000" stop-opacity=".2" offset="0"/>
+  </linearGradient>
+  <linearGradient id="selected-disabled-border-color" inkscape:label="selected-disabled-border-color" inkscape:swatch="solid">
+   <stop id="stop241" stop-color="#030001" stop-opacity="0" offset="0"/>offset="0"/
+  </linearGradient>
+ </defs>
+<rect id="rect1" x="315.87" y=".811" width="71.287" height="108.5" fill="#000000" stroke-width="0" style="paint-order:fill markers stroke"/><g id="table-dark" transform="translate(1770,991)" inkscape:label="Helper">
+	<rect id="rect2" x="-1770" y="-991" width="300" height="180" fill="url(#container-background-color)" inkscape:label="background"/>
+	<rect id="row5" x="-1770" y="-841" width="300" height="30" display="none" fill="#edf0f3"/>
+	
+	
+	
+	
+	<g id="g8" inkscape:label="row4"><rect id="rect5" x="-1770" y="-871" width="300" height="30" fill="url(#normal-enabled-background-color)" inkscape:label="rect4"/><text id="text18-7" x="-1535.2595" y="-851.55261" fill="url(#on-flat-active-color)" font-family="Arial" font-size="12px">0.4</text><text id="cdpRowText-5" x="-1673.089" y="-850.83575" fill="url(#on-flat-active-color)" font-size="10px">Network</text></g>
+
+	
+
+	<g id="g7" inkscape:label="row3"><rect id="row3" x="-1770" y="-901" width="300" height="30" fill="url(#flat-enabled-background-color)"/><text id="rowRext" transform="translate(-1672,-881.5)" fill="url(#on-flat-active-color)" font-family="Arial" font-size="10px">Network</text><text id="text16" transform="translate(-1535,-882.5)" fill="url(#on-flat-active-color)" font-family="Arial" font-size="12px">0.4</text></g>
+
+	<g id="g6" inkscape:label="row2"><rect id="rect4" x="-1770" y="-931" width="300" height="30" fill="url(#selected-enabled-background-color)" inkscape:label="alternateRow"/><g id="_x30_05-warning_1_" transform="translate(24,37)" fill="#d0021b">
+		<path id="Shape_1_" d="m-1754-950.8-5.7-10c-.4-.8-1.3-1.3-2.1-1.3s-1.6.5-2.1 1.3l-5.7 10c-.5.8-.5 1.7 0 2.5.4.8 1.3 1.3 2.1 1.3h11.4c1 0 1.7-.5 2.1-1.3.5-.7.5-1.7 0-2.5zm-.7 2.1c-.2.5-.7.8-1.3.8h-11.5c-.5 0-1-.3-1.3-.8s-.3-1.1 0-1.5l5.7-10c.2-.5.7-.8 1.3-.8s1.1.3 1.4.8l5.7 10c.2.5.2 1.1 0 1.5z"/>
+		<path id="Path_1_" d="m-1758.2-951.8-2.8-4.7c-.2-.4-.6-.6-1-.6s-.8.2-1 .6l-2.8 4.7c-.2.4-.2.8 0 1.2s.6.6 1 .6h5.6c.5 0 .8-.2 1-.6.3-.3.3-.8 0-1.2z"/>
+	</g><text id="text20" transform="translate(-1535,-913)" fill="url(#on-selected-active-color)" font-family="Arial" font-size="12px">0.4</text></g><g id="g5" inkscape:label="row1"><rect id="row1" x="-1770" y="-961" width="300" height="30" fill="url(#flat-enabled-background-color)" inkscape:label="row"/><g id="_x30_05-warning" transform="translate(24,37)" fill="#d0021b">
+		<path id="Shape" d="m-1754-979.8-5.7-10c-.4-.8-1.3-1.3-2.1-1.3s-1.6.5-2.1 1.3l-5.7 10c-.5.8-.5 1.7 0 2.5.4.8 1.3 1.3 2.1 1.3h11.4c1 0 1.7-.5 2.1-1.3.5-.7.5-1.7 0-2.5zm-.7 2.1c-.2.5-.7.8-1.3.8h-11.5c-.5 0-1-.3-1.3-.8s-.3-1.1 0-1.5l5.7-10c.2-.5.7-.8 1.3-.8s1.1.3 1.4.8l5.7 10c.2.5.2 1.1 0 1.5z"/>
+		<path id="Path" d="m-1758.2-980.8-2.8-4.7c-.2-.4-.6-.6-1-.6s-.8.2-1 .6l-2.8 4.7c-.2.4-.2.8 0 1.2s.6.6 1 .6h5.6c.5 0 .8-.2 1-.6.3-.3.3-.8 0-1.2z"/>
+	</g><text id="text18" transform="translate(-1535,-943)" fill="url(#on-flat-active-color)" font-family="Arial" font-size="12px">0.4</text></g>
+
+	
+
+	<g id="g9" inkscape:label="header"><rect id="rect3" x="-1770" y="-991" width="300" height="30" fill="url(#container-section-color)" inkscape:label="header"/><text id="text13" transform="translate(-1672,-970)" fill="url(#element-active-color)" font-family="Arial" font-size="11px">Alarm text</text><text id="text22" transform="translate(-1746.3,-970)" fill="url(#element-active-color)" font-family="Arial" font-size="11px">State</text></g>
+
+</g>
+<g id="Layer1" font-family="Open Sans">
+	<text id="cdpHeaderText" transform="translate(235.34,21)" fill="url(#element-active-color)" font-size="18px">Time</text>
+	<text id="cdpHeaderBorder" transform="matrix(1 0 0 1 338.1201 126.208)" fill="url(#border-divider-color)" font-family="'Arial'" font-size="12px">1</text>
+	<text id="cdpRowText" transform="translate(98,50)" fill="url(#on-flat-active-color)" font-size="18px">Network</text>
+
+	<text id="cdpRowSelectedText" transform="translate(98,79)" fill="url(#on-selected-active-color)" font-size="18px">Selected</text>
+	
+		<text id="cdpRowSelectedTextBg" x="322.42847" y="98.200294" fill="url(#selected-enabled-background-color)" font-size="10px" inkscape:label="cdpRowSelectedTextBg">SelectedBg</text><text id="cdpBorder" x="322.76331" y="82.302925" fill="#edf0f3" font-size="12px">0.0</text>
+
+		<text id="cdpBackgroundGradient1" x="346.80682" y="62.826988" fill="url(#container-background-color)" font-size="12px">1.0</text>
+		<text id="cdpBackgroundGradient0" x="322.80682" y="62.826988" fill="url(#container-background-color)" font-size="12px">0.0</text><text id="cdpAlternateRowGradient1" x="346.56256" y="43.812317" fill="url(#normal-enabled-background-color)" font-size="12px">1.0</text><text id="cdpAlternateRowGradient0" x="322.23254" y="43.812317" fill="url(#normal-enabled-background-color)" font-size="12px">0.0</text><text id="cdpRowGradient1" x="345.67548" y="30.049835" fill="url(#flat-enabled-background-color)" font-size="12px">1.0</text><text id="cdpRowGradient0" x="321.34546" y="30.049835" fill="url(#flat-enabled-background-color)" font-size="12px">0.0</text><text id="cdpHeaderViewGradient1" x="344.96774" y="13.5424" fill="url(#container-section-color)" font-size="12px">1.0</text><text id="cdpHeaderViewGradient0" x="322.79773" y="13.5424" fill="url(#container-section-color)" font-size="12px">0.0</text>
+
+</g>
+</svg>

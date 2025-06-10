@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg1" width="200px" height="200px" version="1.1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs id="defs1">
+    <linearGradient id="element-active-color">
+      <stop id="stop2000" stop-color="#1A1A1A" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-neutral-color">
+      <stop id="stop2010" stop-color="#000005" stop-opacity=".59" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-inactive-color">
+      <stop id="stop2020" stop-color="#000006" stop-opacity=".42" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-disabled-color">
+      <stop id="stop2030" stop-color="#000007" stop-opacity=".2" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-active-inverted-color">
+      <stop id="stop2040" stop-color="#fff" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-neutral-inverted-color">
+      <stop id="stop2050" stop-color="#FFFFFE" stop-opacity=".7" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-inactive-inverted-color">
+      <stop id="stop2060" stop-color="#FFFFFD" stop-opacity=".4" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-disabled-inverted-color">
+      <stop id="stop2070" stop-color="#FFFFFC" stop-opacity=".2" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-backdrop-color">
+      <stop id="stop2080" stop-color="#E0E0E0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-section-color">
+      <stop id="stop2090" stop-color="#F0F0F0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-background-color">
+      <stop id="stop2100" stop-color="#F7F7F7" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-global-color">
+      <stop id="stop2110" stop-color="#FCFCFC" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-overlay-color">
+      <stop id="stop2120" stop-opacity=".1" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-divider-color">
+      <stop id="stop2130" stop-color="#000001" stop-opacity=".08" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-outline-color">
+      <stop id="stop2140" stop-color="#000002" stop-opacity=".08" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-edge-color">
+      <stop id="stop2150" stop-color="#000003" stop-opacity=".05" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-solid-color">
+      <stop id="stop2160" stop-color="#333" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-icon-outline-color">
+      <stop id="stop2170" stop-color="#000004" stop-opacity=".4" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-silhouette-color">
+      <stop id="stop2180" stop-color="#F7F7F8" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-enhanced-primary-color">
+      <stop id="stop2190" stop-color="#0070D6" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-enhanced-secondary-color">
+      <stop id="stop2200" stop-color="#325B9A" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-enhanced-tertiary-color">
+      <stop id="stop2210" stop-color="#325B9B" stop-opacity=".2" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-regular-primary-color">
+      <stop id="stop2220" stop-color="#333334" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-regular-secondary-color">
+      <stop id="stop2230" stop-color="#666" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-regular-tertiary-color">
+      <stop id="stop2240" stop-color="#666667" stop-opacity=".25" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-frame-primary-color">
+      <stop id="stop2250" stop-color="#FFFFFB" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-frame-secondary-color">
+      <stop id="stop2260" stop-color="#F0F0F1" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-frame-tertiary-color">
+      <stop id="stop2270" stop-color="#D9D9D9" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-tickmark-primary-color">
+      <stop id="stop2280" stop-color="#333335" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-tickmark-secondary-color">
+      <stop id="stop2290" stop-color="#707070" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-tickmark-tertiary-color">
+      <stop id="stop2300" stop-color="#8F8F8F" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-starboard-color">
+      <stop id="stop2310" stop-color="#359E85" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-port-color">
+      <stop id="stop2320" stop-color="#E16290" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alert-running-color">
+      <stop id="stop2390" stop-color="#228722" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alert-caution-color">
+      <stop id="stop2400" stop-color="#FAD900" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alert-warning-color">
+      <stop id="stop2410" stop-color="#F69400" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alert-alarm-color">
+      <stop id="stop2420" stop-color="#DF1B1B" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alert-critical-alarm-color">
+      <stop id="stop2430" stop-color="#E500E5" offset="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer1">
+    <g id="cdpPicture0" transform="translate(1.25 9.3368)">
+      <rect id="rect4098" x="-1.25" y="-9.3368" width="442.5" height="637.71" fill="none" stroke-miterlimit="10"/>
+      <g id="g209377">
+        <g id="g4100">
+          <path id="path4102" d="m288 344.41c0 4.95-1.811 12.622-4.025 17.05l-14.949 29.9c-2.215 4.428-8.075 8.05-13.025 8.05h-71c-4.95 0-10.811-3.622-13.025-8.05l-14.95-29.9c-2.214-4.428-4.025-12.1-4.025-17.05v-113c0-4.95 4.05-9 9-9h117c4.95 0 9 4.05 9 9v113z" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <g id="g4122">
+          <g id="g4124">
+            <circle id="circle4126" cx="189.81" cy="338.69" r="21" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+          </g>
+          <g id="g4128">
+            <circle id="circle4130" cx="251.19" cy="338.69" r="21" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+          </g>
+        </g>
+        <text id="text4132" transform="translate(200.5,243.41)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="14px" style="line-height:0%">FRONT</text>
+        <polyline id="polyline4142" points="302.5 300.91 332.5 313.28 417.19 313.28" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+        <text id="text4144" x="353.81107" y="308.83899" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%"><tspan id="tspan364215" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Control</tspan></text>
+        <text id="text4146" x="321.80054" y="501.71671" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Main page</text>
+        <line id="line4148" x1="19" x2="163" y1="341.82" y2="341.82" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+        <text id="text4150" transform="translate(19,335.57)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Manual</text>
+        <text id="text4152" x="104.70446" y="85.201447" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Slew left</text>
+        <text id="text4154" x="171.04454" y="32.896" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Boom down</text>
+        <text id="text4156" x="181.826" y="136.70868" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Boom up</text>
+        <text id="text4158" x="265.26761" y="83.456818" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Slew right</text>
+        <line id="line4160" x1="277" x2="421" y1="344.94" y2="344.94" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+        <text id="text4162" x="421.95801" y="338.69339" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" text-align="end" text-anchor="end" style="line-height:0%">Alarm silence</text>
+        <rect id="rect4164" x="290.25" y="284.41" width="7.5" height="26.5" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+        <text id="text4166" transform="translate(153,453.99)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="24px" style="line-height:0%">FRONT VIEW</text>
+        <text id="text4168" transform="translate(171.87,205.01)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="24px" style="line-height:0%">TOP VIEW</text>
+        <g id="g4170" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2">
+          <g id="g4172">
+            <line id="line4174" x1="198.79" x2="240.02" y1="78.319" y2="78.319"/>
+            <polygon id="polygon4176" points="198.54 82.828 189.52 78.319 198.54 73.81"/>
+            <polygon id="polygon4178" points="240.5 74.153 249.52 78.662 240.5 83.171"/>
+          </g>
+          <g id="g4180">
+            <line id="line4182" x1="219.69" x2="219.69" y1="57.767" y2="98.992"/>
+            <polygon id="polygon4184" points="215.18 57.509 219.69 48.491 224.2 57.509"/>
+            <polygon id="polygon4186" points="223.86 99.473 219.35 108.49 214.84 99.473"/>
+          </g>
+        </g>
+        <g id="g4188">
+          <path id="path4190" d="m266.78 574.75c-.977 4.853-5.826 8.823-10.776 8.823h-71c-4.95 0-9.833-3.963-10.852-8.808l-19.796-94.132c-1.019-4.845 2.198-8.808 7.148-8.808h117c4.95 0 8.2 3.971 7.224 8.823z" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <g id="g4192" stroke="url(#element-active-color)">
+          <circle id="circle4194" transform="translate(0,10)" cx="240.75" cy="544.98" r="21" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <line id="line4196" x1="157.89" x2="153" y1="497.48" y2="505.67" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="line4198" x1="153" x2="157.89" y1="505.67" y2="527.7" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="line4200" x1="157.89" x2="157.89" y1="527.7" y2="551.67" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="line4202" x1="157.89" x2="168.81" y1="551.67" y2="558.33" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+        <g id="g4204" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2">
+          <line id="line4206" x1="138.33" x2="138.33" y1="506.98" y2="548.21"/>
+          <polygon id="polygon4208" points="133.82 506.72 138.33 497.7 142.84 506.72"/>
+          <polygon id="polygon4210" points="142.5 548.69 137.99 557.7 133.48 548.69"/>
+        </g>
+        <text id="text4212" x="21.208649" y="530.66699" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Joystick Gain</text>
+        <line id="line4214" x1="266" x2="359.84" y1="555" y2="555" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+        <g id="g4216">
+          <rect id="rect4218" x="-1.25" width="442.5" height="600" display="none" stroke="#000" stroke-miterlimit="10"/>
+          <g id="g4220">
+            <path id="path4222" d="m288 344.41c0 4.95-1.811 12.622-4.025 17.05l-14.949 29.9c-2.215 4.428-8.075 8.05-13.025 8.05h-71c-4.95 0-10.811-3.622-13.025-8.05l-14.95-29.9c-2.214-4.428-4.025-12.1-4.025-17.05v-113c0-4.95 4.05-9 9-9h117c4.95 0 9 4.05 9 9v113z" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          </g>
+          <g id="g4242">
+            <g id="g4244" stroke="url(#element-active-color)">
+              <circle id="circle4246" cx="189.81" cy="338.69" r="21" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+            </g>
+            <g id="g4248">
+              <circle id="circle4250" cx="251.19" cy="338.69" r="21" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+            </g>
+          </g>
+          <text id="text4252" transform="translate(200.5,243.41)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="14px" style="line-height:0%">FRONT</text>
+          <polyline id="polyline4262" points="302.5 300.91 332.5 313.28 417.19 313.28" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2"/>
+          <text id="text4264" transform="translate(373.69,306.91)" fill="#ffffff" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%"/>
+          <text id="text4266" transform="translate(316.69,548.69)" fill="#ffffff" font-family="MyriadPro-Regular" font-size="18px"/>
+          <line id="line4268" x1="19" x2="163" y1="341.82" y2="341.82" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2"/>
+          <text id="text4270" transform="translate(19,335.57)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Manual</text>
+          <text id="text4272" transform="translate(133.77,81.896)" fill="#ffffff" font-family="MyriadPro-Regular" font-size="18px"/>
+          <text id="text4274" transform="translate(168.14,32.896)" fill="#ffffff" font-family="MyriadPro-Regular" font-size="18px"/>
+          <text id="text4278" transform="translate(265.27,81.896)" fill="#ffffff" font-family="MyriadPro-Regular" font-size="18px"/>
+          <line id="line4280" x1="277" x2="421" y1="344.94" y2="344.94" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2"/>
+          <text id="text4282" transform="translate(387,338.69)" x="49.816406" fill="#ffffff" font-family="MyriadPro-Regular" font-size="18px" text-align="end" text-anchor="end" style="line-height:0%"/>
+          <rect id="rect4284" x="290.25" y="284.41" width="7.5" height="26.5" fill="#ff0045" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          <text id="text4286" transform="translate(153,453.99)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="24px" style="line-height:0%">FRONT VIEW</text>
+          <text id="text4288" transform="translate(171.87,205.01)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="24px" style="line-height:0%">TOP VIEW</text>
+          <g id="g4290" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2">
+            <g id="g4292">
+              <line id="line4294" x1="198.79" x2="240.02" y1="78.319" y2="78.319"/>
+              <polygon id="polygon4296" points="189.52 78.319 198.54 73.81 198.54 82.828"/>
+              <polygon id="polygon4298" points="249.52 78.662 240.5 83.171 240.5 74.153"/>
+            </g>
+            <g id="g4300">
+              <line id="line4302" x1="219.69" x2="219.69" y1="57.767" y2="98.992"/>
+              <polygon id="polygon4304" points="219.69 48.491 224.2 57.509 215.18 57.509"/>
+              <polygon id="polygon4306" points="219.35 108.49 214.84 99.473 223.86 99.473"/>
+            </g>
+          </g>
+          <g id="g4308">
+            <path id="path4310" d="m266.78 574.75c-.977 4.853-5.826 8.823-10.776 8.823h-71c-4.95 0-9.833-3.963-10.852-8.808l-19.796-94.132c-1.019-4.845 2.198-8.808 7.148-8.808h117c4.95 0 8.2 3.971 7.224 8.823z" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          </g>
+          <g id="g4312">
+            <circle id="circle3174" transform="translate(0,-40)" cx="240.75" cy="544.98" r="21" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          </g>
+          <line id="line4316" x1="157.89" x2="153" y1="497.48" y2="505.67" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          <line id="line4318" x1="153" x2="157.89" y1="505.67" y2="527.7" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          <line id="line4320" x1="157.89" x2="157.89" y1="527.7" y2="551.67" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          <line id="line4322" x1="157.89" x2="168.81" y1="551.67" y2="558.33" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          <g id="g4324" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2">
+            <line id="line4326" x1="138.33" x2="138.33" y1="506.98" y2="548.21"/>
+            <polygon id="polygon4328" points="138.33 497.7 142.84 506.72 133.82 506.72"/>
+            <polygon id="polygon4330" points="137.99 557.7 133.48 548.69 142.5 548.69"/>
+          </g>
+          <text id="text4332" transform="translate(87.334,530.67)" fill="#ffffff" font-family="MyriadPro-Regular" font-size="18px"/>
+          <line id="line4334" x1="266.58" x2="414.49" y1="555" y2="555" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2.5109"/>
+          <line id="line3178" x1="266.58" x2="414.49" y1="509" y2="509" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2.5109"/>
+        </g>
+        <text id="text834" x="296.72678" y="541.71356" fill="url(#element-active-color)" font-family="sans-serif" font-size="40px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan832" x="296.72678" y="541.71356" fill="url(#element-active-color)"/></text>
+        <text id="text3176-7" x="415.44769" y="548.56769" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" text-align="end" text-anchor="end" style="line-height:0%"><tspan id="tspan376-1" x="415.44769" y="548.56769">Alarm page</tspan><tspan id="tspan251913" x="415.44769" y="548.56769"/><tspan id="tspan380-1" x="415.44769" y="548.56769"/><tspan id="tspan378-5" x="415.44769" y="548.56769"/></text>
+        <text id="text287617" x="344.50345" y="288.28528" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan362935" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Request</tspan></text>
+      </g>
+    </g>
+    <g id="cdpPicture1" transform="matrix(1.0099 0 0 1.0099 600.97 7.774)">
+      <rect id="rect7745" x="-1.25" y="-7.6925" width="442.5" height="631.43" fill="none" stroke-miterlimit="10"/>
+      <g id="g209433">
+        <g id="g7749">
+          <path id="path7747" d="m288 344.41c0 4.95-1.811 12.622-4.025 17.05l-14.949 29.9c-2.215 4.428-8.075 8.05-13.025 8.05h-71c-4.95 0-10.811-3.622-13.025-8.05l-14.95-29.9c-2.214-4.428-4.025-12.1-4.025-17.05v-113c0-4.95 4.05-9 9-9h117c4.95 0 9 4.05 9 9v113z" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <g id="g7759">
+          <g id="g7753" fill="#ff0045">
+            <circle id="circle7751" cx="189.81" cy="338.69" r="21" fill="#ff0045" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          </g>
+          <g id="g7757">
+            <circle id="circle7755" cx="251.19" cy="338.69" r="21" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          </g>
+        </g>
+        <text id="text7761" transform="translate(200.5,243.41)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="14px" style="line-height:0%">FRONT</text>
+        <polyline id="polyline7763" points="139.94 300.91 109.94 313.28 19 313.28" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2"/>
+        <text id="text7765" x="17.250761" y="307.35077" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan326597" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Joysticks</tspan></text>
+        <text id="text7767" x="47.722343" y="498.78882" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%">Awareness</text>
+        <line id="line7769" x1="19" x2="163" y1="341.82" y2="341.82" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2"/>
+        <text id="text7771" transform="translate(19,335.57)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan323925" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Horn</tspan></text>
+        <text id="text7777" x="175.39986" y="85.029449" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" text-align="end" text-anchor="end" style="line-height:0%"><tspan id="tspan7773" x="175.39986" y="85.029449"/><tspan id="tspan7775" x="181.12154" y="85.029449">Spare</tspan></text>
+        <text id="text7783" x="263.63614" y="84.789032" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Spare</text>
+        <line id="line7785" x1="277" x2="421" y1="344.94" y2="344.94" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2"/>
+        <text id="text7787" x="314.50293" y="338.69339" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan329053" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Tele Tension</tspan></text>
+        <rect id="rect7789" x="144.69" y="284.41" width="7.5" height="26.5" fill="#ff0045" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        <text id="text7791" transform="translate(153,453.99)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="24px" style="line-height:0%">FRONT VIEW</text>
+        <text id="text7793" transform="translate(171.87,205.01)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="24px" style="line-height:0%">TOP VIEW</text>
+        <g id="g7811" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2">
+          <g id="g7801">
+            <line id="line7795" x1="198.79" x2="240.02" y1="78.319" y2="78.319"/>
+            <polygon id="polygon7797" points="198.54 73.81 198.54 82.828 189.52 78.319"/>
+            <polygon id="polygon7799" points="240.5 83.171 240.5 74.153 249.52 78.662"/>
+          </g>
+          <g id="g7809">
+            <line id="line7803" x1="219.69" x2="219.69" y1="57.767" y2="98.992"/>
+            <polygon id="polygon7805" points="224.2 57.509 215.18 57.509 219.69 48.491"/>
+            <polygon id="polygon7807" points="214.84 99.473 223.86 99.473 219.35 108.49"/>
+          </g>
+        </g>
+        <g id="g7815">
+          <path id="path7813" d="m180.4 574.75c.977 4.853 5.826 8.823 10.776 8.823h71c4.95 0 9.833-3.963 10.853-8.808l19.795-94.132c1.019-4.845-2.197-8.808-7.147-8.808h-117c-4.95 0-8.201 3.971-7.224 8.823z" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <g id="g7819" transform="translate(0,8)">
+          <circle id="circle7817" cx="206.43" cy="544.98" r="21" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <line id="line7821" x1="289.28" x2="294.18" y1="497.48" y2="505.67" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="line7823" x1="294.18" x2="289.28" y1="505.67" y2="527.7" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="line7825" x1="289.28" x2="289.28" y1="527.7" y2="551.67" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="line7827" x1="289.28" x2="278.37" y1="551.67" y2="558.33" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        <g id="g7835" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2">
+          <line id="line7829" x1="308.84" x2="308.84" y1="506.98" y2="548.21"/>
+          <polygon id="polygon7831" points="304.34 506.72 313.35 506.72 308.84 497.7"/>
+          <polygon id="polygon7833" points="313.7 548.69 304.68 548.69 309.19 557.7"/>
+        </g>
+        <text id="text7837" transform="translate(313.7,530.67)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%">Uplift Setp.</text>
+        <line id="line7839" x1="180.76" x2="47.919" y1="555" y2="555" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2.3796"/>
+        <g id="g7843" transform="translate(.79208 -41.445)">
+          <circle id="circle7841" cx="206.43" cy="544.98" r="21" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <text id="text7845" x="46.744091" y="549.28619" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan41767" x="46.744091" y="549.28619">Spare</tspan><tspan id="tspan402411" x="46.744091" y="549.28619"/><tspan id="tspan28827" x="46.744091" y="549.28619"/></text>
+        <line id="line7847" x1="180.71" x2="47.862" y1="505.99" y2="505.99" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2.3796"/>
+        <text id="text365941" x="14.579037" y="287.54736" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan365939" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Enable</tspan></text>
+        <text id="text435887" x="47.722343" y="480.9657" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%">Autolanding</text>
+        <g id="g496391" fill="url(#element-active-color)">
+          <text id="text7781" x="165.30707" y="136.58591" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Telescope in</text>
+        </g>
+        <g id="g496227" fill="url(#element-active-color)">
+          <text id="text247597" x="158.22308" y="32.441399" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Telescope out</text>
+        </g>
+      </g>
+    </g>
+    <g id="cdpPicture2" transform="matrix(1.0099 0 0 1.0099 1138.4 7.774)">
+      <rect id="rect696715" x="-1.25" y="-7.6925" width="442.5" height="631.43" fill="none" stroke-miterlimit="10"/>
+      <g id="g696853">
+        <g id="g696719" stroke="url(#element-active-color)">
+          <path id="path696717" d="m288 344.41c0 4.95-1.811 12.622-4.025 17.05l-14.949 29.9c-2.215 4.428-8.075 8.05-13.025 8.05h-71c-4.95 0-10.811-3.622-13.025-8.05l-14.95-29.9c-2.214-4.428-4.025-12.1-4.025-17.05v-113c0-4.95 4.05-9 9-9h117c4.95 0 9 4.05 9 9v113z" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <g id="g696729" stroke="url(#element-active-color)">
+          <g id="g696723" fill="#ff0045">
+            <circle id="circle696721" cx="189.81" cy="338.69" r="21" fill="#ff0045" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          </g>
+          <g id="g696727">
+            <circle id="circle696725" cx="251.19" cy="338.69" r="21" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          </g>
+        </g>
+        <text id="text696731" transform="translate(200.5,243.41)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="14px" style="line-height:0%">FRONT</text>
+        <polyline id="polyline696733" points="139.94 300.91 109.94 313.28 19 313.28" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2"/>
+        <text id="text696737" x="17.250761" y="307.35077" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan696735" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Joysticks</tspan></text>
+        <text id="text696739" x="47.722343" y="498.78882" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%">Spare</text>
+        <line id="line696741" x1="19" x2="163" y1="341.82" y2="341.82" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2"/>
+        <text id="text696745" transform="translate(19,335.57)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan696743" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Horn</tspan></text>
+        <line id="line696755" x1="277" x2="421" y1="344.94" y2="344.94" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2"/>
+        <text id="text696759" x="370.49832" y="338.69339" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan696757" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Spare</tspan></text>
+        <rect id="rect696761" x="144.69" y="284.41" width="7.5" height="26.5" fill="#ff0045" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        <text id="text696763" transform="translate(153,453.99)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="24px" style="line-height:0%">FRONT VIEW</text>
+        <text id="text696765" transform="translate(171.87,205.01)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="24px" style="line-height:0%">TOP VIEW</text>
+        <g id="g696783" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2">
+          <g id="g696773">
+            <line id="line696767" x1="198.79" x2="240.02" y1="78.319" y2="78.319"/>
+            <polygon id="polygon696769" points="189.52 78.319 198.54 73.81 198.54 82.828"/>
+            <polygon id="polygon696771" points="249.52 78.662 240.5 83.171 240.5 74.153"/>
+          </g>
+          <g id="g696781">
+            <line id="line696775" x1="219.69" x2="219.69" y1="57.767" y2="98.992"/>
+            <polygon id="polygon696777" points="219.69 48.491 224.2 57.509 215.18 57.509"/>
+            <polygon id="polygon696779" points="219.35 108.49 214.84 99.473 223.86 99.473"/>
+          </g>
+        </g>
+        <g id="g696787" stroke="url(#element-active-color)">
+          <path id="path696785" d="m180.4 574.75c.977 4.853 5.826 8.823 10.776 8.823h71c4.95 0 9.833-3.963 10.853-8.808l19.795-94.132c1.019-4.845-2.197-8.808-7.147-8.808h-117c-4.95 0-8.201 3.971-7.224 8.823z" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <g id="g696791" transform="translate(0,8)" stroke="url(#element-active-color)">
+          <circle id="circle696789" cx="206.43" cy="544.98" r="21" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <line id="line696793" x1="289.28" x2="294.18" y1="497.48" y2="505.67" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="line696795" x1="294.18" x2="289.28" y1="505.67" y2="527.7" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="line696797" x1="289.28" x2="289.28" y1="527.7" y2="551.67" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="line696799" x1="289.28" x2="278.37" y1="551.67" y2="558.33" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        <g id="g696807" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2">
+          <line id="line696801" x1="308.84" x2="308.84" y1="506.98" y2="548.21"/>
+          <polygon id="polygon696803" points="308.84 497.7 304.34 506.72 313.35 506.72"/>
+          <polygon id="polygon696805" points="309.19 557.7 313.7 548.69 304.68 548.69"/>
+        </g>
+        <text id="text696809" transform="translate(313.7,530.67)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%">Spare</text>
+        <line id="line696811" x1="180.76" x2="47.919" y1="555" y2="555" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2.3796"/>
+        <g id="g696815" transform="translate(.79208 -41.445)" stroke="url(#element-active-color)">
+          <circle id="circle696813" cx="206.43" cy="544.98" r="21" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <text id="text696823" x="105.49592" y="549.28619" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" text-align="end" text-anchor="end" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan696817" x="105.49592" y="549.28619">Trolley</tspan><tspan id="tspan696819" x="105.49592" y="549.28619"/><tspan id="tspan696821" x="105.49592" y="549.28619"/></text>
+        <line id="line696825" x1="180.71" x2="47.862" y1="505.99" y2="505.99" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2.3796"/>
+        <text id="text696829" x="14.579037" y="287.54736" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan696827" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Enable</tspan></text>
+        <g id="g696837" fill="url(#element-active-color)">
+          <text id="text696833" x="166.02338" y="136.58591" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Winch Hoist</text>
+        </g>
+        <g id="g696843" fill="url(#element-active-color)">
+          <text id="text696839" x="164.93793" y="32.441399" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Winch Slack</text>
+        </g>
+        <text id="text696851" x="47.971169" y="531.46307" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan696845" x="47.971169" y="531.46307">Telescope</tspan><tspan id="tspan696847" x="47.971169" y="531.46307"/><tspan id="tspan696849" x="47.971169" y="531.46307"/></text>
+        <g id="g962124" transform="translate(0,-8.4991)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px">
+          <text id="text696753" x="263.63614" y="84.789032" style="line-height:0%"><tspan id="tspan819176" x="263.63614" y="84.789032"/><tspan id="tspan819178" x="263.63614" y="84.789032">Telescope / Trolley</tspan></text>
+          <text id="text960099" x="322.75137" y="102.61208" style="line-height:0%"><tspan id="tspan960097" x="322.75137" y="102.61208" fill="url(#element-active-color)">Out</tspan></text>
+        </g>
+        <g id="g964269" transform="translate(0,-8.6121)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" text-anchor="end">
+          <text id="text696751" x="175.39986" y="85.029449" text-align="end" style="line-height:0%"><tspan id="tspan696747" x="175.39986" y="85.029449"/><tspan id="tspan696749" x="181.12154" y="85.029449">Telescope / Trolley</tspan></text>
+          <text id="text962130" x="107.59663" y="102.8525" text-align="end" style="line-height:0%"><tspan id="tspan962128" x="107.59663" y="102.8525" fill="url(#element-active-color)">In</tspan></text>
+        </g>
+        <g id="g1116777" transform="translate(-140.52)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px">
+          <text id="text835017" x="220.01741" y="605.47174" style="line-height:0%"><tspan id="tspan835013" x="220.01741" y="605.47174"/><tspan id="tspan835015" x="220.01741" y="605.47174" font-family="MyriadPro-Regular" font-size="11.882px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Telescope / Trolley movement is depsendent on</tspan></text>
+          <text id="text1089606" x="220.01741" y="617.35382" style="line-height:0%"><tspan id="tspan1089604" x="220.01741" y="617.35382" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="11.882px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">latched state and Telescope / Trolley button</tspan></text>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g id="Styles">
+    <g id="cdpPicture1Style1" transform="matrix(1.0099 0 0 1.0099 591.09 711.32)">
+      <rect id="rect7745-1" x="-1.25" y="-7.2023" width="442.5" height="631.43" fill="none" stroke-miterlimit="10"/>
+      <g id="g209433-0">
+        <g id="g7749-7" stroke="url(#element-active-color)">
+          <path id="path7747-4" d="m288 344.41c0 4.95-1.811 12.622-4.025 17.05l-14.949 29.9c-2.215 4.428-8.075 8.05-13.025 8.05h-71c-4.95 0-10.811-3.622-13.025-8.05l-14.95-29.9c-2.214-4.428-4.025-12.1-4.025-17.05v-113c0-4.95 4.05-9 9-9h117c4.95 0 9 4.05 9 9v113z" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <g id="g7759-8" stroke="url(#element-active-color)">
+          <g id="g7753-0" fill="#ff0045">
+            <circle id="circle7751-1" cx="189.81" cy="338.69" r="21" fill="#ff0045" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          </g>
+          <g id="g7757-8">
+            <circle id="circle7755-7" cx="251.19" cy="338.69" r="21" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          </g>
+        </g>
+        <text id="text7761-3" transform="translate(200.5,243.41)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="14px" style="line-height:0%">FRONT</text>
+        <polyline id="polyline7763-4" points="139.94 300.91 109.94 313.28 19 313.28" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2"/>
+        <text id="text7765-7" x="17.250761" y="307.35077" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan326597-1" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Joysticks</tspan></text>
+        <text id="text7767-3" x="47.722343" y="498.78882" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%">Awareness</text>
+        <line id="line7769-4" x1="19" x2="163" y1="341.82" y2="341.82" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2"/>
+        <text id="text7771-4" transform="translate(19,335.57)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan323925-2" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Horn</tspan></text>
+        <text id="text7777-4" x="175.39986" y="85.029449" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" text-align="end" text-anchor="end" style="line-height:0%"><tspan id="tspan7775-4" x="175.39986" y="85.029449" fill="url(#element-active-color)">Spare</tspan></text>
+        <text id="text7783-9" x="263.63614" y="84.789032" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Spare</text>
+        <line id="line7785-8" x1="277" x2="421" y1="344.94" y2="344.94" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2"/>
+        <text id="text7787-4" x="314.50293" y="338.69339" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan329053-2" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Tele Tension</tspan></text>
+        <rect id="rect7789-5" x="144.69" y="284.41" width="7.5" height="26.5" fill="#ff0045" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        <text id="text7791-7" transform="translate(153,453.99)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="24px" style="line-height:0%">FRONT VIEW</text>
+        <text id="text7793-2" transform="translate(171.87,205.01)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="24px" style="line-height:0%">TOP VIEW</text>
+        <g id="g7811-7" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2">
+          <g id="g7801-4">
+            <line id="line7795-4" x1="198.79" x2="240.02" y1="78.319" y2="78.319"/>
+            <polygon id="polygon7797-0" points="189.52 78.319 198.54 73.81 198.54 82.828"/>
+            <polygon id="polygon7799-5" points="249.52 78.662 240.5 83.171 240.5 74.153"/>
+          </g>
+          <g id="g7809-6">
+            <line id="line7803-0" x1="219.69" x2="219.69" y1="57.767" y2="98.992"/>
+            <polygon id="polygon7805-0" points="219.69 48.491 224.2 57.509 215.18 57.509"/>
+            <polygon id="polygon7807-4" points="219.35 108.49 214.84 99.473 223.86 99.473"/>
+          </g>
+        </g>
+        <g id="g7815-0" stroke="url(#element-active-color)">
+          <path id="path7813-3" d="m180.4 574.75c.977 4.853 5.826 8.823 10.776 8.823h71c4.95 0 9.833-3.963 10.853-8.808l19.795-94.132c1.019-4.845-2.197-8.808-7.147-8.808h-117c-4.95 0-8.201 3.971-7.224 8.823z" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <g id="g7819-2" transform="translate(0,8)" stroke="url(#element-active-color)">
+          <circle id="circle7817-0" cx="206.43" cy="544.98" r="21" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <line id="line7821-8" x1="289.28" x2="294.18" y1="497.48" y2="505.67" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="line7823-6" x1="294.18" x2="289.28" y1="505.67" y2="527.7" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="line7825-9" x1="289.28" x2="289.28" y1="527.7" y2="551.67" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="line7827-9" x1="289.28" x2="278.37" y1="551.67" y2="558.33" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        <g id="g7835-2" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2">
+          <line id="line7829-3" x1="308.84" x2="308.84" y1="506.98" y2="548.21"/>
+          <polygon id="polygon7831-5" points="308.84 497.7 304.34 506.72 313.35 506.72"/>
+          <polygon id="polygon7833-4" points="309.19 557.7 313.7 548.69 304.68 548.69"/>
+        </g>
+        <text id="text7837-8" transform="translate(313.7,530.67)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%">Uplift Setp.</text>
+        <line id="line7839-1" x1="180.76" x2="47.919" y1="555" y2="555" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2.3796"/>
+        <g id="g7843-0" transform="translate(.79208 -41.445)" stroke="url(#element-active-color)">
+          <circle id="circle7841-7" cx="206.43" cy="544.98" r="21" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <text id="text7845-2" x="48.789227" y="549.28619" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan41767-4" x="48.789227" y="549.28619">Spare</tspan><tspan id="tspan402411-9" x="48.789227" y="549.28619"/><tspan id="tspan28827-9" x="48.789227" y="549.28619"/></text>
+        <line id="line7847-2" x1="180.71" x2="47.862" y1="505.99" y2="505.99" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2.3796"/>
+        <text id="text365941-3" x="14.579037" y="287.54736" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan365939-6" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Enable</tspan></text>
+        <text id="text435887-6" x="47.722343" y="480.9657" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%">Autolanding</text>
+        <g id="g496391-7" fill="url(#element-active-color)">
+          <text id="text7781-7" x="165.30707" y="136.58591" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Telescope in</text>
+        </g>
+        <g id="g496227-6" fill="url(#element-active-color)">
+          <text id="text247597-9" x="158.22308" y="32.441399" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Telescope out</text>
+        </g>
+      </g>
+    </g>
+    <g id="cdpPicture0Style1" transform="translate(-8.6301 712.87)">
+      <rect id="rect4098-9" x="-1.25" y="-8.8417" width="442.5" height="637.71" fill="none" stroke-miterlimit="10"/>
+      <g id="g209377-9">
+        <g id="g4100-5">
+          <path id="path4102-1" d="m288 344.41c0 4.95-1.811 12.622-4.025 17.05l-14.949 29.9c-2.215 4.428-8.075 8.05-13.025 8.05h-71c-4.95 0-10.811-3.622-13.025-8.05l-14.95-29.9c-2.214-4.428-4.025-12.1-4.025-17.05v-113c0-4.95 4.05-9 9-9h117c4.95 0 9 4.05 9 9v113z" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <g id="g4122-8">
+          <g id="g4124-5">
+            <circle id="circle4126-4" cx="189.81" cy="338.69" r="21" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+          </g>
+          <g id="g4128-3">
+            <circle id="circle4130-9" cx="251.19" cy="338.69" r="21" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+          </g>
+        </g>
+        <text id="text4132-4" transform="translate(200.5,243.41)" fill="#ffffff" font-family="MyriadPro-Regular" font-size="14px" style="line-height:0%">FRONT</text>
+        <polyline id="polyline4142-6" points="302.5 300.91 332.5 313.28 417.19 313.28" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+        <text id="text4144-2" x="353.81107" y="308.83899" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%"><tspan id="tspan364215-3" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Control</tspan></text>
+        <text id="text4146-8" x="321.80054" y="501.71671" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Main page</text>
+        <line id="line4148-6" x1="19" x2="163" y1="341.82" y2="341.82" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+        <text id="text4150-2" transform="translate(19,335.57)" fill="#ffffff" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Manual</text>
+        <text id="text4152-7" x="104.70446" y="85.201447" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Slew left</text>
+        <text id="text4154-0" x="171.04454" y="32.896" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Boom down</text>
+        <text id="text4156-7" x="181.826" y="136.70868" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Boom up</text>
+        <text id="text4158-6" x="265.26761" y="83.456818" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Slew right</text>
+        <line id="line4160-7" x1="277" x2="421" y1="344.94" y2="344.94" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+        <text id="text4162-4" x="421.95801" y="338.69339" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" text-align="end" text-anchor="end" style="line-height:0%">Alarm silence</text>
+        <rect id="rect4164-3" x="290.25" y="284.41" width="7.5" height="26.5" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+        <text id="text4166-1" transform="translate(153,453.99)" fill="#ffffff" font-family="MyriadPro-Regular" font-size="24px" style="line-height:0%">FRONT VIEW</text>
+        <text id="text4168-2" transform="translate(171.87,205.01)" fill="#ffffff" font-family="MyriadPro-Regular" font-size="24px" style="line-height:0%">TOP VIEW</text>
+        <g id="g4170-4" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2">
+          <g id="g4172-7">
+            <line id="line4174-5" x1="198.79" x2="240.02" y1="78.319" y2="78.319"/>
+            <polygon id="polygon4176-5" points="189.52 78.319 198.54 73.81 198.54 82.828"/>
+            <polygon id="polygon4178-8" points="249.52 78.662 240.5 83.171 240.5 74.153"/>
+          </g>
+          <g id="g4180-0">
+            <line id="line4182-7" x1="219.69" x2="219.69" y1="57.767" y2="98.992"/>
+            <polygon id="polygon4184-7" points="219.69 48.491 224.2 57.509 215.18 57.509"/>
+            <polygon id="polygon4186-3" points="219.35 108.49 214.84 99.473 223.86 99.473"/>
+          </g>
+        </g>
+        <g id="g4188-7">
+          <path id="path4190-7" d="m266.78 574.75c-.977 4.853-5.826 8.823-10.776 8.823h-71c-4.95 0-9.833-3.963-10.852-8.808l-19.796-94.132c-1.019-4.845 2.198-8.808 7.148-8.808h117c4.95 0 8.2 3.971 7.224 8.823z" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <g id="g4192-9" stroke="url(#element-active-color)">
+          <circle id="circle4194-3" transform="translate(0,10)" cx="240.75" cy="544.98" r="21" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <line id="line4196-2" x1="157.89" x2="153" y1="497.48" y2="505.67" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="line4198-0" x1="153" x2="157.89" y1="505.67" y2="527.7" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="line4200-7" x1="157.89" x2="157.89" y1="527.7" y2="551.67" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="line4202-8" x1="157.89" x2="168.81" y1="551.67" y2="558.33" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+        <g id="g4204-2" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2">
+          <line id="line4206-0" x1="138.33" x2="138.33" y1="506.98" y2="548.21"/>
+          <polygon id="polygon4208-7" points="142.84 506.72 133.82 506.72 138.33 497.7"/>
+          <polygon id="polygon4210-1" points="133.48 548.69 142.5 548.69 137.99 557.7"/>
+        </g>
+        <text id="text4212-4" x="21.208649" y="530.66699" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Joystick Gain</text>
+        <line id="line4214-6" x1="266" x2="359.84" y1="555" y2="555" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+        <g id="g4216-1">
+          <rect id="rect4218-1" x="-1.25" width="442.5" height="600" display="none" stroke="#000" stroke-miterlimit="10"/>
+          <g id="g4220-2" stroke="url(#element-active-color)">
+            <path id="path4222-8" d="m288 344.41c0 4.95-1.811 12.622-4.025 17.05l-14.949 29.9c-2.215 4.428-8.075 8.05-13.025 8.05h-71c-4.95 0-10.811-3.622-13.025-8.05l-14.95-29.9c-2.214-4.428-4.025-12.1-4.025-17.05v-113c0-4.95 4.05-9 9-9h117c4.95 0 9 4.05 9 9v113z" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          </g>
+          <g id="g4242-0" stroke="url(#element-active-color)">
+            <g id="g4244-1">
+              <circle id="circle4246-0" cx="189.81" cy="338.69" r="21" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+            </g>
+            <g id="g4248-7">
+              <circle id="circle4250-9" cx="251.19" cy="338.69" r="21" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+            </g>
+          </g>
+          <text id="text4252-0" transform="translate(200.5,243.41)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="14px" style="line-height:0%">FRONT</text>
+          <polyline id="polyline4262-7" points="302.5 300.91 332.5 313.28 417.19 313.28" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2"/>
+          <text id="text4264-6" transform="translate(373.69,306.91)" fill="#ffffff" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%"/>
+          <text id="text4266-9" transform="translate(316.69,548.69)" fill="#ffffff" font-family="MyriadPro-Regular" font-size="18px"/>
+          <line id="line4268-3" x1="19" x2="163" y1="341.82" y2="341.82" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2"/>
+          <text id="text4270-3" transform="translate(19,335.57)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Manual</text>
+          <text id="text4272-6" transform="translate(133.77,81.896)" fill="#ffffff" font-family="MyriadPro-Regular" font-size="18px"/>
+          <text id="text4274-4" transform="translate(168.14,32.896)" fill="#ffffff" font-family="MyriadPro-Regular" font-size="18px"/>
+          <text id="text4278-9" transform="translate(265.27,81.896)" fill="#ffffff" font-family="MyriadPro-Regular" font-size="18px"/>
+          <line id="line4280-8" x1="277" x2="421" y1="344.94" y2="344.94" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2"/>
+          <text id="text4282-4" transform="translate(387,338.69)" x="49.816406" fill="#ffffff" font-family="MyriadPro-Regular" font-size="18px" text-align="end" text-anchor="end" style="line-height:0%"/>
+          <rect id="rect4284-6" x="290.25" y="284.41" width="7.5" height="26.5" fill="#ff0045" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          <text id="text4286-9" transform="translate(153,453.99)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="24px" style="line-height:0%">FRONT VIEW</text>
+          <text id="text4288-9" transform="translate(171.87,205.01)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="24px" style="line-height:0%">TOP VIEW</text>
+          <g id="g4290-7" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2">
+            <g id="g4292-8">
+              <line id="line4294-0" x1="198.79" x2="240.02" y1="78.319" y2="78.319"/>
+              <polygon id="polygon4296-1" points="198.54 73.81 198.54 82.828 189.52 78.319"/>
+              <polygon id="polygon4298-4" points="240.5 83.171 240.5 74.153 249.52 78.662"/>
+            </g>
+            <g id="g4300-3">
+              <line id="line4302-5" x1="219.69" x2="219.69" y1="57.767" y2="98.992"/>
+              <polygon id="polygon4304-9" points="224.2 57.509 215.18 57.509 219.69 48.491"/>
+              <polygon id="polygon4306-4" points="214.84 99.473 223.86 99.473 219.35 108.49"/>
+            </g>
+          </g>
+          <g id="g4308-3" stroke="url(#element-active-color)">
+            <path id="path4310-8" d="m266.78 574.75c-.977 4.853-5.826 8.823-10.776 8.823h-71c-4.95 0-9.833-3.963-10.852-8.808l-19.796-94.132c-1.019-4.845 2.198-8.808 7.148-8.808h117c4.95 0 8.2 3.971 7.224 8.823z" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          </g>
+          <g id="g4312-5" stroke="url(#element-active-color)">
+            <circle id="circle3174-5" transform="translate(0,-40)" cx="240.75" cy="544.98" r="21" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          </g>
+          <line id="line4316-2" x1="157.89" x2="153" y1="497.48" y2="505.67" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          <line id="line4318-8" x1="153" x2="157.89" y1="505.67" y2="527.7" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          <line id="line4320-3" x1="157.89" x2="157.89" y1="527.7" y2="551.67" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          <line id="line4322-1" x1="157.89" x2="168.81" y1="551.67" y2="558.33" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          <g id="g4324-8" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2">
+            <line id="line4326-2" x1="138.33" x2="138.33" y1="506.98" y2="548.21"/>
+            <polygon id="polygon4328-7" points="138.33 497.7 142.84 506.72 133.82 506.72"/>
+            <polygon id="polygon4330-0" points="137.99 557.7 133.48 548.69 142.5 548.69"/>
+          </g>
+          <text id="text4332-5" transform="translate(87.334,530.67)" fill="#ffffff" font-family="MyriadPro-Regular" font-size="18px"/>
+          <line id="line4334-2" x1="266.58" x2="414.49" y1="555" y2="555" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2.5109"/>
+          <line id="line3178-6" x1="266.58" x2="414.49" y1="509" y2="509" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2.5109"/>
+        </g>
+        <text id="text834-1" x="296.72678" y="541.71356" fill="#000000" font-family="sans-serif" font-size="40px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan832-1" x="296.72678" y="541.71356"/></text>
+        <text id="text3176-7-7" x="415.44769" y="548.56769" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" text-align="end" text-anchor="end" style="line-height:0%"><tspan id="tspan376-1-8" x="415.44769" y="548.56769">Alarm page</tspan><tspan id="tspan251913-8" x="415.44769" y="548.56769"/><tspan id="tspan380-1-6" x="415.44769" y="548.56769"/><tspan id="tspan378-5-7" x="415.44769" y="548.56769"/></text>
+        <text id="text287617-9" x="344.50345" y="288.28528" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan362935-0" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Request</tspan></text>
+      </g>
+    </g>
+    <g id="cdpPicture2Style1" transform="matrix(1.0099 0 0 1.0099 1138.4 711.32)">
+      <rect id="rect717293" x="-1.25" y="-7.2023" width="442.5" height="631.43" fill="none" stroke-miterlimit="10"/>
+      <g id="g717431">
+        <g id="g1116777-7" transform="translate(-140.52,-1.0352)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px">
+          <text id="text835017-8" x="220.01741" y="605.47174" style="line-height:0%"><tspan id="tspan835013-6" x="220.01741" y="605.47174"/><tspan id="tspan835015-6" x="220.01741" y="605.47174" font-family="MyriadPro-Regular" font-size="11.882px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Telescope / Trolley movement is depsendent on</tspan></text>
+          <text id="text1089606-8" x="220.01741" y="617.35382" style="line-height:0%"><tspan id="tspan1089604-5" x="220.01741" y="617.35382" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="11.882px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">latched state and Telescope / Trolley button</tspan></text>
+        </g>
+        <g id="g717297" stroke="url(#element-active-color)">
+          <path id="path717295" d="m288 344.41c0 4.95-1.811 12.622-4.025 17.05l-14.949 29.9c-2.215 4.428-8.075 8.05-13.025 8.05h-71c-4.95 0-10.811-3.622-13.025-8.05l-14.95-29.9c-2.214-4.428-4.025-12.1-4.025-17.05v-113c0-4.95 4.05-9 9-9h117c4.95 0 9 4.05 9 9v113z" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <g id="g717307" stroke="url(#element-active-color)">
+          <g id="g717301" fill="#ff0045">
+            <circle id="circle717299" cx="189.81" cy="338.69" r="21" fill="#ff0045" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          </g>
+          <g id="g717305">
+            <circle id="circle717303" cx="251.19" cy="338.69" r="21" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+          </g>
+        </g>
+        <text id="text717309" transform="translate(200.5,243.41)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="14px" style="line-height:0%">FRONT</text>
+        <polyline id="polyline717311" points="139.94 300.91 109.94 313.28 19 313.28" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2"/>
+        <text id="text717315" x="17.250761" y="307.35077" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan717313" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Joysticks</tspan></text>
+        <text id="text717317" x="47.722343" y="498.78882" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%">Spare</text>
+        <line id="line717319" x1="19" x2="163" y1="341.82" y2="341.82" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2"/>
+        <text id="text717323" transform="translate(19,335.57)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan717321" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Horn</tspan></text>
+        <text id="text717329" x="175.39986" y="85.029449" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" text-align="end" text-anchor="end" style="line-height:0%"><tspan id="tspan717325" x="175.39986" y="85.029449"/><tspan id="tspan717327" x="175.39986" y="85.029449">Winch Hoist</tspan></text>
+        <text id="text717331" x="263.63614" y="84.789032" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" style="line-height:0%">Winch Slack</text>
+        <line id="line717333" x1="277" x2="421" y1="344.94" y2="344.94" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2"/>
+        <text id="text717337" x="370.49832" y="338.69339" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan717335" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Spare</tspan></text>
+        <rect id="rect717339" x="144.69" y="284.41" width="7.5" height="26.5" fill="#ff0045" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        <text id="text717341" transform="translate(153,453.99)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="24px" style="line-height:0%">FRONT VIEW</text>
+        <text id="text717343" transform="translate(171.87,205.01)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="24px" style="line-height:0%">TOP VIEW</text>
+        <g id="g717361" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2">
+          <g id="g717351">
+            <line id="line717345" x1="198.79" x2="240.02" y1="78.319" y2="78.319"/>
+            <polygon id="polygon717347" points="198.54 73.81 198.54 82.828 189.52 78.319"/>
+            <polygon id="polygon717349" points="240.5 83.171 240.5 74.153 249.52 78.662"/>
+          </g>
+          <g id="g717359">
+            <line id="line717353" x1="219.69" x2="219.69" y1="57.767" y2="98.992"/>
+            <polygon id="polygon717355" points="215.18 57.509 219.69 48.491 224.2 57.509"/>
+            <polygon id="polygon717357" points="223.86 99.473 219.35 108.49 214.84 99.473"/>
+          </g>
+        </g>
+        <g id="g717365" stroke="url(#element-active-color)">
+          <path id="path717363" d="m180.4 574.75c.977 4.853 5.826 8.823 10.776 8.823h71c4.95 0 9.833-3.963 10.853-8.808l19.795-94.132c1.019-4.845-2.197-8.808-7.147-8.808h-117c-4.95 0-8.201 3.971-7.224 8.823z" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <g id="g717369" transform="translate(0,8)" stroke="url(#element-active-color)">
+          <circle id="circle717367" cx="206.43" cy="544.98" r="21" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <line id="line717371" x1="289.28" x2="294.18" y1="497.48" y2="505.67" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="line717373" x1="294.18" x2="289.28" y1="505.67" y2="527.7" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="line717375" x1="289.28" x2="289.28" y1="527.7" y2="551.67" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        <line id="line717377" x1="289.28" x2="278.37" y1="551.67" y2="558.33" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        <g id="g717385" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2">
+          <line id="line717379" x1="308.84" x2="308.84" y1="506.98" y2="548.21"/>
+          <polygon id="polygon717381" points="304.34 506.72 313.35 506.72 308.84 497.7"/>
+          <polygon id="polygon717383" points="313.7 548.69 304.68 548.69 309.19 557.7"/>
+        </g>
+        <text id="text717387" transform="translate(313.7,530.67)" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%">Spare</text>
+        <line id="line717389" x1="180.76" x2="47.919" y1="555" y2="555" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2.3796"/>
+        <g id="g717393" transform="translate(.79208 -41.445)" stroke="url(#element-active-color)">
+          <circle id="circle717391" cx="206.43" cy="544.98" r="21" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="3"/>
+        </g>
+        <text id="text717401" x="48.789227" y="549.28619" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan717395" x="48.789227" y="549.28619">Trolley</tspan><tspan id="tspan717397" x="48.789227" y="549.28619"/><tspan id="tspan717399" x="48.789227" y="549.28619"/></text>
+        <line id="line717403" x1="180.71" x2="47.862" y1="505.99" y2="505.99" fill="none" stroke="url(#element-active-color)" stroke-miterlimit="10" stroke-width="2.3796"/>
+        <text id="text717407" x="14.579037" y="287.54736" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan717405" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Enable</tspan></text>
+        <g id="g717415" transform="translate(-92.36)" fill="url(#element-active-color)">
+          <text id="text717411" x="311.90424" y="136.58591" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" text-align="center" text-anchor="middle" style="line-height:0%"><tspan id="tspan828349" x="311.90424" y="136.58591"><tspan id="tspan779219" fill="url(#element-active-color)" text-align="center" text-anchor="middle"/></tspan><tspan id="tspan828351" x="314.76508" y="136.58591">Telescope / Trolley In</tspan></text>
+        </g>
+        <g id="g717421" fill="url(#element-active-color)">
+          <text id="text717417" x="219.07416" y="32.441399" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="18px" text-align="center" text-anchor="middle" style="line-height:0%"><tspan id="tspan826062" x="219.07416" y="32.441399"/><tspan id="tspan826064" x="219.07416" y="32.441399">Telescope / Trolley Out</tspan><tspan id="tspan826330" x="219.07416" y="32.441399"/></text>
+        </g>
+        <text id="text717429" x="48.789227" y="531.46307" fill="url(#element-active-color)" font-family="MyriadPro-Regular" font-size="17.823px" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:0%"><tspan id="tspan717423" x="48.789227" y="531.46307">Telescope</tspan><tspan id="tspan717425" x="48.789227" y="531.46307"/><tspan id="tspan717427" x="48.789227" y="531.46307"/></text>
+      </g>
+    </g>
+  </g>
+</svg>

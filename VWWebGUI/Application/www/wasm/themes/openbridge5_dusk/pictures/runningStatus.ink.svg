@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg1" width="200px" height="200px" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <sodipodi:namedview id="namedview1" bordercolor="#eeeeee" borderopacity="1" inkscape:current-layer="layer1" inkscape:cx="396.58703" inkscape:cy="561.25984" inkscape:deskcolor="#d1d1d1" inkscape:document-units="mm" inkscape:pagecheckerboard="0" inkscape:pageopacity="0" inkscape:showpageshadow="0" inkscape:window-height="1020" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-x="0" inkscape:window-y="28" inkscape:zoom="0.72871773" pagecolor="#505050"/>
+  <defs id="defs1">
+    <linearGradient id="element-active-color" inkscape:label="element-active-color" inkscape:swatch="solid">
+      <stop id="stop2000" stop-color="#1A1A1A" stop-opacity="1.0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-neutral-color" inkscape:label="element-neutral-color" inkscape:swatch="solid">
+      <stop id="stop2010" stop-color="#000005" stop-opacity="0.59" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-inactive-color" inkscape:label="element-inactive-color" inkscape:swatch="solid">
+      <stop id="stop2020" stop-color="#000006" stop-opacity="0.42" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-disabled-color" inkscape:label="element-disabled-color" inkscape:swatch="solid">
+      <stop id="stop2030" stop-color="#000007" stop-opacity="0.2" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-active-inverted-color" inkscape:label="element-active-inverted-color" inkscape:swatch="solid">
+      <stop id="stop2040" stop-color="#FFFFFF" stop-opacity="1.0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-neutral-inverted-color" inkscape:label="element-neutral-inverted-color" inkscape:swatch="solid">
+      <stop id="stop2050" stop-color="#FFFFFE" stop-opacity="0.7" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-inactive-inverted-color" inkscape:label="element-inactive-inverted-color" inkscape:swatch="solid">
+      <stop id="stop2060" stop-color="#FFFFFD" stop-opacity="0.4" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-disabled-inverted-color" inkscape:label="element-disabled-inverted-color" inkscape:swatch="solid">
+      <stop id="stop2070" stop-color="#FFFFFC" stop-opacity="0.2" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-backdrop-color" inkscape:label="container-backdrop-color" inkscape:swatch="solid">
+      <stop id="stop2080" stop-color="#E0E0E0" stop-opacity="1.0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-section-color" inkscape:label="container-section-color" inkscape:swatch="solid">
+      <stop id="stop2090" stop-color="#F0F0F0" stop-opacity="1.0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-background-color" inkscape:label="container-background-color" inkscape:swatch="solid">
+      <stop id="stop2100" stop-color="#F7F7F7" stop-opacity="1.0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-global-color" inkscape:label="container-global-color" inkscape:swatch="solid">
+      <stop id="stop2110" stop-color="#FCFCFC" stop-opacity="1.0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-overlay-color" inkscape:label="container-overlay-color" inkscape:swatch="solid">
+      <stop id="stop2120" stop-color="#000000" stop-opacity="0.1" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-divider-color" inkscape:label="border-divider-color" inkscape:swatch="solid">
+      <stop id="stop2130" stop-color="#000001" stop-opacity="0.08" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-outline-color" inkscape:label="border-outline-color" inkscape:swatch="solid">
+      <stop id="stop2140" stop-color="#000002" stop-opacity="0.08" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-edge-color" inkscape:label="border-edge-color" inkscape:swatch="solid">
+      <stop id="stop2150" stop-color="#000003" stop-opacity="0.05" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-solid-color" inkscape:label="border-solid-color" inkscape:swatch="solid">
+      <stop id="stop2160" stop-color="#333333" stop-opacity="1.0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-icon-outline-color" inkscape:label="border-icon-outline-color" inkscape:swatch="solid">
+      <stop id="stop2170" stop-color="#000004" stop-opacity="0.4" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-silhouette-color" inkscape:label="border-silhouette-color" inkscape:swatch="solid">
+      <stop id="stop2180" stop-color="#F7F7F8" stop-opacity="1.0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-enhanced-primary-color" inkscape:label="instrument-enhanced-primary-color" inkscape:swatch="solid">
+      <stop id="stop2190" stop-color="#0070D6" stop-opacity="1.0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-enhanced-secondary-color" inkscape:label="instrument-enhanced-secondary-color" inkscape:swatch="solid">
+      <stop id="stop2200" stop-color="#325B9A" stop-opacity="1.0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-enhanced-tertiary-color" inkscape:label="instrument-enhanced-tertiary-color" inkscape:swatch="solid">
+      <stop id="stop2210" stop-color="#325B9B" stop-opacity="0.2" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-regular-primary-color" inkscape:label="instrument-regular-primary-color" inkscape:swatch="solid">
+      <stop id="stop2220" stop-color="#333334" stop-opacity="1.0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-regular-secondary-color" inkscape:label="instrument-regular-secondary-color" inkscape:swatch="solid">
+      <stop id="stop2230" stop-color="#666666" stop-opacity="1.0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-regular-tertiary-color" inkscape:label="instrument-regular-tertiary-color" inkscape:swatch="solid">
+      <stop id="stop2240" stop-color="#666667" stop-opacity="0.25" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-frame-primary-color" inkscape:label="instrument-frame-primary-color" inkscape:swatch="solid">
+      <stop id="stop2250" stop-color="#FFFFFB" stop-opacity="1.0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-frame-secondary-color" inkscape:label="instrument-frame-secondary-color" inkscape:swatch="solid">
+      <stop id="stop2260" stop-color="#F0F0F1" stop-opacity="1.0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-frame-tertiary-color" inkscape:label="instrument-frame-tertiary-color" inkscape:swatch="solid">
+      <stop id="stop2270" stop-color="#D9D9D9" stop-opacity="1.0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-tickmark-primary-color" inkscape:label="instrument-tickmark-primary-color" inkscape:swatch="solid">
+      <stop id="stop2280" stop-color="#333335" stop-opacity="1.0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-tickmark-secondary-color" inkscape:label="instrument-tickmark-secondary-color" inkscape:swatch="solid">
+      <stop id="stop2290" stop-color="#707070" stop-opacity="1.0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-tickmark-tertiary-color" inkscape:label="instrument-tickmark-tertiary-color" inkscape:swatch="solid">
+      <stop id="stop2300" stop-color="#8F8F8F" stop-opacity="1.0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-starboard-color" inkscape:label="instrument-starboard-color" inkscape:swatch="solid">
+      <stop id="stop2310" stop-color="#359E85" stop-opacity="1.0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-port-color" inkscape:label="instrument-port-color" inkscape:swatch="solid">
+      <stop id="stop2320" stop-color="#E16290" stop-opacity="1.0" offset="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer1" inkscape:groupmode="layer">
+      </g>
+</svg>

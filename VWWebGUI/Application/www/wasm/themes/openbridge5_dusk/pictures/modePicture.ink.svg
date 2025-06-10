@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg5" width="180" height="154.72" version="1.1" viewBox="0 0 180 154.72" xmlns="http://www.w3.org/2000/svg">
+  <defs id="defs1">
+    <linearGradient id="element-active-color">
+      <stop id="stop2000" stop-color="#1A1A1A" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-neutral-color">
+      <stop id="stop2010" stop-color="#000005" stop-opacity=".59" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-inactive-color">
+      <stop id="stop2020" stop-color="#000006" stop-opacity=".42" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-disabled-color">
+      <stop id="stop2030" stop-color="#000007" stop-opacity=".2" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-active-inverted-color">
+      <stop id="stop2040" stop-color="#fff" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-neutral-inverted-color">
+      <stop id="stop2050" stop-color="#FFFFFE" stop-opacity=".7" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-inactive-inverted-color">
+      <stop id="stop2060" stop-color="#FFFFFD" stop-opacity=".4" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-disabled-inverted-color">
+      <stop id="stop2070" stop-color="#FFFFFC" stop-opacity=".2" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-backdrop-color">
+      <stop id="stop2080" stop-color="#E0E0E0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-section-color">
+      <stop id="stop2090" stop-color="#F0F0F0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-background-color">
+      <stop id="stop2100" stop-color="#F7F7F7" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-global-color">
+      <stop id="stop2110" stop-color="#FCFCFC" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-overlay-color">
+      <stop id="stop2120" stop-opacity=".1" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-divider-color">
+      <stop id="stop2130" stop-color="#000001" stop-opacity=".08" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-outline-color">
+      <stop id="stop2140" stop-color="#000002" stop-opacity=".08" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-edge-color">
+      <stop id="stop2150" stop-color="#000003" stop-opacity=".05" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-solid-color">
+      <stop id="stop2160" stop-color="#333" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-icon-outline-color">
+      <stop id="stop2170" stop-color="#000004" stop-opacity=".4" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-silhouette-color">
+      <stop id="stop2180" stop-color="#F7F7F8" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-enhanced-primary-color">
+      <stop id="stop2190" stop-color="#0070D6" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-enhanced-secondary-color">
+      <stop id="stop2200" stop-color="#325B9A" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-enhanced-tertiary-color">
+      <stop id="stop2210" stop-color="#325B9B" stop-opacity=".2" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-regular-primary-color">
+      <stop id="stop2220" stop-color="#333334" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-regular-secondary-color">
+      <stop id="stop2230" stop-color="#666" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-regular-tertiary-color">
+      <stop id="stop2240" stop-color="#666667" stop-opacity=".25" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-frame-primary-color">
+      <stop id="stop2250" stop-color="#FFFFFB" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-frame-secondary-color">
+      <stop id="stop2260" stop-color="#F0F0F1" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-frame-tertiary-color">
+      <stop id="stop2270" stop-color="#D9D9D9" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-tickmark-primary-color">
+      <stop id="stop2280" stop-color="#333335" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-tickmark-secondary-color">
+      <stop id="stop2290" stop-color="#707070" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-tickmark-tertiary-color">
+      <stop id="stop2300" stop-color="#8F8F8F" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-starboard-color">
+      <stop id="stop2310" stop-color="#359E85" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-port-color">
+      <stop id="stop2320" stop-color="#E16290" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alert-running-color">
+      <stop id="stop2390" stop-color="#228722" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alert-caution-color">
+      <stop id="stop2400" stop-color="#FAD900" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alert-warning-color">
+      <stop id="stop2410" stop-color="#F69400" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alert-alarm-color">
+      <stop id="stop2420" stop-color="#DF1B1B" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alert-critical-alarm-color">
+      <stop id="stop2430" stop-color="#E500E5" offset="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer1" transform="translate(0 -12.639)">
+    <g id="cdpPicture0">
+      <rect id="rect848" y="12.639" width="180" height="154.72" fill="none"/>
+      <g id="layer16" transform="matrix(5.7097 0 0 5.71 -88.555 -6467.7)" fill="#57615a" fill-opacity="0" stroke="url(#element-active-color)" stroke-miterlimit="10">
+        <line id="line345-0" x1="19.009" x2="32.637" y1="1155.8" y2="1154.4" stroke-linecap="round" stroke-width="4"/>
+        <line id="line347-1" x1="17.906" x2="31.768" y1="1142.9" y2="1141.4" stroke-linecap="round" stroke-width="4"/>
+        <path id="path349-3" d="m20.177 1155.6" stroke-linecap="round" stroke-width="2"/>
+        <path id="path351-7" d="m19.009 1142.6" stroke-linecap="round" stroke-width="2"/>
+        <path id="path353-7" d="m26.696 1155" stroke-linecap="round" stroke-width="2"/>
+        <path id="path355-2" d="m25.764 1142" stroke-linecap="round" stroke-width="2"/>
+        <line id="line357-6" x1="32.472" x2="45.489" y1="1153.2" y2="1152" stroke-linecap="round" stroke-width="2"/>
+        <line id="line359-4" x1="30.157" x2="40.409" y1="1143" y2="1142" stroke-linecap="round" stroke-width="2"/>
+        <line id="line361-5" x1="19.341" x2="20.509" y1="1143" y2="1155.9"/>
+        <line id="line363-2" x1="25.498" x2="26.552" y1="1142.4" y2="1154.2"/>
+        <line id="line365-0" x1="31.768" x2="32.637" y1="1141.4" y2="1154.4"/>
+        <line id="line367-2" x1="37.914" x2="38.464" y1="1141.6" y2="1153"/>
+        <path id="path369-9" d="m44.482 1153"/>
+        <path id="path371-0" d="m43.582 1141"/>
+        <line id="line375-9" x1="25.764" x2="20.758" y1="1142" y2="1155.1" stroke-width="2"/>
+        <line id="line377-4" x1="25.239" x2="31.768" y1="1142.4" y2="1153" stroke-width="2"/>
+        <line id="line379-5" x1="37.406" x2="32.989" y1="1143" y2="1153.6" stroke-width="2"/>
+        <line id="line381-1" x1="38.464" x2="44.119" y1="1143" y2="1152.1" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="cdpPicture1" transform="translate(180.07)">
+      <rect id="rect848-1" y="12.639" width="180" height="154.72" fill="none"/>
+      <g id="g1073" transform="translate(-1.3452 1.7205)" fill="url(#element-active-color)">
+        <path id="rect94167" d="m91.678 12.716c-17.303-.06571-30.727 12.663-30.727 12.663v33.224l30.395 29.677 30.441-29.677v-33.224s-14.858-12.605-30.109-12.663zm.16332 14.034a7.3991 7.3991 0 017.4018 7.3961 7.3991 7.3991 0 01-7.4018 7.4018 7.3991 7.3991 0 01-7.396-7.4018 7.3991 7.3991 0 017.396-7.3961zm-18.881 26.09a3.705 3.705 0 013.7097 3.704 3.705 3.705 0 01-3.7097 3.7037 3.705 3.705 0 01-3.7038-3.7037 3.705 3.705 0 013.7038-3.704zm37.108.11048a3.705 3.705 0 013.7038 3.704 3.705 3.705 0 01-3.7038 3.7037 3.705 3.705 0 01-3.7097-3.7037 3.705 3.705 0 013.7097-3.704zm-18.373 15.247a4.1021 4.1021 0 014.1063 4.1006 4.1021 4.1021 0 01-4.1063 4.1003 4.1021 4.1021 0 01-4.1005-4.1003 4.1021 4.1021 0 014.1005-4.1006z"/>
+        <path id="path94889" d="m81.99 84.569 4.602 4.4232s4.0055 5.2679 9.1076.32328c5.1021-4.9446 7.1965-7.1882 7.1965-7.1882s28.99 8.6001 27.824 37.745c-1.1668 29.145-24.886 39.407-38.954 39.407s-33.049-7.0671-38.885-33.213c-.12748-4.598-.42075-13.17-.16793-21.987.10042-3.5023-2.9503-8.4533.91469-10.471 3.865-2.018 7.2717 5.6854 7.2717 5.6854s6.0832 15.549 10.024 28.024 27.267 13.52 32.068-4.3961c3.5542-13.264-8.5091-18.331-14.235-24.542-5.7255-6.2116-7.1623-8.1198-6.767-13.81z"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg1" width="200" height="1e3" version="1.1" viewBox="0 0 200 1e3" xmlns="http://www.w3.org/2000/svg">
+ <g id="Layer1">
+  <g id="cdpRail">
+   <rect id="rect1" width="30" height="1e3" fill="none" opacity=".5" stroke-linejoin="round"/>
+   <g id="graphics">
+    <rect id="rect2" width="30" height="1e3" fill="#000000" stroke-linejoin="round"/>
+   </g>
+  </g>
+  <g id="cdpMiddle" display="none" fill="none" stroke-linejoin="round">
+   <rect id="rect3" width="15" height="1e3"/>
+   <g id="graphics_1" stroke="#050505">
+    <path id="rect4" d="m0 0h30v1e3h-30z"/>
+    <path id="path5" d="m0 500h30"/>
+    <path id="path6" d="m0 333.33h30"/>
+    <path id="path7" d="m0 166.67h30"/>
+    <path id="path8" d="m0 666.67h30"/>
+    <path id="path9" d="m0 833.33h30"/>
+   </g>
+  </g>
+  <g id="cdpKnob">
+   <rect id="rect11" x="-10" y="195.2" width="50" height="75" fill="none"/>
+   <g id="graphics_2">
+    <path id="rect5" d="m15 195.2c-13.85 0-25 11.15-25 25v50h50v-50c0-13.85-11.15-25-25-25z" fill="#81DFFE" stroke-linejoin="round"/>
+   </g>
+  </g>
+  <text id="cdpTicksColor" x="99.262306" y="29.090576" fill="#E6E6E6" font-family="Arial" font-size="10.667px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan1" x="99.262306" y="29.090576">0</tspan></text>
+  <text id="cdpTicksNumber" x="118.55302" y="29.090576" fill="#F2F2F2" font-family="Arial" font-size="10.667px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan2" x="118.55302" y="29.090576">0</tspan></text>
+  <g id="cdpTiledFill" fill="none" stroke-linejoin="round">
+   <rect id="rect6" x="3.6059e-8" y="94.02" width="30" height="39.118" stroke-width=".99999"/>
+   <g id="g1" stroke-linecap="round" stroke-width="7">
+    <path id="path12" d="m28.108 133.31c-23.726-5.8668-26.216-18.271-26.216-18.271" stroke="#9C9C9C"/>
+    <path id="path10" d="m1.8922 115.05 26.216-20.094" stroke="#E6E6E6"/>
+   </g>
+  </g>
+ </g>
+</svg>

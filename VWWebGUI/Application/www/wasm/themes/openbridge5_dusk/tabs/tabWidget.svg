@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg" enable-background="new 0 0 267 140" version="1.1" viewBox="0 0 267 140" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+
+<g id="Layer1">
+	<g id="pane">
+		<rect id="Rectangle-3" y="40" width="267" height="100" fill="#1F1F1F"/>
+		<rect id="Rectangle-18_3_" y="139" width="267" height="1" display="none" fill="#2b2c2e"/>
+	</g>
+	<g id="cdpTabSelected">
+		<g id="tabSelected">
+			<rect id="Rectangle-3_1_" width="89" height="40" fill="#1F1F1F"/>
+		</g>
+		<rect id="rect1009" width="89" height="40" fill="none"/>
+	</g>
+	<text id="cdpTabSelectedText" transform="translate(26.369,22)" fill="#F2F2F2" font-family="'Open Sans'" font-size="18px"><tspan id="tspan1033" font-family="'Open Sans'" font-weight="bold">Tab 1</tspan></text>
+	<g id="cdpTabNormal">
+		<g id="tab2">
+			<rect id="Rectangle-3_2_" x="89" width="89" height="40" fill="#1A1A1A"/>
+		</g>
+		<rect id="rect1015" x="89" width="89" height="40" fill="none"/>
+	</g>
+	<text id="cdpTabNormalText" transform="translate(114.5,22)" fill="#F2F2F2" font-family="'Open Sans'" font-size="18px">Tab 2</text>
+	<g id="tab3">
+		<rect id="Rectangle-3_3_" x="178" width="89" height="40" fill="#1A1A1A"/>
+	</g>
+	<text id="text1021" transform="translate(203.5,22)" fill="#F2F2F2" font-family="'Open Sans'" font-size="12px">Tab 3</text>
+	<rect id="cdpTabBorderMargins" y="-10" width="3" height="3" fill="none"/>
+	<text id="cdpPaneBorderPixPath" transform="translate(0,156.5)" fill="#ffffff" font-family="'Open Sans'" font-size="12px"><tspan id="tspan1054" fill="#000000">:/themes/openbridge5_dusk/tabs/tabPane.svg</tspan></text>
+</g>
+</svg>

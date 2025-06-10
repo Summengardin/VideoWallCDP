@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg1" width="200px" height="200px" version="1.1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+ <defs id="defs1">
+  <linearGradient id="linearGradient1" gradientUnits="userSpaceOnUse">
+   <stop id="stop3380" stop-color="#1C3254" offset="0"/>
+  </linearGradient>
+ </defs>
+ <g id="Helper">
+  <g id="background" fill="#1F1F1F" stroke="#b3b3b3" stroke-miterlimit="10" stroke-width="2">
+   <path id="path31" d="m609.45 82.568c0 4.26-3.808 7.714-8.504 7.714h-592.44c-4.696 0-8.504-3.454-8.504-7.714v-74.572c0-4.26 3.808-7.714 8.504-7.714h592.44c4.696 0 8.504 3.454 8.504 7.714z"/>
+  </g>
+ </g>
+ <g id="Layer1">
+  <g id="cdpButtonDisabled">
+   <rect id="rect" x="16.989" y="6" width="71" height="71" fill="none"/>
+   <g id="g6">
+    <rect id="fill" x="17.482" y="6.4933" width="71" height="71" rx="35.5" fill="#FFFFFF" fill-opacity="0"/>
+    <rect id="border" x="17.482" y="6.4933" width="71" height="71" rx="35.5" fill="none" stroke="#050505"/>
+    <g id="speaker_1_">
+     <path id="polygon1_1_" d="m43.213 47.387 10.852 9.389v-30.553l-10.7 9.255h-10.126v11.909z" fill="#FFFFFF" fill-opacity=".149"/>
+     <path id="path1_3_" d="m59.517 48.218c1.203-1.932 1.91-4.204 1.91-6.646 0-2.481-0.726-4.787-1.962-6.736" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-opacity=".149" stroke-width="2"/>
+     <path id="path2_1_" d="m63.854 30.444c2.305 3.11 3.671 6.959 3.671 11.127 0 4.13-1.341 7.946-3.61 11.041" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-opacity=".149" stroke-width="2"/>
+     <path id="path1_2_" d="m67.989 56.688c3.284-4.157 5.25-9.405 5.25-15.115 0-5.75-1.991-11.029-5.313-15.199" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-opacity=".149" stroke-width="2"/>
+    </g>
+   </g>
+  </g>
+  <g id="cdpButton">
+   <rect id="rect443" x="102.99" y="6.042" width="71" height="71" fill="none"/>
+   <g id="g2">
+    <rect id="fill_1" x="102.49" y="5.542" width="71" height="71" rx="35.5" fill="#FFFFFF" fill-opacity=".549"/>
+    <rect id="border_1" x="102.49" y="5.542" width="71" height="71" rx="35.5" fill="none" stroke="#050505"/>
+    <g id="speaker_1_-6">
+     <path id="polygon1_1_-2" d="m129.21 47.43 10.86 9.388v-30.552l-10.7 9.254h-10.13v11.91z" fill="#F2F2F2" stroke="#F2F2F2" stroke-linejoin="round" stroke-width="5.0003"/>
+     <path id="path1_3_-9" d="m145.52 48.26c1.203-1.932 1.91-4.204 1.91-6.646 0-2.481-0.726-4.787-1.962-6.736" display="none" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-opacity=".349" stroke-width="2"/>
+     <path id="path2_1_-1" d="m149.86 30.486c2.305 3.11 3.671 6.959 3.671 11.127 0 4.13-1.341 7.946-3.61 11.041" display="none" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-opacity=".349" stroke-width="2"/>
+     <path id="path1_2_-2" d="m153.99 56.73c3.284-4.157 5.25-9.405 5.25-15.115 0-5.75-1.991-11.029-5.313-15.199" display="none" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-opacity=".349" stroke-width="2"/>
+    </g>
+   </g>
+  </g>
+  <g id="cdpButtonPressed">
+   <rect id="rect448" x="187.49" y="6" width="71" height="71" fill="none"/>
+   <g id="g3">
+    <rect id="fill_2" x="187.49" y="6" width="71" height="71" rx="35.5" fill="url(#linearGradient1)"/>
+    <rect id="border_2" x="187.49" y="6" width="71" height="71" rx="35.5" fill="none" stroke="#050505"/>
+    <g id="speaker_1_-3" stroke="#F2F2F2">
+     <path id="polygon1_1_-6" d="m213.71 47.387 10.86 9.389v-30.552l-10.7 9.254h-10.13v11.909z" fill="#F2F2F2" stroke-linejoin="round" stroke-width="5"/>
+     <path id="path1_3_-0" d="m230.02 48.218c1.203-1.932 1.91-4.204 1.91-6.646 0-2.481-0.726-4.787-1.962-6.736" fill="none" stroke-linecap="round" stroke-width="2"/>
+     <path id="path2_1_-6" d="m234.36 30.444c2.305 3.11 3.671 6.959 3.671 11.127 0 4.13-1.341 7.946-3.61 11.041" fill="none" stroke-linecap="round" stroke-width="2"/>
+     <path id="path1_2_-26" d="m238.49 56.688c3.284-4.157 5.25-9.405 5.25-15.115 0-5.75-1.991-11.029-5.313-15.199" fill="none" stroke-linecap="round" stroke-width="2"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

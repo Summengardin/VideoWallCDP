@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg" enable-background="new 0 0 89 40" version="1.1" viewBox="0 0 89 40" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+
+<g id="Layer1">
+	<g id="cdpButton">
+		<g id="tab2">
+			<rect id="Rectangle-3_2_" width="89" height="40" fill="#1A1A1A"/>
+		</g>
+		<rect id="rect1" width="89" height="40" fill="none"/>
+	</g>
+	<g id="cdpButtonChecked">
+		<g id="tabSelected">
+			<rect id="Rectangle-3_1_" width="89" height="40" fill="#1F1F1F"/>
+			<rect id="Rectangle-18" width="89" height="2.4" fill="#4A7BA5"/>
+		</g>
+		<rect id="rect2" width="89" height="40" fill="none"/>
+	</g>
+	<text id="cdpText" transform="translate(30.499 26)" fill="#F2F2F2" font-family="'ArialMT'" font-size="18px">Tab 2</text>
+</g>
+</svg>

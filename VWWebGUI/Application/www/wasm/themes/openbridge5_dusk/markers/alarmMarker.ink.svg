@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg1" width="200px" height="200px" version="1.1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs id="defs1">
+    <linearGradient id="element-active-color">
+      <stop id="stop2000" stop-color="#1A1A1A" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-neutral-color">
+      <stop id="stop2010" stop-color="#000005" stop-opacity=".59" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-inactive-color">
+      <stop id="stop2020" stop-color="#000006" stop-opacity=".42" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-disabled-color">
+      <stop id="stop2030" stop-color="#000007" stop-opacity=".2" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-active-inverted-color">
+      <stop id="stop2040" stop-color="#fff" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-neutral-inverted-color">
+      <stop id="stop2050" stop-color="#FFFFFE" stop-opacity=".7" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-inactive-inverted-color">
+      <stop id="stop2060" stop-color="#FFFFFD" stop-opacity=".4" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-disabled-inverted-color">
+      <stop id="stop2070" stop-color="#FFFFFC" stop-opacity=".2" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-backdrop-color">
+      <stop id="stop2080" stop-color="#E0E0E0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-section-color">
+      <stop id="stop2090" stop-color="#F0F0F0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-background-color">
+      <stop id="stop2100" stop-color="#F7F7F7" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-global-color">
+      <stop id="stop2110" stop-color="#FCFCFC" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-overlay-color">
+      <stop id="stop2120" stop-opacity=".1" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-divider-color">
+      <stop id="stop2130" stop-color="#000001" stop-opacity=".08" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-outline-color">
+      <stop id="stop2140" stop-color="#000002" stop-opacity=".08" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-edge-color">
+      <stop id="stop2150" stop-color="#000003" stop-opacity=".05" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-solid-color">
+      <stop id="stop2160" stop-color="#333" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-icon-outline-color">
+      <stop id="stop2170" stop-color="#000004" stop-opacity=".4" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-silhouette-color">
+      <stop id="stop2180" stop-color="#F7F7F8" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-enhanced-primary-color">
+      <stop id="stop2190" stop-color="#0070D6" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-enhanced-secondary-color">
+      <stop id="stop2200" stop-color="#325B9A" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-enhanced-tertiary-color">
+      <stop id="stop2210" stop-color="#325B9B" stop-opacity=".2" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-regular-primary-color">
+      <stop id="stop2220" stop-color="#333334" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-regular-secondary-color">
+      <stop id="stop2230" stop-color="#666" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-regular-tertiary-color">
+      <stop id="stop2240" stop-color="#666667" stop-opacity=".25" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-frame-primary-color">
+      <stop id="stop2250" stop-color="#FFFFFB" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-frame-secondary-color">
+      <stop id="stop2260" stop-color="#F0F0F1" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-frame-tertiary-color">
+      <stop id="stop2270" stop-color="#D9D9D9" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-tickmark-primary-color">
+      <stop id="stop2280" stop-color="#333335" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-tickmark-secondary-color">
+      <stop id="stop2290" stop-color="#707070" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-tickmark-tertiary-color">
+      <stop id="stop2300" stop-color="#8F8F8F" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-starboard-color">
+      <stop id="stop2310" stop-color="#359E85" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-port-color">
+      <stop id="stop2320" stop-color="#E16290" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alert-running-color">
+      <stop id="stop2390" stop-color="#228722" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alert-caution-color">
+      <stop id="stop2400" stop-color="#FAD900" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alert-warning-color" gradientTransform="matrix(2.8025 0 0 3.2938 -280.25 -329.38)">
+      <stop id="stop2410" stop-color="#F69400" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alert-alarm-color">
+      <stop id="stop2420" stop-color="#DF1B1B" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alert-critical-alarm-color">
+      <stop id="stop2430" stop-color="#E500E5" offset="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer1">
+    <g id="cdpPicture1">
+      <rect id="rect1" width="200" height="200" fill="none"/>
+      <g id="g6">
+        <circle id="path1" cx="100" cy="100" r="100" fill="url(#alert-caution-color)"/>
+        <path id="text1" d="m93.941 139.57-5.8979-83.321v-34.851h23.913v34.851l-5.5762 83.321zm-5.04 39.033v-21.983h22.197v21.983z" fill="url(#element-active-color)" stroke-width="20.589" aria-label="!"/>
+      </g>
+    </g>
+    <g id="cdpPicture2" transform="translate(221.82)">
+      <rect id="rect2" width="200" height="200" fill="none"/>
+      <g id="g5">
+        <circle id="circle2" cx="100" cy="100" r="100" fill="url(#alert-warning-color)"/>
+        <path id="path2" d="m93.941 139.57-5.8979-83.321v-34.851h23.913v34.851l-5.5762 83.321zm-5.04 39.033v-21.983h22.197v21.983z" fill="url(#element-active-color)" stroke-width="20.589" aria-label="!"/>
+      </g>
+    </g>
+    <g id="cdpPicture3" transform="translate(441.34)">
+      <rect id="rect3" width="200" height="200" fill="none"/>
+      <g id="g4">
+        <circle id="circle3" cx="100" cy="100" r="100" fill="url(#alert-alarm-color)"/>
+        <path id="path3" d="m93.941 139.57-5.8979-83.321v-34.851h23.913v34.851l-5.5762 83.321zm-5.04 39.033v-21.983h22.197v21.983z" fill="url(#element-active-color)" stroke-width="20.589" aria-label="!"/>
+      </g>
+    </g>
+  </g>
+</svg>

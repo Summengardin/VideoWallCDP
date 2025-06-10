@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1221</width>
+    <height>1171</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1201</width>
+        <height>1145</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>40</number>
+         </property>
+         <item>
+          <layout class="QGridLayout" name="Screen1">
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <item row="1" column="0">
+            <widget class="CDPBaseUiLoaderWidget" name="uiLoaderWidget_2">
+             <property name="cdpTargetRouting">
+              <string>VWController.VisionControllers.VisionController0.Tile03</string>
+             </property>
+             <property name="uiFileName">
+              <string>./ui/elements/tilecontainer.ui</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="CDPBaseUiLoaderWidget" name="uiLoaderWidget">
+             <property name="cdpTargetRouting">
+              <string>VWController.VisionControllers.VisionController0.Tile01</string>
+             </property>
+             <property name="uiFileName">
+              <string>./ui/elements/tilecontainer.ui</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="CDPBaseUiLoaderWidget" name="uiLoaderWidget_3">
+             <property name="cdpTargetRouting">
+              <string>VWController.VisionControllers.VisionController0.Tile02</string>
+             </property>
+             <property name="uiFileName">
+              <string>./ui/elements/tilecontainer.ui</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="CDPBaseUiLoaderWidget" name="uiLoaderWidget_4">
+             <property name="cdpTargetRouting">
+              <string>VWController.VisionControllers.VisionController0.Tile04</string>
+             </property>
+             <property name="uiFileName">
+              <string>./ui/elements/tilecontainer.ui</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="CDPBaseLine" name="horizontalLine">
+           <property name="svgFile">
+            <string notr="true">:/themes/openbridge5_day/backgrounds/bgBorder.svg</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QGridLayout" name="Screen2">
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <item row="1" column="0">
+            <widget class="CDPBaseUiLoaderWidget" name="uiLoaderWidget_5">
+             <property name="cdpTargetRouting">
+              <string>VWController.VisionControllers.VisionController1.Tile13</string>
+             </property>
+             <property name="uiFileName">
+              <string>./ui/elements/tilecontainer.ui</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="CDPBaseUiLoaderWidget" name="uiLoaderWidget_6">
+             <property name="cdpTargetRouting">
+              <string>VWController.VisionControllers.VisionController1.Tile11</string>
+             </property>
+             <property name="uiFileName">
+              <string>./ui/elements/tilecontainer.ui</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="CDPBaseUiLoaderWidget" name="uiLoaderWidget_7">
+             <property name="cdpTargetRouting">
+              <string>VWController.VisionControllers.VisionController1.Tile12</string>
+             </property>
+             <property name="uiFileName">
+              <string>./ui/elements/tilecontainer.ui</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="CDPBaseUiLoaderWidget" name="uiLoaderWidget_8">
+             <property name="cdpTargetRouting">
+              <string>VWController.VisionControllers.VisionController1.Tile14</string>
+             </property>
+             <property name="uiFileName">
+              <string>./ui/elements/tilecontainer.ui</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CDPBasePicture</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBasePicture.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseLine</class>
+   <extends>CDPBasePicture</extends>
+   <header>CDPBaseWidgets/CDPBaseLine.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseUiLoaderWidget</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBaseUiLoaderWidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

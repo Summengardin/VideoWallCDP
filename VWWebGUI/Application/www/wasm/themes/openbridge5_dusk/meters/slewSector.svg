@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg1" width="200" height="75" version="1.1" viewBox="0 0 200 75" xmlns="http://www.w3.org/2000/svg">
+ <g id="Layer1">
+  <g id="cdpBackground">
+   <rect id="outline" width="200" height="75" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+   <g id="g9">
+    <path id="path4" d="m100 32.338a180 180 0 0 0-76.031 16.951l6.4492 13.828a165 165 0 0 1 69.582-15.779 165 165 0 0 1 69.709 15.504l6.3516-13.621a180 180 0 0 0-76.061-16.883z" fill="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width=".1"/>
+    <path id="outlinepath" d="m0 0h200v75h-200z" fill="none"/>
+   </g>
+  </g>
+  <g id="cdpMiddle">
+   <rect id="outline_1" width="200" height="75" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+   <g id="g8">
+    <path id="path27" d="m172.68 55.971c-22.759-10.619-47.567-16.126-72.682-16.133-25.109 0.031571-49.906 5.5601-72.65 16.197" fill="none" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="path7" d="m100 32.338a180 180 0 0 0-76.031 16.951l6.4492 13.828a165 165 0 0 1 69.582-15.779 165 165 0 0 1 69.709 15.504l6.3516-13.621a180 180 0 0 0-76.061-16.883z" fill="none" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="path18" d="m38.463 43.266 5.2017 14.292" fill="none" stroke="#1A1A1A" stroke-width="1px"/>
+    <path id="path19" d="m53.428 38.528 3.9232 14.642" fill="#050505" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="path20" d="m68.75 35.111 2.6231 14.877" fill="#050505" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="path21" d="m84.314 33.042 1.312 14.996" fill="#050505" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="path22" d="m100 32.338v15" fill="#050505" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="path23" d="m115.69 33.027-1.3079 14.949" fill="#050505" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="path24" d="m131.26 35.081-2.6068 14.784" fill="#050505" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="path25" d="m146.58 38.484-3.8869 14.506" fill="#050505" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="path26" d="m161.56 43.209-5.1384 14.118" fill="#050505" stroke="#1A1A1A" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="outlinepath_1" d="m0 0h200v75h-200z" fill="none"/>
+   </g>
+  </g>
+  <g id="cdpNeedleGraphics_1">
+   <rect id="cdpRectOutline_1" x="95" y="47.338" width="10" height="165" fill="none"/>
+   <rect id="cdpRectCenter_1" x="97.112" y="209.45" width="5.7766" height="5.7766" fill="none"/>
+   <g id="graphics_1">
+    <path id="path67" d="m100 47.338-5 10h10l-5-10zm0 2.2344 3.3828 6.7656h-6.7656l3.3828-6.7656z" fill="#81DFFE"/>
+   </g>
+  </g>
+  <rect id="cdpNeedleCenterCW" x="98" y="210.34" width="4" height="4"/>
+  <rect id="cdpTicksMinorNo4T" x="114.17" y="20.091" width="3.2128" height="3.2128" fill="#050505"/>
+  <rect id="cdpTicksMajorNo3T" x="114.17" y="20.091" width="3.2128" height="3.2128" fill="#050505"/>
+  <rect id="cdpTicksNumOffsetNeg" x="108.93" y="11.642" width=".51028" height="35" fill="#050505"/>
+  <rect id="cdpTicksMajorSize" x="112.06" y="13.198" width=".51028" height="5" fill="#050505"/>
+  <rect id="cdpTicksMinorSize" x="110.29" y="10.891" width=".51028" height="7.5" fill="#050505"/>
+  <rect id="cdpNeedleMax_1" x="168.71" y="61.842" width="2" height="2" fill="#81DFFE" fill-opacity=".97596"/>
+  <rect id="cdpNeedleMin_1" x="29.418" y="62.117" width="2" height="2" fill="#81DFFE" fill-opacity=".97596"/>
+  <rect id="cdpTicksOffset" x="119.96" y="20.819" width=".5" height="8" fill="#ff1717"/>
+  <text id="cdpTicksNumber" x="98.440506" y="19.536201" fill="#F2F2F2" font-family="'Comic Sans MS'" font-size="5.3333px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan2" x="98.440506" y="19.536201" fill="#F2F2F2" font-family="Arial" font-size="5.3333px">0</tspan></text>
+ </g>
+ <g id="Helper">
+  <circle id="path1" cx="100" cy="212.34" r="180" display="none" fill="#2400ca"/>
+  <circle id="circle26" cx="100" cy="212.34" r="185" display="none" fill="#655E25"/>
+  <circle id="circle2" cx="100" cy="212.34" r="165" display="none" fill="#138A00"/>
+  <rect id="center" x="98" y="210.34" width="4" height="4" fill="#E500E5"/>
+  <path id="sector" d="m176.67 47.914-76.672 164.42-76.672-164.42" fill="none"/>
+ </g>
+ <path id="path35" d="m189.42 20.585-89.416 191.75-87.447-187.53" display="none" fill="#E500E5"/>
+ <g id="Layer2">
+  <g id="cdpNeedleGraphics">
+   <rect id="cdpRectOutline" x="95" y="22.338" width="10" height="190" fill="none"/>
+   <rect id="cdpRectCenter" x="97.112" y="209.45" width="5.7766" height="5.7766" fill="none"/>
+   <g id="graphics">
+    <path id="path32" d="m95 22.338h10l-5 10z" fill="#81DFFE"/>
+   </g>
+  </g>
+  <rect id="cdpNeedleCenterCW_1" x="98" y="210.34" width="4" height="4" fill="#81DFFE" fill-opacity=".97596"/>
+  <rect id="cdpTicksOffsetNegative" x="107.55" y="11.515" width=".5" height="10" fill="#050505"/>
+  <rect id="cdpNeedleMax" x="179.3" y="39.139" width="2" height="2" fill="#81DFFE" fill-opacity=".97596"/>
+  <rect id="cdpNeedleMin" x="18.703" y="39.139" width="2" height="2" fill="#81DFFE" fill-opacity=".97596"/>
+ </g>
+ <g id="Layer3">
+  <g id="cdpNeedleGraphics_2">
+   <rect id="cdpRectOutline_2" x="95" y="27.338" width="10" height="185" fill="none"/>
+   <rect id="cdpRectCenter_2" x="97.112" y="209.45" width="5.7766" height="5.7766" fill="none"/>
+   <g id="graphics_2">
+    <path id="path73" d="m97.5 27.338 5-3e-6 -2.5 5z" fill="#5696C7"/>
+   </g>
+  </g>
+  <rect id="cdpNeedleCenterCW_2" x="98" y="210.34" width="4" height="4" fill="#81DFFE" fill-opacity=".97596"/>
+  <rect id="cdpNeedleMax_2" x="177.18" y="43.671" width="2" height="2" fill="#81DFFE" fill-opacity=".97596"/>
+  <rect id="cdpNeedleMin_2" x="20.816" y="43.671" width="2" height="2" fill="#81DFFE" fill-opacity=".97596"/>
+ </g>
+ <g id="Layer4">
+  <g id="cdpNeedleGraphics_3">
+   <rect id="cdpRectOutline_3" x="95" y="27.338" width="10" height="185" fill="none"/>
+   <rect id="cdpRectCenter_3" x="97.112" y="209.45" width="5.7766" height="5.7766" fill="none"/>
+   <g id="graphics_3">
+    <path id="path74" d="m97.5 27.338 5-3e-6 -2.5 5z" fill="#5696C7"/>
+   </g>
+  </g>
+  <rect id="cdpNeedleCenterCW_3" x="98" y="210.34" width="4" height="4" fill="#81DFFE" fill-opacity=".97596"/>
+  <rect id="cdpNeedleMax_3" x="177.18" y="43.671" width="2" height="2" fill="#81DFFE" fill-opacity=".97596"/>
+  <rect id="cdpNeedleMin_3" x="20.816" y="43.671" width="2" height="2" fill="#81DFFE" fill-opacity=".97596"/>
+ </g>
+</svg>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Application Name="VWWebGUI" Model="Application" Description=''>
+  <Debug>0</Debug>
   <ApplicationHandle>2</ApplicationHandle>
   <fs>10</fs>
   <ClockSync>None</ClockSync>
@@ -9,12 +10,16 @@
   <CDPVersion>5.0</CDPVersion>
   <Domain>VideoWall</Domain>
 
-  <NetworkInterface Name="ETH0" MAC="" IPAddress="10.1.3.179" SubnetMask="255.255.255.0"></NetworkInterface>
+  <NetworkInterface Name="ETH0" MAC="" IPAddress="10.5.11.65" SubnetMask="255.255.255.0"></NetworkInterface>
 
   <Subcomponents>
     <Subcomponent Name="CDP"        Model="CDP"        src="Components\CDP.xml"></Subcomponent>
     <Subcomponent Model="CDPComponent" Name="CDPComponent" src="Components/CDPComponent.xml"></Subcomponent>
     <Subcomponent Model="CDPComponent" Name="GUIConnections" src="Components/GUIConnections.xml"></Subcomponent>
+    <Operator Model="Automation.ANDOperator&lt;bool&gt;" Name="AND" Type="bool">
+      <Argument CppName="m_output" Description="Default output argument" Input="0" Model="DefaultArgument&lt;bool&gt;" Name="Out" Routing="" Type="bool" Value="0"></Argument>
+      <Argument CppName="m_input" Description="Default input argument" Input="1" Model="DefaultArgument&lt;bool&gt;" Name="In0" Routing="" Type="bool" Value="0"></Argument>
+      <Argument CppName="" Description="Default input argument" Input="1" Model="DefaultArgument&lt;bool&gt;" Name="In1" Routing="" Type="bool" Value="0"></Argument></Operator>
   </Subcomponents>
 
   <Signals>
@@ -25,6 +30,8 @@
     <Signal Name="MemUsedRelative"  Model="CDPSignal&lt;double&gt;" Type="double" Unit="0..1"   Description="Memory used relative [used/total, 0..1]."></Signal>
     <Signal Name="MemTotal"         Model="CDPSignal&lt;double&gt;" Type="double" Unit="KiB"    Description="Memory total [KiB]."></Signal>
     <Signal Name="MemBuffCache"     Model="CDPSignal&lt;double&gt;" Type="double" Unit="KiB"    Description="Memory in buffers and cache [KiB] (only relevant if Linux)."></Signal>
+    <Signal Description="This should be set to 1 when you want Application statemachine to go from PreOperational to Running (for example; I/O Servers have correct NumberOfNodesOnline, etc)" Input="0" Model="CDPSignal&lt;bool&gt;" Name="SafeToStart" Type="bool" Unit="0/1" Value="1"></Signal>
+    <Signal Description="This is set to 1 when the the following conditions are true: The subsystem is up, StartupFlagsState == StartupWaitFlags, and SafeToStart is 1." Input="1" Model="CDPSignal&lt;bool&gt;" Name="BootupDone" Type="bool" Unit="0/1"></Signal>
   </Signals>
 
   <Alarms>
@@ -36,11 +43,13 @@
     Consider increasing MaxConfigurationSaveDelay." Level="Error" Name="DelayConfigurationSaveAborted" Text="Configuration file write was re-enabled (DelayConfigurationSave overridden)" Trig="1"></Alarm>
     <Alarm Level="Error" Name="UnhandledExceptionDetected" Text="No unhandled C++ exceptions have been detected" Trig="1"></Alarm>
     <Alarm Description="This alarm is set when controller clock is not monotonic (steady). The alarm can indicate that PTP time-sync is not configured or working properly or not running on PTP-supported hardware." Level="Error" Name="NonMonotonicClockDetected" Text="Non-monotonic clock detected. Steady processes scheduling is not possible." Trig="1"></Alarm>
+    <Alarm Description="This alarm is set when StartupChecks==1 and the application times out waiting for the conditions it requires to go to Running state." Level="Error" Name="StartupOverrideAlarm" Text="Application startup overridden due to timeout or internal checks being skipped." Trig="1"></Alarm>
   </Alarms>
 
   <Parameters>
     <Parameter Description="The maximum amount of time that DelayConfigurationSave can block the configuration saving. If DelayConfigurationSave
-    is active for longer than this time, configuration saving will be allowed again, and the DelayConfigurationSaveAborted alarm will trigger." Name="MaxConfigurationSaveDelay" PreviousValue="600" Unit="s" Value="600"></Parameter></Parameters>
+    is active for longer than this time, configuration saving will be allowed again, and the DelayConfigurationSaveAborted alarm will trigger." Name="MaxConfigurationSaveDelay" PreviousValue="600" Unit="s" Value="600"></Parameter>
+    <Parameter Description="If application is not in Running state within this timeout, it overrides the startup-wait sequence and forces the Application to Running state. See also &apos;SafeToStart&apos; and &apos;StartupChecks&apos;." Name="StartupOverrideTime" Value="1"></Parameter></Parameters>
   
 
 </Application>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg108" width="504" height="504" fill="none" inkscape:version="1.4 (1:1.4+202410161351+e7c3feb100)" sodipodi:docname="slewMeter.ink.svg" version="1.1" viewBox="0 0 504 504" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+  <sodipodi:namedview id="namedview1" bordercolor="#666666" borderopacity="1.0" inkscape:current-layer="Styles" inkscape:cx="406.28714" inkscape:cy="103.69277" inkscape:deskcolor="#d1d1d1" inkscape:pagecheckerboard="0" inkscape:pageopacity="0.0" inkscape:showpageshadow="2" inkscape:window-height="2100" inkscape:window-maximized="1" inkscape:window-width="3840" inkscape:window-x="1920" inkscape:window-y="28" inkscape:zoom="5.8345435" pagecolor="#ffffff"/>
+  <defs id="defs1">
+    <linearGradient id="container-background-color" inkscape:swatch="solid">
+      <stop id="stop1" stop-color="#f7f7f7" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-active-color" gradientTransform="translate(15.38)" inkscape:swatch="solid">
+      <stop id="stop2" stop-color="#1a1a1a" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-active-inverted-color" inkscape:swatch="solid">
+      <stop id="stop3" stop-color="#fff" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-edge-color" inkscape:swatch="solid">
+      <stop id="stop31" stop-opacity=".05" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-enhanced-primary-color" gradientTransform="translate(-24.925 12.954)" inkscape:swatch="solid">
+      <stop id="stop4" stop-color="#0080ff" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-enhanced-secondary-color" gradientTransform="matrix(1 0 0 .145 -956.62 10.788)" inkscape:swatch="solid">
+      <stop id="stop5" stop-color="#325b9b" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-enhanced-tertiary-color" inkscape:swatch="solid">
+      <stop id="stop6" stop-color="#325b9a" stop-opacity=".2" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-frame-primary-color" gradientTransform="matrix(1.9895 0 0 1.9925 -280.22 -297.23)" inkscape:swatch="solid">
+      <stop id="stop7" stop-color="#fffffe" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-frame-secondary-color" gradientTransform="translate(-12,-12)" inkscape:swatch="solid">
+      <stop id="stop8" stop-color="#8c8c8e" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-frame-tertiary-color" inkscape:swatch="solid">
+      <stop id="stop9" stop-color="#d6d6d6" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-regular-primary-color" inkscape:swatch="solid">
+      <stop id="stop10" stop-color="#666" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-regular-secondary-color" inkscape:swatch="solid">
+      <stop id="stop101" stop-color="#666667" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-tickmark-primary-color" gradientTransform="matrix(1 0 0 .145 -946.75 10.26)" inkscape:swatch="solid">
+      <stop id="stop11" stop-color="#333" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-tickmark-secondary-color" gradientTransform="matrix(1.9895 0 0 1.9925 -280.22 -297.23)" inkscape:swatch="solid">
+      <stop id="stop12" stop-color="#8C8C8C" offset="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Styles">
+    <g id="cdpBackgroundStyle2">
+      <g id="graphics">
+        <circle id="circle1" cx="253.84" cy="252.64" r="210" fill="url(#instrument-frame-primary-color)" stroke="url(#instrument-frame-secondary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+        <g id="g3">
+          <path id="path2" d="m233.41 197.04c-2e-3 -44.454 34.214-88.166 47.749-88.166 13.535-1.6e-4 47.749 42.232 47.749 88.166l-7e-4 186.79c2.9e-4 6.604-5.3433 11.955-11.938 11.955l-71.621 4.4e-4c-6.5925-5.4e-4 -11.938-5.3529-11.938-11.955z" fill="url(#instrument-frame-primary-color)" stroke="url(#instrument-tickmark-secondary-color)" stroke-width="4"/>
+        </g>
+      </g>
+      <rect id="rect4" width="504" height="504" opacity="0" stroke-width=".53296" style="paint-order:fill markers stroke"/>
+    </g>
+    <g id="cdpBackgroundStyle1">
+      <g id="g11">
+        <circle id="circle9" cx="253.84" cy="252.64" r="210" fill="url(#instrument-frame-primary-color)" stroke="url(#instrument-frame-secondary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+        <g id="g10">
+          <path id="path9" d="m180.12 197.04c-2e-3 -44.454 34.214-88.166 47.749-88.166 13.535-1.6e-4 47.749 42.232 47.749 88.166l-7e-4 186.79c2.9e-4 6.604-5.3433 11.955-11.938 11.955l-71.621 4.4e-4c-6.5925-5.4e-4 -11.938-5.3529-11.938-11.955z" fill="url(#instrument-frame-primary-color)" stroke="url(#instrument-tickmark-secondary-color)" stroke-width="4"/>
+        </g>
+      </g>
+      <rect id="rect11" width="504" height="504" opacity="0" stroke-width=".53296" style="paint-order:fill markers stroke"/>
+    </g>
+    <g id="cdpNeedle1Style1">
+      <g id="g1170-5" fill="url(#instrument-enhanced-primary-color)" stroke="url(#instrument-enhanced-secondary-color)" stroke-linecap="round" stroke-linejoin="round">
+        <path id="path5-8" d="m246.34 114.79v121.98a17.765 17.765 0 0 0-10.162 16.039 17.765 17.765 0 0 0 17.764 17.764 17.765 17.765 0 0 0 17.766-17.764 17.765 17.765 0 0 0-10.367-16.146v-121.88z"/>
+        <path id="rect5-7" d="m247.94 169.87v-100h12v100" sodipodi:nodetypes="cccc"/>
+      </g>
+      <rect id="cdpRectOutline-9" x="78.829" y="42.59" width="350.04" height="385.07" opacity="0" stroke-width="1.6272" style="paint-order:fill markers stroke"/>
+      <rect id="cdpRectCenter-6" x="245.84" y="244.79" width="15.995" height="15.709" fill="none" style="paint-order:fill markers stroke"/>
+    </g>
+    <g id="cdpNeedle1Style2">
+      <g id="g14" fill="url(#instrument-enhanced-primary-color)" stroke="url(#instrument-enhanced-secondary-color)" stroke-linecap="round" stroke-linejoin="round">
+        <path id="path13" d="m246.34 114.79v121.98a17.765 17.765 0 0 0-10.162 16.039 17.765 17.765 0 0 0 17.764 17.764 17.765 17.765 0 0 0 17.766-17.764 17.765 17.765 0 0 0-10.367-16.146v-121.88z"/>
+        <path id="path14" d="m247.94 169.87v-100h12v100" sodipodi:nodetypes="cccc"/>
+      </g>
+      <rect id="rect14" x="78.829" y="42.59" width="350.04" height="385.07" opacity="0" stroke-width="1.6272" style="paint-order:fill markers stroke"/>
+      <rect id="rect15" x="245.84" y="244.79" width="15.995" height="15.709" fill="none" style="paint-order:fill markers stroke"/>
+    </g>
+  </g>
+  <g id="Layer1">
+    <g id="cdpBackground">
+      <g id="graphics_1">
+        <circle id="path1" cx="253.84" cy="252.64" r="210" fill="url(#instrument-frame-primary-color)" stroke="url(#instrument-frame-secondary-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+        <g id="g14-9">
+          <path id="path924-2" d="m206.19 197.52c-2e-3 -44.454 34.214-88.166 47.749-88.166 13.535-1.6e-4 47.749 42.232 47.749 88.166l-7e-4 186.79c2.9e-4 6.604-5.3433 11.955-11.938 11.955l-71.621 4.4e-4c-6.5925-5.4e-4 -11.938-5.3529-11.938-11.955z" fill="url(#instrument-frame-primary-color)" stroke="url(#instrument-tickmark-secondary-color)" stroke-width="4"/>
+        </g>
+      </g>
+      <rect id="rect1162" width="504" height="504" opacity="0" stroke-width=".53296" style="paint-order:fill markers stroke"/>
+    </g>
+    <rect id="cdpTop" width="504" height="504" opacity="0" stroke-width=".53296" style="paint-order:fill markers stroke"/>
+    <rect id="cdpNeedleCenterCW" x="245.84" y="244.79" width="15.995" height="15.709" fill="none" style="paint-order:fill markers stroke"/>
+    <g id="cdpNeedleGraphics">
+      <g id="g1170" fill="url(#instrument-enhanced-primary-color)" stroke="url(#instrument-enhanced-secondary-color)" stroke-linecap="round" stroke-linejoin="round">
+        <path id="path5" d="m246.34 114.79v121.98a17.765 17.765 0 0 0-10.162 16.039 17.765 17.765 0 0 0 17.764 17.764 17.765 17.765 0 0 0 17.766-17.764 17.765 17.765 0 0 0-10.367-16.146v-121.88z"/>
+        <path id="rect5" d="m247.94 169.87v-100h12v100" sodipodi:nodetypes="cccc"/>
+      </g>
+      <rect id="cdpRectOutline" x="78.829" y="42.59" width="350.04" height="385.07" opacity="0" stroke-width="1.6272" style="paint-order:fill markers stroke"/>
+      <rect id="cdpRectCenter" x="245.84" y="244.79" width="15.995" height="15.709" fill="none" style="paint-order:fill markers stroke"/>
+    </g>
+    <rect id="cdpNeedleMax" x="253.35" y="41.658" width=".9945" height="1.9219" fill="none" style="paint-order:fill markers stroke"/>
+    <rect id="cdpNeedleMin" x="253.35" y="41.658" width=".9945" height="1.9219" fill="none" style="paint-order:fill markers stroke"/>
+    <text id="cdpTicksNumber" x="454.25864" y="19.672619" fill="url(#element-active-color)" font-family="Arial" font-size="20px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan5" x="454.25864" y="19.672619" sodipodi:role="line">0</tspan></text>
+    <rect id="cdpTicksMinorSize" x="478.22" y="12" width="1" height="200" fill="url(#instrument-tickmark-primary-color)" stroke="url(#instrument-enhanced-secondary-color)" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="cdpTicksMajorNo13T" x="489.2" y="13.234" width="2.799" height="5.0585" fill="none"/>
+    <rect id="cdpTicksNumOffsetNegative" transform="scale(-1,1)" x="-481.98" y="12" width="1" height="29" fill="url(#instrument-tickmark-primary-color)" stroke="url(#instrument-enhanced-secondary-color)" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="Layer2">
+    <rect id="cdpTop2" x="12" y="12" width="480" height="480" opacity="0" stroke-width=".50758" style="paint-order:fill markers stroke"/>
+    <rect id="cdpNeedleMin2" x="253.35" y="41.658" width=".9945" height="1.9219" fill="none" style="paint-order:fill markers stroke"/>
+    <rect id="cdpNeedleMax2" x="253.35" y="41.658" width=".9945" height="1.9219" fill="none" style="paint-order:fill markers stroke"/>
+    <rect id="cdpNeedleCenterCW2" x="245.84" y="244.79" width="15.995" height="15.709" fill="none" style="paint-order:fill markers stroke"/>
+    <g id="cdpNeedleGraphics2">
+      <rect id="cdpRectOutline2" x="78.83" y="42.59" width="350.04" height="385.07" opacity="0" stroke-width="1.6272" style="paint-order:fill markers stroke"/>
+      <rect id="cdpRectCenter2" x="245.84" y="244.79" width="15.995" height="15.709" fill="none" style="paint-order:fill markers stroke"/>
+      <g id="g1170-3" display="none" fill="url(#instrument-enhanced-primary-color)" stroke="url(#instrument-enhanced-secondary-color)" stroke-linecap="round" stroke-linejoin="round">
+        <path id="path5-3" d="m246.34 114.79v121.98a17.765 17.765 0 0 0-10.162 16.039 17.765 17.765 0 0 0 17.764 17.764 17.765 17.765 0 0 0 17.766-17.764 17.765 17.765 0 0 0-10.367-16.146v-121.88z"/>
+        <path id="rect5-3" d="m247.94 169.87v-100h12v100" sodipodi:nodetypes="cccc"/>
+      </g>
+    </g>
+  </g>
+  <g id="Layer3" display="none">
+    <rect id="cdpNeedleMax3" x="253.35" y="41.658" width=".9945" height="1.9219" fill="none" style="paint-order:fill markers stroke"/>
+    <g id="cdpNeedleGraphics3">
+      <g id="g9">
+        <path id="path1276" d="m243.9 42.597c-0.80543-0.0027-1.2829 0.89902-0.82914 1.5644l9.8811 14.462-0.0447 15c-2e-3 0.55231 0.44522 1.0008 0.99753 1.0024s1.0004-0.44432 1.002-0.99664l0.0447-15 9.965-14.404c0.45854-0.66195-0.0134-1.5666-0.81884-1.5692z" display="none" fill="#dcb900"/>
+        <path id="newArrow" d="m253.93 68.686-13.184-23.072c-0.70278-1.2302 0.18527-2.7606 1.6021-2.7607l23.164 2.18e-4c1.417 9.9e-5 2.3049 1.5307 1.602 2.7601z" fill="url(#instrument-enhanced-primary-color)" stroke-width=".92261"/>
+      </g>
+      <rect id="cdpRectOutline3" x="78.829" y="42.59" width="350.04" height="385.07" opacity="0" stroke-width="1.6272" style="paint-order:fill markers stroke"/>
+      <rect id="cdpRectCenter3" x="245.84" y="244.79" width="15.995" height="15.709" fill="none" style="paint-order:fill markers stroke"/>
+    </g>
+    <rect id="cdpNeedleCenterCW3" x="245.84" y="244.79" width="15.995" height="15.709" fill="none" style="paint-order:fill markers stroke"/>
+    <rect id="cdpNeedleMin3" x="253.35" y="41.658" width=".9945" height="1.9219" fill="none" style="paint-order:fill markers stroke"/>
+  </g>
+  <g id="Layer4" display="none">
+    <rect id="cdpNeedleMax4" x="253.35" y="41.658" width=".9945" height="1.9219" fill="none" style="paint-order:fill markers stroke"/>
+    <rect id="cdpNeedleCenterCW4" x="245.84" y="244.79" width="15.995" height="15.709" fill="none" style="paint-order:fill markers stroke"/>
+    <g id="cdpNeedleGraphics4">
+      <g id="g12">
+        <g id="small" display="none">
+          <circle id="circle569" cx="253.85" cy="252.63" r="169" display="inline" stroke="#f7f7f7" stroke-width="12"/>
+          <circle id="circle571" cx="253.85" cy="252.63" r="163.5" display="inline" stroke="#000" stroke-opacity=".05"/>
+          <circle id="circle573" cx="253.94" cy="83.315" r="3.6808" fill="#0080ff"/>
+          <circle id="circle575" cx="92.845" cy="200.21" r="3.6808" fill="#0080ff"/>
+          <circle id="circle577" cx="154.25" cy="389.56" r="3.6808" fill="#0080ff"/>
+          <circle id="circle579" cx="353.3" cy="389.67" r="3.6808" fill="#0080ff"/>
+          <circle id="circle581" cx="414.91" cy="200.4" r="3.6808" fill="#0080ff"/>
+        </g>
+        <g id="big" fill="url(#instrument-regular-secondary-color)">
+          <circle id="ellipse11" cx="253.84" cy="88.631" r="8"/>
+          <circle id="ellipse12" cx="409.82" cy="201.95" r="8"/>
+          <circle id="ellipse13" cx="97.875" cy="201.95" r="8"/>
+          <circle id="ellipse14" cx="157.45" cy="385.31" r="8"/>
+          <circle id="ellipse15" cx="350.24" cy="385.31" r="8"/>
+        </g>
+      </g>
+      <rect id="cdpRectOutline4" x="78.829" y="42.59" width="350.04" height="385.07" opacity="0" stroke-width="1.6272" style="paint-order:fill markers stroke"/>
+      <rect id="cdpRectCenter4" x="245.84" y="244.79" width="15.995" height="15.709" fill="none" style="paint-order:fill markers stroke"/>
+    </g>
+    <rect id="cdpNeedleMin4" x="253.35" y="41.658" width=".9945" height="1.9219" fill="none" style="paint-order:fill markers stroke"/>
+  </g>
+  <rect id="cdpNeedleCenterCW-8" x="245.84" y="244.79" width="15.995" height="15.709" display="none" fill="#e13636" style="paint-order:fill markers stroke"/>
+</svg>

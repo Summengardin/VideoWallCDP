@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg" enable-background="new 0 0 192 76.2" inkscape:version="1.3 (1:1.3+202307231459+0e150ed6c4)" sodipodi:docname="meterRoseSector4N.ink.svg" version="1.1" viewBox="0 0 192 76.2" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"><sodipodi:namedview id="namedview100" bordercolor="#666666" borderopacity="1.0" inkscape:current-layer="svg" inkscape:cx="226.43366" inkscape:cy="27.033284" inkscape:deskcolor="#d1d1d1" inkscape:pagecheckerboard="0" inkscape:pageopacity="0.0" inkscape:showpageshadow="2" inkscape:window-height="1023" inkscape:window-maximized="1" inkscape:window-width="1920" inkscape:window-x="1920" inkscape:window-y="0" inkscape:zoom="4.1800323" pagecolor="#ffffff"/>
+ <defs id="defs1">
+  <linearGradient id="amplified-enabled-background-color" inkscape:label="amplified-enabled-background-color" inkscape:swatch="solid">
+   <stop id="stop2181" stop-color="#305791" stop-opacity=".1" offset="0"/>
+  </linearGradient>
+  <linearGradient id="amplified-enabled-border-color" inkscape:label="amplified-enabled-border-color" inkscape:swatch="solid">
+   <stop id="stop2191" stop-color="#030302" stop-opacity="0" offset="0"/>
+  </linearGradient>
+  <linearGradient id="border-divider-color" inkscape:label="border-divider-color" inkscape:swatch="solid">
+   <stop id="stop1011" stop-color="#030301" stop-opacity=".08" offset="0"/>
+  </linearGradient>
+  <linearGradient id="border-outline-color" inkscape:label="border-outline-color" inkscape:swatch="solid">
+   <stop id="stop222" stop-color="#010303" stop-opacity=".08" offset="0"/>
+  </linearGradient>
+  <linearGradient id="container-background-color" inkscape:label="container-background-color" inkscape:swatch="solid">
+   <stop id="stop233" stop-color="#f7f7f7" offset="0"/>
+  </linearGradient>
+  <linearGradient id="element-inactive-color" inkscape:label="element-inactive-color" inkscape:swatch="solid">
+   <stop id="stop01" stop-color="#0e0100" stop-opacity=".42" offset="0"/>
+  </linearGradient>
+  <linearGradient id="element-disabled-color" inkscape:label="element-disabled-color" inkscape:swatch="solid">
+   <stop id="stop1" stop-color="#010000" stop-opacity=".2" offset="0"/>
+  </linearGradient>
+  <linearGradient id="element-neutral-color" inkscape:label="element-neutral-color" inkscape:swatch="solid">
+   <stop id="stop101" stop-color="#010201" stop-opacity=".59" offset="0"/>
+  </linearGradient>
+  <linearGradient id="element-active-color" inkscape:label="element-active-color" inkscape:swatch="solid">
+   <stop id="stop2" stop-color="#1a1a1a" offset="0"/>
+  </linearGradient>
+  <linearGradient id="flat-enabled-background-color" inkscape:label="flat-enabled-background-color" inkscape:swatch="solid">
+   <stop id="stop218" stop-color="#030101" stop-opacity="0" offset="0"/>
+  </linearGradient>
+  <linearGradient id="flat-enabled-border-color" inkscape:label="flat-enabled-border-color" inkscape:swatch="solid">
+   <stop id="stop219" stop-color="#030102" stop-opacity="0" offset="0"/>
+  </linearGradient>
+  <linearGradient id="indent-enabled-background-color" inkscape:label="indent-enabled-background-color" inkscape:swatch="solid">
+   <stop id="stop21" stop-color="#010e01" stop-opacity=".05" offset="0"/>
+  </linearGradient>
+  <linearGradient id="indent-enabled-border-color" inkscape:label="indent-enabled-border-color" inkscape:swatch="solid">
+   <stop id="stop214" stop-color="#010003" stop-opacity=".05" offset="0"/>
+  </linearGradient>
+  <linearGradient id="indent-disabled-background-color" inkscape:label="indent-disabled-background-color" inkscape:swatch="solid">
+   <stop id="stop211" stop-color="#010202" stop-opacity="0" offset="0"/>
+  </linearGradient>
+  <linearGradient id="indent-disabled-border-color" inkscape:label="indent-disabled-border-color" inkscape:swatch="solid">
+   <stop id="stop212" stop-color="#020101" stop-opacity=".1" offset="0"/>
+  </linearGradient>
+  <linearGradient id="thumb-disabled-background-color" inkscape:label="thumb-disabled-background-color" inkscape:swatch="solid">
+   <stop id="stop213" stop-color="#020201" stop-opacity=".1" offset="0"/>
+  </linearGradient>
+  <linearGradient id="instrument-tickmark-primary-color" inkscape:label="instrument-tickmark-primary-color" inkscape:swatch="solid">
+   <stop id="stop3" stop-color="#333333" offset="0"/>
+  </linearGradient>
+  <linearGradient id="instrument-tickmark-secondary-color" inkscape:label="instrument-tickmark-secondary-color" inkscape:swatch="solid">
+   <stop id="stop4" stop-color="#8c8c8c" offset="0"/>
+  </linearGradient>
+  <linearGradient id="instrument-enhanced-primary-color" inkscape:label="instrument-enhanced-primary-color" inkscape:swatch="solid">
+   <stop id="stop5" stop-color="#166ce4" offset="0"/>
+  </linearGradient>
+  <linearGradient id="instrument-enhanced-secondary-color" inkscape:label="instrument-enhanced-secondary-color" inkscape:swatch="solid">
+   <stop id="stop6" stop-color="#325b9a" offset="0"/>
+  </linearGradient>
+  <linearGradient id="instrument-enhanced-tertiary-color" gradientTransform="translate(108.72 -22.892)" inkscape:label="instrument-enhanced-tertiary-color" inkscape:swatch="solid">
+   <stop id="stop7" stop-color="#325b9b" stop-opacity=".2" offset="0"/>
+  </linearGradient>
+  <linearGradient id="instrument-frame-primary-color" inkscape:label="instrument-frame-primary-color" inkscape:swatch="solid">
+   <stop id="stop8" stop-color="#ffffff" offset="0"/>
+  </linearGradient>
+  <linearGradient id="instrument-frame-secondary-color" gradientTransform="matrix(-.99526 0 0 .99526 195.35 -.066007)" inkscape:label="instrument-frame-secondary-color" inkscape:swatch="solid">
+   <stop id="stop9" stop-color="#f0f0f0" offset="0"/>
+  </linearGradient>
+  <linearGradient id="instrument-frame-tertiary-color" gradientTransform="matrix(.98874 0 0 .98874 .238 .38308)" inkscape:label="instrument-frame-tertiary-color" inkscape:swatch="solid">
+   <stop id="stop10" stop-color="#d9d9d9" offset="0"/>
+  </linearGradient>
+  <linearGradient id="normal-enabled-background-color" inkscape:label="normal-enabled-background-color" inkscape:swatch="solid">
+   <stop id="stop11" stop-color="#fefefe" offset="0"/>
+  </linearGradient>
+  <linearGradient id="normal-enabled-border-color" inkscape:label="normal-enabled-border-color" inkscape:swatch="solid">
+   <stop id="stop12" stop-color="#000001" stop-opacity=".2" offset="0"/>
+  </linearGradient>
+  <linearGradient id="normal-focused-background-color" inkscape:label="normal-focused-background-color" inkscape:swatch="solid">
+   <stop id="stop13" stop-color="#fffeff" offset="0"/>
+  </linearGradient>
+  <linearGradient id="normal-focused-border-color" inkscape:label="normal-focused-border-color" inkscape:swatch="solid">
+   <stop id="stop14" stop-color="#006ee1" stop-opacity=".3" offset="0"/>
+  </linearGradient>
+  <linearGradient id="normal-pressed-background-color" inkscape:label="normal-pressed-background-color" inkscape:swatch="solid">
+   <stop id="stop15" stop-color="#e0e0e0" offset="0"/>
+  </linearGradient>
+  <linearGradient id="normal-pressed-border-color" inkscape:label="normal-pressed-border-color" inkscape:swatch="solid">
+   <stop id="stop16" stop-color="#000200" stop-opacity=".2" offset="0"/>
+  </linearGradient>
+  <linearGradient id="normal-disabled-background-color" inkscape:label="normal-disabled-background-color" inkscape:swatch="solid">
+   <stop id="stop17" stop-color="#fffffe" stop-opacity="0" offset="0"/>
+  </linearGradient>
+  <linearGradient id="normal-disabled-border-color" inkscape:label="normal-disabled-border-color" inkscape:swatch="solid">
+   <stop id="stop18" stop-color="#010100" stop-opacity=".1" offset="0"/>
+  </linearGradient>
+  <linearGradient id="on-flat-active-color" inkscape:label="on-flat-active-color" inkscape:swatch="solid">
+   <stop id="stop191" stop-color="#000301" stop-opacity=".9" offset="0"/>
+  </linearGradient>
+  <linearGradient id="on-flat-neutral-color" inkscape:label="on-flat-neutral-color" inkscape:swatch="solid">
+   <stop id="stop201" stop-color="#000300" stop-opacity=".55" offset="0"/>
+  </linearGradient>
+  <linearGradient id="on-normal-neutral-color" inkscape:label="on-normal-neutral-color" inkscape:swatch="solid">
+   <stop id="stop19" stop-color="#000100" stop-opacity=".55" offset="0"/>
+  </linearGradient>
+  <linearGradient id="on-normal-active-color" inkscape:label="on-normal-active-color" inkscape:swatch="solid">
+   <stop id="stop20" stop-color="#1a1a1b" offset="0"/>
+  </linearGradient>
+  <linearGradient id="on-normal-disabled-color" inkscape:label="on-normal-disabled-color" inkscape:swatch="solid">
+   <stop id="stop22" stop-color="#010101" stop-opacity=".3" offset="0"/>
+  </linearGradient>
+  <linearGradient id="on-selected-active-color" inkscape:label="on-selected-active-color" inkscape:swatch="solid">
+   <stop id="stop25" stop-color="#fefffe" offset="0"/>
+  </linearGradient>
+  <linearGradient id="on-selected-disabled-color" inkscape:label="on-selected-disabled-color" inkscape:swatch="solid">
+   <stop id="stop251" stop-color="#020202" stop-opacity=".3" offset="0"/>offset="0"/&gt;
+  </linearGradient>
+  <linearGradient id="selected-enabled-background-color" inkscape:label="selected-enabled-background-color" inkscape:swatch="solid">
+   <stop id="stop23" stop-color="#305792" offset="0"/>
+  </linearGradient>
+  <linearGradient id="selected-enabled-border-color" inkscape:label="selected-enabled-border-color" inkscape:swatch="solid">
+   <stop id="stop24" stop-color="#010102" stop-opacity="0" offset="0"/>offset="0"/
+  </linearGradient>
+  <linearGradient id="selected-disabled-background-color" inkscape:label="selected-disabled-background-color" inkscape:swatch="solid">
+   <stop id="stop231" stop-color="#030000" stop-opacity=".2" offset="0"/>
+  </linearGradient>
+  <linearGradient id="selected-disabled-border-color" inkscape:label="selected-disabled-border-color" inkscape:swatch="solid">
+   <stop id="stop241" stop-color="#030001" stop-opacity="0" offset="0"/>offset="0"/
+  </linearGradient>
+ </defs>
+<linearGradient id="helperBack_1_" x1="198.6" x2="198.6" y1="279.9" y2="-120.1" gradientTransform="translate(0 35)" gradientUnits="userSpaceOnUse">
+	<stop id="stop26" stop-color="#242729" offset=".2117"/>
+	<stop id="stop27" stop-color="#3A3D3E" offset=".7932"/>
+</linearGradient>
+<path id="helperBack" d="m398.6 280.6c0 18.9-2.5 34.3-5.6 34.3h-388.8c-3.1 0-5.6-15.3-5.6-34.3v-331.4c0-18.9 2.5-34.3 5.6-34.3h388.8c3.1 0 5.6 15.3 5.6 34.3v331.4z" display="none" fill="url(#helperBack_1_)" stroke="#B3B3B3" stroke-miterlimit="10" stroke-width="2"/>
+<g id="Layer1">
+	<g id="cdpBackground">
+		<rect id="outline" width="192" height="76.2" fill="none"/>
+		<g id="Elevation_Current_Scale_1_" display="none">
+			<path id="path27" d="m153.8 47.6c6.3 1.7 12.5 3.6 18.6 5.9l2.9-8c-6.3-2.3-12.8-4.3-19.3-6.1l-2.2 8.2z" display="inline" fill="#FF0000"/>
+			<path id="path28" d="m134.7 43.4c6.5 1.1 12.8 2.5 19.1 4.2l2.2-8.2c-6.5-1.7-13.1-3.2-19.8-4.4l-1.5 8.4z" display="inline" fill="#FFFF00"/>
+			<path id="path29" d="m115.3 40.9c6.5.6 13 1.4 19.4 2.5l1.5-8.4c-6.6-1.2-13.3-2-20.1-2.6l-.8 8.5z" display="inline" fill="#00A900"/>
+			<path id="path30" d="m95.8 40c6.6 0 13.1.3 19.5.9l.7-8.5c-6.7-.6-13.4-.9-20.3-.9.1 0 .1 8.5.1 8.5z" display="inline" fill="#00A900"/>
+			<path id="path31" d="m75.6 32.4.7 8.5c6.4-.6 12.9-.9 19.5-.9v-8.5c-6.8 0-13.6.3-20.2.9z" display="inline" fill="#00A900"/>
+			<path id="path32" d="m76.3 40.9-.7-8.5c-6.8.6-13.5 1.5-20.2 2.6l1.5 8.4c6.4-1.1 12.9-2 19.4-2.5z" display="inline" fill="#00A900"/>
+			<path id="path33" d="m56.9 43.4-1.5-8.4c-6.7 1.2-13.3 2.6-19.8 4.4l2.2 8.2c6.3-1.7 12.7-3.1 19.1-4.2z" display="inline" fill="#FBED21"/>
+			<path id="path34" d="m37.8 47.6-2.2-8.2c-6.6 1.8-13 3.8-19.3 6.1l2.9 8c6.1-2.3 12.3-4.2 18.6-5.9z" display="inline" fill="#FF0000"/>
+			<g id="g42" display="inline" fill="none">
+				<path id="path35" d="m153.8 47.6c6.3 1.7 12.5 3.6 18.6 5.9l2.9-8c-6.3-2.3-12.8-4.3-19.3-6.1l-2.2 8.2z"/>
+				<path id="path36" d="m134.7 43.4c6.5 1.1 12.8 2.5 19.1 4.2l2.2-8.2c-6.5-1.7-13.1-3.2-19.8-4.4l-1.5 8.4z"/>
+				<path id="path37" d="m115.3 40.9c6.5.6 13 1.4 19.4 2.5l1.5-8.4c-6.6-1.2-13.3-2-20.1-2.6l-.8 8.5z"/>
+				<path id="path38" d="m95.8 40c6.6 0 13.1.3 19.5.9l.7-8.5c-6.7-.6-13.4-.9-20.3-.9.1 0 .1 8.5.1 8.5z"/>
+				<path id="path39" d="m75.6 32.4.7 8.5c6.4-.6 12.9-.9 19.5-.9v-8.5c-6.8 0-13.6.3-20.2.9z"/>
+				<path id="path40" d="m76.3 40.9-.7-8.5c-6.8.6-13.5 1.5-20.2 2.6l1.5 8.4c6.4-1.1 12.9-2 19.4-2.5z"/>
+				<path id="path41" d="m56.9 43.4-1.5-8.4c-6.7 1.2-13.3 2.6-19.8 4.4l2.2 8.2c6.3-1.7 12.7-3.1 19.1-4.2z"/>
+				<path id="path42" d="m37.8 47.6-2.2-8.2c-6.6 1.8-13 3.8-19.3 6.1l2.9 8c6.1-2.3 12.3-4.2 18.6-5.9z"/>
+			</g>
+		</g>
+		<g id="Elevation_Average_Scale_1_" display="none">
+			<path id="path43" d="m151.6 55.8c6.1 1.6 12.1 3.5 17.9 5.6l2.9-8c-6.1-2.2-12.3-4.2-18.6-5.9l-2.2 8.3z" display="inline" fill="#FF0000"/>
+			<path id="path44" d="m133.2 51.8c6.2 1.1 12.3 2.5 18.4 4.1l2.2-8.2c-6.3-1.7-12.6-3.1-19.1-4.2l-1.5 8.3z" display="inline" fill="#F05A24"/>
+			<path id="path45" d="m114.6 49.3c6.3.5 12.5 1.3 18.6 2.4l1.5-8.4c-6.4-1.1-12.8-2-19.4-2.5l-.7 8.5z" display="inline" fill="#FFFF00"/>
+			<path id="path46" d="m114.6 49.3.7-8.5c-6.4-.6-12.9-.9-19.5-.9v8.5c6.3.1 12.6.4 18.8.9z" display="inline" fill="#00A900"/>
+			<path id="path47" d="m77 49.3c6.2-.5 12.4-.8 18.8-.8v-8.5c-6.6 0-13.1.3-19.5.9l.7 8.4z" display="inline" fill="#00A900"/>
+			<path id="path48" d="m56.9 43.4 1.5 8.4c6.1-1.1 12.3-1.9 18.6-2.4l-.7-8.5c-6.5.5-13 1.4-19.4 2.5z" display="inline" fill="#FBED21"/>
+			<path id="path49" d="m37.8 47.6 2.2 8.2c6-1.6 12.1-3 18.4-4.1l-1.5-8.4c-6.4 1.2-12.8 2.6-19.1 4.3z" display="inline" fill="#FF0000"/>
+			<path id="path50" d="m19.2 53.5 2.9 8c5.9-2.1 11.8-4 17.9-5.6l-2.2-8.2c-6.3 1.6-12.5 3.5-18.6 5.8z" display="inline" fill="#FF0000"/>
+			<g id="g58" display="inline" fill="none">
+				<path id="path51" d="m151.6 55.8c6.1 1.6 12.1 3.5 17.9 5.6l2.9-8c-6.1-2.2-12.3-4.2-18.6-5.9l-2.2 8.3z"/>
+				<path id="path52" d="m133.2 51.8c6.2 1.1 12.3 2.5 18.4 4.1l2.2-8.2c-6.3-1.7-12.6-3.1-19.1-4.2l-1.5 8.3z"/>
+				<path id="path53" d="m114.6 49.3c6.3.5 12.5 1.3 18.6 2.4l1.5-8.4c-6.4-1.1-12.8-2-19.4-2.5l-.7 8.5z"/>
+				<path id="path54" d="m114.6 49.3.7-8.5c-6.4-.6-12.9-.9-19.5-.9v8.5c6.3.1 12.6.4 18.8.9z"/>
+				<path id="path55" d="m77 49.3c6.2-.5 12.4-.8 18.8-.8v-8.5c-6.6 0-13.1.3-19.5.9l.7 8.4z"/>
+				<path id="path56" d="m56.9 43.4 1.5 8.4c6.1-1.1 12.3-1.9 18.6-2.4l-.7-8.5c-6.5.5-13 1.4-19.4 2.5z"/>
+				<path id="path57" d="m37.8 47.6 2.2 8.2c6-1.6 12.1-3 18.4-4.1l-1.5-8.4c-6.4 1.2-12.8 2.6-19.1 4.3z"/>
+				<path id="path58" d="m19.2 53.5 2.9 8c5.9-2.1 11.8-4 17.9-5.6l-2.2-8.2c-6.3 1.6-12.5 3.5-18.6 5.8z"/>
+			</g>
+		</g>
+		<g id="Elevation_Labels_1_" display="none">
+			<g id="_x2D_20_2_" display="inline">
+				<text id="text58" transform="matrix(.9397 .342 -.342 .9397 186.18 211.64)" font-family="'Arial'" font-size="12px">20°</text>
+			</g>
+			<g id="_x2D_10_2_" display="inline">
+				<text id="text59" transform="matrix(.9848 .1736 -.1736 .9848 198.09 170.24)" font-family="'Arial'" font-size="12px">10°</text>
+			</g>
+			<g id="_x30__2_" display="inline">
+				<text id="text60" transform="translate(202.6 127.32)" font-family="'Arial'" font-size="12px">0°</text>
+			</g>
+			<g id="_x2B_10_2_" display="inline">
+				<text id="text61" transform="matrix(.9848 -.1736 .1736 .9848 199.63 84.301)" font-family="'Arial'" font-size="12px">10°</text>
+			</g>
+			<g id="_x2B_20_2_" display="inline">
+				<text id="text62" transform="matrix(.9397 -.342 .342 .9397 189.14 42.432)" font-family="'Arial'" font-size="12px">20°</text>
+			</g>
+		</g>
+		<g id="scaleInner_1_" fill="url(#instrument-frame-primary-color)">
+			<path id="path62" d="m151.6 55.8c6.1 1.6 12.1 3.5 17.9 5.6l2.9-8c-6.1-2.2-12.3-4.2-18.6-5.9z"/>
+			<path id="path63" d="m133.2 51.8c6.2 1.1 12.3 2.5 18.4 4.1l2.2-8.2c-6.3-1.7-12.6-3.1-19.1-4.2z"/>
+			<path id="path64" d="m114.6 49.3c6.3.5 12.5 1.3 18.6 2.4l1.5-8.4c-6.4-1.1-12.8-2-19.4-2.5z"/>
+			<path id="path65" d="m114.6 49.3.7-8.5c-6.4-.6-12.9-.9-19.5-.9v8.5c6.3.1 12.6.4 18.8.9z"/>
+			<path id="path66" d="m77 49.3c6.2-.5 12.4-.8 18.8-.8v-8.5c-6.6 0-13.1.3-19.5.9z"/>
+			<path id="path67" d="m56.9 43.4 1.5 8.4c6.1-1.1 12.3-1.9 18.6-2.4l-.7-8.5c-6.5.5-13 1.4-19.4 2.5z"/>
+			<path id="path68" d="m37.8 47.6 2.2 8.2c6-1.6 12.1-3 18.4-4.1l-1.5-8.4c-6.4 1.2-12.8 2.6-19.1 4.3z"/>
+			<path id="path69" d="m19.2 53.5 2.9 8c5.9-2.1 11.8-4 17.9-5.6l-2.2-8.2c-6.3 1.6-12.5 3.5-18.6 5.8z"/>
+		</g>
+		<g id="scaleOuter_1_" fill="url(#instrument-frame-primary-color)">
+			<path id="path70" d="m153.8 47.6c6.3 1.7 12.5 3.6 18.6 5.9l2.9-8c-6.3-2.3-12.8-4.3-19.3-6.1z"/>
+			<path id="path71" d="m134.7 43.4c6.5 1.1 12.8 2.5 19.1 4.2l2.2-8.2c-6.5-1.7-13.1-3.2-19.8-4.4z"/>
+			<path id="path72" d="m115.3 40.9c6.5.6 13 1.4 19.4 2.5l1.5-8.4c-6.6-1.2-13.3-2-20.1-2.6z"/>
+			<path id="path73" d="m95.8 40c6.6 0 13.1.3 19.5.9l.7-8.5c-6.7-.6-13.4-.9-20.3-.9.1 0 .1 8.5.1 8.5z"/>
+			<path id="path74" d="m75.6 32.4.7 8.5c6.4-.6 12.9-.9 19.5-.9v-8.5c-6.8 0-13.6.3-20.2.9z"/>
+			<path id="path75" d="m76.3 40.9-.7-8.5c-6.8.6-13.5 1.5-20.2 2.6l1.5 8.4c6.4-1.1 12.9-2 19.4-2.5z"/>
+			<path id="path76" d="m56.9 43.4-1.5-8.4c-6.7 1.2-13.3 2.6-19.8 4.4l2.2 8.2c6.3-1.7 12.7-3.1 19.1-4.2z"/>
+			<path id="path77" d="m37.8 47.6-2.2-8.2c-6.6 1.8-13 3.8-19.3 6.1l2.9 8c6.1-2.3 12.3-4.2 18.6-5.9z"/>
+		</g>
+	</g>
+	<g id="cdpMiddle" fill="none">
+		<rect id="outline_1_" width="192" height="76.2"/>
+		<g id="ticks__x28_outside_x29__1_" display="none" stroke="#000000" stroke-miterlimit="10">
+			<g id="small_3_" display="inline">
+				<line id="line77" x1="150.8" x2="156.7" y1="58.6" y2="36.7"/>
+				<line id="line78" x1="114.3" x2="116.3" y1="52.2" y2="29.6"/>
+				<line id="line79" x1="77.3" x2="75.3" y1="52.2" y2="29.6"/>
+				<line id="line80" x1="40.8" x2="34.9" y1="58.6" y2="36.7"/>
+			</g>
+			<g id="large_3_" display="inline">
+				<line id="line81" x1="166.6" x2="178.2" y1="69.5" y2="37.5"/>
+				<line id="line82" x1="131.7" x2="137.6" y1="60.2" y2="26.7"/>
+				<line id="line83" x1="95.8" x2="95.8" y1="59.9" y2="20.2"/>
+				<line id="line84" x1="59.9" x2="54" y1="60.2" y2="26.7"/>
+				<line id="line85" x1="25" x2="13.4" y1="69.5" y2="37.5"/>
+			</g>
+		</g>
+		<g id="ticks__x28_fit_x29__1_" stroke="url(#instrument-frame-tertiary-color)" stroke-miterlimit="10">
+			<g id="small_2_">
+				<line id="line86" x1="151.6" x2="156" y1="55.9" y2="39.4"/>
+				<line id="line87" x1="114.6" x2="116.1" y1="49.1" y2="32.6"/>
+				<line id="line88" x1="77" x2="75.6" y1="49.1" y2="32.6"/>
+				<line id="line89" x1="40.1" x2="35.6" y1="55.9" y2="39.3"/>
+			</g>
+			<g id="large_2_">
+				<line id="line90" x1="169.4" x2="175.4" y1="61.8" y2="45.3"/>
+				<line id="line91" x1="133.2" x2="136.2" y1="51.7" y2="35.2"/>
+				<line id="line92" x1="95.8" x2="95.8" y1="48.3" y2="31.8"/>
+				<line id="line93" x1="58.4" x2="55.5" y1="51.7" y2="35.2"/>
+				<line id="line94" x1="22.1" x2="16.3" y1="61.5" y2="45.5"/>
+			</g>
+		</g>
+		<g id="g94" stroke="url(#instrument-frame-tertiary-color)" stroke-miterlimit="10">
+			<path id="middle_1_" d="m19.1 53.3c23.9-8.7 49.7-13.5 76.6-13.5 27 0 52.8 4.8 76.7 13.5"/>
+			<path id="path94" d="m175.4 45.3c-24.8-9.1-51.7-14-79.7-14-27.9 0-54.7 4.9-79.5 14l.3.7 5.5 15.3c23-8.4 47.8-13 73.7-13s50.8 4.6 73.8 13z"/>
+		</g>
+	</g>
+	<rect id="cdpTicksMinorSize_2_" x="27.7" y="-19.4" width="1" height="8" fill="none"/>
+	<rect id="cdpTicksMajorSize_1_" x="24.2" y="-23.4" width="2" height="12" fill="none"/>
+	<rect id="cdpTicksNumOffsetNeg" x="29.2" y="-44.4" width="2" height="40" fill="none"/>
+	<rect id="cdpTicksOffset_1_" x="81.6" y="22" width="2" height="4" fill="none"/>
+	<rect id="cdpTicksMajorNo5T" x="79.7" y="24.9" width="5.6" height="4" fill="none"/>
+	<rect id="cdpTicksMinorNo5T_2_" x="78.8" y="26.9" width="5.6" height="4" fill="none"/>
+	<g id="cdpNeedleGraphics_2_">
+		<rect id="cdpRectCenter_2_" x="257.7" y="245" width="18" height="3" fill="none"/>
+		<rect id="cdpRectOutline_2_" x="257.7" y="26.3" width="18" height="220" fill="none"/>
+		<g id="Average_1_">
+			<path id="path95" d="m257.7 43.3 9-17 9 17h-18zm15.6-1.4-6.6-12.4-6.6 12.4h13.2z" fill="url(#instrument-enhanced-secondary-color)"/>
+		</g>
+	</g>
+	<rect id="cdpNeedleCenterCW" x="94.3" y="261.8" width="2.9" height="2.9" fill="none"/>
+	<rect id="cdpNeedleMin" x="19.2" y="56" width="3" height="3" fill="none"/>
+	<rect id="cdpNeedleMax_1_" x="169" y="55.5" width="4.1" height="4.1" fill="none"/>
+	<g id="TicksColor" enable-background="new    ">
+		<text id="text95" transform="translate(269.16 61.518)" fill="url(#instrument-frame-tertiary-color)" font-family="'Arial'" font-size="10px">1</text>
+	</g>
+	<g id="cdpTicksNumber" enable-background="new    ">
+		<text id="text96" transform="translate(263.66 61.089)" fill="url(#element-active-color)" font-family="'Arial'" font-size="6px">1</text>
+	</g>
+</g>
+<g id="Layer2">
+	<g id="cdpNeedleGraphics_3_">
+		<rect id="cdpRectCenter_3_" x="278.7" y="268" width="18" height="3" fill="none"/>
+		<rect id="cdpRectOutline_4_" x="278.7" y="26.7" width="18" height="243" fill="none"/>
+		<g id="Current_1_">
+			<polygon id="polygon96" points="296.7 27.2 287.7 44.2 278.7 27.2" fill="url(#instrument-enhanced-secondary-color)"/>
+		</g>
+	</g>
+	<rect id="cdpNeedleCenterCW_1_" x="94.3" y="261.8" width="2.9" height="2.9" fill="none"/>
+	<rect id="cdpNeedleMin_2_" x="10.4" y="30.9" width="3" height="3" fill="none"/>
+	<rect id="cdpNeedleMax" x="178" y="31" width="4.1" height="4.1" fill="none"/>
+	<rect id="cdpTicksMinorSize_1_" x="27.7" y="-19.4" width="1" height="8" fill="none"/>
+	<rect id="cdpTicksOffsetNeg" x="89.6" y="12" width="2" height="14" fill="none"/>
+</g>
+<g id="Layer3">
+	<g id="cdpNeedleGraphics_5_">
+		<rect id="cdpRectCenter_5_" x="299.7" y="261.5" width="18" height="2.9" fill="none"/>
+		<rect id="cdpRectOutline_5_" x="299.7" y="27.4" width="18" height="235.7" fill="none"/>
+		<g id="Current_5_" display="none">
+			<polygon id="polygon97" points="299.7 27.8 317.7 27.9 308.7 44.3" display="inline"/>
+		</g>
+		<g id="Peak_-_4_">
+			<polygon id="polygon98" points="304.4 27.8 312.9 27.7 308.7 36" fill="url(#instrument-enhanced-secondary-color)"/>
+		</g>
+	</g>
+	<rect id="cdpNeedleCenterCW_2_" x="94.3" y="261.8" width="2.9" height="2.9" fill="none"/>
+	<rect id="cdpNeedleMin_1_" x="13.4" y="40.4" width="3" height="3" fill="none"/>
+	<rect id="cdpNeedleMax_2_" x="176.2" y="35.5" width="4.1" height="4.1" fill="none"/>
+</g>
+<g id="Layer4">
+	<g id="cdpNeedleGraphics_4_">
+		<rect id="cdpRectCenter_4_" x="299.7" y="261.5" width="18" height="2.9" fill="none"/>
+		<rect id="cdpRectOutline_3_" x="299.7" y="27.4" width="18" height="235.7" fill="none"/>
+		<g id="Current_4_" display="none">
+			<polygon id="polygon99" points="299.7 27.8 317.7 27.9 308.7 44.3" display="inline"/>
+		</g>
+		<g id="Peak_-_3_">
+			<polygon id="polygon100" points="304.4 27.8 312.9 27.7 308.7 36" fill="url(#instrument-enhanced-secondary-color)"/>
+		</g>
+	</g>
+	<rect id="cdpNeedleCenterCW_3_" x="94.3" y="261.8" width="2.9" height="2.9" fill="none"/>
+	<rect id="cdpNeedleMin_4_" x="13.4" y="40.4" width="3" height="3" fill="none"/>
+	<rect id="cdpNeedleMax_3_" x="176.2" y="35.5" width="4.1" height="4.1" fill="none"/>
+	<rect id="cdpTop" x="182.4" y="57.8" width="4" height="3.4" fill="none"/>
+</g>
+</svg>

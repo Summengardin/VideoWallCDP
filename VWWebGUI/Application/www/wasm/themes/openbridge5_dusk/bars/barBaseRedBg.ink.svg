@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg1722" width="104" height="512" fill="none" version="1.1" viewBox="0 0 104 512" xmlns="http://www.w3.org/2000/svg">
+  <defs id="defs1">
+    <linearGradient id="element-disabled-color">
+      <stop id="stop1" stop-opacity=".2" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-active-color">
+      <stop id="stop11" stop-color="#1a1a1a" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-tickmark-primary-color">
+      <stop id="stop2" stop-color="#333" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-tickmark-secondary-color">
+      <stop id="stop3" stop-color="#8c8c8c" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-enhanced-primary-color">
+      <stop id="stop4" stop-color="#166ce4" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-enhanced-secondary-color">
+      <stop id="stop51" stop-color="#325b9b" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-enhanced-tertiary-color">
+      <stop id="stop41" stop-color="#325b9a" stop-opacity=".2" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-frame-primary-color">
+      <stop id="stop5" stop-color="#fff" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-frame-secondary-color">
+      <stop id="stop6" stop-color="#f0f0f0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-frame-tertiary-color">
+      <stop id="stop7" stop-color="#d6d6d6" offset="0"/>
+    </linearGradient>
+    <linearGradient id="on-normal-neutral-color">
+      <stop id="stop10" stop-opacity=".55" offset="0"/>
+    </linearGradient>
+    <linearGradient id="selected-enabled-background-color">
+      <stop id="stop13" stop-color="#305792" offset="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer1">
+    <path id="TicksNumber" d="m18.039 255.02c1.2031 0 2.1484.3 2.8359.899.6927.594 1.0391 1.409 1.0391 2.445 0 1.182-.3776 2.11-1.1329 2.781-.75.672-1.7864 1.008-3.1093 1.008-1.2865 0-2.2683-.205-2.9453-.617v-1.25c.3645.234.8177.419 1.3593.555.5417.13 1.0756.195 1.6016.195.9167 0 1.6276-.216 2.1328-.648.5104-.433.7656-1.058.7656-1.875 0-1.594-.9765-2.391-2.9297-2.391-.4947 0-1.1562.076-1.9843.227l-.6719-.43.4297-5.344h5.6797v1.195h-4.5703l-.2891 3.43c.599-.12 1.1953-.18 1.7891-.18zm13.156 1.25c0 1.974-.3125 3.448-.9375 4.422-.6198.974-1.5703 1.461-2.8516 1.461-1.2291 0-2.164-.497-2.8046-1.492-.6407-1-.961-2.463-.961-4.391 0-1.989.3099-3.466.9297-4.429.6198-.964 1.5651-1.446 2.8359-1.446 1.2396 0 2.1797.503 2.8204 1.508.6458 1.005.9687 2.461.9687 4.367zm-6.2422 0c0 1.662.1953 2.873.586 3.633.3906.755 1.013 1.133 1.8671 1.133.8646 0 1.4896-.383 1.875-1.148.3907-.771.586-1.977.586-3.618 0-1.64-.1953-2.841-.586-3.601-.3854-.766-1.0104-1.149-1.875-1.149-.8541 0-1.4765.378-1.8671 1.133-.3907.75-.586 1.956-.586 3.617z" fill="url(#element-active-color)"/>
+    <g id="helper">
+      <path id="path1706" d="m31.422 463.79c0 1.995-.3281 3.471-.9844 4.43-.651.958-1.6562 1.437-3.0156 1.437-1.3177 0-2.3125-.495-2.9844-1.484-.6667-.99-1-2.451-1-4.383 0-2.016.3255-3.5.9766-4.453.651-.958 1.6536-1.438 3.0078-1.438 1.3177 0 2.3125.5 2.9844 1.5.677 1 1.0156 2.464 1.0156 4.391zm-5.586 0c0 1.401.1198 2.406.3594 3.016.2448.604.6537.906 1.2266.906.5625 0 .9687-.307 1.2187-.922s.375-1.615.375-3c0-1.401-.1276-2.406-.3828-3.016-.25-.614-.6536-.921-1.2109-.921-.5677 0-.974.307-1.2188.921-.2448.61-.3672 1.615-.3672 3.016z" fill="url(#element-active-color)"/>
+      <path id="path1708" d="m11.188 54h-2.4141v-6.6094l.02343-1.0859.03907-1.1875c-.40104.401-.67969.664-.83594.789l-1.3125 1.0547-1.1641-1.4531 3.6797-2.9297h1.9844zm11.094-5.7109c0 1.9948-.3281 3.4713-.9843 4.4296-.6511.9584-1.6563 1.4375-3.0157 1.4375-1.3177 0-2.3125-.4947-2.9843-1.4843-.6667-.9896-1-2.4505-1-4.3828 0-2.0157.3255-3.5.9765-4.4532.6511-.9583 1.6537-1.4375 3.0078-1.4375 1.3178 0 2.3125.5 2.9844 1.5.6771 1 1.0156 2.4636 1.0156 4.3907zm-5.5859 0c0 1.401.1198 2.4062.3594 3.0156.2448.6042.6536.9062 1.2265.9062.5625 0 .9688-.3073 1.2188-.9218.25-.6146.375-1.6146.375-3 0-1.4011-.1276-2.4063-.3828-3.0157-.25-.6145-.6537-.9218-1.211-.9218-.5677 0-.9739.3073-1.2187.9218-.2448.6094-.3672 1.6146-.3672 3.0157zm14.727 0c0 1.9948-.3282 3.4713-.9844 4.4296-.651.9584-1.6563 1.4375-3.0156 1.4375-1.3177 0-2.3125-.4947-2.9844-1.4843-.6667-.9896-1-2.4505-1-4.3828 0-2.0157.3255-3.5.9766-4.4532.651-.9583 1.6536-1.4375 3.0078-1.4375 1.3177 0 2.3125.5 2.9843 1.5.6771 1 1.0157 2.4636 1.0157 4.3907zm-5.586 0c0 1.401.1198 2.4062.3594 3.0156.2448.6042.6537.9062 1.2266.9062.5625 0 .9687-.3073 1.2187-.9218.25-.6146.375-1.6146.375-3 0-1.4011-.1276-2.4063-.3828-3.0157-.25-.6145-.6536-.9218-1.2109-.9218-.5677 0-.974.3073-1.2188.9218-.2448.6094-.3672 1.6146-.3672 3.0157z" fill="url(#element-active-color)"/>
+      <path id="path1710" d="m64 422h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8 45.65h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8-124.5h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8 45.65h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8-120.35h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8 45.65h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8-120.35h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8 45.65h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8-120.35h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8-4.15h8m-8 45.65h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8m-8 4.15h8" stroke="#999"/>
+      <path id="path1712" d="m56 256h16m-16-41.5h16m-16-41.5h16m-16-41.5h16m-16-41.5h16m-16-41.5h16m-16 249h16m-16 41.5h16m-16 41.5h16m-16 41.5h16m-16 41.5h16" stroke="#999"/>
+      <path id="path1714" d="m40 256h32m-32-207.5h32m-32 415h32" stroke="#999"/>
+    </g>
+    <g id="cdpBarBack">
+      <g id="g3247">
+        <rect id="rect2372" x="72" y="184" width="17" height="280" rx="0" display="none" fill="#56a389" fill-opacity=".51239" stroke-width=".59622" style="paint-order:fill markers stroke"/>
+        <path id="path1716" d="m73 185h15v278h-15z" fill="none" stroke="url(#instrument-frame-tertiary-color)" stroke-width=".55968"/>
+        <rect id="rect1" x="72.72" y="184.72" width="15.56" height="69.28" fill="#a35656" fill-opacity=".40498" stroke-linecap="round" stroke-linejoin="round" stroke-width="8.3694"/>
+        <rect id="rect2" x="72.72" y="394" width="15.56" height="69.28" fill="#a35656" fill-opacity=".40498" stroke-linecap="round" stroke-linejoin="round" stroke-width="8.3694"/>
+      </g>
+      <rect id="rect2283" x="72" y="184" width="17" height="280" rx="0" fill="none" stroke-width=".59622" style="paint-order:fill markers stroke"/>
+    </g>
+    <g id="cdpBarFill" transform="matrix(.53125 0 0 .68027 33.75 149.03)" fill="none">
+      <rect id="rect2393" x="72" y="169" width="32" height="294"/>
+      <g id="g2403" transform="matrix(.94118 0 0 .9966 5.1765 .1042)" fill="none">
+        <rect id="sdswdsd" x="72.6" y="169" width="30.8" height="294" fill="url(#instrument-enhanced-secondary-color)" stroke-width="1.0132"/>
+      </g>
+    </g>
+    <text id="cdpTicksColor" x="124.74576" y="53.694916" fill="url(#instrument-tickmark-primary-color)" font-family="Open Sans" font-size="40px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan2273" x="124.74576" y="53.694916" fill="#999999" font-size="16px">cdpTicksColor</tspan></text>
+    <rect id="cdpBorderMarginBottomRight" x="71" y="49" width="2" height="2" rx="0" fill="none" style="paint-order:fill markers stroke"/>
+    <rect id="cdpBorderMarginTopLeft" x="71" y="49" width="2" height="2" rx="0" fill="none" style="paint-order:fill markers stroke"/>
+    <text id="cdpTicksNumber" x="124" y="76.5" fill="url(#element-active-color)" font-family="sans-serif" font-size="40px" letter-spacing="0px" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan2595" x="124" y="76.5" fill="#333333" font-size="16px">cdpTicksNumber</tspan></text>
+  </g>
+  <g id="Styles">
+    <g id="cdpBarFillStyle1" transform="matrix(.53125 0 0 .68027 107.75 40.354)" fill="none">
+      <rect id="rect2393_1" x="72" y="169" width="32" height="294"/>
+      <g id="g2403-5" transform="matrix(.94118 0 0 .9966 5.1765 .1042)" fill="none">
+        <rect id="sdswdsd_1" x="72.6" y="169" width="30.8" height="294" fill="#318c6d" stroke-width="1.0132"/>
+      </g>
+    </g>
+  </g>
+</svg>

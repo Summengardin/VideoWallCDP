@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg1" width="200" height="75" inkscape:version="1.4 (1:1.4+202410161351+e7c3feb100)" sodipodi:docname="slewSector.ink.svg" version="1.1" viewBox="0 0 200 75" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd">
+  <sodipodi:namedview id="namedview1" bordercolor="#eeeeee" borderopacity="1" inkscape:current-layer="Layer1" inkscape:cx="103.7538" inkscape:cy="70.752968" inkscape:deskcolor="#d1d1d1" inkscape:document-units="px" inkscape:pagecheckerboard="0" inkscape:pageopacity="0" inkscape:showpageshadow="0" inkscape:window-height="2100" inkscape:window-maximized="1" inkscape:window-width="3840" inkscape:window-x="1920" inkscape:window-y="28" inkscape:zoom="9.6815727" pagecolor="#505050"/>
+  <defs id="defs1">
+    <linearGradient id="element-active-color" inkscape:swatch="solid">
+      <stop id="stop2000" stop-color="#1A1A1A" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-neutral-color" inkscape:swatch="solid">
+      <stop id="stop2010" stop-opacity=".59" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-inactive-color" inkscape:swatch="solid">
+      <stop id="stop2020" stop-opacity=".42" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-disabled-color" inkscape:swatch="solid">
+      <stop id="stop2030" stop-opacity=".2" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-active-inverted-color" inkscape:swatch="solid">
+      <stop id="stop2040" stop-color="#fff" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-neutral-inverted-color" inkscape:swatch="solid">
+      <stop id="stop2050" stop-color="#fff" stop-opacity=".7" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-inactive-inverted-color" inkscape:swatch="solid">
+      <stop id="stop2060" stop-color="#fff" stop-opacity=".4" offset="0"/>
+    </linearGradient>
+    <linearGradient id="element-disabled-inverted-color" inkscape:swatch="solid">
+      <stop id="stop2070" stop-color="#fff" stop-opacity=".2" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-backdrop-color" inkscape:swatch="solid">
+      <stop id="stop2080" stop-color="#E0E0E0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-section-color" inkscape:swatch="solid">
+      <stop id="stop2090" stop-color="#F0F0F0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-background-color" inkscape:swatch="solid">
+      <stop id="stop2100" stop-color="#F7F7F7" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-global-color" inkscape:swatch="solid">
+      <stop id="stop2110" stop-color="#FCFCFC" offset="0"/>
+    </linearGradient>
+    <linearGradient id="container-overlay-color" inkscape:swatch="solid">
+      <stop id="stop2120" stop-opacity=".1" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-divider-color" inkscape:swatch="solid">
+      <stop id="stop2130" stop-opacity=".08" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-edge-color" inkscape:swatch="solid">
+      <stop id="stop2150" stop-opacity=".05" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-solid-color" inkscape:swatch="solid">
+      <stop id="stop2160" stop-color="#333" offset="0"/>
+    </linearGradient>
+    <linearGradient id="border-icon-outline-color" inkscape:swatch="solid">
+      <stop id="stop2170" stop-opacity=".4" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-enhanced-primary-color" inkscape:swatch="solid">
+      <stop id="stop2190" stop-color="#0070D6" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-enhanced-secondary-color" inkscape:swatch="solid">
+      <stop id="stop2200" stop-color="#325B9A" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-enhanced-tertiary-color" inkscape:swatch="solid">
+      <stop id="stop2210" stop-color="#325B9A" stop-opacity=".2" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-regular-secondary-color" inkscape:swatch="solid">
+      <stop id="stop2230" stop-color="#666" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-regular-tertiary-color" inkscape:swatch="solid">
+      <stop id="stop2240" stop-color="#666" stop-opacity=".25" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-frame-tertiary-color" gradientTransform="matrix(1 0 0 1.1667 0 -1.9403)" inkscape:swatch="solid">
+      <stop id="stop2270" stop-color="#D9D9D9" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-tickmark-secondary-color" inkscape:swatch="solid">
+      <stop id="stop2290" stop-color="#707070" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-tickmark-tertiary-color" inkscape:swatch="solid">
+      <stop id="stop2300" stop-color="#8F8F8F" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-starboard-color" inkscape:swatch="solid">
+      <stop id="stop2310" stop-color="#359E85" offset="0"/>
+    </linearGradient>
+    <linearGradient id="instrument-port-color" inkscape:swatch="solid">
+      <stop id="stop2320" stop-color="#E16290" offset="0"/>
+    </linearGradient>
+    <linearGradient id="navigation-green-color" inkscape:swatch="solid">
+      <stop id="stop2330" stop-color="#B8EAC3" offset="0"/>
+    </linearGradient>
+    <linearGradient id="navigation-yellow-color" inkscape:swatch="solid">
+      <stop id="stop2340" stop-color="#F7F1A1" offset="0"/>
+    </linearGradient>
+    <linearGradient id="navigation-orange-color" inkscape:swatch="solid">
+      <stop id="stop2350" stop-color="#F7CCA1" offset="0"/>
+    </linearGradient>
+    <linearGradient id="navigation-red-color" inkscape:swatch="solid">
+      <stop id="stop2360" stop-color="#F1B1C8" offset="0"/>
+    </linearGradient>
+    <linearGradient id="navigation-generic-color" inkscape:swatch="solid">
+      <stop id="stop2370" stop-color="#CAC2EF" offset="0"/>
+    </linearGradient>
+    <linearGradient id="navigation-white-color" inkscape:swatch="solid">
+      <stop id="stop2380" stop-color="#C7D5EA" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alert-running-color" inkscape:swatch="solid">
+      <stop id="stop2390" stop-color="#228722" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alert-caution-color" inkscape:swatch="solid">
+      <stop id="stop2400" stop-color="#FAD900" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alert-warning-color" inkscape:swatch="solid">
+      <stop id="stop2410" stop-color="#F69400" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alert-alarm-color" inkscape:swatch="solid">
+      <stop id="stop2420" stop-color="#DF1B1B" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alert-critical-alarm-color" inkscape:swatch="solid">
+      <stop id="stop2430" stop-color="#E500E5" offset="0"/>
+    </linearGradient>
+    <linearGradient id="automation-device-tertiary-color" inkscape:swatch="solid">
+      <stop id="stop2480" offset="0"/>
+    </linearGradient>
+    <linearGradient id="automation-device-primary-inverted-color" inkscape:swatch="solid">
+      <stop id="stop2490" stop-color="#0F0F0F" offset="0"/>
+    </linearGradient>
+    <linearGradient id="automation-device-tertiary-inverted-color" inkscape:swatch="solid">
+      <stop id="stop2510" stop-color="#808080" offset="0"/>
+    </linearGradient>
+    <linearGradient id="automation-acid-alkalis" inkscape:swatch="solid">
+      <stop id="stop2640" stop-color="#E7C1F4" offset="0"/>
+    </linearGradient>
+    <linearGradient id="automation-air-ventilation" inkscape:swatch="solid">
+      <stop id="stop2650" stop-color="#DEDEDE" offset="0"/>
+    </linearGradient>
+    <linearGradient id="automation-fire-fighting" inkscape:swatch="solid">
+      <stop id="stop2660" stop-color="#FFB1C4" offset="0"/>
+    </linearGradient>
+    <linearGradient id="automation-flammable-gas" inkscape:swatch="solid">
+      <stop id="stop2670" stop-color="#D8E07F" offset="0"/>
+    </linearGradient>
+    <linearGradient id="automation-fresh-water" inkscape:swatch="solid">
+      <stop id="stop2680" stop-color="#C6F1FB" offset="0"/>
+    </linearGradient>
+    <linearGradient id="automation-fuel" inkscape:swatch="solid">
+      <stop id="stop2690" stop-color="#F9D0A9" offset="0"/>
+    </linearGradient>
+    <linearGradient id="automation-masses" inkscape:swatch="solid">
+      <stop id="stop2700" stop-color="#D1BFAD" offset="0"/>
+    </linearGradient>
+    <linearGradient id="automation-non-flammable-gas" inkscape:swatch="solid">
+      <stop id="stop2710" stop-color="#DCE8CE" offset="0"/>
+    </linearGradient>
+    <linearGradient id="automation-oil" inkscape:swatch="solid">
+      <stop id="stop2720" stop-color="#FDF39B" offset="0"/>
+    </linearGradient>
+    <linearGradient id="automation-sea-water" inkscape:swatch="solid">
+      <stop id="stop2730" stop-color="#ADE6D5" offset="0"/>
+    </linearGradient>
+    <linearGradient id="automation-steam" inkscape:swatch="solid">
+      <stop id="stop2740" stop-color="#CBCBCB" offset="0"/>
+    </linearGradient>
+    <linearGradient id="automation-waste-media" inkscape:swatch="solid">
+      <stop id="stop2750" stop-color="#8A8A8A" offset="0"/>
+    </linearGradient>
+    <linearGradient id="normal-enabled-border-color" inkscape:swatch="solid">
+      <stop id="stop2770" stop-color="#CDCDCD" offset="0"/>
+    </linearGradient>
+    <linearGradient id="normal-focused-border-color" inkscape:swatch="solid">
+      <stop id="stop2830" stop-color="#006EE1" stop-opacity=".3" offset="0"/>
+    </linearGradient>
+    <linearGradient id="normal-disabled-background-color" inkscape:swatch="solid">
+      <stop id="stop2840" stop-color="#fff" stop-opacity="0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="normal-activated-background-color" inkscape:swatch="solid">
+      <stop id="stop2860" stop-color="#EBEBEB" offset="0"/>
+    </linearGradient>
+    <linearGradient id="on-normal-neutral-color" inkscape:swatch="solid">
+      <stop id="stop2890" stop-opacity=".55" offset="0"/>
+    </linearGradient>
+    <linearGradient id="on-normal-disabled-color" inkscape:swatch="solid">
+      <stop id="stop2900" stop-opacity=".3" offset="0"/>
+    </linearGradient>
+    <linearGradient id="raised-enabled-background-color" inkscape:swatch="solid">
+      <stop id="stop2910" stop-opacity=".6" offset="0"/>
+    </linearGradient>
+    <linearGradient id="raised-hover-background-color" inkscape:swatch="solid">
+      <stop id="stop2930" stop-opacity=".7" offset="0"/>
+    </linearGradient>
+    <linearGradient id="raised-pressed-background-color" inkscape:swatch="solid">
+      <stop id="stop2950" stop-opacity=".8" offset="0"/>
+    </linearGradient>
+    <linearGradient id="raised-disabled-background-color" inkscape:swatch="solid">
+      <stop id="stop2990" stop-opacity="0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="indent-pressed-background-color" inkscape:swatch="solid">
+      <stop id="stop3080" stop-opacity=".16" offset="0"/>
+    </linearGradient>
+    <linearGradient id="on-indent-active-color" inkscape:swatch="solid">
+      <stop id="stop3140" stop-opacity=".9" offset="0"/>
+    </linearGradient>
+    <linearGradient id="on-indent-neutral-color" inkscape:swatch="solid">
+      <stop id="stop3150" stop-opacity=".44" offset="0"/>
+    </linearGradient>
+    <linearGradient id="flat-hover-background-color" inkscape:swatch="solid">
+      <stop id="stop3190" stop-opacity=".06" offset="0"/>
+    </linearGradient>
+    <linearGradient id="flat-pressed-background-color" inkscape:swatch="solid">
+      <stop id="stop3210" stop-opacity=".12" offset="0"/>
+    </linearGradient>
+    <linearGradient id="flat-checked-background-color" inkscape:swatch="solid">
+      <stop id="stop3290" stop-color="#305792" stop-opacity=".1" offset="0"/>
+    </linearGradient>
+    <linearGradient id="flat-checked-border-color" inkscape:swatch="solid">
+      <stop id="stop3300" stop-color="#0F4AA3" stop-opacity="0" offset="0"/>
+    </linearGradient>
+    <linearGradient id="selected-hover-background-color" inkscape:swatch="solid">
+      <stop id="stop3360" stop-color="#264573" offset="0"/>
+    </linearGradient>
+    <linearGradient id="selected-pressed-background-color" inkscape:swatch="solid">
+      <stop id="stop3380" stop-color="#1C3254" offset="0"/>
+    </linearGradient>
+    <linearGradient id="on-selected-neutral-color" inkscape:swatch="solid">
+      <stop id="stop3450" stop-color="#fff" stop-opacity=".8" offset="0"/>
+    </linearGradient>
+    <linearGradient id="thumb-hover-background-color" inkscape:swatch="solid">
+      <stop id="stop3490" stop-color="#E6E6E6" offset="0"/>
+    </linearGradient>
+    <linearGradient id="thumb-pressed-background-color" inkscape:swatch="solid">
+      <stop id="stop3510" stop-color="#ccc" offset="0"/>
+    </linearGradient>
+    <linearGradient id="amplified-hover-background-color" inkscape:swatch="solid">
+      <stop id="stop3620" stop-color="#305792" stop-opacity=".2" offset="0"/>
+    </linearGradient>
+    <linearGradient id="amplified-pressed-background-color" inkscape:swatch="solid">
+      <stop id="stop3640" stop-color="#305792" stop-opacity=".26" offset="0"/>
+    </linearGradient>
+    <linearGradient id="device-hover-background-color" inkscape:swatch="solid">
+      <stop id="stop3750" stop-color="#EFEFEF" offset="0"/>
+    </linearGradient>
+    <linearGradient id="on-device-disabled-color" inkscape:swatch="solid">
+      <stop id="stop3850" stop-color="#B3B3B3" offset="0"/>
+    </linearGradient>
+    <linearGradient id="notification-hover-background-color" inkscape:swatch="solid">
+      <stop id="stop3880" stop-color="#0055A3" offset="0"/>
+    </linearGradient>
+    <linearGradient id="notification-pressed-background-color" inkscape:swatch="solid">
+      <stop id="stop3900" stop-color="#003566" offset="0"/>
+    </linearGradient>
+    <linearGradient id="notification-focused-border-color" inkscape:swatch="solid">
+      <stop id="stop3930" stop-color="#0070D6" stop-opacity=".3" offset="0"/>
+    </linearGradient>
+    <linearGradient id="on-notification-disabled-color" inkscape:swatch="solid">
+      <stop id="stop3980" stop-color="#fff" stop-opacity=".3" offset="0"/>
+    </linearGradient>
+    <linearGradient id="running-enabled-background-color" inkscape:swatch="solid">
+      <stop id="stop3990" stop-color="#259228" offset="0"/>
+    </linearGradient>
+    <linearGradient id="running-hover-background-color" inkscape:swatch="solid">
+      <stop id="stop4010" stop-color="#1D721D" offset="0"/>
+    </linearGradient>
+    <linearGradient id="running-pressed-background-color" inkscape:swatch="solid">
+      <stop id="stop4030" stop-color="#1B6A1D" offset="0"/>
+    </linearGradient>
+    <linearGradient id="caution-hover-background-color" inkscape:swatch="solid">
+      <stop id="stop4140" stop-color="#C7AD00" offset="0"/>
+    </linearGradient>
+    <linearGradient id="caution-pressed-background-color" inkscape:swatch="solid">
+      <stop id="stop4160" stop-color="#948000" offset="0"/>
+    </linearGradient>
+    <linearGradient id="warning-enabled-background-color" inkscape:swatch="solid">
+      <stop id="stop4250" stop-color="#FF910F" offset="0"/>
+    </linearGradient>
+    <linearGradient id="warning-hover-background-color" inkscape:swatch="solid">
+      <stop id="stop4270" stop-color="#C27500" offset="0"/>
+    </linearGradient>
+    <linearGradient id="warning-pressed-background-color" inkscape:swatch="solid">
+      <stop id="stop4290" stop-color="#8F5A00" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alarm-enabled-background-color" inkscape:swatch="solid">
+      <stop id="stop4380" stop-color="#E41B1B" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alarm-hover-background-color" inkscape:swatch="solid">
+      <stop id="stop4400" stop-color="#B61616" offset="0"/>
+    </linearGradient>
+    <linearGradient id="alarm-pressed-background-color" inkscape:swatch="solid">
+      <stop id="stop4420" stop-color="#891010" offset="0"/>
+    </linearGradient>
+    <linearGradient id="critical-alarm-enabled-background-color" inkscape:swatch="solid">
+      <stop id="stop4510" stop-color="#C900CA" offset="0"/>
+    </linearGradient>
+    <linearGradient id="critical-alarm-hover-background-color" inkscape:swatch="solid">
+      <stop id="stop4530" stop-color="#980099" offset="0"/>
+    </linearGradient>
+    <linearGradient id="critical-alarm-pressed-background-color" inkscape:swatch="solid">
+      <stop id="stop4550" stop-color="#606" offset="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Layer1" inkscape:groupmode="layer">
+    <g id="cdpBackground">
+      <rect id="outline" width="200" height="75" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="g9">
+        <path id="path4" d="m100 32.338a180 180 0 0 0-76.031 16.951l6.4492 13.828a165 165 0 0 1 69.582-15.779 165 165 0 0 1 69.709 15.504l6.3516-13.621a180 180 0 0 0-76.061-16.883z" fill="url(#element-active-inverted-color)" stroke-linecap="round" stroke-linejoin="round" stroke-width=".1"/>
+        <path id="outlinepath" d="m0 0h200v75h-200z" fill="none"/>
+      </g>
+    </g>
+    <g id="cdpMiddle">
+      <rect id="outline_1" width="200" height="75" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="g8">
+        <path id="path27" d="m172.68 55.971c-22.759-10.619-47.567-16.126-72.682-16.133-25.109 0.031571-49.906 5.5601-72.65 16.197" fill="none" stroke="url(#container-section-color)" stroke-linecap="round" stroke-linejoin="round" sodipodi:nodetypes="ccc"/>
+        <path id="path7" d="m100 32.338a180 180 0 0 0-76.031 16.951l6.4492 13.828a165 165 0 0 1 69.582-15.779 165 165 0 0 1 69.709 15.504l6.3516-13.621a180 180 0 0 0-76.061-16.883z" fill="none" stroke="url(#container-section-color)" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="path18" d="m38.463 43.266 5.2017 14.292" fill="none" stroke="url(#container-section-color)" stroke-width="1px"/>
+        <path id="path19" d="m53.428 38.528 3.9232 14.642" fill="url(#instrument-frame-tertiary-color)" stroke="url(#container-section-color)" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="path20" d="m68.75 35.111 2.6231 14.877" fill="url(#instrument-frame-tertiary-color)" stroke="url(#container-section-color)" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="path21" d="m84.314 33.042 1.312 14.996" fill="url(#instrument-frame-tertiary-color)" stroke="url(#container-section-color)" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="path22" d="m100 32.338v15" fill="url(#instrument-frame-tertiary-color)" stroke="url(#container-section-color)" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="path23" d="m115.69 33.027-1.3079 14.949" fill="url(#instrument-frame-tertiary-color)" stroke="url(#container-section-color)" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="path24" d="m131.26 35.081-2.6068 14.784" fill="url(#instrument-frame-tertiary-color)" stroke="url(#container-section-color)" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="path25" d="m146.58 38.484-3.8869 14.506" fill="url(#instrument-frame-tertiary-color)" stroke="url(#container-section-color)" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="path26" d="m161.56 43.209-5.1384 14.118" fill="url(#instrument-frame-tertiary-color)" stroke="url(#container-section-color)" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="outlinepath_1" d="m0 0h200v75h-200z" fill="none"/>
+      </g>
+    </g>
+    <g id="cdpNeedleGraphics_1" inkscape:groupmode="layer">
+      <rect id="cdpRectOutline_1" x="95" y="47.338" width="10" height="165" fill="none"/>
+      <rect id="cdpRectCenter_1" x="97.112" y="209.45" width="5.7766" height="5.7766" fill="none"/>
+      <g id="graphics_1">
+        <path id="path67" d="m100 47.338-5 10h10l-5-10zm0 2.2344 3.3828 6.7656h-6.7656l3.3828-6.7656z" fill="url(#instrument-enhanced-primary-color)"/>
+      </g>
+    </g>
+    <rect id="cdpNeedleCenterCW" x="98" y="210.34" width="4" height="4"/>
+    <rect id="cdpTicksMinorNo4T" x="114.17" y="20.091" width="3.2128" height="3.2128" fill="url(#instrument-frame-tertiary-color)"/>
+    <rect id="cdpTicksMajorNo3T" x="114.17" y="20.091" width="3.2128" height="3.2128" fill="url(#instrument-frame-tertiary-color)"/>
+    <rect id="cdpTicksNumOffsetNeg" x="108.93" y="11.642" width=".51028" height="35" fill="url(#instrument-frame-tertiary-color)"/>
+    <rect id="cdpTicksMajorSize" x="112.06" y="13.198" width=".51028" height="5" fill="url(#instrument-frame-tertiary-color)"/>
+    <rect id="cdpTicksMinorSize" x="110.29" y="10.891" width=".51028" height="7.5" fill="url(#instrument-frame-tertiary-color)"/>
+    <rect id="cdpNeedleMax_1" x="168.71" y="61.842" width="2" height="2" fill="url(#instrument-enhanced-primary-color)" fill-opacity=".97596"/>
+    <rect id="cdpNeedleMin_1" x="29.418" y="62.117" width="2" height="2" fill="url(#instrument-enhanced-primary-color)" fill-opacity=".97596"/>
+    <rect id="cdpTicksOffset" x="119.96" y="20.819" width=".5" height="8" fill="#ff1717"/>
+    <text id="cdpTicksNumber" x="98.440506" y="19.536201" fill="url(#element-active-color)" font-family="'Comic Sans MS'" font-size="5.3333px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan2" x="98.440506" y="19.536201" fill="url(#element-active-color)" font-family="Arial" font-size="5.3333px" sodipodi:role="line">0</tspan></text>
+  </g>
+  <g id="Helper">
+    <circle id="path1" cx="100" cy="212.34" r="180" display="none" fill="#2400ca"/>
+    <circle id="circle26" cx="100" cy="212.34" r="185" display="none" fill="url(#automation-oil)"/>
+    <circle id="circle2" cx="100" cy="212.34" r="165" display="none" fill="url(#running-enabled-background-color)"/>
+    <rect id="center" x="98" y="210.34" width="4" height="4" fill="url(#alert-critical-alarm-color)" sodipodi:insensitive="true"/>
+    <path id="sector" d="m176.67 47.914-76.672 164.42-76.672-164.42" fill="none"/>
+  </g>
+  <path id="path35" d="m189.42 20.585-89.416 191.75-87.447-187.53" display="none" fill="url(#alert-critical-alarm-color)"/>
+  <g id="Layer2" inkscape:groupmode="layer">
+    <g id="cdpNeedleGraphics" inkscape:groupmode="layer">
+      <rect id="cdpRectOutline" x="95" y="22.338" width="10" height="190" fill="none"/>
+      <rect id="cdpRectCenter" x="97.112" y="209.45" width="5.7766" height="5.7766" fill="none"/>
+      <g id="graphics">
+        <path id="path32" d="m95 22.338h10l-5 10z" fill="url(#instrument-enhanced-primary-color)"/>
+      </g>
+    </g>
+    <rect id="cdpNeedleCenterCW_1" x="98" y="210.34" width="4" height="4" fill="url(#instrument-enhanced-primary-color)" fill-opacity=".97596"/>
+    <rect id="cdpTicksOffsetNegative" x="107.55" y="11.515" width=".5" height="10" fill="url(#instrument-frame-tertiary-color)"/>
+    <rect id="cdpNeedleMax" x="179.3" y="39.139" width="2" height="2" fill="url(#instrument-enhanced-primary-color)" fill-opacity=".97596"/>
+    <rect id="cdpNeedleMin" x="18.703" y="39.139" width="2" height="2" fill="url(#instrument-enhanced-primary-color)" fill-opacity=".97596"/>
+  </g>
+  <g id="Layer3" inkscape:groupmode="layer">
+    <g id="cdpNeedleGraphics_2" inkscape:groupmode="layer">
+      <rect id="cdpRectOutline_2" x="95" y="27.338" width="10" height="185" fill="none"/>
+      <rect id="cdpRectCenter_2" x="97.112" y="209.45" width="5.7766" height="5.7766" fill="none"/>
+      <g id="graphics_2">
+        <path id="path73" d="m97.5 27.338 5-3e-6 -2.5 5z" fill="url(#instrument-enhanced-secondary-color)"/>
+      </g>
+    </g>
+    <rect id="cdpNeedleCenterCW_2" x="98" y="210.34" width="4" height="4" fill="url(#instrument-enhanced-primary-color)" fill-opacity=".97596"/>
+    <rect id="cdpNeedleMax_2" x="177.18" y="43.671" width="2" height="2" fill="url(#instrument-enhanced-primary-color)" fill-opacity=".97596"/>
+    <rect id="cdpNeedleMin_2" x="20.816" y="43.671" width="2" height="2" fill="url(#instrument-enhanced-primary-color)" fill-opacity=".97596"/>
+  </g>
+  <g id="Layer4" inkscape:groupmode="layer">
+    <g id="cdpNeedleGraphics_3" inkscape:groupmode="layer">
+      <rect id="cdpRectOutline_3" x="95" y="27.338" width="10" height="185" fill="none"/>
+      <rect id="cdpRectCenter_3" x="97.112" y="209.45" width="5.7766" height="5.7766" fill="none"/>
+      <g id="graphics_3">
+        <path id="path74" d="m97.5 27.338 5-3e-6 -2.5 5z" fill="url(#instrument-enhanced-secondary-color)"/>
+      </g>
+    </g>
+    <rect id="cdpNeedleCenterCW_3" x="98" y="210.34" width="4" height="4" fill="url(#instrument-enhanced-primary-color)" fill-opacity=".97596"/>
+    <rect id="cdpNeedleMax_3" x="177.18" y="43.671" width="2" height="2" fill="url(#instrument-enhanced-primary-color)" fill-opacity=".97596"/>
+    <rect id="cdpNeedleMin_3" x="20.816" y="43.671" width="2" height="2" fill="url(#instrument-enhanced-primary-color)" fill-opacity=".97596"/>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg1" width="20" height="20" version="1.1" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+ <g id="Layer1" transform="translate(0 .0027)">
+  <g id="cdpPicture">
+   <rect id="rect1" y="-.0027" width="20" height="20" fill="none"/>
+   <g id="Graphics" fill="#E6E6E6">
+    <polygon id="Lightning" points="5.7234 16.448 15.063 9.1109 11.679 9.1109 14.062 3.5451 4.9407 10.881 8.324 10.881"/>
+    <path id="Circle" d="m20 9.9959c0 5.5235-4.4764 10.001-10 10.001s-10-4.4764-10-10.001c0-5.5225 4.4764-9.9989 10-9.9989s10 4.4774 10 9.9989zm-10-8.4002c-4.6396 0-8.3993 3.7617-8.3993 8.4002 0 4.6406 3.7597 8.4002 8.3993 8.4002s8.4003-3.7597 8.4003-8.4002c0-4.6386-3.7607-8.4002-8.4003-8.4002z"/>
+   </g>
+  </g>
+ </g>
+ <g id="Styles" transform="translate(0 .0027)">
+  <g id="cdpPictureStyle1">
+   <rect id="rect1-2" x="23.563" width="20" height="20" fill="none"/>
+   <g id="Graphics_1">
+    <path id="Circle_1" d="m43.563 9.999c0 5.5236-4.4764 10.001-10 10.001s-10-4.4764-10-10.001c0-5.5226 4.4764-9.999 10-9.999s10 4.4774 10 9.999zm-10-8.4003c-4.6396 0-8.3993 3.7617-8.3993 8.4003 0 4.6406 3.7597 8.4003 8.3993 8.4003s8.4003-3.7597 8.4003-8.4003c0-4.6386-3.7607-8.4003-8.4003-8.4003z" fill="#E6E6E6"/>
+    <g id="g1" fill="none" stroke="#E6E6E6" stroke-linecap="round" stroke-width="2">
+     <path id="path1287" d="m33.439 17.213v-5.5343m-5.5935 1.4053s1.9768-1.4053 5.5935-1.4053 6.2935 1.4053 6.2935 1.4053"/>
+     <path id="path2758" d="m33.559 8.3218v-5.5343m-6.1647 5.5343h12.329"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

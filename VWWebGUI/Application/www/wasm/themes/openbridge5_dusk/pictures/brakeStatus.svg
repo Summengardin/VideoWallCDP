@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="svg" enable-background="new 0 0 64 64" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<defs id="defs13">
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  
+<linearGradient id="linearGradient3542" x1="247.23" x2="305.28" y1="99.44" y2="99.44" gradientUnits="userSpaceOnUse"><stop id="stop242" stop-color="#fff" offset="0"/><stop id="stop244" stop-color="#FDFDFD" offset=".3726"/><stop id="stop246" stop-color="#F6F6F6" offset=".5069"/><stop id="stop248" stop-color="#EBEBEB" offset=".6026"/><stop id="stop250" stop-color="#DADADA" offset=".68"/><stop id="stop252" stop-color="#C4C4C4" offset=".7463"/><stop id="stop254" stop-color="#A8A8A8" offset=".805"/><stop id="stop256" stop-color="#888" offset=".8581"/><stop id="stop258" stop-color="#626262" offset=".9069"/><stop id="stop260" stop-color="#373737" offset=".9523"/><stop id="stop262" stop-color="#090909" offset=".9926"/><stop id="stop264" offset="1"/></linearGradient></defs>
+<g id="Help" font-family="'Arial'" font-size="12px">
+	<text id="text1" transform="translate(-61.666 199)">Style 2</text>
+	<text id="text2" transform="translate(-61.666 119.33)">Style 1</text>
+	<text id="text3" transform="translate(167.33 -13.333)">Picture 2</text>
+	<text id="text4" transform="translate(85 -13.333)">Picture 1</text>
+	<text id="text5" transform="translate(8.0005 -13.333)">Picture 0</text>
+	<text id="text6" transform="translate(-61.666 37)">Style 0</text>
+</g>
+
+
+<g id="Layer1" transform="translate(-93.3 -67.447)"><g id="cdpPicture0"><rect id="docSize_6_" x="96.054" y="70.414" width="58.053" height="58.052" fill="none"/><g id="g45">
+			
+			
+			
+			
+		<g id="g12517" transform="matrix(1.6089,0,0,1.6089,-76.302,-60.559)" stroke="#E52626"><text id="text5119" x="121.36085" y="106.61659" fill="#E52626" font-family="'Comic Sans MS'" font-size="19.658px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan5117" x="121.36085" y="106.61659" fill="#E52626" font-family="sans-serif" stroke="#E52626">!</tspan></text><ellipse id="path12565" cx="125.3" cy="99.451" rx="12.525" ry="12.496" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/><path id="path13407" d="m114.51 86.801c-3.7134 3.1568-5.8544 7.7805-5.8576 12.65 4e-3 4.869 2.1435 9.4919 5.8558 12.649m21.592 0c3.7123-3.1567 5.8525-7.7796 5.8558-12.649-2e-3 -4.869-2.1408-9.4926-5.8521-12.65" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/></g></g></g></g><g id="Styles" transform="translate(-93.3 -67.447)" opacity=".86"><g id="cdpPicture0Style1"><rect id="docSize_7_" x="171.64" y="70.415" width="58.053" height="58.051" fill="none"/><g id="g277"><g id="g12517-3" transform="matrix(1.6212,0,0,1.6212,-2.4758,-61.791)" stroke="#5696C7"><text id="text5119-6" x="118.74521" y="106.61661" fill="#5696C7" font-family="'Comic Sans MS'" font-size="19.658px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan5117-7" x="118.74521" y="106.61661" fill="#5696C7" font-family="sans-serif" stroke="#5696C7">P</tspan></text><ellipse id="path12565-5" cx="125.3" cy="99.451" rx="12.525" ry="12.496" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/><path id="path13407-3" d="m114.51 86.801c-3.7134 3.1568-5.8544 7.7805-5.8576 12.65 4e-3 4.869 2.1435 9.4919 5.8558 12.649m21.592 0c3.7123-3.1567 5.8525-7.7796 5.8558-12.649-2e-3 -4.869-2.1408-9.4926-5.8521-12.65" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"/></g></g></g><g id="cdpPicture0Style2"><rect id="docSize_3_" x="247.23" y="70.415" width="58.053" height="58.051" fill="none"/><g id="g239"><circle id="circle266" cx="276.25" cy="99.44" r="29.026" display="none" fill="url(#linearGradient3542)"/><circle id="circle268" cx="276.25" cy="99.44" r="22" display="none" fill="#f29100"/></g></g></g></svg>

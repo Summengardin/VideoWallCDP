@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg1" width="200" height="1e3" version="1.1" viewBox="0 0 200 1e3" xmlns="http://www.w3.org/2000/svg">
+ <g id="Layer1">
+  <g id="cdpRail">
+   <rect id="rect1" width="30" height="1e3" fill="none" opacity=".5" stroke-linejoin="round"/>
+   <g id="graphics" display="none">
+    <rect id="rect2" width="30" height="1e3" fill="#000000" stroke-linejoin="round"/>
+   </g>
+  </g>
+  <g id="cdpMiddle" display="none" fill="none" stroke-linejoin="round">
+   <rect id="rect3" width="15" height="1e3"/>
+   <g id="graphics_1" stroke="#050505">
+    <path id="rect4" d="m0 0h30v1e3h-30z"/>
+    <path id="path5" d="m0 500h30"/>
+    <path id="path6" d="m0 333.33h30"/>
+    <path id="path7" d="m0 166.67h30"/>
+    <path id="path8" d="m0 666.67h30"/>
+    <path id="path9" d="m0 833.33h30"/>
+   </g>
+  </g>
+  <g id="cdpKnob">
+   <rect id="rect11" x="-30" y="98.805" width="30" height="30" fill="none"/>
+   <g id="graphics_2">
+    <path id="path11" d="m-30 128.81v-30l30 15z" fill="#81DFFE"/>
+   </g>
+  </g>
+  <text id="cdpTicksColor" x="99.262306" y="29.090576" fill="#050505" font-family="Arial" font-size="10.667px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan1" x="99.262306" y="29.090576">0</tspan></text>
+  <text id="cdpTicksNumber" x="118.55302" y="29.090576" fill="#F2F2F2" font-family="Arial" font-size="10.667px" style="line-height:1.25" xml:space="preserve"><tspan id="tspan2" x="118.55302" y="29.090576">0</tspan></text>
+ </g>
+ <g id="Styles">
+  <g id="cdpKnobStyle1">
+   <rect id="rect11-5" x="-30" y="204.97" width="30" height="30" fill="none"/>
+   <g id="graphics_2-6">
+    <path id="path11-2" d="m-15 227.47v-15l15 7.5z" fill="#81DFFE"/>
+   </g>
+  </g>
+  <g id="cdpKnobStyle2">
+   <rect id="rect11-5-3" x="30" y="250.21" width="30" height="30" fill="none"/>
+   <g id="graphics_2-6-6">
+    <path id="path11-2-0" d="m60 250.21-30 15 30 15v-30zm-3.5 5.6602v18.68c-6.2266-3.1133-12.453-6.2266-18.68-9.3398l18.68-9.3398z" fill="#81DFFE"/>
+   </g>
+  </g>
+ </g>
+</svg>

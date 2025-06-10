@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="CDPBaseContainer" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>823</width>
+    <height>512</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="cdpTargetRouting">
+   <string>VWController.Cameras</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="horizontalWidget" native="true">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>40</height>
+      </size>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>9</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>9</number>
+      </property>
+      <item>
+       <widget class="CDPBaseLabel" name="label">
+        <property name="font">
+         <font>
+          <family>Open Sans</family>
+          <pointsize>12</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="stylingType">
+         <enum>CDPBaseLabel::NoFile</enum>
+        </property>
+        <property name="cdpRouting" stdset="0">
+         <string>.ShortName</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="CDPBaseLineV" name="verticalLine">
+        <property name="svgFile">
+         <string notr="true">:/themes/openbridge5_day/backgrounds/bgBorder.svg</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="CDPBaseLabel" name="label_3">
+        <property name="text">
+         <string>IP</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="stylingType">
+         <enum>CDPBaseLabel::NoFile</enum>
+        </property>
+        <property name="cdpRouting" stdset="0">
+         <string>.IP.String</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="Content" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
+         <widget class="CDPBaseLabel" name="label_2">
+          <property name="text">
+           <string>URI</string>
+          </property>
+          <property name="stylingType">
+           <enum>CDPBaseLabel::SubHeading</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="CDPBaseLineEdit" name="lineEdit">
+          <property name="font">
+           <font>
+            <family>Ubuntu</family>
+           </font>
+          </property>
+          <property name="cursorMoveStyle">
+           <enum>Qt::VisualMoveStyle</enum>
+          </property>
+          <property name="svgFile">
+           <string notr="true">:/themes/openbridge5_day/backgrounds/bgLineEdit.svg</string>
+          </property>
+          <property name="cdpRouting" stdset="0">
+           <string>.URI.String</string>
+          </property>
+          <property name="cdpPromptForChanges" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="pushRoutables" stdset="0">
+           <stringlist notr="true">
+            <string>cdpRouting</string>
+           </stringlist>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="CDPBaseLabel" name="label_5">
+          <property name="text">
+           <string>Type</string>
+          </property>
+          <property name="stylingType">
+           <enum>CDPBaseLabel::SubHeading</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="CDPBaseComboBox" name="comboBox">
+          <property name="svgFile">
+           <string notr="true">:/themes/openbridge5_day/buttons/spinBox.svg</string>
+          </property>
+          <property name="cdpRouting" stdset="0">
+           <string>.Type.String</string>
+          </property>
+          <property name="pushRoutables" stdset="0">
+           <stringlist notr="true">
+            <string>cdpRouting</string>
+           </stringlist>
+          </property>
+          <item>
+           <property name="text">
+            <string>Axis</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Z3</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CDPBaseLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>CDPBaseWidgets/CDPBaseLineEdit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseComboBox</class>
+   <extends>QComboBox</extends>
+   <header>CDPBaseWidgets/CDPBaseComboBox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseContainer</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBaseContainer.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseLabel</class>
+   <extends>QLabel</extends>
+   <header>CDPBaseWidgets/CDPBaseLabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBasePicture</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBasePicture.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseLine</class>
+   <extends>CDPBasePicture</extends>
+   <header>CDPBaseWidgets/CDPBaseLine.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseLineV</class>
+   <extends>CDPBaseLine</extends>
+   <header>CDPBaseWidgets/CDPBaseLine.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
