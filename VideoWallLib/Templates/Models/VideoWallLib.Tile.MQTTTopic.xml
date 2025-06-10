@@ -1,0 +1,24 @@
+<Model Name="VideoWallLib.Tile.MQTTTopic">
+  <BaseModel>VideoWallLib.MQTTTopic</BaseModel>
+  <ModelTypeClass>XML</ModelTypeClass>
+
+  <Attributes>
+    <Attribute Name="Model" Value="VideoWallLib.Tile.MQTTTopic"></Attribute>
+  </Attributes>
+
+  <Signals>
+
+    <Signal Name="Payload" Routing="..JSONEncode.Out"></Signal>
+
+    <Signal Name="Topic" Routing="..TopicBaseFromName.Out"></Signal>
+    
+    
+  </Signals>
+
+  <ArgumentMessages>
+
+    <ArgumentMessage Name="MQTTClientRPC" RoutingList="..MQTTClientRPC"></ArgumentMessage>
+    
+  </ArgumentMessages>
+
+</Model>

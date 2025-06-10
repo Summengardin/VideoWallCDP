@@ -3,6 +3,7 @@
 
 #include <CDPSystem/Base/CDPComponent.h>
 #include <CDPSystem/Base/CDPProperty.h>
+#include <OSDPort.h>
 #include <Signal/CDPSignal.h>
 #include <CDPParameter/CDPParameter.h>
 #include <CDPAlarm/CDPAlarm.h>
@@ -21,6 +22,7 @@ public:
     void ProcessNull() override;
 
 protected:
+    OSDPort OSDPort1;
     CDPSignal<std::string> Text;
     CDPSignal<std::string> FontName;
     CDPSignal<float> FontSize;
@@ -31,6 +33,7 @@ protected:
     CDPSignal<float> Timeout;
     CDPSignal<std::string> JSONOut;
     CDPSignal<bool> Visible;
+    CDPSignal<std::string> Alignment;
     
     using CDPComponent::requestedState;
     using CDPComponent::ts;

@@ -26,5 +26,4 @@
   <Timers>
     <Timer Description="Timer used to delay setting Transmission Error alarm. Timeout-delay is configured in Parameter SignalTimeout." Model="CDPParameterTimer" Name="SignalTimeoutTimer"></Timer>
   </Timers>
-  <Topic Input="1" Model="MQTTIO.PublishTopic&lt;double&gt;" Name="Sine" Topic="Sine" Type="double" Description="Topic for sending data from CDP to MQTT" InternalValue="0" MessageBytes="0" MessageCount="0" QoS="0" RoutedProperties="Value" Routing="" RoutingStatus="" Unit="" Value="0"></Topic>
 </Component>

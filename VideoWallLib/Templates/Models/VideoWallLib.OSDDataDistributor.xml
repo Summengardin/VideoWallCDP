@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Model Name="VideoWallLib.OSDDataDistributor">
+ <ModelTypeClass>C++</ModelTypeClass>
+ <BaseModel>CDPComponent</BaseModel>
+ <Element Name="Priority" Value="normal"/>
+ <Element Name="fs" Value="5"/>
+ <Attributes>
+  <Attribute Name="Description" Type="string" Value="Simple component"/>
+  <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.OSDDataDistributor"/>
+ </Attributes>
+ <Signals>
+  <Signal Description="Current load measured on Gangway tip" Input="1" Model="CDPSignal&lt;double&gt;" Name="GangwayLoad" Type="double" Unit="t"/>
+  <Signal Description="Current load of Crane payload" Input="1" Model="CDPSignal&lt;double&gt;" Name="CraneLoad" Type="double" Unit="t"/>
+  <Signal Description="" Input="1" InternalValue="" Model="CDPSignal&lt;string&gt;" Name="Mode" Type="string" Unit="" Value=""/>
+  <Signal Description="Shows description of current OSD elements instead of data" Input="1" Model="CDPSignal&lt;bool&gt;" Name="ShowOSDDescription" Type="bool" Unit="0 / 1" Value=""/>
+ </Signals>
+</Model>

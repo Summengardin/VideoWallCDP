@@ -37,6 +37,7 @@ OSDText::~OSDText()
 void OSDText::Create(const char* fullName)
 {
     CDPComponent::Create(fullName);
+    OSDPort1.Create("OSDPort1",this);
     Text.Create("Text",this);
     FontName.Create("FontName",this);
     FontSize.Create("FontSize",this);
@@ -47,6 +48,7 @@ void OSDText::Create(const char* fullName)
     Timeout.Create("Timeout",this);
     JSONOut.Create("JSONOut",this);
     Visible.Create("Visible",this);
+    Alignment.Create("Alignment",this);
 }
 
 /*!

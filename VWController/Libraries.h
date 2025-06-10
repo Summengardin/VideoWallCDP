@@ -1,5 +1,9 @@
 #include <automation.h>
 #include <cdpeventmanager.h>
+#include <cdplogger.h>
+#include <mqttio.h>
+#include <operationutilities.h>
 #include <securitylib.h>
+#include <sequencer.h>
 #include <videowalllib.h>
 #include <StudioAPIServerLib.h>

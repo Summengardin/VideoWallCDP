@@ -1,0 +1,47 @@
+<Component Model="CDPComponent" Name="VisionController0" src="Components/VisionControllers/VisionController0.xml" Description="CDPComponent is an instance of a CDP component model, instantiated using the specification in the component configuration xml file. Components communicate by exchanging Messages, Signal- and Property-values, both inside applications and between applications.">
+  <SchedulingOrder>TopDown</SchedulingOrder>
+  <SchedulingGroup>Default</SchedulingGroup>
+  <fs>10</fs>
+  <Status>0</Status>
+
+
+  <Signals>
+    <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
+    <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+  </Signals>
+
+  <Alarms>
+    <Alarm Description="A component was suspended!" Name="Component Suspended" Text="Component was suspended!"></Alarm>
+    <Alarm Description="Alarm is triggered (with Text containing the list of errors) when some node of the component (like operator) has configuration fault." Level="Error" Name="ConfigurationFaults"></Alarm>
+  </Alarms>
+
+  <Subcomponents>
+    <Operator Model="OperationUtilities.InputSelectorOperator&lt;string&gt;" Name="ValueSelector" Type="string">
+      <Argument CppName="" Description="Selection: Used to specify a SelectionNr that will be compared to the SelectionNr of the Arguments" Input="1" Model="DefaultArgument&lt;unsigned int&gt;" Name="Selection" Routing="" Type="unsigned int" Value="0"></Argument>
+      <Argument BinaryEncodedLength="0" CppName="m_output" Input="0" Model="DefaultArgument&lt;string&gt;" Name="OutputValue" Routing="" Type="string" Value="0"></Argument>
+
+      <SelectorInputs>
+        <SelectorInput BinaryEncodedLength="0" CppName="" Input="1" Model="OperationUtilities.SelectorInput&lt;string&gt;" Name="GWLoad" Routing="" SelectionNr="1" Type="string" Value="0"></SelectorInput>
+        <SelectorInput BinaryEncodedLength="0" CppName="" Input="1" Model="OperationUtilities.SelectorInput&lt;string&gt;" Name="CraneAngle" Routing="" SelectionNr="2" Type="string" Value="0"></SelectorInput>
+        <SelectorInput BinaryEncodedLength="0" CppName="" Input="1" Model="OperationUtilities.SelectorInput&lt;string&gt;" Name="GWMode" Routing="" SelectionNr="3" Type="string" Value="0"></SelectorInput>
+        <SelectorInput BinaryEncodedLength="0" CppName="" Input="1" Model="OperationUtilities.SelectorInput&lt;string&gt;" Name="Hidden" Routing="" SelectionNr="0" Type="string" Value="0" Description="This argument acts as an input option of the given type, when the selection matches its SelectionNr the OutputValue will be set to the value of this argument." Unit=""></SelectorInput>
+      </SelectorInputs></Operator>
+    <Subcomponent Model="VideoWallLib.OSDText" Name="OSDText" src="Components/VisionControllers/VisionController0/OSDText.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile.OSDTextTL" Name="OSDTextTL" src="Components/VisionControllers/VisionController0/OSDTextTL.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile.OSDTextTC" Name="OSDTextTC" src="Components/VisionControllers/VisionController0/OSDTextTC.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile.OSDTextTR" Name="OSDTextTR" src="Components/VisionControllers/VisionController0/OSDTextTR.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile.OSDTextBC" Name="OSDTextBC1" src="Components/VisionControllers/VisionController0/OSDTextBC1.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile" Name="Tile01" src="Components/VisionControllers/VisionController0/Tile01.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile" Name="Tile02" src="Components/VisionControllers/VisionController0/Tile02.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile" Name="Tile03" src="Components/VisionControllers/VisionController0/Tile03.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile" Name="Tile04" src="Components/VisionControllers/VisionController0/Tile04.xml"></Subcomponent>
+  </Subcomponents>
+
+  <ArgumentMessages>
+    <ArgumentMessage Command="0" Input="0" Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC" RoutingList="..MQTTClientRPC"></ArgumentMessage>
+  </ArgumentMessages>
+
+  <Ports></Ports>
+  
+
+</Component>

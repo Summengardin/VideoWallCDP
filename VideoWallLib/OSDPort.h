@@ -11,14 +11,8 @@ class OSDPort : public CDPPort
 public:
     void Create(const char* shortName, CDPComponent* parent) override;
 
-    CDPProperty<std::string> Text;
-    CDPProperty<std::string> FontName;
-    CDPProperty<std::string> FontSize;
-    CDPProperty<std::string> PosX;
-    CDPProperty<std::string> PosY;
-    CDPProperty<float> Timeout;
-    CDPProperty<std::string> FontColor;
-    CDPProperty<std::string> BGColor;
+    CDPProperty<std::string> TextProp;
+    CDPProperty<int> TextIndex;
 };
 
 } // namespace VideoWallLib

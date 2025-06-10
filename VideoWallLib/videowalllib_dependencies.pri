@@ -1,1 +1,1 @@
-DEPS += cdpmodel mqttio sequencer
+DEPS += cdpmodel mqttio operationutilities sequencer videowalllib

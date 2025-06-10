@@ -1,7 +1,7 @@
 TYPE = application
 PROJECTNAME = VWController
 
-DEPS += videowalllib
+DEPS += canopenio cdplogger cdpmodel mqttio operationutilities sequencer videowalllib
 
 HEADERS += Libraries.h
 SOURCES += CDPMain.cpp

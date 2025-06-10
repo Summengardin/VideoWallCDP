@@ -20,21 +20,57 @@
     <Signal Model="CDPSignal&lt;int&gt;" Name="PosX" Unit="px" Description="Upper left of text" Input="1"></Signal>
     <Signal Model="CDPSignal&lt;int&gt;" Name="PosY" Unit="px" Description="Upper left of text" Input="1"></Signal>
     <Signal Model="CDPSignal&lt;float&gt;" Name="Timeout" Unit="s" Input="1"></Signal>
-    <Signal Model="CDPSignal&lt;string&gt;" Name="JSONOut" Routing=""></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="JSONOut" Routing=".JSONEncode.Out"></Signal>
     <Signal Input="1" Model="CDPSignal&lt;bool&gt;" Name="Visible"></Signal>
+    <Signal Description="&apos;left&apos;,  &apos;center&apos;, &apos;right&apos;" Input="1" Model="CDPSignal&lt;string&gt;" Name="Alignment" Value="&apos;left&apos;"></Signal>
   </Signals>
 
   <Subcomponents>
     <Operator Model="Sequencer.JSONEncode" Name="JSONEncode">
-      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="text" Routing=""></Argument>
-      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="font_name" TypeColorHint="#4697c3" Routing=""></Argument>
-      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="font_size" TypeColorHint="#4697c3" Routing=""></Argument>
-      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="font_color" TypeColorHint="#4697c3" Routing=""></Argument>
-      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="bg_color" TypeColorHint="#4697c3" Routing=""></Argument>
-      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="pos_x" TypeColorHint="#4697c3" Routing=""></Argument>
-      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="pos_y" TypeColorHint="#4697c3" Routing=""></Argument>
-      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="timeout" TypeColorHint="#4697c3" Routing=""></Argument>
-      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;bool&gt;" Name="visible" TypeColorHint="#4697c3" Routing=""></Argument></Operator>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="text" Routing="..Text"></Argument>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="font_name" TypeColorHint="#4697c3" Routing="..FontName"></Argument>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="font_size" TypeColorHint="#4697c3" Routing="..FontSize"></Argument>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="font_color" TypeColorHint="#4697c3" Routing="..FontColor"></Argument>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="bg_color" TypeColorHint="#4697c3" Routing="..BGColor"></Argument>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="pos_x" TypeColorHint="#4697c3" Routing="..PosX"></Argument>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="pos_y" TypeColorHint="#4697c3" Routing="..PosY"></Argument>
+      <Argument Description="-1 = no timeout" Model="Argument&lt;string&gt;" Name="timeout" TypeColorHint="#4697c3" Routing="..Timeout"></Argument>
+      <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;bool&gt;" Name="visible" TypeColorHint="#4697c3" Routing="..Visible"></Argument>
+      <Argument Description="&apos;left&apos;, &apos;center&apos; or &apos;right" Model="Argument&lt;string&gt;" Name="alignment" TypeColorHint="#4697c3" Routing="..Alignment"></Argument></Operator>
   </Subcomponents>
+
+  <Ports>
+    <Port Model="VideoWallLib.OSDPort" Name="OSDPort1" Input="0">
+
+      <Connections>
+
+        <Connection Name="Text" Input="0" Routing="..Text"></Connection>
+
+        <Connection Name="Alignment" Input="0" Routing="..Alignment"></Connection>
+
+        <Connection Name="PosX" Input="0" Routing="..PosX"></Connection>
+
+        <Connection Name="PosY" Input="0" Routing="..PosY"></Connection>
+
+        <Connection Name="FontName" Input="0" Routing="..FontName"></Connection>
+
+        <Connection Name="FontColor" Input="0" Routing="..FontColor"></Connection>
+
+        <Connection Name="FontSize" Input="0" Routing="..FontSize"></Connection>
+
+        <Connection Name="Timeout" Input="0" Routing="..Timeout"></Connection>
+
+        <Connection Name="BGColor" Input="0" Routing="..BGColor"></Connection>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </Connections></Port>
+  </Ports>
 
 </Model>

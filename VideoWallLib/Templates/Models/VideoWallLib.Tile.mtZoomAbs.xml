@@ -1,0 +1,24 @@
+<Model Name="VideoWallLib.Tile.mtZoomAbs">
+  <BaseModel>VideoWallLib.MQTTTopic</BaseModel>
+  <ModelTypeClass>XML</ModelTypeClass>
+
+  <Attributes>
+    <Attribute Name="Model" Value="VideoWallLib.Tile.mtZoomAbs"></Attribute>
+  </Attributes>
+
+  <ArgumentMessages>
+
+    <ArgumentMessage Name="MQTTClientRPC" RoutingList="..MQTTClientRPC"></ArgumentMessage>
+    
+  </ArgumentMessages>
+
+  <Signals>
+
+    <Signal Name="Topic" Routing="..TopicZoomAbs.Out"></Signal>
+    
+
+    <Signal Name="Payload" Routing=""></Signal>
+    
+  </Signals>
+
+</Model>

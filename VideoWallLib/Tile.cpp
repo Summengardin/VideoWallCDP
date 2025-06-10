@@ -37,6 +37,7 @@ Tile::~Tile()
 void Tile::Create(const char* fullName)
 {
     CDPComponent::Create(fullName);
+    o_OSDJson.Create("OSDJson",this);
     pTile.Create("pTile",this);
     Brightness.Create("Brightness",this);
     Source.Create("Source",this);
@@ -45,6 +46,9 @@ void Tile::Create(const char* fullName)
     OSDText2.Create("Text2",this);
     OSDText3.Create("Text3",this);
     OSDText4.Create("Text4",this);
+    ZoomSpeed.Create("ZoomSpeed",this);
+    TiltSpeed.Create("TiltSpeed",this);
+    PanSpeed.Create("PanSpeed",this);
 }
 
 /*!
@@ -69,6 +73,10 @@ void Tile::CreateModel()
 void Tile::Configure(const char* componentXML)
 {
     CDPComponent::Configure(componentXML);
+    for (CDPPort* port: m_ports)
+        if (OSDPort* osd_port = dynamic_cast<OSDPort*>(port))
+            osds.push_back(osd_port);
+
 }
 
 /*!
@@ -86,5 +94,31 @@ void Tile::Configure(const char* componentXML)
 */
 void Tile::ProcessNull()
 {
-    /* Write your code here */
+        /* Write your code here */
+    json out_json;
+    for (auto p : osds){
+        json loc_json;
+        auto add_to_json = [&loc_json](IPortConnection& con){
+            std::string name = con.GetLocalName();
+            std::string val = con.GetLocalValue()->GetValue();
+            loc_json.emplace(name, val);
+        };
+        p->ForEachConnection(add_to_json);
+        auto name = p->GetNodeName();
+        out_json.emplace(name, loc_json);
+    }
+
+
+    // std::cout << "Current json is: " << out_json.dump(4) << std::endl;
+    o_OSDJson = out_json.dump();
 }
+
+void Tile::to_json () {
+    for (auto s : m_listSignals)
+        // std::cout << "Signal:" << s->GetRawValue() << std::endl;
+
+    json empty_json;
+}
+
+
+

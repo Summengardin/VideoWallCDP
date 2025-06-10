@@ -1,0 +1,62 @@
+<Component Model="VideoWallLib.Tile.OSDTextBC" Name="OSDTextBC" src="Components/VisionControllers/VisionController0/Tile02/OSDTextBC.xml" Description="Simple component">
+  <SchedulingOrder>TopDown</SchedulingOrder>
+  <SchedulingGroup>Default</SchedulingGroup>
+  <fs>5</fs>
+  <Status>0</Status>
+
+
+  <Signals>
+    <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
+    <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Text" Routing="..TextBC" Type="string"></Signal>
+    <Signal Description="Ex.: &quot;Noto Serif Bold&quot;, " Input="1" Model="CDPSignal&lt;string&gt;" Name="FontName" Type="string" Value="Noto Serif Bold"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;float&gt;" Name="FontSize" Type="float" Value="18"></Signal>
+    <Signal Description="R,G,B,A. ex.: &quot;0,0,0,1&quot; for black" Input="1" Model="CDPSignal&lt;string&gt;" Name="FontColor" Type="string" Value="1.0,1.0,1.0,1.0"></Signal>
+    <Signal Description="R,G,B,A. ex.: &quot;0,0,0,1&quot; for black" Input="1" Model="CDPSignal&lt;string&gt;" Name="BGColor" Type="string" Value="0.0,0.0,0.0,0.6"></Signal>
+    <Signal Description="Upper left of text" Input="1" Model="CDPSignal&lt;int&gt;" Name="PosX" Type="int" Unit="px"></Signal>
+    <Signal Description="Upper left of text" Input="1" Model="CDPSignal&lt;int&gt;" Name="PosY" Type="int" Unit="px"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;float&gt;" Name="Timeout" Type="float" Unit="s" Value="1"></Signal>
+    <Signal Input="0" Model="CDPSignal&lt;string&gt;" Name="JSONOut" Type="string" Routing=".JSONEncode.Out"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;bool&gt;" Name="Visible" Type="bool"></Signal>
+    <Signal Description="&apos;left&apos;,  &apos;center&apos;, &apos;right&apos;" Input="1" Model="CDPSignal&lt;string&gt;" Name="Alignment" Type="string" Value="center"></Signal>
+  </Signals>
+
+  <Alarms>
+    <Alarm Description="A component was suspended!" Name="Component Suspended" Text="Component was suspended!"></Alarm>
+    <Alarm Description="Alarm is triggered (with Text containing the list of errors) when some node of the component (like operator) has configuration fault." Level="Error" Name="ConfigurationFaults"></Alarm>
+  </Alarms>
+
+  <Subcomponents>
+    <Operator Model="Sequencer.JSONEncode" Name="JSONEncode">
+      <Argument BinaryEncodedLength="0" CppName="m_output" Description="JSON encoded output" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="text" Routing="..Text" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="font_name" Routing="..FontName" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="font_size" Routing="..FontSize" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="font_color" Routing="..FontColor" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="bg_color" Routing="..BGColor" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="pos_x" Routing="..PosX" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="pos_y" Routing="..PosY" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="timeout" Routing="..Timeout" Type="string" Value=""></Argument>
+      <Argument CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;bool&gt;" Name="visible" Routing="..Visible" Type="bool" Value="0"></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="&apos;left&apos;, &apos;center&apos; or &apos;right" Input="1" Model="Argument&lt;string&gt;" Name="alignment" Routing="..Alignment" Type="string" Value=""></Argument></Operator>
+  </Subcomponents>
+
+  <Ports>
+    <Port Input="0" Model="VideoWallLib.OSDPort" Name="OSDPort1">
+
+      <Connections>
+        <Connection Input="0" Model="OperationUtilities.ValuedConnectionExtended&lt;string&gt;" Name="Text" Routing="..Text" Type="string" Value=""></Connection>
+        <Connection Input="0" Model="OperationUtilities.ValuedConnectionExtended&lt;string&gt;" Name="Alignment" Routing="..Alignment" Type="string" Value="left"></Connection>
+        <Connection Input="0" Model="OperationUtilities.ValuedConnectionExtended&lt;int&gt;" Name="PosX" Routing="..PosX" Type="int" Value="0"></Connection>
+        <Connection Input="0" Model="OperationUtilities.ValuedConnectionExtended&lt;int&gt;" Name="PosY" Routing="..PosY" Type="int" Value="0"></Connection>
+        <Connection Input="0" Model="OperationUtilities.ValuedConnectionExtended&lt;string&gt;" Name="FontName" Routing="..FontName" Type="string" Value=""></Connection>
+        <Connection Input="0" Model="OperationUtilities.ValuedConnectionExtended&lt;string&gt;" Name="FontColor" Routing="..FontColor" Type="string" Value="1.0,1.0,1.0,1.0"></Connection>
+        <Connection Input="0" Model="OperationUtilities.ValuedConnectionExtended&lt;double&gt;" Name="FontSize" Routing="..FontSize" Type="double" Value="18"></Connection>
+        <Connection Input="0" Model="OperationUtilities.ValuedConnectionExtended&lt;string&gt;" Name="BGColor" Routing="..BGColor" Type="string" Value="0.0,0.0,0.0,0.6"></Connection>
+        <Connection Input="0" Model="OperationUtilities.ValuedConnectionExtended&lt;double&gt;" Name="Timeout" Routing="..Timeout" Type="double" Value="0"></Connection>
+        <Connection Input="1" LocalName=".TextProp" Model="CDPPortConnection" Name="MapTextProp"></Connection>
+        <Connection Input="1" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+      </Connections></Port>
+  </Ports>
+
+</Component>

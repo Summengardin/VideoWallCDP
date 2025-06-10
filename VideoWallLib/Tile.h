@@ -7,6 +7,11 @@
 #include <TilePort.h>
 #include <CDPParameter/CDPParameter.h>
 #include <CDPAlarm/CDPAlarm.h>
+#include "OSDPort.h"
+#include "json.hpp"
+#include <Sequencer/ServiceBlock.h>
+
+using json = nlohmann::json;
 
 namespace VideoWallLib {
 
@@ -20,6 +25,7 @@ public:
     void CreateModel() override;
     void Configure(const char* componentXML) override;
     void ProcessNull() override;
+    void to_json();
 
 protected:
     CDPPort pTile;
@@ -31,9 +37,15 @@ protected:
     CDPSignal<std::string> OSDText2;
     CDPSignal<std::string> OSDText3;
     CDPSignal<std::string> OSDText4;
+    CDPSignal<double> ZoomSpeed;
+    CDPSignal<double> TiltSpeed;
+    CDPSignal<double> PanSpeed;
     using CDPComponent::requestedState;
     using CDPComponent::ts;
     using CDPComponent::fs;
+
+    std::vector<OSDPort*> osds;
+    CDPSignal<std::string> o_OSDJson;
 };
 
 } // namespace VideoWallLib

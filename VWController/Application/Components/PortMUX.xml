@@ -16,7 +16,7 @@
   </Alarms>
 
   <Ports>
-    <Port Input="1" Model="VideoWallLib.LayoutPort" Name="LayoutPort" Routing="..Layout.pLayout" Source01="Camera01" Source02="Camera02" Source03="Camera03" Source04="Camera04" Source12="Camera06" Source13="Camera07" Source14="Camera08">
+    <Port Input="1" Model="VideoWallLib.LayoutPort" Name="LayoutPort" Routing="..Layout.pLayout" Source01="Camera01" Source02="Camera02" Source03="Camera03" Source04="Camera04" Source12="Camera06" Source13="Camera07" Source14="Camera08" Source11="Camera05">
 
       <Connections>
         <Connection Input="1" LocalName=".Source01" Model="CDPPortConnection" Name="MapSource01"></Connection>
@@ -40,7 +40,7 @@
         <Connection Input="1" LocalName=".Source13" Model="CDPPortConnection" Name="MapSource13"></Connection>
         <Connection Input="1" LocalName=".Source14" Model="CDPPortConnection" Name="MapSource14"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.LayoutPort" Name="LayoutPort2" Source01="Camera01" Source02="Camera02" Source03="Camera03" Source04="Camera04" Source12="Camera06" Source13="Camera07" Source14="Camera08">
+    <Port Input="0" Model="VideoWallLib.LayoutPort" Name="LayoutPort2" Source01="Camera01" Source02="Camera02" Source03="Camera03" Source04="Camera04" Source12="Camera06" Source13="Camera07" Source14="Camera08" Source11="Camera05">
 
       <Connections>
         <Connection Input="1" LocalName=".Source01" Model="CDPPortConnection" Name="MapSource01"></Connection>

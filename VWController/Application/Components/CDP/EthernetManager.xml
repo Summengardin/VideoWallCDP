@@ -16,6 +16,7 @@
     <Parameter Name="EthLinkSurveillanceInterv" 	  Value="100"  Unit="ms"    Model="CDPParameter" Description="Interval for how often to check link-status on the networkinterfaces specified in Application.xml."></Parameter>
     <Parameter Name="LimitTrafficJamReceive_kB_sec"   Value="7000" Unit="kB/s"  Model="CDPParameter" Description="Limit for ethernet traffic jam in kB/s (only testing received traffic and if DualEth is enabled). Ethernet interface will be taken down if receiving more than this limit, and EthInterfaceTakenDownTrafficJam-alarm will be Set. Test will not be performed if this limit is 0.0."></Parameter>
     <Parameter Name="StatisticsSignalsUpdateInterval" Value="1"    Unit="s"     Model="CDPParameter" Description="Interval which decides how often (but not faster than ts) the statistics signals are updated."></Parameter>
+    <Parameter Description="Maximum number of seconds to wait for the IP address specified by ETH0 to become available" Name="MaxNetworkWaitTime" Unit="s" Value="60"></Parameter>
   </Parameters>
 
   <Signals>

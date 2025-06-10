@@ -13,6 +13,8 @@
     <Signal Model="CDPSignal&lt;float&gt;" Name="FontSize" Value="18"></Signal>
     <Signal Model="CDPSignal&lt;string&gt;" Name="FontColor" Value="1.0,1.0,1.0,1.0"></Signal>
     <Signal Model="CDPSignal&lt;string&gt;" Name="BGColor" Value="0.0,0.0,0.0,0.6"></Signal>
+    <Signal Model="CDPSignal&lt;int&gt;" Name="PosX" Value="1920"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="Alignment" Value="right"></Signal>
     
   </Signals>
 
