@@ -1,0 +1,3 @@
+[submodule "operationutilities"]
+	path = operationutilities
+	url = ssh://git@bitbucket.seaonics.com:7999/oplibs/operationutilities.git
