@@ -1,11 +1,15 @@
 <Library Name="VideoWallLib">
  <Models>
-  <Model Name="VideoWallLib.Camera"/>
+  <Model Name="VideoWallLib.Camera">
+   <Model Name="VideoWallLib.Camera.MQTTTopic"/>
+  </Model>
   <Model Name="VideoWallLib.CameraPort"/>
   <Model Name="VideoWallLib.Layout"/>
   <Model Name="VideoWallLib.LayoutPort"/>
   <Model Name="VideoWallLib.MQTTHandler.MQTTClient"/>
-  <Model Name="VideoWallLib.MQTTHandler"/>
+  </Model>
+  <Model Name="VideoWallLib.MQTTTopic"/>
+  <Model Name="VideoWallLib.OSD">
   <Model Name="VideoWallLib.OSD.OSDText"/>
   <Model Name="VideoWallLib.OSD"/>
   <Model Name="VideoWallLib.OSDPort"/>

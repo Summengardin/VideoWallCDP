@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Model Name="VideoWallLib.MQTTTopic">
+ <ModelTypeClass>C++</ModelTypeClass>
+ <BaseModel>CDPComponent</BaseModel>
+ <Element Name="Priority" Value="normal"></Element>
+ <Element Name="fs" Value="5"></Element>
+ <Attributes>
+  <Attribute Name="Description" Type="string" Value="Simple component"></Attribute>
+  <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.MQTTTopic"></Attribute>
+  </Attributes>
+ <Subcomponents>
+  <Operator Description="Value to Message conversion operator sending EventMessage CM_TEXTCOMMAND by default with name mapped input arguments added to the operator as parameters." Model="SendMessage" Name="SendMessage" TriggerOn="100">
+   <ArgumentMessage Description="Message out sending CM_TEXTCOMMAND_EVENT command with CM_TEXTCOMMAND by default." Input="0" InputOutputHint="T" Model="MessageArgument" Name="MessageOut" RoutingList="..Publisher.Publish" RoutingType="Push"></ArgumentMessage>
+   <Argument Model="Argument&lt;string&gt;" Name="Topic" Routing="..Topic" TypeColorHint="#4697c3"></Argument>
+   <Argument Model="Argument&lt;string&gt;" Name="Payload" Routing="..Payload" TypeColorHint="#4697c3"></Argument>
+      
+         
+      
+  </Operator>
+  <Operator Model="MQTTIO.Publisher" Name="Publisher">
+   <Client Name="MQTTClient" Object="..MQTTClientRPC"></Client>
+   <Argument Model="Sequencer.Argument&lt;bool&gt;" Name="Retain" Value="1" Routing="..Retain"></Argument>
+
+      <Argument Name="QoS" Routing="..QoS"></Argument>
+      
+  </Operator>
+ </Subcomponents>
+ <ArgumentMessages>
+  <ArgumentMessage Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC"></ArgumentMessage>
+ </ArgumentMessages>
+ <Signals>
+  <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Topic"></Signal>
+  <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Payload"></Signal>
+ </Signals>
+
+  <Parameters>
+    <Parameter Model="CDPParameter" Name="Retain" IsBinary="0" Value="1" Min="0" Max="1"></Parameter>
+    <Parameter Max="2" Min="0" Model="CDPParameter" Name="QoS"></Parameter>
+  </Parameters>
+
+  <Connectors></Connectors>
+  
+</Model>

@@ -8,10 +8,13 @@
 #include <Signal/CDPSignal.h>
 #include <CDPParameter/CDPParameter.h>
 #include <CDPAlarm/CDPAlarm.h>
-#include <CDPCore/OSAPI/Timer/CDPParameterTimer.h>
 
-#include <json.hpp>
+#include "OperationUtilities/Parameters/StringParameter.h"
+#include "OperationUtilities/Parameters/calibrationparameter.h"
+#include "json.hpp"
+
 using json = nlohmann::json;
+
 
 namespace VideoWallLib {
 
@@ -25,22 +28,18 @@ public:
     void CreateModel() override;
     void Configure(const char* componentXML) override;
     void ProcessNull() override;
-    void ProcessSaveToJson();
     json toJson() const;
 
 protected:
     CDPPort pCamera;
-    CDPParameterTimer timerTest;
-    CDPSignal<int> Width;
-    CDPSignal<int> Height;
-    CDPSignal<std::string> DisplayName;
-    CDPSignal<std::string> IP;
-    CDPSignal<std::string> Format;
-    CDPSignal<float> Framerate;
-    CDPSignal<std::string> Type;
-    CDPSignal<std::string> URI;
-    CDPSignal<bool> SaveTpoJson;
-    CDPProperty<std::string> propIP;
+    OperationUtilities::CalibrationParameter Width;
+    OperationUtilities::CalibrationParameter Height;
+    OperationUtilities::CalibrationParameter Framerate;
+    StringParameter DisplayName;
+    StringParameter IP;
+    StringParameter Format;
+    StringParameter Type;
+    StringParameter URI;
     using CDPComponent::requestedState;
     using CDPComponent::ts;
     using CDPComponent::fs;

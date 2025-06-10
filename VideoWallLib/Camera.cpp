@@ -39,7 +39,6 @@ void Camera::Create(const char* fullName)
 {
     CDPComponent::Create(fullName);
     pCamera.Create("pCamera",this);
-    timerTest.Create("timerTest",this);
     Width.Create("Width",this);
     Height.Create("Height",this);
     DisplayName.Create("DisplayName",this);
@@ -48,8 +47,6 @@ void Camera::Create(const char* fullName)
     Framerate.Create("Framerate",this);
     Type.Create("Type",this);
     URI.Create("URI",this);
-    SaveTpoJson.Create("SaveTpoJson",this);
-    propIP.Create("propIP",this,CDPPropertyBase::e_Element,(CDPOBJECT_SETPROPERTY_HANDLER)nullptr,(CDPOBJECT_VALIDATEPROPERTY_HANDLER)nullptr);
 }
 
 /*!
@@ -63,7 +60,6 @@ void Camera::CreateModel()
     CDPComponent::CreateModel();
 
     RegisterStateProcess("Null", (CDPCOMPONENT_STATEPROCESS)&Camera::ProcessNull, "Initial Null state");
-    RegisterStateProcess("SaveToJson",(CDPCOMPONENT_STATEPROCESS)&Camera::ProcessSaveToJson,"");
 }
 
 /*!
@@ -92,24 +88,15 @@ void Camera::Configure(const char* componentXML)
 */
 void Camera::ProcessNull()
 {
-    /* Write your code here */
-    if (timerTest.IsRunning())
-        timerTest.IsRunning();
-}
-
-
-
-void Camera::ProcessSaveToJson()
-{
 
 }
+
+
 
 json Camera::toJson() const
 {
     json propertiesJson;
 
-    propertiesJson.update({propIP.GetName(), propIP.GetValue()});
-    return { {this->ShortName(), propertiesJson} };
 }
 
 

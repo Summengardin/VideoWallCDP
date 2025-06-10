@@ -13,6 +13,7 @@ VideoWallLibBuilder implementation.
 #include "OSDText.h"
 #include "OSD.h"
 #include "MQTTHandler.h"
+#include "MQTTTopic.h"
 #include "VideoWallLibBuilder.h"
 
 using namespace VideoWallLib;
@@ -63,6 +64,8 @@ CDPComponent* VideoWallLibBuilder::CreateNewComponent(const std::string& type)
     if (type=="VideoWallLib.MQTTHandler")
         return new MQTTHandler;
 
+    if (type=="VideoWallLib.MQTTTopic")
+        return new MQTTTopic;
     return CDPBuilder::CreateNewComponent(type);
 }
 

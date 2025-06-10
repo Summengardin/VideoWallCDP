@@ -11,6 +11,7 @@ HEADERS += \
     Layout.h \
     LayoutPort.h \
     MQTTHandler.h \
+    MQTTTopic.h \
     OSD.h \
     OSDText.h \
     OSDPort.h \
@@ -26,6 +27,7 @@ SOURCES += \
     Layout.cpp \
     LayoutPort.cpp \
     MQTTHandler.cpp \
+    MQTTTopic.cpp \
     OSD.cpp \
     OSDText.cpp \
     OSDPort.cpp \
@@ -35,12 +37,14 @@ SOURCES += \
     VideoWallLibBuilder.cpp
 
 DISTFILES += $$files(*.xml, true) \
+    Templates/Models/VideoWallLib.Camera.MQTTTopic.xml \
     Templates/Models/VideoWallLib.Camera.xml \
     Templates/Models/VideoWallLib.CameraPort.xml \
     Templates/Models/VideoWallLib.Layout.xml \
     Templates/Models/VideoWallLib.LayoutPort.xml \
     Templates/Models/VideoWallLib.MQTTHandler.MQTTClient.xml \
     Templates/Models/VideoWallLib.MQTTHandler.xml \
+    Templates/Models/VideoWallLib.MQTTTopic.xml \
     Templates/Models/VideoWallLib.OSD.OSDText.xml \
     Templates/Models/VideoWallLib.OSD.xml \
     Templates/Models/VideoWallLib.OSDText.xml \
