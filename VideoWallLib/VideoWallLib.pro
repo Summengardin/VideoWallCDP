@@ -19,6 +19,7 @@ HEADERS += \
     SourceOrchestrator.h \
     Tile.h \
     TilePort.h \
+    uri.h \
     videowalllib.h \
     VideoWallLibBuilder.h
 
@@ -36,7 +37,8 @@ SOURCES += \
     SourceOrchestrator.cpp \
     Tile.cpp \
     TilePort.cpp \
-    VideoWallLibBuilder.cpp
+    VideoWallLibBuilder.cpp \
+    uri.cpp
 
 DISTFILES += $$files(*.xml, true) \
     Templates/Models/VideoWallLib.Camera.MQTTTopic.xml \

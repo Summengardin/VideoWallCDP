@@ -12,6 +12,7 @@
 #include "OperationUtilities/Parameters/StringParameter.h"
 #include "OperationUtilities/Parameters/calibrationparameter.h"
 #include "json.hpp"
+#include "uri.h"
 
 using json = nlohmann::json;
 
@@ -43,6 +44,8 @@ protected:
     using CDPComponent::requestedState;
     using CDPComponent::ts;
     using CDPComponent::fs;
+
+    Uri uri;
 };
 
 } // namespace VideoWallLib

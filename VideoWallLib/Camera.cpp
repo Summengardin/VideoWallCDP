@@ -88,7 +88,11 @@ void Camera::Configure(const char* componentXML)
 */
 void Camera::ProcessNull()
 {
-
+    uri = VideoWallLib::Uri();
+    uri.parse(URI.String);
+    IP.SetProperty("String", uri.host);
+    if(DebugLevel(DEBUGLEVEL_EXTENDED))
+        std::cout << this->Name() << ": " << uri.toStringExtended() << std::endl;
 }
 
 
