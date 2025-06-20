@@ -40,15 +40,15 @@ void Tile::Create(const char* fullName)
     o_OSDJson.Create("OSDJson",this);
     pTile.Create("pTile",this);
     Brightness.Create("Brightness",this);
-    Source.Create("Source",this);
-    Zoom.Create("Zoom",this);
-    OSDText1.Create("Text1",this);
-    OSDText2.Create("Text2",this);
-    OSDText3.Create("Text3",this);
-    OSDText4.Create("Text4",this);
-    ZoomSpeed.Create("ZoomSpeed",this);
-    TiltSpeed.Create("TiltSpeed",this);
-    PanSpeed.Create("PanSpeed",this);
+    i_TiltAbs.Create("TiltAbs",this);
+    i_PanAbs.Create("PanAbs",this);
+    MQTTPublish.Create("MQTTPublish",this);
+    i_Brightness.Create("Brightness",this);
+    i_Source.Create("Source",this);
+    i_ZoomAbs.Create("ZoomAbs",this);
+    i_ZoomSpeed.Create("ZoomSpeed",this);
+    i_TiltSpeed.Create("TiltSpeed",this);
+    i_PanSpeed.Create("PanSpeed",this);
 }
 
 /*!
@@ -75,8 +75,11 @@ void Tile::Configure(const char* componentXML)
     CDPComponent::Configure(componentXML);
     for (CDPPort* port: m_ports)
         if (OSDPort* osd_port = dynamic_cast<OSDPort*>(port))
-            osds.push_back(osd_port);
+            m_osdPorts.push_back(osd_port);
 
+    indexedSignals.resize(10);
+    indexedSignalsPrev.resize(10);
+    indexedSignalsChanged.resize(10);
 }
 
 /*!
@@ -95,6 +98,65 @@ void Tile::Configure(const char* componentXML)
 void Tile::ProcessNull()
 {
         /* Write your code here */
+    index_inputs();
+    PublishMqtt();
+
+    firstRun = false;
+}
+
+
+
+void Tile::index_inputs() {
+
+    // Get new values
+    indexedSignals.at(0) = i_Source;
+    indexedSignals.at(1) = std::to_string(i_Brightness);
+    indexedSignals.at(2) = std::to_string(i_ZoomAbs);
+    indexedSignals.at(3) = std::to_string(i_ZoomSpeed);
+    indexedSignals.at(4) = std::to_string(i_PanAbs);
+    indexedSignals.at(5) = std::to_string(i_PanSpeed);
+    indexedSignals.at(6) = std::to_string(i_TiltAbs);
+    indexedSignals.at(7) = std::to_string(i_TiltSpeed);
+
+    // Check for changes
+    std::transform(indexedSignals.begin(), indexedSignals.end(), indexedSignalsPrev.begin(), indexedSignalsChanged.begin(), std::not_equal_to<std::string>());
+
+    // Store new values
+    std::copy(indexedSignals.begin(), indexedSignals.end(), indexedSignalsPrev.begin());
+}
+
+
+
+void Tile::PublishMqtt() {
+
+    bool changeInSignals = std::any_of(indexedSignalsChanged.begin(), indexedSignalsChanged.end(), [](bool b) { return b;});
+    if (!changeInSignals && !firstRun){
+        return;
+    }
+
+    std::string baseTopic = this->Name();
+    std::replace(baseTopic.begin(), baseTopic.end(), '.', '/');
+
+    for (size_t i = 0; i < topics.size(); i++){
+        if (indexedSignalsChanged[i]){
+            MessageTextCommand txtMessage;
+            txtMessage.SetTextCommand("Publish");
+            MessagePacketHandle msg(txtMessage);
+
+            if (DebugLevel(DEBUGLEVEL_EXTENDED) and false){
+                std::cout << baseTopic + "/" + topics[i] << ": " << indexedSignals[i] << "\n";
+            }
+
+            std::vector<CDPUtils::Parameter> param = {{"Topic", baseTopic + "/" + topics[i]},{"Payload", indexedSignals[i]}, {"QoS", "0"}, {"Retain", "1"}};
+            std::string joined = CDPUtils::JoinParameters(param);
+
+            msg.Packet().PayloadAppend(joined);
+
+            MQTTPublish.SendMessage(msg);
+        }
+
+    }
+}
     json out_json;
     for (auto p : osds){
         json loc_json;
