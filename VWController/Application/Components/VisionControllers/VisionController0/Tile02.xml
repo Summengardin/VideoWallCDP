@@ -24,19 +24,67 @@
   </Alarms>
 
   <Ports>
-    <Port Input="0" Model="CDPPort" Name="pTile">
+    <Port Description="TopLeft" Input="1" Model="VideoWallLib.OSDPort" Name="OSDTL" TextIndex="1" Routing="....OSD.OSDDataDistributor.OSDPort5">
 
       <Connections>
-        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Source" Routing="..Source" Type="string" Value=""></Connection>
-        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Brightness" Routing="..Brightness" Type="string" Value=""></Connection>
-        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Zoom" Routing="..Zoom" Type="string" Value=""></Connection>
-        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="TextTL" Routing="..TextTL" Type="string" Value=""></Connection>
-        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="TextTC" Routing="..TextTC" Type="string" Value=""></Connection>
-        <Connection Input="0" Model="ValuedConnection&lt;float&gt;" Name="TextTR" Routing="..TextTR" Type="float" Value="0"></Connection>
-        <Connection Input="0" Model="ValuedConnection&lt;float&gt;" Name="TextBC" Routing="..TextBC" Type="float" Value="0"></Connection>
-        <Connection Input="1" Model="CDPPortConnection" Name="MapSource" LocalName=".Source"></Connection>
+        <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
+        <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+        <Connection Input="1" LocalName=".FontSize" Model="CDPPortConnection" Name="MapFontSize"></Connection>
+        <Connection Input="1" LocalName=".Alignment" Model="CDPPortConnection" Name="MapAlignment"></Connection>
+        <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+        <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+        <Connection Input="1" LocalName=".FontName" Model="CDPPortConnection" Name="MapFontName"></Connection>
+        <Connection Input="1" LocalName=".FontColor" Model="CDPPortConnection" Name="MapFontColor"></Connection>
+        <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+        <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+        <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
       </Connections></Port>
-  </Ports>
+    <Port Alignment="center" Description="TopCenter" Input="1" Model="VideoWallLib.OSDPort" Name="OSDTC" PosX="960" TextIndex="2" Routing="....OSD.OSDDataDistributor.OSDPort6">
+
+      <Connections>
+        <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
+        <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+        <Connection Input="1" LocalName=".FontSize" Model="CDPPortConnection" Name="MapFontSize"></Connection>
+        <Connection Input="1" LocalName=".Alignment" Model="CDPPortConnection" Name="MapAlignment"></Connection>
+        <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+        <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+        <Connection Input="1" LocalName=".FontName" Model="CDPPortConnection" Name="MapFontName"></Connection>
+        <Connection Input="1" LocalName=".FontColor" Model="CDPPortConnection" Name="MapFontColor"></Connection>
+        <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+        <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+        <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+      </Connections></Port>
+    <Port Alignment="right" Description="TopRight" Input="1" Model="VideoWallLib.OSDPort" Name="OSDTR" PosX="1920" TextIndex="3" Routing="....OSD.OSDDataDistributor.OSDPort7">
+
+      <Connections>
+        <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
+        <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+        <Connection Input="1" LocalName=".FontSize" Model="CDPPortConnection" Name="MapFontSize"></Connection>
+        <Connection Input="1" LocalName=".Alignment" Model="CDPPortConnection" Name="MapAlignment"></Connection>
+        <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+        <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+        <Connection Input="1" LocalName=".FontName" Model="CDPPortConnection" Name="MapFontName"></Connection>
+        <Connection Input="1" LocalName=".FontColor" Model="CDPPortConnection" Name="MapFontColor"></Connection>
+        <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+        <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+        <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+      </Connections></Port>
+    <Port Alignment="center" Description="BottomCenter" Input="1" Model="VideoWallLib.OSDPort" Name="OSDBC" PosX="960" PosY="900">
+
+      <Connections>
+        <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
+        <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+        <Connection Input="1" LocalName=".FontSize" Model="CDPPortConnection" Name="MapFontSize"></Connection>
+        <Connection Input="1" LocalName=".Alignment" Model="CDPPortConnection" Name="MapAlignment"></Connection>
+        <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+        <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+        <Connection Input="1" LocalName=".FontName" Model="CDPPortConnection" Name="MapFontName"></Connection>
+        <Connection Input="1" LocalName=".FontColor" Model="CDPPortConnection" Name="MapFontColor"></Connection>
+        <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+        <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+        <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+      </Connections></Port></Ports>
+  
 
   <Subcomponents>
     <Operator Description="MQTT Publisher Sequencer block to publish data to the MQTT network via Publish events. Has to be connected to a MQTTClient, via the MQTTClient connector." Model="MQTTIO.Publisher" Name="Publisher">
@@ -59,6 +107,7 @@
 
   <ArgumentMessages>
     <ArgumentMessage Command="0" Input="0" Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC" RoutingList="..MQTTClientRPC"></ArgumentMessage></ArgumentMessages>
+
   <Connectors>
     <Connector Name="MQTTPublish" Object=".Publisher.Publish"></Connector>
   </Connectors>

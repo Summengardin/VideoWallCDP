@@ -37,9 +37,10 @@ Tile::~Tile()
 void Tile::Create(const char* fullName)
 {
     CDPComponent::Create(fullName);
-    o_OSDJson.Create("OSDJson",this);
-    pTile.Create("pTile",this);
-    Brightness.Create("Brightness",this);
+    OSDTL.Create("OSDTL",this);
+    OSDTC.Create("OSDTC",this);
+    OSDTR.Create("OSDTR",this);
+    OSDBC.Create("OSDBC",this);
     i_TiltAbs.Create("TiltAbs",this);
     i_PanAbs.Create("PanAbs",this);
     MQTTPublish.Create("MQTTPublish",this);
@@ -117,6 +118,7 @@ void Tile::index_inputs() {
     indexedSignals.at(5) = std::to_string(i_PanSpeed);
     indexedSignals.at(6) = std::to_string(i_TiltAbs);
     indexedSignals.at(7) = std::to_string(i_TiltSpeed);
+    indexedSignals.at(8) = CDPUtils::EscapeQuotation(OSDPortsToJson().dump());
 
     // Check for changes
     std::transform(indexedSignals.begin(), indexedSignals.end(), indexedSignalsPrev.begin(), indexedSignalsChanged.begin(), std::not_equal_to<std::string>());
@@ -157,11 +159,14 @@ void Tile::PublishMqtt() {
 
     }
 }
+json Tile::OSDPortsToJson() {
     json out_json;
-    for (auto p : osds){
+    for (auto p : m_osdPorts){
         json loc_json;
-        auto add_to_json = [&loc_json](IPortConnection& con){
-            std::string name = con.GetLocalName();
+        auto add_to_json = [&](IPortConnection& con){
+            std::string name = con.GetConnectionName();
+            // Remove "Map" from name
+            name.erase(0, 3);
             std::string val = con.GetLocalValue()->GetValue();
             loc_json.emplace(name, val);
         };
@@ -169,18 +174,5 @@ void Tile::PublishMqtt() {
         auto name = p->GetNodeName();
         out_json.emplace(name, loc_json);
     }
-
-
-    // std::cout << "Current json is: " << out_json.dump(4) << std::endl;
-    o_OSDJson = out_json.dump();
+    return out_json;
 }
-
-void Tile::to_json () {
-    for (auto s : m_listSignals)
-        // std::cout << "Signal:" << s->GetRawValue() << std::endl;
-
-    json empty_json;
-}
-
-
-

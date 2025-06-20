@@ -19,17 +19,10 @@
   <Signal Description="" Input="1" Model="CDPSignal&lt;double&gt;" Name="TiltAbs" Type="double" Unit="" Value=""/>
  </Signals>
  <Ports>
-  <Port Input="0" Model="CDPPort" Name="pTile">
-   <Connections>
-    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Source" Routing="..Source"></Connection>
-    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Brightness" Routing="..Brightness"></Connection>
-    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Zoom" Routing="..Zoom"></Connection>
-    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="TextTL" Routing="..TextTL"></Connection>
-    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="TextTC" Routing="..TextTC"></Connection>
-    <Connection Input="0" Model="ValuedConnection&lt;float&gt;" Name="TextTR" Routing="..TextTR"></Connection>
-    <Connection Input="0" Model="ValuedConnection&lt;float&gt;" Name="TextBC" Routing="..TextBC"></Connection>
-   </Connections>
-  </Port>
+  <Port Description="TopLeft" Model="VideoWallLib.OSDPort" Name="OSDTL" TextIndex="1"/>
+    <Port Alignment="center" Description="TopCenter" Model="VideoWallLib.OSDPort" Name="OSDTC" PosX="960" TextIndex="2"/>
+  <Port Alignment="right" Description="TopRight" Model="VideoWallLib.OSDPort" Name="OSDTR" PosX="1920" TextIndex="3"/>
+  <Port Alignment="center" Description="BottomCenter" Model="VideoWallLib.OSDPort" Name="OSDBC" PosX="960" PosY="900"/>
  </Ports>
  <Subcomponents>
   <Operator Model="MQTTIO.Publisher" Name="Publisher">

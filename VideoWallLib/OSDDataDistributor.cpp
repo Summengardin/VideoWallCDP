@@ -36,10 +36,10 @@ OSDDataDistributor::~OSDDataDistributor()
 void OSDDataDistributor::Create(const char* fullName)
 {
     CDPComponent::Create(fullName);
-    i_GangwayLoad.Create("GangwayLoad",this);
-    i_CraneLoad.Create("CraneLoad",this);
     i_Mode.Create("Mode",this);
     i_ShowOSDDescription.Create("ShowOSDDescription",this);
+    CraneLoad.Create("CraneLoad",this);
+    GangwayLoad.Create("GangwayLoad",this);
 }
 
 /*!
@@ -68,6 +68,10 @@ void OSDDataDistributor::Configure(const char* componentXML)
     for (auto p : m_ports)
         if (OSDPort* osd_port = dynamic_cast<OSDPort*>(p))
             m_osdports.push_back(osd_port);
+
+
+    indexed_data.resize(m_listSignals.size()); // Yes, this will make it bigger than necessary - quick and dirty
+    prevTimeouts.resize(m_listSignals.size());
 }
 
 /*!
@@ -86,43 +90,37 @@ void OSDDataDistributor::Configure(const char* componentXML)
 void OSDDataDistributor::ProcessNull()
 {
     index_inputs();
-    /* Write your code here */
-    for (auto p : m_osdports){
-        int idx = p->TextIndex;
-        p->TextProp = indexed_data[idx];
+
+    for (size_t i = 0; i < m_osdports.size(); i++){
+        auto p = m_osdports[i];
+        try {
+            p->Text = indexed_data.at(p->TextIndex);
+            if (!i_ShowOSDDescription)
+                prevTimeouts[i] = p->Timeout;
+        } catch (const std::out_of_range& e) {
+            CDPMessage("%s: Index %i out of range for OSD Data selection\n", e.what(), p->TextIndex.c_str());
+        }
         if(DebugLevel(DEBUGLEVEL_EXTENDED))
-            CDPMessage("Writing text prop (index=data) %f = %s \n", idx, indexed_data[idx].c_str());
+            CDPMessage("Writing text prop (index=data) %f = %s \n", p->TextIndex.c_str(), indexed_data[p->TextIndex].c_str());
     }
 }
 
-template <typename T>
-std::string toString(T val){
-    std::ostringstream oss;
-    oss << val;
-    return oss.str();
-}
 
 void OSDDataDistributor::index_inputs(){
 
-    if (i_ShowOSDDescription)
-    {
-        indexed_data[0] = "";
-        indexed_data[1] = i_GangwayLoad.GetProperty("ShortName") + ": " + i_GangwayLoad.GetProperty("Description");
-        indexed_data[2] = i_CraneLoad.GetProperty("ShortName") + ": " + i_CraneLoad.GetProperty("Description");
-        indexed_data[3] = i_Mode.GetProperty("ShortName") + ": " + i_Mode.GetProperty("Description");
-    }
-    else{
-        indexed_data[0] = "";
-        indexed_data[1] = toString(i_GangwayLoad.GetDouble()) + " " + i_GangwayLoad.GetProperty("Unit");
-        indexed_data[2] = toString(i_CraneLoad.GetDouble()) + " " + i_CraneLoad.GetProperty("Unit");
-        indexed_data[3] = i_Mode + " " + i_Mode.GetProperty("Unit");
-    }
+    int string_cnt = 0;
+    for (ICDPSignal* signal : m_listSignals) {
+        // Get the value as a generic variant or base type
+        if  (CDPSignal<std::string>* value = dynamic_cast<CDPSignal<std::string>*>(signal) ){
+            if (i_ShowOSDDescription)
+                indexed_data[string_cnt++] =  value->GetProperty("ShortName") + " [" + value->GetProperty("Unit") + "]: " + value->GetProperty("Description");
+            else
+                indexed_data[string_cnt++] = value->GetRawValue();
 
-
-    CDPMessage("Indexed data is:   ");
-    for (auto d :   indexed_data)
-        std::cout << d;
-    std::cout << std::endl;
+            if (DebugLevel(DEBUGLEVEL_EXTENDED))
+                std::cout << "String value: " << value->GetRawValue() << " | DESC: " << value->GetProperty("ShortName") + " [" + value->GetProperty("Unit") + "]: " + value->GetProperty("Description") << std::endl;
+        }
+    }
 }
 
 

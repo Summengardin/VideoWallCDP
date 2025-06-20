@@ -31,6 +31,10 @@ public:
     void index_inputs();
 
 protected:
+    VideoWallLib::OSDPort OSDTL;
+    VideoWallLib::OSDPort OSDTC;
+    VideoWallLib::OSDPort OSDTR;
+    VideoWallLib::OSDPort OSDBC;
     CDPSignal<double> i_Brightness;
     CDPSignal<std::string> i_Source;
     CDPSignal<double> i_ZoomAbs;
@@ -50,6 +54,8 @@ protected:
     std::vector<bool> indexedSignalsChanged;
     std::vector<OSDPort*> m_osdPorts;
     bool firstRun = true;
+
+    json OSDPortsToJson();
 };
 
 } // namespace VideoWallLib

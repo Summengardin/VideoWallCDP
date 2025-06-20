@@ -5,19 +5,29 @@
  <Attributes>
   <Attribute Name="Description" Type="string" Value="Simple port example"></Attribute>
   <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.OSDPort"></Attribute>
-  <Attribute Description="" LogEventOnChange="0" Name="TextProp" RouteMethod="RouteEvent" SaveOnChange="0" Type="string"></Attribute>
+  <Attribute Description="" LogEventOnChange="0" Name="Text" RouteMethod="RouteEvent" SaveOnChange="0" Type="string"></Attribute>
   <Attribute LogEventOnChange="0" Name="TextIndex" RouteMethod="RouteEvent" SaveOnChange="0" Type="int"></Attribute>
+  <Attribute LogEventOnChange="0" Name="PosX" RouteMethod="RouteEvent" SaveOnChange="0" Type="int"></Attribute>
+  <Attribute LogEventOnChange="0" Name="PosY" RouteMethod="RouteEvent" SaveOnChange="0" Type="int"></Attribute>
+  <Attribute LogEventOnChange="0" Name="FontName" RouteMethod="RouteEvent" SaveOnChange="0" Type="string"></Attribute>
+  <Attribute LogEventOnChange="0" Name="Timeout" RouteMethod="RouteEvent" SaveOnChange="0" Type="double"></Attribute>
+  <Attribute Name="Alignment" Value="left"></Attribute>
+  <Attribute Name="FontColor" Value="1.0,1.0,1.0,1.0"></Attribute>
+  <Attribute Name="BGColor" Value="0.0,0.0,0.0,0.6"></Attribute>
+  <Attribute Name="FontSize" Value="18"></Attribute>
+    <Attribute Name="TextIndexName" Value="Select source"></Attribute>
  </Attributes>
  <Connections>
-    <Connection InputOutputHint="N" Model="OperationUtilities.ValuedConnectionExtended&lt;string&gt;" Name="Text" TypeColorHint="#22957B"></Connection>
-  <Connection Model="OperationUtilities.ValuedConnectionExtended&lt;string&gt;" Name="Alignment" Value="left"></Connection>
-  <Connection Model="OperationUtilities.ValuedConnectionExtended&lt;int&gt;" Name="PosX"></Connection>
-  <Connection Model="OperationUtilities.ValuedConnectionExtended&lt;int&gt;" Name="PosY"></Connection>
-  <Connection Model="OperationUtilities.ValuedConnectionExtended&lt;string&gt;" Name="FontName"></Connection>
-  <Connection Model="OperationUtilities.ValuedConnectionExtended&lt;string&gt;" Name="FontColor" Value="1.0,1.0,1.0,1.0"></Connection>
-  <Connection Model="OperationUtilities.ValuedConnectionExtended&lt;double&gt;" Name="FontSize" Value="18"></Connection>
-  <Connection Model="OperationUtilities.ValuedConnectionExtended&lt;string&gt;" Name="BGColor" Value="0.0,0.0,0.0,0.6"></Connection>
-  <Connection Model="OperationUtilities.ValuedConnectionExtended&lt;double&gt;" Name="Timeout"></Connection>
-  <Connection Input="1" LocalName=".TextProp" Model="CDPPortConnection" Name="MapTextProp"></Connection>
-  <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection></Connections>
+  <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
+  <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+  <Connection Input="1" LocalName=".FontSize" Model="CDPPortConnection" Name="MapFontSize"></Connection>
+  <Connection Input="1" LocalName=".Alignment" Model="CDPPortConnection" Name="MapAlignment"></Connection>
+  <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+  <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+  <Connection Input="1" LocalName=".FontName" Model="CDPPortConnection" Name="MapFontName"></Connection>
+  <Connection Input="1" LocalName=".FontColor" Model="CDPPortConnection" Name="MapFontColor"></Connection>
+  <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+  <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+  <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+ </Connections>
 </Model>

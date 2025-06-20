@@ -30,11 +30,13 @@ protected:
     using CDPComponent::ts;
 
     std::vector<OSDPort*> m_osdports;
-    std::vector<std::string> indexed_data = std::vector<std::string>(10);
-    CDPSignal<double> i_GangwayLoad;
-    CDPSignal<double> i_CraneLoad;
+    std::vector<std::string> indexed_data;
+    std::vector<double> prevTimeouts;
+
     CDPSignal<std::string> i_Mode;
     CDPSignal<bool> i_ShowOSDDescription;
+    CDPSignal<std::string> CraneLoad;
+    CDPSignal<std::string> GangwayLoad;
 };
 
 } // namespace VideoWallLib

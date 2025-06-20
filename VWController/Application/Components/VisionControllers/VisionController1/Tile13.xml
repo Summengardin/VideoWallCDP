@@ -10,15 +10,12 @@
     <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
     <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Source" Type="string"></Signal>
     <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="Brightness" Type="double"></Signal>
-    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="Zoom" Type="double"></Signal>
-    <Signal Description="Top Left" Input="1" Model="CDPSignal&lt;string&gt;" Name="TextTL" Type="string"></Signal>
-    <Signal Description="Top Center" Input="1" Model="CDPSignal&lt;string&gt;" Name="TextTC" Type="string"></Signal>
-    <Signal Description="Top Right" Input="1" Model="CDPSignal&lt;string&gt;" Name="TextTR" Type="string"></Signal>
-    <Signal Description="Bottom Center" Input="1" Model="CDPSignal&lt;string&gt;" Name="TextBC" Type="string"></Signal>
     <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="PanSpeed" Type="double"></Signal>
     <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="TiltSpeed" Type="double"></Signal>
     <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="ZoomSpeed" Type="double"></Signal>
-    <Signal Input="0" Model="CDPSignal&lt;string&gt;" Name="OSDJson" Type="string"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="ZoomAbs" Type="double"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="PanAbs" Type="double"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="TiltAbs" Type="double"></Signal>
   </Signals>
 
   <Alarms>
@@ -27,103 +24,93 @@
   </Alarms>
 
   <Ports>
-    <Port Input="0" Model="CDPPort" Name="pTile">
+    <Port Description="TopLeft" Input="1" Model="VideoWallLib.OSDPort" Name="OSDTL" TextIndex="1">
 
       <Connections>
-        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Source" Routing="..Source" Type="string" Value=""></Connection>
-        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Brightness" Routing="..Brightness" Type="string" Value=""></Connection>
-        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Zoom" Routing="..Zoom" Type="string" Value=""></Connection>
-        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="TextTL" Routing="..TextTL" Type="string" Value=""></Connection>
-        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="TextTC" Routing="..TextTC" Type="string" Value=""></Connection>
-        <Connection Input="0" Model="ValuedConnection&lt;float&gt;" Name="TextTR" Routing="..TextTR" Type="float" Value="0"></Connection>
-        <Connection Input="0" Model="ValuedConnection&lt;float&gt;" Name="TextBC" Routing="..TextBC" Type="float" Value="0"></Connection>
-        <Connection Input="1" Model="CDPPortConnection" Name="MapSource" LocalName=".Source"></Connection>
+        <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
+        <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+        <Connection Input="1" LocalName=".FontSize" Model="CDPPortConnection" Name="MapFontSize"></Connection>
+        <Connection Input="1" LocalName=".Alignment" Model="CDPPortConnection" Name="MapAlignment"></Connection>
+        <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+        <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+        <Connection Input="1" LocalName=".FontName" Model="CDPPortConnection" Name="MapFontName"></Connection>
+        <Connection Input="1" LocalName=".FontColor" Model="CDPPortConnection" Name="MapFontColor"></Connection>
+        <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+        <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+        <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
       </Connections></Port>
-  </Ports>
+    <Port Alignment="center" Description="TopCenter" Input="1" Model="VideoWallLib.OSDPort" Name="OSDTC" PosX="960" TextIndex="2">
+
+      <Connections>
+        <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
+        <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+        <Connection Input="1" LocalName=".FontSize" Model="CDPPortConnection" Name="MapFontSize"></Connection>
+        <Connection Input="1" LocalName=".Alignment" Model="CDPPortConnection" Name="MapAlignment"></Connection>
+        <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+        <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+        <Connection Input="1" LocalName=".FontName" Model="CDPPortConnection" Name="MapFontName"></Connection>
+        <Connection Input="1" LocalName=".FontColor" Model="CDPPortConnection" Name="MapFontColor"></Connection>
+        <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+        <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+        <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+      </Connections></Port>
+    <Port Alignment="right" Description="TopRight" Input="1" Model="VideoWallLib.OSDPort" Name="OSDTR" PosX="1920" TextIndex="3">
+
+      <Connections>
+        <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
+        <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+        <Connection Input="1" LocalName=".FontSize" Model="CDPPortConnection" Name="MapFontSize"></Connection>
+        <Connection Input="1" LocalName=".Alignment" Model="CDPPortConnection" Name="MapAlignment"></Connection>
+        <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+        <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+        <Connection Input="1" LocalName=".FontName" Model="CDPPortConnection" Name="MapFontName"></Connection>
+        <Connection Input="1" LocalName=".FontColor" Model="CDPPortConnection" Name="MapFontColor"></Connection>
+        <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+        <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+        <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+      </Connections></Port>
+    <Port Alignment="center" Description="BottomCenter" Input="1" Model="VideoWallLib.OSDPort" Name="OSDBC" PosX="960" PosY="900">
+
+      <Connections>
+        <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
+        <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+        <Connection Input="1" LocalName=".FontSize" Model="CDPPortConnection" Name="MapFontSize"></Connection>
+        <Connection Input="1" LocalName=".Alignment" Model="CDPPortConnection" Name="MapAlignment"></Connection>
+        <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+        <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+        <Connection Input="1" LocalName=".FontName" Model="CDPPortConnection" Name="MapFontName"></Connection>
+        <Connection Input="1" LocalName=".FontColor" Model="CDPPortConnection" Name="MapFontColor"></Connection>
+        <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+        <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+        <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+      </Connections></Port></Ports>
+  
 
   <Subcomponents>
-    <Subcomponent Model="VideoWallLib.Tile.OSDTextTL" Name="OSDTextTL" src="Components/VisionControllers/VisionController1/Tile13/OSDTextTL.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Tile.OSDTextTC" Name="OSDTextTC" src="Components/VisionControllers/VisionController1/Tile13/OSDTextTC.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Tile.OSDTextTR" Name="OSDTextTR" src="Components/VisionControllers/VisionController1/Tile13/OSDTextTR.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Tile.OSDTextBC" Name="OSDTextBC" src="Components/VisionControllers/VisionController1/Tile13/OSDTextBC.xml"></Subcomponent>
-    <Operator Model="Sequencer.JSONEncode" Name="JSONEncode1">
-      <Argument BinaryEncodedLength="0" CppName="m_output" Description="JSON encoded output" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="OSD1" Routing="..OSDTextTL.JSONOut" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="OSD2" Routing="..OSDTextTC.JSONOut" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="OSD3" Routing="..OSDTextTR.JSONOut" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="OSD4" Routing="..OSDTextBC.JSONOut" Type="string" Value=""></Argument></Operator>
-    <Operator Model="Sequencer.JSONEncode" Name="JSONEncode">
-      <Argument BinaryEncodedLength="0" CppName="m_output" Description="JSON encoded output" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="Source" Routing="..Source" Type="string" Value=""></Argument>
-      <Argument CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;double&gt;" Name="Brightness" Routing="..Brightness" Type="double" Value="0"></Argument>
-      <Argument CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;double&gt;" Name="Zoom" Routing="..Zoom" Type="double" Value="0"></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="OSD" Routing="..JSONEncode1.Out" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="PTZ" Routing="..JSONEncode2.Out" Type="string" Value=""></Argument></Operator>
-    <Operator Model="Automation.SearchReplace" Name="TopicFromName" Regex="0" Replace="/" Search="." Type="string">
-      <Argument BinaryEncodedLength="0" CppName="m_input" Description="Default input argument" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In" Routing="..Name" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="m_output" Description="Default output argument" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument></Operator>
-    
-    <Operator Model="Automation.SearchReplace" Name="SearchReplace" Regex="0" Replace="/" Search="." Type="string">
-      <Argument BinaryEncodedLength="0" CppName="m_input" Description="Default input argument" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In" Routing="..Name" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="m_output" Description="Default output argument" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument></Operator>
-    <Subcomponent Model="VideoWallLib.Tile.MQTTTopic" Name="MQTTTopic" src="Components/VisionControllers/VisionController1/Tile13/MQTTTopic.xml"></Subcomponent>
-    <Operator Model="Sequencer.JSONEncode" Name="JSONEncode2">
-      <Argument BinaryEncodedLength="0" CppName="m_output" Description="JSON encoded output" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument>
-      <Argument CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;double&gt;" Name="PanSpeed" Routing="..PanSpeed" Type="double" Value="0"></Argument>
-      <Argument CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;double&gt;" Name="TiltSpeed" Routing="..TiltSpeed" Type="double" Value="0"></Argument>
-      <Argument CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;double&gt;" Name="ZoomSpeed" Routing="..ZoomSpeed" Type="double" Value="0"></Argument></Operator>
-    <Operator Model="Automation.SearchReplace" Name="TopicBaseFromName" Regex="0" Replace="/" Search="." Type="string">
-      <Argument BinaryEncodedLength="0" CppName="m_input" Description="Default input argument" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In" Routing="..Name" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="m_output" Description="Default output argument" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument></Operator>
-    <Operator Model="Automation.AddOperator&lt;string&gt;" Name="TopicSource" Type="string">
-      <Argument BinaryEncodedLength="0" CppName="m_output" Description="Sum of inputs" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="m_input" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In0" Routing="..TopicBaseFromName.Out" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In1" Routing="" Type="string" Value="/Source"></Argument></Operator>
-    <Operator Model="Automation.AddOperator&lt;string&gt;" Name="TopicBrigthness" Type="string">
-      <Argument BinaryEncodedLength="0" CppName="m_output" Description="Sum of inputs" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="m_input" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In0" Routing="..TopicBaseFromName.Out" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In1" Routing="" Type="string" Value="/Brightness"></Argument></Operator>
-    <Operator Model="Automation.AddOperator&lt;string&gt;" Name="TopicZoomAbs" Type="string">
-      <Argument BinaryEncodedLength="0" CppName="m_output" Description="Sum of inputs" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="m_input" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In0" Routing="..TopicBaseFromName.Out" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In1" Routing="" Type="string" Value="/Zoom"></Argument></Operator>
-    <Operator Model="Automation.AddOperator&lt;string&gt;" Name="TopicZoomSpeed" Type="string">
-      <Argument BinaryEncodedLength="0" CppName="m_output" Description="Sum of inputs" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="m_input" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In0" Routing="..TopicBaseFromName.Out" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In1" Routing="" Type="string" Value="/ZoomSpeed"></Argument></Operator>
-    <Operator Model="Automation.AddOperator&lt;string&gt;" Name="TopicPanAbs" Type="string">
-      <Argument BinaryEncodedLength="0" CppName="m_output" Description="Sum of inputs" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="m_input" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In0" Routing="..TopicBaseFromName.Out" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In1" Routing="" Type="string" Value="/PanAbs"></Argument></Operator>
-    <Operator Model="Automation.AddOperator&lt;string&gt;" Name="TopicPanSpeed" Type="string">
-      <Argument BinaryEncodedLength="0" CppName="m_output" Description="Sum of inputs" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="m_input" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In0" Routing="..TopicBaseFromName.Out" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In1" Routing="" Type="string" Value="/PanSpeed"></Argument></Operator>
-    <Operator Model="Automation.AddOperator&lt;string&gt;" Name="TopicTiltAbs" Type="string">
-      <Argument BinaryEncodedLength="0" CppName="m_output" Description="Sum of inputs" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="m_input" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In0" Routing="..TopicBaseFromName.Out" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In1" Routing="" Type="string" Value="/TiltAbs"></Argument></Operator>
-    <Operator Model="Automation.AddOperator&lt;string&gt;" Name="TopicTiltSpeed" Type="string">
-      <Argument BinaryEncodedLength="0" CppName="m_output" Description="Sum of inputs" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="m_input" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In0" Routing="..TopicBaseFromName.Out" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In1" Routing="" Type="string" Value="/TiltSpeed"></Argument></Operator>
-    <Operator Model="Automation.AddOperator&lt;string&gt;" Name="TopicOSD" Type="string">
-      <Argument BinaryEncodedLength="0" CppName="m_output" Description="Sum of inputs" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="m_input" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In0" Routing="..TopicBaseFromName.Out" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In1" Routing="" Type="string" Value="/OSD"></Argument></Operator>
-    <Subcomponent Model="VideoWallLib.Tile.mtSource" Name="mtSource" src="Components/VisionControllers/VisionController1/Tile13/mtSource.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Tile.mtBrightness" Name="mtBrightness" src="Components/VisionControllers/VisionController1/Tile13/mtBrightness.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Tile.mtZoomAbs" Name="mtZoomAbs" src="Components/VisionControllers/VisionController1/Tile13/mtZoomAbs.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Tile.mtZoomSpeed" Name="mtZoomSpeed" src="Components/VisionControllers/VisionController1/Tile13/mtZoomSpeed.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Tile.mtPanSpeed" Name="mtPanSpeed" src="Components/VisionControllers/VisionController1/Tile13/mtPanSpeed.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Tile.mtPanAbs" Name="mtPanAbs" src="Components/VisionControllers/VisionController1/Tile13/mtPanAbs.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Tile.mtTiltSpeed" Name="mtTiltSpeed" src="Components/VisionControllers/VisionController1/Tile13/mtTiltSpeed.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Tile.mtTiltAbs" Name="mtTiltAbs" src="Components/VisionControllers/VisionController1/Tile13/mtTiltAbs.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Tile.mtOSD" Name="mtOSD" src="Components/VisionControllers/VisionController1/Tile13/mtOSD.xml"></Subcomponent>
+    <Operator Description="MQTT Publisher Sequencer block to publish data to the MQTT network via Publish events. Has to be connected to a MQTTClient, via the MQTTClient connector." Model="MQTTIO.Publisher" Name="Publisher">
+      <ArgumentMessage Command="131328" Description="Will be emitted when MQTTClient has established the connection with the configured broker" Input="0" Model="Sequencer.DefaultEvent" Name="Connected"></ArgumentMessage>
+      <ArgumentMessage Command="131328" Description="Will be emitted when MQTTClient has lost the connection with the configured broker" Input="0" Model="Sequencer.DefaultEvent" Name="Disconnected"></ArgumentMessage>
+      <ArgumentMessage Command="131328" Data="Topic;Payload;QoS;Retain;AutoAlias;ResponseTopic;CorrelationData" Description="Invokes publishing of Payload data to the Topic. Can contain other Arguments that modify the MQTT publishing behavior." Input="1" Model="Sequencer.DefaultEvent" Name="Publish"></ArgumentMessage>
+      <ArgumentMessage Command="131328" Data="Topic;Payload;QoS;Retain;AutoAlias;ResponseTopic;CorrelationData;MessageID" Description="Will be emitted when MQTTClient has successfully published the data from Publish event. Will contain all the arguments of the original Publish event plus a MessageID argument." Input="0" Model="Sequencer.DefaultEvent" Name="Published"></ArgumentMessage>
+      <ArgumentMessage Command="131328" Data="Topic;Payload;QoS;Retain;AutoAlias;ResponseTopic;CorrelationData;Error" Description="Will be emitted when MQTTClient was not able to publish the data from Publish event. Will contain all the arguments of the original Publish event plus an Error argument." Input="0" Model="Sequencer.DefaultEvent" Name="PublishFailed"></ArgumentMessage>
+      <Argument BinaryEncodedLength="0" CppName="" Description="MQTT topic string for the message to be published" Input="1" Model="Sequencer.Argument&lt;string&gt;" Name="Topic" Routing="" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Payload to publish to the Topic" Input="1" Model="Sequencer.Argument&lt;string&gt;" Name="Payload" Routing="" Type="string" Value=""></Argument>
+      <Argument CppName="" Description="Quality of service level of broker communication" Input="1" Model="Sequencer.Argument&lt;unsigned short&gt;" Name="QoS" Routing="" Type="unsigned short" Value="0"></Argument>
+      <Argument CppName="" Description="Defines if the broker should retain last message sent. If true, for any new subscriber on this topic, retained message will be sent immediately." Input="1" Model="Sequencer.Argument&lt;bool&gt;" Name="Retain" Routing="" Type="bool" Value="0"></Argument>
+      <Argument CppName="" Description="Generate MQTT v5 topic alias on first publish to save network traffic on consequent sends when the same Topic string is used. Can be used only when MQTTClient ProtocolVersion is set to v5 (or higher) and the broker also supports  MQTT v5 (or higher)." Input="1" Model="Sequencer.Argument&lt;bool&gt;" Name="AutoAlias" Routing="" Type="bool" Value="0"></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="When filled, indicates a topic that the request publisher expects the response to be published to. Can be used only when MQTTClient ProtocolVersion is set to v5 (or higher) and the broker also supports  MQTT v5 (or higher)." Input="1" Model="Sequencer.Argument&lt;string&gt;" Name="ResponseTopic" Routing="" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="When filled, identifies the specific request and should be echoed back by repsonder when it responds to ResponseTopic. Can be used only when MQTTClient ProtocolVersion is set to v5 (or higher) and the broker also supports  MQTT v5 (or higher)." Input="1" Model="Sequencer.Argument&lt;string&gt;" Name="CorrelationData" Routing="" Type="string" Value=""></Argument>
+      <Argument CppName="" Description="On successful publish (Published event), contains MQTT message ID of the outgoing message. Message ID is available when QoS &gt; 0." Input="0" Model="Sequencer.Argument&lt;unsigned short&gt;" Name="MessageID" Routing="" Type="unsigned short" Value="0"></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="On failure (PublishFailed event), contains the error message describing the failure reason" Input="0" Model="Sequencer.Argument&lt;string&gt;" Name="Error" Routing="" Type="string" Value=""></Argument>
+      <Client Description="Connector to the MQTTClient object, which will provide the MQTT functionality for the block (via RPC messaging). Can be connected also via the MQTTClientRPC router block(s)." Model="MQTTIO.MQTTClientConnector" Name="MQTTClient" Object="..MQTTClientRPC"></Client></Operator>
   </Subcomponents>
 
   <ArgumentMessages>
     <ArgumentMessage Command="0" Input="0" Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC" RoutingList="..MQTTClientRPC"></ArgumentMessage></ArgumentMessages>
+
+  <Connectors>
+    <Connector Name="MQTTPublish" Object=".Publisher.Publish"></Connector>
+  </Connectors>
     
   
 

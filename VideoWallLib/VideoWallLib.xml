@@ -28,22 +28,7 @@
   <Model Name="VideoWallLib.PopulateComboBox&lt;unsigned char&gt;"/>
   <Model Name="VideoWallLib.PopulateComboBox&lt;bool&gt;"/>
   <Model Name="VideoWallLib.SourceOrchestrator"/>
-  <Model Name="VideoWallLib.Tile">
-   <Model Name="VideoWallLib.Tile.OSDTextTL"/>
-   <Model Name="VideoWallLib.Tile.OSDTextTC"/>
-   <Model Name="VideoWallLib.Tile.OSDTextTR"/>
-   <Model Name="VideoWallLib.Tile.OSDTextBC"/>
-   <Model Name="VideoWallLib.Tile.MQTTTopic"/>
-   <Model Name="VideoWallLib.Tile.mtSource"/>
-   <Model Name="VideoWallLib.Tile.mtBrightness"/>
-   <Model Name="VideoWallLib.Tile.mtZoomAbs"/>
-   <Model Name="VideoWallLib.Tile.mtZoomSpeed"/>
-   <Model Name="VideoWallLib.Tile.mtPanSpeed"/>
-   <Model Name="VideoWallLib.Tile.mtPanAbs"/>
-   <Model Name="VideoWallLib.Tile.mtTiltSpeed"/>
-   <Model Name="VideoWallLib.Tile.mtTiltAbs"/>
-   <Model Name="VideoWallLib.Tile.mtOSD"/>
-  </Model>
+  <Model Name="VideoWallLib.Tile"/>
   <Model Name="VideoWallLib.TilePort"/>
  </Models>
 </Library>
