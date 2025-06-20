@@ -56,7 +56,6 @@ DISTFILES += $$files(*.xml, true) \
     Templates/Models/VideoWallLib.OSDPort.xml \
     Templates/Models/VideoWallLib.PopulateComboBox_T.xml \
     Templates/Models/VideoWallLib.SourceOrchestrator.xml \
-    Templates/Models/VideoWallLib.Tile.MQTTTopic.xml \
     Templates/Models/VideoWallLib.Tile.Models.MQTTTopic1.xml \
     Templates/Models/VideoWallLib.Tile.Models.mtBrightness1.xml \
     Templates/Models/VideoWallLib.Tile.Models.mtPanAbs1.xml \
@@ -66,10 +65,6 @@ DISTFILES += $$files(*.xml, true) \
     Templates/Models/VideoWallLib.Tile.Models.mtZoomAbs1.xml \
     Templates/Models/VideoWallLib.Tile.Models.mtZoomAbs1.xml \
     Templates/Models/VideoWallLib.Tile.Models.mtZoomSpeed1.xml \
-    Templates/Models/VideoWallLib.Tile.OSDTextBC.xml \
-    Templates/Models/VideoWallLib.Tile.OSDTextTL.xml \
-    Templates/Models/VideoWallLib.Tile.OSDTextTL.xml \
-    Templates/Models/VideoWallLib.Tile.OSDTextTR.xml \
     Templates/Models/VideoWallLib.Tile.xml \
     Templates/Models/VideoWallLib.TilePort.xml
 

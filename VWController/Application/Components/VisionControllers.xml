@@ -1,4 +1,4 @@
-<Component Model="CDPComponent" Name="VisionControllers" src="Components/VisionControllers.xml" Description="CDPComponent is an instance of a CDP component model, instantiated using the specification in the component configuration xml file. Components communicate by exchanging Messages, Signal- and Property-values, both inside applications and between applications." Activate="0">
+<Component Model="CDPComponent" Name="VisionControllers" src="Components/VisionControllers.xml" Description="CDPComponent is an instance of a CDP component model, instantiated using the specification in the component configuration xml file. Components communicate by exchanging Messages, Signal- and Property-values, both inside applications and between applications." Activate="1">
   <SchedulingOrder>TopDown</SchedulingOrder>
   <SchedulingGroup>Default</SchedulingGroup>
   <fs>10</fs>

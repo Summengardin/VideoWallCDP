@@ -14,10 +14,6 @@
 
   <Subcomponents>
     <Subcomponent Name="CDP"        Model="CDP"        src="Components\CDP.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Layout" Name="Layout" src="Components/Layout.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Layout" Name="Layout1" src="Components/Layout1.xml"></Subcomponent>
-    <Subcomponent Model="PortMUX" Name="PortMUX" src="Components/PortMUX.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.SourceOrchestrator" Name="SourceOrchestrator" src="Components/SourceOrchestrator.xml"></Subcomponent>
     <Subcomponent Model="CDPComponent" Name="VisionControllers" src="Components/VisionControllers.xml"></Subcomponent>
     <Subcomponent Model="CDPComponent" Name="Cameras" src="Components/Cameras.xml"></Subcomponent>
     <Subcomponent Encryption="Unencrypted" ListenAddress="127.0.0.1" ListenPort="1883" Model="MQTTIO.MQTTBroker" Name="MQTTBroker" src="Components/MQTTBroker.xml"></Subcomponent>

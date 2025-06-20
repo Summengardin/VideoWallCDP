@@ -9,6 +9,11 @@
 **/Release
 **/build*
 
+# Testing applications
+**/DataSimulation/*
+**/SKAARHOJTest/*
+
+
 **/vc90.pdb
 **/*pro.user*
 **/*.idb

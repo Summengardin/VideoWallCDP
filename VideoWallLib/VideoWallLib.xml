@@ -14,20 +14,10 @@
    <Model Name="VideoWallLib.OSD.OSDText"/>
   </Model>
   <Model Name="VideoWallLib.OSDDataDistributor"/>
+  <Model Name="VideoWallLib.OSDDataPort"/>
   <Model Name="VideoWallLib.OSDPort"/>
+  <Model Name="VideoWallLib.OSDPositionControl"/>
   <Model Name="VideoWallLib.OSDText"/>
-  <Model Name="VideoWallLib.PopulateComboBox&lt;int64_t&gt;"/>
-  <Model Name="VideoWallLib.PopulateComboBox&lt;uint64_t&gt;"/>
-  <Model Name="VideoWallLib.PopulateComboBox&lt;double&gt;"/>
-  <Model Name="VideoWallLib.PopulateComboBox&lt;float&gt;"/>
-  <Model Name="VideoWallLib.PopulateComboBox&lt;int&gt;"/>
-  <Model Name="VideoWallLib.PopulateComboBox&lt;unsigned int&gt;"/>
-  <Model Name="VideoWallLib.PopulateComboBox&lt;short&gt;"/>
-  <Model Name="VideoWallLib.PopulateComboBox&lt;unsigned short&gt;"/>
-  <Model Name="VideoWallLib.PopulateComboBox&lt;char&gt;"/>
-  <Model Name="VideoWallLib.PopulateComboBox&lt;unsigned char&gt;"/>
-  <Model Name="VideoWallLib.PopulateComboBox&lt;bool&gt;"/>
-  <Model Name="VideoWallLib.SourceOrchestrator"/>
   <Model Name="VideoWallLib.Tile"/>
   <Model Name="VideoWallLib.TilePort"/>
  </Models>

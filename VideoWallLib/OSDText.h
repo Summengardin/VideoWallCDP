@@ -22,7 +22,6 @@ public:
     void ProcessNull() override;
 
 protected:
-    OSDPort OSDPort1;
     CDPSignal<std::string> Text;
     CDPSignal<std::string> FontName;
     CDPSignal<float> FontSize;

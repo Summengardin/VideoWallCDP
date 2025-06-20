@@ -39,38 +39,7 @@
       <Argument Description="&apos;left&apos;, &apos;center&apos; or &apos;right" Model="Argument&lt;string&gt;" Name="alignment" TypeColorHint="#4697c3" Routing="..Alignment"></Argument></Operator>
   </Subcomponents>
 
-  <Ports>
-    <Port Model="VideoWallLib.OSDPort" Name="OSDPort1" Input="0">
-
-      <Connections>
-
-        <Connection Name="Text" Input="0" Routing="..Text"></Connection>
-
-        <Connection Name="Alignment" Input="0" Routing="..Alignment"></Connection>
-
-        <Connection Name="PosX" Input="0" Routing="..PosX"></Connection>
-
-        <Connection Name="PosY" Input="0" Routing="..PosY"></Connection>
-
-        <Connection Name="FontName" Input="0" Routing="..FontName"></Connection>
-
-        <Connection Name="FontColor" Input="0" Routing="..FontColor"></Connection>
-
-        <Connection Name="FontSize" Input="0" Routing="..FontSize"></Connection>
-
-        <Connection Name="Timeout" Input="0" Routing="..Timeout"></Connection>
-
-        <Connection Name="BGColor" Input="0" Routing="..BGColor"></Connection>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </Connections></Port>
-  </Ports>
+  <Ports></Ports>
+  
 
 </Model>

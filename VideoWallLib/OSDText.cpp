@@ -37,7 +37,6 @@ OSDText::~OSDText()
 void OSDText::Create(const char* fullName)
 {
     CDPComponent::Create(fullName);
-    OSDPort1.Create("OSDPort1",this);
     Text.Create("Text",this);
     FontName.Create("FontName",this);
     FontSize.Create("FontSize",this);
