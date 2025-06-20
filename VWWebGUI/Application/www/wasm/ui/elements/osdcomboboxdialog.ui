@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="CDPBaseDialog" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>584</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="animStart">
+   <enum>RenderPixWidget::Center</enum>
+  </property>
+  <property name="animEnd">
+   <enum>RenderPixWidget::WindowCenter</enum>
+  </property>
+  <property name="title">
+   <string>Velg property</string>
+  </property>
+  <property name="cdpTargetRouting">
+   <string/>
+  </property>
+  <widget class="QWidget" name="page">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="CDPComWidget" name="comWidget">
+      <property name="cdpRouting">
+       <string>.TextIndex</string>
+      </property>
+      <property name="pushRoutables" stdset="0">
+       <stringlist notr="true">
+        <string>cdpRouting</string>
+       </stringlist>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="CDPComWidget" name="comWidget_2">
+      <property name="cdpRouting">
+       <string>.TextIndexName</string>
+      </property>
+      <property name="pushRoutables" stdset="0">
+       <stringlist notr="true">
+        <string>cdpRouting</string>
+       </stringlist>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="NodeList" name="nodeList">
+      <property name="modelFilter">
+       <stringlist>
+        <string>_CDPSignal&lt;bool&gt;</string>
+        <string>_CDPSignal&lt;char&gt;</string>
+        <string>_CDPSignal&lt;double&gt;</string>
+        <string>_CDPSignal&lt;float&gt;</string>
+        <string>_CDPSignal&lt;int64_t&gt;</string>
+        <string>_CDPSignal&lt;int&gt;</string>
+        <string>_CDPSignal&lt;short&gt;</string>
+        <string>CDPSignal&lt;string&gt;</string>
+        <string>_CDPSignal&lt;uint64_t&gt;</string>
+        <string>_CDPSignal&lt;unsigned char&gt;</string>
+        <string>_CDPSignal&lt;unsigned int&gt;</string>
+        <string>_CDPSignal&lt;unsigned short&gt;</string>
+       </stringlist>
+      </property>
+      <property name="cdpTargetRouting">
+       <string>VWController.OSD.OSDDataDistributor</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="CDPBaseLabel" name="label_3"/>
+    </item>
+    <item>
+     <widget class="CDPBaseLabel" name="label_2">
+      <property name="precision">
+       <number>0</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CDPComWidget</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPComWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>NodeList</class>
+   <extends>QListView</extends>
+   <header>CDPBaseWidgets/NodeList.h</header>
+   <slots>
+    <signal>selectedNodeShortName(QString)</signal>
+    <signal>selectedNodeFullName(QString)</signal>
+    <signal>selectedIndex(int)</signal>
+    <signal>clickedIndex(int)</signal>
+    <signal>selectedIndexesString(QString)</signal>
+    <slot>sendSelections()</slot>
+    <slot>setCdpTargetRouting(QString)</slot>
+    <slot>setFilterString(QString)</slot>
+   </slots>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseLabel</class>
+   <extends>QLabel</extends>
+   <header>CDPBaseWidgets/CDPBaseLabel.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseDialog</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBaseDialog.h</header>
+   <addpagemethod>setContainerWidget</addpagemethod>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>nodeList</sender>
+   <signal>selectedIndexChanged(int)</signal>
+   <receiver>label_2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>286</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>194</x>
+     <y>525</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nodeList</sender>
+   <signal>selectedIndexChanged(int)</signal>
+   <receiver>comWidget</receiver>
+   <slot>sendValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>293</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>194</x>
+     <y>87</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nodeList</sender>
+   <signal>selectedNodeChanged(QString)</signal>
+   <receiver>label_3</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>281</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>194</x>
+     <y>502</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nodeList</sender>
+   <signal>selectedNodeChanged(QString)</signal>
+   <receiver>comWidget_2</receiver>
+   <slot>sendText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>289</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>194</x>
+     <y>103</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

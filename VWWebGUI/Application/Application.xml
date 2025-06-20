@@ -14,12 +14,7 @@
 
   <Subcomponents>
     <Subcomponent Name="CDP"        Model="CDP"        src="Components\CDP.xml"></Subcomponent>
-    <Subcomponent Model="CDPComponent" Name="CDPComponent" src="Components/CDPComponent.xml"></Subcomponent>
     <Subcomponent Model="CDPComponent" Name="GUIConnections" src="Components/GUIConnections.xml"></Subcomponent>
-    <Operator Model="Automation.ANDOperator&lt;bool&gt;" Name="AND" Type="bool">
-      <Argument CppName="m_output" Description="Default output argument" Input="0" Model="DefaultArgument&lt;bool&gt;" Name="Out" Routing="" Type="bool" Value="0"></Argument>
-      <Argument CppName="m_input" Description="Default input argument" Input="1" Model="DefaultArgument&lt;bool&gt;" Name="In0" Routing="" Type="bool" Value="0"></Argument>
-      <Argument CppName="" Description="Default input argument" Input="1" Model="DefaultArgument&lt;bool&gt;" Name="In1" Routing="" Type="bool" Value="0"></Argument></Operator>
   </Subcomponents>
 
   <Signals>

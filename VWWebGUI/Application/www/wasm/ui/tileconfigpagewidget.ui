@@ -18,44 +18,76 @@
     <widget class="QWidget" name="widget" native="true">
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="NodeTree" name="nodeTree">
-        <property name="modelFilter">
-         <stringlist>
-          <string>VideoWallLib.Tile</string>
-          <string>VideoWallLib.OSDPort</string>
-         </stringlist>
+       <widget class="QWidget" name="verticalWidget" native="true">
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
         </property>
-        <property name="cdpTargetRouting">
-         <string>VWController.VisionControllers.VisionController0</string>
-        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="CDPBaseLabel" name="label">
+           <property name="text">
+            <string>Select Controller, 
+then Tile</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="NodeList" name="nodeListVCs">
+           <property name="modelFilter">
+            <stringlist>
+             <string>CDPComponent</string>
+            </stringlist>
+           </property>
+           <property name="cdpTargetRouting">
+            <string>VWController.VisionControllers</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="NodeList" name="nodeListTiles">
+           <property name="modelFilter">
+            <stringlist>
+             <string>VideoWallLib.Tile</string>
+            </stringlist>
+           </property>
+           <property name="cdpTargetRouting">
+            <string>VWController.VisionControllers.VisionController0</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
        </widget>
       </item>
       <item>
-       <widget class="NodeList" name="nodeList">
-        <property name="modelFilter">
-         <stringlist>
-          <string>VideoWallLib.Tile</string>
-         </stringlist>
-        </property>
-        <property name="cdpTargetRouting">
-         <string>VWController.VisionControllers.VisionController0</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QScrollArea" name="scrollArea_2">
+       <widget class="QScrollArea" name="scrollArea">
         <property name="styleSheet">
          <string notr="true">QFrame{border: 0px;}</string>
         </property>
         <property name="widgetResizable">
          <bool>true</bool>
         </property>
-        <widget class="QWidget" name="scrollAreaWidgetContents_2">
+        <widget class="QWidget" name="scrollAreaWidgetContents">
          <property name="geometry">
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>391</width>
+           <width>979</width>
            <height>1135</height>
           </rect>
          </property>
@@ -72,7 +104,7 @@
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_8">
           <item>
-           <widget class="NodeContainer" name="nodeContainer_2">
+           <widget class="NodeContainer" name="nodeContainer">
             <property name="maximumSize">
              <size>
               <width>16777215</width>
@@ -80,7 +112,7 @@
              </size>
             </property>
             <property name="childContainerName">
-             <string>flowWidget_2</string>
+             <string>flowWidget</string>
             </property>
             <property name="modelFilter">
              <stringlist>
@@ -91,11 +123,11 @@
              <string>VWController.VisionControllers.VisionController0.Tile01</string>
             </property>
             <property name="uiFileName">
-             <string>./ui/elements/OSDPopUp.ui</string>
+             <string>./ui/elements/osdcontainer.ui</string>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_7">
              <item>
-              <widget class="FlowWidget" name="flowWidget_2">
+              <widget class="FlowWidget" name="flowWidget">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
                  <horstretch>0</horstretch>
@@ -155,26 +187,42 @@
    </slots>
   </customwidget>
   <customwidget>
-   <class>NodeTree</class>
-   <extends>QTreeView</extends>
-   <header>CDPBaseWidgets/NodeTree.h</header>
+   <class>CDPBaseLabel</class>
+   <extends>QLabel</extends>
+   <header>CDPBaseWidgets/CDPBaseLabel.h</header>
   </customwidget>
  </customwidgets>
  <resources/>
  <connections>
   <connection>
-   <sender>nodeList</sender>
+   <sender>nodeListVCs</sender>
    <signal>selectedNodeFullPathChanged(QString)</signal>
-   <receiver>nodeContainer_2</receiver>
+   <receiver>nodeListTiles</receiver>
    <slot>setCdpTargetRouting(QString)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>345</x>
-     <y>585</y>
+     <x>117</x>
+     <y>244</y>
     </hint>
     <hint type="destinationlabel">
-     <x>114</x>
-     <y>304</y>
+     <x>117</x>
+     <y>605</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nodeListTiles</sender>
+   <signal>selectedNodeFullPathChanged(QString)</signal>
+   <receiver>nodeContainer</receiver>
+   <slot>setCdpTargetRouting(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>117</x>
+     <y>605</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>713</x>
+     <y>585</y>
     </hint>
    </hints>
   </connection>
