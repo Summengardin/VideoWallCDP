@@ -99,7 +99,7 @@ void Tile::Configure(const char* componentXML)
 void Tile::ProcessNull()
 {
         /* Write your code here */
-    index_inputs();
+    IndexInputs();
     PublishMqtt();
 
     firstRun = false;

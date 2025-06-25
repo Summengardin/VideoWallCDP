@@ -28,7 +28,7 @@ public:
     void ProcessNull() override;
     void PublishMqtt();
 
-    void index_inputs();
+    void IndexInputs();
 
 protected:
     VideoWallLib::OSDPort OSDTL;
