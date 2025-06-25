@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Model Name="VideoWallLib.SKAARHOJRawPanelIO">
+ <ModelTypeClass>C++</ModelTypeClass>
+ <BaseModel>IOServer</BaseModel>
+ <Element Name="Priority" Value="high"></Element>
+ <Element Name="fs" Value="100"></Element>
+ <Attributes>
+  <Attribute Name="Description" Type="string" Value="Custom IOServer component"></Attribute>
+  <Attribute Name="Model" Value="VideoWallLib.SKAARHOJRawPanelIO"></Attribute>
+ </Attributes>
+ <Signals></Signals>
+ <Element AcceptsBase="Transport" Model="AggregateBaseModel" Name="Transport" Property="0"></Element>
+ <Subcomponents></Subcomponents>
+ <Transport Angle="" ColorHint="" Description="The TCPTransport is used to define a TCP based NetworkTransport model." DisplayHint="Default" ExternalType="" File="" Flags="" IgnoreInDiff="0" InputOutputHint="" IsBinary="0" IsInputDerived="0" IsNonSticky="0" IsState="0" Model="TCPTransport" MultiLineText="" Name="TCPTransport" Radix="" ReadOnly="0" Routing="" RoutingList="" RoutingType="" ScopedNode="" ScopedNodeList="" Selection="" SiblingNodeList="" Timeout="1" Trigger="" TypeColorHint="" TypeHint=""></Transport>
+ <Messages></Messages>
+ <Connectors>
+  <Connector Name="HCOUT" RoutingType="Push" TypeHint="RoutingType"></Connector>
+ </Connectors>
+ <Parameters>
+  <Parameter Name="PanelBrightnessPercent" Unit="%" Value="50" Min="0" Max="100"></Parameter>
+ </Parameters>
+</Model>

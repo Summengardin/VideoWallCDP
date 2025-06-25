@@ -15,6 +15,8 @@ VideoWallLibBuilder implementation.
 #include "MQTTHandler.h"
 #include "MQTTTopic.h"
 #include "OSDDataDistributor.h"
+#include "SKAARHOJRawPanelIO.h"
+#include "SKAARHOJRawPanelMenu.h"
 #include "VideoWallLibBuilder.h"
 
 using namespace VideoWallLib;
@@ -72,6 +74,14 @@ CDPComponent* VideoWallLibBuilder::CreateNewComponent(const std::string& type)
     if (type=="VideoWallLib.OSDDataDistributor")
         return new OSDDataDistributor;
     
+    
+    
+    if (type=="VideoWallLib.SKAARHOJRawPanelIO")
+      return new SKAARHOJRawPanelIO;
+    
+    if (type=="VideoWallLib.SKAARHOJRawPanelMenu")
+      return new SKAARHOJRawPanelMenu;
+
     return CDPBuilder::CreateNewComponent(type);
 }
 

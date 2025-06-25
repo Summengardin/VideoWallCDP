@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Model Name="VideoWallLib.SKAARHOJRawPanelMenu">
+ <ModelTypeClass>C++</ModelTypeClass>
+ <BaseModel>CDPComponent</BaseModel>
+ <Element Name="Priority" Value="normal"></Element>
+ <Element Name="fs" Value="5"></Element>
+ <Attributes>
+  <Attribute Name="Description" Type="string" Value="Simple component"></Attribute>
+  <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.SKAARHOJRawPanelMenu"></Attribute>
+ </Attributes>
+ <Signals>
+  <Signal Model="CDPSignal&lt;unsigned char&gt;" Name="Counter" Type="unsigned char"></Signal>
+ </Signals>
+ <Connectors>
+  <Connector Name="ToIO" RoutingType="Push" TypeHint="RoutingType"></Connector></Connectors>
+ <Messages>
+  <Message Name="FromIO"></Message>
+ </Messages>
+
+  <Subcomponents>
+    <Operator Model="ReceiveMessage" Name="ReceiveMessage" Description="Message to Value conversion operator receiving CM_TEXTCOMMAND by default with name mapped output arguments added to the operator as parameters.">
+      <ArgumentMessage Description="Message in receiving CM_TEXTCOMMAND by default." Input="1" Model="MessageArgument" Name="MessageIn" InputOutputHint="T" RoutingType="Push"></ArgumentMessage></Operator></Subcomponents>
+
+  <Tags></Tags>
+  
+  
+</Model>

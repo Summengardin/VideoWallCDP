@@ -19,6 +19,7 @@
     <Subcomponent Encryption="Unencrypted" ListenAddress="127.0.0.1" ListenPort="1883" Model="MQTTIO.MQTTBroker" Name="MQTTBroker" src="Components/MQTTBroker.xml"></Subcomponent>
     <Subcomponent BrokerHost="127.0.0.1" BrokerPort="1883" Encryption="Unencrypted" Model="MQTTIO.MQTTClient" Name="MQTTClient" src="Components/MQTTClient.xml"></Subcomponent>
     <Subcomponent Model="CDPComponent" Name="OSD" src="Components/OSD.xml"></Subcomponent>
+    <Subcomponent Model="CDPComponent" Name="IO" src="Components/IO.xml"></Subcomponent>
   </Subcomponents>
 
   <Signals>
@@ -54,6 +55,7 @@
   <Ports></Ports>
 
   <ArgumentMessages></ArgumentMessages>
+  <NetworkInterface IPAddress="10.1.3.31" Model="NetworkInterface" Name="ETH_SKAARHOJ" SubnetMask="255.255.255.0" Description="The NetworkInterface holds Name, IPAddress, SubnetMask, Gateway and MAC that might be needed for setting up an Ethernet interface." Gateway="" MAC=""></NetworkInterface>
   
   
   

@@ -16,9 +16,13 @@ HEADERS += \
     OSDDataDistributor.h \
     OSDText.h \
     OSDPort.h \
+    SKAARHOJRawPanelIO.h \
+    SKAARHOJRawPanelMenu.h \
     SourceOrchestrator.h \
     Tile.h \
     TilePort.h \
+    base64.h \
+    skhojhandcontroller.h \
     uri.h \
     videowalllib.h \
     VideoWallLibBuilder.h
@@ -34,10 +38,14 @@ SOURCES += \
     OSDDataDistributor.cpp \
     OSDText.cpp \
     OSDPort.cpp \
+    SKAARHOJRawPanelIO.cpp \
+    SKAARHOJRawPanelMenu.cpp \
     SourceOrchestrator.cpp \
     Tile.cpp \
     TilePort.cpp \
     VideoWallLibBuilder.cpp \
+    base64.cpp \
+    skhojhandcontroller.cpp \
     uri.cpp
 
 DISTFILES += $$files(*.xml, true) \
@@ -55,6 +63,8 @@ DISTFILES += $$files(*.xml, true) \
     Templates/Models/VideoWallLib.OSDText.xml \
     Templates/Models/VideoWallLib.OSDPort.xml \
     Templates/Models/VideoWallLib.PopulateComboBox_T.xml \
+    Templates/Models/VideoWallLib.SKAARHOJRawPanelIO.xml \
+    Templates/Models/VideoWallLib.SKAARHOJRawPanelMenu.xml \
     Templates/Models/VideoWallLib.SourceOrchestrator.xml \
     Templates/Models/VideoWallLib.Tile.Models.MQTTTopic1.xml \
     Templates/Models/VideoWallLib.Tile.Models.mtBrightness1.xml \

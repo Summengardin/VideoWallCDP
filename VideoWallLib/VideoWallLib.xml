@@ -16,6 +16,8 @@
   <Model Name="VideoWallLib.OSDDataDistributor"/>
   <Model Name="VideoWallLib.OSDPort"/>
   <Model Name="VideoWallLib.OSDText"/>
+  <Model Name="VideoWallLib.SKAARHOJRawPanelIO"/>
+  <Model Name="VideoWallLib.SKAARHOJRawPanelMenu"/>
   <Model Name="VideoWallLib.Tile"/>
   <Model Name="VideoWallLib.TilePort"/>
  </Models>

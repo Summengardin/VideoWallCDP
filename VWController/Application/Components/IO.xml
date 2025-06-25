@@ -1,0 +1,23 @@
+<Component Model="CDPComponent" Name="IO" src="Components/IO.xml" Description="CDPComponent can be used to create a container task in applications or other components with its own thread (or in same thread as parent if Priority, ThreadGroup match) and cyclic frequency to contain no-code logic.
+    It is also possible to create a new C++ based component for code based complex work in a Library type project. User must then use &apos;Add New...&apos; Wizard on Library root item. Components communicate by exchanging Messages, Port-, Signal- values, both inside applications and between applications.">
+  <SchedulingOrder>TopDown</SchedulingOrder>
+  <SchedulingGroup>Default</SchedulingGroup>
+  <fs>10</fs>
+  <Status>0</Status>
+
+  <Signals>
+    <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
+    <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+  </Signals>
+
+  <Alarms>
+    <Alarm Description="A component was suspended!" Name="Component Suspended" Text="Component was suspended!"></Alarm>
+    <Alarm Description="Alarm is triggered (with Text containing the list of errors) when some node of the component (like operator) has configuration fault." Level="Error" Name="ConfigurationFaults"></Alarm>
+  </Alarms>
+
+  <Subcomponents>
+    <Subcomponent Model="VideoWallLib.SKAARHOJRawPanelIO" Name="SKAARHOJRawPanelIO" src="Components/IO/SKAARHOJRawPanelIO.xml"></Subcomponent>
+    <Operator Description="Prints log of received events with argument dump into the application output. Supports adding named arguments to pretty print message data (the argument names must match the data names in the incoming events.)" Model="Sequencer.DebugPrinter" Name="DebugPrinter">
+      <ArgumentMessage Command="131328" Description="Event to debug log. When the event is received it will be logged into the application output together with the event argument values. When some arguments were added to the event and listed in event Data property, only these will be dumped to the output, otherwise, all incoming arguments will be dumped." Input="1" Model="Sequencer.DefaultEvent" Name="EventIn"></ArgumentMessage></Operator>
+  </Subcomponents>
+</Component>
