@@ -14,7 +14,7 @@ DISTFILES += \
 
 load(cdp)
 
-ID = 1676865642602372093446207 # do not change
+ID = 221499101276363652754212 # do not change
 
 FORMS += \
     Application/www/wasm/mainwidget.ui \
@@ -23,7 +23,7 @@ FORMS += \
     Application/www/wasm/ui/camerapagewidget.ui \
     Application/www/wasm/ui/tileconfigpagewidget.ui \
     Application/www/wasm/ui/tileconfiguratorpagewidget.ui \
-    Application/www/wasm/ui/tilepagewidget.ui
+    Application/www/wasm/ui/tilepagewidget.ui \
     Application/www/wasm/ui/elements/cameracontainer.ui \
     Application/www/wasm/ui/elements/camera.ui \
     Application/www/wasm/ui/elements/menuwidget.ui \
@@ -36,7 +36,7 @@ FORMS += \
     Application/www/wasm/ui/elements/OSDPopUp.ui \
     Application/www/wasm/ui/elements/cameracontainer.ui \
     Application/www/wasm/ui/elements/cameratable.ui \
-    Application/www/wasm/ui/elements/tile.ui \
+    Application/www/wasm/ui/elements/tile.ui
 
 RESOURCES += \
     resources.qrc
