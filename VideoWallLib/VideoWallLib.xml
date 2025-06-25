@@ -14,9 +14,7 @@
    <Model Name="VideoWallLib.OSD.OSDText"/>
   </Model>
   <Model Name="VideoWallLib.OSDDataDistributor"/>
-  <Model Name="VideoWallLib.OSDDataPort"/>
   <Model Name="VideoWallLib.OSDPort"/>
-  <Model Name="VideoWallLib.OSDPositionControl"/>
   <Model Name="VideoWallLib.OSDText"/>
   <Model Name="VideoWallLib.Tile"/>
   <Model Name="VideoWallLib.TilePort"/>
