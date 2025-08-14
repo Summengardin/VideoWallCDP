@@ -107,7 +107,7 @@ void Tile::ProcessNull()
 
 
 
-void Tile::index_inputs() {
+void Tile::IndexInputs() {
 
     // Get new values
     indexedSignals.at(0) = i_Source;
