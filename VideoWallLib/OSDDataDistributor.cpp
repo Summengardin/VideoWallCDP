@@ -89,7 +89,7 @@ void OSDDataDistributor::Configure(const char* componentXML)
 */
 void OSDDataDistributor::ProcessNull()
 {
-    index_inputs();
+    IndexInputs();
 
     for (size_t i = 0; i < m_osdports.size(); i++){
         auto p = m_osdports[i];
@@ -106,7 +106,7 @@ void OSDDataDistributor::ProcessNull()
 }
 
 
-void OSDDataDistributor::index_inputs(){
+void OSDDataDistributor::IndexInputs(){
 
     int string_cnt = 0;
     for (ICDPSignal* signal : m_listSignals) {

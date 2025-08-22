@@ -22,7 +22,7 @@ public:
     void Configure(const char* componentXML) override;
     void ProcessNull() override;
 
-    void index_inputs();
+    void IndexInputs();
 
 protected:
     using CDPComponent::fs;
