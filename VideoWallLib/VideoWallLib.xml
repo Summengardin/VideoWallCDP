@@ -18,5 +18,6 @@
   <Model Name="VideoWallLib.OSDText"/>
   <Model Name="VideoWallLib.Tile"/>
   <Model Name="VideoWallLib.TilePort"/>
+  <Model Name="VideoWallLib.TimestampGenerator"/>
  </Models>
 </Library>

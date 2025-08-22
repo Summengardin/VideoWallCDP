@@ -19,6 +19,8 @@ HEADERS += \
     SourceOrchestrator.h \
     Tile.h \
     TilePort.h \
+    TimestampGenerator.h \
+    iana_posix_map.h \
     uri.h \
     videowalllib.h \
     VideoWallLibBuilder.h
@@ -37,6 +39,7 @@ SOURCES += \
     SourceOrchestrator.cpp \
     Tile.cpp \
     TilePort.cpp \
+    TimestampGenerator.cpp \
     VideoWallLibBuilder.cpp \
     uri.cpp
 
@@ -66,6 +69,7 @@ DISTFILES += $$files(*.xml, true) \
     Templates/Models/VideoWallLib.Tile.Models.mtZoomAbs1.xml \
     Templates/Models/VideoWallLib.Tile.Models.mtZoomSpeed1.xml \
     Templates/Models/VideoWallLib.Tile.xml \
-    Templates/Models/VideoWallLib.TilePort.xml
+    Templates/Models/VideoWallLib.TilePort.xml \
+    Templates/Models/VideoWallLib.TimestampGenerator.xml
 
 load(cdp)
