@@ -1,0 +1,116 @@
+<Component Model="VideoWallLib.Tile" Name="Tile2" src="Components/VisionControllerContainer/VisionController/Tile2.xml" Description="Simple component">
+  <SchedulingOrder>TopDown</SchedulingOrder>
+  <SchedulingGroup>Default</SchedulingGroup>
+  <fs>5</fs>
+  <Status>0</Status>
+
+  <Signals>
+    <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
+    <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Source" Type="string"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="Brightness" Type="double"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="ZoomAbs" Type="double"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="PanSpeed" Type="double"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="TiltSpeed" Type="double"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="ZoomSpeed" Type="double"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="PanAbs" Type="double"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="TiltAbs" Type="double"></Signal>
+  </Signals>
+
+  <Alarms>
+    <Alarm Description="A component was suspended!" Name="Component Suspended" Text="Component was suspended!"></Alarm>
+    <Alarm Description="Alarm is triggered (with Text containing the list of errors) when some node of the component (like operator) has configuration fault." Level="Error" Name="ConfigurationFaults"></Alarm>
+  </Alarms>
+
+  <Ports>
+    <Port Description="TopLeft" Input="1" Model="VideoWallLib.OSDPort" Name="OSDTL" TextIndex="1">
+
+      <Connections>
+        <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
+        <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+        <Connection Input="1" LocalName=".FontSize" Model="CDPPortConnection" Name="MapFontSize"></Connection>
+        <Connection Input="1" LocalName=".Alignment" Model="CDPPortConnection" Name="MapAlignment"></Connection>
+        <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+        <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+        <Connection Input="1" LocalName=".FontName" Model="CDPPortConnection" Name="MapFontName"></Connection>
+        <Connection Input="1" LocalName=".FontColor" Model="CDPPortConnection" Name="MapFontColor"></Connection>
+        <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+        <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+        <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+      </Connections></Port>
+    <Port Alignment="center" Description="TopCenter" Input="1" Model="VideoWallLib.OSDPort" Name="OSDTC" PosX="960" TextIndex="2">
+
+      <Connections>
+        <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
+        <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+        <Connection Input="1" LocalName=".FontSize" Model="CDPPortConnection" Name="MapFontSize"></Connection>
+        <Connection Input="1" LocalName=".Alignment" Model="CDPPortConnection" Name="MapAlignment"></Connection>
+        <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+        <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+        <Connection Input="1" LocalName=".FontName" Model="CDPPortConnection" Name="MapFontName"></Connection>
+        <Connection Input="1" LocalName=".FontColor" Model="CDPPortConnection" Name="MapFontColor"></Connection>
+        <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+        <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+        <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+      </Connections></Port>
+    <Port Alignment="right" Description="TopRight" Input="1" Model="VideoWallLib.OSDPort" Name="OSDTR" PosX="1920" TextIndex="3">
+
+      <Connections>
+        <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
+        <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+        <Connection Input="1" LocalName=".FontSize" Model="CDPPortConnection" Name="MapFontSize"></Connection>
+        <Connection Input="1" LocalName=".Alignment" Model="CDPPortConnection" Name="MapAlignment"></Connection>
+        <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+        <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+        <Connection Input="1" LocalName=".FontName" Model="CDPPortConnection" Name="MapFontName"></Connection>
+        <Connection Input="1" LocalName=".FontColor" Model="CDPPortConnection" Name="MapFontColor"></Connection>
+        <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+        <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+        <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+      </Connections></Port>
+    <Port Alignment="center" Description="BottomCenter" Input="1" Model="VideoWallLib.OSDPort" Name="OSDBC" PosX="960" PosY="900">
+
+      <Connections>
+        <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
+        <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+        <Connection Input="1" LocalName=".FontSize" Model="CDPPortConnection" Name="MapFontSize"></Connection>
+        <Connection Input="1" LocalName=".Alignment" Model="CDPPortConnection" Name="MapAlignment"></Connection>
+        <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+        <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+        <Connection Input="1" LocalName=".FontName" Model="CDPPortConnection" Name="MapFontName"></Connection>
+        <Connection Input="1" LocalName=".FontColor" Model="CDPPortConnection" Name="MapFontColor"></Connection>
+        <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+        <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+        <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+      </Connections></Port>
+  </Ports>
+
+  <Subcomponents>
+    <Operator Description="MQTT Publisher Sequencer block to publish data to the MQTT network via Publish events. Has to be connected to a MQTTClient, via the MQTTClient connector." Model="MQTTIO.Publisher" Name="Publisher">
+      <ArgumentMessage Command="131328" Description="Will be emitted when MQTTClient has established the connection with the configured broker" Input="0" Model="Sequencer.DefaultEvent" Name="Connected"></ArgumentMessage>
+      <ArgumentMessage Command="131328" Description="Will be emitted when MQTTClient has lost the connection with the configured broker" Input="0" Model="Sequencer.DefaultEvent" Name="Disconnected"></ArgumentMessage>
+      <ArgumentMessage Command="131328" Data="Topic;Payload;QoS;Retain;AutoAlias;ResponseTopic;CorrelationData" Description="Invokes publishing of Payload data to the Topic. Can contain other Arguments that modify the MQTT publishing behavior." Input="1" Model="Sequencer.DefaultEvent" Name="Publish"></ArgumentMessage>
+      <ArgumentMessage Command="131328" Data="Topic;Payload;QoS;Retain;AutoAlias;ResponseTopic;CorrelationData;MessageID" Description="Will be emitted when MQTTClient has successfully published the data from Publish event. Will contain all the arguments of the original Publish event plus a MessageID argument." Input="0" Model="Sequencer.DefaultEvent" Name="Published"></ArgumentMessage>
+      <ArgumentMessage Command="131328" Data="Topic;Payload;QoS;Retain;AutoAlias;ResponseTopic;CorrelationData;Error" Description="Will be emitted when MQTTClient was not able to publish the data from Publish event. Will contain all the arguments of the original Publish event plus an Error argument." Input="0" Model="Sequencer.DefaultEvent" Name="PublishFailed"></ArgumentMessage>
+      <Argument BinaryEncodedLength="0" CppName="" Description="MQTT topic string for the message to be published" Input="1" Model="Sequencer.Argument&lt;string&gt;" Name="Topic" Routing="" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Payload to publish to the Topic" Input="1" Model="Sequencer.Argument&lt;string&gt;" Name="Payload" Routing="" Type="string" Value=""></Argument>
+      <Argument CppName="" Description="Quality of service level of broker communication" Input="1" Model="Sequencer.Argument&lt;unsigned short&gt;" Name="QoS" Routing="" Type="unsigned short" Value="0"></Argument>
+      <Argument CppName="" Description="Defines if the broker should retain last message sent. If true, for any new subscriber on this topic, retained message will be sent immediately." Input="1" Model="Sequencer.Argument&lt;bool&gt;" Name="Retain" Routing="" Type="bool" Value="0"></Argument>
+      <Argument CppName="" Description="Generate MQTT v5 topic alias on first publish to save network traffic on consequent sends when the same Topic string is used. Can be used only when MQTTClient ProtocolVersion is set to v5 (or higher) and the broker also supports  MQTT v5 (or higher)." Input="1" Model="Sequencer.Argument&lt;bool&gt;" Name="AutoAlias" Routing="" Type="bool" Value="0"></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="When filled, indicates a topic that the request publisher expects the response to be published to. Can be used only when MQTTClient ProtocolVersion is set to v5 (or higher) and the broker also supports  MQTT v5 (or higher)." Input="1" Model="Sequencer.Argument&lt;string&gt;" Name="ResponseTopic" Routing="" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="When filled, identifies the specific request and should be echoed back by repsonder when it responds to ResponseTopic. Can be used only when MQTTClient ProtocolVersion is set to v5 (or higher) and the broker also supports  MQTT v5 (or higher)." Input="1" Model="Sequencer.Argument&lt;string&gt;" Name="CorrelationData" Routing="" Type="string" Value=""></Argument>
+      <Argument CppName="" Description="On successful publish (Published event), contains MQTT message ID of the outgoing message. Message ID is available when QoS &gt; 0." Input="0" Model="Sequencer.Argument&lt;unsigned short&gt;" Name="MessageID" Routing="" Type="unsigned short" Value="0"></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="On failure (PublishFailed event), contains the error message describing the failure reason" Input="0" Model="Sequencer.Argument&lt;string&gt;" Name="Error" Routing="" Type="string" Value=""></Argument>
+      <Client Description="Connector to the MQTTClient object, which will provide the MQTT functionality for the block (via RPC messaging). Can be connected also via the MQTTClientRPC router block(s)." Model="MQTTIO.MQTTClientConnector" Name="MQTTClient" Object="..MQTTClientRPC"></Client></Operator>
+  </Subcomponents>
+
+  <ArgumentMessages>
+    <ArgumentMessage Command="0" Input="0" Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC" RoutingList="..MQTTClientRPC"></ArgumentMessage>
+  </ArgumentMessages>
+
+  <Connectors>
+    <Connector Name="MQTTPublish" Object=".Publisher.Publish"></Connector>
+    <Connector Name="VisionControllerConnector" Object=""></Connector>
+    <Connector Name="MessageHandlerConnector" Object=""></Connector>
+  </Connectors>
+</Component>

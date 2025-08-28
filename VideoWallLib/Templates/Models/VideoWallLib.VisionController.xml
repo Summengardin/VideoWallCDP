@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Model Name="VideoWallLib.VisionController">
+ <ModelTypeClass>C++</ModelTypeClass>
+ <BaseModel>CDPComponent</BaseModel>
+ <Element Name="Priority" Value="normal"></Element>
+ <Element Name="fs" Value="100"></Element>
+ <Attributes>
+  <Attribute Name="Description" Type="string" Value="Simple component"></Attribute>
+  <Attribute Name="Model" Value="VideoWallLib.VisionController"></Attribute>
+ </Attributes>
+ <Signals>
+  <Signal Input="0" Model="CDPSignal&lt;int&gt;" Name="numTiles" Type="int"></Signal>
+ </Signals>
+ <Messages>
+  <Message Name="TileMessageHandler"></Message>
+  <Message Name="Publish"></Message>
+  <Message Name="HandController"></Message>
+  <Message Name="MessageHandler"></Message>
+ </Messages>
+
+  <ArgumentMessages>
+    <ArgumentMessage Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC"></ArgumentMessage>
+  </ArgumentMessages>
+</Model>

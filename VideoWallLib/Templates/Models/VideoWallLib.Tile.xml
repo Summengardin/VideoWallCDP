@@ -34,6 +34,11 @@
  </ArgumentMessages>
  <Connectors>
   <Connector DisplayHint="Internal" Name="MQTTPublish" Object=".Publisher.Publish" RoutingType="Push" TypeHint="Routing"/>
+  <Connector Name="VisionControllerConnector" RoutingType="Push" TypeHint="RoutingType"/>
+  <Connector Name="MessageHandlerConnector" RoutingType="Push" TypeHint="RoutingType"/>
  </Connectors>
- <Messages/>
+ <Messages>
+  <Message Name="MessageHandler"/>
+  <Message Name="getSource"/>
+ </Messages>
 </Model>

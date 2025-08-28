@@ -60,7 +60,7 @@
   </ArgumentMessages>
 
   <Parameters>
-<Parameter Description="Parameter that will be stored to disk outside of CDP. Will make the parameter persistent even with an Overwrite deploy." Model="StringParameter" Name="IP" String=""></Parameter>
+<Parameter Description="Parameter that will be stored to disk outside of CDP. Will make the parameter persistent even with an Overwrite deploy." Model="StringParameter" Name="IP" String="10.1.3.85"></Parameter>
     <Parameter Description="Parameter that will be stored to disk outside of CDP. Will make the parameter persistent even with an Overwrite deploy." Model="StringParameter" Name="DisplayName" String=""></Parameter>
     <Parameter Description="Parameter that will be stored to disk outside of CDP. Will make the parameter persistent even with an Overwrite deploy." Model="StringParameter" Name="Format" String=""></Parameter>
     <Parameter Description="Parameter that will be stored to disk outside of CDP. Will make the parameter persistent even with an Overwrite deploy." Model="StringParameter" Name="Type" String=""></Parameter>

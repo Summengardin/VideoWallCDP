@@ -110,6 +110,8 @@
 
   <Connectors>
     <Connector Name="MQTTPublish" Object=".Publisher.Publish"></Connector>
+    <Connector Name="VisionControllerConnector" Object=""></Connector>
+    <Connector Name="MessageHandlerConnector" Object=""></Connector>
   </Connectors>
     
   

@@ -26,9 +26,11 @@ public:
     void CreateModel() override;
     void Configure(const char* componentXML) override;
     void ProcessNull() override;
+    int MessageMessageHandler(void* message);
+    int MessagegetSource(void* message);
     void PublishMqtt();
-
     void IndexInputs();
+    const CDPSignal<std::string>& getSourceSignal() const;
 
 protected:
     VideoWallLib::OSDPort OSDTL;
@@ -53,9 +55,12 @@ protected:
     std::vector<std::string> indexedSignalsPrev;
     std::vector<bool> indexedSignalsChanged;
     std::vector<OSDPort*> m_osdPorts;
+    CDPConnector VisionControllerConnector;
+    CDPConnector MessageHandlerConnector;
     bool firstRun = true;
 
     json OSDPortsToJson();
+    void parseAndSetSignals(const std::string& msg);
 };
 
 } // namespace VideoWallLib

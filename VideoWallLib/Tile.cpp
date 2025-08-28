@@ -37,6 +37,8 @@ Tile::~Tile()
 void Tile::Create(const char* fullName)
 {
     CDPComponent::Create(fullName);
+    VisionControllerConnector.Create("VisionControllerConnector",this);
+    MessageHandlerConnector.Create("MessageHandlerConnector",this);
     OSDTL.Create("OSDTL",this);
     OSDTC.Create("OSDTC",this);
     OSDTR.Create("OSDTR",this);
@@ -63,6 +65,8 @@ void Tile::CreateModel()
     CDPComponent::CreateModel();
 
     RegisterStateProcess("Null", (CDPCOMPONENT_STATEPROCESS)&Tile::ProcessNull, "Initial Null state");
+    RegisterMessage(CM_TEXTCOMMAND,"MessageHandler","",(CDPOBJECT_MESSAGEHANDLER)&Tile::MessageMessageHandler);
+    RegisterMessage(CM_TEXTCOMMAND,"getSource","",(CDPOBJECT_MESSAGEHANDLER)&Tile::MessagegetSource);
 }
 
 /*!
@@ -81,6 +85,7 @@ void Tile::Configure(const char* componentXML)
     indexedSignals.resize(10);
     indexedSignalsPrev.resize(10);
     indexedSignalsChanged.resize(10);
+    MessageHandlerConnector.ConnectTo("VWController.VisionControllerContainer");
 }
 
 /*!
@@ -107,7 +112,31 @@ void Tile::ProcessNull()
 
 
 
-void Tile::index_inputs() {
+int Tile::MessageMessageHandler(void* message)
+{
+    MessageTextCommandWithParameterReceive* msg = static_cast<MessageTextCommandWithParameterReceive*>(message);
+    std::string strParameter(msg->parameters);
+    parseAndSetSignals(strParameter);
+    return 1;
+
+}
+
+
+
+int Tile::MessagegetSource(void* message)
+{
+    MessageTextCommand txtMessage;
+    txtMessage.SetTextCommand("CurrentTileSource");
+    MessagePacketHandle Outputmsg(txtMessage);
+    Outputmsg.Packet().PayloadAppend(i_Source);
+    MessageHandlerConnector.SendMessage(Outputmsg);
+    return 1;
+
+}
+
+
+
+void Tile::IndexInputs() {
 
     // Get new values
     indexedSignals.at(0) = i_Source;
@@ -175,4 +204,48 @@ json Tile::OSDPortsToJson() {
         out_json.emplace(name, loc_json);
     }
     return out_json;
+}
+
+void Tile::parseAndSetSignals(const std::string& msg) {
+    std::istringstream ss(msg);
+    std::string token;
+
+    while (std::getline(ss, token, ';')) {
+
+        token.erase(0, token.find_first_not_of(" \t"));
+        token.erase(token.find_last_not_of(" \t") + 1);
+        // trim(token);
+        if (token.empty()) continue;
+
+        size_t pos = token.find(':');
+        if (pos == std::string::npos) continue;
+
+        std::string key = token.substr(0, pos);
+        std::string valueStr = token.substr(pos + 1);
+
+        key.erase(0, key.find_first_not_of(" \t"));
+        key.erase(key.find_last_not_of(" \t") + 1);
+        valueStr.erase(0, valueStr.find_first_not_of(" \t"));
+        valueStr.erase(valueStr.find_last_not_of(" \t") + 1);
+
+        double value = std::stod(valueStr);
+        // Decide where to store
+        if (key == "Zoom_speed") {
+            i_ZoomSpeed = value;
+        }
+        else if (key == "Tilt_speed") {
+            i_TiltSpeed = value;
+        }
+        else if (key == "Pan_speed") {
+            i_PanSpeed = value;
+        }
+        else if (key == "source") {
+            i_Source = value;
+        }
+    }
+}
+
+
+const CDPSignal<std::string>& Tile::getSourceSignal() const {
+    return i_Source;
 }

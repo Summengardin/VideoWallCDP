@@ -17,6 +17,10 @@ VideoWallLibBuilder implementation.
 #include "OSDDataDistributor.h"
 #include "SKAARHOJRawPanelIO.h"
 #include "SKAARHOJRawPanelMenu.h"
+#include "VisionController.h"
+#include "VisionController.h"
+#include "VisionControllerContainer.h"
+#include "SKAARHOJTCPCom.h"
 #include "VideoWallLibBuilder.h"
 
 using namespace VideoWallLib;
@@ -82,6 +86,16 @@ CDPComponent* VideoWallLibBuilder::CreateNewComponent(const std::string& type)
     if (type=="VideoWallLib.SKAARHOJRawPanelMenu")
       return new SKAARHOJRawPanelMenu;
 
+    
+    if (type=="VideoWallLib.VisionControllerContainer")
+        return new VisionControllerContainer;
+    
+    if (type=="VideoWallLib.VisionController")
+        return new VisionController;
+    
+    if (type=="VideoWallLib.SKAARHOJTCPCom")
+        return new SKAARHOJTCPCom;
+    
     return CDPBuilder::CreateNewComponent(type);
 }
 
