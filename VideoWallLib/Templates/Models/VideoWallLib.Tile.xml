@@ -19,12 +19,8 @@
   <Signal Description="" Input="1" Model="CDPSignal&lt;double&gt;" Name="TiltAbs" Type="double" Unit="" Value=""/>
  </Signals>
  <Ports>
-  <Port Description="TopLeft" Model="VideoWallLib.OSDPort" Name="OSDTL" TextIndex="1"/>
-  <Port Alignment="center" Description="TopCenter" Model="VideoWallLib.OSDPort" Name="OSDTC" PosX="960" TextIndex="2"/>
-  <Port Alignment="right" Description="TopRight" Model="VideoWallLib.OSDPort" Name="OSDTR" PosX="1920" TextIndex="3"/>
-  <Port Alignment="center" Description="BottomCenter" Model="VideoWallLib.OSDPort" Name="OSDBC" PosX="960" PosY="900"/>
- </Ports>
- <Subcomponents>
+    <Port Model="VideoWallLib.OSDRectPort" Name="SelectedRect" Connected="0" DataConsistency="0" Description="Rectangle for showing that this tile is the current selection" RolePermissions="" Routing="" BorderWidth="15" BorderColor="1,0,0,1"></Port>
+ </Ports><Subcomponents>
   <Operator Model="MQTTIO.Publisher" Name="Publisher">
    <Client Name="MQTTClient" Object="..MQTTClientRPC"/>
   </Operator>

@@ -12,6 +12,7 @@
 #include "json.hpp"
 #include <Generic/CDPUtils.h>
 #include "OSDTextPort.h"
+#include "OSDRectPort.h"
 
 using json = nlohmann::json;
 
@@ -44,12 +45,16 @@ protected:
     using CDPComponent::requestedState;
     using CDPComponent::ts;
     using CDPComponent::fs;
+    OSDRectPort SelectedRect;
+
 
     std::vector<std::string> topics = {"Source","Brightness","ZoomAbs","ZoomSpeed","PanAbs","PanSpeed","TiltAbs","TiltSpeed","OSD"};
     std::vector<std::string> indexedSignals;
     std::vector<std::string> indexedSignalsPrev;
     std::vector<bool> indexedSignalsChanged;
     std::vector<OSDTextPort*> m_osdPorts;
+    std::vector<OSDRectPort*> m_osdRectPorts;
+
     bool firstRun = true;
 
     json OSDPortsToJson();

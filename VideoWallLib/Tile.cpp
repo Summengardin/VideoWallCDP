@@ -74,8 +74,9 @@ void Tile::Configure(const char* componentXML)
     for (CDPPort* port: m_ports){
         if (OSDTextPort* osd_port = dynamic_cast<OSDTextPort*>(port))
             m_osdPorts.push_back(osd_port);
+        if (OSDRectPort* osd_port = dynamic_cast<OSDRectPort*>(port))
+            m_osdRectPorts.push_back(osd_port);
     }
-}
 
 /*!
  \brief Component Null state processing function
@@ -168,5 +169,31 @@ json Tile::OSDPortsToJson() {
         auto name = p->GetNodeName();
         out_json.emplace(name, loc_json);
     }
+    for (auto p : m_osdRectPorts){
+        // if (!p->Enable)
+        //     continue;
+
+        json loc_json;
+
+        auto add_to_json = [&](IPortConnection& con){
+
+            std::string name = con.GetConnectionName();
+            // Remove "Map" from name
+            if (name.size() >= 3) name.erase(0, 3);
+
+            std::string val = con.GetLocalValue()->GetValue();
+
+            loc_json.emplace(name, val);
+        };
+
+        p->ForEachConnection(add_to_json);
+
+        auto name = p->GetNodeName();
+
+        out_json.emplace(name, loc_json);
+
+    }
+
+
     return out_json;
 }
