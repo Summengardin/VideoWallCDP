@@ -6,7 +6,7 @@
 
 namespace VideoWallLib {
 
-class OSDPort : public CDPPort
+class OSDTextPort : public CDPPort
 {
 public:
     void Create(const char* shortName, CDPComponent* parent) override;
@@ -22,6 +22,8 @@ public:
     CDPProperty<std::string> BGColor;
     CDPProperty<double> Timeout;
     CDPProperty<std::string> TextIndexName;
+    CDPProperty<std::string> Type;
+    CDPProperty<bool> Enable;
 };
 
 } // namespace VideoWallLib

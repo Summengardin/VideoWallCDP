@@ -1,4 +1,4 @@
-#include "OSDPort.h"
+#include "OSDTextPort.h"
 
 using namespace VideoWallLib;
 /*!
@@ -14,7 +14,7 @@ using namespace VideoWallLib;
   \internal
   \brief Creates the instance. Called after constructor.
 */
-void OSDPort::Create(const char* shortName, CDPComponent* parent)
+void OSDTextPort::Create(const char* shortName, CDPComponent* parent)
 {
     CDPPort::Create(shortName, parent);
     Text.Create("Text",this,CDPPropertyBase::e_Attribute,(CDPOBJECT_SETPROPERTY_HANDLER)nullptr,(CDPOBJECT_VALIDATEPROPERTY_HANDLER)nullptr);
@@ -28,4 +28,6 @@ void OSDPort::Create(const char* shortName, CDPComponent* parent)
     BGColor.Create("BGColor",this,CDPPropertyBase::e_Attribute,(CDPOBJECT_SETPROPERTY_HANDLER)nullptr,(CDPOBJECT_VALIDATEPROPERTY_HANDLER)nullptr);
     Timeout.Create("Timeout",this,CDPPropertyBase::e_Attribute,(CDPOBJECT_SETPROPERTY_HANDLER)nullptr,(CDPOBJECT_VALIDATEPROPERTY_HANDLER)nullptr);
     TextIndexName.Create("TextIndexName",this,CDPPropertyBase::e_Attribute,(CDPOBJECT_SETPROPERTY_HANDLER)nullptr,(CDPOBJECT_VALIDATEPROPERTY_HANDLER)nullptr);
+    Type.Create("Type",this,CDPPropertyBase::e_Attribute,(CDPOBJECT_SETPROPERTY_HANDLER)nullptr,(CDPOBJECT_VALIDATEPROPERTY_HANDLER)nullptr);
+    Enable.Create("Enable",this,CDPPropertyBase::e_Attribute,(CDPOBJECT_SETPROPERTY_HANDLER)nullptr,(CDPOBJECT_VALIDATEPROPERTY_HANDLER)nullptr);
 }

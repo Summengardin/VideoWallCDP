@@ -37,10 +37,7 @@ Tile::~Tile()
 void Tile::Create(const char* fullName)
 {
     CDPComponent::Create(fullName);
-    OSDTL.Create("OSDTL",this);
-    OSDTC.Create("OSDTC",this);
-    OSDTR.Create("OSDTR",this);
-    OSDBC.Create("OSDBC",this);
+    SelectedRect.Create("SelectedRect",this);
     i_TiltAbs.Create("TiltAbs",this);
     i_PanAbs.Create("PanAbs",this);
     MQTTPublish.Create("MQTTPublish",this);
@@ -74,13 +71,10 @@ void Tile::CreateModel()
 void Tile::Configure(const char* componentXML)
 {
     CDPComponent::Configure(componentXML);
-    for (CDPPort* port: m_ports)
-        if (OSDPort* osd_port = dynamic_cast<OSDPort*>(port))
+    for (CDPPort* port: m_ports){
+        if (OSDTextPort* osd_port = dynamic_cast<OSDTextPort*>(port))
             m_osdPorts.push_back(osd_port);
-
-    indexedSignals.resize(10);
-    indexedSignalsPrev.resize(10);
-    indexedSignalsChanged.resize(10);
+    }
 }
 
 /*!

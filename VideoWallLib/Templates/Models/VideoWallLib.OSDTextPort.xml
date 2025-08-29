@@ -1,10 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<Model Name="VideoWallLib.OSDPort">
+<Model Name="VideoWallLib.OSDTextPort">
  <ModelTypeClass>C++</ModelTypeClass>
  <BaseModel>CDPPort</BaseModel>
  <Attributes>
   <Attribute Name="Description" Type="string" Value="Simple port example"></Attribute>
-  <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.OSDPort"></Attribute>
   <Attribute Description="" LogEventOnChange="0" Name="Text" RouteMethod="RouteEvent" SaveOnChange="0" Type="string"></Attribute>
   <Attribute LogEventOnChange="0" Name="TextIndex" RouteMethod="RouteEvent" SaveOnChange="0" Type="int"></Attribute>
   <Attribute LogEventOnChange="0" Name="PosX" RouteMethod="RouteEvent" SaveOnChange="0" Type="int"></Attribute>
@@ -15,8 +14,10 @@
   <Attribute Name="FontColor" Value="1.0,1.0,1.0,1.0"></Attribute>
   <Attribute Name="BGColor" Value="0.0,0.0,0.0,0.6"></Attribute>
   <Attribute Name="FontSize" Value="18"></Attribute>
-    <Attribute Name="TextIndexName" Value="Select source"></Attribute>
- </Attributes>
+  <Attribute Name="TextIndexName" Value="Select source"></Attribute>
+  <Attribute Name="Type" SaveOnChange="0" Value="Text"></Attribute>
+    <Attribute Name="Enable" Value="1" Type="bool"></Attribute>
+    <Attribute Name="Model" Value="VideoWallLib.OSDTextPort"></Attribute></Attributes>
  <Connections>
   <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
   <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
@@ -29,5 +30,7 @@
   <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
   <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
   <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+  <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+  <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
  </Connections>
 </Model>

@@ -7,7 +7,7 @@
 #include <Signal/CDPSignal.h>
 #include <sstream>
 
-#include <OSDPort.h>
+#include <OSDTextPort.h>
 
 namespace VideoWallLib {
 
@@ -29,7 +29,7 @@ protected:
     using CDPComponent::requestedState;
     using CDPComponent::ts;
 
-    std::vector<OSDPort*> m_osdports;
+    std::vector<OSDTextPort*> m_osdports;
     std::vector<std::string> indexed_data;
     std::vector<double> prevTimeouts;
 

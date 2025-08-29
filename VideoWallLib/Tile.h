@@ -11,6 +11,7 @@
 #include "OSDPort.h"
 #include "json.hpp"
 #include <Generic/CDPUtils.h>
+#include "OSDTextPort.h"
 
 using json = nlohmann::json;
 
@@ -31,12 +32,8 @@ public:
     void IndexInputs();
 
 protected:
-    VideoWallLib::OSDPort OSDTL;
-    VideoWallLib::OSDPort OSDTC;
-    VideoWallLib::OSDPort OSDTR;
-    VideoWallLib::OSDPort OSDBC;
-    CDPSignal<double> i_Brightness;
     CDPSignal<std::string> i_Source;
+    CDPSignal<double> i_Brightness;
     CDPSignal<double> i_ZoomAbs;
     CDPSignal<double> i_ZoomSpeed;
     CDPSignal<double> i_TiltSpeed;
@@ -52,7 +49,7 @@ protected:
     std::vector<std::string> indexedSignals;
     std::vector<std::string> indexedSignalsPrev;
     std::vector<bool> indexedSignalsChanged;
-    std::vector<OSDPort*> m_osdPorts;
+    std::vector<OSDTextPort*> m_osdPorts;
     bool firstRun = true;
 
     json OSDPortsToJson();

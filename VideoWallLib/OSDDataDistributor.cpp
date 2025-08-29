@@ -66,7 +66,7 @@ void OSDDataDistributor::Configure(const char* componentXML)
     CDPComponent::Configure(componentXML);
 
     for (auto p : m_ports)
-        if (OSDPort* osd_port = dynamic_cast<OSDPort*>(p))
+        if (OSDTextPort* osd_port = dynamic_cast<OSDTextPort*>(p))
             m_osdports.push_back(osd_port);
 
 
