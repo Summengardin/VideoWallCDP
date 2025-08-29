@@ -7,7 +7,6 @@
   <Signals>
     <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
     <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
-    <Signal Input="0" Model="CDPSignal&lt;string&gt;" Name="SubscribingTopic" Type="string"></Signal>
   </Signals>
 
   <Alarms>
@@ -25,7 +24,6 @@
 
   <ArgumentMessages>
     <ArgumentMessage Command="0" Input="0" Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC" RoutingList="..MQTTClient"></ArgumentMessage>
-    <ArgumentMessage Command="131328" Input="0" Model="MessageArgument" Name="SubscribedSource"></ArgumentMessage>
   </ArgumentMessages>
 
   <Subcomponents>
@@ -33,7 +31,7 @@
     <Subcomponent Model="VideoWallLib.VisionController" Name="VisionController1" src="Components/VisionControllerContainer/VisionController1.xml"></Subcomponent>
     <Subcomponent Model="VideoWallLib.VisionController" Name="VisionController2" src="Components/VisionControllerContainer/VisionController2.xml"></Subcomponent>
     <Operator Description="MQTT Subscriber sequencer block to subscribe to MQTT Topics and receive payloads as Sequencer events. Has to be connected to a MQTTClient, via the MQTTClient connector." Model="MQTTIO.Subscriber" Name="SourceSubscriber">
-      <ArgumentMessage Command="131328" Description="Will be emitted when MQTTClient has established the connection with the configured broker" Input="0" Model="Sequencer.DefaultEvent" Name="Connected" TextCommand="Connected" RoutingList=".."></ArgumentMessage>
+      <ArgumentMessage Command="131328" Description="Will be emitted when MQTTClient has established the connection with the configured broker" Input="0" Model="Sequencer.DefaultEvent" Name="Connected" TextCommand="Connected" RoutingList=""></ArgumentMessage>
       <ArgumentMessage Command="131328" Description="Will be emitted when MQTTClient has lost the connection with the configured broker" Input="0" Model="Sequencer.DefaultEvent" Name="Disconnected"></ArgumentMessage>
       <ArgumentMessage Command="131328" Data="Topic;QoS" Description="Initiates a subscription to the MQTT topic specified by Topic argument. Any possible previous subscription sent by the block will be unsubscribed first." Input="1" Model="Sequencer.DefaultEvent" Name="Subscribe"></ArgumentMessage>
       <ArgumentMessage Command="131328" Data="Topic;QoS;MessageID" Description="Will be emitted when the MQTTClient has successfully subscribed to the topic indicated in Subscribe event. Will contain all the arguments of the original Subscribe event plus a MessageID argument." Input="0" Model="Sequencer.DefaultEvent" Name="Subscribed"></ArgumentMessage>

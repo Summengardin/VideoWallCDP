@@ -197,6 +197,12 @@ int VisionControllerContainer::MessageReceived(void* message)
     std::cout << "MessageRecieved \n";
     MessageTextCommandWithParameterReceive* msg = static_cast<MessageTextCommandWithParameterReceive*>(message);
     std::string strParameter(msg->parameters);
+    std::string PayloadString = extractPayload(strParameter);
+    if (isInteger(PayloadString))
+        HC.setEncoder(11,stoi(PayloadString));
+    else
+        HC.setEncoder(11, cameraToId[PayloadString]);
+
     std::cout << strParameter << "\n";
     return 1;
 
@@ -266,8 +272,8 @@ void VisionControllerContainer::updateHCStates(const std::string& msg) {
             int value = std::stoi(payload.substr(4));
             value += HC.encoders[id-10];
             if(value > numCameras){
-                value = 0;
-            } else if (value < 0){
+                value = 1;
+            } else if (value < 1){
                 value = numCameras;
             }
             HC.setEncoder(id, value);
@@ -294,9 +300,7 @@ void VisionControllerContainer::SendTileConfiguration(bool allowedChangeTileSour
     std::string outputline = "Zoom_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(7)))
         + "; Tilt_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(8)))
         + "; Pan_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(9)))+";\n";
-    if (allowedChangeTileSource){
-        outputline += "; source: " + std::to_string(HC.getEncoderState(11));
-    }
+        + "; source: " + idToCamera[HC.getEncoderState(11)];
     Outputmsg.Packet().PayloadAppend(outputline);
     TileConnectors[HC.getEncoderState(10)]->SendMessage(Outputmsg);
 }
@@ -317,3 +321,29 @@ float VisionControllerContainer::normalizeSpeed(int value) {
     return std::max(-1.0f, std::min(1.0f, static_cast<float>(value) / 500.0f));
 }
 
+std::string VisionControllerContainer::extractPayload(const std::string& input) {
+    const std::string key = "Payload=";
+    size_t start = input.find(key);
+    if (start == std::string::npos) {
+        return ""; // not found
+    }
+
+    start += key.length(); // move past "Payload="
+    size_t end = input.find(';', start);
+    if (end == std::string::npos) {
+        end = input.length();
+    }
+
+    return input.substr(start, end - start);
+}
+
+
+bool VisionControllerContainer::isInteger(const std::string& s) {
+    try {
+        size_t pos;
+        std::stoi(s, &pos);
+        return pos == s.size(); // ensure whole string was parsed
+    } catch (...) {
+        return false;
+    }
+}

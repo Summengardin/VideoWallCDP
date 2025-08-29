@@ -58,6 +58,8 @@ protected:
     std::string CameraName;
     bool MessageRecieved;
     int MessageSubscribed(void* message);
+    std::string extractPayload(const std::string& input);
+    bool isInteger(const std::string& s);
 };
 
 } // namespace VideoWallLib
