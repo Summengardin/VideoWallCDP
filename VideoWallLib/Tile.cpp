@@ -78,6 +78,15 @@ void Tile::Configure(const char* componentXML)
             m_osdRectPorts.push_back(osd_port);
     }
 
+
+    size_t len = topics.size();
+    indexedSignals.resize(len);
+    indexedSignalsPrev.resize(len);
+    indexedSignalsChanged.resize(len);
+    holdUntil.resize(indexedSignalsChanged.size(),
+                     std::chrono::steady_clock::time_point::max());
+}
+
 /*!
  \brief Component Null state processing function
 
@@ -116,7 +125,13 @@ void Tile::IndexInputs() {
     indexedSignals.at(8) = CDPUtils::EscapeQuotation(OSDPortsToJson().dump());
 
     // Check for changes
+    auto now = clock::now();
     std::transform(indexedSignals.begin(), indexedSignals.end(), indexedSignalsPrev.begin(), indexedSignalsChanged.begin(), std::not_equal_to<std::string>());
+    for (size_t i = 0; i < indexedSignalsChanged.size(); ++i) {
+        if (indexedSignalsChanged[i]) {
+            holdUntil[i] = now + kHoldFor;
+        }
+    }
 
     // Store new values
     std::copy(indexedSignals.begin(), indexedSignals.end(), indexedSignalsPrev.begin());
@@ -158,11 +173,56 @@ json Tile::OSDPortsToJson() {
     json out_json;
     for (auto p : m_osdPorts){
         json loc_json;
+        double timeout = p->Timeout;
+
         auto add_to_json = [&](IPortConnection& con){
             std::string name = con.GetConnectionName();
             // Remove "Map" from name
             name.erase(0, 3);
             std::string val = con.GetLocalValue()->GetValue();
+
+            if (name == "Text" && StringHelpers::StartsWith(val, "tile:")){
+
+                if (StringHelpers::Contains(val, "Source")){
+                    val = i_Source;
+                }
+                else if (StringHelpers::Contains(val, "ControlValue")){
+                    val.clear();
+                    const auto now = clock::now();
+
+                    if (holdUntil.size() != indexedSignalsChanged.size()) {
+                        holdUntil.resize(indexedSignalsChanged.size(), clock::time_point::min());
+                    }
+
+                    for (size_t i = 0; i < indexedSignalsChanged.size(); ++i){
+                        // Skip OSD
+                        if (topics[i] == "OSD") continue;
+
+
+                        if (indexedSignalsChanged[i]) {
+                            if (timeout > 0) {
+                                auto future = std::chrono::duration_cast<std::chrono::milliseconds>(
+                                    std::chrono::duration<double>(timeout));
+                                holdUntil[i] = now + future;
+                            } else {
+                                holdUntil[i] = std::chrono::time_point<std::chrono::steady_clock>::max();
+                            }
+                        }
+
+                        if (now > holdUntil[i])
+                            continue;
+
+                        // Append "topic: value"
+                        val += topics[i] + ": " + indexedSignals[i] + "\n";
+
+                        if (DebugLevel(DEBUGLEVEL_EXTENDED))
+                            std::cout << topics[i] << ": " << indexedSignals[i] << "\n";
+                    }
+                }
+
+
+            }
+
             loc_json.emplace(name, val);
         };
         p->ForEachConnection(add_to_json);

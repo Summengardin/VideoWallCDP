@@ -4,15 +4,15 @@
 #include <CDPSystem/Base/CDPComponent.h>
 #include <CDPSystem/Base/CDPConnector.h>
 #include <CDPSystem/Base/CDPPort.h>
-#include <Signal/CDPSignal.h>
-#include <TilePort.h>
 #include <CDPParameter/CDPParameter.h>
 #include <CDPAlarm/CDPAlarm.h>
-#include "OSDPort.h"
-#include "json.hpp"
+#include <Signal/CDPSignal.h>
 #include <Generic/CDPUtils.h>
+#include <chrono>
 #include "OSDTextPort.h"
 #include "OSDRectPort.h"
+#include "json.hpp"
+#include "OperationUtilities/Strings/StringHelpers.h"
 
 using json = nlohmann::json;
 
@@ -45,8 +45,12 @@ protected:
     using CDPComponent::requestedState;
     using CDPComponent::ts;
     using CDPComponent::fs;
+    using clock = std::chrono::steady_clock;
+
     OSDRectPort SelectedRect;
 
+    std::chrono::seconds kHoldFor{3};
+    std::vector<clock::time_point> holdUntil;
 
     std::vector<std::string> topics = {"Source","Brightness","ZoomAbs","ZoomSpeed","PanAbs","PanSpeed","TiltAbs","TiltSpeed","OSD"};
     std::vector<std::string> indexedSignals;

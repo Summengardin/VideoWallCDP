@@ -9,13 +9,14 @@ VideoWallLibBuilder implementation.
 #include "Layout.h"
 #include "TilePort.h"
 #include "Tile.h"
-#include "OSDPort.h"
+#include "OSDTextPort.h"
 #include "OSDText.h"
 #include "OSD.h"
 #include "MQTTHandler.h"
 #include "MQTTTopic.h"
 #include "OSDDataDistributor.h"
 #include "TimestampGenerator.h"
+#include "OSDRectPort.h"
 #include "VideoWallLibBuilder.h"
 
 using namespace VideoWallLib;
@@ -110,8 +111,12 @@ CDPObject* VideoWallLibBuilder::CreateNewObject(const std::string& type)
     if (type=="VideoWallLib.TilePort")
         return new TilePort;
     
-    if (type=="VideoWallLib.OSDPort")
-        return new OSDPort;
+    
+    if (type=="VideoWallLib.OSDRectPort")
+        return new OSDRectPort;
+    
+    if (type=="VideoWallLib.OSDTextPort")
+        return new OSDTextPort;
     
     return CDPBuilder::CreateNewObject(type);
 }

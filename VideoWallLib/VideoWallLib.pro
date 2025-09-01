@@ -14,8 +14,9 @@ HEADERS += \
     MQTTTopic.h \
     OSD.h \
     OSDDataDistributor.h \
+    OSDRectPort.h \
     OSDText.h \
-    OSDPort.h \
+    OSDTextPort.h \
     SourceOrchestrator.h \
     Tile.h \
     TilePort.h \
@@ -34,8 +35,9 @@ SOURCES += \
     MQTTTopic.cpp \
     OSD.cpp \
     OSDDataDistributor.cpp \
+    OSDRectPort.cpp \
     OSDText.cpp \
-    OSDPort.cpp \
+    OSDTextPort.cpp \
     SourceOrchestrator.cpp \
     Tile.cpp \
     TilePort.cpp \
@@ -55,8 +57,9 @@ DISTFILES += $$files(*.xml, true) \
     Templates/Models/VideoWallLib.OSD.OSDText.xml \
     Templates/Models/VideoWallLib.OSD.xml \
     Templates/Models/VideoWallLib.OSDDataDistributor.xml \
+    Templates/Models/VideoWallLib.OSDRectPort.xml \
     Templates/Models/VideoWallLib.OSDText.xml \
-    Templates/Models/VideoWallLib.OSDPort.xml \
+    Templates/Models/VideoWallLib.OSDTextPort.xml \
     Templates/Models/VideoWallLib.PopulateComboBox_T.xml \
     Templates/Models/VideoWallLib.SourceOrchestrator.xml \
     Templates/Models/VideoWallLib.Tile.Models.MQTTTopic1.xml \

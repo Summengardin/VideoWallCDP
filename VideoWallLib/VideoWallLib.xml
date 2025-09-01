@@ -14,8 +14,9 @@
    <Model Name="VideoWallLib.OSD.OSDText"/>
   </Model>
   <Model Name="VideoWallLib.OSDDataDistributor"/>
-  <Model Name="VideoWallLib.OSDPort"/>
+  <Model Name="VideoWallLib.OSDRectPort"/>
   <Model Name="VideoWallLib.OSDText"/>
+  <Model Name="VideoWallLib.OSDTextPort"/>
   <Model Name="VideoWallLib.Tile"/>
   <Model Name="VideoWallLib.TilePort"/>
   <Model Name="VideoWallLib.TimestampGenerator"/>
