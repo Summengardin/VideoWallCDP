@@ -38,15 +38,20 @@ Camera::~Camera()
 void Camera::Create(const char* fullName)
 {
     CDPComponent::Create(fullName);
-    pCamera.Create("pCamera",this);
-    Width.Create("Width",this);
-    Height.Create("Height",this);
+    URI.Create("URI",this);
     DisplayName.Create("DisplayName",this);
     IP.Create("IP",this);
     Format.Create("Format",this);
-    Framerate.Create("Framerate",this);
     Type.Create("Type",this);
-    URI.Create("URI",this);
+    pCamera.Create("pCamera",this);
+    Width.Create("Width",this);
+    Height.Create("Height",this);
+    // DisplayName.Create("DisplayName",this);
+    // IP.Create("IP",this);
+    // Format.Create("Format",this);
+    Framerate.Create("Framerate",this);
+    // Type.Create("Type",this);
+    // URI.Create("URI",this);
 }
 
 /*!
@@ -71,6 +76,7 @@ void Camera::CreateModel()
 void Camera::Configure(const char* componentXML)
 {
     CDPComponent::Configure(componentXML);
+    uri = VideoWallLib::Uri();
 }
 
 /*!
@@ -88,9 +94,8 @@ void Camera::Configure(const char* componentXML)
 */
 void Camera::ProcessNull()
 {
-    uri = VideoWallLib::Uri();
-    uri.parse(URI.String);
-    IP.SetProperty("String", uri.host);
+    uri.parse(URI.GetString());
+    IP = uri.host;
     if(DebugLevel(DEBUGLEVEL_EXTENDED))
         std::cout << this->Name() << ": " << uri.toStringExtended() << std::endl;
 }

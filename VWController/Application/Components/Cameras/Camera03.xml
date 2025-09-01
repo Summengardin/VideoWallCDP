@@ -8,6 +8,11 @@
   <Signals>
     <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
     <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="DisplayName" Type="string" Value=""></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="IP" Type="string" Value="10.1.3.73"></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="Format" Type="string" Value=""></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="Type" Type="string" Value="Z3"></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="URI" Type="string" Value="rtsp://10.1.3.73/stream-1.sdp"></Signal>
 
 
 
@@ -28,23 +33,23 @@
     <Port Input="0" Model="CDPPort" Name="pCamera">
 
       <Connections>
-        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="IP" Routing="..IP.String" Type="string" Value=""></Connection>        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="DisplayName" Routing="..DisplayName.String" Type="string" Value=""></Connection>        <Connection Input="0" Model="ValuedConnection&lt;int&gt;" Name="Width" Routing="..Width" Type="int" Value="0"></Connection>
+        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="IP" Routing="..IP" Type="string" Value=""></Connection>        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="DisplayName" Routing="..DisplayName" Type="string" Value=""></Connection>        <Connection Input="0" Model="ValuedConnection&lt;int&gt;" Name="Width" Routing="..Width" Type="int" Value="0"></Connection>
         <Connection Input="0" Model="ValuedConnection&lt;int&gt;" Name="Height" Routing="..Height" Type="int" Value="0"></Connection>
         <Connection Input="0" Model="ValuedConnection&lt;float&gt;" Name="Framerate" Routing="..Framerate" Type="float" Value="0"></Connection>
-        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Format" Routing="..Format.String" Type="string" Value=""></Connection>        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Type" Routing="..Type.String" Type="string" Value=""></Connection>        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="URI" Routing="..URI.String" Type="string" Value=""></Connection>      </Connections></Port>
+        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Format" Routing="..Format" Type="string" Value=""></Connection>        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Type" Routing="..Type" Type="string" Value=""></Connection>        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="URI" Routing="..URI" Type="string" Value=""></Connection>      </Connections></Port>
   </Ports>
 
   <Subcomponents>
     <Operator Model="Sequencer.JSONEncode" Name="JSONEncode">
       <Argument BinaryEncodedLength="0" CppName="m_output" Description="JSON encoded output" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="IP" Routing="..IP.String" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="DisplayName" Routing="..DisplayName.String" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="IP" Routing="..IP" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="DisplayName" Routing="..DisplayName" Type="string" Value=""></Argument>
       <Argument CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;int&gt;" Name="Width" Routing="..Width" Type="int" Value="0"></Argument>
       <Argument CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;int&gt;" Name="Height" Routing="..Height" Type="int" Value="0"></Argument>
       <Argument CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;float&gt;" Name="Framerate" Routing="..Framerate" Type="float" Value="0"></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="Format" Routing="..Format.String" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="Type" Routing="..Type.String" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="URI" Routing="..URI.String" Type="string" Value=""></Argument></Operator>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="Format" Routing="..Format" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="Type" Routing="..Type" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="URI" Routing="..URI" Type="string" Value=""></Argument></Operator>
     <Operator Model="Automation.SearchReplace" Name="TopicFromName" Regex="0" Replace="/" Search="." Type="string">
       <Argument BinaryEncodedLength="0" CppName="m_input" Description="Default input argument" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In" Routing="..Name" Type="string" Value=""></Argument>
       <Argument BinaryEncodedLength="0" CppName="m_output" Description="Default output argument" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument></Operator>
@@ -60,11 +65,6 @@
   </ArgumentMessages>
 
   <Parameters>
-<Parameter Description="Parameter that will be stored to disk outside of CDP. Will make the parameter persistent even with an Overwrite deploy." Model="StringParameter" Name="IP" String="10.1.3.73"></Parameter>
-    <Parameter Description="Parameter that will be stored to disk outside of CDP. Will make the parameter persistent even with an Overwrite deploy." Model="StringParameter" Name="DisplayName" String=""></Parameter>
-    <Parameter Description="Parameter that will be stored to disk outside of CDP. Will make the parameter persistent even with an Overwrite deploy." Model="StringParameter" Name="Format" String=""></Parameter>
-    <Parameter Description="Parameter that will be stored to disk outside of CDP. Will make the parameter persistent even with an Overwrite deploy." Model="StringParameter" Name="Type" String="Z3"></Parameter>
-    <Parameter Description="Parameter that will be stored to disk outside of CDP. Will make the parameter persistent even with an Overwrite deploy." Model="StringParameter" Name="URI" String="rtsp://10.1.3.73/stream-1.sdp"></Parameter>
     <Parameter Description="Parameter that will be stored to disk outside of CDP. Will make the parameter persistent even with an Overwrite deploy." Model="CalibrationParameter" Name="Width" Value="1920"></Parameter>
     <Parameter Description="Parameter that will be stored to disk outside of CDP. Will make the parameter persistent even with an Overwrite deploy." Model="CalibrationParameter" Name="Height" Value="1080"></Parameter>
     <Parameter Description="Parameter that will be stored to disk outside of CDP. Will make the parameter persistent even with an Overwrite deploy." Model="CalibrationParameter" Name="Framerate" Value="54"></Parameter>

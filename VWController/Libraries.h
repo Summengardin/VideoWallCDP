@@ -2,7 +2,6 @@
 #include <cdpeventmanager.h>
 #include <cdplogger.h>
 #include <mqttio.h>
-#include <mqtttestlib.h>
 #include <operationutilities.h>
 #include <securitylib.h>
 #include <sequencer.h>

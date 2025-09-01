@@ -2,7 +2,7 @@
 
 <Application Name="VWController" Model="Application" Description=''>
   <Debug>0</Debug>
-  <ApplicationHandle>1</ApplicationHandle>
+  <ApplicationHandle>171</ApplicationHandle>
   <fs>10</fs>
   <ClockSync>None</ClockSync>
   <IsTimeServer>0</IsTimeServer>
