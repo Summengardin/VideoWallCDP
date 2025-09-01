@@ -45,6 +45,31 @@ bool Uri::parse(const std::string& u) {
     return true;
 }
 
+Uri Uri::fromString(const std::string& u)
+{
+    Uri result;
+
+    std::regex pattern(
+        R"(^([^:/?#]+):(?://(?:([^:/?#@]*)(?::([^@/?#]*))?@)?([^:/?#]*)(?::([0-9]+))?)?([^?#]*)(?:\?([^#]*))?(?:#(.*))?$)"
+        );
+
+    std::smatch m;
+    if (!std::regex_match(u, m, pattern)) {
+        throw std::invalid_argument("Invalid URI format: " + u);
+    }
+
+    result.scheme   = m[1].str();
+    result.user     = m[2].str();
+    result.password = m[3].str();
+    result.host     = m[4].str();
+    if (m[5].matched) result.port = std::stoi(m[5].str());
+    result.path     = m[6].matched ? m[6].str() : "/";
+    result.query    = m[7].str();
+    result.fragment = m[8].str();
+
+    return result;
+}
+
 std::string Uri::toString() const {
     std::string out = scheme + "://";
 

@@ -11,51 +11,56 @@
  <Ports>
   <Port Input="0" Model="CDPPort" Name="pCamera">
    <Connections>
-    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="IP" Routing="..IP.String"></Connection>
-    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="DisplayName" Routing="..DisplayName.String"></Connection>
+    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="IP" Routing="..IP1"></Connection>
+    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="DisplayName" Routing="..DisplayName"></Connection>
     <Connection Input="0" Model="ValuedConnection&lt;int&gt;" Name="Width" Routing="..Width"></Connection>
     <Connection Input="0" Model="ValuedConnection&lt;int&gt;" Name="Height" Routing="..Height"></Connection>
     <Connection Input="0" Model="ValuedConnection&lt;float&gt;" Name="Framerate" Routing="..Framerate"></Connection>
-    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Format" Routing="..Format.String"></Connection>
-    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Type" Routing="..Type.String"></Connection>
-    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="URI" Routing="..URI.String"></Connection>
+    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Format" Routing="..Format"></Connection>
+    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Type" Routing="..Type"></Connection>
+    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="URI" Routing="..URI"></Connection>
    </Connections>
   </Port>
  </Ports>
- <Signals></Signals>
- 
+ <Signals>
+  <Signal Input="1" InternalValue="0" Model="DeliveryConfigString" Name="Format"></Signal>
+  <Signal Input="1" Model="DeliveryConfigString" Name="Type"></Signal>
+  <Signal Input="1" Model="DeliveryConfigString" Name="URI"></Signal>
+  <Signal Input="1" Model="DeliveryConfigString" Name="DisplayName"></Signal>
+    <Signal Model="DeliveryConfigString" Name="IP"></Signal>
+ </Signals>
  <Tags></Tags>
  <Subcomponents>
   <Operator Model="Sequencer.JSONEncode" Name="JSONEncode">
-   <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="IP" Routing="..IP.String" TypeColorHint="#4697c3"></Argument>
-   <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="DisplayName" Routing="..DisplayName.String" TypeColorHint="#4697c3"></Argument>
+   <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="IP" Routing="..IP1" TypeColorHint="#4697c3"></Argument>
+   <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="DisplayName" Routing="..DisplayName" TypeColorHint="#4697c3"></Argument>
    <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;int&gt;" Name="Width" Routing="..Width" TypeColorHint="#4697c3"></Argument>
    <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;int&gt;" Name="Height" Routing="..Height" TypeColorHint="#4697c3"></Argument>
    <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;float&gt;" Name="Framerate" Routing="..Framerate" TypeColorHint="#4697c3"></Argument>
-   <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="Format" Routing="..Format.String" TypeColorHint="#4697c3"></Argument>
-   <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="Type" Routing="..Type.String" TypeColorHint="#4697c3"></Argument>
-   <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="URI" Routing="..URI.String"></Argument>
+   <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="Format" Routing="..Format" TypeColorHint="#4697c3"></Argument>
+   <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="Type" Routing="..Type" TypeColorHint="#4697c3"></Argument>
+   <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="URI" Routing="..URI"></Argument>
   </Operator>
   <Operator Model="Automation.SearchReplace" Name="TopicFromName" Replace="/" Search=".">
    <Argument Name="In" Routing="..Name"></Argument>
   </Operator>
-    <Subcomponent Model="VideoWallLib.Camera.MQTTTopic" Name="VideoWallLib.Camera.MQTTTopic"></Subcomponent>
- </Subcomponents>
+  <Subcomponent Model="VideoWallLib.Camera.MQTTTopic" Name="VideoWallLib.Camera.MQTTTopic"></Subcomponent>
+ 
+    <Operator Model="MQTTIO.Publisher" Name="Publisher">
+
+      <Client Name="MQTTClient" Object="..MQTTClientRPC"></Client>
+      </Operator></Subcomponents>
  <ArgumentMessages>
-    <ArgumentMessage Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC"></ArgumentMessage>
+  <ArgumentMessage Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC"></ArgumentMessage>
  </ArgumentMessages>
  <Element LogEventOnChange="0" Name="propIP" RouteMethod="RouteEvent" SaveOnChange="0" Type="string"></Element>
  <States></States>
- 
  <Parameters>
-   <Parameter Model="StringParameter" Name="IP" ></Parameter>
-   <Parameter Model="StringParameter" Name="DisplayName" ></Parameter>
-   <Parameter Model="StringParameter" Name="Format" ></Parameter>
-   <Parameter Model="StringParameter" Name="Type"></Parameter>
-   <Parameter Model="StringParameter" Name="URI"></Parameter>
-   <Parameter Model="CalibrationParameter" Name="Width" Value="1920"></Parameter>
-   <Parameter Model="CalibrationParameter" Name="Height"  Value="1080"></Parameter>
-   <Parameter Model="CalibrationParameter" Name="Framerate"  Value="54"></Parameter>
+  <Parameter Model="CalibrationParameter" Name="Width" Value="1920"></Parameter>
+  <Parameter Model="CalibrationParameter" Name="Height" Value="1080"></Parameter>
+  <Parameter Model="CalibrationParameter" Name="Framerate" Value="54"></Parameter>
  </Parameters>
-
+ <Connectors>
+  <Connector Name="MQTTPublish" RoutingType="Push" TypeHint="RoutingType" Object=".Publisher.Publish"></Connector>
+ </Connectors>
 </Model>

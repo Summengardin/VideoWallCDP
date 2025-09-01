@@ -28,9 +28,7 @@ public:
     void CreateModel() override;
     void Configure(const char* componentXML) override;
     void ProcessNull() override;
-    void PublishMqtt();
 
-    void IndexInputs();
 
 protected:
     CDPSignal<std::string> i_Source;
@@ -52,15 +50,17 @@ protected:
     std::chrono::seconds kHoldFor{3};
     std::vector<clock::time_point> holdUntil;
 
-    std::vector<std::string> topics = {"Source","Brightness","ZoomAbs","ZoomSpeed","PanAbs","PanSpeed","TiltAbs","TiltSpeed","OSD"};
+    std::vector<std::string> topics {"Source","Brightness","ZoomAbs","ZoomSpeed","PanAbs","PanSpeed","TiltAbs","TiltSpeed","OSD"};
     std::vector<std::string> indexedSignals;
     std::vector<std::string> indexedSignalsPrev;
     std::vector<bool> indexedSignalsChanged;
     std::vector<OSDTextPort*> m_osdPorts;
     std::vector<OSDRectPort*> m_osdRectPorts;
 
-    bool firstRun = true;
+    bool firstRun {true};
 
+    void PublishMqtt();
+    void IndexInputs();
     json OSDPortsToJson();
 };
 

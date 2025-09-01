@@ -17,7 +17,7 @@
 
   <ArgumentMessages>
 
-    <ArgumentMessage Name="MQTTClientRPC" RoutingList="..MQTTClientRPC"></ArgumentMessage>
+    <ArgumentMessage Name="MQTTClientRPC" RoutingList=""></ArgumentMessage>
     
   </ArgumentMessages>
 

@@ -38,6 +38,7 @@ Camera::~Camera()
 void Camera::Create(const char* fullName)
 {
     CDPComponent::Create(fullName);
+    MQTTPublish.Create("MQTTPublish",this);
     pCamera.Create("pCamera",this);
     Width.Create("Width",this);
     Height.Create("Height",this);
@@ -47,6 +48,8 @@ void Camera::Create(const char* fullName)
     Framerate.Create("Framerate",this);
     Type.Create("Type",this);
     URI.Create("URI",this);
+
+    UriParser = VideoWallLib::Uri();
 }
 
 /*!
@@ -71,7 +74,13 @@ void Camera::CreateModel()
 void Camera::Configure(const char* componentXML)
 {
     CDPComponent::Configure(componentXML);
+
+    size_t len = topics.size();
+    indexedSignals.resize(len);
+    indexedSignalsPrev.resize(len);
+    indexedSignalsChanged.resize(len);
 }
+
 
 /*!
  \brief Component Null state processing function
@@ -87,20 +96,83 @@ void Camera::Configure(const char* componentXML)
  Please consult CDP Studio "Code Mode Manual" for more information and examples.
 */
 void Camera::ProcessNull()
-{
-    uri = VideoWallLib::Uri();
-    uri.parse(URI.String);
-    IP.SetProperty("String", uri.host);
-    if(DebugLevel(DEBUGLEVEL_EXTENDED))
+{       
+    Uri uri = UriParser.fromString(URI);
+    IP = uri.host;
+    if(DebugLevelForComponent(this->GetParent(),DebugLevel(DEBUGLEVEL_EXTENDED)))
         std::cout << this->Name() << ": " << uri.toStringExtended() << std::endl;
+
+
+    firstRun = false;
 }
 
+
+void Camera::PublishMQTT() {
+
+    bool changeInSignals = std::any_of(indexedSignalsChanged.begin(), indexedSignalsChanged.end(), [](bool b) { return b;});
+    if (!changeInSignals && !firstRun){
+        return;
+    }
+
+    std::string baseTopic = this->Name();
+    std::replace(baseTopic.begin(), baseTopic.end(), '.', '/');
+
+    for (size_t i = 0; i < topics.size(); i++){
+        if (indexedSignalsChanged[i]){
+            MessageTextCommand txtMessage;
+            txtMessage.SetTextCommand("Publish");
+            MessagePacketHandle msg(txtMessage);
+
+            if (DebugLevel(DEBUGLEVEL_EXTENDED) and false){
+                std::cout << baseTopic + "/" + topics[i] << ": " << indexedSignals[i] << "\n";
+            }
+
+            std::vector<CDPUtils::Parameter> param = {{"Topic", baseTopic + "/" + topics[i]},{"Payload", indexedSignals[i]}, {"QoS", "0"}, {"Retain", "1"}};
+            std::string joined = CDPUtils::JoinParameters(param);
+
+            msg.Packet().PayloadAppend(joined);
+
+            MQTTPublish.SendMessage(msg);
+        }
+
+    }
+}
 
 
 json Camera::toJson() const
 {
-    json propertiesJson;
+    json out_json;
 
+    for (size_t i = 0; i < indexedSignalsChanged.size(); ++i){
+        std::string name = topics[i];
+        std::string val = indexedSignals[i];
+
+        out_json.emplace(name, val);
+
+        if (DebugLevel(DEBUGLEVEL_EXTENDED))
+            std::cout << topics[i] << ": " << indexedSignals[i] << "\n";
+    }
+
+    return out_json;
+}
+
+void Camera::IndexInputs()
+{
+    // Get new values
+    indexedSignals.at(0) = DisplayName;
+    indexedSignals.at(1) = IP;
+    indexedSignals.at(2) = URI;
+    indexedSignals.at(3) = std::to_string(Width);
+    indexedSignals.at(4) = std::to_string(Height);
+    indexedSignals.at(5) = std::to_string(Framerate);
+    indexedSignals.at(6) = Format;
+    indexedSignals.at(7) = DisplayName;
+
+    // Check for changes
+    std::transform(indexedSignals.begin(), indexedSignals.end(), indexedSignalsPrev.begin(), indexedSignalsChanged.begin(), std::not_equal_to<std::string>());
+
+    // Store new values
+    std::copy(indexedSignals.begin(), indexedSignals.end(), indexedSignalsPrev.begin());
 }
 
 

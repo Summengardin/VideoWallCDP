@@ -20,6 +20,7 @@ public:
     std::string fragment;
 
     bool parse(const std::string&);
+    static Uri fromString(const std::string&);
     Uri();
     Uri(const std::string&);
     std::string toString() const;
