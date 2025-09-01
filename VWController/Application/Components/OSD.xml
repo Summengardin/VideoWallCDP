@@ -15,6 +15,7 @@
   </Alarms>
 
   <Subcomponents>
+    <Subcomponent Model="VideoWallLib.TimestampGenerator" Name="TimestampGenerator" src="Components/OSD/TimestampGenerator.xml"></Subcomponent>
     <Subcomponent Model="VideoWallLib.OSDDataDistributor" Name="OSDDataDistributor" src="Components/OSD/OSDDataDistributor.xml"></Subcomponent>
   </Subcomponents>
 </Component>
