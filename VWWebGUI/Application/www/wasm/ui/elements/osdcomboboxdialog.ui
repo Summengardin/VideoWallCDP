@@ -28,9 +28,9 @@
   <widget class="QWidget" name="page">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="CDPComWidget" name="comWidget">
+     <widget class="CDPComWidget" name="comWidget_2">
       <property name="cdpRouting">
-       <string>.TextIndex</string>
+       <string>.TextIndexName</string>
       </property>
       <property name="pushRoutables" stdset="0">
        <stringlist notr="true">
@@ -40,9 +40,9 @@
      </widget>
     </item>
     <item>
-     <widget class="CDPComWidget" name="comWidget_2">
+     <widget class="CDPComWidget" name="comWidget_3">
       <property name="cdpRouting">
-       <string>.TextIndexName</string>
+       <string>.TextIndex</string>
       </property>
       <property name="pushRoutables" stdset="0">
        <stringlist notr="true">
@@ -74,16 +74,6 @@
       </property>
      </widget>
     </item>
-    <item>
-     <widget class="CDPBaseLabel" name="label_3"/>
-    </item>
-    <item>
-     <widget class="CDPBaseLabel" name="label_2">
-      <property name="precision">
-       <number>0</number>
-      </property>
-     </widget>
-    </item>
    </layout>
   </widget>
  </widget>
@@ -110,11 +100,6 @@
    </slots>
   </customwidget>
   <customwidget>
-   <class>CDPBaseLabel</class>
-   <extends>QLabel</extends>
-   <header>CDPBaseWidgets/CDPBaseLabel.h</header>
-  </customwidget>
-  <customwidget>
    <class>CDPBaseDialog</class>
    <extends>QWidget</extends>
    <header>CDPBaseWidgets/CDPBaseDialog.h</header>
@@ -126,54 +111,6 @@
  <connections>
   <connection>
    <sender>nodeList</sender>
-   <signal>selectedIndexChanged(int)</signal>
-   <receiver>label_2</receiver>
-   <slot>setValue(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>194</x>
-     <y>286</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>194</x>
-     <y>525</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>nodeList</sender>
-   <signal>selectedIndexChanged(int)</signal>
-   <receiver>comWidget</receiver>
-   <slot>sendValue(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>194</x>
-     <y>293</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>194</x>
-     <y>87</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>nodeList</sender>
-   <signal>selectedNodeChanged(QString)</signal>
-   <receiver>label_3</receiver>
-   <slot>setText(QString)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>194</x>
-     <y>281</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>194</x>
-     <y>502</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>nodeList</sender>
    <signal>selectedNodeChanged(QString)</signal>
    <receiver>comWidget_2</receiver>
    <slot>sendText(QString)</slot>
@@ -181,6 +118,22 @@
     <hint type="sourcelabel">
      <x>194</x>
      <y>289</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>194</x>
+     <y>103</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>nodeList</sender>
+   <signal>selectedIndexChanged(int)</signal>
+   <receiver>comWidget_3</receiver>
+   <slot>sendValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>324</y>
     </hint>
     <hint type="destinationlabel">
      <x>194</x>

@@ -25,7 +25,7 @@
    <string>openbridge5_dusk</string>
   </property>
   <property name="themeRouting">
-   <string>VWWebGUI.GUIConnections.UseDayView.Value</string>
+   <string>VWWebGUI.UI.UseDayView.Value</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
@@ -54,7 +54,7 @@
        <number>3</number>
       </property>
       <property name="cdpPageRouting" stdset="0">
-       <string>VWWebGUI.GUIConnections.CurrentPage.Value</string>
+       <string>VWWebGUI.UI.CurrentPage.Value</string>
       </property>
       <widget class="QWidget" name="homePage">
        <layout class="QHBoxLayout" name="horizontalLayout_4">
