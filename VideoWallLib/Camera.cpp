@@ -150,7 +150,7 @@ void Camera::PublishMQTT() {
     */
 
     for (size_t i = 0; i < topics.size(); i++){
-        if (indexedSignalsChanged[i]){
+        if (indexedSignalsChanged[i] or firstRun){
             MessageTextCommand txtMessage;
             txtMessage.SetTextCommand("Publish");
             MessagePacketHandle msg(txtMessage);

@@ -11,10 +11,10 @@
  <Ports></Ports>
  
  <Signals>
-  <Signal Input="1" InternalValue="0" Model="DeliveryConfigString" Name="Format"></Signal>
-  <Signal Input="1" Model="DeliveryConfigString" Name="Type"></Signal>
-  <Signal Input="1" Model="DeliveryConfigString" Name="URI"></Signal>
-  <Signal Input="1" Model="DeliveryConfigString" Name="DisplayName"></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="Format"></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="Type"></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="URI"></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="DisplayName"></Signal>
     <Signal Model="DeliveryConfigString" Name="IP"></Signal>
  </Signals>
  <Tags></Tags>
