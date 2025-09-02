@@ -37,19 +37,21 @@ Tile::~Tile()
 void Tile::Create(const char* fullName)
 {
     CDPComponent::Create(fullName);
+    VisionControllerConnector.Create("VisionControllerConnector",this);
+    MessageHandlerConnector.Create("MessageHandlerConnector",this);
     OSDTL.Create("OSDTL",this);
     OSDTC.Create("OSDTC",this);
     OSDTR.Create("OSDTR",this);
     OSDBC.Create("OSDBC",this);
-    i_TiltAbs.Create("TiltAbs",this);
-    i_PanAbs.Create("PanAbs",this);
-    MQTTPublish.Create("MQTTPublish",this);
-    i_Brightness.Create("Brightness",this);
     i_Source.Create("Source",this);
-    i_ZoomAbs.Create("ZoomAbs",this);
-    i_ZoomSpeed.Create("ZoomSpeed",this);
-    i_TiltSpeed.Create("TiltSpeed",this);
-    i_PanSpeed.Create("PanSpeed",this);
+    ZoomSpeed.Create("ZoomSpeed",this);
+    PanSpeed.Create("PanSpeed",this);
+    ZoomAbs.Create("ZoomAbs",this);
+    TiltAbs.Create("TiltAbs",this);
+    PanAbs.Create("PanAbs",this);
+    TiltSpeed.Create("TiltSpeed",this);
+    Brightness.Create("Brightness",this);
+    MQTTPublish.Create("MQTTPublish",this);
 }
 
 /*!
@@ -63,6 +65,7 @@ void Tile::CreateModel()
     CDPComponent::CreateModel();
 
     RegisterStateProcess("Null", (CDPCOMPONENT_STATEPROCESS)&Tile::ProcessNull, "Initial Null state");
+    RegisterMessage(CM_TEXTCOMMAND,"MessageHandler","",(CDPOBJECT_MESSAGEHANDLER)&Tile::MessageMessageHandler);
 }
 
 /*!
@@ -81,6 +84,7 @@ void Tile::Configure(const char* componentXML)
     indexedSignals.resize(10);
     indexedSignalsPrev.resize(10);
     indexedSignalsChanged.resize(10);
+    MessageHandlerConnector.ConnectTo("VWController.VisionControllerContainer");
 }
 
 /*!
@@ -107,17 +111,28 @@ void Tile::ProcessNull()
 
 
 
-void Tile::index_inputs() {
+int Tile::MessageMessageHandler(void* message)
+{
+    MessageTextCommandWithParameterReceive* msg = static_cast<MessageTextCommandWithParameterReceive*>(message);
+    std::string strParameter(msg->parameters);
+    parseAndSetSignals(strParameter);
+    return 1;
+
+}
+
+
+
+void Tile::IndexInputs() {
 
     // Get new values
     indexedSignals.at(0) = i_Source;
-    indexedSignals.at(1) = std::to_string(i_Brightness);
-    indexedSignals.at(2) = std::to_string(i_ZoomAbs);
-    indexedSignals.at(3) = std::to_string(i_ZoomSpeed);
-    indexedSignals.at(4) = std::to_string(i_PanAbs);
-    indexedSignals.at(5) = std::to_string(i_PanSpeed);
-    indexedSignals.at(6) = std::to_string(i_TiltAbs);
-    indexedSignals.at(7) = std::to_string(i_TiltSpeed);
+    indexedSignals.at(1) = std::to_string(Brightness);
+    indexedSignals.at(2) = std::to_string(ZoomAbs);
+    indexedSignals.at(3) = std::to_string(ZoomSpeed);
+    indexedSignals.at(4) = std::to_string(PanAbs);
+    indexedSignals.at(5) = std::to_string(PanSpeed);
+    indexedSignals.at(6) = std::to_string(TiltAbs);
+    indexedSignals.at(7) = std::to_string(TiltSpeed);
     indexedSignals.at(8) = CDPUtils::EscapeQuotation(OSDPortsToJson().dump());
 
     // Check for changes
@@ -175,4 +190,43 @@ json Tile::OSDPortsToJson() {
         out_json.emplace(name, loc_json);
     }
     return out_json;
+}
+
+void Tile::parseAndSetSignals(const std::string& msg) {
+    std::istringstream ss(msg);
+    std::string token;
+
+    while (std::getline(ss, token, ';')) {
+
+        token.erase(0, token.find_first_not_of(" \t"));
+        token.erase(token.find_last_not_of(" \t") + 1);
+        // trim(token);
+        if (token.empty()) continue;
+
+        size_t pos = token.find(':');
+        if (pos == std::string::npos) continue;
+
+        std::string key = token.substr(0, pos);
+        std::string valueStr = token.substr(pos + 1);
+
+        key.erase(0, key.find_first_not_of(" \t"));
+        key.erase(key.find_last_not_of(" \t") + 1);
+        valueStr.erase(0, valueStr.find_first_not_of(" \t"));
+        valueStr.erase(valueStr.find_last_not_of(" \t") + 1);
+
+        // Decide where to store
+        if (key == "Zoom_speed") {
+            ZoomSpeed = std::stod(valueStr);
+        }
+        else if (key == "Tilt_speed") {
+            TiltSpeed = std::stod(valueStr);
+        }
+        else if (key == "Pan_speed") {
+            PanSpeed = std::stod(valueStr);
+        }
+        else if (key == "source") {
+            // std::cout << "New source value: " << valueStr << "\n";
+            i_Source = valueStr;
+        }
+    }
 }

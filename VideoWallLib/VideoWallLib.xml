@@ -18,7 +18,11 @@
   <Model Name="VideoWallLib.OSDText"/>
   <Model Name="VideoWallLib.SKAARHOJRawPanelIO"/>
   <Model Name="VideoWallLib.SKAARHOJRawPanelMenu"/>
+  <Model Name="VideoWallLib.SKAARHOJTCPCom"/>
+  <Model Name="VideoWallLib.SourceOrchestrator"/>
   <Model Name="VideoWallLib.Tile"/>
   <Model Name="VideoWallLib.TilePort"/>
+  <Model Name="VideoWallLib.VisionController"/>
+  <Model Name="VideoWallLib.VisionControllerContainer"/>
  </Models>
 </Library>

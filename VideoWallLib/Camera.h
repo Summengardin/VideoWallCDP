@@ -8,8 +8,8 @@
 #include <Signal/CDPSignal.h>
 #include <CDPParameter/CDPParameter.h>
 #include <CDPAlarm/CDPAlarm.h>
-
-#include "OperationUtilities/Parameters/StringParameter.h"
+#include "OperationUtilities/Signals/DeliveryConfigString.h"
+// #include "OperationUtilities/Parameters/StringParameter.h"
 #include "OperationUtilities/Parameters/calibrationparameter.h"
 #include "json.hpp"
 #include "uri.h"
@@ -36,16 +36,22 @@ protected:
     OperationUtilities::CalibrationParameter Width;
     OperationUtilities::CalibrationParameter Height;
     OperationUtilities::CalibrationParameter Framerate;
-    StringParameter DisplayName;
-    StringParameter IP;
-    StringParameter Format;
-    StringParameter Type;
-    StringParameter URI;
+
+    // OperationUtilities::DeliveryConfigString DisplayName;
+    // OperationUtilities::DeliveryConfigString IP;
+    // OperationUtilities::DeliveryConfigString Format;
+    // OperationUtilities::DeliveryConfigString Type;
+    // OperationUtilities::DeliveryConfigString URI;
     using CDPComponent::requestedState;
     using CDPComponent::ts;
     using CDPComponent::fs;
 
     Uri uri;
+    OperationUtilities::DeliveryConfigString URI;
+    OperationUtilities::DeliveryConfigString DisplayName;
+    OperationUtilities::DeliveryConfigString IP;
+    OperationUtilities::DeliveryConfigString Format;
+    OperationUtilities::DeliveryConfigString Type;
 };
 
 } // namespace VideoWallLib

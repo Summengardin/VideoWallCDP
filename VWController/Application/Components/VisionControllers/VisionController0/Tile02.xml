@@ -8,7 +8,7 @@
   <Signals>
     <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
     <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
-    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Source" Type="string"></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="Source" Type="string"></Signal>
     <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="Brightness" Type="double"></Signal>
     <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="PanSpeed" Type="double"></Signal>
     <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="TiltSpeed" Type="double"></Signal>
@@ -16,6 +16,8 @@
     <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="ZoomAbs" Type="double"></Signal>
     <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="PanAbs" Type="double"></Signal>
     <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="TiltAbs" Type="double"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="i_TiltSpeed" Type="double"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="i_Brightness" Type="double"></Signal>
   </Signals>
 
   <Alarms>
@@ -39,7 +41,7 @@
         <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
         <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
       </Connections></Port>
-    <Port Alignment="center" Description="TopCenter" Input="1" Model="VideoWallLib.OSDPort" Name="OSDTC" PosX="960" TextIndex="2" Routing="....OSD.OSDDataDistributor.OSDPort6">
+    <Port Alignment="left" Description="TopCenter" Input="1" Model="VideoWallLib.OSDPort" Name="OSDTC" PosX="960" TextIndex="2" Routing="....OSD.OSDDataDistributor.OSDPort6">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -54,7 +56,7 @@
         <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
         <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
       </Connections></Port>
-    <Port Alignment="right" Description="TopRight" Input="1" Model="VideoWallLib.OSDPort" Name="OSDTR" PosX="1920" TextIndex="3" Routing="....OSD.OSDDataDistributor.OSDPort7">
+    <Port Alignment="left" Description="TopRight" Input="1" Model="VideoWallLib.OSDPort" Name="OSDTR" PosX="1920" TextIndex="3" Routing="....OSD.OSDDataDistributor.OSDPort7">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -110,6 +112,8 @@
 
   <Connectors>
     <Connector Name="MQTTPublish" Object=".Publisher.Publish"></Connector>
+    <Connector Name="VisionControllerConnector" Object=""></Connector>
+    <Connector Name="MessageHandlerConnector" Object=""></Connector>
   </Connectors>
     
   

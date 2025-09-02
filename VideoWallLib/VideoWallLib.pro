@@ -18,10 +18,14 @@ HEADERS += \
     OSDPort.h \
     SKAARHOJRawPanelIO.h \
     SKAARHOJRawPanelMenu.h \
+    SKAARHOJTCPCom.h \
     SourceOrchestrator.h \
     Tile.h \
     TilePort.h \
+    VisionController.h \
+    VisionControllerContainer.h \
     base64.h \
+    handControllerEasy.h \
     skhojhandcontroller.h \
     uri.h \
     videowalllib.h \
@@ -40,11 +44,15 @@ SOURCES += \
     OSDPort.cpp \
     SKAARHOJRawPanelIO.cpp \
     SKAARHOJRawPanelMenu.cpp \
+    SKAARHOJTCPCom.cpp \
     SourceOrchestrator.cpp \
     Tile.cpp \
     TilePort.cpp \
     VideoWallLibBuilder.cpp \
+    VisionController.cpp \
+    VisionControllerContainer.cpp \
     base64.cpp \
+    handControllerEasy.cpp \
     skhojhandcontroller.cpp \
     uri.cpp
 
@@ -65,6 +73,7 @@ DISTFILES += $$files(*.xml, true) \
     Templates/Models/VideoWallLib.PopulateComboBox_T.xml \
     Templates/Models/VideoWallLib.SKAARHOJRawPanelIO.xml \
     Templates/Models/VideoWallLib.SKAARHOJRawPanelMenu.xml \
+    Templates/Models/VideoWallLib.SKAARHOJTCPCom.xml \
     Templates/Models/VideoWallLib.SourceOrchestrator.xml \
     Templates/Models/VideoWallLib.Tile.Models.MQTTTopic1.xml \
     Templates/Models/VideoWallLib.Tile.Models.mtBrightness1.xml \
@@ -76,6 +85,8 @@ DISTFILES += $$files(*.xml, true) \
     Templates/Models/VideoWallLib.Tile.Models.mtZoomAbs1.xml \
     Templates/Models/VideoWallLib.Tile.Models.mtZoomSpeed1.xml \
     Templates/Models/VideoWallLib.Tile.xml \
-    Templates/Models/VideoWallLib.TilePort.xml
+    Templates/Models/VideoWallLib.TilePort.xml \
+    Templates/Models/VideoWallLib.VisionController.xml \
+    Templates/Models/VideoWallLib.VisionControllerContainer.xml
 
 load(cdp)

@@ -25,10 +25,6 @@
     <Subcomponent Model="VideoWallLib.Camera" Name="Camera08" src="Components/Cameras/Camera08.xml"></Subcomponent>
     <Subcomponent Model="VideoWallLib.Camera" Name="Camera09" src="Components/Cameras/Camera09.xml"></Subcomponent>
     <Subcomponent Model="VideoWallLib.Camera" Name="Camera10" src="Components/Cameras/Camera10.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera11" src="Components/Cameras/Camera11.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera12" src="Components/Cameras/Camera12.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera13" src="Components/Cameras/Camera13.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Camera14" src="Components/Cameras/Camera14.xml"></Subcomponent>
   </Subcomponents>
 
   <ArgumentMessages>
