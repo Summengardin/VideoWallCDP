@@ -35,7 +35,6 @@ public:
     json toJson() const;
 
 protected:
-    CDPPort pCamera;
     OperationUtilities::CalibrationParameter Width;
     OperationUtilities::CalibrationParameter Height;
     OperationUtilities::CalibrationParameter Framerate;

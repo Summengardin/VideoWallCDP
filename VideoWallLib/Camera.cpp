@@ -39,7 +39,6 @@ void Camera::Create(const char* fullName)
 {
     CDPComponent::Create(fullName);
     MQTTPublish.Create("MQTTPublish",this);
-    pCamera.Create("pCamera",this);
     Width.Create("Width",this);
     Height.Create("Height",this);
     DisplayName.Create("DisplayName",this);

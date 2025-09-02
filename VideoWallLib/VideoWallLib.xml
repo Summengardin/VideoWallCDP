@@ -1,8 +1,6 @@
 <Library Name="VideoWallLib">
  <Models>
-  <Model Name="VideoWallLib.Camera">
-   <Model Name="VideoWallLib.Camera.MQTTTopic"/>
-  </Model>
+  <Model Name="VideoWallLib.Camera"/>
   <Model Name="VideoWallLib.CameraPort"/>
   <Model Name="VideoWallLib.Layout"/>
   <Model Name="VideoWallLib.LayoutPort"/>

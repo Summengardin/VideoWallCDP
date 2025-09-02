@@ -46,7 +46,6 @@ SOURCES += \
     uri.cpp
 
 DISTFILES += $$files(*.xml, true) \
-    Templates/Models/VideoWallLib.Camera.MQTTTopic.xml \
     Templates/Models/VideoWallLib.Camera.xml \
     Templates/Models/VideoWallLib.CameraPort.xml \
     Templates/Models/VideoWallLib.Layout.xml \
