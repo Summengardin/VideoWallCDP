@@ -38,24 +38,7 @@
         <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Format" Routing="..Format" Type="string" Value=""></Connection>        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Type" Routing="..Type" Type="string" Value=""></Connection>        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="URI" Routing="..URI" Type="string" Value=""></Connection>      </Connections></Port>
   </Ports>
 
-  <Subcomponents>
-    <Operator Model="Sequencer.JSONEncode" Name="JSONEncode">
-      <Argument BinaryEncodedLength="0" CppName="m_output" Description="JSON encoded output" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="IP" Routing="..IP" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="DisplayName" Routing="..DisplayName" Type="string" Value=""></Argument>
-      <Argument CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;int&gt;" Name="Width" Routing="..Width" Type="int" Value="0"></Argument>
-      <Argument CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;int&gt;" Name="Height" Routing="..Height" Type="int" Value="0"></Argument>
-      <Argument CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;float&gt;" Name="Framerate" Routing="..Framerate" Type="float" Value="0"></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="Format" Routing="..Format" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="Type" Routing="..Type" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="" Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Input="1" Model="Argument&lt;string&gt;" Name="URI" Routing="..URI" Type="string" Value=""></Argument></Operator>
-    <Operator Model="Automation.SearchReplace" Name="TopicFromName" Regex="0" Replace="/" Search="." Type="string">
-      <Argument BinaryEncodedLength="0" CppName="m_input" Description="Default input argument" Input="1" Model="DefaultArgument&lt;string&gt;" Name="In" Routing="..Name" Type="string" Value=""></Argument>
-      <Argument BinaryEncodedLength="0" CppName="m_output" Description="Default output argument" Input="0" Model="DefaultArgument&lt;string&gt;" Name="Out" Routing="" Type="string" Value=""></Argument></Operator>
-    
-    
-            <Subcomponent Model="VideoWallLib.Camera.MQTTTopic" Name="MQTTTopic" src="Components/Cameras/Camera14/MQTTTopic.xml"></Subcomponent>
-    <Operator Description="MQTT Publisher Sequencer block to publish data to the MQTT network via Publish events. Has to be connected to a MQTTClient, via the MQTTClient connector." Model="MQTTIO.Publisher" Name="Publisher">
+  <Subcomponents>    <Operator Description="MQTT Publisher Sequencer block to publish data to the MQTT network via Publish events. Has to be connected to a MQTTClient, via the MQTTClient connector." Model="MQTTIO.Publisher" Name="Publisher">
       <ArgumentMessage Command="131328" Description="Will be emitted when MQTTClient has established the connection with the configured broker" Input="0" Model="Sequencer.DefaultEvent" Name="Connected"></ArgumentMessage>
       <ArgumentMessage Command="131328" Description="Will be emitted when MQTTClient has lost the connection with the configured broker" Input="0" Model="Sequencer.DefaultEvent" Name="Disconnected"></ArgumentMessage>
       <ArgumentMessage Command="131328" Data="Topic;Payload;QoS;Retain;AutoAlias;ResponseTopic;CorrelationData" Description="Invokes publishing of Payload data to the Topic. Can contain other Arguments that modify the MQTT publishing behavior." Input="1" Model="Sequencer.DefaultEvent" Name="Publish"></ArgumentMessage>
