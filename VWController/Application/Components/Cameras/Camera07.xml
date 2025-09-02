@@ -29,16 +29,7 @@
     <Alarm Description="Alarm is triggered (with Text containing the list of errors) when some node of the component (like operator) has configuration fault." Level="Error" Name="ConfigurationFaults"></Alarm>
   </Alarms>
 
-  <Ports>
-    <Port Input="0" Model="CDPPort" Name="pCamera">
-
-      <Connections>
-        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="IP" Routing="..IP" Type="string" Value=""></Connection>        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="DisplayName" Routing="..DisplayName" Type="string" Value=""></Connection>        <Connection Input="0" Model="ValuedConnection&lt;int&gt;" Name="Width" Routing="..Width" Type="int" Value="0"></Connection>
-        <Connection Input="0" Model="ValuedConnection&lt;int&gt;" Name="Height" Routing="..Height" Type="int" Value="0"></Connection>
-        <Connection Input="0" Model="ValuedConnection&lt;float&gt;" Name="Framerate" Routing="..Framerate" Type="float" Value="0"></Connection>
-        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Format" Routing="..Format" Type="string" Value=""></Connection>        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="Type" Routing="..Type" Type="string" Value=""></Connection>        <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="URI" Routing="..URI" Type="string" Value=""></Connection>      </Connections></Port>
-  </Ports>
-
+  <Ports></Ports>
   <Subcomponents>    <Operator Description="MQTT Publisher Sequencer block to publish data to the MQTT network via Publish events. Has to be connected to a MQTTClient, via the MQTTClient connector." Model="MQTTIO.Publisher" Name="Publisher">
       <ArgumentMessage Command="131328" Description="Will be emitted when MQTTClient has established the connection with the configured broker" Input="0" Model="Sequencer.DefaultEvent" Name="Connected"></ArgumentMessage>
       <ArgumentMessage Command="131328" Description="Will be emitted when MQTTClient has lost the connection with the configured broker" Input="0" Model="Sequencer.DefaultEvent" Name="Disconnected"></ArgumentMessage>
