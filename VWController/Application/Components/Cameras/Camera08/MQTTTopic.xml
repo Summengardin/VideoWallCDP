@@ -41,7 +41,7 @@
   </Subcomponents>
 
   <ArgumentMessages>
-    <ArgumentMessage Command="0" Input="0" Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC" RoutingList="..MQTTClientRPC"></ArgumentMessage>
+    <ArgumentMessage Command="0" Input="0" Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC" RoutingList=""></ArgumentMessage>
   </ArgumentMessages>
 
   <Parameters>
