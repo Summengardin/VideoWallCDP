@@ -1,4 +1,4 @@
-<Component Model="VideoWallLib.VisionController" Name="VisionController" src="Components/VisionControllerContainer/VisionController.xml" Description="Simple component">
+<Component Model="VideoWallLib.VisionController" Name="VisionController2" src="Components/VisionControllers/VisionController2.xml" Description="Simple component">
   <SchedulingOrder>TopDown</SchedulingOrder>
   <SchedulingGroup>Default</SchedulingGroup>
   <fs>100</fs>
@@ -20,9 +20,9 @@
   </ArgumentMessages>
 
   <Subcomponents>
-    <Subcomponent Model="VideoWallLib.Tile" Name="Tile" src="Components/VisionControllerContainer/VisionController/Tile.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Tile" Name="Tile1" src="Components/VisionControllerContainer/VisionController/Tile1.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Tile" Name="Tile2" src="Components/VisionControllerContainer/VisionController/Tile2.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Tile" Name="Tile3" src="Components/VisionControllerContainer/VisionController/Tile3.xml"></Subcomponent></Subcomponents>
+    <Subcomponent Model="VideoWallLib.Tile" Name="Tile21" src="Components/VisionControllers/VisionController2/Tile21.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile" Name="Tile22" src="Components/VisionControllers/VisionController2/Tile22.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile" Name="Tile23" src="Components/VisionControllers/VisionController2/Tile23.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile" Name="Tile24" src="Components/VisionControllers/VisionController2/Tile24.xml"></Subcomponent></Subcomponents>
   
 </Component>

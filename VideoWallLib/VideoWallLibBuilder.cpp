@@ -18,6 +18,8 @@ VideoWallLibBuilder implementation.
 #include "SKAARHOJRawPanelIO.h"
 #include "SKAARHOJRawPanelMenu.h"
 #include "VisionController.h"
+#include "SKAARHOJTCPCom.h"
+#include "VisionController.h"
 #include "VisionController.h"
 #include "VisionControllerContainer.h"
 #include "SKAARHOJTCPCom.h"

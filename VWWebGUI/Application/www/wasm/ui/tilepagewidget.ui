@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <ui version="4.0">
  <class>Form</class>
  <widget class="QWidget" name="Form">
@@ -23,9 +23,9 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>0</y>
-        <width>1201</width>
-        <height>1145</height>
+        <y>-240</y>
+        <width>1187</width>
+        <height>1385</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -39,7 +39,7 @@
            <property name="spacing">
             <number>20</number>
            </property>
-           <item row="1" column="0">
+           <item column="0" row="1">
             <widget class="CDPBaseUiLoaderWidget" name="uiLoaderWidget_2">
              <property name="cdpTargetRouting">
               <string>VWController.VisionControllers.VisionController0.Tile03</string>
@@ -49,7 +49,7 @@
              </property>
             </widget>
            </item>
-           <item row="0" column="0">
+           <item column="0" row="0">
             <widget class="CDPBaseUiLoaderWidget" name="uiLoaderWidget">
              <property name="cdpTargetRouting">
               <string>VWController.VisionControllers.VisionController0.Tile01</string>
@@ -59,7 +59,7 @@
              </property>
             </widget>
            </item>
-           <item row="0" column="1">
+           <item column="1" row="0">
             <widget class="CDPBaseUiLoaderWidget" name="uiLoaderWidget_3">
              <property name="cdpTargetRouting">
               <string>VWController.VisionControllers.VisionController0.Tile02</string>
@@ -69,7 +69,7 @@
              </property>
             </widget>
            </item>
-           <item row="1" column="1">
+           <item column="1" row="1">
             <widget class="CDPBaseUiLoaderWidget" name="uiLoaderWidget_4">
              <property name="cdpTargetRouting">
               <string>VWController.VisionControllers.VisionController0.Tile04</string>
@@ -84,7 +84,7 @@
          <item>
           <widget class="CDPBaseLine" name="horizontalLine">
            <property name="svgFile">
-            <string notr="true">:/themes/openbridge5_day/backgrounds/bgBorder.svg</string>
+            <string notr="true">:/themes/openbridge5_dusk/backgrounds/bgBorder.svg</string>
            </property>
           </widget>
          </item>
@@ -93,7 +93,7 @@
            <property name="spacing">
             <number>20</number>
            </property>
-           <item row="1" column="0">
+           <item column="0" row="1">
             <widget class="CDPBaseUiLoaderWidget" name="uiLoaderWidget_5">
              <property name="cdpTargetRouting">
               <string>VWController.VisionControllers.VisionController1.Tile13</string>
@@ -103,7 +103,7 @@
              </property>
             </widget>
            </item>
-           <item row="0" column="0">
+           <item column="0" row="0">
             <widget class="CDPBaseUiLoaderWidget" name="uiLoaderWidget_6">
              <property name="cdpTargetRouting">
               <string>VWController.VisionControllers.VisionController1.Tile11</string>
@@ -113,7 +113,7 @@
              </property>
             </widget>
            </item>
-           <item row="0" column="1">
+           <item column="1" row="0">
             <widget class="CDPBaseUiLoaderWidget" name="uiLoaderWidget_7">
              <property name="cdpTargetRouting">
               <string>VWController.VisionControllers.VisionController1.Tile12</string>
@@ -123,7 +123,7 @@
              </property>
             </widget>
            </item>
-           <item row="1" column="1">
+           <item column="1" row="1">
             <widget class="CDPBaseUiLoaderWidget" name="uiLoaderWidget_8">
              <property name="cdpTargetRouting">
               <string>VWController.VisionControllers.VisionController1.Tile14</string>

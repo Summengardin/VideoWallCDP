@@ -84,7 +84,7 @@ void Tile::Configure(const char* componentXML)
     indexedSignals.resize(10);
     indexedSignalsPrev.resize(10);
     indexedSignalsChanged.resize(10);
-    MessageHandlerConnector.ConnectTo("VWController.VisionControllerContainer");
+    MessageHandlerConnector.ConnectTo("VWController.VisionControllers");
 }
 
 /*!

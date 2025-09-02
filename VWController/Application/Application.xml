@@ -14,13 +14,12 @@
 
   <Subcomponents>
     <Subcomponent Name="CDP"        Model="CDP"        src="Components\CDP.xml"></Subcomponent>
-    <Subcomponent Model="CDPComponent" Name="VisionControllers" src="Components/VisionControllers.xml"></Subcomponent>
     <Subcomponent Model="CDPComponent" Name="Cameras" src="Components/Cameras.xml"></Subcomponent>
     <Subcomponent Encryption="Unencrypted" ListenAddress="127.0.0.1" ListenPort="1883" Model="MQTTIO.MQTTBroker" Name="MQTTBroker" src="Components/MQTTBroker.xml"></Subcomponent>
     <Subcomponent BrokerHost="127.0.0.1" BrokerPort="1883" Encryption="Unencrypted" Model="MQTTIO.MQTTClient" Name="MQTTClient" src="Components/MQTTClient.xml"></Subcomponent>
     <Subcomponent Model="CDPComponent" Name="OSD" src="Components/OSD.xml"></Subcomponent>
     <Subcomponent Model="CDPComponent" Name="IO" src="Components/IO.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.VisionControllerContainer" Name="VisionControllerContainer" src="Components/VisionControllerContainer.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.VisionControllerContainer" Name="VisionControllers" src="Components/VisionControllers.xml"></Subcomponent>
   </Subcomponents>
 
   <Signals>

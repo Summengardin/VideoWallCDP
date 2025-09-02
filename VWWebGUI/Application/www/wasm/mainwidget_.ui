@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <ui version="4.0">
  <class>mainWindow</class>
  <widget class="CDPBaseMainWindow" name="mainWindow">
@@ -19,9 +19,9 @@
    <string>Main Window</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QMainWindow &gt; QWidget { background-image: url(:/themes/openbridge5_day/backgrounds/bgMain.svg); }
-CDPBaseTabWidget &gt; QWidget &gt; QWidget { background:transparent; }
-CDPBaseStackedWidget &gt; QWidget { background: transparent; }
+   <string notr="true">QMainWindow > QWidget { background-image: url(:/themes/openbridge5_day/backgrounds/bgMain.svg); }
+CDPBaseTabWidget > QWidget > QWidget { background:transparent; }
+CDPBaseStackedWidget > QWidget { background: transparent; }
 
 QMessageBox {
  border-image: url(/tmp/cdp/themes/openbridge5_day/backgrounds/bgMsgBox_cdpBackground.png) 6 30 6 6;
@@ -86,29 +86,29 @@ QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
   min-width: 38px;
 }
 
-QMainWindow[scrollBarSize=&quot;1&quot;] QScrollBar:vertical,
-QMainWindow[scrollBarSize=&quot;1&quot;] QScrollBar:horizontal {
+QMainWindow[scrollBarSize="1"] QScrollBar:vertical,
+QMainWindow[scrollBarSize="1"] QScrollBar:horizontal {
   border-radius: 10px;
   width: 20px;
   height: 20px;
 }
-QMainWindow[scrollBarSize=&quot;1&quot;] QScrollBar::handle:vertical,
-QMainWindow[scrollBarSize=&quot;1&quot;] QScrollBar::handle:horizontal {
+QMainWindow[scrollBarSize="1"] QScrollBar::handle:vertical,
+QMainWindow[scrollBarSize="1"] QScrollBar::handle:horizontal {
   border-radius: 8px;
   min-height:18px;
   min-width: 18px;
 }
 
-QMainWindow[scrollBarSize=&quot;2&quot;] QScrollBar:vertical,
-QMainWindow[scrollBarSize=&quot;2&quot;] QScrollBar:horizontal {
+QMainWindow[scrollBarSize="2"] QScrollBar:vertical,
+QMainWindow[scrollBarSize="2"] QScrollBar:horizontal {
   background-color: #14000000;
   border: 0px solid #14000000;
   border-radius: 3px;
   width: 6px;
   height: 6px;
 }
-QMainWindow[scrollBarSize=&quot;2&quot;] QScrollBar::handle:vertical,
-QMainWindow[scrollBarSize=&quot;2&quot;] QScrollBar::handle:horizontal {
+QMainWindow[scrollBarSize="2"] QScrollBar::handle:vertical,
+QMainWindow[scrollBarSize="2"] QScrollBar::handle:horizontal {
   background-color: #33000000;
   border: 0px solid #33000000;
   border-radius: 3px;
@@ -117,8 +117,8 @@ QMainWindow[scrollBarSize=&quot;2&quot;] QScrollBar::handle:horizontal {
 }
 
 /* Allow overriding scroll area styling set by QMainWindow */
-QScrollArea[scrollBarSize=&quot;0&quot;] QScrollBar:vertical,
-QScrollArea[scrollBarSize=&quot;0&quot;] QScrollBar:horizontal {
+QScrollArea[scrollBarSize="0"] QScrollBar:vertical,
+QScrollArea[scrollBarSize="0"] QScrollBar:horizontal {
   margin: 0px 0px 0px 0px;
   background-color: #0C000000;
   border: 1px solid #0C000000;
@@ -126,8 +126,8 @@ QScrollArea[scrollBarSize=&quot;0&quot;] QScrollBar:horizontal {
   width: 40px;
   height: 40px;
 }
-QScrollArea[scrollBarSize=&quot;0&quot;] QScrollBar::handle:vertical,
-QScrollArea[scrollBarSize=&quot;0&quot;] QScrollBar::handle:horizontal {
+QScrollArea[scrollBarSize="0"] QScrollBar::handle:vertical,
+QScrollArea[scrollBarSize="0"] QScrollBar::handle:horizontal {
   margin: 0px 0px 0px 0px;
   background-color: #FFFFFF;
   border: 1px solid #CDCDCD;
@@ -137,8 +137,8 @@ QScrollArea[scrollBarSize=&quot;0&quot;] QScrollBar::handle:horizontal {
 }
 
 /* Allow overriding scroll area styling set by QMainWindow */
-QScrollArea[scrollBarSize=&quot;1&quot;] QScrollBar:vertical,
-QScrollArea[scrollBarSize=&quot;1&quot;] QScrollBar:horizontal {
+QScrollArea[scrollBarSize="1"] QScrollBar:vertical,
+QScrollArea[scrollBarSize="1"] QScrollBar:horizontal {
   border: 1px solid #0C000000;
   border-radius: 10px;
   background-color: #0C000000;
@@ -146,8 +146,8 @@ QScrollArea[scrollBarSize=&quot;1&quot;] QScrollBar:horizontal {
   width: 20px;
   height: 20px;
 }
-QScrollArea[scrollBarSize=&quot;1&quot;] QScrollBar::handle:vertical,
-QScrollArea[scrollBarSize=&quot;1&quot;] QScrollBar::handle:horizontal {
+QScrollArea[scrollBarSize="1"] QScrollBar::handle:vertical,
+QScrollArea[scrollBarSize="1"] QScrollBar::handle:horizontal {
   border: 1px solid #CDCDCD;
   border-radius: 8px;
   background-color: #FFFFFF;
@@ -157,8 +157,8 @@ QScrollArea[scrollBarSize=&quot;1&quot;] QScrollBar::handle:horizontal {
 }
 
 /* Allow overriding scroll area styling set by QMainWindow */
-QScrollArea[scrollBarSize=&quot;2&quot;] QScrollBar:vertical,
-QScrollArea[scrollBarSize=&quot;2&quot;] QScrollBar:horizontal {
+QScrollArea[scrollBarSize="2"] QScrollBar:vertical,
+QScrollArea[scrollBarSize="2"] QScrollBar:horizontal {
   border: 0px solid #14000000;
   border-radius: 3px;
   background-color: #14000000;
@@ -166,8 +166,8 @@ QScrollArea[scrollBarSize=&quot;2&quot;] QScrollBar:horizontal {
   width: 6;
   height: 6px;
 }
-QScrollArea[scrollBarSize=&quot;2&quot;] QScrollBar::handle:vertical,
-QScrollArea[scrollBarSize=&quot;2&quot;] QScrollBar::handle:horizontal {
+QScrollArea[scrollBarSize="2"] QScrollBar::handle:vertical,
+QScrollArea[scrollBarSize="2"] QScrollBar::handle:horizontal {
   border: 0px solid #33000000;
   border-radius: 3px;
   background-color: #33000000;
@@ -176,54 +176,54 @@ QScrollArea[scrollBarSize=&quot;2&quot;] QScrollBar::handle:horizontal {
   min-width: 6px;
 }
 
-CDPBaseLabel[valueStyle=&quot;1&quot;]
+CDPBaseLabel[valueStyle="1"]
 {
  color: #325B9A;
  font-size: 48px;
- font-family: &quot;Open Sans&quot;;
+ font-family: "Open Sans";
 }
-CDPBaseLabel[valueStyle=&quot;2&quot;], CDPBaseClockDigi[valueStyle=&quot;2&quot;]
+CDPBaseLabel[valueStyle="2"], CDPBaseClockDigi[valueStyle="2"]
 {
  color: #325B9A;
  font-size: 32px;
- font-family: &quot;Open Sans&quot;;
+ font-family: "Open Sans";
 }
-CDPBaseLabel[valueStyle=&quot;3&quot;]
+CDPBaseLabel[valueStyle="3"]
 {
  color: #325B9A;
  font-size: 24px;
- font-family: &quot;Open Sans&quot;;
+ font-family: "Open Sans";
 }
-CDPBaseLabel[valueStyle=&quot;4&quot;]
+CDPBaseLabel[valueStyle="4"]
 {
  color: #325B9A;
  font-size: 16px;
- font-family: &quot;Open Sans&quot;;
+ font-family: "Open Sans";
 }
 
-CDPBaseLabel[titleStyle=&quot;1&quot;]
+CDPBaseLabel[titleStyle="1"]
 {
  color: #666666;
  font-size: 24px;
- font-family: &quot;Open Sans&quot;;
+ font-family: "Open Sans";
 }
-CDPBaseLabel[titleStyle=&quot;2&quot;]
+CDPBaseLabel[titleStyle="2"]
 {
  color: #E5000000;
  font-size: 16px;
- font-family: &quot;Open Sans&quot;;
+ font-family: "Open Sans";
 }
-CDPBaseLabel[titleStyle=&quot;3&quot;]
+CDPBaseLabel[titleStyle="3"]
 {
  color: #666666;
  font-size: 16px;
- font-family: &quot;Open Sans&quot;;
+ font-family: "Open Sans";
 }
-CDPBaseLabel[titleStyle=&quot;4&quot;]
+CDPBaseLabel[titleStyle="4"]
 {
  color: #666666;
  font-size: 12px;
- font-family: &quot;Open Sans&quot;;
+ font-family: "Open Sans";
 }
 
 QScrollBar::add-line:vertical { height: 0px; }
@@ -237,7 +237,7 @@ QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal { background:
 QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal { background: none; }
 
 QScrollArea { background: transparent; border: 0px; }
-QScrollArea &gt; QWidget &gt; QWidget { background: transparent; }
+QScrollArea > QWidget > QWidget { background: transparent; }
 
 QHeaderView { qproperty-defaultAlignment: AlignVCenter; }
 QHeaderView::section{ background-color: #F0F0F0; border: 0px solid #6c6c6c; color: #1A1A1A; border-bottom: 1px solid #14000000; }
@@ -536,7 +536,7 @@ QListView { background: #FFFFFF; alternate-background-color: #00000000; color: #
           <item>
            <widget class="CDPBaseLabel" name="label_4">
             <property name="text">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Dark&lt;br/&gt;mode&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             <string>&lt;html>&lt;head/>&lt;body>&lt;p>&lt;span style=" font-size:9pt;">Dark&lt;br/>mode&lt;/span>&lt;/p>&lt;/body>&lt;/html></string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -675,7 +675,7 @@ QListView { background: #FFFFFF; alternate-background-color: #00000000; color: #
              </stringlist>
             </property>
             <property name="cdpTargetRouting">
-             <string>VWController.VisionControllers</string>
+             <string>VWController.VisionControllers_</string>
             </property>
            </widget>
           </item>
@@ -837,7 +837,7 @@ border: 2px solid rgb(200,200,200)}</string>
                           </stringlist>
                          </property>
                          <property name="cdpTargetRouting">
-                          <string>VWController.VisionControllers.VisionController0</string>
+                          <string>VWController.VisionControllers_.VisionController0</string>
                          </property>
                          <property name="uiFileName">
                           <string>tile.ui</string>
@@ -879,7 +879,7 @@ border: 2px solid rgb(200,200,200)}</string>
                           </stringlist>
                          </property>
                          <property name="cdpTargetRouting">
-                          <string>VWController.VisionControllers.VisionController1</string>
+                          <string>VWController.VisionControllers_.VisionController1</string>
                          </property>
                          <property name="uiFileName">
                           <string>tile.ui</string>
@@ -1436,7 +1436,7 @@ border: 2px solid rgb(200,200,200)}</string>
                         </stringlist>
                        </property>
                        <property name="cdpTargetRouting">
-                        <string>VWController.VisionControllers.VisionController0</string>
+                        <string>VWController.VisionControllers_.VisionController0</string>
                        </property>
                        <property name="uiFileName">
                         <string>tile.ui</string>
@@ -1478,7 +1478,7 @@ border: 2px solid rgb(200,200,200)}</string>
                         </stringlist>
                        </property>
                        <property name="cdpTargetRouting">
-                        <string>VWController.VisionControllers.VisionController1</string>
+                        <string>VWController.VisionControllers_.VisionController1</string>
                        </property>
                        <property name="uiFileName">
                         <string>tile.ui</string>

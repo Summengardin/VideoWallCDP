@@ -41,8 +41,8 @@ void SKAARHOJTCPCom::Configure(const char* componentXML)
 {
     IOServer::Configure(componentXML);
     std::string longName = this->GetNodeLongName();
-    std::string ConnectorName = replaceSubcomponent(longName, "VisionControllerContainer");
-    PublishToMessagageHandler.ConnectTo("VWController.VisionControllerContainer"); //TCP connector and VisionController container must be in same layer
+    std::string ConnectorName = replaceSubcomponent(longName, "VisionControllers");
+    PublishToMessagageHandler.ConnectTo("VWController.VisionControllers"); //TCP connector and VisionController container must be in same layer
 }
 
 void SKAARHOJTCPCom::Activate()

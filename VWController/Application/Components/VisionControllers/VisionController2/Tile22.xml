@@ -1,4 +1,4 @@
-<Component Model="VideoWallLib.Tile" Name="Tile3" src="Components/VisionControllerContainer/VisionController2/Tile3.xml" Description="Simple component">
+<Component Model="VideoWallLib.Tile" Name="Tile22" src="Components/VisionControllers/VisionController2/Tile22.xml" Description="Simple component">
   <SchedulingOrder>TopDown</SchedulingOrder>
   <SchedulingGroup>Default</SchedulingGroup>
   <fs>5</fs>

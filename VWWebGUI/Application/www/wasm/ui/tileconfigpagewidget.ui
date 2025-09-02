@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <ui version="4.0">
  <class>Form</class>
  <widget class="QWidget" name="Form">
@@ -120,7 +120,7 @@ then Tile</string>
              </stringlist>
             </property>
             <property name="cdpTargetRouting">
-             <string>VWController.VisionControllers.VisionController0.Tile01</string>
+             <string>VWController.VisionControllers_.VisionController0.Tile01</string>
             </property>
             <property name="uiFileName">
              <string>./ui/elements/osdcontainer.ui</string>
