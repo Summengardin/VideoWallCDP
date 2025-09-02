@@ -140,9 +140,9 @@ void TimestampGenerator::Create(const char* fullName)
 {
     CDPComponent::Create(fullName);
     TimestampFormatted.Create("TimestampFormatted",this);
-    Format.Create("Format", this);
-    UTC.Create("UTC", this);
-    TZ.Create("TZ", this);
+    Format.Create("Format",this);
+    UTC.Create("UTC",this);
+    TZ.Create("TZ",this);
 }
 
 /*!
@@ -184,5 +184,5 @@ void TimestampGenerator::Configure(const char* componentXML)
 */
 void TimestampGenerator::ProcessNull()
 {
-    TimestampFormatted = time_utils::formatted_now(Format.String.c_str(), UTC.Toggle, TZ.String);
+    TimestampFormatted = time_utils::formatted_now(std::string(Format).c_str(), UTC, TZ);
 }

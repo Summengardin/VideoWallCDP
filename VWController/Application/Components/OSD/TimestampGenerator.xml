@@ -8,16 +8,13 @@
     <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
     <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
     <Signal Input="0" Model="CDPSignal&lt;string&gt;" Name="TimestampFormatted" Type="string"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;bool&gt;" Name="UTC" Type="bool"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="TZ" Type="string"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Format" Type="string"></Signal>
   </Signals>
 
   <Alarms>
     <Alarm Description="A component was suspended!" Name="Component Suspended" Text="Component was suspended!"></Alarm>
     <Alarm Description="Alarm is triggered (with Text containing the list of errors) when some node of the component (like operator) has configuration fault." Level="Error" Name="ConfigurationFaults"></Alarm>
   </Alarms>
-
-  <Parameters>
-    <Parameter Description="Parameter that will be stored to disk outside of CDP. Will make the parameter persistent even with an Overwrite deploy." Model="StringParameter" Name="Format" String="%Y-%m-%d %H:%M:%S"></Parameter>
-    <Parameter Description="Parameter that will be stored to disk outside of CDP. Will make the parameter persistent even with an Overwrite deploy." Model="ToggleParameter" Name="UTC" Toggle="0"></Parameter>
-    <Parameter Description="Timezone" Model="StringParameter" Name="TZ" String="Europe/Oslo"></Parameter>
-  </Parameters>
 </Component>

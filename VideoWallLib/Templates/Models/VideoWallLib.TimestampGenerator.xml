@@ -10,10 +10,9 @@
  </Attributes>
  <Signals>
   <Signal Input="0" Model="CDPSignal&lt;string&gt;" Name="TimestampFormatted" Type="string"></Signal>
+    <Signal Model="CDPSignal&lt;bool&gt;" Name="UTC" TypeColorHint="" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="TZ" Input="1"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Format"></Signal>
  </Signals>
- <Parameters>
-  <Parameter Model="StringParameter" Name="Format" String="%Y-%m-%d %H:%M:%S" TypeColorHint=""></Parameter>
-  <Parameter Model="ToggleParameter" Name="UTC" Toggle="0" TypeColorHint=""></Parameter>
-  
-    <Parameter Model="StringParameter" Name="TZ" TypeColorHint="" Description="Timezone"></Parameter></Parameters>
+ <Parameters></Parameters>
 </Model>

@@ -9,8 +9,6 @@
 #include <sstream>
 #include <iomanip>
 
-#include "OperationUtilities/Parameters/StringParameter.h"
-#include "OperationUtilities/Parameters/ToggleParameter.h"
 #include "iana_posix_map.h"
 
 
@@ -31,10 +29,10 @@ public:
     void ProcessNull() override;
 
 protected:
-    StringParameter Format;
-    StringParameter TZ;
-    ToggleParameter UTC;
     CDPSignal<std::string> TimestampFormatted;
+    CDPSignal<std::string> Format;
+    CDPSignal<bool> UTC;
+    CDPSignal<std::string> TZ;
     using CDPComponent::fs;
     using CDPComponent::requestedState;
     using CDPComponent::ts;
