@@ -29,6 +29,7 @@
     <Subcomponent Model="VideoWallLib.Camera" Name="Camera12" src="Components/Cameras/Camera12.xml"></Subcomponent>
     <Subcomponent Model="VideoWallLib.Camera" Name="Camera13" src="Components/Cameras/Camera13.xml"></Subcomponent>
     <Subcomponent Model="VideoWallLib.Camera" Name="Camera14" src="Components/Cameras/Camera14.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Test" src="Components/Cameras/Test.xml"></Subcomponent>
   </Subcomponents>
 
   <ArgumentMessages>
