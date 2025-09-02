@@ -96,14 +96,31 @@ void Camera::Configure(const char* componentXML)
  Please consult CDP Studio "Code Mode Manual" for more information and examples.
 */
 void Camera::ProcessNull()
-{       
-    Uri uri = UriParser.fromString(URI);
-    IP = uri.host;
-    if(DebugLevelForComponent(this->GetParent(),DebugLevel(DEBUGLEVEL_EXTENDED)))
-        std::cout << this->Name() << ": " << uri.toStringExtended() << std::endl;
-
+{
+    ParseURI();
+    IndexInputs();
+    PublishMQTT();
 
     firstRun = false;
+}
+
+void Camera::ParseURI()  {
+    try {
+        if (URI != ""){
+            Uri uri = UriParser.fromString(URI);
+
+            IP = uri.host;
+            if(DebugLevelForComponent(this->GetParent(),DebugLevel(DEBUGLEVEL_EXTENDED)))
+                std::cout << this->Name() << ": " << uri.toStringExtended() << std::endl;
+        }
+    } catch (const std::invalid_argument& e) {
+        IP = "";
+        URI = "";
+
+        if(DebugLevelForComponent(this->GetParent(),DebugLevel(DEBUGLEVEL_EXTENDED)))
+            std::cerr << "Invalid URI provided: " << URI.GetString() << std::endl;
+
+    }
 }
 
 
@@ -111,11 +128,27 @@ void Camera::PublishMQTT() {
 
     bool changeInSignals = std::any_of(indexedSignalsChanged.begin(), indexedSignalsChanged.end(), [](bool b) { return b;});
     if (!changeInSignals && !firstRun){
+        if(DebugLevelForComponent(this->GetParent(),DebugLevel(DEBUGLEVEL_EXTENDED)))
+            std::cout << this->Name() << ":  --->  Nothing Changed  <---  " << std::endl;
         return;
     }
 
     std::string baseTopic = this->Name();
     std::replace(baseTopic.begin(), baseTopic.end(), '.', '/');
+
+
+    /* // Generate and publish JSON topic - Not in use anymore
+    MessageTextCommand txtMessage;
+    txtMessage.SetTextCommand("Publish");
+    MessagePacketHandle msg(txtMessage);
+
+    std::vector<CDPUtils::Parameter> param = {{"Topic", baseTopic},{"Payload", this->toJson().dump()}, {"QoS", "0"}, {"Retain", "1"}};
+    std::string joined = CDPUtils::JoinParameters(param);
+
+    msg.Packet().PayloadAppend(joined);
+
+    MQTTPublish.SendMessage(msg);
+    */
 
     for (size_t i = 0; i < topics.size(); i++){
         if (indexedSignalsChanged[i]){
@@ -123,7 +156,7 @@ void Camera::PublishMQTT() {
             txtMessage.SetTextCommand("Publish");
             MessagePacketHandle msg(txtMessage);
 
-            if (DebugLevel(DEBUGLEVEL_EXTENDED) and false){
+            if (DebugLevel(DEBUGLEVEL_EXTENDED)){
                 std::cout << baseTopic + "/" + topics[i] << ": " << indexedSignals[i] << "\n";
             }
 
@@ -166,7 +199,7 @@ void Camera::IndexInputs()
     indexedSignals.at(4) = std::to_string(Height);
     indexedSignals.at(5) = std::to_string(Framerate);
     indexedSignals.at(6) = Format;
-    indexedSignals.at(7) = DisplayName;
+    indexedSignals.at(7) = Type;
 
     // Check for changes
     std::transform(indexedSignals.begin(), indexedSignals.end(), indexedSignalsPrev.begin(), indexedSignalsChanged.begin(), std::not_equal_to<std::string>());

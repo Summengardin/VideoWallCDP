@@ -11,7 +11,7 @@
  <Ports>
   <Port Input="0" Model="CDPPort" Name="pCamera">
    <Connections>
-    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="IP" Routing="..IP1"></Connection>
+    <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="IP" Routing="..IP"></Connection>
     <Connection Input="0" Model="ValuedConnection&lt;string&gt;" Name="DisplayName" Routing="..DisplayName"></Connection>
     <Connection Input="0" Model="ValuedConnection&lt;int&gt;" Name="Width" Routing="..Width"></Connection>
     <Connection Input="0" Model="ValuedConnection&lt;int&gt;" Name="Height" Routing="..Height"></Connection>
@@ -32,7 +32,7 @@
  <Tags></Tags>
  <Subcomponents>
   <Operator Model="Sequencer.JSONEncode" Name="JSONEncode">
-   <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="IP" Routing="..IP1" TypeColorHint="#4697c3"></Argument>
+   <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="IP" Routing="..IP" TypeColorHint="#4697c3"></Argument>
    <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;string&gt;" Name="DisplayName" Routing="..DisplayName" TypeColorHint="#4697c3"></Argument>
    <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;int&gt;" Name="Width" Routing="..Width" TypeColorHint="#4697c3"></Argument>
    <Argument Description="Argument name will be encoded to output as JSON attribute name, and argument current value will be encoded as this JSON attribute value." Model="Argument&lt;int&gt;" Name="Height" Routing="..Height" TypeColorHint="#4697c3"></Argument>

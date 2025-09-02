@@ -58,6 +58,7 @@ protected:
 
     void IndexInputs();
     void PublishMQTT();
+    void ParseURI();
 
     bool firstRun {true};
 };
