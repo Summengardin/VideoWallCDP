@@ -127,6 +127,11 @@ border: 2px solid rgb(200,200,200)}
         </property>
         <item>
          <property name="text">
+          <string>Test</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
           <string>Camera01</string>
          </property>
         </item>

@@ -2,17 +2,20 @@
 #define VIDEOWALLLIB_CAMERA_H
 
 #include <CDPSystem/Base/CDPComponent.h>
+#include <CDPSystem/Base/CDPConnector.h>
 #include <CDPSystem/Base/CDPPort.h>
 #include <CDPSystem/Base/CDPProperty.h>
 #include <CameraPort.h>
 #include <Signal/CDPSignal.h>
 #include <CDPParameter/CDPParameter.h>
 #include <CDPAlarm/CDPAlarm.h>
+#include <Generic/CDPUtils.h>
 
-#include "OperationUtilities/Parameters/StringParameter.h"
 #include "OperationUtilities/Parameters/calibrationparameter.h"
+#include "OperationUtilities/Signals/DeliveryConfigString.h"
 #include "json.hpp"
 #include "uri.h"
+
 
 using json = nlohmann::json;
 
@@ -32,20 +35,31 @@ public:
     json toJson() const;
 
 protected:
-    CDPPort pCamera;
     OperationUtilities::CalibrationParameter Width;
     OperationUtilities::CalibrationParameter Height;
     OperationUtilities::CalibrationParameter Framerate;
-    StringParameter DisplayName;
-    StringParameter IP;
-    StringParameter Format;
-    StringParameter Type;
-    StringParameter URI;
+    OperationUtilities::DeliveryConfigString DisplayName;
+    OperationUtilities::DeliveryConfigString IP;
+    OperationUtilities::DeliveryConfigString Format;
+    OperationUtilities::DeliveryConfigString Type;
+    OperationUtilities::DeliveryConfigString URI;
     using CDPComponent::requestedState;
     using CDPComponent::ts;
     using CDPComponent::fs;
 
-    Uri uri;
+    std::vector<std::string> topics {"DisplayName", "IP","URI","Width","Height","Framerate","Format","Type"};
+    std::vector<std::string> indexedSignals;
+    std::vector<std::string> indexedSignalsPrev;
+    std::vector<bool> indexedSignalsChanged;
+
+    Uri UriParser;
+    CDPConnector MQTTPublish;
+
+    void IndexInputs();
+    void PublishMQTT();
+    void ParseURI();
+
+    bool firstRun {true};
 };
 
 } // namespace VideoWallLib

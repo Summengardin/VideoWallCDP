@@ -3,7 +3,7 @@
 
 #include <CDPSystem/Base/CDPComponent.h>
 #include <CDPSystem/Base/CDPProperty.h>
-#include <OSDPort.h>
+#include <OSDTextPort.h>
 #include <Signal/CDPSignal.h>
 #include <CDPParameter/CDPParameter.h>
 #include <CDPAlarm/CDPAlarm.h>

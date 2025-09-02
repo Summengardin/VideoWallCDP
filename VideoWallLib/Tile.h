@@ -4,13 +4,15 @@
 #include <CDPSystem/Base/CDPComponent.h>
 #include <CDPSystem/Base/CDPConnector.h>
 #include <CDPSystem/Base/CDPPort.h>
-#include <Signal/CDPSignal.h>
-#include <TilePort.h>
 #include <CDPParameter/CDPParameter.h>
 #include <CDPAlarm/CDPAlarm.h>
-#include "OSDPort.h"
-#include "json.hpp"
+#include <Signal/CDPSignal.h>
 #include <Generic/CDPUtils.h>
+#include <chrono>
+#include "OSDTextPort.h"
+#include "OSDRectPort.h"
+#include "json.hpp"
+#include "OperationUtilities/Strings/StringHelpers.h"
 
 using json = nlohmann::json;
 
@@ -26,17 +28,11 @@ public:
     void CreateModel() override;
     void Configure(const char* componentXML) override;
     void ProcessNull() override;
-    void PublishMqtt();
 
-    void IndexInputs();
 
 protected:
-    VideoWallLib::OSDPort OSDTL;
-    VideoWallLib::OSDPort OSDTC;
-    VideoWallLib::OSDPort OSDTR;
-    VideoWallLib::OSDPort OSDBC;
-    CDPSignal<double> i_Brightness;
     CDPSignal<std::string> i_Source;
+    CDPSignal<double> i_Brightness;
     CDPSignal<double> i_ZoomAbs;
     CDPSignal<double> i_ZoomSpeed;
     CDPSignal<double> i_TiltSpeed;
@@ -47,14 +43,24 @@ protected:
     using CDPComponent::requestedState;
     using CDPComponent::ts;
     using CDPComponent::fs;
+    using clock = std::chrono::steady_clock;
 
-    std::vector<std::string> topics = {"Source","Brightness","ZoomAbs","ZoomSpeed","PanAbs","PanSpeed","TiltAbs","TiltSpeed","OSD"};
+    OSDRectPort SelectedRect;
+
+    std::chrono::seconds kHoldFor{3};
+    std::vector<clock::time_point> holdUntil;
+
+    std::vector<std::string> topics {"Source","Brightness","ZoomAbs","ZoomSpeed","PanAbs","PanSpeed","TiltAbs","TiltSpeed","OSD"};
     std::vector<std::string> indexedSignals;
     std::vector<std::string> indexedSignalsPrev;
     std::vector<bool> indexedSignalsChanged;
-    std::vector<OSDPort*> m_osdPorts;
-    bool firstRun = true;
+    std::vector<OSDTextPort*> m_osdPorts;
+    std::vector<OSDRectPort*> m_osdRectPorts;
 
+    bool firstRun {true};
+
+    void PublishMqtt();
+    void IndexInputs();
     json OSDPortsToJson();
 };
 

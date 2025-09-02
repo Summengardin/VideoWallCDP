@@ -7,7 +7,7 @@
 #include <Signal/CDPSignal.h>
 #include <sstream>
 
-#include <OSDPort.h>
+#include <OSDTextPort.h>
 
 namespace VideoWallLib {
 
@@ -22,14 +22,14 @@ public:
     void Configure(const char* componentXML) override;
     void ProcessNull() override;
 
-    void index_inputs();
+    void IndexInputs();
 
 protected:
     using CDPComponent::fs;
     using CDPComponent::requestedState;
     using CDPComponent::ts;
 
-    std::vector<OSDPort*> m_osdports;
+    std::vector<OSDTextPort*> m_osdports;
     std::vector<std::string> indexed_data;
     std::vector<double> prevTimeouts;
 

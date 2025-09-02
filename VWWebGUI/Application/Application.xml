@@ -14,7 +14,7 @@
 
   <Subcomponents>
     <Subcomponent Name="CDP"        Model="CDP"        src="Components\CDP.xml"></Subcomponent>
-    <Subcomponent Model="CDPComponent" Name="GUIConnections" src="Components/GUIConnections.xml"></Subcomponent>
+    <Subcomponent Model="CDPComponent" Name="UI" src="Components/UI.xml"></Subcomponent>
   </Subcomponents>
 
   <Signals>

@@ -95,7 +95,7 @@
          <enum>CDPBaseLabel::NoFile</enum>
         </property>
         <property name="cdpRouting" stdset="0">
-         <string>.IP.String</string>
+         <string>.IP</string>
         </property>
        </widget>
       </item>
@@ -149,16 +149,25 @@
             <family>Ubuntu</family>
            </font>
           </property>
+          <property name="placeholderText">
+           <string>rtsp://&lt;user&gt;_&lt;pass&gt;@&lt;ip&gt;:&lt;port&gt;/&lt;mount&gt;</string>
+          </property>
           <property name="cursorMoveStyle">
            <enum>Qt::VisualMoveStyle</enum>
+          </property>
+          <property name="precision">
+           <number>0</number>
           </property>
           <property name="svgFile">
            <string notr="true">:/themes/openbridge5_day/backgrounds/bgLineEdit.svg</string>
           </property>
           <property name="cdpRouting" stdset="0">
-           <string>.URI.String</string>
+           <string>.URI</string>
           </property>
           <property name="cdpPromptForChanges" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="cdpStringToDouble" stdset="0">
            <bool>false</bool>
           </property>
           <property name="pushRoutables" stdset="0">
@@ -184,7 +193,7 @@
            <string notr="true">:/themes/openbridge5_day/buttons/spinBox.svg</string>
           </property>
           <property name="cdpRouting" stdset="0">
-           <string>.Type.String</string>
+           <string>.Type</string>
           </property>
           <property name="pushRoutables" stdset="0">
            <stringlist notr="true">

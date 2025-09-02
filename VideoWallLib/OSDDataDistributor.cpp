@@ -66,7 +66,7 @@ void OSDDataDistributor::Configure(const char* componentXML)
     CDPComponent::Configure(componentXML);
 
     for (auto p : m_ports)
-        if (OSDPort* osd_port = dynamic_cast<OSDPort*>(p))
+        if (OSDTextPort* osd_port = dynamic_cast<OSDTextPort*>(p))
             m_osdports.push_back(osd_port);
 
 
@@ -89,7 +89,7 @@ void OSDDataDistributor::Configure(const char* componentXML)
 */
 void OSDDataDistributor::ProcessNull()
 {
-    index_inputs();
+    IndexInputs();
 
     for (size_t i = 0; i < m_osdports.size(); i++){
         auto p = m_osdports[i];
@@ -106,7 +106,7 @@ void OSDDataDistributor::ProcessNull()
 }
 
 
-void OSDDataDistributor::index_inputs(){
+void OSDDataDistributor::IndexInputs(){
 
     int string_cnt = 0;
     for (ICDPSignal* signal : m_listSignals) {

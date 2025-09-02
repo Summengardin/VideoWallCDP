@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Model Name="VideoWallLib.TimestampGenerator">
+ <ModelTypeClass>C++</ModelTypeClass>
+ <BaseModel>CDPComponent</BaseModel>
+ <Element Name="Priority" Value="normal"></Element>
+ <Element Name="fs" Value="100"></Element>
+ <Attributes>
+  <Attribute Name="Description" Type="string" Value="Simple component"></Attribute>
+  <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.TimestampGenerator"></Attribute>
+ </Attributes>
+ <Signals>
+  <Signal Input="0" Model="CDPSignal&lt;string&gt;" Name="TimestampFormatted" Type="string"></Signal>
+    <Signal Model="CDPSignal&lt;bool&gt;" Name="UTC" TypeColorHint="" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="TZ" Input="1"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Format"></Signal>
+ </Signals>
+ <Parameters></Parameters>
+</Model>

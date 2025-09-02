@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <ui version="4.0">
  <class>Form</class>
  <widget class="QWidget" name="Form">
@@ -166,7 +166,7 @@
          <bool>true</bool>
         </property>
         <property name="cdpCheckedRouting" stdset="0">
-         <string>VWWebGUI.GUIConnections.CurrentPage.Value</string>
+         <string>VWWebGUI.UI.CurrentPage.Value</string>
         </property>
         <property name="markerShared">
          <bool>false</bool>
@@ -274,7 +274,7 @@
          <bool>true</bool>
         </property>
         <property name="cdpCheckedRouting" stdset="0">
-         <string>VWWebGUI.GUIConnections.CurrentPage.Value</string>
+         <string>VWWebGUI.UI.CurrentPage.Value</string>
         </property>
         <property name="markerFont">
          <font>
@@ -385,7 +385,7 @@
          <bool>true</bool>
         </property>
         <property name="cdpCheckedRouting" stdset="0">
-         <string>VWWebGUI.GUIConnections.CurrentPage.Value</string>
+         <string>VWWebGUI.UI.CurrentPage.Value</string>
         </property>
         <property name="markerShared">
          <bool>false</bool>
@@ -502,7 +502,7 @@
          <bool>true</bool>
         </property>
         <property name="cdpCheckedRouting" stdset="0">
-         <string>VWWebGUI.GUIConnections.CurrentPage.Value</string>
+         <string>VWWebGUI.UI.CurrentPage.Value</string>
         </property>
         <property name="markerShared">
          <bool>false</bool>

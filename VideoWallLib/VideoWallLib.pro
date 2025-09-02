@@ -14,11 +14,14 @@ HEADERS += \
     MQTTTopic.h \
     OSD.h \
     OSDDataDistributor.h \
+    OSDRectPort.h \
     OSDText.h \
-    OSDPort.h \
+    OSDTextPort.h \
     SourceOrchestrator.h \
     Tile.h \
     TilePort.h \
+    TimestampGenerator.h \
+    iana_posix_map.h \
     uri.h \
     videowalllib.h \
     VideoWallLibBuilder.h
@@ -32,16 +35,17 @@ SOURCES += \
     MQTTTopic.cpp \
     OSD.cpp \
     OSDDataDistributor.cpp \
+    OSDRectPort.cpp \
     OSDText.cpp \
-    OSDPort.cpp \
+    OSDTextPort.cpp \
     SourceOrchestrator.cpp \
     Tile.cpp \
     TilePort.cpp \
+    TimestampGenerator.cpp \
     VideoWallLibBuilder.cpp \
     uri.cpp
 
 DISTFILES += $$files(*.xml, true) \
-    Templates/Models/VideoWallLib.Camera.MQTTTopic.xml \
     Templates/Models/VideoWallLib.Camera.xml \
     Templates/Models/VideoWallLib.CameraPort.xml \
     Templates/Models/VideoWallLib.Layout.xml \
@@ -52,8 +56,9 @@ DISTFILES += $$files(*.xml, true) \
     Templates/Models/VideoWallLib.OSD.OSDText.xml \
     Templates/Models/VideoWallLib.OSD.xml \
     Templates/Models/VideoWallLib.OSDDataDistributor.xml \
+    Templates/Models/VideoWallLib.OSDRectPort.xml \
     Templates/Models/VideoWallLib.OSDText.xml \
-    Templates/Models/VideoWallLib.OSDPort.xml \
+    Templates/Models/VideoWallLib.OSDTextPort.xml \
     Templates/Models/VideoWallLib.PopulateComboBox_T.xml \
     Templates/Models/VideoWallLib.SourceOrchestrator.xml \
     Templates/Models/VideoWallLib.Tile.Models.MQTTTopic1.xml \
@@ -66,6 +71,7 @@ DISTFILES += $$files(*.xml, true) \
     Templates/Models/VideoWallLib.Tile.Models.mtZoomAbs1.xml \
     Templates/Models/VideoWallLib.Tile.Models.mtZoomSpeed1.xml \
     Templates/Models/VideoWallLib.Tile.xml \
-    Templates/Models/VideoWallLib.TilePort.xml
+    Templates/Models/VideoWallLib.TilePort.xml \
+    Templates/Models/VideoWallLib.TimestampGenerator.xml
 
 load(cdp)

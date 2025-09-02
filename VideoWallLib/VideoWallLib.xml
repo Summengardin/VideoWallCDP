@@ -1,8 +1,6 @@
 <Library Name="VideoWallLib">
  <Models>
-  <Model Name="VideoWallLib.Camera">
-   <Model Name="VideoWallLib.Camera.MQTTTopic"/>
-  </Model>
+  <Model Name="VideoWallLib.Camera"/>
   <Model Name="VideoWallLib.CameraPort"/>
   <Model Name="VideoWallLib.Layout"/>
   <Model Name="VideoWallLib.LayoutPort"/>
@@ -14,9 +12,11 @@
    <Model Name="VideoWallLib.OSD.OSDText"/>
   </Model>
   <Model Name="VideoWallLib.OSDDataDistributor"/>
-  <Model Name="VideoWallLib.OSDPort"/>
+  <Model Name="VideoWallLib.OSDRectPort"/>
   <Model Name="VideoWallLib.OSDText"/>
+  <Model Name="VideoWallLib.OSDTextPort"/>
   <Model Name="VideoWallLib.Tile"/>
   <Model Name="VideoWallLib.TilePort"/>
+  <Model Name="VideoWallLib.TimestampGenerator"/>
  </Models>
 </Library>

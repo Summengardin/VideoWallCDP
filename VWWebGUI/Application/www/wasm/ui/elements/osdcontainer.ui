@@ -96,7 +96,7 @@ image:url(/tmp/cdp/themes/openbridge5_bright/buttons/spinBox_cdpIconDown.png);
         <enum>CDPBaseButton::SVG</enum>
        </property>
        <property name="svgFile">
-        <string notr="true">:/themes/openbridge5_bright/buttons/spinBox.svg</string>
+        <string notr="true">:/themes/openbridge5_dusk/buttons/spinBox.svg</string>
        </property>
        <property name="pushRoutables" stdset="0">
         <stringlist notr="true">
@@ -119,62 +119,6 @@ image:url(/tmp/cdp/themes/openbridge5_bright/buttons/spinBox_cdpIconDown.png);
        <property name="textRouting" stdset="0">
         <string>.TextIndexName</string>
        </property>
-      </widget>
-     </item>
-     <item row="3" column="0">
-      <widget class="CDPBaseLabel" name="label_55">
-       <property name="minimumSize">
-        <size>
-         <width>0</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="font">
-        <font>
-         <family>Arial</family>
-         <pointsize>10</pointsize>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Data source</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="1">
-      <widget class="CDPBaseComboBox" name="comboBox">
-       <property name="svgFile">
-        <string notr="true">:/themes/openbridge5_bright/buttons/spinBox.svg</string>
-       </property>
-       <property name="cdpUseIndexNr" stdset="0">
-        <bool>true</bool>
-       </property>
-       <property name="cdpRouting" stdset="0">
-        <string>.TextIndex</string>
-       </property>
-       <property name="pushRoutables" stdset="0">
-        <stringlist notr="true">
-         <string>cdpRouting</string>
-        </stringlist>
-       </property>
-       <item>
-        <property name="text">
-         <string>Gangway Load</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Crane Load</string>
-        </property>
-       </item>
-       <item>
-        <property name="text">
-         <string>Gangway Mode</string>
-        </property>
-       </item>
       </widget>
      </item>
      <item row="4" column="0">
@@ -203,7 +147,7 @@ image:url(/tmp/cdp/themes/openbridge5_bright/buttons/spinBox_cdpIconDown.png);
      <item row="4" column="1">
       <widget class="CDPBaseComboBox" name="comboBox_2">
        <property name="svgFile">
-        <string notr="true">:/themes/openbridge5_bright/buttons/spinBox.svg</string>
+        <string notr="true">:/themes/openbridge5_dusk/buttons/spinBox.svg</string>
        </property>
        <property name="cdpRouting" stdset="0">
         <string>.Alignment</string>
@@ -256,7 +200,7 @@ image:url(/tmp/cdp/themes/openbridge5_bright/buttons/spinBox_cdpIconDown.png);
      <item row="5" column="1">
       <widget class="CDPBaseLineEdit" name="lineEdit">
        <property name="svgFile">
-        <string notr="true">:/themes/openbridge5_bright/backgrounds/bgLineEdit.svg</string>
+        <string notr="true">:/themes/openbridge5_dusk/backgrounds/bgLineEdit.svg</string>
        </property>
        <property name="padType">
         <enum>CDPBaseLineEdit::NumPad</enum>
@@ -300,7 +244,7 @@ image:url(/tmp/cdp/themes/openbridge5_bright/buttons/spinBox_cdpIconDown.png);
      <item row="6" column="1">
       <widget class="CDPBaseLineEdit" name="lineEdit_2">
        <property name="svgFile">
-        <string notr="true">:/themes/openbridge5_bright/backgrounds/bgLineEdit.svg</string>
+        <string notr="true">:/themes/openbridge5_dusk/backgrounds/bgLineEdit.svg</string>
        </property>
        <property name="padType">
         <enum>CDPBaseLineEdit::NumPad</enum>
@@ -347,7 +291,7 @@ image:url(/tmp/cdp/themes/openbridge5_bright/buttons/spinBox_cdpIconDown.png);
         <string>0: disabled</string>
        </property>
        <property name="svgFile">
-        <string notr="true">:/themes/openbridge5_bright/backgrounds/bgLineEdit.svg</string>
+        <string notr="true">:/themes/openbridge5_dusk/backgrounds/bgLineEdit.svg</string>
        </property>
        <property name="padType">
         <enum>CDPBaseLineEdit::NumPad</enum>
@@ -362,6 +306,44 @@ image:url(/tmp/cdp/themes/openbridge5_bright/buttons/spinBox_cdpIconDown.png);
         <stringlist notr="true">
          <string>cdpRouting</string>
         </stringlist>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="CDPBaseLabel" name="label_60">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>10</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Enable</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="CDPBaseCheckBox" name="checkBox">
+       <property name="pushRoutables" stdset="0">
+        <stringlist>
+         <string>cdpRouting</string>
+        </stringlist>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="cdpRouting" stdset="0">
+        <string>.Enable</string>
        </property>
       </widget>
      </item>
@@ -414,6 +396,11 @@ image:url(/tmp/cdp/themes/openbridge5_bright/buttons/spinBox_cdpIconDown.png);
    <class>CDPBaseButtonMsg</class>
    <extends>CDPBaseButton</extends>
    <header>CDPBaseWidgets/CDPBaseButtonMsg.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseCheckBox</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBaseCheckBox.h</header>
   </customwidget>
   <customwidget>
    <class>CDPBaseLabel</class>

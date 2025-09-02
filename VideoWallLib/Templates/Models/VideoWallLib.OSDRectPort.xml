@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Model Name="VideoWallLib.OSDRectPort">
+ <ModelTypeClass>C++</ModelTypeClass>
+ <BaseModel>CDPPort</BaseModel>
+ <Attributes>
+  <Attribute Name="Description" Type="string" Value="Simple port example"/>
+  <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.OSDRectPort"/>
+  <Attribute Description="Holds left coordinate of the box in pixels" LogEventOnChange="0" Name="PosX" RouteMethod="RouteEvent" SaveOnChange="0" Type="double"/>
+  <Attribute Description="Holds top coordinate of the box in pixels." LogEventOnChange="0" Name="PosY" RouteMethod="RouteEvent" SaveOnChange="0" Type="double"/>
+  <Attribute Description="Holds boolean value indicating whether box has background color." LogEventOnChange="0" Name="HasBGColor" RouteMethod="RouteEvent" SaveOnChange="0" Type="int"/>
+  <Attribute Name="Type" SaveOnChange="0" Value="rectangle"/>
+  <Attribute Description="Holds width of the box in pixels." Name="Width" SaveOnChange="0" Type="double" Value="1920"/>
+  <Attribute Description="Holds height of the box in pixels." Name="Height" SaveOnChange="0" Type="double" Value="1080"/>
+  <Attribute Description="Holds border_width of the box in pixels." Name="BorderWidth" SaveOnChange="0" Type="int" Value="3"/>
+  <Attribute Description="Holds color params of the box in pixels. [0..1] (r,g,b,a)" Name="BorderColor" SaveOnChange="0" Value="0.0,0.0,0.0,0.6"/>
+  <Attribute Description="Holds background color of the box. [0..1] (r,g,b,a)" Name="BGColor" SaveOnChange="0" Value="0"/>
+  <Attribute Description="" LogEventOnChange="0" Name="Timeout" RouteMethod="RouteEvent" SaveOnChange="0" Type="double"/>
+  <Attribute LogEventOnChange="0" Name="Enable" RouteMethod="RouteEvent" SaveOnChange="0" Type="bool"/>
+ </Attributes>
+ <Connections>
+  <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"/>
+  <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"/>
+  <Connection Input="1" LocalName=".Width" Model="CDPPortConnection" Name="MapWidth"/>
+  <Connection Input="1" LocalName=".Height" Model="CDPPortConnection" Name="MapHeight"/>
+  <Connection Input="1" LocalName=".BorderWidth" Model="CDPPortConnection" Name="MapBorderWidth"/>
+  <Connection Input="1" LocalName=".BorderColor" Model="CDPPortConnection" Name="MapBorderColor"/>
+  <Connection Input="1" LocalName=".HasBGColor" Model="CDPPortConnection" Name="MapHasBGColor"/>
+  <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"/>
+  <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"/>
+  <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"/>
+  <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"/>
+ </Connections>
+</Model>
