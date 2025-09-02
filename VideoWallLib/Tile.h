@@ -11,6 +11,7 @@
 #include "OSDPort.h"
 #include "json.hpp"
 #include <Generic/CDPUtils.h>
+#include "OperationUtilities/OperationUtilities/Signals/DeliveryConfigString.h"
 
 using json = nlohmann::json;
 
@@ -27,24 +28,22 @@ public:
     void Configure(const char* componentXML) override;
     void ProcessNull() override;
     int MessageMessageHandler(void* message);
-    int MessagegetSource(void* message);
     void PublishMqtt();
     void IndexInputs();
-    const CDPSignal<std::string>& getSourceSignal() const;
 
 protected:
     VideoWallLib::OSDPort OSDTL;
     VideoWallLib::OSDPort OSDTC;
     VideoWallLib::OSDPort OSDTR;
     VideoWallLib::OSDPort OSDBC;
-    CDPSignal<double> i_Brightness;
-    CDPSignal<std::string> i_Source;
-    CDPSignal<double> i_ZoomAbs;
-    CDPSignal<double> i_ZoomSpeed;
-    CDPSignal<double> i_TiltSpeed;
-    CDPSignal<double> i_PanSpeed;
-    CDPSignal<double> i_TiltAbs;
-    CDPSignal<double> i_PanAbs;
+    OperationUtilities::DeliveryConfigString i_Source;
+    CDPSignal<double> ZoomSpeed;
+    CDPSignal<double> PanSpeed;
+    CDPSignal<double> ZoomAbs;
+    CDPSignal<double> TiltAbs;
+    CDPSignal<double> TiltSpeed;
+    CDPSignal<double> Brightness;
+    CDPSignal<double> PanAbs;
     CDPConnector MQTTPublish;
     using CDPComponent::requestedState;
     using CDPComponent::ts;

@@ -23,6 +23,6 @@
     <Subcomponent Model="VideoWallLib.Tile" Name="Tile" src="Components/VisionControllerContainer/VisionController2/Tile.xml"></Subcomponent>
     <Subcomponent Model="VideoWallLib.Tile" Name="Tile1" src="Components/VisionControllerContainer/VisionController2/Tile1.xml"></Subcomponent>
     <Subcomponent Model="VideoWallLib.Tile" Name="Tile2" src="Components/VisionControllerContainer/VisionController2/Tile2.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Tile" Name="Tile3" src="Components/VisionControllerContainer/VisionController2/Tile3.xml"></Subcomponent>
-  </Subcomponents>
+    <Subcomponent Model="VideoWallLib.Tile" Name="Tile3" src="Components/VisionControllerContainer/VisionController2/Tile3.xml"></Subcomponent></Subcomponents>
+  
 </Component>

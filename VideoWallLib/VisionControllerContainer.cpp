@@ -16,7 +16,6 @@ using namespace VideoWallLib;
 */
 VisionControllerContainer::VisionControllerContainer()
 {
-    MessageRecieved = true;
 }
 
 
@@ -38,6 +37,8 @@ VisionControllerContainer::~VisionControllerContainer()
 void VisionControllerContainer::Create(const char* fullName)
 {
     CDPComponent::Create(fullName);
+    numCameras.Create("numCameras",this);
+    numTiles.Create("numTiles",this);
     MQTTSubscribe.Create("MQTTSubscribe",this);
     HandControllerConnector.Create("HandControllerConnector",this);
 }
@@ -51,11 +52,9 @@ void VisionControllerContainer::Create(const char* fullName)
 void VisionControllerContainer::CreateModel()
 {
     CDPComponent::CreateModel();
-    RegisterMessage(CM_TEXTCOMMAND,"Subscribed","",(CDPOBJECT_MESSAGEHANDLER)&VisionControllerContainer::MessageSubscribed);
 
     RegisterStateProcess("Null", (CDPCOMPONENT_STATEPROCESS)&VisionControllerContainer::ProcessNull, "Initial Null state");
     RegisterMessage(CM_TEXTCOMMAND,"HandController","",(CDPOBJECT_MESSAGEHANDLER)&VisionControllerContainer::MessageHandController);
-    RegisterMessage(CM_TEXTCOMMAND,"CurrentTileSource","",(CDPOBJECT_MESSAGEHANDLER)&VisionControllerContainer::MessageCurrentTileSource);
     RegisterMessage(CM_TEXTCOMMAND,"Received","",(CDPOBJECT_MESSAGEHANDLER)&VisionControllerContainer::MessageReceived);
 }
 
@@ -68,7 +67,6 @@ void VisionControllerContainer::CreateModel()
 void VisionControllerContainer::Configure(const char* componentXML)
 {
     CDPComponent::Configure(componentXML);
-    firstRun = true;
     for (auto child : GetChildren())
     {
         if (child->GetNodeType() == CDP::StudioAPI::eCDP_COMPONENT_NODE)
@@ -82,31 +80,22 @@ void VisionControllerContainer::Configure(const char* componentXML)
                             TileConnectors.back()->Create("Connector", this);
                             TileConnectors.back()->ConnectTo(tile->GetNodeLongName().c_str());
                             tileSources.push_back(tile->GetNodeLongName());
-                            std::cout << tile->GetNodeLongName().c_str() << "\n";
+                            // std::cout << tile->GetNodeLongName().c_str() << "\n";
                         }
                     }
                 }
             }
         }
     }
-    numCameras = 14;
-    for (int i = 1; i<=numCameras;i++){
+    for (int i = 1; i<=std::stoi(numCameras);i++){
         std::ostringstream oss;
         oss << "Camera" << std::setw(2) << std::setfill('0') << i;
-        CameraName = oss.str();
+        std::string CameraName = oss.str();
         idToCamera[i] = CameraName;
         cameraToId[CameraName] = i;
-        std::cout << CameraName << "\n";
-        // MessageTextCommand txtMessage;
-        // txtMessage.SetTextCommand("Subscribe");
-        // MessagePacketHandle Connectmsg(txtMessage);
-        // std::vector<CDPUtils::Parameter> param = {{"Topic", subscribingName}, {"QoS", "0"}};
-        // std::string joined = CDPUtils::JoinParameters(param);
-        // Connectmsg.Packet().PayloadAppend(joined);
-        // MQTTSubscribe.SendMessage(Connectmsg);
 
     }
-    numTiles = TileConnectors.size()-1;
+    numTiles = std::to_string(TileConnectors.size()-1);
     std::string longName = this->GetNodeLongName();
     std::string ConnectorSocket = replaceSubcomponent(longName, "IO.SKAARHOJTCPCom");
     HandControllerConnector.ConnectTo(ConnectorSocket.c_str());
@@ -115,48 +104,8 @@ void VisionControllerContainer::Configure(const char* componentXML)
 
 
 
-int VisionControllerContainer::MessageSubscribed(void* message)
-{
-    std::cout << "MessageSubscribed \n";
-    MessageTextCommandWithParameterReceive* msg = static_cast<MessageTextCommandWithParameterReceive*>(message);
-    std::string strParameter(msg->parameters);
-    std::cout << strParameter << "\n";
-    return 1;
-}
-
-/*!
- \brief Component Null state processing function
-
- Write your component's processing code here. When the component is simple, all the processing code may reside here.
- This function gets called periodically. The period is changed by setting the "fs" (frequency) Property when you use
- the component in a project.
- Functions called ProcessSTATENAME(), like ProcessNull(), are state processing functions and are only called when
- components are in given state. The default component state is "Null".
- Note, that state processing functions are not allowed to block (i.e. read files, sleep, communicate with network in
- blocking mode etc.) For blocking code use the 'Threaded Component Model' wizard instead.
-
- Please consult CDP Studio "Code Mode Manual" for more information and examples.
-*/
 void VisionControllerContainer::ProcessNull()
 {
-    // if (firstRun){
-    //     firstRun = false;
-        // std::ostringstream oss;
-        // oss << "Camera" << std::setw(2) << std::setfill('0') << i;
-        // CameraName = oss.str();
-        // std::string subscribingName = replaceSubcomponent(this->GetNodeLongName(),"Cameras")+"." + CameraName;
-        // std::replace(subscribingName.begin(),subscribingName.end(),'.','/');
-        // std::cout << subscribingName << "\n";
-        // MessageTextCommand txtMessage;
-        // txtMessage.SetTextCommand("Subscribe");
-        // MessagePacketHandle Connectmsg(txtMessage);
-        // std::vector<CDPUtils::Parameter> param = {{"Topic", subscribingName}, {"QoS", "0"}};
-        // std::string joined = CDPUtils::JoinParameters(param);
-        // Connectmsg.Packet().PayloadAppend(joined);
-        // MQTTSubscribe.SendMessage(Connectmsg);
-    //     numCameras = idToCamera.size();
-    //     std::cout << "Number of cameras: " << numCameras << "\n";
-    // }
     /* Write your code here */
 
 }
@@ -179,31 +128,21 @@ int VisionControllerContainer::MessageHandController(void* message)
 
 
 
-int VisionControllerContainer::MessageCurrentTileSource(void* message)
-{
-    MessageTextCommandWithParameterReceive* msg = static_cast<MessageTextCommandWithParameterReceive*>(message);
-    std::string strParameter(msg->parameters);
-    if (!strParameter.empty())
-        HC.setEncoder(11, std::stoi(strParameter));
-    UpdateHCVisual();
-    return 1;
-
-}
-
-
-
 int VisionControllerContainer::MessageReceived(void* message)
 {
-    std::cout << "MessageRecieved \n";
+    // std::cout << "MessageRecieved \n";
     MessageTextCommandWithParameterReceive* msg = static_cast<MessageTextCommandWithParameterReceive*>(message);
     std::string strParameter(msg->parameters);
     std::string PayloadString = extractPayload(strParameter);
-    if (isInteger(PayloadString))
-        HC.setEncoder(11,stoi(PayloadString));
-    else
+    if (isInteger(PayloadString)){
+        HC.setEncoder(11,std::stoi(PayloadString));
+        allowedChangeTileSource = true;}
+    else{
         HC.setEncoder(11, cameraToId[PayloadString]);
-
-    std::cout << strParameter << "\n";
+        allowedChangeTileSource = true;
+    }
+    // SendTileConfiguration();
+    UpdateHCVisual();
     return 1;
 
 }
@@ -240,28 +179,22 @@ void VisionControllerContainer::updateHCStates(const std::string& msg) {
         if (payload.rfind("Enc:", 0) == 0) {
             int value = std::stoi(payload.substr(4));
             value += HC.encoders[id-10];
-            if(value > numTiles){
+            if(value > std::stoi(numTiles)){
                 value = 0;
             } else if (value < 0){
-                value = numTiles;
+                value = std::stoi(numTiles);
             }
             HC.setEncoder(id, value);
-            std::string subscribingName = tileSources[HC.getEncoderState(id)]+".Source";
+            std::string subscribingName = tileSources[HC.getEncoderState(id)] +".Source";
             std::replace(subscribingName.begin(),subscribingName.end(),'.','/');
-            std::cout << subscribingName << "\n";
-            MessageTextCommand txtMessage;
+            // std::cout << subscribingName << "\n";
             txtMessage.SetTextCommand("Subscribe");
-            MessagePacketHandle msg(txtMessage);
+            Outputmsg = txtMessage;
             std::vector<CDPUtils::Parameter> param = {{"Topic", subscribingName}, {"QoS", "0"}};
             std::string joined = CDPUtils::JoinParameters(param);
-            msg.Packet().PayloadAppend(joined);
-            MQTTSubscribe.SendMessage(msg);
-
-            // if (tileSource.GetRawValue().size()>0)
-            //     HC.setEncoder(11,std::stoi(tileSource));
-            // txtMessage.SetTextCommand("getSource");
-            // Outputmsg = txtMessage;
-            // TileConnectors[HC.getEncoderState(10)]->SendMessage(Outputmsg);
+            Outputmsg.Packet().PayloadAppend(joined);
+            MQTTSubscribe.SendMessage(Outputmsg);
+            allowedChangeTileSource = false;
         }
     }
     else if (id == 11) {
@@ -271,10 +204,10 @@ void VisionControllerContainer::updateHCStates(const std::string& msg) {
         if (payload.rfind("Enc:", 0) == 0) {
             int value = std::stoi(payload.substr(4));
             value += HC.encoders[id-10];
-            if(value > numCameras){
+            if(value > std::stoi(numCameras)){
                 value = 1;
             } else if (value < 1){
-                value = numCameras;
+                value = std::stoi(numCameras);
             }
             HC.setEncoder(id, value);
         }
@@ -294,13 +227,15 @@ std::string VisionControllerContainer::replaceSubcomponent(const std::string& in
     return input.substr(0, lastDot + 1) + newSubcomponent;
 }
 
-void VisionControllerContainer::SendTileConfiguration(bool allowedChangeTileSource){
+void VisionControllerContainer::SendTileConfiguration(bool changeSource){
     txtMessage.SetTextCommand("MessageHandler");
     Outputmsg = txtMessage;
     std::string outputline = "Zoom_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(7)))
         + "; Tilt_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(8)))
-        + "; Pan_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(9)))+";\n";
-        + "; source: " + idToCamera[HC.getEncoderState(11)];
+        + "; Pan_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(9)));
+    if (changeSource)
+        outputline += "; source: " + idToCamera[HC.getEncoderState(11)];
+    outputline += +";\n";
     Outputmsg.Packet().PayloadAppend(outputline);
     TileConnectors[HC.getEncoderState(10)]->SendMessage(Outputmsg);
 }

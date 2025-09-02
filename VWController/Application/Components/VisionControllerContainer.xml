@@ -7,6 +7,8 @@
   <Signals>
     <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
     <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="numCameras" Type="string" Value="10"></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="numTiles" Type="string"></Signal>
   </Signals>
 
   <Alarms>

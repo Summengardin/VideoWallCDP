@@ -43,15 +43,15 @@ void Tile::Create(const char* fullName)
     OSDTC.Create("OSDTC",this);
     OSDTR.Create("OSDTR",this);
     OSDBC.Create("OSDBC",this);
-    i_TiltAbs.Create("TiltAbs",this);
-    i_PanAbs.Create("PanAbs",this);
-    MQTTPublish.Create("MQTTPublish",this);
-    i_Brightness.Create("Brightness",this);
     i_Source.Create("Source",this);
-    i_ZoomAbs.Create("ZoomAbs",this);
-    i_ZoomSpeed.Create("ZoomSpeed",this);
-    i_TiltSpeed.Create("TiltSpeed",this);
-    i_PanSpeed.Create("PanSpeed",this);
+    ZoomSpeed.Create("ZoomSpeed",this);
+    PanSpeed.Create("PanSpeed",this);
+    ZoomAbs.Create("ZoomAbs",this);
+    TiltAbs.Create("TiltAbs",this);
+    PanAbs.Create("PanAbs",this);
+    TiltSpeed.Create("TiltSpeed",this);
+    Brightness.Create("Brightness",this);
+    MQTTPublish.Create("MQTTPublish",this);
 }
 
 /*!
@@ -66,7 +66,6 @@ void Tile::CreateModel()
 
     RegisterStateProcess("Null", (CDPCOMPONENT_STATEPROCESS)&Tile::ProcessNull, "Initial Null state");
     RegisterMessage(CM_TEXTCOMMAND,"MessageHandler","",(CDPOBJECT_MESSAGEHANDLER)&Tile::MessageMessageHandler);
-    RegisterMessage(CM_TEXTCOMMAND,"getSource","",(CDPOBJECT_MESSAGEHANDLER)&Tile::MessagegetSource);
 }
 
 /*!
@@ -123,30 +122,17 @@ int Tile::MessageMessageHandler(void* message)
 
 
 
-int Tile::MessagegetSource(void* message)
-{
-    MessageTextCommand txtMessage;
-    txtMessage.SetTextCommand("CurrentTileSource");
-    MessagePacketHandle Outputmsg(txtMessage);
-    Outputmsg.Packet().PayloadAppend(i_Source);
-    MessageHandlerConnector.SendMessage(Outputmsg);
-    return 1;
-
-}
-
-
-
 void Tile::IndexInputs() {
 
     // Get new values
     indexedSignals.at(0) = i_Source;
-    indexedSignals.at(1) = std::to_string(i_Brightness);
-    indexedSignals.at(2) = std::to_string(i_ZoomAbs);
-    indexedSignals.at(3) = std::to_string(i_ZoomSpeed);
-    indexedSignals.at(4) = std::to_string(i_PanAbs);
-    indexedSignals.at(5) = std::to_string(i_PanSpeed);
-    indexedSignals.at(6) = std::to_string(i_TiltAbs);
-    indexedSignals.at(7) = std::to_string(i_TiltSpeed);
+    indexedSignals.at(1) = std::to_string(Brightness);
+    indexedSignals.at(2) = std::to_string(ZoomAbs);
+    indexedSignals.at(3) = std::to_string(ZoomSpeed);
+    indexedSignals.at(4) = std::to_string(PanAbs);
+    indexedSignals.at(5) = std::to_string(PanSpeed);
+    indexedSignals.at(6) = std::to_string(TiltAbs);
+    indexedSignals.at(7) = std::to_string(TiltSpeed);
     indexedSignals.at(8) = CDPUtils::EscapeQuotation(OSDPortsToJson().dump());
 
     // Check for changes
@@ -228,24 +214,19 @@ void Tile::parseAndSetSignals(const std::string& msg) {
         valueStr.erase(0, valueStr.find_first_not_of(" \t"));
         valueStr.erase(valueStr.find_last_not_of(" \t") + 1);
 
-        double value = std::stod(valueStr);
         // Decide where to store
         if (key == "Zoom_speed") {
-            i_ZoomSpeed = value;
+            ZoomSpeed = std::stod(valueStr);
         }
         else if (key == "Tilt_speed") {
-            i_TiltSpeed = value;
+            TiltSpeed = std::stod(valueStr);
         }
         else if (key == "Pan_speed") {
-            i_PanSpeed = value;
+            PanSpeed = std::stod(valueStr);
         }
         else if (key == "source") {
-            i_Source = value;
+            // std::cout << "New source value: " << valueStr << "\n";
+            i_Source = valueStr;
         }
     }
-}
-
-
-const CDPSignal<std::string>& Tile::getSourceSignal() const {
-    return i_Source;
 }
