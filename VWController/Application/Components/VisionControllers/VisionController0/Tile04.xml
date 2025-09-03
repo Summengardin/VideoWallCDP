@@ -40,7 +40,7 @@
         <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
         <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Alignment="center" Description="TopCenter" Input="1" Model="VideoWallLib.OSDTextPort" Name="OSDTC" PosX="960" TextIndex="2" Routing="....OSD.OSDDataDistributor.OSDTextPort14">
+    <Port Alignment="left" Description="TopCenter" Input="1" Model="VideoWallLib.OSDTextPort" Name="OSDTC" PosX="960" TextIndex="2" Routing="....OSD.OSDDataDistributor.OSDTextPort14">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -57,7 +57,7 @@
         <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
         <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Alignment="right" Description="TopRight" Input="1" Model="VideoWallLib.OSDTextPort" Name="OSDTR" PosX="1920" TextIndex="3" Routing="....OSD.OSDDataDistributor.OSDTextPort15">
+    <Port Alignment="left" Description="TopRight" Input="1" Model="VideoWallLib.OSDTextPort" Name="OSDTR" PosX="1920" TextIndex="3" Routing="....OSD.OSDDataDistributor.OSDTextPort15">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -74,7 +74,7 @@
         <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
         <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Alignment="center" Description="BottomCenter" Input="1" Model="VideoWallLib.OSDTextPort" Name="OSDBC" PosX="960" PosY="900" Routing="....OSD.OSDDataDistributor.OSDTextPort16">
+    <Port Alignment="left" Description="BottomCenter" Input="1" Model="VideoWallLib.OSDTextPort" Name="OSDBC" PosX="960" PosY="900" Routing="....OSD.OSDDataDistributor.OSDTextPort16">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
