@@ -26,7 +26,7 @@
    <string>Form</string>
   </property>
   <property name="cdpTargetRouting">
-   <string>VWController.Cameras</string>
+   <string>VWController.Cameras.Camera01</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <property name="topMargin">
@@ -84,6 +84,55 @@
        </widget>
       </item>
       <item>
+       <widget class="CDPBaseLabel" name="label_4">
+        <property name="text">
+         <string>DisplayName</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+        <property name="stylingType">
+         <enum>CDPBaseLabel::NoFile</enum>
+        </property>
+        <property name="cdpRouting" stdset="0">
+         <string>.DisplayName.Value</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="CDPBaseLineV" name="verticalLine_2">
+        <property name="svgFile">
+         <string notr="true">:/themes/openbridge5_dusk/backgrounds/bgBorder.svg</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="CDPBaseLineV" name="verticalLine_3">
+        <property name="svgFile">
+         <string notr="true">:/themes/openbridge5_dusk/backgrounds/bgBorder.svg</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="CDPBaseLabel" name="label_3">
         <property name="text">
          <string>IP</string>
@@ -95,22 +144,9 @@
          <enum>CDPBaseLabel::NoFile</enum>
         </property>
         <property name="cdpRouting" stdset="0">
-         <string>.IP.String</string>
+         <string>.IP.Value</string>
         </property>
        </widget>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
       </item>
      </layout>
     </widget>
@@ -149,16 +185,25 @@
             <family>Ubuntu</family>
            </font>
           </property>
+          <property name="placeholderText">
+           <string>rtsp://&lt;user&gt;_&lt;pass&gt;@&lt;ip&gt;:&lt;port&gt;/&lt;mount&gt;</string>
+          </property>
           <property name="cursorMoveStyle">
            <enum>Qt::VisualMoveStyle</enum>
+          </property>
+          <property name="precision">
+           <number>0</number>
           </property>
           <property name="svgFile">
            <string notr="true">:/themes/openbridge5_day/backgrounds/bgLineEdit.svg</string>
           </property>
           <property name="cdpRouting" stdset="0">
-           <string>.URI.String</string>
+           <string>.URI.Value</string>
           </property>
           <property name="cdpPromptForChanges" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="cdpStringToDouble" stdset="0">
            <bool>false</bool>
           </property>
           <property name="pushRoutables" stdset="0">
@@ -184,7 +229,7 @@
            <string notr="true">:/themes/openbridge5_day/buttons/spinBox.svg</string>
           </property>
           <property name="cdpRouting" stdset="0">
-           <string>.Type.String</string>
+           <string>.Type.Value</string>
           </property>
           <property name="pushRoutables" stdset="0">
            <stringlist notr="true">

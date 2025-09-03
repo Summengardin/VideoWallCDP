@@ -1,0 +1,101 @@
+<Component Model="CDPComponent" Name="SelectedTileIndication" src="Components/OSD/SelectedTileIndication.xml" Description="CDPComponent can be used to create a container task in applications or other components with its own thread (or in same thread as parent if Priority, ThreadGroup match) and cyclic frequency to contain no-code logic.
+    It is also possible to create a new C++ based component for code based complex work in a Library type project. User must then use &apos;Add New...&apos; Wizard on Library root item. Components communicate by exchanging Messages, Port-, Signal- values, both inside applications and between applications.">
+  <SchedulingOrder>TopDown</SchedulingOrder>
+  <SchedulingGroup>Default</SchedulingGroup>
+  <fs>10</fs>
+  <Status>0</Status>
+
+  <Signals>
+    <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
+    <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;int&gt;" Name="SelectedTile" Type="int" Description="" DisableOperators="0" InternalValue="0" RolePermissions="" RoutedProperties="Value" Routing="" RoutingStatus="" Unit="" Value="0"></Signal>
+  </Signals>
+
+  <Alarms>
+    <Alarm Description="A component was suspended!" Name="Component Suspended" Text="Component was suspended!"></Alarm>
+    <Alarm Description="Alarm is triggered (with Text containing the list of errors) when some node of the component (like operator) has configuration fault." Level="Error" Name="ConfigurationFaults"></Alarm>
+  </Alarms>
+
+  <Subcomponents>
+    <Operator Model="OperationUtilities.OutputSelectorOperator&lt;int&gt;" Name="OutputSelectorOperator" Type="int">
+      <Argument CppName="" Description="Selection: Used to specify a SelectionNr that will be compared to the SelectionNr of the Arguments" Input="1" Model="DefaultArgument&lt;unsigned int&gt;" Name="Selection" Routing="..SelectedTile" Type="unsigned int" Value="0"></Argument>
+      <Argument CppName="" Input="1" Model="DefaultArgument&lt;int&gt;" Name="InputValue" Routing="" Type="int" Value="0"></Argument>
+
+      <SelectorOutputs>
+        <SelectorOutput CppName="" Input="0" Model="OperationUtilities.SelectorOutput&lt;int&gt;" Name="Argument0" Routing="" SelectionNr="1" Type="int" Value="0"></SelectorOutput>
+        <SelectorOutput CppName="" Input="0" Model="OperationUtilities.SelectorOutput&lt;int&gt;" Name="Argument1" Routing="" SelectionNr="2" Type="int" Value="0"></SelectorOutput>
+        <SelectorOutput CppName="" Input="0" Model="OperationUtilities.SelectorOutput&lt;int&gt;" Name="Argument2" Routing="" SelectionNr="3" Type="int" Value="0"></SelectorOutput>
+        <SelectorOutput CppName="" Input="0" Model="OperationUtilities.SelectorOutput&lt;int&gt;" Name="Argument3" Routing="" SelectionNr="4" Type="int" Value="0"></SelectorOutput>
+        <SelectorOutput CppName="" Input="0" Model="OperationUtilities.SelectorOutput&lt;int&gt;" Name="Argument4" Routing="" SelectionNr="5" Type="int" Value="0"></SelectorOutput>
+        <SelectorOutput CppName="" Input="0" Model="OperationUtilities.SelectorOutput&lt;int&gt;" Name="Argument5" Routing="" SelectionNr="6" Type="int" Value="0"></SelectorOutput>
+        <SelectorOutput CppName="" Input="0" Model="OperationUtilities.SelectorOutput&lt;int&gt;" Name="Argument6" Routing="" SelectionNr="7" Type="int" Value="0"></SelectorOutput>
+        <SelectorOutput CppName="" Input="0" Model="OperationUtilities.SelectorOutput&lt;int&gt;" Name="Argument7" Routing="" SelectionNr="8" Type="int" Value="0"></SelectorOutput>
+        <SelectorOutput CppName="" Input="0" Model="OperationUtilities.SelectorOutput&lt;int&gt;" Name="Argument8" Routing="" SelectionNr="9" Type="int" Value="0"></SelectorOutput>
+        <SelectorOutput CppName="" Input="0" Model="OperationUtilities.SelectorOutput&lt;int&gt;" Name="Argument9" Routing="" SelectionNr="0" Type="int" Value="0"></SelectorOutput>
+        <SelectorOutput CppName="" Input="0" Model="OperationUtilities.SelectorOutput&lt;int&gt;" Name="Argument10" Routing="" SelectionNr="0" Type="int" Value="0"></SelectorOutput>
+      </SelectorOutputs></Operator>
+  </Subcomponents>
+
+  <Ports>
+    <Port Input="0" Model="CDPPushPort" Name="Tile01Push" Routing="VWController.VisionControllers.VisionController0.Tile01.SelectedRect">
+
+      <Connections>
+        <Connection Input="0" Model="OperationUtilities.ValuedConnectionExtended&lt;bool&gt;" Name="Enable" Routing="..OutputSelectorOperator.Argument0" Type="bool" Value="0"></Connection>
+      </Connections></Port>
+    <Port Input="0" Model="CDPPushPort" Name="Tile02Push" Routing="VWController.VisionControllers.VisionController0.Tile02.SelectedRect">
+
+      <Connections>
+        <Connection Input="0" Model="OperationUtilities.ValuedConnectionExtended&lt;bool&gt;" Name="Enable" Routing="..OutputSelectorOperator.Argument1" Type="bool" Value="0"></Connection>
+      </Connections></Port>
+    <Port Input="0" Model="CDPPushPort" Name="Tile03Push" Routing="VWController.VisionControllers.VisionController0.Tile03.SelectedRect">
+
+      <Connections>
+        <Connection Input="0" Model="OperationUtilities.ValuedConnectionExtended&lt;bool&gt;" Name="Enable" Routing="..OutputSelectorOperator.Argument2" Type="bool" Value="0"></Connection>
+      </Connections></Port>
+    <Port Input="0" Model="CDPPushPort" Name="Tile04Push" Routing="VWController.VisionControllers.VisionController0.Tile04.SelectedRect">
+
+      <Connections>
+        <Connection Input="0" Model="OperationUtilities.ValuedConnectionExtended&lt;bool&gt;" Name="Enable" Routing="..OutputSelectorOperator.Argument3" Type="bool" Value="0"></Connection>
+      </Connections></Port>
+    <Port Input="0" Model="CDPPushPort" Name="Tile11Push" Routing="VWController.VisionControllers.VisionController1.Tile11.SelectedRect">
+
+      <Connections>
+        <Connection Input="0" Model="OperationUtilities.ValuedConnectionExtended&lt;bool&gt;" Name="Enable" Routing="..OutputSelectorOperator.Argument4" Type="bool" Value="0"></Connection>
+      </Connections></Port>
+    <Port Input="0" Model="CDPPushPort" Name="Tile12Push" Routing="VWController.VisionControllers.VisionController1.Tile12.SelectedRect">
+
+      <Connections>
+        <Connection Input="0" Model="OperationUtilities.ValuedConnectionExtended&lt;bool&gt;" Name="Enable" Routing="..OutputSelectorOperator.Argument5" Type="bool" Value="0"></Connection>
+      </Connections></Port>
+    <Port Input="0" Model="CDPPushPort" Name="Tile13Push" Routing="VWController.VisionControllers.VisionController1.Tile13.SelectedRect">
+
+      <Connections>
+        <Connection Input="0" Model="OperationUtilities.ValuedConnectionExtended&lt;bool&gt;" Name="Enable" Routing="..OutputSelectorOperator.Argument6" Type="bool" Value="0"></Connection>
+      </Connections></Port>
+    <Port Input="0" Model="CDPPushPort" Name="Tile14Push" Routing="VWController.VisionControllers.VisionController1.Tile14.SelectedRect">
+
+      <Connections>
+        <Connection Input="0" Model="OperationUtilities.ValuedConnectionExtended&lt;bool&gt;" Name="Enable" Routing="..OutputSelectorOperator.Argument7" Type="bool" Value="0"></Connection>
+      </Connections></Port>
+    <Port Input="0" Model="CDPPushPort" Name="Tile21Push" Routing="VWController.VisionControllers.VisionController2.Tile21.SelectedRect">
+
+      <Connections>
+        <Connection Input="0" Model="OperationUtilities.ValuedConnectionExtended&lt;bool&gt;" Name="Enable" Routing="..OutputSelectorOperator.Argument7" Type="bool" Value="0"></Connection>
+      </Connections></Port>
+    <Port Input="0" Model="CDPPushPort" Name="Tile22Push" Routing="VWController.VisionControllers.VisionController2.Tile22.SelectedRect">
+
+      <Connections>
+        <Connection Input="0" Model="OperationUtilities.ValuedConnectionExtended&lt;bool&gt;" Name="Enable" Routing="..OutputSelectorOperator.Argument8" Type="bool" Value="0"></Connection>
+      </Connections></Port>
+    <Port Input="0" Model="CDPPushPort" Name="Tile23Push" Routing="VWController.VisionControllers.VisionController2.Tile23.SelectedRect">
+
+      <Connections>
+        <Connection Input="0" Model="OperationUtilities.ValuedConnectionExtended&lt;bool&gt;" Name="Enable" Routing="..OutputSelectorOperator.Argument9" Type="bool" Value="0"></Connection>
+      </Connections></Port>
+    <Port Input="0" Model="CDPPushPort" Name="Tile24Push" Routing="VWController.VisionControllers.VisionController2.Tile24.SelectedRect">
+
+      <Connections>
+        <Connection Input="0" Model="OperationUtilities.ValuedConnectionExtended&lt;bool&gt;" Name="Enable" Routing="..OutputSelectorOperator.Argument10" Type="bool" Value="0"></Connection>
+      </Connections></Port>
+  </Ports>
+</Component>

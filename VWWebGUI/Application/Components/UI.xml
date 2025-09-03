@@ -1,4 +1,4 @@
-<Component Model="CDPComponent" Name="GUIConnections" src="Components/GUIConnections.xml" Description="CDPComponent is an instance of a CDP component model, instantiated using the specification in the component configuration xml file. Components communicate by exchanging Messages, Signal- and Property-values, both inside applications and between applications.">
+<Component Model="CDPComponent" Name="UI" src="Components/UI.xml" Description="CDPComponent is an instance of a CDP component model, instantiated using the specification in the component configuration xml file. Components communicate by exchanging Messages, Signal- and Property-values, both inside applications and between applications.">
   <SchedulingOrder>TopDown</SchedulingOrder>
   <SchedulingGroup>Default</SchedulingGroup>
   <fs>10</fs>

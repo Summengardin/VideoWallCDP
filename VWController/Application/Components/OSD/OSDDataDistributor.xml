@@ -11,10 +11,11 @@
     <Signal Description="Load in gangway tip" Input="1" Model="CDPSignal&lt;string&gt;" Name="GangwayLoad" Type="string" Unit="t" Routing="DataSimulation.GWLoad.Out"></Signal>
     <Signal Description="Load in crane tip" Input="1" Model="CDPSignal&lt;string&gt;" Name="CraneLoad" Type="string" Unit="t" Routing="DataSimulation.CraneLoad.Out"></Signal>
     <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Mode" Type="string" Routing="DataSimulation.GWMode.Out"></Signal>
-    <Signal Description="Shows description of current OSD elements instead of data" Input="1" Model="CDPSignal&lt;bool&gt;" Name="ShowOSDDescription" Type="bool" Unit="0 / 1"></Signal>
-    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Brightness" Type="string" Value="SourceBrightness" Description="Shows  the Brightness offset of the current source" Unit="0 .. 1"></Signal>
-    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="CurrentSource" Type="string" Description="Shows the current source in this tile" DisableOperators="0" InternalValue="" RolePermissions="" RoutedProperties="Value" Routing="" RoutingStatus="" Unit="" Value="SourceSource"></Signal>
-    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Zoom" Type="string" Value="SourceZoom" Description="Shows  the Absolute zoom value of the current source" Unit="0 .. 1"></Signal>
+    <Signal Description="Shows description of current OSD elements instead of data" Input="1" Model="CDPSignal&lt;bool&gt;" Name="ShowOSDDescription" Type="bool" Unit="0 / 1" Value="0"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="CurrentSource" Type="string" Description="Shows the current source in this tile" DisableOperators="0" InternalValue="" RolePermissions="" RoutedProperties="Value" Routing="" RoutingStatus="" Unit="CameraName" Value="tile:Source"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="ControlValue" Type="string" Description="Tile-specific. Shows the value of the control-signals." DisableOperators="0" InternalValue="" RolePermissions="" RoutedProperties="Value" Routing="" RoutingStatus="" Unit="" Value="tile:ControlValue"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Date&amp;Time" Type="string" Description="Current Data/Time in a given format." DisableOperators="0" InternalValue="" RolePermissions="" RoutedProperties="Value" Routing="..TimestampGenerator.TimestampFormatted" RoutingStatus="" Unit="YYYY-MM-DD HH:MM:SS" Value=""></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Off" Type="string" Description="" DisableOperators="0" InternalValue="" RolePermissions="" RoutedProperties="Value" Routing="" RoutingStatus="" Unit="" Value=""></Signal>
   </Signals>
 
   <Alarms>
@@ -23,7 +24,7 @@
   </Alarms>
 
   <Ports>
-    <Port Input="0" Model="VideoWallLib.OSDPort" Name="OSDPort">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort1" TextIndexName="Date&amp;Time">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -37,8 +38,10 @@
         <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
         <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
         <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+        <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+        <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDPort" Name="OSDPort1">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort2" TextIndexName="Off">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -52,8 +55,10 @@
         <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
         <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
         <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+        <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+        <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDPort" Name="OSDPort2">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort3" TextIndexName="Off">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -67,8 +72,10 @@
         <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
         <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
         <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+        <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+        <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDPort" Name="OSDPort3">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort4" TextIndexName="Off">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -82,8 +89,10 @@
         <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
         <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
         <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+        <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+        <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDPort" Name="OSDPort4">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort5" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -97,8 +106,10 @@
         <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
         <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
         <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+        <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+        <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDPort" Name="OSDPort5" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort6" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="" TextIndexName="ControlValue">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -112,8 +123,10 @@
         <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
         <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
         <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+        <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+        <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDPort" Name="OSDPort6" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort7" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -127,8 +140,10 @@
         <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
         <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
         <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+        <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+        <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDPort" Name="OSDPort7" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort8" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -142,6 +157,144 @@
         <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
         <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
         <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+        <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+        <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
+      </Connections></Port>
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort9" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
+
+      <Connections>
+        <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
+        <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+        <Connection Input="1" LocalName=".FontSize" Model="CDPPortConnection" Name="MapFontSize"></Connection>
+        <Connection Input="1" LocalName=".Alignment" Model="CDPPortConnection" Name="MapAlignment"></Connection>
+        <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+        <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+        <Connection Input="1" LocalName=".FontName" Model="CDPPortConnection" Name="MapFontName"></Connection>
+        <Connection Input="1" LocalName=".FontColor" Model="CDPPortConnection" Name="MapFontColor"></Connection>
+        <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+        <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+        <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+        <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+        <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
+      </Connections></Port>
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort10" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
+
+      <Connections>
+        <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
+        <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+        <Connection Input="1" LocalName=".FontSize" Model="CDPPortConnection" Name="MapFontSize"></Connection>
+        <Connection Input="1" LocalName=".Alignment" Model="CDPPortConnection" Name="MapAlignment"></Connection>
+        <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+        <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+        <Connection Input="1" LocalName=".FontName" Model="CDPPortConnection" Name="MapFontName"></Connection>
+        <Connection Input="1" LocalName=".FontColor" Model="CDPPortConnection" Name="MapFontColor"></Connection>
+        <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+        <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+        <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+        <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+        <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
+      </Connections></Port>
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort11" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
+
+      <Connections>
+        <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
+        <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+        <Connection Input="1" LocalName=".FontSize" Model="CDPPortConnection" Name="MapFontSize"></Connection>
+        <Connection Input="1" LocalName=".Alignment" Model="CDPPortConnection" Name="MapAlignment"></Connection>
+        <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+        <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+        <Connection Input="1" LocalName=".FontName" Model="CDPPortConnection" Name="MapFontName"></Connection>
+        <Connection Input="1" LocalName=".FontColor" Model="CDPPortConnection" Name="MapFontColor"></Connection>
+        <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+        <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+        <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+        <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+        <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
+      </Connections></Port>
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort12" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
+
+      <Connections>
+        <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
+        <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+        <Connection Input="1" LocalName=".FontSize" Model="CDPPortConnection" Name="MapFontSize"></Connection>
+        <Connection Input="1" LocalName=".Alignment" Model="CDPPortConnection" Name="MapAlignment"></Connection>
+        <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+        <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+        <Connection Input="1" LocalName=".FontName" Model="CDPPortConnection" Name="MapFontName"></Connection>
+        <Connection Input="1" LocalName=".FontColor" Model="CDPPortConnection" Name="MapFontColor"></Connection>
+        <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+        <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+        <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+        <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+        <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
+      </Connections></Port>
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort13" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
+
+      <Connections>
+        <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
+        <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+        <Connection Input="1" LocalName=".FontSize" Model="CDPPortConnection" Name="MapFontSize"></Connection>
+        <Connection Input="1" LocalName=".Alignment" Model="CDPPortConnection" Name="MapAlignment"></Connection>
+        <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+        <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+        <Connection Input="1" LocalName=".FontName" Model="CDPPortConnection" Name="MapFontName"></Connection>
+        <Connection Input="1" LocalName=".FontColor" Model="CDPPortConnection" Name="MapFontColor"></Connection>
+        <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+        <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+        <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+        <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+        <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
+      </Connections></Port>
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort14" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
+
+      <Connections>
+        <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
+        <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+        <Connection Input="1" LocalName=".FontSize" Model="CDPPortConnection" Name="MapFontSize"></Connection>
+        <Connection Input="1" LocalName=".Alignment" Model="CDPPortConnection" Name="MapAlignment"></Connection>
+        <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+        <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+        <Connection Input="1" LocalName=".FontName" Model="CDPPortConnection" Name="MapFontName"></Connection>
+        <Connection Input="1" LocalName=".FontColor" Model="CDPPortConnection" Name="MapFontColor"></Connection>
+        <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+        <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+        <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+        <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+        <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
+      </Connections></Port>
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort15">
+
+      <Connections>
+        <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
+        <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+        <Connection Input="1" LocalName=".FontSize" Model="CDPPortConnection" Name="MapFontSize"></Connection>
+        <Connection Input="1" LocalName=".Alignment" Model="CDPPortConnection" Name="MapAlignment"></Connection>
+        <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+        <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+        <Connection Input="1" LocalName=".FontName" Model="CDPPortConnection" Name="MapFontName"></Connection>
+        <Connection Input="1" LocalName=".FontColor" Model="CDPPortConnection" Name="MapFontColor"></Connection>
+        <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+        <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+        <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+        <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+        <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
+      </Connections></Port>
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort16" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
+
+      <Connections>
+        <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
+        <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
+        <Connection Input="1" LocalName=".FontSize" Model="CDPPortConnection" Name="MapFontSize"></Connection>
+        <Connection Input="1" LocalName=".Alignment" Model="CDPPortConnection" Name="MapAlignment"></Connection>
+        <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+        <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+        <Connection Input="1" LocalName=".FontName" Model="CDPPortConnection" Name="MapFontName"></Connection>
+        <Connection Input="1" LocalName=".FontColor" Model="CDPPortConnection" Name="MapFontColor"></Connection>
+        <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+        <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+        <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+        <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+        <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port></Ports>
   
 

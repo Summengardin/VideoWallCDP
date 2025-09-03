@@ -2,14 +2,14 @@
 <Model Name="VideoWallLib.Tile">
  <ModelTypeClass>C++</ModelTypeClass>
  <BaseModel>CDPComponent</BaseModel>
- <Element Name="Priority" Value="normal"/>
- <Element Name="fs" Value="5"/>
+ <Element Name="Priority" Value="normal"></Element>
+ <Element Name="fs" Value="5"></Element>
  <Attributes>
-  <Attribute Name="Description" Type="string" Value="Simple component"/>
-  <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.Tile"/>
+  <Attribute Name="Description" Type="string" Value="Simple component"></Attribute>
+  <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.Tile"></Attribute>
  </Attributes>
  <Signals>
-  <Signal Input="1" Model="DeliveryConfigString" Name="Source" TypeColorHint=""/>
+  <Signal Input="1" Model="DeliveryConfigString"    Name="Source" TypeColorHint=""/>
   <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="ZoomSpeed" Type="double"/>
   <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="PanSpeed" Type="double"/>
   <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="TiltSpeed" Type="double"/>
@@ -19,18 +19,14 @@
   <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="PanAbs" Type="double"/>
  </Signals>
  <Ports>
-  <Port Description="TopLeft" Model="VideoWallLib.OSDPort" Name="OSDTL" TextIndex="1"/>
-  <Port Alignment="center" Description="TopCenter" Model="VideoWallLib.OSDPort" Name="OSDTC" PosX="960" TextIndex="2"/>
-  <Port Alignment="right" Description="TopRight" Model="VideoWallLib.OSDPort" Name="OSDTR" PosX="1920" TextIndex="3"/>
-  <Port Alignment="center" Description="BottomCenter" Model="VideoWallLib.OSDPort" Name="OSDBC" PosX="960" PosY="900"/>
- </Ports>
- <Subcomponents>
+    <Port Model="VideoWallLib.OSDRectPort" Name="SelectedRect" Connected="0" DataConsistency="0" Description="Rectangle for showing that this tile is the current selection" RolePermissions="" Routing="" BorderWidth="15" BorderColor="1,0,0,1"></Port>
+ </Ports><Subcomponents>
   <Operator Model="MQTTIO.Publisher" Name="Publisher">
-   <Client Name="MQTTClient" Object="..MQTTClientRPC"/>
+   <Client Name="MQTTClient" Object="..MQTTClientRPC"></Client>
   </Operator>
  </Subcomponents>
  <ArgumentMessages>
-  <ArgumentMessage Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC"/>
+  <ArgumentMessage Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC"></ArgumentMessage>
  </ArgumentMessages>
  <Connectors>
   <Connector DisplayHint="Internal" Name="MQTTPublish" Object=".Publisher.Publish" RoutingType="Push" TypeHint="Routing"/>

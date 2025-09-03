@@ -5,7 +5,6 @@
   <ModelTypeClass>C++</ModelTypeClass>
   <BaseModel>CDPComponent</BaseModel>
   <Element Name="Priority" Value="normal"></Element>
-  <Element Name="fs" Value="5"></Element>
 
   <Attributes>
      <Attribute Name="Description" Value="Simple component" Type="string"></Attribute>
@@ -40,6 +39,7 @@
   </Subcomponents>
 
   <Ports></Ports>
+  <Element Description="The Frequency [Hz] that the component statemachine is run at." DisplayHint="Important" Model="PropertyAsElement" Name="fs" Required="1" Type="double" Unit="Hz" Value="100"></Element>
   
 
 </Model>

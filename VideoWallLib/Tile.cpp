@@ -37,21 +37,18 @@ Tile::~Tile()
 void Tile::Create(const char* fullName)
 {
     CDPComponent::Create(fullName);
-    VisionControllerConnector.Create("VisionControllerConnector",this);
-    MessageHandlerConnector.Create("MessageHandlerConnector",this);
-    OSDTL.Create("OSDTL",this);
-    OSDTC.Create("OSDTC",this);
-    OSDTR.Create("OSDTR",this);
-    OSDBC.Create("OSDBC",this);
-    i_Source.Create("Source",this);
+    Source.Create("Source",this);
     ZoomSpeed.Create("ZoomSpeed",this);
-    PanSpeed.Create("PanSpeed",this);
     ZoomAbs.Create("ZoomAbs",this);
-    TiltAbs.Create("TiltAbs",this);
+    PanSpeed.Create("PanSpeed",this);
     PanAbs.Create("PanAbs",this);
     TiltSpeed.Create("TiltSpeed",this);
+    TiltAbs.Create("TiltAbs",this);
     Brightness.Create("Brightness",this);
     MQTTPublish.Create("MQTTPublish",this);
+    SelectedRect.Create("SelectedRect",this);
+    MessageHandlerConnector.Create("MessageHandlerConnector",this);
+    VisionControllerConnector.Create("VisionControllerConnector",this);
 }
 
 /*!
@@ -77,13 +74,20 @@ void Tile::CreateModel()
 void Tile::Configure(const char* componentXML)
 {
     CDPComponent::Configure(componentXML);
-    for (CDPPort* port: m_ports)
-        if (OSDPort* osd_port = dynamic_cast<OSDPort*>(port))
+    for (CDPPort* port: m_ports){
+        if (OSDTextPort* osd_port = dynamic_cast<OSDTextPort*>(port))
             m_osdPorts.push_back(osd_port);
+        if (OSDRectPort* osd_port = dynamic_cast<OSDRectPort*>(port))
+            m_osdRectPorts.push_back(osd_port);
+    }
 
-    indexedSignals.resize(10);
-    indexedSignalsPrev.resize(10);
-    indexedSignalsChanged.resize(10);
+
+    size_t len = topics.size();
+    indexedSignals.resize(len);
+    indexedSignalsPrev.resize(len);
+    indexedSignalsChanged.resize(len);
+    holdUntil.resize(indexedSignalsChanged.size(),
+                     std::chrono::steady_clock::time_point::max());
     MessageHandlerConnector.ConnectTo("VWController.VisionControllers");
 }
 
@@ -102,7 +106,6 @@ void Tile::Configure(const char* componentXML)
 */
 void Tile::ProcessNull()
 {
-        /* Write your code here */
     IndexInputs();
     PublishMqtt();
 
@@ -121,11 +124,10 @@ int Tile::MessageMessageHandler(void* message)
 }
 
 
-
 void Tile::IndexInputs() {
 
     // Get new values
-    indexedSignals.at(0) = i_Source;
+    indexedSignals.at(0) = Source;
     indexedSignals.at(1) = std::to_string(Brightness);
     indexedSignals.at(2) = std::to_string(ZoomAbs);
     indexedSignals.at(3) = std::to_string(ZoomSpeed);
@@ -136,7 +138,13 @@ void Tile::IndexInputs() {
     indexedSignals.at(8) = CDPUtils::EscapeQuotation(OSDPortsToJson().dump());
 
     // Check for changes
+    auto now = clock::now();
     std::transform(indexedSignals.begin(), indexedSignals.end(), indexedSignalsPrev.begin(), indexedSignalsChanged.begin(), std::not_equal_to<std::string>());
+    for (size_t i = 0; i < indexedSignalsChanged.size(); ++i) {
+        if (indexedSignalsChanged[i]) {
+            holdUntil[i] = now + kHoldFor;
+        }
+    }
 
     // Store new values
     std::copy(indexedSignals.begin(), indexedSignals.end(), indexedSignalsPrev.begin());
@@ -155,7 +163,7 @@ void Tile::PublishMqtt() {
     std::replace(baseTopic.begin(), baseTopic.end(), '.', '/');
 
     for (size_t i = 0; i < topics.size(); i++){
-        if (indexedSignalsChanged[i]){
+        if (indexedSignalsChanged[i] or firstRun){
             MessageTextCommand txtMessage;
             txtMessage.SetTextCommand("Publish");
             MessagePacketHandle msg(txtMessage);
@@ -178,17 +186,88 @@ json Tile::OSDPortsToJson() {
     json out_json;
     for (auto p : m_osdPorts){
         json loc_json;
+        double timeout = p->Timeout;
+
         auto add_to_json = [&](IPortConnection& con){
             std::string name = con.GetConnectionName();
             // Remove "Map" from name
             name.erase(0, 3);
             std::string val = con.GetLocalValue()->GetValue();
+
+            if (name == "Text" && StringHelpers::StartsWith(val, "tile:")){
+
+                if (StringHelpers::Contains(val, "Source")){
+                    val = Source;
+                }
+                else if (StringHelpers::Contains(val, "ControlValue")){
+                    val.clear();
+                    const auto now = clock::now();
+
+                    if (holdUntil.size() != indexedSignalsChanged.size()) {
+                        holdUntil.resize(indexedSignalsChanged.size(), clock::time_point::min());
+                    }
+
+                    for (size_t i = 0; i < indexedSignalsChanged.size(); ++i){
+                        // Skip OSD
+                        if (topics[i] == "OSD") continue;
+
+
+                        if (indexedSignalsChanged[i]) {
+                            if (timeout > 0) {
+                                auto future = std::chrono::duration_cast<std::chrono::milliseconds>(
+                                    std::chrono::duration<double>(timeout));
+                                holdUntil[i] = now + future;
+                            } else {
+                                holdUntil[i] = std::chrono::time_point<std::chrono::steady_clock>::max();
+                            }
+                        }
+
+                        if (now > holdUntil[i])
+                            continue;
+
+                        // Append "topic: value"
+                        val += topics[i] + ": " + indexedSignals[i] + "\n";
+
+                        if (DebugLevel(DEBUGLEVEL_EXTENDED))
+                            std::cout << topics[i] << ": " << indexedSignals[i] << "\n";
+                    }
+                }
+
+
+            }
+
             loc_json.emplace(name, val);
         };
         p->ForEachConnection(add_to_json);
         auto name = p->GetNodeName();
         out_json.emplace(name, loc_json);
     }
+    for (auto p : m_osdRectPorts){
+        // if (!p->Enable)
+        //     continue;
+
+        json loc_json;
+
+        auto add_to_json = [&](IPortConnection& con){
+
+            std::string name = con.GetConnectionName();
+            // Remove "Map" from name
+            if (name.size() >= 3) name.erase(0, 3);
+
+            std::string val = con.GetLocalValue()->GetValue();
+
+            loc_json.emplace(name, val);
+        };
+
+        p->ForEachConnection(add_to_json);
+
+        auto name = p->GetNodeName();
+
+        out_json.emplace(name, loc_json);
+
+    }
+
+
     return out_json;
 }
 
@@ -226,7 +305,7 @@ void Tile::parseAndSetSignals(const std::string& msg) {
         }
         else if (key == "source") {
             // std::cout << "New source value: " << valueStr << "\n";
-            i_Source = valueStr;
+            Source = valueStr;
         }
     }
 }

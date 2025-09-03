@@ -14,8 +14,8 @@ HEADERS += \
     MQTTTopic.h \
     OSD.h \
     OSDDataDistributor.h \
+    OSDRectPort.h \
     OSDText.h \
-    OSDPort.h \
     SKAARHOJRawPanelIO.h \
     SKAARHOJRawPanelMenu.h \
     SKAARHOJTCPCom.h \
@@ -27,6 +27,9 @@ HEADERS += \
     base64.h \
     handControllerEasy.h \
     skhojhandcontroller.h \
+    OSDTextPort.h \
+    TimestampGenerator.h \
+    iana_posix_map.h \
     uri.h \
     videowalllib.h \
     VideoWallLibBuilder.h
@@ -40,14 +43,16 @@ SOURCES += \
     MQTTTopic.cpp \
     OSD.cpp \
     OSDDataDistributor.cpp \
+    OSDRectPort.cpp \
     OSDText.cpp \
-    OSDPort.cpp \
     SKAARHOJRawPanelIO.cpp \
     SKAARHOJRawPanelMenu.cpp \
     SKAARHOJTCPCom.cpp \
+    OSDTextPort.cpp \
     SourceOrchestrator.cpp \
     Tile.cpp \
     TilePort.cpp \
+    TimestampGenerator.cpp \
     VideoWallLibBuilder.cpp \
     VisionController.cpp \
     VisionControllerContainer.cpp \
@@ -57,7 +62,6 @@ SOURCES += \
     uri.cpp
 
 DISTFILES += $$files(*.xml, true) \
-    Templates/Models/VideoWallLib.Camera.MQTTTopic.xml \
     Templates/Models/VideoWallLib.Camera.xml \
     Templates/Models/VideoWallLib.CameraPort.xml \
     Templates/Models/VideoWallLib.Layout.xml \
@@ -68,8 +72,9 @@ DISTFILES += $$files(*.xml, true) \
     Templates/Models/VideoWallLib.OSD.OSDText.xml \
     Templates/Models/VideoWallLib.OSD.xml \
     Templates/Models/VideoWallLib.OSDDataDistributor.xml \
+    Templates/Models/VideoWallLib.OSDRectPort.xml \
     Templates/Models/VideoWallLib.OSDText.xml \
-    Templates/Models/VideoWallLib.OSDPort.xml \
+    Templates/Models/VideoWallLib.OSDTextPort.xml \
     Templates/Models/VideoWallLib.PopulateComboBox_T.xml \
     Templates/Models/VideoWallLib.SKAARHOJRawPanelIO.xml \
     Templates/Models/VideoWallLib.SKAARHOJRawPanelMenu.xml \
@@ -88,5 +93,6 @@ DISTFILES += $$files(*.xml, true) \
     Templates/Models/VideoWallLib.TilePort.xml \
     Templates/Models/VideoWallLib.VisionController.xml \
     Templates/Models/VideoWallLib.VisionControllerContainer.xml
+    Templates/Models/VideoWallLib.TimestampGenerator.xml
 
 load(cdp)

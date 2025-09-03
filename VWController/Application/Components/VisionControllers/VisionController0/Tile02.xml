@@ -1,7 +1,7 @@
 <Component Model="VideoWallLib.Tile" Name="Tile02" src="Components/VisionControllers/VisionController0/Tile02.xml" Description="Simple component">
   <SchedulingOrder>TopDown</SchedulingOrder>
   <SchedulingGroup>Default</SchedulingGroup>
-  <fs>5</fs>
+  <fs>100</fs>
   <Status>0</Status>
 
   <Signals>
@@ -23,7 +23,7 @@
   </Alarms>
 
   <Ports>
-    <Port Description="TopLeft" Input="1" Model="VideoWallLib.OSDPort" Name="OSDTL" TextIndex="1">
+    <Port Description="TopLeft" Input="1" Model="VideoWallLib.OSDTextPort" Name="OSDTL" TextIndex="1" Routing="....OSD.OSDDataDistributor.OSDTextPort5">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -37,8 +37,10 @@
         <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
         <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
         <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+        <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+        <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Alignment="center" Description="TopCenter" Input="1" Model="VideoWallLib.OSDPort" Name="OSDTC" PosX="960" TextIndex="2">
+    <Port Alignment="center" Description="TopCenter" Input="1" Model="VideoWallLib.OSDTextPort" Name="OSDTC" PosX="960" TextIndex="2" Routing="....OSD.OSDDataDistributor.OSDTextPort6" TextIndexName="ControlValue">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -52,8 +54,10 @@
         <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
         <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
         <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+        <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+        <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Alignment="right" Description="TopRight" Input="1" Model="VideoWallLib.OSDPort" Name="OSDTR" PosX="1920" TextIndex="3">
+    <Port Alignment="right" Description="TopRight" Input="1" Model="VideoWallLib.OSDTextPort" Name="OSDTR" PosX="1920" TextIndex="3" Routing="....OSD.OSDDataDistributor.OSDTextPort7">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -67,8 +71,10 @@
         <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
         <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
         <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+        <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+        <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Alignment="center" Description="BottomCenter" Input="1" Model="VideoWallLib.OSDPort" Name="OSDBC" PosX="960" PosY="900">
+    <Port Alignment="center" Description="BottomCenter" Input="1" Model="VideoWallLib.OSDTextPort" Name="OSDBC" PosX="960" PosY="900" Routing="....OSD.OSDDataDistributor.OSDTextPort8">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -82,8 +88,25 @@
         <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
         <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
         <Connection Input="0" LocalName=".TextIndexName" Model="CDPPortConnection" Name="MapTextIndexName"></Connection>
+        <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+        <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-  </Ports>
+    <Port BorderColor="1,0,0,1" BorderWidth="15" Description="Rectangle for showing that this tile is the current selection" Input="1" Model="VideoWallLib.OSDRectPort" Name="SelectedRect" Routing="">
+
+      <Connections>
+        <Connection Input="1" LocalName=".PosX" Model="CDPPortConnection" Name="MapPosX"></Connection>
+        <Connection Input="1" LocalName=".PosY" Model="CDPPortConnection" Name="MapPosY"></Connection>
+        <Connection Input="1" LocalName=".Width" Model="CDPPortConnection" Name="MapWidth"></Connection>
+        <Connection Input="1" LocalName=".Height" Model="CDPPortConnection" Name="MapHeight"></Connection>
+        <Connection Input="1" LocalName=".BorderWidth" Model="CDPPortConnection" Name="MapBorderWidth"></Connection>
+        <Connection Input="1" LocalName=".BorderColor" Model="CDPPortConnection" Name="MapBorderColor"></Connection>
+        <Connection Input="1" LocalName=".HasBGColor" Model="CDPPortConnection" Name="MapHasBGColor"></Connection>
+        <Connection Input="1" LocalName=".BGColor" Model="CDPPortConnection" Name="MapBGColor"></Connection>
+        <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
+        <Connection Input="1" LocalName=".Timeout" Model="CDPPortConnection" Name="MapTimeout"></Connection>
+        <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
+      </Connections></Port></Ports>
+  
 
   <Subcomponents>
     <Operator Description="MQTT Publisher Sequencer block to publish data to the MQTT network via Publish events. Has to be connected to a MQTTClient, via the MQTTClient connector." Model="MQTTIO.Publisher" Name="Publisher">
