@@ -9,12 +9,16 @@
 #include <Signal/CDPSignal.h>
 #include <Generic/CDPUtils.h>
 #include <chrono>
+
+#include "OperationUtilities/OperationUtilities/Signals/DeliveryConfigString.h"
+#include "OperationUtilities/Strings/StringHelpers.h"
 #include "OSDTextPort.h"
 #include "OSDRectPort.h"
 #include "json.hpp"
-#include "OperationUtilities/Strings/StringHelpers.h"
 
-using json = nlohmann::json;
+using nlohmann::json;
+using OperationUtilities::DeliveryConfigString;
+
 
 namespace VideoWallLib {
 
@@ -28,32 +32,36 @@ public:
     void CreateModel() override;
     void Configure(const char* componentXML) override;
     void ProcessNull() override;
-
+    int MessageMessageHandler(void* message);
 
 protected:
-    CDPSignal<std::string> i_Source;
-    CDPSignal<double> i_Brightness;
-    CDPSignal<double> i_ZoomAbs;
-    CDPSignal<double> i_ZoomSpeed;
-    CDPSignal<double> i_TiltSpeed;
-    CDPSignal<double> i_PanSpeed;
-    CDPSignal<double> i_TiltAbs;
-    CDPSignal<double> i_PanAbs;
-    CDPConnector MQTTPublish;
     using CDPComponent::requestedState;
     using CDPComponent::ts;
     using CDPComponent::fs;
     using clock = std::chrono::steady_clock;
 
-    OSDRectPort SelectedRect;
+    DeliveryConfigString Source;
+    CDPSignal<double> ZoomSpeed;
+    CDPSignal<double> ZoomAbs;
+    CDPSignal<double> PanSpeed;
+    CDPSignal<double> PanAbs;
+    CDPSignal<double> TiltSpeed;
+    CDPSignal<double> TiltAbs;
+    CDPSignal<double> Brightness;
 
     std::chrono::seconds kHoldFor{3};
     std::vector<clock::time_point> holdUntil;
-
+    
     std::vector<std::string> topics {"Source","Brightness","ZoomAbs","ZoomSpeed","PanAbs","PanSpeed","TiltAbs","TiltSpeed","OSD"};
     std::vector<std::string> indexedSignals;
     std::vector<std::string> indexedSignalsPrev;
     std::vector<bool> indexedSignalsChanged;
+    
+    CDPConnector MQTTPublish;
+    CDPConnector VisionControllerConnector;
+    CDPConnector MessageHandlerConnector;
+    
+    OSDRectPort SelectedRect;
     std::vector<OSDTextPort*> m_osdPorts;
     std::vector<OSDRectPort*> m_osdRectPorts;
 
@@ -62,6 +70,7 @@ protected:
     void PublishMqtt();
     void IndexInputs();
     json OSDPortsToJson();
+    void parseAndSetSignals(const std::string& msg);
 };
 
 } // namespace VideoWallLib

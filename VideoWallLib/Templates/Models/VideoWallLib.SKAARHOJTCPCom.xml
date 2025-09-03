@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Model Name="VideoWallLib.SKAARHOJTCPCom">
+ <ModelTypeClass>C++</ModelTypeClass>
+ <BaseModel>IOServer</BaseModel>
+ <Element Name="Priority" Value="high"/>
+ <Element Name="fs" Value="100"/>
+ <Attributes>
+  <Attribute Name="Description" Type="string" Value="Custom IOServer component"/>
+  <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.SKAARHOJTCPCom"/>
+ </Attributes>
+ <Signals/>
+ <Element AcceptsBase="Transport" Model="AggregateBaseModel" Name="Transport" Property="0"/>
+ <Subcomponents/>
+ <Connectors>
+  <Connector Name="PublishToMessagageHandler" RoutingType="Push" TypeHint="RoutingType"/>
+ </Connectors>
+ <Transport Model="TCPTransport" Name="TCPTransport" RemoteIP="10.1.3.60" RemotePort="9923"/>
+ <Messages>
+  <Message Name="Update"/>
+ </Messages>
+</Model>

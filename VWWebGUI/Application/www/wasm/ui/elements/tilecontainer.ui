@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <ui version="4.0">
  <class>Form</class>
  <widget class="CDPBaseContainer" name="Form">
@@ -52,7 +52,7 @@
       <enum>Qt::ClickFocus</enum>
      </property>
      <property name="svgFile">
-      <string notr="true">:/themes/openbridge5_day/buttons/spinBox.svg</string>
+      <string notr="true">:/themes/openbridge5_dusk/buttons/spinBox.svg</string>
      </property>
      <property name="cdpRouting" stdset="0">
       <string>.Source.Value</string>
@@ -157,7 +157,7 @@
    <item>
     <widget class="CDPBaseLine" name="horizontalLine">
      <property name="svgFile">
-      <string notr="true">:/themes/openbridge5_day/backgrounds/bgBorder.svg</string>
+      <string notr="true">:/themes/openbridge5_dusk/backgrounds/bgBorder.svg</string>
      </property>
     </widget>
    </item>
@@ -220,7 +220,7 @@
         <number>2</number>
        </property>
        <property name="svgFile">
-        <string notr="true">:/themes/openbridge5_day/backgrounds/bgLineEdit.svg</string>
+        <string notr="true">:/themes/openbridge5_dusk/backgrounds/bgLineEdit.svg</string>
        </property>
        <property name="cdpScaling" stdset="0">
         <double>100.000000000000000</double>
@@ -238,13 +238,13 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="2">
+     <item column="2" row="0">
       <widget class="CDPBaseLineEdit" name="lineEdit_87">
        <property name="precision">
         <number>2</number>
        </property>
        <property name="svgFile">
-        <string notr="true">:/themes/openbridge5_day/backgrounds/bgLineEdit.svg</string>
+        <string notr="true">:/themes/openbridge5_dusk/backgrounds/bgLineEdit.svg</string>
        </property>
        <property name="cdpScaling" stdset="0">
         <double>100.000000000000000</double>
@@ -286,7 +286,7 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="0">
+     <item column="0" row="1">
       <widget class="CDPBaseSlider" name="slider_39">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
@@ -316,7 +316,7 @@
         <double>1.000000000000000</double>
        </property>
        <property name="svgFile">
-        <string notr="true">:/themes/openbridge5_day/sliders/sliderRoundKnob.svg</string>
+        <string notr="true">:/themes/openbridge5_dusk/sliders/sliderRoundKnob.svg</string>
        </property>
        <property name="value">
         <double>0.500000000000000</double>
@@ -399,7 +399,7 @@
         <double>1.000000000000000</double>
        </property>
        <property name="svgFile">
-        <string notr="true">:/themes/openbridge5_day/sliders/sliderRoundKnob.svg</string>
+        <string notr="true">:/themes/openbridge5_dusk/sliders/sliderRoundKnob.svg</string>
        </property>
        <property name="joystick" stdset="0">
         <bool>true</bool>
@@ -454,7 +454,7 @@
         <double>1.000000000000000</double>
        </property>
        <property name="svgFile">
-        <string notr="true">:/themes/openbridge5_day/sliders/sliderRoundKnob.svg</string>
+        <string notr="true">:/themes/openbridge5_dusk/sliders/sliderRoundKnob.svg</string>
        </property>
        <property name="joystick" stdset="0">
         <bool>true</bool>
@@ -475,7 +475,7 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="3">
+     <item column="3" row="2">
       <widget class="CDPBaseLabel" name="label_108">
        <property name="text">
         <string>Tilt</string>

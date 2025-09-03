@@ -15,7 +15,7 @@
     <Signal Input="1" Model="DeliveryConfigString" Name="Type"></Signal>
     <Signal Input="1" Model="DeliveryConfigString" Name="URI"></Signal>
     <Signal Input="1" Model="DeliveryConfigString" Name="DisplayName"></Signal>
-    <Signal Model="DeliveryConfigString" Name="IP"></Signal>
+    <Signal Input="0" Model="DeliveryConfigString" Name="IP"></Signal>
  </Signals>
  <Tags></Tags>
  <Subcomponents>

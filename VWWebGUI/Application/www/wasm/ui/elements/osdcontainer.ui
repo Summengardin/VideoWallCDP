@@ -14,7 +14,7 @@
    <string>Form</string>
   </property>
   <property name="cdpTargetRouting">
-   <string>VWController.VisionControllers.VisionController0.Tile01.OSDPort</string>
+   <string>VWController.VisionControllers.VisionController0.Tile01.OSDTL</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>

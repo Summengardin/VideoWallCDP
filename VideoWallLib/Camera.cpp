@@ -17,6 +17,7 @@ using namespace VideoWallLib;
 Camera::Camera()
 {
     requestedState = "Null";
+    UriParser = VideoWallLib::Uri();
 }
 
 
@@ -44,11 +45,8 @@ void Camera::Create(const char* fullName)
     DisplayName.Create("DisplayName",this);
     IP.Create("IP",this);
     Format.Create("Format",this);
-    Framerate.Create("Framerate",this);
     Type.Create("Type",this);
     URI.Create("URI",this);
-
-    UriParser = VideoWallLib::Uri();
 }
 
 /*!

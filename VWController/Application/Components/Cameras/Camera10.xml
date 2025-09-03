@@ -7,20 +7,11 @@
   <Signals>
     <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
     <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="DisplayName" Type="string" Value=""></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="IP" Type="string" Value=""></Signal>
     <Signal Input="1" Model="DeliveryConfigString" Name="Format" Type="string" Value=""></Signal>
     <Signal Input="1" Model="DeliveryConfigString" Name="Type" Type="string" Value=""></Signal>
     <Signal Input="1" Model="DeliveryConfigString" Name="URI" Type="string" Value=""></Signal>
-    <Signal Input="1" Model="DeliveryConfigString" Name="DisplayName" Type="string" Value=""></Signal>
-    <Signal Input="0" Model="DeliveryConfigString" Name="IP" Type="string" Value=""></Signal>
-
-
-
-
-
-
-
-
-
   </Signals>
 
   <Alarms>
@@ -49,7 +40,6 @@
   </Subcomponents>
 
   <ArgumentMessages>
-    
     <ArgumentMessage Command="0" Input="0" Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC" RoutingList="..MQTTClientRPC"></ArgumentMessage>
   </ArgumentMessages>
 

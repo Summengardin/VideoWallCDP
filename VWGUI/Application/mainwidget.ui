@@ -76,8 +76,8 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>190</width>
-          <height>622</height>
+          <width>723</width>
+          <height>397</height>
          </rect>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout">
@@ -174,21 +174,6 @@ border-width: 4px 4px 4px 4px;
      </item>
     </layout>
    </widget>
-   <widget class="WebEngineView" name="webEngineView">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>30</y>
-      <width>1031</width>
-      <height>581</height>
-     </rect>
-    </property>
-    <property name="url">
-     <url>
-      <string>http://127.0.0.1:7690/www/wasm/index.html</string>
-     </url>
-    </property>
-   </widget>
   </widget>
  </widget>
  <customwidgets>
@@ -224,11 +209,6 @@ border-width: 4px 4px 4px 4px;
    <extends>QMainWindow</extends>
    <header>CDPBaseWidgets/CDPBaseMainWindow.h</header>
    <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>WebEngineView</class>
-   <extends>QWidget</extends>
-   <header>CDPBaseWidgets/WebEngineView.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

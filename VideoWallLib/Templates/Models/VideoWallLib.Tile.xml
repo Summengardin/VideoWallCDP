@@ -9,14 +9,14 @@
   <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.Tile"></Attribute>
  </Attributes>
  <Signals>
-  <Signal Description="" Input="1" Model="CDPSignal&lt;string&gt;" Name="Source" Type="string" Unit="" Value=""></Signal>
-  <Signal Description="" Input="1" Model="CDPSignal&lt;double&gt;" Name="Brightness" Type="double" Unit="" Value=""></Signal>
-  <Signal Description="" Input="1" Model="CDPSignal&lt;double&gt;" Name="ZoomAbs" Type="double" Unit="" Value=""></Signal>
-  <Signal Description="" Input="1" Model="CDPSignal&lt;double&gt;" Name="PanSpeed" Type="double" Unit="" Value=""></Signal>
-  <Signal Description="" Input="1" Model="CDPSignal&lt;double&gt;" Name="TiltSpeed" Type="double" Unit="" Value=""></Signal>
-  <Signal Description="" Input="1" Model="CDPSignal&lt;double&gt;" Name="ZoomSpeed" Type="double" Unit="" Value=""></Signal>
-  <Signal Description="" Input="1" InternalValue="0" Model="CDPSignal&lt;double&gt;" Name="PanAbs" Type="double" Unit="" Value=""></Signal>
-  <Signal Description="" Input="1" Model="CDPSignal&lt;double&gt;" Name="TiltAbs" Type="double" Unit="" Value=""></Signal>
+  <Signal Input="1" Model="DeliveryConfigString"    Name="Source" TypeColorHint=""/>
+  <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="ZoomSpeed" Type="double"/>
+  <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="PanSpeed" Type="double"/>
+  <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="TiltSpeed" Type="double"/>
+  <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="Brightness" Type="double"/>
+  <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="ZoomAbs" Type="double"/>
+  <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="TiltAbs" Type="double"/>
+  <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="PanAbs" Type="double"/>
  </Signals>
  <Ports>
     <Port Model="VideoWallLib.OSDRectPort" Name="SelectedRect" Connected="0" DataConsistency="0" Description="Rectangle for showing that this tile is the current selection" RolePermissions="" Routing="" BorderWidth="15" BorderColor="1,0,0,1"></Port>
@@ -29,7 +29,11 @@
   <ArgumentMessage Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC"></ArgumentMessage>
  </ArgumentMessages>
  <Connectors>
-  <Connector DisplayHint="Default" Name="MQTTPublish" Object=".Publisher.Publish" RoutingType="Push" TypeHint="Routing"></Connector>
+  <Connector DisplayHint="Internal" Name="MQTTPublish" Object=".Publisher.Publish" RoutingType="Push" TypeHint="Routing"/>
+  <Connector Name="VisionControllerConnector" RoutingType="Push" TypeHint="RoutingType"/>
+  <Connector Name="MessageHandlerConnector" RoutingType="Push" TypeHint="RoutingType"/>
  </Connectors>
- <Messages></Messages>
+ <Messages>
+  <Message Name="MessageHandler"/>
+ </Messages>
 </Model>

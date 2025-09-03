@@ -8,11 +8,11 @@
   <Signals>
     <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
     <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
-    <Signal Input="1" Model="DeliveryConfigString" Name="Format" Type="string" Value=""></Signal>
-    <Signal Input="1" Model="DeliveryConfigString" Name="Type" Type="string" Value=""></Signal>
-    <Signal Input="1" Model="DeliveryConfigString" Name="URI" Type="string" Value=""></Signal>
     <Signal Input="1" Model="DeliveryConfigString" Name="DisplayName" Type="string" Value=""></Signal>
-    <Signal Input="0" Model="DeliveryConfigString" Name="IP" Type="string" Value=""></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="IP" Type="string" Value="10.1.3.72"></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="Format" Type="string" Value=""></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="Type" Type="string" Value="Z3"></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="URI" Type="string" Value="rtsp://10.1.3.72/stream-1.sdp"></Signal>
 
 
 

@@ -25,15 +25,12 @@ FORMS += \
     Application/www/wasm/ui/tileconfiguratorpagewidget.ui \
     Application/www/wasm/ui/tilepagewidget.ui \
     Application/www/wasm/ui/elements/cameracontainer.ui \
-    Application/www/wasm/ui/elements/camera.ui \
     Application/www/wasm/ui/elements/menuwidget.ui \
-    Application/www/wasm/ui/elements/camera.ui \
     Application/www/wasm/ui/elements/camerapagewidget.ui \
     Application/www/wasm/ui/elements/osdcomboboxdialog.ui \
     Application/www/wasm/ui/elements/cameratable.ui \
     Application/www/wasm/ui/elements/osdcontainer.ui \
     Application/www/wasm/ui/elements/tilecontainer.ui \
-    Application/www/wasm/ui/elements/OSDPopUp.ui \
     Application/www/wasm/ui/elements/cameracontainer.ui \
     Application/www/wasm/ui/elements/cameratable.ui \
     Application/www/wasm/ui/elements/tile.ui

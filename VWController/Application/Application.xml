@@ -2,7 +2,7 @@
 
 <Application Name="VWController" Model="Application" Description=''>
   <Debug>0</Debug>
-  <ApplicationHandle>1</ApplicationHandle>
+  <ApplicationHandle>171</ApplicationHandle>
   <fs>10</fs>
   <ClockSync>None</ClockSync>
   <IsTimeServer>0</IsTimeServer>
@@ -10,15 +10,16 @@
   <CDPVersion>5.0</CDPVersion>
   <Domain>VideoWall</Domain>
 
-  <NetworkInterface Name="ETH0" MAC="" IPAddress="10.5.11.65" SubnetMask="255.255.255.0"></NetworkInterface>
+  <NetworkInterface Name="ETH0" MAC="" IPAddress="127.0.0.1" SubnetMask="255.255.255.255"></NetworkInterface>
 
   <Subcomponents>
     <Subcomponent Name="CDP"        Model="CDP"        src="Components\CDP.xml"></Subcomponent>
-    <Subcomponent Model="CDPComponent" Name="VisionControllers" src="Components/VisionControllers.xml"></Subcomponent>
     <Subcomponent Model="CDPComponent" Name="Cameras" src="Components/Cameras.xml"></Subcomponent>
     <Subcomponent Encryption="Unencrypted" ListenAddress="127.0.0.1" ListenPort="1883" Model="MQTTIO.MQTTBroker" Name="MQTTBroker" src="Components/MQTTBroker.xml"></Subcomponent>
     <Subcomponent BrokerHost="127.0.0.1" BrokerPort="1883" Encryption="Unencrypted" Model="MQTTIO.MQTTClient" Name="MQTTClient" src="Components/MQTTClient.xml"></Subcomponent>
     <Subcomponent Model="CDPComponent" Name="OSD" src="Components/OSD.xml"></Subcomponent>
+    <Subcomponent Model="CDPComponent" Name="IO" src="Components/IO.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.VisionControllerContainer" Name="VisionControllers" src="Components/VisionControllers.xml"></Subcomponent>
   </Subcomponents>
 
   <Signals>
@@ -54,6 +55,7 @@
   <Ports></Ports>
 
   <ArgumentMessages></ArgumentMessages>
+  <NetworkInterface IPAddress="10.1.3.31" Model="NetworkInterface" Name="ETH_SKAARHOJ" SubnetMask="255.255.255.0" Description="The NetworkInterface holds Name, IPAddress, SubnetMask, Gateway and MAC that might be needed for setting up an Ethernet interface." Gateway="" MAC=""></NetworkInterface>
   
   
   

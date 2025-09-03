@@ -1,0 +1,46 @@
+<Component Model="VideoWallLib.SKAARHOJRawPanelIO" Name="SKAARHOJRawPanelIO" src="Components/IO/SKAARHOJRawPanelIO.xml" Description="Custom IOServer component">
+  <SchedulingOrder>TopDown</SchedulingOrder>
+  <SchedulingGroup>Default</SchedulingGroup>
+  <Priority>high</Priority>
+  <fs>100</fs>
+  <Status>0</Status>
+
+  <Signals>
+    <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
+    <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+    <Signal Description="If implemented by specific IOServer the signal can be set true to disable output." Input="1" Model="CDPSignal&lt;bool&gt;" Name="OutputDisable" Type="bool"></Signal>
+    <Signal Description="The time needed to perform one send and receive." Input="0" Model="CDPSignal&lt;double&gt;" Name="Send-Receive Roundtrip time" Type="double" Unit="s"></Signal>
+    <Signal Description="Number of items working in ioserver." Input="0" Model="CDPSignal&lt;unsigned int&gt;" Name="NumberOfNodesOnline" Type="unsigned int" Unit="count"></Signal>
+    <Signal Description="Number of items total in ioserver." Input="0" Model="CDPSignal&lt;unsigned int&gt;" Name="NumberOfNodes" Type="unsigned int" Unit="count"></Signal>
+  </Signals>
+
+  <Alarms>
+    <Alarm Description="A component was suspended!" Name="Component Suspended" Text="Component was suspended!"></Alarm>
+    <Alarm Description="Alarm is triggered (with Text containing the list of errors) when some node of the component (like operator) has configuration fault." Level="Error" Name="ConfigurationFaults"></Alarm>
+    <Alarm Description="Transmission-error alarm" Name="Transmission Error" Text="IOServer transmission-error alarm"></Alarm>
+  </Alarms>
+
+  <Parameters>
+    <Parameter Description="Delay before setting Transmission Error alarm." Name="SignalTimeout" PreviousValue="1" TimeLastChanged="0" Unit="s" Value="1"></Parameter>
+    <Parameter Name="PanelBrightnessPercent" Unit="%" Value="4"></Parameter>
+  </Parameters>
+
+  <Timers>
+    <Timer Description="Timer used to delay setting Transmission Error alarm. Timeout-delay is configured in Parameter SignalTimeout." Model="CDPParameterTimer" Name="SignalTimeoutTimer"></Timer>
+  </Timers>
+  <Transport ListenPort="9923" LocalName="ETH_SKAARHOJ" Model="TCPTransport" Name="TCPTransport" RemoteIP="10.1.3.60" RemotePort="9923" Timeout="1"></Transport>
+
+  <Connectors>
+    <Connector Name="HCOUT" Object="..DebugPrinter.EventIn"></Connector>
+  </Connectors>
+
+  <ArgumentMessages></ArgumentMessages>
+
+  <Subcomponents>
+    <Operator Model="ReceiveMessage" Name="ReceiveMessage" Description="Message to Value conversion operator receiving CM_TEXTCOMMAND by default with name mapped output arguments added to the operator as parameters.">
+      <Argument CppName="" Description="QueueFull indicates the queued messages limit set by QueueLimit has been reached." Input="0" Model="DefaultArgument&lt;bool&gt;" Name="QueueFull" Routing="" Type="bool" Value="0"></Argument>
+      <Argument CppName="m_output" Description="Trigger indicates the arrival of a new message according to behaviour set by AffectTrigger." Input="0" Model="DefaultArgument&lt;bool&gt;" Name="Trigger" Routing="" Type="bool" Value="0"></Argument>
+      <ArgumentMessage Command="131328" Description="Message in receiving CM_TEXTCOMMAND by default." Input="1" Model="MessageArgument" Name="MessageIn"></ArgumentMessage></Operator>
+  </Subcomponents>
+  
+</Component>

@@ -115,7 +115,7 @@ border: 2px solid rgb(200,200,200)}
       <item>
        <widget class="CDPBaseComboBox" name="comboBox">
         <property name="svgFile">
-         <string notr="true">:/themes/openbridge5_bright/buttons/spinBox.svg</string>
+         <string notr="true">:/themes/openbridge5_dusk/buttons/spinBox.svg</string>
         </property>
         <property name="cdpRouting" stdset="0">
          <string>.Source.Value</string>
@@ -220,7 +220,7 @@ border: 2px solid rgb(200,200,200)}
       <item>
        <widget class="CDPBaseLine" name="horizontalLine">
         <property name="svgFile">
-         <string notr="true">:/themes/openbridge5_bright/backgrounds/bgBorder.svg</string>
+         <string notr="true">:/themes/openbridge5_dusk/backgrounds/bgBorder.svg</string>
         </property>
        </widget>
       </item>
@@ -229,92 +229,13 @@ border: 2px solid rgb(200,200,200)}
         <property name="spacing">
          <number>3</number>
         </property>
-        <item row="0" column="1">
-         <widget class="CDPBaseLineEdit" name="lineEdit_86">
-          <property name="precision">
-           <number>2</number>
-          </property>
-          <property name="svgFile">
-           <string notr="true">:/themes/openbridge5_bright/backgrounds/bgLineEdit.svg</string>
-          </property>
-          <property name="cdpScaling" stdset="0">
-           <double>100.000000000000000</double>
-          </property>
-          <property name="cdpRouting" stdset="0">
-           <string>.ZoomSpeed.Value</string>
-          </property>
-          <property name="cdpPromptForChanges" stdset="0">
-           <bool>false</bool>
-          </property>
-          <property name="pushRoutables" stdset="0">
-           <stringlist notr="true">
-            <string>cdpRouting</string>
-           </stringlist>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="0">
-         <widget class="CDPBaseCheckBox" name="checkBox_14">
-          <property name="maximumSize">
-           <size>
-            <width>16777215</width>
-            <height>16777215</height>
-           </size>
-          </property>
-          <property name="layoutDirection">
-           <enum>Qt::LeftToRight</enum>
-          </property>
-          <property name="pushRoutables" stdset="0">
-           <stringlist>
-            <string>cdpRouting</string>
-           </stringlist>
-          </property>
-          <property name="text">
-           <string>Auto</string>
-          </property>
-          <property name="cdpRouting" stdset="0">
-           <string>VideoWallMQTTApp.MQTTClient.VisionControllers.VisionController0.Tile02.ExposureAuto.Value</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="2">
-         <widget class="CDPBaseLabel" name="label_107">
-          <property name="text">
-           <string>Pan</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="0">
-         <widget class="CDPBaseLineEdit" name="lineEdit_85">
-          <property name="precision">
-           <number>2</number>
-          </property>
-          <property name="svgFile">
-           <string notr="true">:/themes/openbridge5_bright/backgrounds/bgLineEdit.svg</string>
-          </property>
-          <property name="cdpScaling" stdset="0">
-           <double>100.000000000000000</double>
-          </property>
-          <property name="cdpRouting" stdset="0">
-           <string>.Brightness.Value</string>
-          </property>
-          <property name="cdpPromptForChanges" stdset="0">
-           <bool>false</bool>
-          </property>
-          <property name="pushRoutables" stdset="0">
-           <stringlist notr="true">
-            <string>cdpRouting</string>
-           </stringlist>
-          </property>
-         </widget>
-        </item>
         <item row="0" column="2">
          <widget class="CDPBaseLineEdit" name="lineEdit_87">
           <property name="precision">
            <number>2</number>
           </property>
           <property name="svgFile">
-           <string notr="true">:/themes/openbridge5_bright/backgrounds/bgLineEdit.svg</string>
+           <string notr="true">:/themes/openbridge5_dusk/backgrounds/bgLineEdit.svg</string>
           </property>
           <property name="cdpScaling" stdset="0">
            <double>100.000000000000000</double>
@@ -324,164 +245,6 @@ border: 2px solid rgb(200,200,200)}
           </property>
           <property name="cdpPromptForChanges" stdset="0">
            <bool>false</bool>
-          </property>
-          <property name="pushRoutables" stdset="0">
-           <stringlist notr="true">
-            <string>cdpRouting</string>
-           </stringlist>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="1">
-         <widget class="CDPBaseLabel" name="label_105">
-          <property name="text">
-           <string>Zoom</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="0">
-         <widget class="CDPBaseSlider" name="slider_39">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>0</height>
-           </size>
-          </property>
-          <property name="numPos">
-           <enum>CDPBaseTickMarks::NumbersAutoLeft</enum>
-          </property>
-          <property name="numFont">
-           <font>
-            <pointsize>5</pointsize>
-            <stylestrategy>PreferAntialias</stylestrategy>
-           </font>
-          </property>
-          <property name="numPrecision" stdset="0">
-           <number>2</number>
-          </property>
-          <property name="maxValue">
-           <double>1.000000000000000</double>
-          </property>
-          <property name="svgFile">
-           <string notr="true">:/themes/openbridge5_bright/sliders/sliderRoundKnob.svg</string>
-          </property>
-          <property name="value">
-           <double>0.500000000000000</double>
-          </property>
-          <property name="cdpRouting" stdset="0">
-           <string>.Brightness.Value</string>
-          </property>
-          <property name="cdpSend" stdset="0">
-           <enum>CDPBaseSlider::onSliderMoved</enum>
-          </property>
-          <property name="pushRoutables" stdset="0">
-           <stringlist notr="true">
-            <string>cdpRouting</string>
-           </stringlist>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="2">
-         <widget class="CDPBaseSlider" name="slider_38">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="numPos">
-           <enum>CDPBaseTickMarks::NumbersAutoLeft</enum>
-          </property>
-          <property name="numFont">
-           <font>
-            <pointsize>5</pointsize>
-            <stylestrategy>PreferAntialias</stylestrategy>
-           </font>
-          </property>
-          <property name="numPrecision" stdset="0">
-           <number>2</number>
-          </property>
-          <property name="minValue">
-           <double>-1.000000000000000</double>
-          </property>
-          <property name="maxValue">
-           <double>1.000000000000000</double>
-          </property>
-          <property name="svgFile">
-           <string notr="true">:/themes/openbridge5_bright/sliders/sliderRoundKnob.svg</string>
-          </property>
-          <property name="joystick" stdset="0">
-           <bool>true</bool>
-          </property>
-          <property name="fillStartValue">
-           <double>0.000000000000000</double>
-          </property>
-          <property name="cdpRouting" stdset="0">
-           <string>.PanSpeed.Value</string>
-          </property>
-          <property name="cdpSend" stdset="0">
-           <enum>CDPBaseSlider::onMoveAndRelease</enum>
-          </property>
-          <property name="pushRoutables" stdset="0">
-           <stringlist notr="true">
-            <string>cdpRouting</string>
-           </stringlist>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="0">
-         <widget class="CDPBaseLabel" name="label_106">
-          <property name="text">
-           <string>Brightness</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="1">
-         <widget class="CDPBaseSlider" name="slider_37">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="numPos">
-           <enum>CDPBaseTickMarks::NumbersAutoLeft</enum>
-          </property>
-          <property name="numFont">
-           <font>
-            <pointsize>5</pointsize>
-            <stylestrategy>PreferAntialias</stylestrategy>
-           </font>
-          </property>
-          <property name="numPrecision" stdset="0">
-           <number>2</number>
-          </property>
-          <property name="minValue">
-           <double>-1.000000000000000</double>
-          </property>
-          <property name="maxValue">
-           <double>1.000000000000000</double>
-          </property>
-          <property name="svgFile">
-           <string notr="true">:/themes/openbridge5_bright/sliders/sliderRoundKnob.svg</string>
-          </property>
-          <property name="joystick" stdset="0">
-           <bool>true</bool>
-          </property>
-          <property name="fillStartValue">
-           <double>0.000000000000000</double>
-          </property>
-          <property name="cdpRouting" stdset="0">
-           <string>.ZoomSpeed.Value</string>
-          </property>
-          <property name="cdpSend" stdset="0">
-           <enum>CDPBaseSlider::onMoveAndRelease</enum>
           </property>
           <property name="pushRoutables" stdset="0">
            <stringlist notr="true">
@@ -517,7 +280,7 @@ border: 2px solid rgb(200,200,200)}
            <double>1.000000000000000</double>
           </property>
           <property name="svgFile">
-           <string notr="true">:/themes/openbridge5_bright/sliders/sliderRoundKnob.svg</string>
+           <string notr="true">:/themes/openbridge5_dusk/sliders/sliderRoundKnob.svg</string>
           </property>
           <property name="joystick" stdset="0">
            <bool>true</bool>
@@ -538,10 +301,199 @@ border: 2px solid rgb(200,200,200)}
           </property>
          </widget>
         </item>
+        <item row="2" column="1">
+         <widget class="CDPBaseLabel" name="label_105">
+          <property name="text">
+           <string>Zoom</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="CDPBaseLineEdit" name="lineEdit_85">
+          <property name="precision">
+           <number>2</number>
+          </property>
+          <property name="svgFile">
+           <string notr="true">:/themes/openbridge5_dusk/backgrounds/bgLineEdit.svg</string>
+          </property>
+          <property name="cdpScaling" stdset="0">
+           <double>100.000000000000000</double>
+          </property>
+          <property name="cdpRouting" stdset="0">
+           <string>.Brightness.Value</string>
+          </property>
+          <property name="cdpPromptForChanges" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="pushRoutables" stdset="0">
+           <stringlist notr="true">
+            <string>cdpRouting</string>
+           </stringlist>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="CDPBaseLabel" name="label_107">
+          <property name="text">
+           <string>Pan</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="CDPBaseSlider" name="slider_37">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="numPos">
+           <enum>CDPBaseTickMarks::NumbersAutoLeft</enum>
+          </property>
+          <property name="numFont">
+           <font>
+            <pointsize>5</pointsize>
+            <stylestrategy>PreferAntialias</stylestrategy>
+           </font>
+          </property>
+          <property name="numPrecision" stdset="0">
+           <number>2</number>
+          </property>
+          <property name="minValue">
+           <double>-1.000000000000000</double>
+          </property>
+          <property name="maxValue">
+           <double>1.000000000000000</double>
+          </property>
+          <property name="svgFile">
+           <string notr="true">:/themes/openbridge5_dusk/sliders/sliderRoundKnob.svg</string>
+          </property>
+          <property name="joystick" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="fillStartValue">
+           <double>0.000000000000000</double>
+          </property>
+          <property name="cdpRouting" stdset="0">
+           <string>.ZoomSpeed.Value</string>
+          </property>
+          <property name="cdpSend" stdset="0">
+           <enum>CDPBaseSlider::onMoveAndRelease</enum>
+          </property>
+          <property name="pushRoutables" stdset="0">
+           <stringlist notr="true">
+            <string>cdpRouting</string>
+           </stringlist>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="CDPBaseLabel" name="label_106">
+          <property name="text">
+           <string>Brightness</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="CDPBaseSlider" name="slider_38">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="numPos">
+           <enum>CDPBaseTickMarks::NumbersAutoLeft</enum>
+          </property>
+          <property name="numFont">
+           <font>
+            <pointsize>5</pointsize>
+            <stylestrategy>PreferAntialias</stylestrategy>
+           </font>
+          </property>
+          <property name="numPrecision" stdset="0">
+           <number>2</number>
+          </property>
+          <property name="minValue">
+           <double>-1.000000000000000</double>
+          </property>
+          <property name="maxValue">
+           <double>1.000000000000000</double>
+          </property>
+          <property name="svgFile">
+           <string notr="true">:/themes/openbridge5_dusk/sliders/sliderRoundKnob.svg</string>
+          </property>
+          <property name="joystick" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="fillStartValue">
+           <double>0.000000000000000</double>
+          </property>
+          <property name="cdpRouting" stdset="0">
+           <string>.PanSpeed.Value</string>
+          </property>
+          <property name="cdpSend" stdset="0">
+           <enum>CDPBaseSlider::onMoveAndRelease</enum>
+          </property>
+          <property name="pushRoutables" stdset="0">
+           <stringlist notr="true">
+            <string>cdpRouting</string>
+           </stringlist>
+          </property>
+         </widget>
+        </item>
         <item row="2" column="3">
          <widget class="CDPBaseLabel" name="label_108">
           <property name="text">
            <string>Tilt</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="CDPBaseSlider" name="slider_39">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="numPos">
+           <enum>CDPBaseTickMarks::NumbersAutoLeft</enum>
+          </property>
+          <property name="numFont">
+           <font>
+            <pointsize>5</pointsize>
+            <stylestrategy>PreferAntialias</stylestrategy>
+           </font>
+          </property>
+          <property name="numPrecision" stdset="0">
+           <number>2</number>
+          </property>
+          <property name="maxValue">
+           <double>1.000000000000000</double>
+          </property>
+          <property name="svgFile">
+           <string notr="true">:/themes/openbridge5_dusk/sliders/sliderRoundKnob.svg</string>
+          </property>
+          <property name="value">
+           <double>0.500000000000000</double>
+          </property>
+          <property name="cdpRouting" stdset="0">
+           <string>.Brightness.Value</string>
+          </property>
+          <property name="cdpSend" stdset="0">
+           <enum>CDPBaseSlider::onSliderMoved</enum>
+          </property>
+          <property name="pushRoutables" stdset="0">
+           <stringlist notr="true">
+            <string>cdpRouting</string>
+           </stringlist>
           </property>
          </widget>
         </item>
@@ -551,13 +503,37 @@ border: 2px solid rgb(200,200,200)}
            <number>2</number>
           </property>
           <property name="svgFile">
-           <string notr="true">:/themes/openbridge5_bright/backgrounds/bgLineEdit.svg</string>
+           <string notr="true">:/themes/openbridge5_dusk/backgrounds/bgLineEdit.svg</string>
           </property>
           <property name="cdpScaling" stdset="0">
            <double>100.000000000000000</double>
           </property>
           <property name="cdpRouting" stdset="0">
            <string>.TiltSpeed.Value</string>
+          </property>
+          <property name="cdpPromptForChanges" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="pushRoutables" stdset="0">
+           <stringlist notr="true">
+            <string>cdpRouting</string>
+           </stringlist>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="CDPBaseLineEdit" name="lineEdit_86">
+          <property name="precision">
+           <number>2</number>
+          </property>
+          <property name="svgFile">
+           <string notr="true">:/themes/openbridge5_dusk/backgrounds/bgLineEdit.svg</string>
+          </property>
+          <property name="cdpScaling" stdset="0">
+           <double>100.000000000000000</double>
+          </property>
+          <property name="cdpRouting" stdset="0">
+           <string>.ZoomSpeed.Value</string>
           </property>
           <property name="cdpPromptForChanges" stdset="0">
            <bool>false</bool>
@@ -597,11 +573,6 @@ border: 2px solid rgb(200,200,200)}
    <extends>QWidget</extends>
    <header>CDPBaseWidgets/RoutingReplacementWidget.h</header>
    <container>1</container>
-  </customwidget>
-  <customwidget>
-   <class>CDPBaseCheckBox</class>
-   <extends>QWidget</extends>
-   <header>CDPBaseWidgets/CDPBaseCheckBox.h</header>
   </customwidget>
   <customwidget>
    <class>CDPBaseLabel</class>

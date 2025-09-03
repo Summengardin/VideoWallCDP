@@ -1,13 +1,13 @@
-<Component Model="CDPComponent" Name="VisionController1" src="Components/VisionControllers/VisionController1.xml" Description="CDPComponent is an instance of a CDP component model, instantiated using the specification in the component configuration xml file. Components communicate by exchanging Messages, Signal- and Property-values, both inside applications and between applications.">
+<Component Model="VideoWallLib.VisionController" Name="VisionController1" src="Components/VisionControllers/VisionController1.xml" Description="Simple component">
   <SchedulingOrder>TopDown</SchedulingOrder>
   <SchedulingGroup>Default</SchedulingGroup>
-  <fs>10</fs>
+  <fs>100</fs>
   <Status>0</Status>
-
 
   <Signals>
     <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
     <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+    <Signal Input="0" Model="CDPSignal&lt;int&gt;" Name="numTiles" Type="int"></Signal>
   </Signals>
 
   <Alarms>
@@ -15,15 +15,14 @@
     <Alarm Description="Alarm is triggered (with Text containing the list of errors) when some node of the component (like operator) has configuration fault." Level="Error" Name="ConfigurationFaults"></Alarm>
   </Alarms>
 
-  <Subcomponents>
-    <Subcomponent Model="VideoWallLib.Tile" Name="Tile11" src="Components/VisionControllers/VisionController1/Tile11.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Tile" Name="Tile12" src="Components/VisionControllers/VisionController1/Tile12.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Tile" Name="Tile13" src="Components/VisionControllers/VisionController1/Tile13.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Tile" Name="Tile14" src="Components/VisionControllers/VisionController1/Tile14.xml"></Subcomponent>
-  </Subcomponents>
-
   <ArgumentMessages>
     <ArgumentMessage Command="0" Input="0" Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC" RoutingList="..MQTTClientRPC"></ArgumentMessage>
   </ArgumentMessages>
 
+  <Subcomponents>
+    <Subcomponent Model="VideoWallLib.Tile" Name="Tile11" src="Components/VisionControllers/VisionController1/Tile11.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile" Name="Tile12" src="Components/VisionControllers/VisionController1/Tile12.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile" Name="Tile13" src="Components/VisionControllers/VisionController1/Tile13.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Tile" Name="Tile14" src="Components/VisionControllers/VisionController1/Tile14.xml"></Subcomponent></Subcomponents>
+  
 </Component>
