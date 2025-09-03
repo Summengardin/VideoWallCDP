@@ -34,7 +34,7 @@ class HandController {
 
         std::string updateButtons(std::string outputline);
         std::string updateJoystick(std::string outputline);
-        std::string updateEnc(std::string outputline);
+        std::string updateEnc(std::string outputline, std::vector<std::string> tileMap);
 
     };
 } // namespace VideoWallLib

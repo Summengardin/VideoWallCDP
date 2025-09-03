@@ -72,14 +72,15 @@ namespace VideoWallLib {
         return outputline;
     }
 
-    std::string HandController::updateEnc(std::string outputline){
+    std::string HandController::updateEnc(std::string outputline, std::vector<std::string> tileMap){
         // Need to find out what type of update you want on the encoder
         for (int a = 10; a < 12; a++) {
             outputline += "HWC#" + std::to_string(a) + "=5\n";
             outputline += "HWCc#" + std::to_string(a) + "=" + std::to_string(130 | 0x80) + "\n";
-            outputline += "HWCt#" + std::to_string(a) + "=" + std::to_string(encoders[a-10]) + "\n";
-
          }
+        outputline += "HWCt#" + std::to_string(10) + "=" + tileMap[encoders[0]] + "\n";
+        outputline += "HWCt#" + std::to_string(11) + "=" + std::to_string(encoders[1]) + "\n";
+        // std::cout << "Mapped value: " << tileMap[encoders[0]] << "\n";
         return outputline;
     }
 

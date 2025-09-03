@@ -60,9 +60,11 @@ protected:
     std::string extractPayload(const std::string& input);
     bool isInteger(const std::string& s);
     float normalizeSpeed(int value);
+    std::vector<std::string> generateTileMap(int numTiles);
 
     std::map<int, std::string> idToCamera;
     std::map<std::string, int> cameraToId;
+    std::vector<std::string> tileMap;
 
 };
 

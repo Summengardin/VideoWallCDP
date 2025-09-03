@@ -95,7 +95,8 @@ void VisionControllerContainer::Configure(const char* componentXML)
         cameraToId[CameraName] = i;
 
     }
-    numTiles = std::to_string(TileConnectors.size()-1);
+    numTiles = std::to_string(TileConnectors.size());
+    tileMap = generateTileMap(std::stoi(numTiles));
     std::string longName = this->GetNodeLongName();
     std::string ConnectorSocket = replaceSubcomponent(longName, "IO.SKAARHOJTCPCom");
     HandControllerConnector.ConnectTo(ConnectorSocket.c_str());
@@ -179,10 +180,10 @@ void VisionControllerContainer::updateHCStates(const std::string& msg) {
         if (payload.rfind("Enc:", 0) == 0) {
             int value = std::stoi(payload.substr(4));
             value += HC.encoders[id-10];
-            if(value > std::stoi(numTiles)){
+            if(value > std::stoi(numTiles)-1){
                 value = 0;
             } else if (value < 0){
-                value = std::stoi(numTiles);
+                value = std::stoi(numTiles)-1;
             }
             HC.setEncoder(id, value);
             std::string subscribingName = tileSources[HC.getEncoderState(id)] +".Source";
@@ -245,7 +246,7 @@ void VisionControllerContainer::UpdateHCVisual(){
 
     std::string outputline = "";
     outputline += HC.updateButtons(outputline);
-    outputline +=HC.updateEnc(outputline);
+    outputline +=HC.updateEnc(outputline, tileMap);
     outputline +=HC.updateJoystick(outputline);
     txtMessage.SetTextCommand("Update");
     Outputmsg = txtMessage;
@@ -281,4 +282,21 @@ bool VisionControllerContainer::isInteger(const std::string& s) {
     } catch (...) {
         return false;
     }
+}
+
+std::vector<std::string> VisionControllerContainer::generateTileMap(int numTiles) {
+    std::vector<std::string> map;
+    map.reserve(numTiles);
+
+    for (int i = 0; i < numTiles; ++i) {
+        int row = i / 4;      // every 4 tiles -> next row
+        int col = i % 4;      // 0..3 -> column
+
+        std::ostringstream oss;
+        oss << row            // row = 0,1,2,... so output is 0,1,2...
+            << std::setw(1) << std::setfill('0') << (col + 1);
+
+        map.push_back(oss.str());
+    }
+    return map;
 }
