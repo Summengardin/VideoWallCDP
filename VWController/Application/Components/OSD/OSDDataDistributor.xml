@@ -160,7 +160,7 @@
         <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
         <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort9" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="" TextIndexName="CurrentSource">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort9" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
