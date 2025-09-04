@@ -90,8 +90,9 @@
            </property>
            <property name="forceNodes">
             <stringlist>
-             <string>Camera</string>
-             <string>Camera1</string>
+             <string>Camera01</string>
+             <string>Camera02</string>
+             <string>Camera03</string>
             </stringlist>
            </property>
            <property name="modelFilter">
@@ -168,7 +169,7 @@ border-width: 4px 4px 4px 4px;
         </stringlist>
        </property>
        <property name="cdpTargetRouting">
-        <string>VWController.Cameras</string>
+        <string>VWController.Cameras_</string>
        </property>
       </widget>
      </item>
@@ -193,6 +194,10 @@ border-width: 4px 4px 4px 4px;
    <extends>QWidget</extends>
    <header>CDPBaseWidgets/NodeContainer.h</header>
    <container>1</container>
+   <slots>
+    <slot>reloadNodes()</slot>
+    <slot>setCdpTargetRouting(QString)</slot>
+   </slots>
   </customwidget>
   <customwidget>
    <class>NodeTable</class>

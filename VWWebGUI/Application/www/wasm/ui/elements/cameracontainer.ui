@@ -76,7 +76,7 @@
       <item>
        <widget class="CDPBaseLineV" name="verticalLine">
         <property name="svgFile">
-         <string notr="true">:/themes/openbridge5_day/backgrounds/bgBorder.svg</string>
+         <string notr="true">:/themes/openbridge5_dusk/backgrounds/bgBorder.svg</string>
         </property>
         <property name="orientation">
          <enum>Qt::Vertical</enum>
@@ -195,7 +195,7 @@
            <number>0</number>
           </property>
           <property name="svgFile">
-           <string notr="true">:/themes/openbridge5_day/backgrounds/bgLineEdit.svg</string>
+           <string notr="true">:/themes/openbridge5_dusk/backgrounds/bgLineEdit.svg</string>
           </property>
           <property name="cdpRouting" stdset="0">
            <string>.URI.Value</string>
@@ -226,7 +226,7 @@
         <item row="1" column="1">
          <widget class="CDPBaseComboBox" name="comboBox">
           <property name="svgFile">
-           <string notr="true">:/themes/openbridge5_day/buttons/spinBox.svg</string>
+           <string notr="true">:/themes/openbridge5_dusk/buttons/spinBox.svg</string>
           </property>
           <property name="cdpRouting" stdset="0">
            <string>.Type.Value</string>

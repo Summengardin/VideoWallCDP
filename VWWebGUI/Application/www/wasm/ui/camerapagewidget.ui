@@ -23,9 +23,9 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>-112</y>
-        <width>1438</width>
-        <height>1638</height>
+        <y>0</y>
+        <width>1452</width>
+        <height>1526</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -35,6 +35,46 @@
           <widget class="CDPBaseUiLoaderWidget" name="camera12">
            <property name="cdpTargetRouting">
             <string>VWController.Cameras.Camera12</string>
+           </property>
+           <property name="uiFileName">
+            <string>./ui/elements/cameracontainer.ui</string>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="0">
+          <widget class="CDPBaseUiLoaderWidget" name="camera13">
+           <property name="cdpTargetRouting">
+            <string>VWController.Cameras.Camera13</string>
+           </property>
+           <property name="uiFileName">
+            <string>./ui/elements/cameracontainer.ui</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="CDPBaseUiLoaderWidget" name="camera07">
+           <property name="cdpTargetRouting">
+            <string>VWController.Cameras.Camera07</string>
+           </property>
+           <property name="uiFileName">
+            <string>./ui/elements/cameracontainer.ui</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="0">
+          <widget class="CDPBaseUiLoaderWidget" name="camera11">
+           <property name="cdpTargetRouting">
+            <string>VWController.Cameras.Camera11</string>
+           </property>
+           <property name="uiFileName">
+            <string>./ui/elements/cameracontainer.ui</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="CDPBaseUiLoaderWidget" name="camera09">
+           <property name="cdpTargetRouting">
+            <string>VWController.Cameras.Camera09</string>
            </property>
            <property name="uiFileName">
             <string>./ui/elements/cameracontainer.ui</string>
@@ -61,70 +101,10 @@
            </property>
           </widget>
          </item>
-         <item row="4" column="0">
-          <widget class="CDPBaseUiLoaderWidget" name="camera03">
-           <property name="cdpTargetRouting">
-            <string>VWController.Cameras.Camera03</string>
-           </property>
-           <property name="uiFileName">
-            <string>./ui/elements/cameracontainer.ui</string>
-           </property>
-          </widget>
-         </item>
-         <item row="11" column="0">
-          <widget class="CDPBaseUiLoaderWidget" name="camera13">
-           <property name="cdpTargetRouting">
-            <string>VWController.Cameras.Camera13</string>
-           </property>
-           <property name="uiFileName">
-            <string>./ui/elements/cameracontainer.ui</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="0">
-          <widget class="CDPBaseUiLoaderWidget" name="camera05">
-           <property name="cdpTargetRouting">
-            <string>VWController.Cameras.Camera05</string>
-           </property>
-           <property name="uiFileName">
-            <string>./ui/elements/cameracontainer.ui</string>
-           </property>
-          </widget>
-         </item>
-         <item row="7" column="0">
-          <widget class="CDPBaseUiLoaderWidget" name="camera07">
-           <property name="cdpTargetRouting">
-            <string>VWController.Cameras.Camera07</string>
-           </property>
-           <property name="uiFileName">
-            <string>./ui/elements/cameracontainer.ui</string>
-           </property>
-          </widget>
-         </item>
          <item row="9" column="1">
           <widget class="CDPBaseUiLoaderWidget" name="camera10">
            <property name="cdpTargetRouting">
             <string>VWController.Cameras.Camera10</string>
-           </property>
-           <property name="uiFileName">
-            <string>./ui/elements/cameracontainer.ui</string>
-           </property>
-          </widget>
-         </item>
-         <item row="9" column="0">
-          <widget class="CDPBaseUiLoaderWidget" name="camera09">
-           <property name="cdpTargetRouting">
-            <string>VWController.Cameras.Camera09</string>
-           </property>
-           <property name="uiFileName">
-            <string>./ui/elements/cameracontainer.ui</string>
-           </property>
-          </widget>
-         </item>
-         <item row="10" column="0">
-          <widget class="CDPBaseUiLoaderWidget" name="camera11">
-           <property name="cdpTargetRouting">
-            <string>VWController.Cameras.Camera11</string>
            </property>
            <property name="uiFileName">
             <string>./ui/elements/cameracontainer.ui</string>
@@ -141,16 +121,6 @@
            </property>
           </widget>
          </item>
-         <item row="7" column="1">
-          <widget class="CDPBaseUiLoaderWidget" name="camera08">
-           <property name="cdpTargetRouting">
-            <string>VWController.Cameras.Camera08</string>
-           </property>
-           <property name="uiFileName">
-            <string>./ui/elements/cameracontainer.ui</string>
-           </property>
-          </widget>
-         </item>
          <item row="1" column="0">
           <widget class="CDPBaseUiLoaderWidget" name="camera01">
            <property name="cdpTargetRouting">
@@ -161,10 +131,40 @@
            </property>
           </widget>
          </item>
+         <item row="4" column="0">
+          <widget class="CDPBaseUiLoaderWidget" name="camera03">
+           <property name="cdpTargetRouting">
+            <string>VWController.Cameras.Camera03</string>
+           </property>
+           <property name="uiFileName">
+            <string>./ui/elements/cameracontainer.ui</string>
+           </property>
+          </widget>
+         </item>
          <item row="11" column="1">
           <widget class="CDPBaseUiLoaderWidget" name="camera14">
            <property name="cdpTargetRouting">
             <string>VWController.Cameras.Camera14</string>
+           </property>
+           <property name="uiFileName">
+            <string>./ui/elements/cameracontainer.ui</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="CDPBaseUiLoaderWidget" name="camera08">
+           <property name="cdpTargetRouting">
+            <string>VWController.Cameras.Camera08</string>
+           </property>
+           <property name="uiFileName">
+            <string>./ui/elements/cameracontainer.ui</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="CDPBaseUiLoaderWidget" name="camera05">
+           <property name="cdpTargetRouting">
+            <string>VWController.Cameras.Camera05</string>
            </property>
            <property name="uiFileName">
             <string>./ui/elements/cameracontainer.ui</string>
