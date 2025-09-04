@@ -1,0 +1,28 @@
+<Library Name="VideoWallLib">
+ <Models>
+  <Model Name="VideoWallLib.Camera"/>
+  <Model Name="VideoWallLib.CameraPort"/>
+  <Model Name="VideoWallLib.Layout"/>
+  <Model Name="VideoWallLib.LayoutPort"/>
+  <Model Name="VideoWallLib.MQTTHandler">
+   <Model Name="VideoWallLib.MQTTHandler.MQTTClient"/>
+  </Model>
+  <Model Name="VideoWallLib.MQTTTopic"/>
+  <Model Name="VideoWallLib.OSD">
+   <Model Name="VideoWallLib.OSD.OSDText"/>
+  </Model>
+  <Model Name="VideoWallLib.OSDDataDistributor"/>
+  <Model Name="VideoWallLib.OSDRectPort"/>
+  <Model Name="VideoWallLib.OSDText"/>
+  <Model Name="VideoWallLib.OSDTextPort"/>
+  <Model Name="VideoWallLib.Tile"/>
+  <Model Name="VideoWallLib.TilePort"/>
+  <Model Name="VideoWallLib.TimestampGenerator"/>
+  <Model Name="VideoWallLib.VisionController"/>
+  <Model Name="VideoWallLib.VisionControllerContainer"/>
+  <Model Name="VideoWallLib.SKAARHOJTCPCom"/>
+  <Model Name="VideoWallLib.SourceOrchestrator"/>
+  <Model Name="VideoWallLib.SKAARHOJRawPanelIO"/>
+  <Model Name="VideoWallLib.SKAARHOJRawPanelMenu"/>
+ </Models>
+</Library>
