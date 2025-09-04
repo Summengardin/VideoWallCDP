@@ -7,11 +7,11 @@
   <Signals>
     <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
     <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
-    <Signal Input="1" Model="DeliveryConfigString" Name="DisplayName" Type="string" Value=""></Signal>
-    <Signal Input="1" Model="DeliveryConfigString" Name="IP" Type="string" Value=""></Signal>
-    <Signal Input="1" Model="DeliveryConfigString" Name="Format" Type="string" Value=""></Signal>
-    <Signal Input="1" Model="DeliveryConfigString" Name="Type" Type="string" Value=""></Signal>
-    <Signal Input="1" Model="DeliveryConfigString" Name="URI" Type="string" Value=""></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="Format" Type="string"></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="Type" Type="string"></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="URI" Type="string"></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="DisplayName" Type="string"></Signal>
+    <Signal Input="0" Model="DeliveryConfigString" Name="IP" Type="string"></Signal>
   </Signals>
 
   <Alarms>
@@ -19,8 +19,8 @@
     <Alarm Description="Alarm is triggered (with Text containing the list of errors) when some node of the component (like operator) has configuration fault." Level="Error" Name="ConfigurationFaults"></Alarm>
   </Alarms>
 
-  <Ports></Ports>
-  <Subcomponents>    <Operator Description="MQTT Publisher Sequencer block to publish data to the MQTT network via Publish events. Has to be connected to a MQTTClient, via the MQTTClient connector." Model="MQTTIO.Publisher" Name="Publisher">
+  <Subcomponents>
+    <Operator Description="MQTT Publisher Sequencer block to publish data to the MQTT network via Publish events. Has to be connected to a MQTTClient, via the MQTTClient connector." Model="MQTTIO.Publisher" Name="Publisher">
       <ArgumentMessage Command="131328" Description="Will be emitted when MQTTClient has established the connection with the configured broker" Input="0" Model="Sequencer.DefaultEvent" Name="Connected"></ArgumentMessage>
       <ArgumentMessage Command="131328" Description="Will be emitted when MQTTClient has lost the connection with the configured broker" Input="0" Model="Sequencer.DefaultEvent" Name="Disconnected"></ArgumentMessage>
       <ArgumentMessage Command="131328" Data="Topic;Payload;QoS;Retain;AutoAlias;ResponseTopic;CorrelationData" Description="Invokes publishing of Payload data to the Topic. Can contain other Arguments that modify the MQTT publishing behavior." Input="1" Model="Sequencer.DefaultEvent" Name="Publish"></ArgumentMessage>
@@ -36,7 +36,6 @@
       <Argument CppName="" Description="On successful publish (Published event), contains MQTT message ID of the outgoing message. Message ID is available when QoS &gt; 0." Input="0" Model="Sequencer.Argument&lt;unsigned short&gt;" Name="MessageID" Routing="" Type="unsigned short" Value="0"></Argument>
       <Argument BinaryEncodedLength="0" CppName="" Description="On failure (PublishFailed event), contains the error message describing the failure reason" Input="0" Model="Sequencer.Argument&lt;string&gt;" Name="Error" Routing="" Type="string" Value=""></Argument>
       <Client Description="Connector to the MQTTClient object, which will provide the MQTT functionality for the block (via RPC messaging). Can be connected also via the MQTTClientRPC router block(s)." Model="MQTTIO.MQTTClientConnector" Name="MQTTClient" Object="..MQTTClientRPC"></Client></Operator>
-    
   </Subcomponents>
 
   <ArgumentMessages>

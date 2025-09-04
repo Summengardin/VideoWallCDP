@@ -1,4 +1,4 @@
-<Component Model="VideoWallLib.Camera" Name="Camera01" src="Components/Cameras/Camera01.xml" Description="Simple component">
+<Component Model="VideoWallLib.Camera" Name="Camera" src="Components/Cameras/Camera12/Camera.xml" Description="Simple component">
   <SchedulingOrder>TopDown</SchedulingOrder>
   <SchedulingGroup>Default</SchedulingGroup>
   <fs>5</fs>
@@ -39,7 +39,7 @@
   </Subcomponents>
 
   <ArgumentMessages>
-    <ArgumentMessage Command="0" Input="0" Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC" RoutingList="..MQTTClientRPC"></ArgumentMessage>
+    <ArgumentMessage Command="0" Input="0" Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC"></ArgumentMessage>
   </ArgumentMessages>
 
   <Parameters>

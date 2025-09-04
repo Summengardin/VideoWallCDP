@@ -7,6 +7,7 @@ DEPS += \
 
 HEADERS += \
     Camera.h \
+    CameraContainer.h \
     CameraPort.h \
     Layout.h \
     LayoutPort.h \
@@ -36,6 +37,7 @@ HEADERS += \
 
 SOURCES += \
     Camera.cpp \
+    CameraContainer.cpp \
     CameraPort.cpp \
     Layout.cpp \
     LayoutPort.cpp \
@@ -63,6 +65,7 @@ SOURCES += \
 
 DISTFILES += $$files(*.xml, true) \
     Templates/Models/VideoWallLib.Camera.xml \
+    Templates/Models/VideoWallLib.CameraContainer.xml \
     Templates/Models/VideoWallLib.CameraPort.xml \
     Templates/Models/VideoWallLib.Layout.xml \
     Templates/Models/VideoWallLib.LayoutPort.xml \
