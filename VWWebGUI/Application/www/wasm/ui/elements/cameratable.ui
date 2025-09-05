@@ -27,6 +27,14 @@
      <string>VideoWallLib.Camera</string>
     </stringlist>
    </property>
+   <property name="columns">
+    <stringlist>
+     <string>Name</string>
+     <string>DisplayName</string>
+     <string>Model</string>
+     <string>Value</string>
+    </stringlist>
+   </property>
    <property name="cdpTargetRouting">
     <string>VWController.Cameras</string>
    </property>

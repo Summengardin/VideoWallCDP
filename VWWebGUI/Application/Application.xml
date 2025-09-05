@@ -2,7 +2,7 @@
 
 <Application Name="VWWebGUI" Model="Application" Description=''>
   <Debug>0</Debug>
-  <ApplicationHandle>2</ApplicationHandle>
+  <ApplicationHandle>3</ApplicationHandle>
   <fs>10</fs>
   <ClockSync>None</ClockSync>
   <IsTimeServer>0</IsTimeServer>
@@ -10,7 +10,7 @@
   <CDPVersion>5.0</CDPVersion>
   <Domain>VideoWall</Domain>
 
-  <NetworkInterface Name="ETH0" MAC="" IPAddress="127.0.0.1" SubnetMask="255.255.255.255"></NetworkInterface>
+  <NetworkInterface Name="ETH0" MAC="" IPAddress="10.5.11.65" SubnetMask="255.255.255.0"></NetworkInterface>
 
   <Subcomponents>
     <Subcomponent Name="CDP"        Model="CDP"        src="Components\CDP.xml"></Subcomponent>

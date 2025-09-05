@@ -2,14 +2,14 @@
 <Model Name="VideoWallLib.Tile">
  <ModelTypeClass>C++</ModelTypeClass>
  <BaseModel>CDPComponent</BaseModel>
- <Element Name="Priority" Value="normal"></Element>
- <Element Name="fs" Value="5"></Element>
+ <Element Name="Priority" Value="normal"/>
+ <Element Name="fs" Value="5"/>
  <Attributes>
-  <Attribute Name="Description" Type="string" Value="Simple component"></Attribute>
-  <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.Tile"></Attribute>
+  <Attribute Name="Description" Type="string" Value="Simple component"/>
+  <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.Tile"/>
  </Attributes>
  <Signals>
-  <Signal Input="1" Model="DeliveryConfigString"    Name="Source" TypeColorHint=""/>
+  <Signal Input="1" Model="DeliveryConfigString" Name="Source" TypeColorHint=""/>
   <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="ZoomSpeed" Type="double"/>
   <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="PanSpeed" Type="double"/>
   <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="TiltSpeed" Type="double"/>
@@ -19,19 +19,21 @@
   <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="PanAbs" Type="double"/>
  </Signals>
  <Ports>
-    <Port Model="VideoWallLib.OSDRectPort" Name="SelectedRect" Connected="0" DataConsistency="0" Description="Rectangle for showing that this tile is the current selection" RolePermissions="" Routing="" BorderWidth="15" BorderColor="1,0,0,1"></Port>
- </Ports><Subcomponents>
+  <Port BorderColor="1,0,0,1" BorderWidth="15" Connected="0" DataConsistency="0" Description="Rectangle for showing that this tile is the current selection" Model="VideoWallLib.OSDRectPort" Name="SelectedRect" RolePermissions="" Routing=""/>
+ </Ports>
+ <Subcomponents>
   <Operator Model="MQTTIO.Publisher" Name="Publisher">
-   <Client Name="MQTTClient" Object="..MQTTClientRPC"></Client>
+   <Client Name="MQTTClient" Object="..MQTTClientRPC"/>
   </Operator>
  </Subcomponents>
  <ArgumentMessages>
-  <ArgumentMessage Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC"></ArgumentMessage>
+  <ArgumentMessage Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC"/>
  </ArgumentMessages>
  <Connectors>
   <Connector DisplayHint="Internal" Name="MQTTPublish" Object=".Publisher.Publish" RoutingType="Push" TypeHint="Routing"/>
-  <Connector Name="VisionControllerConnector" RoutingType="Push" TypeHint="RoutingType"/>
-  <Connector Name="MessageHandlerConnector" RoutingType="Push" TypeHint="RoutingType"/>
+  <Connector Description="" Name="connVisionController" RoutingType="Push" TypeHint="RoutingType"/>
+  <Connector Description="" Name="connMessageHandler" RoutingType="Push" TypeHint="RoutingType"/>
+  <Connector Description="Connector to the current selected Camera" Name="connCurrentSource" RoutingType="Push" TypeHint="RoutingType"/>
  </Connectors>
  <Messages>
   <Message Name="MessageHandler"/>

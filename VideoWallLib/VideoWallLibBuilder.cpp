@@ -22,6 +22,7 @@ VideoWallLibBuilder implementation.
 #include "SourceOrchestrator.h"
 #include "Tile.h"
 #include "TilePort.h"
+#include "CameraContainer.h"
 #include "SKAARHOJRawPanelIO.h"
 
 using namespace VideoWallLib;
@@ -94,6 +95,9 @@ CDPComponent* VideoWallLibBuilder::CreateNewComponent(const std::string& type)
     
     if (type=="VideoWallLib.VisionControllerContainer")
         return new VisionControllerContainer;
+    
+    if (type=="VideoWallLib.CameraContainer")
+        return new CameraContainer;
     
     return CDPBuilder::CreateNewComponent(type);
 }

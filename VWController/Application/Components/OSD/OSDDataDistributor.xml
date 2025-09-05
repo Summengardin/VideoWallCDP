@@ -16,6 +16,7 @@
     <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="ControlValue" Type="string" Description="Tile-specific. Shows the value of the control-signals." DisableOperators="0" InternalValue="" RolePermissions="" RoutedProperties="Value" Routing="" RoutingStatus="" Unit="" Value="tile:ControlValue"></Signal>
     <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Date&amp;Time" Type="string" Description="Current Data/Time in a given format." DisableOperators="0" InternalValue="" RolePermissions="" RoutedProperties="Value" Routing="..TimestampGenerator.TimestampFormatted" RoutingStatus="" Unit="YYYY-MM-DD HH:MM:SS" Value=""></Signal>
     <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Off" Type="string" Description="" DisableOperators="0" InternalValue="" RolePermissions="" RoutedProperties="Value" Routing="" RoutingStatus="" Unit="" Value=""></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="SourceDisplayName" Type="string" Description="DisplayName for the current source in this tile" DisableOperators="0" InternalValue="" RolePermissions="" RoutedProperties="Value" Routing="" RoutingStatus="" Unit="string" Value="tile:DisplayName"></Signal>
   </Signals>
 
   <Alarms>

@@ -48,7 +48,7 @@ protected:
 
     OSAPIEvent m_event;
     std::atomic<double> m_lastUpdateTime{0};
-    CDPConnector PublishToMessagageHandler;
+    CDPConnector connVisionControllersContainer;
     char buffer[1024];
     std::string replaceSubcomponent(const std::string& input, const std::string& newSubcomponent);
 };

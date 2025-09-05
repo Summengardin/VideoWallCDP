@@ -87,7 +87,7 @@ void VisionControllerContainer::Configure(const char* componentXML)
             }
         }
     }
-    for (int i = 1; i<=std::stoi(numCameras);i++){
+    for (int i = 1; i<=numCameras;i++){
         std::ostringstream oss;
         oss << "Camera" << std::setw(2) << std::setfill('0') << i;
         std::string CameraName = oss.str();
@@ -95,8 +95,8 @@ void VisionControllerContainer::Configure(const char* componentXML)
         cameraToId[CameraName] = i;
 
     }
-    numTiles = std::to_string(TileConnectors.size());
-    tileMap = generateTileMap(std::stoi(numTiles));
+    numTiles = TileConnectors.size();
+    tileMap = generateTileMap(numTiles);
     std::string longName = this->GetNodeLongName();
     std::string ConnectorSocket = replaceSubcomponent(longName, "IO.SKAARHOJTCPCom");
     HandControllerConnector.ConnectTo(ConnectorSocket.c_str());
@@ -180,10 +180,10 @@ void VisionControllerContainer::updateHCStates(const std::string& msg) {
         if (payload.rfind("Enc:", 0) == 0) {
             int value = std::stoi(payload.substr(4));
             value += HC.encoders[id-10];
-            if(value > std::stoi(numTiles)-1){
+            if(value > numTiles-1){
                 value = 0;
             } else if (value < 0){
-                value = std::stoi(numTiles)-1;
+                value = numTiles-1;
             }
             HC.setEncoder(id, value);
             std::string subscribingName = tileSources[HC.getEncoderState(id)] +".Source";
@@ -205,10 +205,10 @@ void VisionControllerContainer::updateHCStates(const std::string& msg) {
         if (payload.rfind("Enc:", 0) == 0) {
             int value = std::stoi(payload.substr(4));
             value += HC.encoders[id-10];
-            if(value > std::stoi(numCameras)){
+            if(value > numCameras){
                 value = 1;
             } else if (value < 1){
-                value = std::stoi(numCameras);
+                value = numCameras;
             }
             HC.setEncoder(id, value);
         }
@@ -232,8 +232,8 @@ void VisionControllerContainer::SendTileConfiguration(bool changeSource){
     txtMessage.SetTextCommand("MessageHandler");
     Outputmsg = txtMessage;
     std::string outputline = "Zoom_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(7)))
-        + "; Tilt_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(8)))
-        + "; Pan_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(9)));
+        + "; Tilt_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(9)))
+        + "; Pan_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(8)));
     if (changeSource)
         outputline += "; source: " + idToCamera[HC.getEncoderState(11)];
     outputline += +";\n";
