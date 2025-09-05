@@ -9,7 +9,7 @@
   <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.CameraContainer"></Attribute>
  </Attributes>
  <Signals>
-  <Signal Input="0" Model="CDPSignal&lt;string&gt;" Name="numCameras" Type="string"></Signal>
+  <Signal Description="" Input="0" Model="CDPSignal&lt;int&gt;" Name="numCameras" Type="int" Unit="" Value=""/>
  </Signals>
 
   <ArgumentMessages>

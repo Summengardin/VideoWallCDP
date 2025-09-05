@@ -61,7 +61,7 @@ void CameraContainer::CreateModel()
 void CameraContainer::Configure(const char* componentXML)
 {
     CDPComponent::Configure(componentXML);
-    numCameras = std::to_string(this->subcomponentConnections.size());
+    numCameras = (int)this->subcomponentConnections.size();
 }
 
 /*!

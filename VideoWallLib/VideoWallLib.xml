@@ -16,8 +16,6 @@
   <Model Name="VideoWallLib.OSDRectPort"/>
   <Model Name="VideoWallLib.OSDText"/>
   <Model Name="VideoWallLib.OSDTextPort"/>
-  <Model Name="VideoWallLib.SKAARHOJRawPanelIO"/>
-  <Model Name="VideoWallLib.SKAARHOJRawPanelMenu"/>
   <Model Name="VideoWallLib.SKAARHOJTCPCom"/>
   <Model Name="VideoWallLib.SourceOrchestrator"/>
   <Model Name="VideoWallLib.Tile"/>

@@ -175,7 +175,7 @@
       </stringlist>
      </property>
      <property name="cdpTargetRouting">
-      <string>VWController.Cameras_</string>
+      <string>VWController.Cameras</string>
      </property>
     </widget>
    </item>

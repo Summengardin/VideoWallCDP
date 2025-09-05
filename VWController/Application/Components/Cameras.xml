@@ -15,10 +15,6 @@
     <Alarm Description="Alarm is triggered (with Text containing the list of errors) when some node of the component (like operator) has configuration fault." Level="Error" Name="ConfigurationFaults"></Alarm>
   </Alarms>
 
-  <ArgumentMessages>
-    <ArgumentMessage Command="0" Input="0" Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC" RoutingList="..MQTTClient"></ArgumentMessage>
-  </ArgumentMessages>
-
   <Subcomponents>
     <Subcomponent Model="VideoWallLib.Camera" Name="Camera01" src="Components/Cameras/Camera01.xml"></Subcomponent>
     <Subcomponent Model="VideoWallLib.Camera" Name="Camera02" src="Components/Cameras/Camera02.xml"></Subcomponent>
@@ -31,9 +27,13 @@
     <Subcomponent Model="VideoWallLib.Camera" Name="Camera09" src="Components/Cameras/Camera09.xml"></Subcomponent>
     <Subcomponent Model="VideoWallLib.Camera" Name="Camera10" src="Components/Cameras/Camera10.xml"></Subcomponent>
     <Subcomponent Model="VideoWallLib.Camera" Name="Camera11" src="Components/Cameras/Camera11.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.Camera" Name="Test" src="Components/Cameras/Test.xml"></Subcomponent>
     <Subcomponent Model="VideoWallLib.Camera" Name="Camera12" src="Components/Cameras/Camera12.xml"></Subcomponent>
     <Subcomponent Model="VideoWallLib.Camera" Name="Camera13" src="Components/Cameras/Camera13.xml"></Subcomponent>
     <Subcomponent Model="VideoWallLib.Camera" Name="Camera14" src="Components/Cameras/Camera14.xml"></Subcomponent>
+    <Subcomponent Model="VideoWallLib.Camera" Name="Test" src="Components/Cameras/Test.xml"></Subcomponent>
   </Subcomponents>
+
+  <ArgumentMessages>
+    <ArgumentMessage Command="0" Input="0" Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC" RoutingList="..MQTTClient"></ArgumentMessage></ArgumentMessages>
+  
 </Component>

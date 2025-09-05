@@ -20,7 +20,7 @@ public:
     void ProcessNull() override;
 
 protected:
-    CDPSignal<std::string> numCameras;
+    CDPSignal<int> numCameras;
     using CDPComponent::fs;
     using CDPComponent::requestedState;
     using CDPComponent::ts;

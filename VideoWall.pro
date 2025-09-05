@@ -5,5 +5,4 @@ load(cdp)
 DISTFILES += $$files(*.xml, false)
 
 SUBDIRS +=     VWController \
-    VWGUI \
     VWWebGUI
