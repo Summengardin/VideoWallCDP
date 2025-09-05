@@ -28,7 +28,7 @@ SKAARHOJTCPCom::~SKAARHOJTCPCom()
 void SKAARHOJTCPCom::Create(const char* fullName)
 {
     IOServer::Create(fullName);
-    PublishToMessagageHandler.Create("PublishToMessagageHandler",this);
+    connVisionControllersContainer.Create("connVisionControllersContainer",this);
 }
 
 void SKAARHOJTCPCom::CreateModel()
@@ -42,7 +42,7 @@ void SKAARHOJTCPCom::Configure(const char* componentXML)
     IOServer::Configure(componentXML);
     std::string longName = this->GetNodeLongName();
     std::string ConnectorName = replaceSubcomponent(longName, "VisionControllers");
-    PublishToMessagageHandler.ConnectTo("VWController.VisionControllers"); //TCP connector and VisionController container must be in same layer
+    connVisionControllersContainer.ConnectTo("VWController.VisionControllers"); //TCP connector and VisionController container must be in same layer
 }
 
 void SKAARHOJTCPCom::Activate()
@@ -144,7 +144,7 @@ void SKAARHOJTCPCom::ProtocolImplementation()
         while (std::getline(ss, line)) {
             msg.Packet().PayloadAppend(line);
         }
-        PublishToMessagageHandler.SendMessage(msg);
+        connVisionControllersContainer.SendMessage(msg);
 
         // Remove possible carriage return
 

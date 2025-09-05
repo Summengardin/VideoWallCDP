@@ -58,8 +58,9 @@ protected:
     std::vector<bool> indexedSignalsChanged;
     
     CDPConnector MQTTPublish;
-    CDPConnector VisionControllerConnector;
-    CDPConnector MessageHandlerConnector;
+    CDPConnector connVisionController;
+    CDPConnector connMessageHandler;
+    CDPConnector connCurrentSource;
     
     OSDRectPort SelectedRect;
     std::vector<OSDTextPort*> m_osdPorts;
@@ -71,6 +72,8 @@ protected:
     void IndexInputs();
     json OSDPortsToJson();
     void parseAndSetSignals(const std::string& msg);
+    void ConnectToSource();
+    void Update();
 };
 
 } // namespace VideoWallLib

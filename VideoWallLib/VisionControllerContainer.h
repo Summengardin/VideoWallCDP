@@ -14,7 +14,7 @@
 #include <sstream>
 #include <string>
 #include <map>
-#include "OperationUtilities/OperationUtilities/Signals/DeliveryConfigString.h"
+#include "OperationUtilities/Parameters/calibrationparameter.h"
 
 namespace VideoWallLib {
 
@@ -33,11 +33,12 @@ public:
     int MessageReceived(void* message);
 
     std::vector<std::string> visionControllers;
-    OperationUtilities::DeliveryConfigString numCameras;
-    OperationUtilities::DeliveryConfigString numTiles;
 
 
 protected:
+    OperationUtilities::CalibrationParameter numCameras;
+    OperationUtilities::CalibrationParameter numTiles;
+
     using CDPComponent::requestedState;
     using CDPComponent::ts;
     using CDPComponent::fs;

@@ -16,9 +16,6 @@
   </Alarms>
 
   <Subcomponents>
-    <Subcomponent Model="VideoWallLib.SKAARHOJRawPanelIO" Name="SKAARHOJRawPanelIO" src="Components/IO/SKAARHOJRawPanelIO.xml"></Subcomponent>
-    <Operator Description="Prints log of received events with argument dump into the application output. Supports adding named arguments to pretty print message data (the argument names must match the data names in the incoming events.)" Model="Sequencer.DebugPrinter" Name="DebugPrinter">
-      <ArgumentMessage Command="131328" Description="Event to debug log. When the event is received it will be logged into the application output together with the event argument values. When some arguments were added to the event and listed in event Data property, only these will be dumped to the output, otherwise, all incoming arguments will be dumped." Input="1" Model="Sequencer.DefaultEvent" Name="EventIn"></ArgumentMessage></Operator>
     <Subcomponent Model="VideoWallLib.SKAARHOJTCPCom" Name="SKAARHOJTCPCom" src="Components/IO/SKAARHOJTCPCom.xml"></Subcomponent>
   </Subcomponents>
 </Component>

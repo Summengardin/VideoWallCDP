@@ -9,21 +9,19 @@
   <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.Camera"></Attribute>
  </Attributes>
  <Ports></Ports>
- 
  <Signals>
-    <Signal Input="1" Model="DeliveryConfigString" Name="Format"></Signal>
-    <Signal Input="1" Model="DeliveryConfigString" Name="Type"></Signal>
-    <Signal Input="1" Model="DeliveryConfigString" Name="URI"></Signal>
-    <Signal Input="1" Model="DeliveryConfigString" Name="DisplayName"></Signal>
-    <Signal Input="0" Model="DeliveryConfigString" Name="IP"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="Format" Value="0" TypeColorHint="" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="Type" Value="0" TypeColorHint="" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="URI" Value="0" TypeColorHint="" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="DisplayName" Value="0" TypeColorHint="" Input="1"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="IP" Value="0" TypeColorHint=""></Signal>
  </Signals>
  <Tags></Tags>
  <Subcomponents>
- 
-    <Operator Model="MQTTIO.Publisher" Name="Publisher">
-
-      <Client Name="MQTTClient" Object="..MQTTClientRPC"></Client>
-      </Operator></Subcomponents>
+  <Operator Model="MQTTIO.Publisher" Name="Publisher">
+   <Client Name="MQTTClient" Object="..MQTTClientRPC"></Client>
+  </Operator>
+ </Subcomponents>
  <ArgumentMessages>
   <ArgumentMessage Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC"></ArgumentMessage>
  </ArgumentMessages>
@@ -35,6 +33,14 @@
   <Parameter Model="CalibrationParameter" Name="Framerate" Value="54"></Parameter>
  </Parameters>
  <Connectors>
-  <Connector Name="MQTTPublish" RoutingType="Push" TypeHint="RoutingType" Object=".Publisher.Publish"></Connector>
+  <Connector Name="MQTTPublish" Object=".Publisher.Publish" RoutingType="Push" TypeHint="RoutingType"></Connector>
  </Connectors>
+ <Element Description="" LogEventOnChange="0" Name="pWidth" RouteMethod="RouteEvent" SaveOnChange="0" Type="double"></Element>
+ <Element Description="" LogEventOnChange="0" Name="pHeight" RouteMethod="RouteEvent" SaveOnChange="0" Type="double"></Element>
+ <Element LogEventOnChange="0" Name="pDisplayName" RouteMethod="RouteEvent" SaveOnChange="0" Type="string"></Element>
+ <Element LogEventOnChange="0" Name="pIP" RouteMethod="RouteEvent" SaveOnChange="0" Type="string"></Element>
+ <Element LogEventOnChange="0" Name="pFormat" RouteMethod="RouteEvent" SaveOnChange="0" Type="string"></Element>
+ <Element LogEventOnChange="0" Name="pType" RouteMethod="RouteEvent" SaveOnChange="0" Type="string"></Element>
+ <Element LogEventOnChange="0" Name="pURI" RouteMethod="RouteEvent" SaveOnChange="0" Type="string"></Element>
+ <Element LogEventOnChange="0" Name="pFramerate" RouteMethod="RouteEvent" SaveOnChange="0" Type="double"></Element>
 </Model>

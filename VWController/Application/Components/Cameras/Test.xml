@@ -4,15 +4,14 @@
   <fs>5</fs>
   <Status>0</Status>
 
-
   <Signals>
     <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
     <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
-    <Signal Input="1" Model="DeliveryConfigString" Name="Format" Type="string" Value=""></Signal>
-    <Signal Input="1" Model="DeliveryConfigString" Name="Type" Type="string" Value=""></Signal>
-    <Signal Input="1" Model="DeliveryConfigString" Name="URI" Type="string" Value=""></Signal>
-    <Signal Input="1" Model="DeliveryConfigString" Name="DisplayName" Type="string" Value=""></Signal>
-    <Signal Input="0" Model="DeliveryConfigString" Name="IP" Type="string" Value=""></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Format" Type="string" Value="0"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Type" Type="string" Value="0"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="URI" Type="string" Value="0"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="DisplayName" Type="string" Value="0"></Signal>
+    <Signal Input="0" Model="CDPSignal&lt;string&gt;" Name="IP" Type="string" Value="0"></Signal>
   </Signals>
 
   <Alarms>
@@ -52,5 +51,4 @@
   <Connectors>
     <Connector Name="MQTTPublish" Object=".Publisher.Publish"></Connector>
   </Connectors>
-
 </Component>

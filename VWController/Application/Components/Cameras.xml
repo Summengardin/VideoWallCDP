@@ -1,12 +1,13 @@
-<Component Model="CDPComponent" Name="Cameras" src="Components/Cameras.xml" Description="CDPComponent is an instance of a CDP component model, instantiated using the specification in the component configuration xml file. Components communicate by exchanging Messages, Signal- and Property-values, both inside applications and between applications." Activate="0">
+<Component Model="VideoWallLib.CameraContainer" Name="Cameras" src="Components/Cameras.xml" Description="Simple component">
   <SchedulingOrder>TopDown</SchedulingOrder>
   <SchedulingGroup>Default</SchedulingGroup>
-  <fs>10</fs>
+  <fs>100</fs>
   <Status>0</Status>
 
   <Signals>
     <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
     <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+    <Signal Input="0" Model="CDPSignal&lt;string&gt;" Name="numCameras" Type="string"></Signal>
   </Signals>
 
   <Alarms>
