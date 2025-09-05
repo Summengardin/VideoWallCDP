@@ -9,6 +9,7 @@
     <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
     <Signal Input="1" Model="DeliveryConfigString" Name="numCameras" Type="string" Value="10"></Signal>
     <Signal Input="1" Model="DeliveryConfigString" Name="numTiles" Type="string"></Signal>
+    <Signal Input="0" Model="CDPSignal&lt;int&gt;" Name="selectedTile" Type="int"></Signal>
   </Signals>
 
   <Alarms>

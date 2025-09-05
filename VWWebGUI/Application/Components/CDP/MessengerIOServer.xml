@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Component Name="MessengerIOServer" Model="MessengerIOServer" Description='Transports property and signal values between applications.' Activate="1">
-  <fs>10</fs>
+  <fs>100</fs>
 
   <Signals>
     <Signal Name="Process Timer"                Value="0" Unit="s/s" Type="double"       Input="0" Model="CDPSignal&lt;double&gt;"       Description="Process run time each s."></Signal>

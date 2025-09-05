@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Component Name="MessengerIOServer" Model="MessengerIOServer" Description='Transports property and signal values between applications.' Activate="1">
-  <fs>10</fs>
+  <fs>100</fs>
   <KeepLastValueOnDisconnect>1</KeepLastValueOnDisconnect>
 
   <Signals>
