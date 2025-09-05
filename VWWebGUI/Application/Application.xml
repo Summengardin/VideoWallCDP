@@ -2,7 +2,7 @@
 
 <Application Name="VWWebGUI" Model="Application" Description=''>
   <Debug>0</Debug>
-  <ApplicationHandle>2</ApplicationHandle>
+  <ApplicationHandle>3</ApplicationHandle>
   <fs>10</fs>
   <ClockSync>None</ClockSync>
   <IsTimeServer>0</IsTimeServer>

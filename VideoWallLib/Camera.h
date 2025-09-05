@@ -32,17 +32,27 @@ public:
     void CreateModel() override;
     void Configure(const char* componentXML) override;
     void ProcessNull() override;
+    void UpdateSignalFromProp(CDPPropertyBase* prop);
     json toJson() const;
 
 protected:
     OperationUtilities::CalibrationParameter Width;
     OperationUtilities::CalibrationParameter Height;
     OperationUtilities::CalibrationParameter Framerate;
-    OperationUtilities::DeliveryConfigString DisplayName;
-    OperationUtilities::DeliveryConfigString IP;
-    OperationUtilities::DeliveryConfigString Format;
-    OperationUtilities::DeliveryConfigString Type;
-    OperationUtilities::DeliveryConfigString URI;
+    CDPSignal<std::string> Type;
+    CDPSignal<std::string> Format;
+    CDPSignal<std::string> URI;
+    CDPSignal<std::string> DisplayName;
+    CDPSignal<std::string> IP;
+    // OperationUtilities::DeliveryConfigString DisplayName;
+    // OperationUtilities::DeliveryConfigString IP;
+    // OperationUtilities::DeliveryConfigString Format;
+    // OperationUtilities::DeliveryConfigString Type;
+    // OperationUtilities::DeliveryConfigString URI;
+
+    // local Properties for reading the signal via connections
+
+
     using CDPComponent::requestedState;
     using CDPComponent::ts;
     using CDPComponent::fs;
@@ -53,11 +63,22 @@ protected:
     std::vector<bool> indexedSignalsChanged;
 
     Uri UriParser;
+
     CDPConnector MQTTPublish;
+    CDPProperty<double> pWidth;
+    CDPProperty<double> pHeight;
+    CDPProperty<double> pFramerate;
+    CDPProperty<std::string> pDisplayName;
+    CDPProperty<std::string> pIP;
+    CDPProperty<std::string> pFormat;
+    CDPProperty<std::string> pType;
+    CDPProperty<std::string> pURI;
+
 
     void IndexInputs();
     void PublishMQTT();
     void ParseURI();
+    void UpdateLocalProperties();
 
     bool firstRun {true};
 };

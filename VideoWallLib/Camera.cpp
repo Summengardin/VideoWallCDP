@@ -39,7 +39,6 @@ Camera::~Camera()
 void Camera::Create(const char* fullName)
 {
     CDPComponent::Create(fullName);
-    MQTTPublish.Create("MQTTPublish",this);
     Width.Create("Width",this);
     Height.Create("Height",this);
     DisplayName.Create("DisplayName",this);
@@ -47,6 +46,19 @@ void Camera::Create(const char* fullName)
     Format.Create("Format",this);
     Type.Create("Type",this);
     URI.Create("URI",this);
+    Framerate.Create("Framerate", this);
+    
+    MQTTPublish.Create("MQTTPublish",this);
+
+    pWidth.Create("pWidth",this,CDPPropertyBase::e_Element,(CDPOBJECT_SETPROPERTY_HANDLER)&Camera::UpdateSignalFromProp,(CDPOBJECT_VALIDATEPROPERTY_HANDLER)nullptr);
+    pHeight.Create("pHeight",this,CDPPropertyBase::e_Element,(CDPOBJECT_SETPROPERTY_HANDLER)&Camera::UpdateSignalFromProp,(CDPOBJECT_VALIDATEPROPERTY_HANDLER)nullptr);
+    pDisplayName.Create("pDisplayName",this,CDPPropertyBase::e_Element,(CDPOBJECT_SETPROPERTY_HANDLER)&Camera::UpdateSignalFromProp,(CDPOBJECT_VALIDATEPROPERTY_HANDLER)nullptr);
+    pIP.Create("pIP",this,CDPPropertyBase::e_Element,(CDPOBJECT_SETPROPERTY_HANDLER)&Camera::UpdateSignalFromProp,(CDPOBJECT_VALIDATEPROPERTY_HANDLER)nullptr);
+    pFormat.Create("pFormat",this,CDPPropertyBase::e_Element,(CDPOBJECT_SETPROPERTY_HANDLER)&Camera::UpdateSignalFromProp,(CDPOBJECT_VALIDATEPROPERTY_HANDLER)nullptr);
+    pType.Create("pType",this,CDPPropertyBase::e_Element,(CDPOBJECT_SETPROPERTY_HANDLER)&Camera::UpdateSignalFromProp,(CDPOBJECT_VALIDATEPROPERTY_HANDLER)nullptr);
+    pURI.Create("pURI",this,CDPPropertyBase::e_Element,(CDPOBJECT_SETPROPERTY_HANDLER)&Camera::UpdateSignalFromProp,(CDPOBJECT_VALIDATEPROPERTY_HANDLER)nullptr);
+    pFramerate.Create("pFramerate",this,CDPPropertyBase::e_Element,(CDPOBJECT_SETPROPERTY_HANDLER)&Camera::UpdateSignalFromProp,(CDPOBJECT_VALIDATEPROPERTY_HANDLER)nullptr);
+    
 }
 
 /*!
@@ -76,6 +88,7 @@ void Camera::Configure(const char* componentXML)
     indexedSignals.resize(len);
     indexedSignalsPrev.resize(len);
     indexedSignalsChanged.resize(len);
+
 }
 
 
@@ -95,11 +108,43 @@ void Camera::Configure(const char* componentXML)
 void Camera::ProcessNull()
 {
     ParseURI();
+    UpdateLocalProperties();
     IndexInputs();
     PublishMQTT();
 
     firstRun = false;
 }
+
+
+void Camera::UpdateSignalFromProp(CDPPropertyBase* prop)
+{
+    if (DebugLevel(DEBUGLEVEL_NORMAL))
+        CDPMessage("%s: SetPropertyHandler for %s called\n",GetNodeLongName().c_str(),prop->GetNodeName().c_str());
+
+    std::string pName = prop->GetNodeName();
+    std::string sName = pName.erase(0, 1);
+    if (DebugLevel(DEBUGLEVEL_NORMAL))
+        CDPMessage("PropertyNameSignalyfied is: %s\n", sName.c_str());
+    for (ICDPSignal* signal : m_listSignals) {
+        if (signal->ShortName() == sName){
+            if (DebugLevel(DEBUGLEVEL_NORMAL))
+                CDPMessage("Setting signal: %s to value: %s\n", signal->ShortName(), prop->GetValue().c_str());
+            if (CDPSignal<std::string>* value = dynamic_cast<CDPSignal<std::string>*>(signal) ){
+                *value = prop->GetValue();
+
+            }
+        }
+    }
+    // Have to check parameters as well since some of the values are CalibrationParameter
+    for (CDPParameter* param : parameters) {
+        if (param->ShortName() == sName) {
+            if (DebugLevel(DEBUGLEVEL_NORMAL))
+                CDPMessage("Setting parameter: %s to value: %s\n", param->ShortName(), prop->GetValue().c_str());
+            param->SetValue(std::stod(prop->GetValue()));
+        }
+    }
+}
+
 
 void Camera::ParseURI()  {
     try {
@@ -115,9 +160,20 @@ void Camera::ParseURI()  {
         URI = "";
 
         if(DebugLevelForComponent(this->GetParent(),DebugLevel(DEBUGLEVEL_EXTENDED)))
-            std::cerr << "Invalid URI provided: " << URI.GetString() << std::endl;
+            std::cerr << "Invalid URI provided: " << std::string(URI) << std::endl;
 
     }
+}
+
+void Camera::UpdateLocalProperties()
+{
+    pDisplayName = DisplayName;
+    pIP = IP;
+    pURI = URI;
+    pWidth = Width;
+    pHeight = Height;
+    pFramerate = Framerate;
+    pFormat = Format;
 }
 
 
@@ -196,7 +252,7 @@ void Camera::IndexInputs()
     indexedSignals.at(4) = std::to_string(Height);
     indexedSignals.at(5) = std::to_string(Framerate);
     indexedSignals.at(6) = Format;
-    indexedSignals.at(7) = Type;
+    indexedSignals.at(7) = Type; 
 
     // Check for changes
     std::transform(indexedSignals.begin(), indexedSignals.end(), indexedSignalsPrev.begin(), indexedSignalsChanged.begin(), std::not_equal_to<std::string>());
@@ -204,6 +260,8 @@ void Camera::IndexInputs()
     // Store new values
     std::copy(indexedSignals.begin(), indexedSignals.end(), indexedSignalsPrev.begin());
 }
+
+
 
 
 

@@ -47,8 +47,10 @@ void Tile::Create(const char* fullName)
     Brightness.Create("Brightness",this);
     MQTTPublish.Create("MQTTPublish",this);
     SelectedRect.Create("SelectedRect",this);
-    MessageHandlerConnector.Create("MessageHandlerConnector",this);
-    VisionControllerConnector.Create("VisionControllerConnector",this);
+    connMessageHandler.Create("connMessageHandler",this);
+    connVisionController.Create("connVisionController",this);
+    connCurrentSource.Create("connCurrentSource",this);
+
 }
 
 /*!
@@ -88,7 +90,9 @@ void Tile::Configure(const char* componentXML)
     indexedSignalsChanged.resize(len);
     holdUntil.resize(indexedSignalsChanged.size(),
                      std::chrono::steady_clock::time_point::max());
-    MessageHandlerConnector.ConnectTo("VWController.VisionControllers");
+    connMessageHandler.ConnectTo("VWController.VisionControllers");
+
+
 }
 
 /*!
@@ -107,7 +111,9 @@ void Tile::Configure(const char* componentXML)
 void Tile::ProcessNull()
 {
     IndexInputs();
-    PublishMqtt();
+
+
+    Update();
 
     firstRun = false;
 }
@@ -152,12 +158,9 @@ void Tile::IndexInputs() {
 
 
 
-void Tile::PublishMqtt() {
 
-    bool changeInSignals = std::any_of(indexedSignalsChanged.begin(), indexedSignalsChanged.end(), [](bool b) { return b;});
-    if (!changeInSignals && !firstRun){
-        return;
-    }
+
+void Tile::PublishMqtt() {
 
     std::string baseTopic = this->Name();
     std::replace(baseTopic.begin(), baseTopic.end(), '.', '/');
@@ -198,6 +201,17 @@ json Tile::OSDPortsToJson() {
 
                 if (StringHelpers::Contains(val, "Source")){
                     val = Source;
+                }
+                else if (StringHelpers::Contains(val, "DisplayName")){
+                    if (this->connCurrentSource.Connected()) {
+                        bool success;
+                        val = connCurrentSource.GetProperty("Name", success);
+                        if (success)
+                            std::cout << "Connected, and Success, DisplayName is : " << val <<  std::endl;
+                        else
+                            std::cout << "Connected, no Success " <<  std::endl;
+                    } else
+                        std::cout << "Sorry, not connected" << std::endl;
                 }
                 else if (StringHelpers::Contains(val, "ControlValue")){
                     val.clear();
@@ -308,4 +322,26 @@ void Tile::parseAndSetSignals(const std::string& msg) {
             Source = valueStr;
         }
     }
+}
+
+void Tile::ConnectToSource()
+{
+    std::string PathToCamera = "VWController.Cameras." + Source;
+
+    connCurrentSource.ConnectTo(PathToCamera.c_str());
+    if (connCurrentSource.Connected())
+        std::cout << "Connected" << std::endl;
+}
+
+void Tile::Update()
+{
+    bool changeInSignals = std::any_of(indexedSignalsChanged.begin(), indexedSignalsChanged.end(), [](bool b) { return b;});
+    if (!changeInSignals && !firstRun){
+        return;
+    }
+
+    if (indexedSignalsChanged[0])
+        ConnectToSource();
+    PublishMqtt();
+
 }
