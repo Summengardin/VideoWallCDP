@@ -232,8 +232,8 @@ void VisionControllerContainer::SendTileConfiguration(bool changeSource){
     txtMessage.SetTextCommand("MessageHandler");
     Outputmsg = txtMessage;
     std::string outputline = "Zoom_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(7)))
-        + "; Tilt_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(8)))
-        + "; Pan_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(9)));
+        + "; Tilt_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(9)))
+        + "; Pan_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(8)));
     if (changeSource)
         outputline += "; source: " + idToCamera[HC.getEncoderState(11)];
     outputline += +";\n";
