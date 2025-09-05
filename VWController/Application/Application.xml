@@ -10,7 +10,7 @@
   <CDPVersion>5.0</CDPVersion>
   <Domain>VideoWall</Domain>
 
-  <NetworkInterface Name="ETH0" MAC="" IPAddress="10.1.3.31" SubnetMask="255.255.255.0"></NetworkInterface>
+  <NetworkInterface Name="ETH0" MAC="" IPAddress="10.5.11.65" SubnetMask="255.255.255.0"></NetworkInterface>
 
   <Subcomponents>
     <Subcomponent Name="CDP"        Model="CDP"        src="Components\CDP.xml"></Subcomponent>
@@ -55,7 +55,6 @@
   <Ports></Ports>
 
   <ArgumentMessages></ArgumentMessages>
-  <NetworkInterface IPAddress="10.1.3.31" Model="NetworkInterface" Name="ETH_SKAARHOJ" SubnetMask="255.255.255.0" Description="The NetworkInterface holds Name, IPAddress, SubnetMask, Gateway and MAC that might be needed for setting up an Ethernet interface." Gateway="" MAC=""></NetworkInterface>
   
   
   

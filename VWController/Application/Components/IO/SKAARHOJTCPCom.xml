@@ -31,5 +31,5 @@
   <Connectors>
     <Connector Name="PublishToMessagageHandler" Object=""></Connector>
   </Connectors>
-  <Transport ListenPort="9923" LocalName="ETH_SKAARHOJ" Model="TCPTransport" Name="TCPTransport" RemoteIP="10.1.3.60" RemotePort="9923" Timeout="1"></Transport>
+  <Transport ListenPort="9923" LocalName="ETH0" Model="TCPTransport" Name="TCPTransport" RemoteIP="10.1.3.60" RemotePort="9923" Timeout="1"></Transport>
 </Component>
