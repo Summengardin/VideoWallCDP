@@ -205,14 +205,29 @@ json Tile::OSDPortsToJson() {
                 else if (StringHelpers::Contains(val, "DisplayName")){
                     if (this->connCurrentSource.Connected()) {
                         bool success;
-                        val = connCurrentSource.GetProperty("Name", success);
-                        if (success)
-                            std::cout << "Connected, and Success, DisplayName is : " << val <<  std::endl;
-                        else
-                            std::cout << "Connected, no Success " <<  std::endl;
-                    } else
-                        std::cout << "Sorry, not connected" << std::endl;
+                        val = connCurrentSource.GetProperty("pDisplayName", success);
+                        if (DebugLevel(DEBUGLEVEL_EXTENDED)){
+                            std::string succ = success ? "Successfull" : "Non-sucessfull";
+                            CDPMessage("%s: %s GetProperty for '%s' = '%s'\n", CDPComponent::Name(), succ.c_str(), "pDisplayName", val.c_str());
+                        }
+                    } else{
+                        if (DebugLevel(DEBUGLEVEL_NORMAL))
+                            CDPMessage("%s: connCurrentSource is not Connected", CDPComponent::Name());
+                    }
                 }
+                else if (StringHelpers::Contains(val, "IP")){
+                    if (this->connCurrentSource.Connected()) {
+                        bool success;
+                        val = connCurrentSource.GetProperty("pIP", success);
+                        if (DebugLevel(DEBUGLEVEL_EXTENDED)){
+                            std::string succ = success ? "Successfull" : "Non-sucessfull";
+                            CDPMessage("%s: %s GetProperty for '%s' = '%s'\n", CDPComponent::Name(), succ.c_str(), "pIP", val.c_str());
+                        }
+                    } else{
+                        if (DebugLevel(DEBUGLEVEL_NORMAL))
+                            CDPMessage("%s: connCurrentSource is not Connected", CDPComponent::Name());
+                    }
+                    }
                 else if (StringHelpers::Contains(val, "ControlValue")){
                     val.clear();
                     const auto now = clock::now();
@@ -330,7 +345,7 @@ void Tile::ConnectToSource()
 
     connCurrentSource.ConnectTo(PathToCamera.c_str());
     if (connCurrentSource.Connected())
-        std::cout << "Connected" << std::endl;
+        CDPMessage("%s: Connected to '%s'\n", CDPComponent::ShortName(), connCurrentSource.GetNodeName().c_str());
 }
 
 void Tile::Update()
@@ -340,6 +355,7 @@ void Tile::Update()
         return;
     }
 
+    // Connect to Source for reading
     if (indexedSignalsChanged[0])
         ConnectToSource();
     PublishMqtt();

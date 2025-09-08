@@ -32,23 +32,23 @@ public:
     void CreateModel() override;
     void Configure(const char* componentXML) override;
     void ProcessNull() override;
-    void UpdateSignalFromProp(CDPPropertyBase* prop);
+    void UpdateSignalFromProperty(CDPPropertyBase* prop);
     json toJson() const;
 
 protected:
     OperationUtilities::CalibrationParameter Width;
     OperationUtilities::CalibrationParameter Height;
     OperationUtilities::CalibrationParameter Framerate;
-    CDPSignal<std::string> Type;
-    CDPSignal<std::string> Format;
-    CDPSignal<std::string> URI;
-    CDPSignal<std::string> DisplayName;
-    CDPSignal<std::string> IP;
-    // OperationUtilities::DeliveryConfigString DisplayName;
+    // CDPSignal<std::string> Type;
+    // CDPSignal<std::string> Format;
+    // CDPSignal<std::string> URI;
+    // CDPSignal<std::string> DisplayName;
     // OperationUtilities::DeliveryConfigString IP;
-    // OperationUtilities::DeliveryConfigString Format;
-    // OperationUtilities::DeliveryConfigString Type;
-    // OperationUtilities::DeliveryConfigString URI;
+    CDPSignal<std::string> IP;
+    OperationUtilities::DeliveryConfigString DisplayName;
+    OperationUtilities::DeliveryConfigString Format;
+    OperationUtilities::DeliveryConfigString Type;
+    OperationUtilities::DeliveryConfigString URI;
 
     // local Properties for reading the signal via connections
 

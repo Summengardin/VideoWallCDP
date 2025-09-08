@@ -10,12 +10,11 @@
  </Attributes>
  <Ports></Ports>
  <Signals>
-    <Signal Model="CDPSignal&lt;string&gt;" Name="Format" Value="0" TypeColorHint="" Input="1"></Signal>
-    <Signal Model="CDPSignal&lt;string&gt;" Name="Type" Value="0" TypeColorHint="" Input="1"></Signal>
-    <Signal Model="CDPSignal&lt;string&gt;" Name="URI" Value="0" TypeColorHint="" Input="1"></Signal>
-    <Signal Model="CDPSignal&lt;string&gt;" Name="DisplayName" Value="0" TypeColorHint="" Input="1"></Signal>
-    <Signal Model="CDPSignal&lt;string&gt;" Name="IP" Value="0" TypeColorHint=""></Signal>
- </Signals>
+    <Signal Input="1" Model="DeliveryConfigString" Name="Type" Selection="Axis;Z3" TypeHint="Selection" Value="Axis"></Signal>
+    <Signal Model="CDPSignal&lt;string&gt;" Name="IP"></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="Format" Value=" "></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="URI" Value=" "></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="DisplayName" Value=" "></Signal></Signals>
  <Tags></Tags>
  <Subcomponents>
   <Operator Model="MQTTIO.Publisher" Name="Publisher">
@@ -25,7 +24,6 @@
  <ArgumentMessages>
   <ArgumentMessage Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC"></ArgumentMessage>
  </ArgumentMessages>
- <Element LogEventOnChange="0" Name="propIP" RouteMethod="RouteEvent" SaveOnChange="0" Type="string"></Element>
  <States></States>
  <Parameters>
   <Parameter Model="CalibrationParameter" Name="Width" Value="1920"></Parameter>
