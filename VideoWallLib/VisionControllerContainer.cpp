@@ -37,6 +37,7 @@ VisionControllerContainer::~VisionControllerContainer()
 void VisionControllerContainer::Create(const char* fullName)
 {
     CDPComponent::Create(fullName);
+    selectedTile.Create("selectedTile",this);
     numCameras.Create("numCameras",this);
     numTiles.Create("numTiles",this);
     MQTTSubscribe.Create("MQTTSubscribe",this);
@@ -186,6 +187,7 @@ void VisionControllerContainer::updateHCStates(const std::string& msg) {
                 value = numTiles-1;
             }
             HC.setEncoder(id, value);
+            selectedTile = value + 1; //Range of selector 1-numCameras
             std::string subscribingName = tileSources[HC.getEncoderState(id)] +".Source";
             std::replace(subscribingName.begin(),subscribingName.end(),'.','/');
             // std::cout << subscribingName << "\n";

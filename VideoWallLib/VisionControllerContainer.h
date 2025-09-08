@@ -44,6 +44,7 @@ protected:
     using CDPComponent::fs;
 
     HandController HC;
+    CDPSignal<int> selectedTile;
     CDPConnector HandControllerConnector;
     void updateHCStates(const std::string& msg);
     void UpdateHCVisual();

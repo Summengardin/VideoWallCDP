@@ -9,6 +9,7 @@
     <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
     <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
     <Signal Input="1" Model="CDPSignal&lt;int&gt;" Name="SelectedTile" Type="int" Description="" DisableOperators="0" InternalValue="0" RolePermissions="" RoutedProperties="Value" Routing="...VisionControllers.selectedTile" RoutingStatus="" Unit="" Value="0"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;int&gt;" Name="onStartValue" Type="int" Value="1"></Signal>
   </Signals>
 
   <Alarms>
@@ -19,7 +20,7 @@
   <Subcomponents>
     <Operator Model="OperationUtilities.OutputSelectorOperator&lt;int&gt;" Name="OutputSelectorOperator" Type="int">
       <Argument CppName="" Description="Selection: Used to specify a SelectionNr that will be compared to the SelectionNr of the Arguments" Input="1" Model="DefaultArgument&lt;unsigned int&gt;" Name="Selection" Routing="..SelectedTile" Type="unsigned int" Value="0"></Argument>
-      <Argument CppName="" Input="1" Model="DefaultArgument&lt;int&gt;" Name="InputValue" Routing="" Type="int" Value="0"></Argument>
+      <Argument CppName="" Input="1" Model="DefaultArgument&lt;int&gt;" Name="InputValue" Routing="..onStartValue" Type="int" Value="0"></Argument>
 
       <SelectorOutputs>
         <SelectorOutput CppName="" Input="0" Model="OperationUtilities.SelectorOutput&lt;int&gt;" Name="Argument0" Routing="" SelectionNr="1" Type="int" Value="0"></SelectorOutput>
@@ -31,8 +32,9 @@
         <SelectorOutput CppName="" Input="0" Model="OperationUtilities.SelectorOutput&lt;int&gt;" Name="Argument6" Routing="" SelectionNr="7" Type="int" Value="0"></SelectorOutput>
         <SelectorOutput CppName="" Input="0" Model="OperationUtilities.SelectorOutput&lt;int&gt;" Name="Argument7" Routing="" SelectionNr="8" Type="int" Value="0"></SelectorOutput>
         <SelectorOutput CppName="" Input="0" Model="OperationUtilities.SelectorOutput&lt;int&gt;" Name="Argument8" Routing="" SelectionNr="9" Type="int" Value="0"></SelectorOutput>
-        <SelectorOutput CppName="" Input="0" Model="OperationUtilities.SelectorOutput&lt;int&gt;" Name="Argument9" Routing="" SelectionNr="0" Type="int" Value="0"></SelectorOutput>
-        <SelectorOutput CppName="" Input="0" Model="OperationUtilities.SelectorOutput&lt;int&gt;" Name="Argument10" Routing="" SelectionNr="0" Type="int" Value="0"></SelectorOutput>
+        <SelectorOutput CppName="" Input="0" Model="OperationUtilities.SelectorOutput&lt;int&gt;" Name="Argument9" Routing="" SelectionNr="10" Type="int" Value="0"></SelectorOutput>
+        <SelectorOutput CppName="" Input="0" Model="OperationUtilities.SelectorOutput&lt;int&gt;" Name="Argument10" Routing="" SelectionNr="11" Type="int" Value="0"></SelectorOutput>
+        <SelectorOutput CppName="" Input="0" Model="OperationUtilities.SelectorOutput&lt;int&gt;" Name="Argument11" Routing="" SelectionNr="12" Type="int" Value="0"></SelectorOutput>
       </SelectorOutputs></Operator>
   </Subcomponents>
 
