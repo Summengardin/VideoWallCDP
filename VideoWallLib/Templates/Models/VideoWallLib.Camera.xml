@@ -11,7 +11,7 @@
  <Ports></Ports>
  <Signals>
     <Signal Input="1" Model="DeliveryConfigString" Name="Type" Selection="Axis;Z3" TypeHint="Selection" Value="Axis"></Signal>
-    <Signal Model="CDPSignal&lt;string&gt;" Name="IP"></Signal>
+    <Signal           Model="CDPSignal&lt;string&gt;" Name="IP"></Signal>
     <Signal Input="1" Model="DeliveryConfigString" Name="Format" Value=" "></Signal>
     <Signal Input="1" Model="DeliveryConfigString" Name="URI" Value=" "></Signal>
     <Signal Input="1" Model="DeliveryConfigString" Name="DisplayName" Value=" "></Signal></Signals>
@@ -39,6 +39,6 @@
  <Element LogEventOnChange="0" Name="pIP" RouteMethod="RouteEvent" SaveOnChange="0" Type="string"></Element>
  <Element LogEventOnChange="0" Name="pFormat" RouteMethod="RouteEvent" SaveOnChange="0" Type="string"></Element>
  <Element LogEventOnChange="0" Name="pType" RouteMethod="RouteEvent" SaveOnChange="0" Type="string"></Element>
+ <Element Description="" LogEventOnChange="0" Name="pFramerate" RouteMethod="RouteEvent" SaveOnChange="0" Type="double"></Element>
  <Element LogEventOnChange="0" Name="pURI" RouteMethod="RouteEvent" SaveOnChange="0" Type="string"></Element>
- <Element LogEventOnChange="0" Name="pFramerate" RouteMethod="RouteEvent" SaveOnChange="0" Type="double"></Element>
 </Model>
