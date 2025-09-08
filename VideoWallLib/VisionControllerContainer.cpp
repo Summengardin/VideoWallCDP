@@ -111,10 +111,9 @@ void VisionControllerContainer::ProcessNull()
 {
     if (ConfigTimer.elapsedMillis() > 1000 && firstRunConfig){
         selectedTile = HC.getEncoderState(10) + 1; //Range of selector 1-numCameras
-        std::cout << HC.getEncoderState(10) << "\n";
+        // std::cout << HC.getEncoderState(10) << "\n";
         std::string subscribingName = tileSources[HC.getEncoderState(10)] +".Source";
         std::replace(subscribingName.begin(),subscribingName.end(),'.','/');
-        std::cout << subscribingName << "\n";
         // std::cout << subscribingName << "\n";
         txtMessage.SetTextCommand("Subscribe");
         Outputmsg = txtMessage;
@@ -149,7 +148,7 @@ int VisionControllerContainer::MessageHandController(void* message)
 
 int VisionControllerContainer::MessageReceived(void* message)
 {
-    std::cout << "MessageRecieved \n";
+    // std::cout << "MessageRecieved \n";
     MessageTextCommandWithParameterReceive* msg = static_cast<MessageTextCommandWithParameterReceive*>(message);
     std::string strParameter(msg->parameters);
     std::string PayloadString = extractPayload(strParameter);
