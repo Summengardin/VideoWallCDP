@@ -67,11 +67,11 @@ void OSDDataDistributor::Configure(const char* componentXML)
 
     for (auto p : m_ports)
         if (OSDTextPort* osd_port = dynamic_cast<OSDTextPort*>(p))
-            m_osdports.push_back(osd_port);
+            m_osdPorts.push_back(osd_port);
 
-
-    indexed_data.resize(m_listSignals.size()); // Yes, this will make it bigger than necessary - quick and dirty
-    prevTimeouts.resize(m_listSignals.size());
+    CDPMessage("%s: in Configure, m_listSignals is: %i\n", CDPComponent::Name(), m_listSignals.size());
+    indexedData.resize(m_listSignals.size()); // Yes, this will make it bigger than necessary - quick and dirty
+    prevTimeouts.resize(m_osdPorts.size());
 }
 
 /*!
@@ -91,35 +91,55 @@ void OSDDataDistributor::ProcessNull()
 {
     IndexInputs();
 
-    for (size_t i = 0; i < m_osdports.size(); i++){
-        auto p = m_osdports[i];
+    // Distribute data based on requested TextIndex in port
+    for (size_t i = 0; i < m_osdPorts.size(); i++){
+        auto p = m_osdPorts[i];
         try {
-            p->Text = indexed_data.at(p->TextIndex);
+            p->Text = indexedData.at(p->TextIndex);
             if (!i_ShowOSDDescription)
                 prevTimeouts[i] = p->Timeout;
         } catch (const std::out_of_range& e) {
             CDPMessage("%s: Index %i out of range for OSD Data selection\n", e.what(), p->TextIndex.c_str());
         }
         if(DebugLevel(DEBUGLEVEL_EXTENDED))
-            CDPMessage("Writing text prop (index=data) %f = %s \n", p->TextIndex.c_str(), indexed_data[p->TextIndex].c_str());
+            CDPMessage("%s: %s, asks for TextIndex: %s, will get Data: %s \n", CDPComponent::Name(), p->ShortName(),  p->TextIndex.GetValue().c_str(), indexedData[p->TextIndex].c_str());
     }
 }
 
 
 void OSDDataDistributor::IndexInputs(){
 
-    int string_cnt = 0;
-    for (ICDPSignal* signal : m_listSignals) {
+    for (size_t i = 0; i < m_listSignals.size(); i++) {
         // Get the value as a generic variant or base type
-        if  (CDPSignal<std::string>* value = dynamic_cast<CDPSignal<std::string>*>(signal) ){
-            if (i_ShowOSDDescription)
-                indexed_data[string_cnt++] =  value->GetProperty("ShortName") + " [" + value->GetProperty("Unit") + "]: " + value->GetProperty("Description");
-            else
-                indexed_data[string_cnt++] = value->GetRawValue();
+        ICDPSignal* signal = m_listSignals[i];
 
-            if (DebugLevel(DEBUGLEVEL_EXTENDED))
-                std::cout << "String value: " << value->GetRawValue() << " | DESC: " << value->GetProperty("ShortName") + " [" + value->GetProperty("Unit") + "]: " + value->GetProperty("Description") << std::endl;
-        }
+
+        if  (CDPSignal<std::string>* value = dynamic_cast<CDPSignal<std::string>*>(signal) ){
+            if (i>indexedData.size())
+            {
+                CDPMessage("Resized indexed_data to %u\n",i*2);
+                indexedData.resize(i*2);
+                prevTimeouts.resize(i*2);
+            }
+            if (i_ShowOSDDescription)
+                indexedData[i] =  value->GetProperty("ShortName") + " [" + value->GetProperty("Unit") + "]: " + value->GetProperty("Description");
+            else
+                indexedData[i] = value->GetRawValue();
+
+           if (DebugLevel(DEBUGLEVEL_EXTENDED)){
+               CDPMessage(
+                   "%s: IndexedSignal[%i] NAME: %s, TYPE: %s, MODEL: %s, VALUE: %s, UNIT: %s, DESC: %s\n",
+                   CDPComponent::Name(),
+                   i,
+                   signal->GetProperty("ShortName").c_str(),
+                   signal->GetProperty("Type").c_str(),
+                   signal->GetProperty("Model").c_str(),
+                   signal->GetProperty("Value").c_str(),
+                   signal->GetProperty("Unit").c_str(),
+                   signal->GetProperty("Description").c_str()
+                   );
+            }
+    }
     }
 }
 

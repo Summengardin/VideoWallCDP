@@ -29,8 +29,8 @@ protected:
     using CDPComponent::requestedState;
     using CDPComponent::ts;
 
-    std::vector<OSDTextPort*> m_osdports;
-    std::vector<std::string> indexed_data;
+    std::vector<OSDTextPort*> m_osdPorts;
+    std::vector<std::string> indexedData;
     std::vector<double> prevTimeouts;
 
     CDPSignal<std::string> i_Mode;
