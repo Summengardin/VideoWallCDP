@@ -78,8 +78,8 @@ namespace VideoWallLib {
             outputline += "HWC#" + std::to_string(a) + "=5\n";
             outputline += "HWCc#" + std::to_string(a) + "=" + std::to_string(130 | 0x80) + "\n";
          }
-        outputline += "HWCt#" + std::to_string(10) + "=" + tileMap[encoders[0]] + "\n";
-        outputline += "HWCt#" + std::to_string(11) + "=" + std::to_string(encoders[1]) + "\n";
+        outputline += "HWCt#" + std::to_string(10) + "=|||Tile|0|" + tileMap[encoders[0]] +"\n";
+        outputline += "HWCt#" + std::to_string(11) + "=|||Camera|0|"+ std::to_string(encoders[1]) +"\n";//=7|1||Camera|" + "hei||\n"; // std::to_string(encoders[1]) + "||\n";
         // std::cout << "Mapped value: " << tileMap[encoders[0]] << "\n";
         return outputline;
     }
