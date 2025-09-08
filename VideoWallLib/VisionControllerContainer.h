@@ -15,6 +15,34 @@
 #include <string>
 #include <map>
 #include "OperationUtilities/Parameters/calibrationparameter.h"
+#include <chrono>
+
+class Timer {
+public:
+    using clock = std::chrono::steady_clock;
+    using time_point = std::chrono::time_point<clock>;
+
+    Timer() : start(clock::now()) {}
+
+    // reset timer
+    void reset() {
+        start = clock::now();
+    }
+
+    // elapsed time in seconds
+    long long elapsedSeconds() const {
+        return std::chrono::duration_cast<std::chrono::seconds>(clock::now() - start).count();
+    }
+
+    // elapsed time in milliseconds
+    long long elapsedMillis() const {
+        return std::chrono::duration_cast<std::chrono::milliseconds>(clock::now() - start).count();
+    }
+
+private:
+    time_point start;
+};
+
 
 namespace VideoWallLib {
 
@@ -53,6 +81,8 @@ protected:
     std::vector<std::string> tileSources;
     void SendTileConfiguration(bool changeSource);
     bool allowedChangeTileSource;
+    bool firstRunConfig;
+    Timer ConfigTimer;
 
     MessageTextCommand txtMessage;
     MessagePacketHandle Outputmsg;

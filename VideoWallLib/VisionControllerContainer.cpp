@@ -16,6 +16,7 @@ using namespace VideoWallLib;
 */
 VisionControllerContainer::VisionControllerContainer()
 {
+    firstRunConfig = true;
 }
 
 
@@ -101,13 +102,29 @@ void VisionControllerContainer::Configure(const char* componentXML)
     std::string longName = this->GetNodeLongName();
     std::string ConnectorSocket = replaceSubcomponent(longName, "IO.SKAARHOJTCPCom");
     HandControllerConnector.ConnectTo(ConnectorSocket.c_str());
-
+    ConfigTimer.reset();
 }
 
 
 
 void VisionControllerContainer::ProcessNull()
 {
+    if (ConfigTimer.elapsedMillis() > 1000 && firstRunConfig){
+        selectedTile = HC.getEncoderState(10) + 1; //Range of selector 1-numCameras
+        std::cout << HC.getEncoderState(10) << "\n";
+        std::string subscribingName = tileSources[HC.getEncoderState(10)] +".Source";
+        std::replace(subscribingName.begin(),subscribingName.end(),'.','/');
+        std::cout << subscribingName << "\n";
+        // std::cout << subscribingName << "\n";
+        txtMessage.SetTextCommand("Subscribe");
+        Outputmsg = txtMessage;
+        std::vector<CDPUtils::Parameter> param = {{"Topic", subscribingName}, {"QoS", "0"}};
+        std::string joined = CDPUtils::JoinParameters(param);
+        Outputmsg.Packet().PayloadAppend(joined);
+        MQTTSubscribe.SendMessage(Outputmsg);
+        allowedChangeTileSource = false;
+        ConfigTimer.reset();
+    }
     /* Write your code here */
 
 }
@@ -132,7 +149,7 @@ int VisionControllerContainer::MessageHandController(void* message)
 
 int VisionControllerContainer::MessageReceived(void* message)
 {
-    // std::cout << "MessageRecieved \n";
+    std::cout << "MessageRecieved \n";
     MessageTextCommandWithParameterReceive* msg = static_cast<MessageTextCommandWithParameterReceive*>(message);
     std::string strParameter(msg->parameters);
     std::string PayloadString = extractPayload(strParameter);
@@ -143,6 +160,8 @@ int VisionControllerContainer::MessageReceived(void* message)
         HC.setEncoder(11, cameraToId[PayloadString]);
         allowedChangeTileSource = true;
     }
+    if (firstRunConfig)
+        firstRunConfig = false;
     // SendTileConfiguration();
     UpdateHCVisual();
     return 1;
