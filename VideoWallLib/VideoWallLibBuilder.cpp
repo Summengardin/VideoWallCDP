@@ -18,12 +18,10 @@ VideoWallLibBuilder implementation.
 #include "VisionControllerContainer.h"
 #include "SKAARHOJTCPCom.h"
 #include "TimestampGenerator.h"
-#include "SKAARHOJRawPanelMenu.h"
 #include "SourceOrchestrator.h"
 #include "Tile.h"
 #include "TilePort.h"
 #include "CameraContainer.h"
-#include "SKAARHOJRawPanelIO.h"
 
 using namespace VideoWallLib;
 
@@ -75,11 +73,7 @@ CDPComponent* VideoWallLibBuilder::CreateNewComponent(const std::string& type)
     if (type=="VideoWallLib.TimestampGenerator")
         return new TimestampGenerator;
     
-    if (type=="VideoWallLib.SKAARHOJRawPanelIO")
-        return new SKAARHOJRawPanelIO;
     
-    if (type=="VideoWallLib.SKAARHOJRawPanelMenu")
-        return new SKAARHOJRawPanelMenu;
     
     if (type=="VideoWallLib.SKAARHOJTCPCom")
         return new SKAARHOJTCPCom;

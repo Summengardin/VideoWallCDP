@@ -17,8 +17,6 @@ HEADERS += \
     OSDDataDistributor.h \
     OSDRectPort.h \
     OSDText.h \
-    SKAARHOJRawPanelIO.h \
-    SKAARHOJRawPanelMenu.h \
     SKAARHOJTCPCom.h \
     SourceOrchestrator.h \
     Tile.h \
@@ -47,8 +45,6 @@ SOURCES += \
     OSDDataDistributor.cpp \
     OSDRectPort.cpp \
     OSDText.cpp \
-    SKAARHOJRawPanelIO.cpp \
-    SKAARHOJRawPanelMenu.cpp \
     SKAARHOJTCPCom.cpp \
     OSDTextPort.cpp \
     SourceOrchestrator.cpp \
@@ -79,8 +75,6 @@ DISTFILES += $$files(*.xml, true) \
     Templates/Models/VideoWallLib.OSDText.xml \
     Templates/Models/VideoWallLib.OSDTextPort.xml \
     Templates/Models/VideoWallLib.PopulateComboBox_T.xml \
-    Templates/Models/VideoWallLib.SKAARHOJRawPanelIO.xml \
-    Templates/Models/VideoWallLib.SKAARHOJRawPanelMenu.xml \
     Templates/Models/VideoWallLib.SKAARHOJTCPCom.xml \
     Templates/Models/VideoWallLib.SourceOrchestrator.xml \
     Templates/Models/VideoWallLib.Tile.Models.MQTTTopic1.xml \
