@@ -10,16 +10,25 @@
  </Attributes>
  <Ports></Ports>
  <Signals>
-    <Signal Input="1" Model="DeliveryConfigString" Name="Type" Selection="Axis;Z3" TypeHint="Selection" Value="Axis"></Signal>
-    <Signal           Model="CDPSignal&lt;string&gt;" Name="IP"></Signal>
-    <Signal Input="1" Model="DeliveryConfigString" Name="Format" Value=" "></Signal>
-    <Signal Input="1" Model="DeliveryConfigString" Name="URI" Value=" "></Signal>
-    <Signal Input="1" Model="DeliveryConfigString" Name="DisplayName" Value=" "></Signal></Signals>
+  <Signal Input="1" Model="DeliveryConfigString" Name="Type" Selection="Axis;Z3" TypeHint="Selection" Value="Axis"></Signal>
+  <Signal Model="CDPSignal&lt;string&gt;" Name="IP"></Signal>
+  <Signal Input="1" Model="DeliveryConfigString" Name="Format" Value=" "></Signal>
+  <Signal Input="1" Model="DeliveryConfigString" Name="URI" Value=" "></Signal>
+  <Signal Input="1" Model="DeliveryConfigString" Name="DisplayName" Value=" "></Signal>
+  <Signal Input="0" Model="CDPSignal&lt;bool&gt;" Name="IsOnline"></Signal>
+ </Signals>
  <Tags></Tags>
  <Subcomponents>
   <Operator Model="MQTTIO.Publisher" Name="Publisher">
    <Client Name="MQTTClient" Object="..MQTTClientRPC"></Client>
   </Operator>
+  <Operator Model="MQTTIO.Subscriber" Name="Subscriber">
+   <Client Name="MQTTClient" Object="..MQTTClientRPC"></Client>
+   <ArgumentMessage Name="Received" RoutingList=".." TextCommand="MQTTReceived"></ArgumentMessage>
+  
+
+      <ArgumentMessage Name="Connected" RoutingList=".." TextCommand="MQTTSubscriberConnected"></ArgumentMessage>
+      </Operator>
  </Subcomponents>
  <ArgumentMessages>
   <ArgumentMessage Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC"></ArgumentMessage>
@@ -32,6 +41,7 @@
  </Parameters>
  <Connectors>
   <Connector Name="MQTTPublish" Object=".Publisher.Publish" RoutingType="Push" TypeHint="RoutingType"></Connector>
+  <Connector Name="MQTTSubscribe" Object=".Subscriber.Subscribe" RoutingType="Push" TypeHint="RoutingType"></Connector>
  </Connectors>
  <Element Description="" LogEventOnChange="0" Name="pWidth" RouteMethod="RouteEvent" SaveOnChange="0" Type="double"></Element>
  <Element Description="" LogEventOnChange="0" Name="pHeight" RouteMethod="RouteEvent" SaveOnChange="0" Type="double"></Element>
@@ -41,4 +51,8 @@
  <Element LogEventOnChange="0" Name="pType" RouteMethod="RouteEvent" SaveOnChange="0" Type="string"></Element>
  <Element Description="" LogEventOnChange="0" Name="pFramerate" RouteMethod="RouteEvent" SaveOnChange="0" Type="double"></Element>
  <Element LogEventOnChange="0" Name="pURI" RouteMethod="RouteEvent" SaveOnChange="0" Type="string"></Element>
+ <Messages>
+  <Message Description="Received Message from a MQTT Subscriber" Name="MQTTReceived"></Message>
+  <Message Name="MQTTSubscriberConnected"></Message>
+ </Messages>
 </Model>
