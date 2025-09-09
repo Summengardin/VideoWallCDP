@@ -39,6 +39,7 @@ Camera::~Camera()
 void Camera::Create(const char* fullName)
 {
     CDPComponent::Create(fullName);
+    IsOnline.Create("IsOnline",this);
     Width.Create("Width",this);
     Height.Create("Height",this);
     DisplayName.Create("DisplayName",this);
@@ -49,6 +50,8 @@ void Camera::Create(const char* fullName)
     IP.Create("IP",this);
     
     MQTTPublish.Create("MQTTPublish",this);
+    MQTTSubscribe.Create("MQTTSubscribe",this);
+
 
     pIP.Create("pIP",this,CDPPropertyBase::e_Element,(CDPOBJECT_SETPROPERTY_HANDLER)nullptr,(CDPOBJECT_VALIDATEPROPERTY_HANDLER)nullptr);
 
@@ -72,6 +75,8 @@ void Camera::CreateModel()
     CDPComponent::CreateModel();
 
     RegisterStateProcess("Null", (CDPCOMPONENT_STATEPROCESS)&Camera::ProcessNull, "Initial Null state");
+    RegisterMessage(CM_TEXTCOMMAND,"MQTTReceived","Received Message from a MQTT Subscriber",(CDPOBJECT_MESSAGEHANDLER)&Camera::MessageMQTTReceived);
+    RegisterMessage(CM_TEXTCOMMAND,"MQTTSubscriberConnected","",(CDPOBJECT_MESSAGEHANDLER)&Camera::MessageMQTTSubscriberConnected);
 }
 
 /*!
@@ -113,6 +118,30 @@ void Camera::ProcessNull()
     PublishMQTT();
 
     firstRun = false;
+}
+
+
+
+int Camera::MessageMQTTReceived(void* message)
+{
+    MessageTextCommandWithParameterReceive* msg = static_cast<MessageTextCommandWithParameterReceive*>(message);
+    std::string strParameter(msg->parameters);
+
+    CDPMessage("%s: Received message with params: %s\n", CDPComponent::Name(), strParameter.c_str());
+    std::string payload = StringHelpers::FindParameterValue("Payload", strParameter);
+
+    IsOnline = (payload == "True" || payload == "true");
+
+    return 1;
+}
+
+
+
+int Camera::MessageMQTTSubscriberConnected(void* /*message*/)
+{
+    CDPMessage("%s: Connected, subscribing",CDPComponent::Name());
+    SubscribeMQTT();
+    return 1;
 }
 
 
@@ -183,6 +212,24 @@ void Camera::UpdateLocalProperties()
     pType = Type;
 }
 
+void Camera::SubscribeMQTT(){
+    MessageTextCommand txtMessage;
+    txtMessage.SetTextCommand("Subscribe");
+    MessagePacketHandle msg(txtMessage);
+
+    std::string topic = CDPComponent::Name();
+    std::replace(topic.begin(), topic.end(), '.', '/');
+    topic += "/#"; // Wildcard, subscribes to everything related to this camera
+
+    CDPMessage(" to %s", topic.c_str());
+
+    std::vector<CDPUtils::Parameter> param = {{"Topic", topic},{"QoS", "0"}};
+    std::string joined = CDPUtils::JoinParameters(param);
+
+    msg.Packet().PayloadAppend(joined);
+
+    MQTTSubscribe.SendMessage(msg);
+}
 
 void Camera::PublishMQTT() {
 

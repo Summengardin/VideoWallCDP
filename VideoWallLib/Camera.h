@@ -13,6 +13,7 @@
 
 #include "OperationUtilities/Parameters/calibrationparameter.h"
 #include "OperationUtilities/Signals/DeliveryConfigString.h"
+#include "OperationUtilities/Strings/StringHelpers.h"
 #include "json.hpp"
 #include "uri.h"
 
@@ -32,7 +33,6 @@ public:
     void CreateModel() override;
     void Configure(const char* componentXML) override;
     void ProcessNull() override;
-    void UpdateSignalFromProperty(CDPPropertyBase* prop);
     json toJson() const;
 
 protected:
@@ -49,6 +49,7 @@ protected:
     OperationUtilities::DeliveryConfigString Format;
     OperationUtilities::DeliveryConfigString Type;
     OperationUtilities::DeliveryConfigString URI;
+    CDPSignal<bool> IsOnline;
 
     // local Properties for reading the signal via connections
 
@@ -73,14 +74,20 @@ protected:
     CDPProperty<std::string> pFormat;
     CDPProperty<std::string> pType;
     CDPProperty<std::string> pURI;
+    CDPConnector MQTTSubscribe;
 
 
     void IndexInputs();
     void PublishMQTT();
+    void SubscribeMQTT();
     void ParseURI();
     void UpdateLocalProperties();
+    void UpdateSignalFromProperty(CDPPropertyBase* prop);
+    int MessageMQTTReceived(void* message);
+    int MessageMQTTSubscriberConnected(void* message);
 
     bool firstRun {true};
+
 };
 
 } // namespace VideoWallLib
