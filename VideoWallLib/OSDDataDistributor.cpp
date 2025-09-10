@@ -109,28 +109,29 @@ void OSDDataDistributor::ProcessNull()
 
 void OSDDataDistributor::IndexInputs(){
 
+    int index = 0;
     for (size_t i = 0; i < m_listSignals.size(); i++) {
         // Get the value as a generic variant or base type
         ICDPSignal* signal = m_listSignals[i];
 
 
         if  (CDPSignal<std::string>* value = dynamic_cast<CDPSignal<std::string>*>(signal) ){
-            if (i>indexedData.size())
+            if (index>indexedData.size())
             {
                 CDPMessage("Resized indexed_data to %u\n",i*2);
-                indexedData.resize(i*2);
-                prevTimeouts.resize(i*2);
+                indexedData.resize(index*2);
+                // prevTimeouts.resize(i*2);
             }
             if (i_ShowOSDDescription)
-                indexedData[i] =  value->GetProperty("ShortName") + " [" + value->GetProperty("Unit") + "]: " + value->GetProperty("Description");
+                indexedData[index] =  value->GetProperty("ShortName") + " [" + value->GetProperty("Unit") + "]: " + value->GetProperty("Description");
             else
-                indexedData[i] = value->GetRawValue();
+                indexedData[index] = value->GetRawValue();
 
-           if (DebugLevel(DEBUGLEVEL_EXTENDED)){
+            if (DebugLevel(DEBUGLEVEL_EXTENDED)){
                CDPMessage(
                    "%s: IndexedSignal[%i] NAME: %s, TYPE: %s, MODEL: %s, VALUE: %s, UNIT: %s, DESC: %s\n",
                    CDPComponent::Name(),
-                   i,
+                   index,
                    signal->GetProperty("ShortName").c_str(),
                    signal->GetProperty("Type").c_str(),
                    signal->GetProperty("Model").c_str(),
@@ -139,7 +140,8 @@ void OSDDataDistributor::IndexInputs(){
                    signal->GetProperty("Description").c_str()
                    );
             }
-    }
+            index++;
+        }
     }
 }
 
