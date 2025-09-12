@@ -1,0 +1,32 @@
+<Component Model="VideoWallLib.CameraMotionReferenceCalculation" Name="CameraMotionReferenceCalculation" src="Components/PointTracker/CameraMotionReferenceCalculation.xml" Description="Simple component">
+  <SchedulingOrder>TopDown</SchedulingOrder>
+  <SchedulingGroup>Default</SchedulingGroup>
+  <fs>100</fs>
+  <Status>0</Status>
+
+  <Signals>
+    <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
+    <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+  </Signals>
+
+  <Alarms>
+    <Alarm Description="A component was suspended!" Name="Component Suspended" Text="Component was suspended!"></Alarm>
+    <Alarm Description="Alarm is triggered (with Text containing the list of errors) when some node of the component (like operator) has configuration fault." Level="Error" Name="ConfigurationFaults"></Alarm>
+  </Alarms>
+
+  <Ports>
+    <Port Input="0" Model="VideoWallLib.CameraMotionReferencePort" Name="Out">
+
+      <Connections>
+        <Connection Input="1" LocalName=".tilt_ref" Model="CDPPortConnection" Name="Maptilt_ref"></Connection>
+        <Connection Input="1" LocalName=".pan_ref" Model="CDPPortConnection" Name="Mappan_ref"></Connection>
+      </Connections></Port>
+    <Port Input="1" Model="Kinematics.Position" Name="Position" Routing="..CameraModel.TrackingPoint">
+
+      <Connections>
+        <Connection Description="Offset from zero, in X axis direction" Input="1" Model="ValuedConnection&lt;double&gt;" Name="X" Routing="" Type="double" Unit="m" Value="0"></Connection>
+        <Connection Description="Offset from zero, in Y axis direction" Input="1" Model="ValuedConnection&lt;double&gt;" Name="Y" Routing="" Type="double" Unit="m" Value="0"></Connection>
+        <Connection Description="Offset from zero, in Z axis direction" Input="1" Model="ValuedConnection&lt;double&gt;" Name="Z" Routing="" Type="double" Unit="m" Value="0"></Connection>
+      </Connections></Port>
+  </Ports>
+</Component>

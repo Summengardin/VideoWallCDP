@@ -20,6 +20,7 @@
     <Subcomponent Model="CDPComponent" Name="IO" src="Components/IO.xml"></Subcomponent>
     <Subcomponent Model="VideoWallLib.CameraContainer" Name="Cameras" src="Components/Cameras.xml"></Subcomponent>
     <Subcomponent Model="VideoWallLib.VisionControllerContainer" Name="VisionControllers" src="Components/VisionControllers.xml"></Subcomponent>
+    <Subcomponent Model="CDPComponent" Name="PointTracker" src="Components/PointTracker.xml"></Subcomponent>
   </Subcomponents>
 
   <Signals>

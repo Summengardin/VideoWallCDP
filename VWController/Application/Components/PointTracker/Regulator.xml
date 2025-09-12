@@ -1,0 +1,67 @@
+<Component Model="CDPComponent" Name="Regulator" src="Components/PointTracker/Regulator.xml" Description="CDPComponent can be used to create a container task in applications or other components with its own thread (or in same thread as parent if Priority, ThreadGroup match) and cyclic frequency to contain no-code logic.
+    It is also possible to create a new C++ based component for code based complex work in a Library type project. User must then use &apos;Add New...&apos; Wizard on Library root item. Components communicate by exchanging Messages, Port-, Signal- values, both inside applications and between applications.">
+  <SchedulingOrder>TopDown</SchedulingOrder>
+  <SchedulingGroup>Default</SchedulingGroup>
+  <fs>200</fs>
+  <Status>0</Status>
+
+
+  <Signals>
+    <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
+    <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="p_x" Type="double" Value="0" Routing="..CameraModel.Pan.SolvedTheta"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="t_x" Type="double" Value="0" Routing="..CameraModel.Tilt.SolvedTheta"></Signal>
+    <Signal Input="0" Model="CDPSignal&lt;double&gt;" Name="t_u" Type="double" Value="0" Routing=".PID1.Out"></Signal>
+    <Signal Input="0" Model="CDPSignal&lt;double&gt;" Name="p_u" Type="double" Value="0" Routing=".PID.Out"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="K_p_t" Type="double" Value="1"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="K_d_t" Type="double" Value="0.4000000000000000222"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="K_i_t" Type="double" Value="0"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="K_p_p" Type="double" Value="1"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="K_i_p" Type="double" Value="0"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="K_d_p" Type="double" Value="0.4000000000000000222"></Signal>
+  </Signals>
+
+  <Alarms>
+    <Alarm Description="A component was suspended!" Name="Component Suspended" Text="Component was suspended!"></Alarm>
+    <Alarm Description="Alarm is triggered (with Text containing the list of errors) when some node of the component (like operator) has configuration fault." Level="Error" Name="ConfigurationFaults"></Alarm>
+  </Alarms>
+
+  <Subcomponents>
+    <Operator Model="Automation.PIDRegulator&lt;double&gt;" Name="PID" Type="double">
+      <Argument CppName="m_output" Description="Default control output" Input="0" Model="DefaultArgument&lt;double&gt;" Name="Out" Routing="" Type="double" Value="0"></Argument>
+      <Argument CppName="m_input" Description="Default input argument for set point value" Input="1" Model="DefaultArgument&lt;double&gt;" Name="In" Routing="..Reference.pan_ref" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="Current state (position) of system (feedback)" Input="1" Model="DefaultArgument&lt;double&gt;" Name="Y" Routing="..p_x" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="PID regulator tuning parameter (P). Indicates how much to involve previous difference from SetPoint (proportional) term in every new calculation. Use 0 to eliminate proportional component from calculation." Input="1" Model="DefaultArgument&lt;double&gt;" Name="Kp" Routing="..K_p_p" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="PID regulator tuning parameter (I). Indicates how much to involve the time-difference-persisted (integral) term in every new calculation. Use 0 to eliminate integral component from calculation." Input="1" Model="DefaultArgument&lt;double&gt;" Name="Ki" Routing="..K_i_p" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="PID regulator tuning parameter (D). Indicates how much to involve the rate-of-difference (derivtive) term in every new calculation. Use 0 to eliminate derivative component from calculation." Input="1" Model="DefaultArgument&lt;double&gt;" Name="Kd" Routing="..K_d_p" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="PID regulator tuning parameter. Overall gain. Can be used to scale (amplify or reduce) PIDRegulator effect. Use values &lt; 1 to reduce PIDRegulator effect. Use values &gt; 1 to increase PIDRegulator effect. Use value 0 to disable PIDRegulator (so only feed forward will be outputted). Use value 1 for no overall gain." Input="1" Model="DefaultArgument&lt;double&gt;" Name="Kr" Routing="" Type="double" Value="1"></Argument>
+      <Argument CppName="" Description="PID regulator tuning parameter. Feed forward (open loop) gain. Use values &gt; 0 to get more responsive control system. Use 0 to disable feed forward." Input="1" Model="DefaultArgument&lt;double&gt;" Name="Kf" Routing="" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="Saturation-based anti-windup limiter for integral term. Route actuator saturation level with values from 0 (normal operation) to 1 (full saturation) into this parameter for anti-windup on integral term." Input="1" Model="DefaultArgument&lt;double&gt;" Name="Sat" Routing="" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="Minimum allowed integral value. Values less than zero will prevent integral term from decreasing below specified value. Use 0 to disable minimum limiting." Input="1" Model="DefaultArgument&lt;double&gt;" Name="MinI" Routing="" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="Maximum allowed integral value. Values greater than zero will prevent integral term from increasing above specified value. Use 0 to disable maximum limiting." Input="1" Model="DefaultArgument&lt;double&gt;" Name="MaxI" Routing="" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="Integral decay. Values greater than zero can be used to reduce integral term oscillation effect. Use 0 to disable decay." Input="1" Model="DefaultArgument&lt;double&gt;" Name="TDecay" Routing="" Type="double" Value="0"></Argument></Operator>
+    <Operator Model="Automation.PIDRegulator&lt;double&gt;" Name="PID1" Type="double">
+      <Argument CppName="m_output" Description="Default control output" Input="0" Model="DefaultArgument&lt;double&gt;" Name="Out" Routing="" Type="double" Value="0"></Argument>
+      <Argument CppName="m_input" Description="Default input argument for set point value" Input="1" Model="DefaultArgument&lt;double&gt;" Name="In" Routing="..Reference.tilt_ref" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="Current state (position) of system (feedback)" Input="1" Model="DefaultArgument&lt;double&gt;" Name="Y" Routing="..t_x" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="PID regulator tuning parameter (P). Indicates how much to involve previous difference from SetPoint (proportional) term in every new calculation. Use 0 to eliminate proportional component from calculation." Input="1" Model="DefaultArgument&lt;double&gt;" Name="Kp" Routing="..K_p_t" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="PID regulator tuning parameter (I). Indicates how much to involve the time-difference-persisted (integral) term in every new calculation. Use 0 to eliminate integral component from calculation." Input="1" Model="DefaultArgument&lt;double&gt;" Name="Ki" Routing="..K_i_t" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="PID regulator tuning parameter (D). Indicates how much to involve the rate-of-difference (derivtive) term in every new calculation. Use 0 to eliminate derivative component from calculation." Input="1" Model="DefaultArgument&lt;double&gt;" Name="Kd" Routing="..K_d_t" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="PID regulator tuning parameter. Overall gain. Can be used to scale (amplify or reduce) PIDRegulator effect. Use values &lt; 1 to reduce PIDRegulator effect. Use values &gt; 1 to increase PIDRegulator effect. Use value 0 to disable PIDRegulator (so only feed forward will be outputted). Use value 1 for no overall gain." Input="1" Model="DefaultArgument&lt;double&gt;" Name="Kr" Routing="" Type="double" Value="1"></Argument>
+      <Argument CppName="" Description="PID regulator tuning parameter. Feed forward (open loop) gain. Use values &gt; 0 to get more responsive control system. Use 0 to disable feed forward." Input="1" Model="DefaultArgument&lt;double&gt;" Name="Kf" Routing="" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="Saturation-based anti-windup limiter for integral term. Route actuator saturation level with values from 0 (normal operation) to 1 (full saturation) into this parameter for anti-windup on integral term." Input="1" Model="DefaultArgument&lt;double&gt;" Name="Sat" Routing="" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="Minimum allowed integral value. Values less than zero will prevent integral term from decreasing below specified value. Use 0 to disable minimum limiting." Input="1" Model="DefaultArgument&lt;double&gt;" Name="MinI" Routing="" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="Maximum allowed integral value. Values greater than zero will prevent integral term from increasing above specified value. Use 0 to disable maximum limiting." Input="1" Model="DefaultArgument&lt;double&gt;" Name="MaxI" Routing="" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="Integral decay. Values greater than zero can be used to reduce integral term oscillation effect. Use 0 to disable decay." Input="1" Model="DefaultArgument&lt;double&gt;" Name="TDecay" Routing="" Type="double" Value="0"></Argument></Operator>
+  </Subcomponents>
+
+  <Ports>
+    <Port Input="1" Model="CDPPort" Name="Reference" Routing="..CameraMotionReferenceCalculation.Out">
+
+      <Connections>
+        <Connection Input="1" Model="ValuedConnection&lt;double&gt;" Name="pan_ref" Routing="" Type="double" Value="0"></Connection>
+        <Connection Input="1" Model="ValuedConnection&lt;double&gt;" Name="tilt_ref" Routing="" Type="double" Value="0"></Connection>
+      </Connections></Port>
+  </Ports>
+
+</Component>

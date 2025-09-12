@@ -1,0 +1,88 @@
+<Component Model="Kinematics.DHChain" Name="CameraModel" src="Components/PointTracker/CameraModel.xml" Description="Denavit-Hartenberg parameter kinematic chain">
+  <SchedulingOrder>TopDown</SchedulingOrder>
+  <SchedulingGroup>Default</SchedulingGroup>
+  <fs>10</fs>
+  <Status>0</Status>
+
+
+  <Signals>
+    <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
+    <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+  </Signals>
+
+  <Alarms>
+    <Alarm Description="A component was suspended!" Name="Component Suspended" Text="Component was suspended!"></Alarm>
+    <Alarm Description="Alarm is triggered (with Text containing the list of errors) when some node of the component (like operator) has configuration fault." Level="Error" Name="ConfigurationFaults"></Alarm>
+  </Alarms>
+  <Link Model="Kinematics.DHFixedLink" Name="Mount" A="0"></Link>
+  <Link Model="Kinematics.DHRevoluteLink" Name="Pan" Routing=".Mount" Alpha="1.5707963267900000304" D="0" A="0">
+    <DegreeOfFreedom CppName="" Description="Initially set value for angle in radians between old X and new X plane" Input="1" Model="Kinematics.DHInputArgument" Name="Theta" Routing="..UpdatePan.Out" Type="double" Unit="rad" Value="1.0174399999999999"></DegreeOfFreedom>
+    <DegreeOfFreedom CppName="" Description="Solver corrected value, that satisfies all constraints for angle in radians between old X and new X plane" Input="0" Model="Kinematics.DHOutputArgument" Name="SolvedTheta" Routing="" Type="double" Unit="rad" Value="0"></DegreeOfFreedom>
+    <MaxDeceleration CppName="" Input="1" Model="Kinematics.MaxDeceleration" Name="MaxDeceleration" Routing="" Type="double" Value="0.3499999999999999778"></MaxDeceleration>
+    <MaxAcceleration CppName="" Input="1" Model="Kinematics.MaxAcceleration" Name="MaxAcceleration" Routing="" Type="double" Value="0.3499999999999999778"></MaxAcceleration>
+    <MaxSpeed CppName="" Input="1" Model="Kinematics.MaxSpeed" Name="MaxSpeed" Routing="" Type="double" Value="0.87299999999999999822"></MaxSpeed></Link>
+  <Link Model="Kinematics.DHRevoluteLink" Name="Tilt" Routing=".Pan" D="0" A="0.2000000000000000111">
+    <DegreeOfFreedom CppName="" Description="Initially set value for angle in radians between old X and new X plane" Input="1" Model="Kinematics.DHInputArgument" Name="Theta" Routing="..UpdateTilt.Out" Type="double" Unit="rad" Value="-0.33914699999999997626"></DegreeOfFreedom>
+    <DegreeOfFreedom CppName="" Description="Solver corrected value, that satisfies all constraints for angle in radians between old X and new X plane" Input="0" Model="Kinematics.DHOutputArgument" Name="SolvedTheta" Routing="" Type="double" Unit="rad" Value="0"></DegreeOfFreedom>
+    <ThetaLimits Input="1" Model="Kinematics.Limits" Name="Limits">
+
+      <Connections>
+        <Connection Description="Limits for the DHLink degree of freedom value, minimum" Input="1" Model="ValuedConnection&lt;double&gt;" Name="Min" Routing="" Type="double" Value="-1.5707999999999999741"></Connection>
+        <Connection Description="Limits for the DHLink degree of freedom value, maximum" Input="1" Model="ValuedConnection&lt;double&gt;" Name="Max" Routing="" Type="double" Value="1.5707999999999999741"></Connection>
+      </Connections></ThetaLimits>
+    <MaxSpeed CppName="" Input="1" Model="Kinematics.MaxSpeed" Name="MaxSpeed" Routing="" Type="double" Value="0.87299999999999999822"></MaxSpeed></Link>
+
+  <Subcomponents>
+    <Operator Model="Automation.AddOperator&lt;double&gt;" Name="UpdatePan" Type="double">
+      <Argument CppName="m_output" Description="Sum of inputs" Input="0" Model="DefaultArgument&lt;double&gt;" Name="Out" Routing="" Type="double" Value="0"></Argument>
+      <Argument CppName="m_input" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;double&gt;" Name="In0" Routing="..Pan.SolvedTheta" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;double&gt;" Name="In1" Routing="...Regulator.p_u" Type="double" Value="0"></Argument></Operator>
+    <Operator Model="Automation.AddOperator&lt;double&gt;" Name="UpdateTilt" Type="double">
+      <Argument CppName="m_output" Description="Sum of inputs" Input="0" Model="DefaultArgument&lt;double&gt;" Name="Out" Routing="" Type="double" Value="0"></Argument>
+      <Argument CppName="m_input" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;double&gt;" Name="In0" Routing="..Tilt.SolvedTheta" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;double&gt;" Name="In1" Routing="...Regulator.t_u" Type="double" Value="0"></Argument></Operator>
+    <Operator Model="Automation.SinOperator&lt;double&gt;" Name="dynamicZ" Type="double">
+      <Argument CppName="m_output" Description="Default output argument" Input="0" Model="DefaultArgument&lt;double&gt;" Name="Out" Routing="" Type="double" Value="0"></Argument>
+      <Argument CppName="m_input" Description="Default input argument" Input="1" Model="DefaultArgument&lt;double&gt;" Name="In" Routing="..t.Out" Type="double" Value="0"></Argument></Operator>
+    <Operator Model="Automation.AddOperator&lt;double&gt;" Name="t" Type="double">
+      <Argument CppName="m_output" Description="Sum of inputs" Input="0" Model="DefaultArgument&lt;double&gt;" Name="Out" Routing="" Type="double" Value="0"></Argument>
+      <Argument CppName="m_input" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;double&gt;" Name="In0" Routing="" Type="double" Value="0.10000000000000000555"></Argument>
+      <Argument CppName="" Description="Input for Add operation" Input="1" Model="DefaultArgument&lt;double&gt;" Name="In1" Routing=".Out" Type="double" Value="0"></Argument></Operator>
+    <Operator Model="Automation.SinOperator&lt;double&gt;" Name="DynamicY" Type="double">
+      <Argument CppName="m_output" Description="Default output argument" Input="0" Model="DefaultArgument&lt;double&gt;" Name="Out" Routing="" Type="double" Value="0"></Argument>
+      <Argument CppName="m_input" Description="Default input argument" Input="1" Model="DefaultArgument&lt;double&gt;" Name="In" Routing="..t.Out" Type="double" Value="0"></Argument></Operator>
+    <Operator Model="Automation.MUXOperator&lt;double&gt;" Name="SelectY" Type="double">
+      <Argument CppName="" Input="1" Model="Automation.InterpolationTimeArgument" Name="InterpolationTime" Routing="" Type="double" Value="0"></Argument>
+      <Argument CppName="m_output" Description="Default output argument" Input="0" Model="DefaultArgument&lt;double&gt;" Name="Out" Routing="" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="0-based index to select which of the arguments to use. Index 0 is the default input value; any other Index value chooses between the arguments in the operator. If index is larger than the allowed range (number of arguments), then the Index will be limited (to number of arguments)." Input="1" Model="DefaultArgument&lt;unsigned int&gt;" Name="Index" Routing="" Type="unsigned int" Value="0"></Argument>
+      <Argument CppName="m_input" Description="Default input argument corresponding Index 0" Input="1" Model="DefaultArgument&lt;double&gt;" Name="In0" Routing="..DynamicY.Out" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="Input argument corresponding Index 1" Input="1" Model="DefaultArgument&lt;double&gt;" Name="In1" Routing="" Type="double" Value="-0.2000000000000000111"></Argument></Operator>
+    <Operator Model="Automation.MUXOperator&lt;double&gt;" Name="SelectZ" Type="double">
+      <Argument CppName="" Input="1" Model="Automation.InterpolationTimeArgument" Name="InterpolationTime" Routing="" Type="double" Value="0"></Argument>
+      <Argument CppName="m_output" Description="Default output argument" Input="0" Model="DefaultArgument&lt;double&gt;" Name="Out" Routing="" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="0-based index to select which of the arguments to use. Index 0 is the default input value; any other Index value chooses between the arguments in the operator. If index is larger than the allowed range (number of arguments), then the Index will be limited (to number of arguments)." Input="1" Model="DefaultArgument&lt;unsigned int&gt;" Name="Index" Routing="" Type="unsigned int" Value="0"></Argument>
+      <Argument CppName="m_input" Description="Default input argument corresponding Index 0" Input="1" Model="DefaultArgument&lt;double&gt;" Name="In0" Routing="..dynamicZ.Out" Type="double" Value="0"></Argument>
+      <Argument CppName="" Description="Input argument corresponding Index 1" Input="1" Model="DefaultArgument&lt;double&gt;" Name="In1" Routing="" Type="double" Value="0.5999999999999999778"></Argument></Operator>
+  </Subcomponents>
+
+  <Ports>
+    <Port Input="0" Model="Kinematics.MovingPosition" Name="TrackingPoint">
+
+      <Connections>
+        <Connection Description="Offset from zero, in X axis direction" Input="0" Model="ValuedConnection&lt;double&gt;" Name="X" Routing="" Type="double" Unit="m" Value="3"></Connection>
+        <Connection Description="Offset from zero, in Y axis direction" Input="0" Model="ValuedConnection&lt;double&gt;" Name="Y" Routing="..SelectY.Out" Type="double" Unit="m" Value="0"></Connection>
+        <Connection Description="Offset from zero, in Z axis direction" Input="0" Model="ValuedConnection&lt;double&gt;" Name="Z" Routing="..SelectZ.Out" Type="double" Unit="m" Value="0"></Connection>
+        <Connection Description="Angle around X axis" Input="1" Model="ValuedConnection&lt;double&gt;" Name="aX" Routing="" Type="double" Unit="rad" Value="0"></Connection>
+        <Connection Description="Angle around Y axis" Input="1" Model="ValuedConnection&lt;double&gt;" Name="aY" Routing="" Type="double" Unit="rad" Value="0"></Connection>
+        <Connection Description="Angle around Z axis" Input="1" Model="ValuedConnection&lt;double&gt;" Name="aZ" Routing="" Type="double" Unit="rad" Value="0"></Connection>
+        <Connection Description="Movement speed in X axis direction" Input="1" Model="ValuedConnection&lt;double&gt;" Name="vX" Routing="" Type="double" Unit="m/s" Value="0"></Connection>
+        <Connection Description="Movement speed in Y axis direction" Input="1" Model="ValuedConnection&lt;double&gt;" Name="vY" Routing="" Type="double" Unit="m/s" Value="0"></Connection>
+        <Connection Description="Movement speed in  Z axis direction" Input="1" Model="ValuedConnection&lt;double&gt;" Name="vZ" Routing="" Type="double" Unit="m/s" Value="0"></Connection>
+        <Connection Description="Rotation speed around X axis" Input="1" Model="ValuedConnection&lt;double&gt;" Name="wX" Routing="" Type="double" Unit="rad/s" Value="0"></Connection>
+        <Connection Description="Rotation speed around Y axis" Input="1" Model="ValuedConnection&lt;double&gt;" Name="wY" Routing="" Type="double" Unit="rad/s" Value="0"></Connection>
+        <Connection Description="Rotation speed around Z axis" Input="1" Model="ValuedConnection&lt;double&gt;" Name="wZ" Routing="" Type="double" Unit="rad/s" Value="0"></Connection>
+        <Connection Description="Angles rotation order convention to use" Input="1" Model="ValuedConnection&lt;unsigned char&gt;" Name="AnglesConvention" Routing="" Type="unsigned char" Value="0"></Connection>
+      </Connections></Port>
+  </Ports>
+
+</Component>
