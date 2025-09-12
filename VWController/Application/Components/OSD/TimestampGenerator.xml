@@ -9,8 +9,8 @@
     <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
     <Signal Input="0" Model="CDPSignal&lt;string&gt;" Name="TimestampFormatted" Type="string"></Signal>
     <Signal Input="1" Model="CDPSignal&lt;bool&gt;" Name="UTC" Type="bool"></Signal>
-    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="TZ" Type="string"></Signal>
-    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Format" Type="string"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="TZ" Type="string" Value="Europe/Oslo"></Signal>
+    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Format" Type="string" Value="%Y-%m-%d %H:%M:%S"></Signal>
   </Signals>
 
   <Alarms>

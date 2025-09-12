@@ -8,17 +8,12 @@
   <Signals>
     <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
     <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
-    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="DisplayName" Type="string" Value="0"></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="DisplayName" Type="string" Value="0"></Signal>
     <Signal Input="0" Model="CDPSignal&lt;string&gt;" Name="IP" Type="string" Value="0"></Signal>
-    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Format" Type="string" Value="0"></Signal>
-    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="Type" Type="string" Value="0"></Signal>
-    <Signal Input="1" Model="CDPSignal&lt;string&gt;" Name="URI" Type="string" Value="0"></Signal>
-
-
-
-
-
-
+    <Signal Input="1" Model="DeliveryConfigString" Name="Format" Type="string" Value="0"></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="Type" Type="string" Value="Axis"></Signal>
+    <Signal Input="1" Model="DeliveryConfigString" Name="URI" Type="string" Value="0"></Signal>
+    <Signal Input="0" Model="CDPSignal&lt;bool&gt;" Name="IsOnline" Type="bool"></Signal>
 
 
 
@@ -46,6 +41,21 @@
       <Argument CppName="" Description="On successful publish (Published event), contains MQTT message ID of the outgoing message. Message ID is available when QoS &gt; 0." Input="0" Model="Sequencer.Argument&lt;unsigned short&gt;" Name="MessageID" Routing="" Type="unsigned short" Value="0"></Argument>
       <Argument BinaryEncodedLength="0" CppName="" Description="On failure (PublishFailed event), contains the error message describing the failure reason" Input="0" Model="Sequencer.Argument&lt;string&gt;" Name="Error" Routing="" Type="string" Value=""></Argument>
       <Client Description="Connector to the MQTTClient object, which will provide the MQTT functionality for the block (via RPC messaging). Can be connected also via the MQTTClientRPC router block(s)." Model="MQTTIO.MQTTClientConnector" Name="MQTTClient" Object="..MQTTClientRPC"></Client></Operator>
+    <Operator Description="MQTT Subscriber sequencer block to subscribe to MQTT Topics and receive payloads as Sequencer events. Has to be connected to a MQTTClient, via the MQTTClient connector." Model="MQTTIO.Subscriber" Name="Subscriber">
+      <ArgumentMessage Command="131328" Description="Will be emitted when MQTTClient has established the connection with the configured broker" Input="0" Model="Sequencer.DefaultEvent" Name="Connected"></ArgumentMessage>
+      <ArgumentMessage Command="131328" Description="Will be emitted when MQTTClient has lost the connection with the configured broker" Input="0" Model="Sequencer.DefaultEvent" Name="Disconnected"></ArgumentMessage>
+      <ArgumentMessage Command="131328" Data="Topic;QoS" Description="Initiates a subscription to the MQTT topic specified by Topic argument. Any possible previous subscription sent by the block will be unsubscribed first." Input="1" Model="Sequencer.DefaultEvent" Name="Subscribe"></ArgumentMessage>
+      <ArgumentMessage Command="131328" Data="Topic;QoS;MessageID" Description="Will be emitted when the MQTTClient has successfully subscribed to the topic indicated in Subscribe event. Will contain all the arguments of the original Subscribe event plus a MessageID argument." Input="0" Model="Sequencer.DefaultEvent" Name="Subscribed"></ArgumentMessage>
+      <ArgumentMessage Command="131328" Data="Topic;QoS;Error" Description="Will be emitted when the MQTTClient was not able to subscribe to the topic indicated in the Subscribe event. Will contain all the arguments of the original Subscribe event plus an Error argument." Input="0" Model="Sequencer.DefaultEvent" Name="SubscribeFailed"></ArgumentMessage>
+      <ArgumentMessage Command="131328" Data="Topic;Payload;QoS;ResponseTopic;CorrelationData;MessageID" Description="Will be emitted on every incoming MQTT message on the subscribed topic" Input="0" Model="Sequencer.DefaultEvent" Name="Received" RoutingList=".."></ArgumentMessage>
+      <Argument BinaryEncodedLength="0" CppName="" Description="MQTT topic string. In Subscribe events can be MQTT wildcard topic. In Received events is the actual MQTT topic that the sender was using to send the payload." Input="1" Model="Sequencer.Argument&lt;string&gt;" Name="Topic" Routing="" Type="string" Value=""></Argument>
+      <Argument CppName="" Description="Quality of service level of broker communication" Input="1" Model="Sequencer.Argument&lt;unsigned short&gt;" Name="QoS" Routing="" Type="unsigned short" Value="0"></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="Received MQTT payload" Input="0" Model="Sequencer.Argument&lt;string&gt;" Name="Payload" Routing="" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="When filled, indicates a topic that the request publisher expects the response to be published to. Can exist only when MQTTClient ProtocolVersion is set to v5 (or higher) and the broker also supports  MQTT v5 (or higher)." Input="0" Model="Sequencer.Argument&lt;string&gt;" Name="ResponseTopic" Routing="" Type="string" Value=""></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="When filled, identifies the specific request and should be echoed back by repsonder when it responds to ResponseTopic. Can exist only when MQTTClient ProtocolVersion is set to v5 (or higher) and the broker also supports  MQTT v5 (or higher)." Input="0" Model="Sequencer.Argument&lt;string&gt;" Name="CorrelationData" Routing="" Type="string" Value=""></Argument>
+      <Argument CppName="" Description="On successful subscribe (Subscribed event) or on incoming MQTT messages (Received event), contains MQTT message ID of the message. MessageID is available only when QoS &gt; 0." Input="0" Model="Sequencer.Argument&lt;unsigned short&gt;" Name="MessageID" Routing="" Type="unsigned short" Value="0"></Argument>
+      <Argument BinaryEncodedLength="0" CppName="" Description="On failure (SubscribeFailed event), contains the error message describing the failure reason" Input="0" Model="Sequencer.Argument&lt;string&gt;" Name="Error" Routing="" Type="string" Value=""></Argument>
+      <Client Description="Connector to the MQTTClient object, which will provide the MQTT functionality for the block (via RPC messaging). Can be connected also via the MQTTClientRPC router block(s)." Model="MQTTIO.MQTTClientConnector" Name="MQTTClient" Object="..MQTTClientRPC"></Client></Operator>
   </Subcomponents>
 
   <ArgumentMessages>
@@ -60,5 +70,6 @@
 
   <Connectors>
     <Connector Name="MQTTPublish" Object=".Publisher.Publish"></Connector>
+    <Connector Name="MQTTSubscribe" Object=".Subscriber.Subscribe"></Connector>
   </Connectors>
 </Component>

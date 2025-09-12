@@ -7,9 +7,6 @@
   <Signals>
     <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
     <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
-    <Signal Input="1" Model="DeliveryConfigString" Name="numCameras" Type="string" Value="10" Routing="..Cameras.numCameras"></Signal>
-    <Signal Input="1" Model="DeliveryConfigString" Name="numTiles" Type="string"></Signal>
-    <Signal Input="0" Model="CDPSignal&lt;int&gt;" Name="selectedTile" Type="int"></Signal>
   </Signals>
 
   <Alarms>
@@ -22,7 +19,9 @@
     <Connector Name="MQTTSubscribe" Object=".SourceSubscriber.Subscribe"></Connector>
   </Connectors>
 
-  <Parameters></Parameters>
+  <Parameters>
+    <Parameter Description="Parameter that will be stored to disk outside of CDP. Will make the parameter persistent even with an Overwrite deploy." Model="CalibrationParameter" Name="numCameras" Value="10" Routing="..Cameras.numCameras"></Parameter>
+    <Parameter Description="Parameter that will be stored to disk outside of CDP. Will make the parameter persistent even with an Overwrite deploy." Model="CalibrationParameter" Name="numTiles" Value="8"></Parameter></Parameters>
   
 
   <ArgumentMessages>
