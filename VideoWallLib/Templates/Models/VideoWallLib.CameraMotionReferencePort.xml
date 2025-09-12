@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Model Name="VideoWallLib.CameraMotionReferencePort">
+ <ModelTypeClass>C++</ModelTypeClass>
+ <BaseModel>CDPPort</BaseModel>
+ <Attributes>
+  <Attribute Name="Description" Type="string" Value="Simple port example"/>
+  <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.CameraMotionReferencePort"/>
+  <Attribute LogEventOnChange="0" Name="tilt_ref" RouteMethod="RouteEvent" SaveOnChange="0" Type="double"/>
+  <Attribute LogEventOnChange="0" Name="pan_ref" RouteMethod="RouteEvent" SaveOnChange="0" Type="double"/>
+ </Attributes>
+ <Connections>
+  <Connection Input="1" LocalName=".tilt_ref" Model="CDPPortConnection" Name="Maptilt_ref"/>
+  <Connection Input="1" LocalName=".pan_ref" Model="CDPPortConnection" Name="Mappan_ref"/>
+ </Connections>
+</Model>

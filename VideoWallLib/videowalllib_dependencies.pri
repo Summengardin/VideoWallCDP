@@ -1,1 +1,1 @@
-DEPS += cdpmodel mqttio operationutilities sequencer videowalllib
+DEPS += canopenio cdpmodel kinematics mqttio operationutilities sequencer videowalllib

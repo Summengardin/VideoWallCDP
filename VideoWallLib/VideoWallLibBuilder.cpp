@@ -21,6 +21,8 @@ VideoWallLibBuilder implementation.
 #include "SourceOrchestrator.h"
 #include "Tile.h"
 #include "TilePort.h"
+#include "CameraMotionReferencePort.h"
+#include "CameraMotionReferenceCalculation.h"
 #include "CameraContainer.h"
 
 using namespace VideoWallLib;
@@ -93,6 +95,9 @@ CDPComponent* VideoWallLibBuilder::CreateNewComponent(const std::string& type)
     if (type=="VideoWallLib.CameraContainer")
         return new CameraContainer;
     
+    if (type=="VideoWallLib.CameraMotionReferenceCalculation")
+        return new CameraMotionReferenceCalculation;
+    
     return CDPBuilder::CreateNewComponent(type);
 }
 
@@ -125,6 +130,9 @@ CDPObject* VideoWallLibBuilder::CreateNewObject(const std::string& type)
     
     if (type=="VideoWallLib.TilePort")
         return new TilePort;
+    
+    if (type=="VideoWallLib.CameraMotionReferencePort")
+        return new CameraMotionReferencePort;
     
     return CDPBuilder::CreateNewObject(type);
 }

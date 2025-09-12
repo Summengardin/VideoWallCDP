@@ -8,6 +8,8 @@ DEPS += \
 HEADERS += \
     Camera.h \
     CameraContainer.h \
+    CameraMotionReferenceCalculation.h \
+    CameraMotionReferencePort.h \
     CameraPort.h \
     Layout.h \
     LayoutPort.h \
@@ -36,6 +38,8 @@ HEADERS += \
 SOURCES += \
     Camera.cpp \
     CameraContainer.cpp \
+    CameraMotionReferenceCalculation.cpp \
+    CameraMotionReferencePort.cpp \
     CameraPort.cpp \
     Layout.cpp \
     LayoutPort.cpp \
@@ -62,6 +66,8 @@ SOURCES += \
 DISTFILES += $$files(*.xml, true) \
     Templates/Models/VideoWallLib.Camera.xml \
     Templates/Models/VideoWallLib.CameraContainer.xml \
+    Templates/Models/VideoWallLib.CameraMotionReferenceCalculation.xml \
+    Templates/Models/VideoWallLib.CameraMotionReferencePort.xml \
     Templates/Models/VideoWallLib.CameraPort.xml \
     Templates/Models/VideoWallLib.Layout.xml \
     Templates/Models/VideoWallLib.LayoutPort.xml \

@@ -1,6 +1,7 @@
 #include <automation.h>
 #include <cdpeventmanager.h>
 #include <cdplogger.h>
+#include <kinematics.h>
 #include <mqttio.h>
 #include <operationutilities.h>
 #include <securitylib.h>

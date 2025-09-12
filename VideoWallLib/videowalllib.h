@@ -7,6 +7,7 @@ VideoWallLib header file. Include this file in the project to use the library.
 
 
 #include "VideoWallLibBuilder.h"
+#include <kinematics.h>
 #include <mqttio.h>
 #include <operationutilities.h>
 #include <sequencer.h>

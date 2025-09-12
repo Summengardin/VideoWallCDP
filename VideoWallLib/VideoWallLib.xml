@@ -2,6 +2,8 @@
  <Models>
   <Model Name="VideoWallLib.Camera"/>
   <Model Name="VideoWallLib.CameraContainer"/>
+  <Model Name="VideoWallLib.CameraMotionReferenceCalculation"/>
+  <Model Name="VideoWallLib.CameraMotionReferencePort"/>
   <Model Name="VideoWallLib.CameraPort"/>
   <Model Name="VideoWallLib.Layout"/>
   <Model Name="VideoWallLib.LayoutPort"/>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Model Name="VideoWallLib.CameraMotionReferenceCalculation">
+ <ModelTypeClass>C++</ModelTypeClass>
+ <BaseModel>CDPComponent</BaseModel>
+ <Element Name="Priority" Value="normal"/>
+ <Element Name="fs" Value="100"/>
+ <Attributes>
+  <Attribute Name="Description" Type="string" Value="Simple component"/>
+  <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.CameraMotionReferenceCalculation"/>
+ </Attributes>
+ <Ports>
+  <Port Description="" Input="0" Model="VideoWallLib.CameraMotionReferencePort" Name="Out"/>
+  <Port Model="Kinematics.Position" Name="Position"/>
+ </Ports>
+ <Signals/>
+</Model>
