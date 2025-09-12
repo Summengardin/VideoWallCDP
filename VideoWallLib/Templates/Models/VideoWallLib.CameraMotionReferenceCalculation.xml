@@ -13,4 +13,7 @@
   <Port Model="Kinematics.Position" Name="Position"/>
  </Ports>
  <Signals/>
+ <Connectors>
+  <Connector Name="TileUpdater" RoutingType="Push" TypeHint="RoutingType"/>
+ </Connectors>
 </Model>

@@ -321,6 +321,12 @@ void Tile::parseAndSetSignals(const std::string& msg) {
             // std::cout << "New source value: " << valueStr << "\n";
             Source = valueStr;
         }
+        else if (key == "Pan_abs") {
+            PanAbs = std::stod(valueStr);
+        }
+        else if (key == "Tilt_abs") {
+            TiltAbs = std::stod(valueStr);
+        }
     }
 }
 

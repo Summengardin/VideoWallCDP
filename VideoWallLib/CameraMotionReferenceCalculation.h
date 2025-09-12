@@ -4,9 +4,11 @@
 #include <CDPAlarm/CDPAlarm.h>
 #include <CDPParameter/CDPParameter.h>
 #include <CDPSystem/Base/CDPComponent.h>
+#include <CDPSystem/Base/CDPConnector.h>
 #include <Kinematics/Position.h>
 #include <Signal/CDPSignal.h>
 #include <VideoWallLib/CameraMotionReferencePort.h>
+#include <cmath>
 #include "OperationUtilities/src/MatrixFunctions.h"
 
 namespace VideoWallLib {
@@ -25,6 +27,7 @@ public:
 protected:
     VideoWallLib::CameraMotionReferencePort Out;
     Kinematics::Position Position;
+    CDPConnector TileUpdater;
     using CDPComponent::fs;
     using CDPComponent::requestedState;
     using CDPComponent::ts;

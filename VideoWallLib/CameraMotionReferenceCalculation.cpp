@@ -38,6 +38,7 @@ void CameraMotionReferenceCalculation::Create(const char* fullName)
     CDPComponent::Create(fullName);
     Out.Create("Out",this);
     Position.Create("Position",this);
+    TileUpdater.Create("TileUpdater",this);
 }
 
 /*!
@@ -64,6 +65,7 @@ void CameraMotionReferenceCalculation::CreateModel()
 void CameraMotionReferenceCalculation::Configure(const char* componentXML)
 {
     CDPComponent::Configure(componentXML);
+    TileUpdater.ConnectTo("VWController.VisionControllers.VisionController0.Tile01");
 }
 
 /*!
@@ -86,5 +88,15 @@ void CameraMotionReferenceCalculation::ProcessNull()
     double z_new = Position.GetPosition()->z - (0.5);
     Out.tilt_ref = atan2(z_new, sqrt(x_new*x_new+y_new*y_new));
     Out.pan_ref = atan2(y_new,x_new);
+    MessageTextCommand txtMessage;
+    MessagePacketHandle Outputmsg;
+    txtMessage.SetTextCommand("MessageHandler");
+    Outputmsg = txtMessage;
+    std::string outputline = "Pan_abs: " + std::to_string(Out.pan_ref*180/M_PI)
+                             + "; Tilt_abs: " + std::to_string(Out.tilt_ref*180/M_PI);
+    outputline += +";\n";
+    Outputmsg.Packet().PayloadAppend(outputline);
+    TileUpdater.SendMessage(Outputmsg);
+
     /* Write your code here */
 }

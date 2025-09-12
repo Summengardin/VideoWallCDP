@@ -22,5 +22,8 @@
   
 
   <Ports></Ports>
+
+  <ArgumentMessages></ArgumentMessages>
+  
   
 </Component>
