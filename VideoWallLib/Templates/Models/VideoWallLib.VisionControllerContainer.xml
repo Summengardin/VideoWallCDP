@@ -2,39 +2,45 @@
 <Model Name="VideoWallLib.VisionControllerContainer">
  <ModelTypeClass>C++</ModelTypeClass>
  <BaseModel>CDPComponent</BaseModel>
- <Element Name="Priority" Value="normal"/>
- <Element Name="fs" Value="100"/>
+ <Element Name="Priority" Value="normal"></Element>
+ <Element Name="fs" Value="100"></Element>
  <Attributes>
-  <Attribute Name="Description" Type="string" Value="Simple component"/>
-  <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.VisionControllerContainer"/>
+  <Attribute Name="Description" Type="string" Value="Simple component"></Attribute>
+  <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.VisionControllerContainer"></Attribute>
  </Attributes>
  <Signals>
-  <Signal Input="1" Model="DeliveryConfigString" Name="numCameras" TypeColorHint=""/>
-  <Signal Input="1" Model="DeliveryConfigString" Name="numTiles" TypeColorHint=""/>
-  <Signal Input="0" Model="CDPSignal&lt;int&gt;" Name="selectedTile" Type="int"/>
+  <Signal Input="0" Model="CDPSignal&lt;int&gt;" Name="selectedTile" Type="int"></Signal>
+  <Signal Input="1" Model="CDPSignal&lt;int&gt;" Name="ModeSelector"></Signal>
  </Signals>
  <Messages>
-  <Message Name="HandController"/>
-  <Message Name="Recieved"/>
-  <Message Name="SubscriptionMessage"/>
-  <Message Name="SubscribedFailed"/>
+  <Message Name="HandController"></Message>
+  <Message Name="Recieved"></Message>
+  <Message Name="SubscriptionMessage"></Message>
+  <Message Name="SubscribedFailed"></Message>
  </Messages>
  <Connectors>
-  <Connector Name="HandControllerConnector" RoutingType="Push" TypeHint="RoutingType"/>
-  <Connector Name="MQTTSubscribe" Object=".SourceSubscriber.Subscribe" RoutingType="Push" TypeHint="RoutingType"/>
+  <Connector Name="HandControllerConnector" RoutingType="Push" TypeHint="RoutingType"></Connector>
+  <Connector Name="MQTTSubscribe" Object=".SourceSubscriber.Subscribe" RoutingType="Push" TypeHint="RoutingType"></Connector>
  </Connectors>
- <Parameters/>
+ <Parameters>
+  <Parameter Model="CalibrationParameter" Name="numCameras"></Parameter>
+  <Parameter Model="CalibrationParameter" Name="numTiles"></Parameter>
+ 
+    <Parameter Model="CalibrationParameter" Name="PanZero"></Parameter>
+    <Parameter Model="CalibrationParameter" Name="TiltZero"></Parameter></Parameters>
  <ArgumentMessages>
-  <ArgumentMessage Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC"/>
+  <ArgumentMessage Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC"></ArgumentMessage>
  </ArgumentMessages>
  <Subcomponents>
   <Operator Model="MQTTIO.Subscriber" Name="SourceSubscriber">
-   <Client Name="MQTTClient" Object="..MQTTClientRPC"/>
-   <ArgumentMessage Name="Received" RoutingList=".." TextCommand="Received"/>
-   <ArgumentMessage Name="Connected" RoutingList="" TextCommand="Connected"/>
-   <ArgumentMessage Name="SubscribeFailed" RoutingList="" TextCommand="SubscribeFailed"/>
-   <ArgumentMessage Name="Subscribed" RoutingList="" TextCommand="Subscribed"/>
+   <Client Name="MQTTClient" Object="..MQTTClientRPC"></Client>
+   <ArgumentMessage Name="Received" RoutingList=".." TextCommand="Received"></ArgumentMessage>
+   <ArgumentMessage Name="Connected" RoutingList="" TextCommand="Connected"></ArgumentMessage>
+   <ArgumentMessage Name="SubscribeFailed" RoutingList="" TextCommand="SubscribeFailed"></ArgumentMessage>
+   <ArgumentMessage Name="Subscribed" RoutingList="" TextCommand="Subscribed"></ArgumentMessage>
   </Operator>
  </Subcomponents>
- <Ports/>
+ <Ports>
+  <Port Model="VideoWallLib.CameraMotionReferencePort" Name="AngleTrackingReferences"></Port>
+ </Ports>
 </Model>

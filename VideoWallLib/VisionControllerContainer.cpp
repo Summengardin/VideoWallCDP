@@ -17,6 +17,8 @@ using namespace VideoWallLib;
 VisionControllerContainer::VisionControllerContainer()
 {
     firstRunConfig = true;
+    trackingOffset.fill(0);
+    oldReferance.fill(0);
 }
 
 
@@ -38,7 +40,11 @@ VisionControllerContainer::~VisionControllerContainer()
 void VisionControllerContainer::Create(const char* fullName)
 {
     CDPComponent::Create(fullName);
+    AngleTrackingReferences.Create("AngleTrackingReferences",this);
+    PanZero.Create("PanZero",this);
+    TiltZero.Create("TiltZero",this);
     selectedTile.Create("selectedTile",this);
+    ModeSelector.Create("ModeSelector",this);
     numCameras.Create("numCameras",this);
     numTiles.Create("numTiles",this);
     MQTTSubscribe.Create("MQTTSubscribe",this);
@@ -123,6 +129,10 @@ void VisionControllerContainer::ProcessNull()
         MQTTSubscribe.SendMessage(Outputmsg);
         allowedChangeTileSource = false;
         ConfigTimer.reset();
+    } else if (ModeSelector==1 && (AngleTrackingReferences.tilt_ref != oldReferance[1] || AngleTrackingReferences.pan_ref != oldReferance[0])){
+        SendTileConfiguration(allowedChangeTileSource);
+        oldReferance[0] = AngleTrackingReferences.pan_ref;
+        oldReferance[1] = AngleTrackingReferences.tilt_ref;
     }
     /* Write your code here */
 
@@ -173,7 +183,6 @@ void VisionControllerContainer::updateHCStates(const std::string& msg) {
     if (msg.rfind("HWC#", 0) != 0) {
         return; // not a valid message
     }
-
     size_t eqPos = msg.find('=');
     if (eqPos == std::string::npos) return;
 
@@ -188,6 +197,17 @@ void VisionControllerContainer::updateHCStates(const std::string& msg) {
     else if (id >= 7 && id <= 9) {
         if (payload.rfind("Speed:", 0) == 0) {
             int speed = std::stoi(payload.substr(6));
+
+            if (ModeSelector==1 && id >=8){
+                trackingOffset[id-8] += speed*180/1000; // Scaling
+                if (abs(trackingOffset[id-8]) > 180)
+                    trackingOffset[id-8] = std::copysign(1.0,trackingOffset[id-8])*180;
+                oldTrackingStatus = ModeSelector;
+            } else if (oldTrackingStatus!=ModeSelector){
+                trackingOffset[0] = 0;
+                trackingOffset[1] = 0;
+            }
+
             HC.setJoystick(id, speed);
         }
     }
@@ -251,12 +271,24 @@ std::string VisionControllerContainer::replaceSubcomponent(const std::string& in
 void VisionControllerContainer::SendTileConfiguration(bool changeSource){
     txtMessage.SetTextCommand("MessageHandler");
     Outputmsg = txtMessage;
-    std::string outputline = "Zoom_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(7)))
-        + "; Tilt_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(9)))
-        + "; Pan_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(8)));
-    if (changeSource)
-        outputline += "; source: " + idToCamera[HC.getEncoderState(11)];
-    outputline += +";\n";
+    std::string outputline = "";
+    if (ModeSelector==0){
+        outputline += "Zoom_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(7)))
+                                 + "; Tilt_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(9)))
+                                 + "; Pan_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(8)))
+                                 + "; Pan_abs: 0"
+                                 + "; Tilt_abs: 0";
+        if (changeSource)
+            outputline += "; source: " + idToCamera[HC.getEncoderState(11)];
+        outputline += +";\n";
+    } else if (ModeSelector==1){
+        outputline += "Zoom_speed: " + std::to_string(normalizeSpeed(HC.getJoystickState(7)))
+                    + "; Pan_abs: " + std::to_string(AngleTrackingReferences.pan_ref*180/M_PI+trackingOffset[8-8]+PanZero)
+                    + "; Tilt_abs: " + std::to_string(AngleTrackingReferences.tilt_ref*180/M_PI+trackingOffset[9-8]+TiltZero);
+        if (changeSource)
+            outputline += "; source: " + idToCamera[HC.getEncoderState(11)];
+        outputline += +";\n";
+    }
     Outputmsg.Packet().PayloadAppend(outputline);
     TileConnectors[HC.getEncoderState(10)]->SendMessage(Outputmsg);
 }

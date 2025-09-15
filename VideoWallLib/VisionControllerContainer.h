@@ -8,6 +8,7 @@
 #include <CDPParameter/CDPParameter.h>
 #include <CDPAlarm/CDPAlarm.h>
 #include "handControllerEasy.h"
+#include <CameraMotionReferencePort.h>
 #include <Generic/CDPUtils.h>
 #include <iostream>
 #include <iomanip>
@@ -72,7 +73,11 @@ protected:
     using CDPComponent::fs;
 
     HandController HC;
+    CameraMotionReferencePort AngleTrackingReferences;
+    OperationUtilities::CalibrationParameter PanZero;
+    OperationUtilities::CalibrationParameter TiltZero;
     CDPSignal<int> selectedTile;
+    CDPSignal<int> ModeSelector;
     CDPConnector HandControllerConnector;
     void updateHCStates(const std::string& msg);
     void UpdateHCVisual();
@@ -98,6 +103,9 @@ protected:
     std::map<std::string, int> cameraToId;
     std::vector<std::string> tileMap;
 
+    std::array <double, 2> trackingOffset; // Offset in Pan and Tilt
+    bool oldTrackingStatus;
+    std::array <double, 2> oldReferance;
 };
 
 } // namespace VideoWallLib

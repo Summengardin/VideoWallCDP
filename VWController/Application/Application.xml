@@ -21,6 +21,12 @@
     <Subcomponent Model="VideoWallLib.CameraContainer" Name="Cameras" src="Components/Cameras.xml"></Subcomponent>
     <Subcomponent Model="VideoWallLib.VisionControllerContainer" Name="VisionControllers" src="Components/VisionControllers.xml"></Subcomponent>
     <Subcomponent Model="CDPComponent" Name="PointTracker" src="Components/PointTracker.xml"></Subcomponent>
+    <Operator Model="Automation.MUXOperator&lt;int&gt;" Name="ModeSelector" Type="int">
+      <Argument CppName="" Input="1" Model="Automation.InterpolationTimeArgument" Name="InterpolationTime" Routing="" Type="double" Value="0"></Argument>
+      <Argument CppName="m_output" Description="Default output argument" Input="0" Model="DefaultArgument&lt;int&gt;" Name="Out" Routing="" Type="int" Value="0"></Argument>
+      <Argument CppName="" Description="0-based index to select which of the arguments to use. Index 0 is the default input value; any other Index value chooses between the arguments in the operator. If index is larger than the allowed range (number of arguments), then the Index will be limited (to number of arguments)." Input="1" Model="DefaultArgument&lt;unsigned int&gt;" Name="Index" Routing="" Type="unsigned int" Value="1"></Argument>
+      <Argument CppName="m_input" Description="Default input argument corresponding Index 0" Input="1" Model="DefaultArgument&lt;int&gt;" Name="In0" Routing="" Type="int" Value="0"></Argument>
+      <Argument CppName="" Description="Input argument corresponding Index 1" Input="1" Model="DefaultArgument&lt;int&gt;" Name="In1" Routing="" Type="int" Value="1"></Argument></Operator>
   </Subcomponents>
 
   <Signals>
