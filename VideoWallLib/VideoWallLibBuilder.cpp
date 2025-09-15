@@ -9,21 +9,16 @@ VideoWallLibBuilder implementation.
 #include "Layout.h"
 #include "OSDTextPort.h"
 #include "OSDRectPort.h"
-#include "OSDText.h"
-#include "OSD.h"
 #include "MQTTHandler.h"
 #include "MQTTTopic.h"
 #include "OSDDataDistributor.h"
-#include "VisionController.h"
 #include "VisionControllerContainer.h"
 #include "SKAARHOJTCPCom.h"
 #include "TimestampGenerator.h"
-#include "SKAARHOJRawPanelMenu.h"
 #include "SourceOrchestrator.h"
 #include "Tile.h"
 #include "TilePort.h"
 #include "CameraContainer.h"
-#include "SKAARHOJRawPanelIO.h"
 
 using namespace VideoWallLib;
 
@@ -55,14 +50,10 @@ CDPComponent* VideoWallLibBuilder::CreateNewComponent(const std::string& type)
         return new Camera;
     
     if (type=="VideoWallLib.Layout")
-        return new Layout; 
+        return new Layout;
     
-    if (type=="VideoWallLib.OSDText")
-        return new OSDText;
     
-    if (type=="VideoWallLib.OSD")
-        return new OSD;
-
+    
     if (type=="VideoWallLib.MQTTHandler")
         return new MQTTHandler;
     
@@ -75,11 +66,7 @@ CDPComponent* VideoWallLibBuilder::CreateNewComponent(const std::string& type)
     if (type=="VideoWallLib.TimestampGenerator")
         return new TimestampGenerator;
     
-    if (type=="VideoWallLib.SKAARHOJRawPanelIO")
-        return new SKAARHOJRawPanelIO;
     
-    if (type=="VideoWallLib.SKAARHOJRawPanelMenu")
-        return new SKAARHOJRawPanelMenu;
     
     if (type=="VideoWallLib.SKAARHOJTCPCom")
         return new SKAARHOJTCPCom;
@@ -89,9 +76,6 @@ CDPComponent* VideoWallLibBuilder::CreateNewComponent(const std::string& type)
     
     if (type=="VideoWallLib.Tile")
         return new Tile;
-    
-    if (type=="VideoWallLib.VisionController")
-        return new VisionController;
     
     if (type=="VideoWallLib.VisionControllerContainer")
         return new VisionControllerContainer;

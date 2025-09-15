@@ -32,7 +32,7 @@ public:
     void CreateModel() override;
     void Configure(const char* componentXML) override;
     void ProcessNull() override;
-    int MessageMessageHandler(void* message);
+    int MessageUpdateSignalsFromHC(void* message);
 
 protected:
     using CDPComponent::requestedState;
@@ -58,8 +58,6 @@ protected:
     std::vector<bool> indexedSignalsChanged;
     
     CDPConnector MQTTPublish;
-    CDPConnector connVisionController;
-    CDPConnector connMessageHandler;
     CDPConnector connCurrentSource;
     
     OSDRectPort SelectedRect;
@@ -71,7 +69,7 @@ protected:
     void PublishMqtt();
     void IndexInputs();
     json OSDPortsToJson();
-    void parseAndSetSignals(const std::string& msg);
+    void ParseAndSetSignals(const std::string& msg);
     void ConnectToSource();
     void Update();
 };

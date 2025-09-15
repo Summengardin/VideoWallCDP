@@ -133,14 +133,8 @@
 
   <Connectors>
     <Connector Name="MQTTPublish" Object=".Publisher.Publish"></Connector>
-    <Connector Name="VisionControllerConnector" Object=""></Connector>
-    <Connector Name="MessageHandlerConnector" Object=""></Connector>
-    <Connector Description="Connector to the current selected Camera" Name="CurrentSourceConnector" Object=""></Connector>
-    <Connector Name="conVisionController" Object=""></Connector>
-    <Connector Name="conMessageHandler" Object=""></Connector>
-    <Connector Description="Connector to the current selected Camera" Name="conCurrentSource" Object=""></Connector>
-    <Connector Name="connVisionController" Object=""></Connector>
-    <Connector Name="connMessageHandler" Object=""></Connector>
-    <Connector Description="Connector to the current selected Camera" Name="connCurrentSource" Object=""></Connector>
+    
+    
+    <Connector Description="Connector that will connect to the current selected Source (Camera)" Name="connCurrentSource" Object=""></Connector>
   </Connectors>
 </Component>

@@ -15,7 +15,7 @@
   </Alarms>
 
   <Connectors>
-    <Connector Name="HandControllerConnector" Object=""></Connector>
+    <Connector Name="HandControllerConnector" Object="..IO.SKAARHOJTCPCom"></Connector>
     <Connector Name="MQTTSubscribe" Object=".SourceSubscriber.Subscribe"></Connector>
   </Connectors>
 
@@ -29,9 +29,9 @@
   </ArgumentMessages>
 
   <Subcomponents>
-    <Subcomponent Model="VideoWallLib.VisionController" Name="VisionController0" src="Components/VisionControllers/VisionController0.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.VisionController" Name="VisionController1" src="Components/VisionControllers/VisionController1.xml"></Subcomponent>
-    <Subcomponent Model="VideoWallLib.VisionController" Name="VisionController2" src="Components/VisionControllers/VisionController2.xml"></Subcomponent>
+    <Subcomponent Model="CDPComponent" Name="VisionController0" src="Components/VisionControllers/VisionController0.xml"></Subcomponent>
+    <Subcomponent Model="CDPComponent" Name="VisionController1" src="Components/VisionControllers/VisionController1.xml"></Subcomponent>
+    <Subcomponent Model="CDPComponent" Name="VisionController2" src="Components/VisionControllers/VisionController2.xml"></Subcomponent>
     <Operator Description="MQTT Subscriber sequencer block to subscribe to MQTT Topics and receive payloads as Sequencer events. Has to be connected to a MQTTClient, via the MQTTClient connector." Model="MQTTIO.Subscriber" Name="SourceSubscriber">
       <ArgumentMessage Command="131328" Description="Will be emitted when MQTTClient has established the connection with the configured broker" Input="0" Model="Sequencer.DefaultEvent" Name="Connected" TextCommand="Connected" RoutingList=""></ArgumentMessage>
       <ArgumentMessage Command="131328" Description="Will be emitted when MQTTClient has lost the connection with the configured broker" Input="0" Model="Sequencer.DefaultEvent" Name="Disconnected"></ArgumentMessage>

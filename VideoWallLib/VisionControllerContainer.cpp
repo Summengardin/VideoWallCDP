@@ -97,10 +97,6 @@ void VisionControllerContainer::Configure(const char* componentXML)
     }
     numTiles = TileConnectors.size();
     tileMap = generateTileMap(numTiles);
-    std::string longName = this->GetNodeLongName();
-    std::string ConnectorSocket = replaceSubcomponent(longName, "IO.SKAARHOJTCPCom");
-    HandControllerConnector.ConnectTo(ConnectorSocket.c_str());
-
 }
 
 

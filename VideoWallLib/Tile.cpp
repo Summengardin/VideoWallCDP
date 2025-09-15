@@ -47,8 +47,6 @@ void Tile::Create(const char* fullName)
     Brightness.Create("Brightness",this);
     MQTTPublish.Create("MQTTPublish",this);
     SelectedRect.Create("SelectedRect",this);
-    connMessageHandler.Create("connMessageHandler",this);
-    connVisionController.Create("connVisionController",this);
     connCurrentSource.Create("connCurrentSource",this);
 
 }
@@ -64,7 +62,7 @@ void Tile::CreateModel()
     CDPComponent::CreateModel();
 
     RegisterStateProcess("Null", (CDPCOMPONENT_STATEPROCESS)&Tile::ProcessNull, "Initial Null state");
-    RegisterMessage(CM_TEXTCOMMAND,"MessageHandler","",(CDPOBJECT_MESSAGEHANDLER)&Tile::MessageMessageHandler);
+    RegisterMessage(CM_TEXTCOMMAND,"UpdateSignalsFromHC","",(CDPOBJECT_MESSAGEHANDLER)&Tile::MessageUpdateSignalsFromHC);
 }
 
 /*!
@@ -90,9 +88,6 @@ void Tile::Configure(const char* componentXML)
     indexedSignalsChanged.resize(len);
     holdUntil.resize(indexedSignalsChanged.size(),
                      std::chrono::steady_clock::time_point::max());
-    connMessageHandler.ConnectTo("VWController.VisionControllers");
-
-
 }
 
 /*!
@@ -120,13 +115,12 @@ void Tile::ProcessNull()
 
 
 
-int Tile::MessageMessageHandler(void* message)
+int Tile::MessageUpdateSignalsFromHC(void* message)
 {
     MessageTextCommandWithParameterReceive* msg = static_cast<MessageTextCommandWithParameterReceive*>(message);
     std::string strParameter(msg->parameters);
-    parseAndSetSignals(strParameter);
+    ParseAndSetSignals(strParameter);
     return 1;
-
 }
 
 
@@ -300,7 +294,7 @@ json Tile::OSDPortsToJson() {
     return out_json;
 }
 
-void Tile::parseAndSetSignals(const std::string& msg) {
+void Tile::ParseAndSetSignals(const std::string& msg) {
     std::istringstream ss(msg);
     std::string token;
 
@@ -345,7 +339,7 @@ void Tile::ConnectToSource()
 
     connCurrentSource.ConnectTo(PathToCamera.c_str());
     if (connCurrentSource.Connected())
-        CDPMessage("%s: Connected to '%s'\n", CDPComponent::ShortName(), connCurrentSource.GetNodeName().c_str());
+        CDPMessage("%s: '%s' connected to '%s'\n", CDPComponent::ShortName(), connCurrentSource.GetNodeName().c_str(), connCurrentSource.RemoteName().c_str());
 }
 
 void Tile::Update()

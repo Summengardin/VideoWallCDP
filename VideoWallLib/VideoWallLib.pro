@@ -13,17 +13,12 @@ HEADERS += \
     LayoutPort.h \
     MQTTHandler.h \
     MQTTTopic.h \
-    OSD.h \
     OSDDataDistributor.h \
     OSDRectPort.h \
-    OSDText.h \
-    SKAARHOJRawPanelIO.h \
-    SKAARHOJRawPanelMenu.h \
     SKAARHOJTCPCom.h \
     SourceOrchestrator.h \
     Tile.h \
     TilePort.h \
-    VisionController.h \
     VisionControllerContainer.h \
     base64.h \
     handControllerEasy.h \
@@ -43,12 +38,8 @@ SOURCES += \
     LayoutPort.cpp \
     MQTTHandler.cpp \
     MQTTTopic.cpp \
-    OSD.cpp \
     OSDDataDistributor.cpp \
     OSDRectPort.cpp \
-    OSDText.cpp \
-    SKAARHOJRawPanelIO.cpp \
-    SKAARHOJRawPanelMenu.cpp \
     SKAARHOJTCPCom.cpp \
     OSDTextPort.cpp \
     SourceOrchestrator.cpp \
@@ -56,7 +47,6 @@ SOURCES += \
     TilePort.cpp \
     TimestampGenerator.cpp \
     VideoWallLibBuilder.cpp \
-    VisionController.cpp \
     VisionControllerContainer.cpp \
     base64.cpp \
     handControllerEasy.cpp \
@@ -73,14 +63,10 @@ DISTFILES += $$files(*.xml, true) \
     Templates/Models/VideoWallLib.MQTTHandler.xml \
     Templates/Models/VideoWallLib.MQTTTopic.xml \
     Templates/Models/VideoWallLib.OSD.OSDText.xml \
-    Templates/Models/VideoWallLib.OSD.xml \
     Templates/Models/VideoWallLib.OSDDataDistributor.xml \
     Templates/Models/VideoWallLib.OSDRectPort.xml \
-    Templates/Models/VideoWallLib.OSDText.xml \
     Templates/Models/VideoWallLib.OSDTextPort.xml \
     Templates/Models/VideoWallLib.PopulateComboBox_T.xml \
-    Templates/Models/VideoWallLib.SKAARHOJRawPanelIO.xml \
-    Templates/Models/VideoWallLib.SKAARHOJRawPanelMenu.xml \
     Templates/Models/VideoWallLib.SKAARHOJTCPCom.xml \
     Templates/Models/VideoWallLib.SourceOrchestrator.xml \
     Templates/Models/VideoWallLib.Tile.Models.MQTTTopic1.xml \
@@ -94,7 +80,6 @@ DISTFILES += $$files(*.xml, true) \
     Templates/Models/VideoWallLib.Tile.Models.mtZoomSpeed1.xml \
     Templates/Models/VideoWallLib.Tile.xml \
     Templates/Models/VideoWallLib.TilePort.xml \
-    Templates/Models/VideoWallLib.VisionController.xml \
     Templates/Models/VideoWallLib.VisionControllerContainer.xml
     Templates/Models/VideoWallLib.TimestampGenerator.xml
 

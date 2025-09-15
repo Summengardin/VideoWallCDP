@@ -29,8 +29,7 @@
   </Timers>
 
   <Connectors>
-    <Connector Name="PublishToMessagageHandler" Object=""></Connector>
-    <Connector Name="connVisionControllersContainer" Object=""></Connector>
+    <Connector Name="connVisionControllersContainer" Object="...VisionControllers"></Connector>
   </Connectors>
   <Transport ListenPort="9923" LocalName="ETH0" Model="TCPTransport" Name="TCPTransport" RemoteIP="10.1.3.60" RemotePort="9923" Timeout="1"></Transport>
 </Component>

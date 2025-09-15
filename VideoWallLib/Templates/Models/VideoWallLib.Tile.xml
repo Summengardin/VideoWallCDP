@@ -2,40 +2,38 @@
 <Model Name="VideoWallLib.Tile">
  <ModelTypeClass>C++</ModelTypeClass>
  <BaseModel>CDPComponent</BaseModel>
- <Element Name="Priority" Value="normal"/>
- <Element Name="fs" Value="5"/>
+ <Element Name="Priority" Value="normal"></Element>
+ <Element Name="fs" Value="5"></Element>
  <Attributes>
-  <Attribute Name="Description" Type="string" Value="Simple component"/>
-  <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.Tile"/>
+  <Attribute Name="Description" Type="string" Value="Simple component"></Attribute>
+  <Attribute Description="Implementation model used." Name="Model" ReadOnly="1" Required="1" SaveOnChange="0" Type="string" Value="VideoWallLib.Tile"></Attribute>
  </Attributes>
  <Signals>
-  <Signal Input="1" Model="DeliveryConfigString" Name="Source" TypeColorHint=""/>
-  <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="ZoomSpeed" Type="double"/>
-  <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="PanSpeed" Type="double"/>
-  <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="TiltSpeed" Type="double"/>
-  <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="Brightness" Type="double"/>
-  <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="ZoomAbs" Type="double"/>
-  <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="TiltAbs" Type="double"/>
-  <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="PanAbs" Type="double"/>
+  <Signal Input="1" Model="DeliveryConfigString" Name="Source" TypeColorHint=""></Signal>
+  <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="ZoomSpeed" Type="double"></Signal>
+  <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="PanSpeed" Type="double"></Signal>
+  <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="TiltSpeed" Type="double"></Signal>
+  <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="Brightness" Type="double"></Signal>
+  <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="ZoomAbs" Type="double"></Signal>
+  <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="TiltAbs" Type="double"></Signal>
+  <Signal Input="1" Model="CDPSignal&lt;double&gt;" Name="PanAbs" Type="double"></Signal>
  </Signals>
  <Ports>
-  <Port BorderColor="1,0,0,1" BorderWidth="15" Connected="0" DataConsistency="0" Description="Rectangle for showing that this tile is the current selection" Model="VideoWallLib.OSDRectPort" Name="SelectedRect" RolePermissions="" Routing=""/>
+  <Port BorderColor="1,0,0,1" BorderWidth="15" Connected="0" DataConsistency="0" Description="Rectangle for showing that this tile is the current selection" Model="VideoWallLib.OSDRectPort" Name="SelectedRect" RolePermissions="" Routing=""></Port>
  </Ports>
  <Subcomponents>
   <Operator Model="MQTTIO.Publisher" Name="Publisher">
-   <Client Name="MQTTClient" Object="..MQTTClientRPC"/>
+   <Client Name="MQTTClient" Object="..MQTTClientRPC"></Client>
   </Operator>
  </Subcomponents>
  <ArgumentMessages>
-  <ArgumentMessage Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC"/>
+  <ArgumentMessage Model="MQTTIO.MQTTClientRPC" Name="MQTTClientRPC"></ArgumentMessage>
  </ArgumentMessages>
  <Connectors>
-  <Connector DisplayHint="Internal" Name="MQTTPublish" Object=".Publisher.Publish" RoutingType="Push" TypeHint="Routing"/>
-  <Connector Description="" Name="connVisionController" RoutingType="Push" TypeHint="RoutingType"/>
-  <Connector Description="" Name="connMessageHandler" RoutingType="Push" TypeHint="RoutingType"/>
-  <Connector Description="Connector to the current selected Camera" Name="connCurrentSource" RoutingType="Push" TypeHint="RoutingType"/>
+  <Connector DisplayHint="Internal" Name="MQTTPublish" Object=".Publisher.Publish" RoutingType="Push" TypeHint="Routing"></Connector>
+  <Connector Description="Connector to the current selected Camera" Name="connCurrentSource" RoutingType="Push" TypeHint="RoutingType"></Connector>
  </Connectors>
  <Messages>
-  <Message Name="MessageHandler"/>
+  <Message Description="Update signals from HandController" Name="UpdateSignalsFromHC"></Message>
  </Messages>
 </Model>

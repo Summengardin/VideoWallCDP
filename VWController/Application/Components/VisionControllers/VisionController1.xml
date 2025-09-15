@@ -1,4 +1,4 @@
-<Component Model="VideoWallLib.VisionController" Name="VisionController1" src="Components/VisionControllers/VisionController1.xml" Description="Simple component">
+<Component Model="CDPComponent" Name="VisionController1" src="Components/VisionControllers/VisionController1.xml" Description="Simple component">
   <SchedulingOrder>TopDown</SchedulingOrder>
   <SchedulingGroup>Default</SchedulingGroup>
   <fs>100</fs>
