@@ -19,6 +19,7 @@ HEADERS += \
     SourceOrchestrator.h \
     Tile.h \
     TilePort.h \
+    VisionController.h \
     VisionControllerContainer.h \
     base64.h \
     handControllerEasy.h \
@@ -47,6 +48,7 @@ SOURCES += \
     TilePort.cpp \
     TimestampGenerator.cpp \
     VideoWallLibBuilder.cpp \
+    VisionController.cpp \
     VisionControllerContainer.cpp \
     base64.cpp \
     handControllerEasy.cpp \
@@ -80,6 +82,7 @@ DISTFILES += $$files(*.xml, true) \
     Templates/Models/VideoWallLib.Tile.Models.mtZoomSpeed1.xml \
     Templates/Models/VideoWallLib.Tile.xml \
     Templates/Models/VideoWallLib.TilePort.xml \
+    Templates/Models/VideoWallLib.VisionController.xml \
     Templates/Models/VideoWallLib.VisionControllerContainer.xml
     Templates/Models/VideoWallLib.TimestampGenerator.xml
 
