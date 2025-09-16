@@ -44,6 +44,50 @@
        </property>
       </widget>
      </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="CDPBaseButtonMsg" name="messageButton">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Toggle Fullscreen</string>
+       </property>
+       <property name="svgFile">
+        <string notr="true">:/themes/openbridge5_dusk/buttons/buttonPlain.svg</string>
+       </property>
+       <property name="pushRoutables" stdset="0">
+        <stringlist notr="true">
+         <string>cdpPressedRouting</string>
+         <string>cdpRouting</string>
+        </stringlist>
+       </property>
+       <property name="cdpRouting" stdset="0">
+        <string>VWController.VisionControllers.Fullscreen.InMessage</string>
+       </property>
+       <property name="cdpTextCommand">
+        <string>ToggleFullscreen</string>
+       </property>
+       <property name="cdpParameterRouting" stdset="0">
+        <string>.ShortName</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </item>
    <item>

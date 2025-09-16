@@ -45,6 +45,7 @@ then Tile</string>
            <property name="modelFilter">
             <stringlist>
              <string>CDPComponent</string>
+             <string>VideoWallLib.VisionController</string>
             </stringlist>
            </property>
            <property name="cdpTargetRouting">
