@@ -77,14 +77,14 @@
          <string>cdpRouting</string>
         </stringlist>
        </property>
-       <property name="cdpRouting" stdset="0">
-        <string>VWController.VisionControllers.Fullscreen.InMessage</string>
-       </property>
        <property name="cdpTextCommand">
         <string>ToggleFullscreen</string>
        </property>
        <property name="cdpParameterRouting" stdset="0">
         <string>.ShortName</string>
+       </property>
+       <property name="cdpRoutingRouting" stdset="0">
+        <string>.Parent</string>
        </property>
       </widget>
      </item>
@@ -551,6 +551,11 @@
    <extends>QWidget</extends>
    <header>CDPBaseWidgets/CDPBaseContainer.h</header>
    <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseButtonMsg</class>
+   <extends>CDPBaseButton</extends>
+   <header>CDPBaseWidgets/CDPBaseButtonMsg.h</header>
   </customwidget>
   <customwidget>
    <class>CDPBaseLabel</class>
