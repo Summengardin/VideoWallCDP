@@ -26,7 +26,7 @@
   </Alarms>
 
   <Ports>
-    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort1" TextIndexName="Date&amp;Time">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort1" TextIndexName="Displayname">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -43,7 +43,7 @@
         <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
         <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort2" TextIndexName="Off">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort2" TextIndexName="Source IP" Alignment="center">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -60,7 +60,7 @@
         <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
         <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort3" TextIndexName="Off">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort3" TextIndexName="Current Source" Alignment="right">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -77,7 +77,7 @@
         <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
         <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort4" TextIndexName="Off">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort4" TextIndexName="CraneLoad" Alignment="center">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -94,7 +94,7 @@
         <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
         <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort5" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort5" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="" TextIndexName="Displayname">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -111,7 +111,7 @@
         <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
         <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort6" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="" TextIndexName="ControlValue">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort6" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="" TextIndexName="Source IP" Alignment="center">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -128,7 +128,7 @@
         <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
         <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort7" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort7" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="" Alignment="right" TextIndexName="Current Source">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -145,7 +145,7 @@
         <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
         <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort8" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort8" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="" Alignment="center" TextIndexName="Off">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -162,7 +162,7 @@
         <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
         <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort9" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort9" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="" TextIndexName="Displayname">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -179,7 +179,7 @@
         <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
         <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort10" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort10" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="" Alignment="center" TextIndexName="Source IP">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -196,7 +196,7 @@
         <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
         <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort11" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort11" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="" Alignment="right" TextIndexName="Current Source">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -213,7 +213,7 @@
         <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
         <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort12" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort12" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="" Alignment="center" TextIndexName="Off">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -230,7 +230,7 @@
         <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
         <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort13" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort13" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="" TextIndexName="Displayname">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -247,7 +247,7 @@
         <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
         <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort14" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort14" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="" Alignment="center" TextIndexName="Source IP">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -264,7 +264,7 @@
         <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
         <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort15">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort15" Alignment="right" TextIndexName="Current Source">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
@@ -281,7 +281,7 @@
         <Connection Input="1" LocalName=".Type" Model="CDPPortConnection" Name="MapType"></Connection>
         <Connection Input="1" LocalName=".Enable" Model="CDPPortConnection" Name="MapEnable"></Connection>
       </Connections></Port>
-    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort16" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="">
+    <Port Input="0" Model="VideoWallLib.OSDTextPort" Name="OSDTextPort16" Connected="0" DataConsistency="0" Description="Simple port example" RolePermissions="" Routing="" Alignment="center" TextIndexName="Off">
 
       <Connections>
         <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>

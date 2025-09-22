@@ -41,6 +41,10 @@ protected:
     using clock = std::chrono::steady_clock;
 
     DeliveryConfigString Source;
+    OSDTextPort OSDTopLeft;
+    OSDTextPort OSDTopCenter;
+    OSDTextPort OSDTopRight;
+    OSDTextPort OSDLowerCenter;
     CDPSignal<double> ZoomSpeed;
     CDPSignal<double> ZoomAbs;
     CDPSignal<double> PanSpeed;

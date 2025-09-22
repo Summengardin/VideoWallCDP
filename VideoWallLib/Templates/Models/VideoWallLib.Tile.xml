@@ -20,6 +20,10 @@
  </Signals>
  <Ports>
   <Port BorderColor="1,0,0,1" BorderWidth="15" Connected="0" DataConsistency="0" Description="Rectangle for showing that this tile is the current selection" Model="VideoWallLib.OSDRectPort" Name="SelectedRect" RolePermissions="" Routing=""></Port>
+    <Port Model="VideoWallLib.OSDTextPort" Name="OSDTopLeft" TextIndex="7" TextIndexName="Displayname"></Port>
+    <Port Model="VideoWallLib.OSDTextPort" Name="OSDTopCenter" PosX="940" Alignment="center" TextIndexName="Source IP" TextIndex="8"></Port>
+    <Port Model="VideoWallLib.OSDTextPort" Name="OSDTopRight" Alignment="right" PosX="1900" TextIndexName="Current Source" TextIndex="4"></Port>
+    <Port Model="VideoWallLib.OSDTextPort" Name="OSDLowerCenter" Alignment="center" PosX="940" PosY="900" TextIndexName="Off" TextIndex="3"></Port>
  </Ports>
  <Subcomponents>
   <Operator Model="MQTTIO.Publisher" Name="Publisher">

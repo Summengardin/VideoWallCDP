@@ -38,6 +38,10 @@ void Tile::Create(const char* fullName)
 {
     CDPComponent::Create(fullName);
     Source.Create("Source",this);
+    OSDTopLeft.Create("OSDTopLeft",this);
+    OSDTopCenter.Create("OSDTopCenter",this);
+    OSDTopRight.Create("OSDTopRight",this);
+    OSDLowerCenter.Create("OSDLowerCenter",this);
     ZoomSpeed.Create("ZoomSpeed",this);
     ZoomAbs.Create("ZoomAbs",this);
     PanSpeed.Create("PanSpeed",this);
