@@ -211,7 +211,7 @@
            </font>
           </property>
           <property name="placeholderText">
-           <string>rtsp://&lt;user&gt;_&lt;pass&gt;@&lt;ip&gt;:&lt;port&gt;/&lt;mount&gt;</string>
+           <string>rtsp://&lt;user&gt;:&lt;pass&gt;@&lt;ip&gt;:&lt;port&gt;/&lt;mount&gt;</string>
           </property>
           <property name="cursorMoveStyle">
            <enum>Qt::VisualMoveStyle</enum>

@@ -560,6 +560,11 @@
    <container>1</container>
   </customwidget>
   <customwidget>
+   <class>CDPBaseButton</class>
+   <extends>QPushButton</extends>
+   <header>CDPBaseWidgets/CDPBaseButton.h</header>
+  </customwidget>
+  <customwidget>
    <class>CDPBaseButtonMsg</class>
    <extends>CDPBaseButton</extends>
    <header>CDPBaseWidgets/CDPBaseButtonMsg.h</header>

@@ -221,6 +221,11 @@ then Tile</string>
    </slots>
   </customwidget>
   <customwidget>
+   <class>CDPBaseCheckBox</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBaseCheckBox.h</header>
+  </customwidget>
+  <customwidget>
    <class>CDPBaseLabel</class>
    <extends>QLabel</extends>
    <header>CDPBaseWidgets/CDPBaseLabel.h</header>
