@@ -72,6 +72,27 @@ then Tile</string>
           </widget>
          </item>
          <item>
+          <widget class="CDPBaseCheckBox" name="checkBox">
+           <property name="pushRoutables" stdset="0">
+            <stringlist>
+             <string>cdpRouting</string>
+            </stringlist>
+           </property>
+           <property name="text">
+            <string>Show description</string>
+           </property>
+           <property name="iconSizeMax">
+            <size>
+             <width>40</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="cdpRouting" stdset="0">
+            <string>VWController.OSD.OSDDataDistributor.ShowOSDDescription.Value</string>
+           </property>
+          </widget>
+         </item>
+         <item>
           <spacer name="verticalSpacer">
            <property name="orientation">
             <enum>Qt::Vertical</enum>

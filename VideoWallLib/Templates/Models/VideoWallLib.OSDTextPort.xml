@@ -8,7 +8,6 @@
   <Attribute LogEventOnChange="0" Name="TextIndex" RouteMethod="RouteEvent" SaveOnChange="0" Type="int"></Attribute>
   <Attribute LogEventOnChange="0" Name="PosX" RouteMethod="RouteEvent" SaveOnChange="0" Type="int"></Attribute>
   <Attribute LogEventOnChange="0" Name="PosY" RouteMethod="RouteEvent" SaveOnChange="0" Type="int"></Attribute>
-  <Attribute LogEventOnChange="0" Name="FontName" RouteMethod="RouteEvent" SaveOnChange="0" Type="string"></Attribute>
   <Attribute LogEventOnChange="0" Name="Timeout" RouteMethod="RouteEvent" SaveOnChange="0" Type="double"></Attribute>
   <Attribute Name="Alignment" Value="left"></Attribute>
   <Attribute Name="FontColor" Value="1.0,1.0,1.0,1.0"></Attribute>
@@ -17,7 +16,8 @@
   <Attribute Name="TextIndexName" Value="Select source"></Attribute>
   <Attribute Name="Type" SaveOnChange="0" Value="Text"></Attribute>
     <Attribute Name="Enable" Value="1" Type="bool"></Attribute>
-    <Attribute Name="Model" Value="VideoWallLib.OSDTextPort"></Attribute></Attributes>
+    <Attribute Name="Model" Value="VideoWallLib.OSDTextPort"></Attribute>
+    <Attribute Name="FontName" Selection="Serif;Noto Serif Bold;Noto Serif;MaterialSymbolsOutlined-Medium" TypeHint="Selection" Value="Noto Serif"></Attribute></Attributes>
  <Connections>
   <Connection Input="1" LocalName=".Text" Model="CDPPortConnection" Name="MapText"></Connection>
   <Connection Input="0" LocalName=".TextIndex" Model="CDPPortConnection" Name="MapTextIndex"></Connection>
