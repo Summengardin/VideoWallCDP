@@ -150,28 +150,16 @@ void Camera::UpdateSignalFromProperty(CDPPropertyBase* prop)
     if (DebugLevel(DEBUGLEVEL_NORMAL))
         CDPMessage("%s: UpdateSignalFromProperty for '%s' called\n",GetNodeLongName().c_str(),prop->GetNodeName().c_str());
 
-    std::string pName = prop->GetNodeName();
-    std::string sName = pName.erase(0, 1);
-    if (DebugLevel(DEBUGLEVEL_NORMAL))
-        CDPMessage("PropertyNameSignalyfied is: %s\n", sName.c_str());
+    std::string sName = prop->GetNodeName();
+    sName.erase(0, 1);
+
     for (ICDPSignal* signal : m_listSignals) {
         if (signal->ShortName() == sName){
             if (DebugLevel(DEBUGLEVEL_NORMAL))
                 CDPMessage("Setting signal: %s to value: %s\n", signal->ShortName(), prop->GetValue().c_str());
-            // Try first with DeliveryConfigString
-            if (dynamic_cast<OperationUtilities::DeliveryConfigString*>(signal) ){
-                std::vector<CDPUtils::Parameter> param = {{sName, prop->GetValue()}};
-                std::string joined = CDPUtils::JoinParameters(param);
-
-                auto msg = MessageTextCommandWithParameterSend("SetValues",  joined);
-                CDPComponent::MessageSetValues(&msg);
-            }
-            else if (dynamic_cast<CDPSignal<std::string>*>(signal) ){
-                std::vector<CDPUtils::Parameter> param = {{sName, prop->GetValue()}};
-                std::string joined = CDPUtils::JoinParameters(param);
-
-                auto msg = MessageTextCommandWithParameterSend("SetValues",  joined);
-                CDPComponent::MessageSetValues(&msg);
+            if (dynamic_cast<CDPSignal<std::string>*>(signal)){
+                auto msg = MessageTextCommandWithParameterSend("SetValues",  sName + "=" + prop->GetValue());
+                this->MessageSetValues(&msg);
             }
         }
     }
